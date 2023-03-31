@@ -14,7 +14,7 @@ const people = [
 ];
 
 const SelectExample = () => {
-  const [selected, setSelected] = useState(people[0]);
+  const [selected, setSelected] = useState([people[0]]);
 
   return (
     <CustomSelect selected={selected} onSelected={setSelected}>
