@@ -12,7 +12,7 @@ const CustomDialog = (props: Props) => {
   const { trigger, children, isOpen, closeModal } = props;
   return (
     <>
-      <div className="fixed inset-0 flex items-center justify-center">
+      <div className="">
         {trigger}
       </div>
       <Transition appear show={isOpen} as={Fragment}>
