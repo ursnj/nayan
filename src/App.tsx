@@ -5,6 +5,9 @@ const App = () => {
   return (
     <div className="w-screen h-screen bg-slate-300">
       <SelectExample />
+      <div className="mt-3 text-right">
+        <MenuExample />
+      </div>
     </div>
   );
 };
