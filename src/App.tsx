@@ -1,5 +1,6 @@
 import MenuExample from "./components/custom-menu/MenuExample";
 import SelectExample from "./components/custom-select/SelectExample";
+import DialogExample from "./components/custom-doalog/DialogExample";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <div className="mt-3 text-right">
         <MenuExample />
       </div>
+      <DialogExample/>
     </div>
   );
 };
