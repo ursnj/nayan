@@ -3,6 +3,7 @@ import SelectExample from "./components/custom-select/SelectExample";
 import DialogExample from "./components/custom-doalog/DialogExample";
 import SwitchExample from "./components/custom-switch/SwitchExample";
 import DisClosureExample from "./components/custom-disclosure/DisClosureExample";
+import PopoverExample from "./components/custom-popover/PopoverExample";
 
 const App = () => {
   return (
@@ -17,9 +18,11 @@ const App = () => {
       <div className="mt-3">
       <SwitchExample/>
       </div>
-
       <div className="mt-3">
         <DisClosureExample/>
+      </div>
+      <div className="mt-3">
+        <PopoverExample/>
       </div>
     </div>
   );
