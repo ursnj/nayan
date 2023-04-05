@@ -23,7 +23,7 @@ const CustomPopover = (props: Props) => {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute left-0 z-10 mt-2 w-screen max-w-[200px] -translate-x-0 transform">
+            <Popover.Panel className="absolute left-0 z-10 mt-2 w-screen max-w-[250px] -translate-x-0 transform">
               {props.children}
             </Popover.Panel>
           </Transition>
