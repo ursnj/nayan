@@ -1,6 +1,7 @@
 import MenuExample from "./components/custom-menu/MenuExample";
 import SelectExample from "./components/custom-select/SelectExample";
 import DialogExample from "./components/custom-doalog/DialogExample";
+import SwitchExample from "./components/custom-switch/SwitchExample";
 
 const App = () => {
   return (
@@ -9,7 +10,12 @@ const App = () => {
       <div className="mt-3 text-right">
         <MenuExample />
       </div>
+      <div className="mt-3">
       <DialogExample/>
+      </div>
+      <div className="mt-3">
+      <SwitchExample/>
+      </div>
     </div>
   );
 };
