@@ -1,0 +1,58 @@
+:root {
+    --COLOR_PRIMARY: #0069ff;
+    --COLOR_BACKGROUND: #f5f5f5;
+    --COLOR_CARD: #ffffff;
+    --COLOR_TEXT: #050505;
+    --COLOR_BORDER: #d3d3d3;
+    --COLOR_SHADOW: #d3d3d3;
+    --COLOR_MODAL_BACKDROP: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme='dark'] {
+    --COLOR_PRIMARY: #0069ff;
+    --COLOR_BACKGROUND: #1f1f1f;
+    --COLOR_CARD: #303030;
+    --COLOR_TEXT: #f5f5f5;
+    --COLOR_BORDER: #505050;
+    --COLOR_SHADOW: #cbcbcb;
+    --COLOR_MODAL_BACKDROP: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    background: var(--COLOR_BACKGROUND);
+    font-size: 14px !important;
+    font-family: arial, sans-serif !important;
+    overflow-x: hidden !important;
+}
+
+.text-primary {
+    color: var(--COLOR_PRIMARY) !important;
+}
+
+.text-muted {
+    color: gray !important;
+}
+
+.text {
+    color: var(--COLOR_TEXT) !important;
+}
+
+.background {
+    background-color: var(--COLOR_BACKGROUND);
+}
+
+.card-background {
+    background-color: var(--COLOR_CARD) !important;
+}
+
+.border {
+    border: 1px solid var(--COLOR_BORDER) !important;
+}
+
+.border-top {
+    border-top: 1px solid var(--COLOR_BORDER) !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--COLOR_BORDER) !important;
+}

@@ -1,14 +1,30 @@
-import MenuExample from './examples/MenuExample'
-import SelectExample from './examples/SelectExample'
-import DialogExample from './examples/DialogExample'
-import SwitchExample from './examples/SwitchExample'
-import DisClosureExample from './examples/DisClosureExample'
-import PopoverExample from './examples/PopoverExample'
+import MenuExample from './examples/MenuExample';
+import SelectExample from './examples/SelectExample';
+import DialogExample from './examples/DialogExample';
+import SwitchExample from './examples/SwitchExample';
+import DisClosureExample from './examples/DisClosureExample';
+import PopoverExample from './examples/PopoverExample';
+import { useEffect } from 'react';
 
 const App = () => {
+  const theme = localStorage.getItem('THEME');
+
+  useEffect(() => {
+    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const finalTheme = !theme || !defaultDark ? 'light' : theme || 'dark';
+    document.documentElement.setAttribute('data-theme', finalTheme);
+  }, []);
+
   return (
-    <div className="w-screen h-screen bg-slate-300">
-      <SelectExample />
+    <div className="w-screen h-screen p-3">
+      <div className="mt-3">
+        <button className="text-primary" onClick={() => localStorage.setItem('THEME', theme === 'light' ? 'dark' : 'light')}>
+          Toggle Theme
+        </button>
+      </div>
+      <div className="mt-3">
+        <SelectExample />
+      </div>
       <div className="mt-3 text-right">
         <MenuExample />
       </div>
@@ -25,7 +41,7 @@ const App = () => {
         <PopoverExample />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
