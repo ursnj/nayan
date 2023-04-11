@@ -1,6 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import dts from 'vite-plugin-dts'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: 'index.ts',
       name: 'NJUI',
-      fileName: (format) => `index.${format}.js`
+      fileName: format => `index.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -23,4 +23,4 @@ export default defineConfig({
     emptyOutDir: true
   },
   plugins: [react(), dts()]
-})
+});

@@ -1,7 +1,7 @@
-import { Listbox } from '@headlessui/react'
-import { CheckIcon } from '../components/Icons'
-import { NJSelect } from '../components/NJSelect'
-import { useState } from 'react'
+import { Listbox } from '@headlessui/react';
+import { CheckIcon } from '../components/Icons';
+import { NJSelect } from '../components/NJSelect';
+import { useState } from 'react';
 
 const people = [
   { name: 'Wade Cooper' },
@@ -10,11 +10,11 @@ const people = [
   { name: 'Tom Cook' },
   { name: 'Tanya Fox' },
   { name: 'Hellen Schmidt' }
-]
+];
 
 const SelectExample = () => {
-  const [selected, setSelected] = useState(people[0])
-  const [selected1, setSelected1] = useState([people[0]])
+  const [selected, setSelected] = useState(people[0]);
+  const [selected1, setSelected1] = useState([people[0]]);
 
   return (
     <div>
@@ -25,8 +25,7 @@ const SelectExample = () => {
             className={({ active }) =>
               `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'}`
             }
-            value={person}
-          >
+            value={person}>
             {({ selected }) => (
               <>
                 <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>{person.name}</span>
@@ -50,8 +49,7 @@ const SelectExample = () => {
             className={({ active }) =>
               `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'}`
             }
-            value={person}
-          >
+            value={person}>
             {({ selected }) => (
               <>
                 <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>{person.name}</span>
@@ -66,7 +64,7 @@ const SelectExample = () => {
         ))}
       </NJSelect>
     </div>
-  )
-}
+  );
+};
 
-export default SelectExample
+export default SelectExample;

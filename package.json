@@ -65,7 +65,9 @@
     "url": "https://github.com/ursnj/ui"
   },
   "keywords": [
-    "React Component Library", "Tailwind", "HeadlessUI"
+    "React Component Library",
+    "Tailwind",
+    "HeadlessUI"
   ],
   "author": "Niranjan Devasani",
   "bugs": {

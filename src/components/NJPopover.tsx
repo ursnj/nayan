@@ -1,9 +1,9 @@
-import { Popover, Transition } from '@headlessui/react'
-import { Fragment, ReactNode } from 'react'
+import { Popover, Transition } from '@headlessui/react';
+import { Fragment, ReactNode } from 'react';
 
 interface Props {
-  trigger: ReactNode
-  children: ReactNode
+  trigger: ReactNode;
+  children: ReactNode;
 }
 
 export const NJPopover = (props: Props) => {
@@ -17,10 +17,9 @@ export const NJPopover = (props: Props) => {
         enterTo="opacity-100 translate-y-0"
         leave="transition ease-in duration-150"
         leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-1"
-      >
+        leaveTo="opacity-0 translate-y-1">
         <Popover.Panel className="absolute right-0 z-10 mt-2 rounded w-screen max-w-[250px] -translate-x-0 transform">{props.children}</Popover.Panel>
       </Transition>
     </Popover>
-  )
-}
+  );
+};

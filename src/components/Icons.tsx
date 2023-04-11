@@ -6,7 +6,7 @@ export const ChevronUpDownIcon = (props: any) => (
       clip-rule="evenodd"
     />
   </svg>
-)
+);
 
 export const ChevronUpIcon = (props: any) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
@@ -16,7 +16,7 @@ export const ChevronUpIcon = (props: any) => (
       clip-rule="evenodd"
     />
   </svg>
-)
+);
 
 export const CheckIcon = (props: any) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
@@ -26,4 +26,4 @@ export const CheckIcon = (props: any) => (
       clip-rule="evenodd"
     />
   </svg>
-)
+);

@@ -1,15 +1,15 @@
-import { Listbox, Transition } from '@headlessui/react'
-import { Fragment, ReactNode } from 'react'
-import { ChevronUpDownIcon } from './Icons'
+import { Listbox, Transition } from '@headlessui/react';
+import { Fragment, ReactNode } from 'react';
+import { ChevronUpDownIcon } from './Icons';
 
 interface Props {
-  children: ReactNode
-  selected: any
-  onSelected: (val: any) => void
+  children: ReactNode;
+  selected: any;
+  onSelected: (val: any) => void;
 }
 
 export const NJSelect = (props: Props) => {
-  const { selected, children } = props
+  const { selected, children } = props;
   return (
     <Listbox value={selected} onChange={props.onSelected} multiple={Array.isArray(selected)}>
       <div className="relative">
@@ -26,5 +26,5 @@ export const NJSelect = (props: Props) => {
         </Transition>
       </div>
     </Listbox>
-  )
-}
+  );
+};
