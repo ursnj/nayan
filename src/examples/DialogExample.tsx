@@ -6,19 +6,14 @@ const DialogExample = () => {
   return (
     <NJDialog
       trigger={
-        <button
-          type="button"
-          onClick={() => setIsOpen(true)}
-          className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-          Open dialog
+        <button type="button" className="rounded card-background px-4 py-2 text-sm font-medium text border" onClick={() => setIsOpen(true)}>
+          Open Dialog
         </button>
       }
       isOpen={isOpen}
       closeModal={() => setIsOpen(false)}>
       <div className="mt-2">
-        <p className="text-sm text-gray-500">
-          Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
-        </p>
+        <p className="text-sm text">Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.</p>
       </div>
     </NJDialog>
   );

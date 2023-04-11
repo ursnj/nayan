@@ -5,7 +5,7 @@
   --COLOR_TEXT: #050505;
   --COLOR_BORDER: #d3d3d3;
   --COLOR_SHADOW: #d3d3d3;
-  --COLOR_MODAL_BACKDROP: rgba(255, 255, 255, 0.7);
+  --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme='dark'] {
@@ -15,7 +15,7 @@
   --COLOR_TEXT: #f5f5f5;
   --COLOR_BORDER: #505050;
   --COLOR_SHADOW: #cbcbcb;
-  --COLOR_MODAL_BACKDROP: rgba(0, 0, 0, 0.7);
+  --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
 }
 
 body {
@@ -43,6 +43,10 @@ body {
 
 .background-primary {
   background-color: var(--COLOR_PRIMARY) !important;
+}
+
+.background-overlay {
+  background-color: var(--COLOR_OVERLAY) !important;
 }
 
 .card-background {

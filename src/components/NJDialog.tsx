@@ -23,11 +23,11 @@ export const NJDialog = (props: Props) => {
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
             leaveTo="opacity-0">
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0 background-overlay" />
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <div className="flex min-h-full items-center justify-center p-3 text-center">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -36,8 +36,8 @@ export const NJDialog = (props: Props) => {
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95">
-                <Dialog.Panel className="w-full max-w-lg max-h-[500px] transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                <Dialog.Panel className="w-full max-w-lg max-h-[500px] transform overflow-hidden rounded card-background border p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title as="h3" className="text-lg font-medium leading-6 text">
                     Payment successful
                   </Dialog.Title>
                   <div className="w-full h-full overflow-y-auto">{children}</div>
