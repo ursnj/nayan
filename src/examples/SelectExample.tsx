@@ -28,7 +28,7 @@ const SelectExample = () => {
               <>
                 <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>{person.name}</span>
                 {selected ? (
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-primary">
                     <CheckIcon className="h-5 w-5" aria-hidden="true" />
                   </span>
                 ) : null}
@@ -50,7 +50,7 @@ const SelectExample = () => {
               <>
                 <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>{person.name}</span>
                 {selected ? (
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-primary">
                     <CheckIcon className="h-5 w-5" aria-hidden="true" />
                   </span>
                 ) : null}
