@@ -5,6 +5,7 @@ import SwitchExample from './examples/SwitchExample';
 import DisClosureExample from './examples/DisClosureExample';
 import PopoverExample from './examples/PopoverExample';
 import { useEffect } from 'react';
+import RadioGroupExample from './examples/RadioGroupExample';
 
 const App = () => {
   const theme = localStorage.getItem('THEME');
@@ -28,6 +29,9 @@ const App = () => {
         </div>
         <div className="mt-3">
           <DisClosureExample />
+        </div>
+        <div className="mt-3">
+          <RadioGroupExample />
         </div>
         <div className="mt-3 text-right">
           <MenuExample />
