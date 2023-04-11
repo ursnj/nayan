@@ -5,3 +5,4 @@ export * from './src/components/NJMenu';
 export * from './src/components/NJSelect';
 export * from './src/components/NJSwitch';
 export * from './src/components/NJPopover';
+import './src/styles/styles.css';
