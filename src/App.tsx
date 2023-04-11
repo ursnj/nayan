@@ -26,6 +26,9 @@ const App = () => {
         <div className="mt-3">
           <SelectExample />
         </div>
+        <div className="mt-3">
+          <DisClosureExample />
+        </div>
         <div className="mt-3 text-right">
           <MenuExample />
         </div>
@@ -35,11 +38,8 @@ const App = () => {
         <div className="mt-3 text-right">
           <DialogExample />
         </div>
-        <div className="mt-3">
+        <div className="mt-3 text-right">
           <SwitchExample />
-        </div>
-        <div className="mt-3">
-          <DisClosureExample />
         </div>
       </div>
     </div>

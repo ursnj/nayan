@@ -20,7 +20,7 @@ export const NJSelect = (props: Props) => {
           </span>
         </Listbox.Button>
         <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
-          <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded card-background py-1 text-base shadow-lg">
+          <Listbox.Options className="absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1 text-base shadow-lg">
             {children}
           </Listbox.Options>
         </Transition>
