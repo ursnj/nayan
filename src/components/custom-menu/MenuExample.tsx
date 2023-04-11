@@ -1,15 +1,19 @@
 import { Menu } from '@headlessui/react'
-import {EllipsisVerticalIcon, HeartIcon} from "@heroicons/react/20/solid";
 import CustomMenu from "./CustomMenu";
 
 const MenuExample = () => {
   return (
-    <CustomMenu trigger={<EllipsisVerticalIcon className="menu-icon"/>}>
+    <CustomMenu trigger={<button
+      type="button"
+      className="rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+    >
+      Open Menu
+    </button>}>
       <div className="p-1">
         <Menu.Item>
           {({ active }) => (
             <button className={`${active ? 'bg-violet-500 text-white' : ''} menu-item`}>
-              <HeartIcon className="mr-2 h-5 w-5" aria-hidden="true"/>Edit
+              Edit
             </button>
           )}
         </Menu.Item>

@@ -1,5 +1,5 @@
-import {Listbox, Menu } from '@headlessui/react'
-import { CheckIcon } from '@heroicons/react/24/solid';
+import {Listbox } from '@headlessui/react'
+import { CheckIcon } from '../Icons';
 import CustomSelect from "./CustomSelect";
 import {useState} from "react";
 
