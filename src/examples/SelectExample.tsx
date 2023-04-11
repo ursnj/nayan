@@ -1,6 +1,6 @@
 import {Listbox } from '@headlessui/react'
 import { CheckIcon } from '../components/Icons';
-import {CustomSelect} from "../components/CustomSelect";
+import {NJSelect} from "../components/NJSelect";
 import {useState} from "react";
 
 const people = [
@@ -19,7 +19,7 @@ const SelectExample = () => {
   return (
     <div>
 
-      <CustomSelect selected={selected} onSelected={setSelected}>
+      <NJSelect selected={selected} onSelected={setSelected}>
         {people.map((person, personIdx) => (
           <Listbox.Option
             key={personIdx}
@@ -48,11 +48,11 @@ const SelectExample = () => {
             )}
           </Listbox.Option>
         ))}
-      </CustomSelect>
+      </NJSelect>
 
       <div className="mt-3"/>
 
-      <CustomSelect selected={selected1} onSelected={setSelected1}>
+      <NJSelect selected={selected1} onSelected={setSelected1}>
         {people.map((person, personIdx) => (
           <Listbox.Option
             key={personIdx}
@@ -81,7 +81,7 @@ const SelectExample = () => {
             )}
           </Listbox.Option>
         ))}
-      </CustomSelect>
+      </NJSelect>
     </div>
   );
 };

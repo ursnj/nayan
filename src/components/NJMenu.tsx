@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const CustomMenu = (props: Props) => {
+export const NJMenu = (props: Props) => {
   const { trigger, children } = props;
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -23,7 +23,7 @@ export const CustomMenu = (props: Props) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="menu-items">
+        <Menu.Items className="absolute right-0 mt-0 w-[150px] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           {children}
         </Menu.Items>
       </Transition>

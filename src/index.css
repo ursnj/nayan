@@ -2,14 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-    .menu-items {
-        @apply absolute right-0 mt-0 w-[150px] origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
-    }
-    .menu-item {
-        @apply text-gray-900 flex w-full items-center rounded-md px-2 py-2 text-sm;
-    }
-    .menu-icon {
-        @apply ml-2 -mr-1 h-5 w-5 text-black hover:text-black;
-    }
-}
+@layer components {}

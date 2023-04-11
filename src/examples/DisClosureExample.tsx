@@ -1,8 +1,8 @@
-import {CustomDisclosure} from "../components/CustomDisclosure";
+import {NJDisclosure} from "../components/NJDisclosure";
 
 const DisClosureExample = () => {
   return (
-    <CustomDisclosure title="Enable Notifications" text="Enable Notifications Description." />
+    <NJDisclosure title="Enable Notifications" text="Enable Notifications Description." />
   );
 };
 

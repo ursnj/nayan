@@ -8,7 +8,7 @@ interface Props {
   closeModal: () => void;
 }
 
-export const CustomDialog = (props: Props) => {
+export const NJDialog = (props: Props) => {
   const { trigger, children, isOpen, closeModal } = props;
   return (
     <>

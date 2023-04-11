@@ -6,7 +6,7 @@ interface Props {
   text: string;
 }
 
-export const CustomDisclosure = (props: Props) => {
+export const NJDisclosure = (props: Props) => {
   const { title, text } = props;
   return (
     <Disclosure>

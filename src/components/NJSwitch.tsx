@@ -6,7 +6,7 @@ interface Props {
   setEnabled: (enabled: boolean) => void;
 }
 
-export const CustomSwitch = (props: Props) => {
+export const NJSwitch = (props: Props) => {
   const { label, enabled, setEnabled } = props;
   return (
     <Switch

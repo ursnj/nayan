@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const CustomPopover = (props: Props) => {
+export const NJPopover = (props: Props) => {
   return (
     <Popover className="relative">
       <Popover.Button>
