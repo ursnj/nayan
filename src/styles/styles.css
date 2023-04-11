@@ -38,7 +38,11 @@ body {
 }
 
 .background {
-  background-color: var(--COLOR_BACKGROUND);
+  background-color: var(--COLOR_BACKGROUND) !important;
+}
+
+.background-primary {
+  background-color: var(--COLOR_PRIMARY) !important;
 }
 
 .card-background {

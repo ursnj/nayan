@@ -8,17 +8,18 @@ interface Props {
 
 export const NJSwitch = (props: Props) => {
   const { label, enabled, setEnabled } = props;
+
   return (
     <Switch
       checked={enabled}
       onChange={setEnabled}
-      className={`${enabled ? 'bg-teal-900' : 'bg-teal-700'}
-          relative inline-flex h-[38px] w-[74px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75`}>
+      className={`${enabled ? 'background-primary' : 'bg-gray-400'}
+          relative inline-flex h-[28px] w-[52px] shrink-0 cursor-pointer rounded-full border transition-colors duration-200 ease-in-out p-[1px]`}>
       <span className="sr-only">{label}</span>
       <span
         aria-hidden="true"
-        className={`${enabled ? 'translate-x-9' : 'translate-x-0'}
-            pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+        className={`${enabled ? 'translate-x-6' : 'translate-x-0'}
+            pointer-events-none inline-block h-[24px] w-[24px] transform rounded-full card-background shadow-lg ring-0 transition duration-200 ease-in-out`}
       />
     </Switch>
   );
