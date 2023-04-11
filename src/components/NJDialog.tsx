@@ -2,19 +2,17 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, ReactNode } from 'react'
 
 interface Props {
-  isOpen: boolean;
-  trigger: ReactNode;
-  children: ReactNode;
-  closeModal: () => void;
+  isOpen: boolean
+  trigger: ReactNode
+  children: ReactNode
+  closeModal: () => void
 }
 
 export const NJDialog = (props: Props) => {
-  const { trigger, children, isOpen, closeModal } = props;
+  const { trigger, children, isOpen, closeModal } = props
   return (
     <>
-      <div className="">
-        {trigger}
-      </div>
+      <div className="">{trigger}</div>
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
@@ -41,7 +39,9 @@ export const NJDialog = (props: Props) => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-lg max-h-[500px] transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">Payment successful</Dialog.Title>
+                  <Dialog.Title as="h3" className="text-lg font-medium leading-6 text-gray-900">
+                    Payment successful
+                  </Dialog.Title>
                   <div className="w-full h-full overflow-y-auto">{children}</div>
                 </Dialog.Panel>
               </Transition.Child>
@@ -50,5 +50,5 @@ export const NJDialog = (props: Props) => {
         </Dialog>
       </Transition>
     </>
-  );
-};
+  )
+}

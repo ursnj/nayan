@@ -1,21 +1,20 @@
 import { Menu, Transition } from '@headlessui/react'
-import {Fragment, ReactNode} from 'react'
+import { Fragment, ReactNode } from 'react'
 
 interface Props {
-  trigger: ReactNode;
-  children: ReactNode;
+  trigger: ReactNode
+  children: ReactNode
 }
 
 export const NJMenu = (props: Props) => {
-  const { trigger, children } = props;
+  const { trigger, children } = props
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full justify-center">
-          {trigger}
-        </Menu.Button>
+        <Menu.Button className="inline-flex w-full justify-center">{trigger}</Menu.Button>
       </div>
-      <Transition as={Fragment}
+      <Transition
+        as={Fragment}
         enter="transition ease-out duration-100"
         enterFrom="transform opacity-0 scale-95"
         enterTo="transform opacity-100 scale-100"
@@ -28,5 +27,5 @@ export const NJMenu = (props: Props) => {
         </Menu.Items>
       </Transition>
     </Menu>
-  );
-};
+  )
+}

@@ -1,13 +1,13 @@
 import { Switch } from '@headlessui/react'
 
 interface Props {
-  label: string;
-  enabled: boolean;
-  setEnabled: (enabled: boolean) => void;
+  label: string
+  enabled: boolean
+  setEnabled: (enabled: boolean) => void
 }
 
 export const NJSwitch = (props: Props) => {
-  const { label, enabled, setEnabled } = props;
+  const { label, enabled, setEnabled } = props
   return (
     <Switch
       checked={enabled}
@@ -22,5 +22,5 @@ export const NJSwitch = (props: Props) => {
             pointer-events-none inline-block h-[34px] w-[34px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
       />
     </Switch>
-  );
-};
+  )
+}

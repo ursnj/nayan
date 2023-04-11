@@ -1,9 +1,9 @@
-import MenuExample from "./examples/MenuExample";
-import SelectExample from "./examples/SelectExample";
-import DialogExample from "./examples/DialogExample";
-import SwitchExample from "./examples/SwitchExample";
-import DisClosureExample from "./examples/DisClosureExample";
-import PopoverExample from "./examples/PopoverExample";
+import MenuExample from './examples/MenuExample'
+import SelectExample from './examples/SelectExample'
+import DialogExample from './examples/DialogExample'
+import SwitchExample from './examples/SwitchExample'
+import DisClosureExample from './examples/DisClosureExample'
+import PopoverExample from './examples/PopoverExample'
 
 const App = () => {
   return (
@@ -13,19 +13,19 @@ const App = () => {
         <MenuExample />
       </div>
       <div className="mt-3">
-      <DialogExample/>
+        <DialogExample />
       </div>
       <div className="mt-3">
-      <SwitchExample/>
+        <SwitchExample />
       </div>
       <div className="mt-3">
-        <DisClosureExample/>
+        <DisClosureExample />
       </div>
       <div className="mt-3 text-right">
-        <PopoverExample/>
+        <PopoverExample />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
