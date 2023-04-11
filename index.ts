@@ -1,4 +1,5 @@
 export * from './src/components/Icons';
+export * from './src/components/NJCombo';
 export * from './src/components/NJDialog';
 export * from './src/components/NJDisclosure';
 export * from './src/components/NJMenu';
