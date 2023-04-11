@@ -64,7 +64,9 @@
     "type": "git",
     "url": "https://github.com/ursnj/ui"
   },
-  "keywords": ["React Component Library"],
+  "keywords": [
+    "React Component Library"
+  ],
   "author": "Niranjan Devasani",
   "bugs": {
     "url": "https://github.com/ursnj/ui/issues"
