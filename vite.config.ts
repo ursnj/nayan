@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "index.ts",
-      name: "ViteButton",
+      name: "NJUI",
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
