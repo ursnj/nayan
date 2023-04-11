@@ -1,6 +1,6 @@
 import { Listbox, Transition } from '@headlessui/react'
 import {Fragment, ReactNode} from 'react'
-import {ChevronUpDownIcon} from "../Icons";
+import {ChevronUpDownIcon} from "./Icons";
 
 interface Props {
   children: ReactNode;

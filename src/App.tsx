@@ -1,9 +1,9 @@
-import MenuExample from "./components/custom-menu/MenuExample";
-import SelectExample from "./components/custom-select/SelectExample";
-import DialogExample from "./components/custom-doalog/DialogExample";
-import SwitchExample from "./components/custom-switch/SwitchExample";
-import DisClosureExample from "./components/custom-disclosure/DisClosureExample";
-import PopoverExample from "./components/custom-popover/PopoverExample";
+import MenuExample from "./examples/MenuExample";
+import SelectExample from "./examples/SelectExample";
+import DialogExample from "./examples/DialogExample";
+import SwitchExample from "./examples/SwitchExample";
+import DisClosureExample from "./examples/DisClosureExample";
+import PopoverExample from "./examples/PopoverExample";
 
 const App = () => {
   return (

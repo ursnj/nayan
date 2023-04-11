@@ -1,4 +1,4 @@
-import CustomPopover from "./CustomPopover";
+import CustomPopover from "../components/CustomPopover";
 
 const PopoverExample = () => {
   return (

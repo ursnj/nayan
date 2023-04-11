@@ -1,6 +1,6 @@
 import {Listbox } from '@headlessui/react'
-import { CheckIcon } from '../Icons';
-import CustomSelect from "./CustomSelect";
+import { CheckIcon } from '../components/Icons';
+import CustomSelect from "../components/CustomSelect";
 import {useState} from "react";
 
 const people = [

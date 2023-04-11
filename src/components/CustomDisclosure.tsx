@@ -1,5 +1,5 @@
 import {Disclosure } from '@headlessui/react'
-import {ChevronUpIcon} from "../Icons";
+import {ChevronUpIcon} from "./Icons";
 
 interface Props {
   title: string;

@@ -1,5 +1,5 @@
 import { Menu } from '@headlessui/react'
-import CustomMenu from "./CustomMenu";
+import CustomMenu from "../components/CustomMenu";
 
 const MenuExample = () => {
   return (

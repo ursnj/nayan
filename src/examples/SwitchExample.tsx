@@ -1,5 +1,5 @@
-import CustomSwitch from "./CustomSwitch";
 import {useState} from "react";
+import CustomSwitch from "../components/CustomSwitch";
 
 const SwitchExample = () => {
   const [enabled, setEnabled] = useState(false);

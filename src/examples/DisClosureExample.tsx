@@ -1,4 +1,4 @@
-import CustomDisclosure from "./CustomDisclosure";
+import CustomDisclosure from "../components/CustomDisclosure";
 
 const DisClosureExample = () => {
   return (
