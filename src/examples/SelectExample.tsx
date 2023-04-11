@@ -22,9 +22,7 @@ const SelectExample = () => {
         {people.map((person, personIdx) => (
           <Listbox.Option
             key={personIdx}
-            className={({ active }) =>
-              `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'}`
-            }
+            className={({ active }) => `relative cursor-default select-none py-2 pl-10 pr-4 text ${active ? 'background-muted' : ''}`}
             value={person}>
             {({ selected }) => (
               <>
@@ -46,9 +44,7 @@ const SelectExample = () => {
         {people.map((person, personIdx) => (
           <Listbox.Option
             key={personIdx}
-            className={({ active }) =>
-              `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-amber-100 text-amber-900' : 'text-gray-900'}`
-            }
+            className={({ active }) => `relative cursor-default select-none py-2 pl-10 pr-4 text ${active ? 'card-background' : ''}`}
             value={person}>
             {({ selected }) => (
               <>
