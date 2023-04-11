@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-const CustomPopover = (props: Props) => {
+export const CustomPopover = (props: Props) => {
   return (
     <Popover className="relative">
       <Popover.Button>
@@ -28,5 +28,3 @@ const CustomPopover = (props: Props) => {
     </Popover>
   );
 };
-
-export default CustomPopover;

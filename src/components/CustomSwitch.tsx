@@ -6,7 +6,7 @@ interface Props {
   setEnabled: (enabled: boolean) => void;
 }
 
-const CustomSwitch = (props: Props) => {
+export const CustomSwitch = (props: Props) => {
   const { label, enabled, setEnabled } = props;
   return (
     <Switch
@@ -24,5 +24,3 @@ const CustomSwitch = (props: Props) => {
     </Switch>
   );
 };
-
-export default CustomSwitch;

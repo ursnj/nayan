@@ -8,7 +8,7 @@ interface Props {
   closeModal: () => void;
 }
 
-const CustomDialog = (props: Props) => {
+export const CustomDialog = (props: Props) => {
   const { trigger, children, isOpen, closeModal } = props;
   return (
     <>
@@ -52,5 +52,3 @@ const CustomDialog = (props: Props) => {
     </>
   );
 };
-
-export default CustomDialog;

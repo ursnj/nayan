@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-const CustomMenu = (props: Props) => {
+export const CustomMenu = (props: Props) => {
   const { trigger, children } = props;
   return (
     <Menu as="div" className="relative inline-block text-left">
@@ -30,5 +30,3 @@ const CustomMenu = (props: Props) => {
     </Menu>
   );
 };
-
-export default CustomMenu;

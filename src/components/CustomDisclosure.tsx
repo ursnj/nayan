@@ -6,7 +6,7 @@ interface Props {
   text: string;
 }
 
-const CustomDisclosure = (props: Props) => {
+export const CustomDisclosure = (props: Props) => {
   const { title, text } = props;
   return (
     <Disclosure>
@@ -26,5 +26,3 @@ const CustomDisclosure = (props: Props) => {
     </Disclosure>
   );
 };
-
-export default CustomDisclosure;

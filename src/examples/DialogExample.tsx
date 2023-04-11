@@ -1,4 +1,4 @@
-import CustomDialog from "../components/CustomDialog";
+import {CustomDialog} from "../components/CustomDialog";
 import {useState} from "react";
 
 const DialogExample = () => {

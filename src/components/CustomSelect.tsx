@@ -8,7 +8,7 @@ interface Props {
   onSelected: (val: any) => void;
 }
 
-const CustomSelect = (props: Props) => {
+export const CustomSelect = (props: Props) => {
   const { selected, children } = props;
   return (
     <Listbox value={selected} onChange={props.onSelected} multiple={Array.isArray(selected)}>
@@ -33,5 +33,3 @@ const CustomSelect = (props: Props) => {
     </Listbox>
   );
 };
-
-export default CustomSelect;
