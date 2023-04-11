@@ -21,7 +21,7 @@ const App = () => {
       <div className="mt-3">
         <DisClosureExample/>
       </div>
-      <div className="mt-3">
+      <div className="mt-3 text-right">
         <PopoverExample/>
       </div>
     </div>
