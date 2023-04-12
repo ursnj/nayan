@@ -10,6 +10,7 @@ import RadioGroupExample from './examples/RadioGroupExample';
 import ComboExample from './examples/ComboExample';
 import { NJDivider } from './components/NJDivider';
 import InputExample from './examples/InputExample';
+import { NJText } from './components/NJText';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -25,9 +26,7 @@ const App = () => {
       <div className="p-3">
         <div className="max-w-lg m-auto">
           <div className="mt-3">
-            <button className="text-primary" onClick={changeTheme}>
-              Toggle Theme
-            </button>
+            <NJText className="text-primary cursor-pointer text-red-500" text="Toggle Theme" onClick={changeTheme} />
           </div>
           <NJDivider hasMargin={true} />
           <div className="mt-3">

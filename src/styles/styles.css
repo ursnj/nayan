@@ -6,6 +6,10 @@
   color: gray !important;
 }
 
+.text-ni {
+  color: var(--COLOR_TEXT);
+}
+
 .text {
   color: var(--COLOR_TEXT) !important;
 }
