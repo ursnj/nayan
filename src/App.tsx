@@ -11,6 +11,7 @@ import ComboExample from './examples/ComboExample';
 import { NJDivider } from './components/NJDivider';
 import InputExample from './examples/InputExample';
 import { NJText } from './components/NJText';
+import TabsExample from './examples/TabsExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -47,6 +48,10 @@ const App = () => {
           <NJDivider hasMargin={true} />
           <div className="mt-3">
             <RadioGroupExample />
+          </div>
+          <NJDivider hasMargin={true} />
+          <div className="mt-3">
+            <TabsExample />
           </div>
           <NJDivider hasMargin={true} />
           <div className="mt-3 text-right">
