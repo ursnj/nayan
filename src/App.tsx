@@ -9,6 +9,7 @@ import PopoverExample from './examples/PopoverExample';
 import RadioGroupExample from './examples/RadioGroupExample';
 import ComboExample from './examples/ComboExample';
 import { NJDivider } from './components/NJDivider';
+import InputExample from './examples/InputExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -21,12 +22,16 @@ const App = () => {
 
   return (
     <NJTheme theme={theme}>
-      <div className="w-screen h-screen p-3">
+      <div className="p-3">
         <div className="max-w-lg m-auto">
           <div className="mt-3">
             <button className="text-primary" onClick={changeTheme}>
               Toggle Theme
             </button>
+          </div>
+          <NJDivider hasMargin={true} />
+          <div className="mt-3">
+            <InputExample />
           </div>
           <NJDivider hasMargin={true} />
           <div className="mt-3">

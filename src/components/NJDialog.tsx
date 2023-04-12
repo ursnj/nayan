@@ -36,7 +36,7 @@ export const NJDialog = (props: Props) => {
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95">
-                <Dialog.Panel className="w-full max-w-lg max-h-[500px] transform overflow-hidden rounded card-background border p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-lg max-h-[500px] transform overflow-hidden rounded card-background border p-6 text-left align-middle transition-all">
                   <Dialog.Title as="h3" className="text-lg font-medium leading-6 text">
                     Payment successful
                   </Dialog.Title>

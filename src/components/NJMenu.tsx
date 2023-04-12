@@ -19,7 +19,7 @@ export const NJMenu = (props: Props) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95">
-        <Menu.Items className="absolute right-0 mt-1 z-10 w-[150px] origin-top-right rounded card-background border shadow-lg">{children}</Menu.Items>
+        <Menu.Items className="absolute right-0 mt-1 z-10 w-[150px] origin-top-right rounded card-background border">{children}</Menu.Items>
       </Transition>
     </Menu>
   );

@@ -20,7 +20,7 @@ export const NJCombo = (props: Props) => {
   return (
     <Combobox value={selected} onChange={props.onSelected} {...(Array.isArray(selected) ? ({ multiple: true } as any) : {})}>
       <div className="relative">
-        <div className="relative w-full cursor-default overflow-hidden rounded text-left shadow-md sm:text-sm">
+        <div className="relative w-full cursor-default overflow-hidden rounded text-left">
           <Combobox.Input
             className="w-full py-2 pl-3 pr-10 text-sm leading-5 card-background border rounded text focus:ring-0"
             displayValue={(item: any) => (Array.isArray(item) ? item.length + ' selected' : item.label)}
@@ -31,7 +31,7 @@ export const NJCombo = (props: Props) => {
           </Combobox.Button>
         </div>
         <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0" afterLeave={() => setQuery('')}>
-          <Combobox.Options className="absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1 text-base shadow-lg">
+          <Combobox.Options className="absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1">
             {filteredItems.map((item: any) => (
               <Combobox.Option
                 key={item.id}

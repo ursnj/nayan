@@ -10,7 +10,7 @@ const PopoverExample = () => {
             Open Popup
           </button>
         }>
-        <div className="overflow-hidden rounded shadow-lg card-background border p-3">
+        <div className="overflow-hidden rounded card-background border p-3">
           <div className="text-sm font-medium text">Documentation</div>
           <div className="text-sm text-muted">Start integrating products and tools</div>
         </div>

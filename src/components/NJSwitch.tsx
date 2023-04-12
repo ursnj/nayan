@@ -17,7 +17,7 @@ export const NJSwitch = (props: Props) => {
       <span
         aria-hidden="true"
         className={`${enabled ? 'translate-x-6' : 'translate-x-0'}
-            pointer-events-none inline-block h-[24px] w-[24px] transform rounded-full card-background shadow-lg ring-0 transition duration-200 ease-in-out`}
+            pointer-events-none inline-block h-[24px] w-[24px] transform rounded-full card-background ring-0 transition duration-200 ease-in-out`}
       />
     </Switch>
   );
