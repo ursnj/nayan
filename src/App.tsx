@@ -8,6 +8,7 @@ import DisClosureExample from './examples/DisClosureExample';
 import PopoverExample from './examples/PopoverExample';
 import RadioGroupExample from './examples/RadioGroupExample';
 import ComboExample from './examples/ComboExample';
+import { NJDivider } from './components/NJDivider';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -27,27 +28,35 @@ const App = () => {
               Toggle Theme
             </button>
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3">
             <SelectExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3">
             <ComboExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3">
             <DisClosureExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3">
             <RadioGroupExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3 text-right">
             <MenuExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3 text-right">
             <PopoverExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3 text-right">
             <DialogExample />
           </div>
+          <NJDivider hasMargin={true} />
           <div className="mt-3 text-right">
             <SwitchExample />
           </div>
