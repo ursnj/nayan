@@ -70,7 +70,10 @@
   "keywords": [
     "React Component Library",
     "Tailwind CSS",
-    "Headless UI"
+    "Headless UI",
+    "Light & Dark Support",
+    "Vite",
+    "NextJS"
   ],
   "author": "Niranjan Devasani",
   "bugs": {
