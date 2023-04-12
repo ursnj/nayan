@@ -16,8 +16,10 @@ const SelectExample = () => {
 
   return (
     <div>
+      <h1 className="text mb-3 text-lg">Combo Single:</h1>
       <NJCombo items={items} selected={selected} onSelected={setSelected} />
       <div className="mt-3" />
+      <h1 className="text mb-3 text-lg">Combo Multi:</h1>
       <NJCombo items={items} selected={selected1} onSelected={setSelected1} />
     </div>
   );
