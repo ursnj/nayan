@@ -22,7 +22,7 @@ export const NJCombo = (props: Props) => {
       <div className="relative">
         <div className="relative w-full cursor-default overflow-hidden rounded text-left shadow-md sm:text-sm">
           <Combobox.Input
-            className="w-full border-none py-2 pl-3 pr-10 text-sm leading-5 card-background border text focus:ring-0"
+            className="w-full py-2 pl-3 pr-10 text-sm leading-5 card-background border rounded text focus:ring-0"
             displayValue={(item: any) => (Array.isArray(item) ? item.length + ' selected' : item.label)}
             onChange={event => setQuery(event.target.value)}
           />
