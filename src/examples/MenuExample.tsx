@@ -12,7 +12,7 @@ const MenuExample = () => {
             Open Menu
           </button>
         }>
-        <div>
+        <>
           <NJMenuItem>
             <button className="text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
           </NJMenuItem>
@@ -20,7 +20,7 @@ const MenuExample = () => {
           <NJMenuItem>
             <button className="text flex w-full items-center rounded px-3 py-2 text-sm text-red-500">Delete</button>
           </NJMenuItem>
-        </div>
+        </>
       </NJMenu>
     </>
   );
