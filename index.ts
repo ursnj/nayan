@@ -7,4 +7,5 @@ export * from './src/components/NJPopover';
 export * from './src/components/NJRadioGroup';
 export * from './src/components/NJSelect';
 export * from './src/components/NJSwitch';
+export * from './src/components/NJTheme';
 import './src/styles/styles.css';
