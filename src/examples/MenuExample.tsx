@@ -1,5 +1,6 @@
-import { Menu } from '@headlessui/react';
 import { NJMenu } from '../components/NJMenu';
+import { NJMenuItem } from '../components/NJMenuItem';
+import { NJDivider } from '../components/NJDivider';
 
 const MenuExample = () => {
   return (
@@ -11,10 +12,14 @@ const MenuExample = () => {
             Open Menu
           </button>
         }>
-        <div className="p-1">
-          <Menu.Item>
-            <button className="text flex w-full items-center rounded px-2 py-2 text-sm">Edit</button>
-          </Menu.Item>
+        <div>
+          <NJMenuItem>
+            <button className="text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
+          </NJMenuItem>
+          <NJDivider />
+          <NJMenuItem>
+            <button className="text flex w-full items-center rounded px-3 py-2 text-sm text-red-500">Delete</button>
+          </NJMenuItem>
         </div>
       </NJMenu>
     </>
