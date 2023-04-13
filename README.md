@@ -98,14 +98,15 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 ```jsx
 import React from 'react';
 import { NButton } from 'nayan';
+
 const App = () => (
-  <>
-    <NButton text="primary" />
-  </>
+  <NButton text="Submit" />
 );
+
+export default App;
 ```
 
-For more examples checkout [Compoent Examples](https://github.com/ursnj/nayan/tree/main/src/examples).
+For more examples checkout [component wise examples](https://github.com/ursnj/nayan/tree/main/src/examples).
 
 ## ⌨️ Development
 
