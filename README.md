@@ -1,3 +1,3 @@
-# NJN UI - React Component Library
+# Nayan - React Component Library
 
 React component library based on Tailwind CSS and Headless UI.
