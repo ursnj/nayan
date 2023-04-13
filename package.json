@@ -2,7 +2,7 @@
   "name": "njn-ui",
   "private": false,
   "sideEffects": false,
-  "version": "1.0.0-alpha-2",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
