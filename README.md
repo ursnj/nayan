@@ -1,12 +1,11 @@
-<p align="center">
+<div align="center">
     <img width="200" src="https://github.com/ursnj/nayan/blob/main/public/nayan.png?raw=true">
-</p>
+</div>
 <h1 align="center">Nayan - React Component Library</h1>
 
 <div align="center">
 
 Nayan is React based component library based on Tailwind CSS and Headless UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional user interfaces for your web application.
-<br/>
 
 [![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url] [![Follow Linked In][linkedin-image]][linkedin-url]
 
