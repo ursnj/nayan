@@ -121,6 +121,6 @@ Open your browser and visit http://localhost:3000
 
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/ursnj/nayan/pulls) or as [GitHub issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
+We welcome all contributions. Please read our [Contribution guide](https://github.com/ursnj/nayan) first. You can submit any ideas as [pull requests](https://github.com/ursnj/nayan/pulls) or as [GitHub issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
 
 If you are a collaborator, please follow our Pull Request guide to create a Pull Request with collaborator template.
