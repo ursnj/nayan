@@ -12,6 +12,7 @@ import { NJDivider } from './components/NJDivider';
 import InputExample from './examples/InputExample';
 import { NJText } from './components/NJText';
 import TabsExample from './examples/TabsExample';
+import { NJCard } from './components/NJCard';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -69,6 +70,11 @@ const App = () => {
           <div className="mt-3 text-right">
             <SwitchExample />
           </div>
+          <NJDivider className="my-5" />
+          <h1 className="text mb-3 text-lg text-left">Card:</h1>
+          <NJCard>
+            <div className="text p-2">Sample card</div>
+          </NJCard>
         </div>
       </div>
     </NJTheme>
