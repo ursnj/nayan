@@ -41,3 +41,13 @@
 .border-bottom {
   border-bottom: 1px solid var(--COLOR_BORDER) !important;
 }
+
+.tab-active {
+  color: var(--COLOR_PRIMARY) !important;
+  border-bottom: 3px solid var(--COLOR_PRIMARY) !important;
+}
+
+.tab-inactive {
+  color: var(--COLOR_TEXT) !important;
+  border-bottom: 3px solid transparent !important;
+}
