@@ -39,15 +39,15 @@ Include module in `tailwind.config.js` to read tailwind classes, this will help 
 export default {
   important: true,
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/nayan/dist/index.es.js" // Check node_modules path properly
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+    './node_modules/nayan/dist/index.es.js' // Check node_modules path properly
   ],
   theme: {
     extend: {}
   },
-  plugins: [],
-}
+  plugins: []
+};
 ```
 
 Add library styles to `index.css`, and update theme color variables accordingly for both light and dark modes.
@@ -60,21 +60,21 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 @tailwind utilities;
 
 :root {
-    --COLOR_PRIMARY: #0069ff;
-    --COLOR_BACKGROUND: #f5f5f5;
-    --COLOR_CARD: #ffffff;
-    --COLOR_TEXT: #050505;
-    --COLOR_BORDER: #d3d3d3;
-    --COLOR_MODAL_BACKDROP: rgba(255, 255, 255, 0.7);
+  --COLOR_PRIMARY: #0069ff;
+  --COLOR_BACKGROUND: #f5f5f5;
+  --COLOR_CARD: #ffffff;
+  --COLOR_TEXT: #050505;
+  --COLOR_BORDER: #d3d3d3;
+  --COLOR_MODAL_BACKDROP: rgba(255, 255, 255, 0.7);
 }
 
 [data-theme='dark'] {
-    --COLOR_PRIMARY: #0069ff;
-    --COLOR_BACKGROUND: #1f1f1f;
-    --COLOR_CARD: #303030;
-    --COLOR_TEXT: #f5f5f5;
-    --COLOR_BORDER: #505050;
-    --COLOR_MODAL_BACKDROP: rgba(0, 0, 0, 0.7);
+  --COLOR_PRIMARY: #0069ff;
+  --COLOR_BACKGROUND: #1f1f1f;
+  --COLOR_CARD: #303030;
+  --COLOR_TEXT: #f5f5f5;
+  --COLOR_BORDER: #505050;
+  --COLOR_MODAL_BACKDROP: rgba(0, 0, 0, 0.7);
 }
 ```
 
@@ -99,9 +99,7 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 import React from 'react';
 import { NButton } from 'nayan';
 
-const App = () => (
-  <NButton text="Submit" />
-);
+const App = () => <NButton text="Submit" />;
 
 export default App;
 ```
