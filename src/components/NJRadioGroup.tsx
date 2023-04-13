@@ -11,14 +11,14 @@ export const NJRadioGroup = (props: Props) => {
   const { isVertical = false, items, selected, setSelected } = props;
 
   return (
-    <RadioGroup value={selected} onChange={setSelected} className={`grid ${isVertical ? 'grid-flow-row' : 'grid-flow-col'} justify-stretch gap-2.5`}>
+    <RadioGroup value={selected} onChange={setSelected} className={`grid ${isVertical ? 'grid-flow-row' : 'grid-flow-col'} justify-stretch`}>
       {items.map(item => (
         <RadioGroup.Option key={item.id} value={item}>
           {({ checked }) => (
             <div
               className={`${
                 checked ? 'background-primary text-white' : 'card-background text'
-              } border p-2 cursor-pointer w-full text-center rounded`}>
+              } p-2 cursor-pointer w-full text-center first:rounded rounded border`}>
               {item.label}
             </div>
           )}

@@ -42,6 +42,14 @@
   border-bottom: 1px solid var(--COLOR_BORDER) !important;
 }
 
+.border-right {
+  border-right: 1px solid var(--COLOR_BORDER) !important;
+}
+
+.border-left {
+  border-left: 1px solid var(--COLOR_BORDER) !important;
+}
+
 .tab-active {
   color: var(--COLOR_PRIMARY) !important;
   border-bottom: 3px solid var(--COLOR_PRIMARY) !important;
