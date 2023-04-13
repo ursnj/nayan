@@ -9,12 +9,14 @@ React component library based on Tailwind CSS and Headless UI.
 
 <br/>
 
-[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]
+[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url] [![Follow Linked In][linkedin-image]][linkedin-url]
 
-[npm-image]: http://img.shields.io/npm/v/nayan.svg?style=flat-square
+[npm-image]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
 [npm-url]: http://npmjs.org/package/nayan
-[twitter-image]: https://img.shields.io/twitter/follow/ursNjn.svg?label=Niranjan%20Devasani
+[twitter-image]: https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
 [twitter-url]: https://twitter.com/ursNjn
+[linkedin-image]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
+[linkedin-url]: https://www.linkedin.com/in/ursNj
 
 </div>
 
