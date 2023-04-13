@@ -1,5 +1,6 @@
 import { NJDialog } from '../components/NJDialog';
 import { useState } from 'react';
+import { NJButton } from '../components/NJButton';
 
 const DialogExample = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,9 +9,7 @@ const DialogExample = () => {
       <h1 className="text mb-3 text-lg text-left">Dialog:</h1>
       <NJDialog
         trigger={
-          <button type="button" className="rounded card-background px-4 py-2 text-sm font-medium text border" onClick={() => setIsOpen(true)}>
-            Open Dialog
-          </button>
+          <NJButton className="text-sm font-medium text-white bg-green-500 hover:bg-green-600" text="Open Dialog" onClick={() => setIsOpen(true)} />
         }
         isOpen={isOpen}
         closeModal={() => setIsOpen(false)}>
