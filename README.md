@@ -1,11 +1,13 @@
 <p align="center">
     <img width="200" src="https://github.com/ursnj/nayan/blob/main/public/nayan.png?raw=true">
 </p>
-
 <h1 align="center">Nayan - React Component Library</h1>
 
 <div align="center">
+
 React component library based on Tailwind CSS and Headless UI.
+
+<br/>
 
 [![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]
 
