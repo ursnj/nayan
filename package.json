@@ -2,7 +2,7 @@
   "name": "nayan",
   "private": false,
   "sideEffects": false,
-  "version": "1.0.0-alpha-2",
+  "version": "1.0.0-alpha-3",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -69,11 +69,12 @@
   },
   "keywords": [
     "React Component Library",
+    "React UI Library",
     "Tailwind CSS",
     "Headless UI",
-    "Light & Dark Support",
-    "Vite",
-    "NextJS"
+    "React JS",
+    "Next JS",
+    "Vite"
   ],
   "author": "Niranjan Devasani",
   "bugs": {
