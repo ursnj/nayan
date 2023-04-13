@@ -1,16 +1,124 @@
-![Nayan](https://github.com/ursnj/nayan/blob/main/public/nayan.png?raw=true)
+<p align="center">
+    <img width="200" src="https://github.com/ursnj/nayan/blob/main/public/nayan.png?raw=true">
+</p>
 
-# Nayan - React Component Library
+<h1 align="center">Nayan - React Component Library</h1>
 
+<div align="center">
 React component library based on Tailwind CSS and Headless UI.
 
-## Get started
+[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]
+
+[npm-image]: http://img.shields.io/npm/v/nayan.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/nayan
+[twitter-image]: https://img.shields.io/twitter/follow/ursNjn.svg?label=Niranjan%20Devasani
+[twitter-url]: https://twitter.com/ursNjn
+
+</div>
+
+## Install
 
 With npm:
-```
+
+```bash
 npm install nayan
 ```
+
 With yarn:
-```
+
+```bash
 yarn add nayan
 ```
+
+Include module in `tailwind.config.js` to read tailwind classes, this will help in reusing same tailwind classes.
+
+```js
+export default {
+  important: true,
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/nayan/dist/index.es.js" // Check node_modules path properly
+  ],
+  theme: {
+    extend: {}
+  },
+  plugins: [],
+}
+```
+
+Add library styles to `index.css`, and update theme color variables accordingly for both light and dark modes.
+
+```css
+@import './node_modules/nayan/dist/style.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --COLOR_PRIMARY: #0069ff;
+    --COLOR_BACKGROUND: #f5f5f5;
+    --COLOR_CARD: #ffffff;
+    --COLOR_TEXT: #050505;
+    --COLOR_BORDER: #d3d3d3;
+    --COLOR_MODAL_BACKDROP: rgba(255, 255, 255, 0.7);
+}
+
+[data-theme='dark'] {
+    --COLOR_PRIMARY: #0069ff;
+    --COLOR_BACKGROUND: #1f1f1f;
+    --COLOR_CARD: #303030;
+    --COLOR_TEXT: #f5f5f5;
+    --COLOR_BORDER: #505050;
+    --COLOR_MODAL_BACKDROP: rgba(0, 0, 0, 0.7);
+}
+```
+
+## ✨ Features
+
+- 🌈 Enterprise-class UI designed for web applications.
+- 📦 A set of high-quality React components out of the box.
+- 🛡 Written in TypeScript with predictable static types.
+- ⚙️ Whole package of design resources and development tools.
+- 🌍 Internationalization support for dozens of languages.
+- 🎨 Powerful theme customization based on Tailwind CSS.
+
+## 🖥 Environment Support
+
+- Modern browsers
+- Server-side Rendering
+- [Electron](https://www.electronjs.org/)
+
+## 🔨 Usage
+
+```jsx
+import React from 'react';
+import { NButton } from 'nayan';
+const App = () => (
+  <>
+    <NButton text="primary" />
+  </>
+);
+```
+
+For more examples checkout [Compoent Examples](https://github.com/ursnj/nayan/tree/main/src/examples).
+
+## ⌨️ Development
+
+Nayan project is included with all possible cases with examples, it can be ran locally to test each component.
+
+```bash
+$ git clone git@github.com:uranj/nayan.git
+$ cd nayan
+$ npm install
+$ npm start
+```
+
+Open your browser and visit http://localhost:3000
+
+## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+We welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/ant-design/ant-design/blob/master/.github/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/ursnj/nayan/pulls) or as [GitHub issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
+
+If you are a collaborator, please follow our Pull Request guide to create a Pull Request with collaborator template.
