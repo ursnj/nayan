@@ -5,6 +5,6 @@ interface Props {
   children: ReactNode;
 }
 
-export const NJMenuItem = (props: Props) => {
+export const NMenuItem = (props: Props) => {
   return <Menu.Item>{props.children}</Menu.Item>;
 };

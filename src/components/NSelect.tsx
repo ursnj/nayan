@@ -8,7 +8,7 @@ interface Props {
   onSelected: (val: any) => void;
 }
 
-export const NJSelect = (props: Props) => {
+export const NSelect = (props: Props) => {
   const { selected, items } = props;
   return (
     <Listbox value={selected} onChange={props.onSelected} multiple={Array.isArray(selected)}>

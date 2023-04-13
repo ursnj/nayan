@@ -6,7 +6,7 @@ interface Props {
   text: string;
 }
 
-export const NJDisclosure = (props: Props) => {
+export const NDisclosure = (props: Props) => {
   const { title, text } = props;
 
   return (

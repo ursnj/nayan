@@ -4,6 +4,11 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    host: 'localhost',
+    port: 3000,
+    open: true
+  },
   build: {
     lib: {
       entry: 'index.ts',

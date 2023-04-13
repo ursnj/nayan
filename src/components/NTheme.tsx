@@ -5,7 +5,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const NJTheme = (props: Props) => {
+export const NTheme = (props: Props) => {
   const { children, theme } = props;
 
   useEffect(() => {

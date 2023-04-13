@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NJTheme } from './components/NJTheme';
+import { NTheme } from './components/NTheme';
 import MenuExample from './examples/MenuExample';
 import SelectExample from './examples/SelectExample';
 import DialogExample from './examples/DialogExample';
@@ -8,11 +8,11 @@ import DisClosureExample from './examples/DisClosureExample';
 import PopoverExample from './examples/PopoverExample';
 import RadioGroupExample from './examples/RadioGroupExample';
 import ComboExample from './examples/ComboExample';
-import { NJDivider } from './components/NJDivider';
+import { NDivider } from './components/NDivider';
 import InputExample from './examples/InputExample';
-import { NJText } from './components/NJText';
+import { NText } from './components/NText';
 import TabsExample from './examples/TabsExample';
-import { NJCard } from './components/NJCard';
+import { NCard } from './components/NCard';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -24,60 +24,60 @@ const App = () => {
   };
 
   return (
-    <NJTheme theme={theme}>
+    <NTheme theme={theme}>
       <div className="p-3">
         <div className="max-w-lg m-auto">
           <div className="mt-3">
-            <NJText className="cursor-pointer text-primary" text="Toggle Theme" onClick={changeTheme} />
+            <NText className="cursor-pointer text-primary" text="Toggle Theme" onClick={changeTheme} />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3">
             <InputExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3">
             <SelectExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3">
             <ComboExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3">
             <DisClosureExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3">
             <RadioGroupExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3">
             <TabsExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3 text-right">
             <MenuExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3 text-right">
             <PopoverExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3 text-right">
             <DialogExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <div className="mt-3 text-right">
             <SwitchExample />
           </div>
-          <NJDivider className="my-5" />
+          <NDivider className="my-5" />
           <h1 className="text mb-3 text-lg text-left">Card:</h1>
-          <NJCard>
+          <NCard>
             <div className="text p-2">Sample card</div>
-          </NJCard>
+          </NCard>
         </div>
       </div>
-    </NJTheme>
+    </NTheme>
   );
 };
 

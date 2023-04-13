@@ -8,7 +8,7 @@ interface Props {
   onChange?: (val: any) => void;
 }
 
-export const NJInput = (props: Props) => {
+export const NInput = (props: Props) => {
   const { type = 'text', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
     <div className={`njn-input-block ${className}`}>

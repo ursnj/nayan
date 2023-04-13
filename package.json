@@ -22,7 +22,7 @@
     "access": "public"
   },
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "rimraf dist && tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",

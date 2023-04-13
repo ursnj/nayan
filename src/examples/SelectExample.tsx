@@ -1,4 +1,4 @@
-import { NJSelect } from '../components/NJSelect';
+import { NSelect } from '../components/NSelect';
 import { useState } from 'react';
 
 const items = [
@@ -17,10 +17,10 @@ const SelectExample = () => {
   return (
     <div>
       <h1 className="text mb-3 text-lg">Select Single:</h1>
-      <NJSelect items={items} selected={selected} onSelected={setSelected} />
+      <NSelect items={items} selected={selected} onSelected={setSelected} />
       <div className="mt-3" />
       <h1 className="text mb-3 text-lg">Select Multi:</h1>
-      <NJSelect items={items} selected={selected1} onSelected={setSelected1} />
+      <NSelect items={items} selected={selected1} onSelected={setSelected1} />
     </div>
   );
 };

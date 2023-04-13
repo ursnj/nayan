@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const NJTabsContent = (props: Props) => {
+export const NTabsContent = (props: Props) => {
   const { className = '' } = props;
   return <Tab.Panel className={`njn-tab-content ${className}`}>{props.children}</Tab.Panel>;
 };

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NJSwitch } from '../components/NJSwitch';
+import { NSwitch } from '../components/NSwitch';
 
 const SwitchExample = () => {
   const [enabled, setEnabled] = useState(false);
@@ -7,7 +7,7 @@ const SwitchExample = () => {
   return (
     <>
       <h1 className="text mb-3 text-lg text-left">Switch:</h1>
-      <NJSwitch enabled={enabled} setEnabled={setEnabled} />
+      <NSwitch enabled={enabled} setEnabled={setEnabled} />
     </>
   );
 };

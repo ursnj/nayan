@@ -8,7 +8,7 @@ interface Props {
   onSelected: (val: any) => void;
 }
 
-export const NJCombo = (props: Props) => {
+export const NCombo = (props: Props) => {
   const { selected, items } = props;
   const [query, setQuery] = useState('');
 

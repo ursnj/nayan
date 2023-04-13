@@ -9,7 +9,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const NJTabs = (props: Props) => {
+export const NTabs = (props: Props) => {
   const { isFull = false, tabs, selected, children } = props;
 
   return (

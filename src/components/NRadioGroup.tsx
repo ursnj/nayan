@@ -7,7 +7,7 @@ interface Props {
   setSelected: (item: { id: string; label: string }) => void;
 }
 
-export const NJRadioGroup = (props: Props) => {
+export const NRadioGroup = (props: Props) => {
   const { isVertical = false, items, selected, setSelected } = props;
 
   return (

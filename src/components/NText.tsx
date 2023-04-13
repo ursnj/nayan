@@ -4,7 +4,7 @@ interface Props {
   onClick?: any;
 }
 
-export const NJText = (props: Props) => {
+export const NText = (props: Props) => {
   const { text, className = '' } = props;
   return (
     <div className={`njn-text text ${className}`} onClick={props.onClick}>

@@ -6,7 +6,7 @@ interface Props {
   children: ReactNode;
 }
 
-export const NJMenu = (props: Props) => {
+export const NMenu = (props: Props) => {
   const { trigger, children } = props;
   return (
     <Menu as="span" className="njn-menu relative">
