@@ -4,13 +4,14 @@ interface Props {
   value?: string;
   defaultValue?: string;
   placeholder?: string;
+  className?: string;
   onChange?: (val: any) => void;
 }
 
 export const NJInput = (props: Props) => {
-  const { type = 'text', label = '', placeholder = '', value = '', defaultValue = '', onChange, ...remaining } = props;
+  const { type = 'text', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
-    <div className="mb-3">
+    <div className={className}>
       {label && <label className="block pb-1 text-muted">{label}</label>}
       <input
         type={type}

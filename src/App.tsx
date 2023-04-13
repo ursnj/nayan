@@ -29,43 +29,43 @@ const App = () => {
           <div className="mt-3">
             <NJText className="text-primary cursor-pointer text-red-500" text="Toggle Theme" onClick={changeTheme} />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3">
             <InputExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3">
             <SelectExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3">
             <ComboExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3">
             <DisClosureExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3">
             <RadioGroupExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3">
             <TabsExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3 text-right">
             <MenuExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3 text-right">
             <PopoverExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3 text-right">
             <DialogExample />
           </div>
-          <NJDivider hasMargin={true} />
+          <NJDivider className="my-5" />
           <div className="mt-3 text-right">
             <SwitchExample />
           </div>

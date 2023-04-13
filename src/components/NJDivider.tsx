@@ -1,7 +1,8 @@
 interface Props {
-  hasMargin?: boolean;
+  className?: string;
 }
 
 export const NJDivider = (props: Props) => {
-  return <div className={`border-top ${props.hasMargin ? 'my-3' : 'my-0'}`} />;
+  const { className = '' } = props;
+  return <div className={`border-top ${className}`} />;
 };
