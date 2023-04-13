@@ -9,8 +9,8 @@ interface Props {
 export const NJMenu = (props: Props) => {
   const { trigger, children } = props;
   return (
-    <Menu as="div" className="njn-menu relative inline-block text-left">
-      <Menu.Button className="njn-menu-trigger inline-flex w-full justify-center">{trigger}</Menu.Button>
+    <Menu as="span" className="njn-menu relative">
+      <Menu.Button className="njn-menu-trigger">{trigger}</Menu.Button>
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"
@@ -19,7 +19,7 @@ export const NJMenu = (props: Props) => {
         leave="transition ease-in duration-75"
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95">
-        <Menu.Items className="njn-menu-items absolute right-0 mt-1 z-10 w-[150px] origin-top-right rounded card-background border">
+        <Menu.Items className="njn-menu-items absolute right-0 mt-1 z-10 w-[170px] origin-top-right rounded card-background border">
           {children}
         </Menu.Items>
       </Transition>
