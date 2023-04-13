@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --COLOR_PRIMARY: #0069ff;
+  --COLOR_PRIMARY: #005ee6;
+  --COLOR_PRIMARY_DARK: #0043a3;
+  --COLOR_PRIMARY_LIGHT: #0069ff;
   --COLOR_BACKGROUND: #f5f5f5;
   --COLOR_CARD: #ffffff;
   --COLOR_TEXT: #050505;
@@ -15,7 +17,9 @@
 }
 
 [data-theme='dark'] {
-  --COLOR_PRIMARY: #0069ff;
+  --COLOR_PRIMARY: #005ee6;
+  --COLOR_PRIMARY_DARK: #0043a3;
+  --COLOR_PRIMARY_LIGHT: #0069ff;
   --COLOR_BACKGROUND: #1f1f1f;
   --COLOR_CARD: #303030;
   --COLOR_TEXT: #f5f5f5;
