@@ -11,12 +11,15 @@ export const NJRadioGroup = (props: Props) => {
   const { isVertical = false, items, selected, setSelected } = props;
 
   return (
-    <RadioGroup value={selected} onChange={setSelected} className={`grid ${isVertical ? 'grid-flow-row' : 'grid-flow-col'} justify-stretch`}>
+    <RadioGroup
+      value={selected}
+      onChange={setSelected}
+      className={`njn-radio-group grid ${isVertical ? 'grid-flow-row' : 'grid-flow-col'} justify-stretch`}>
       {items.map(item => (
         <RadioGroup.Option key={item.id} value={item}>
           {({ checked }) => (
             <div
-              className={`${
+              className={`njn-radio-group-option ${
                 checked ? 'background-primary text-white' : 'card-background text'
               } p-2 cursor-pointer w-full text-center first:rounded rounded border`}>
               {item.label}

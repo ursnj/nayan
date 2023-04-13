@@ -1,17 +1,13 @@
-.text-primary {
-  color: var(--COLOR_PRIMARY) !important;
-}
-
 .text-muted {
-  color: gray !important;
-}
-
-.text-ni {
-  color: var(--COLOR_TEXT);
+  color: gray;
 }
 
 .text {
-  color: var(--COLOR_TEXT) !important;
+  color: var(--COLOR_TEXT);
+}
+
+.text-primary {
+  color: var(--COLOR_PRIMARY) !important;
 }
 
 .background {

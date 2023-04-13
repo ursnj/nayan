@@ -14,14 +14,14 @@ export const NJTabs = (props: Props) => {
 
   return (
     <Tab.Group selectedIndex={selected} onChange={props.setSelected}>
-      <Tab.List className={`border-bottom${isFull ? ' grid grid-flow-col justify-stretch' : ''}`}>
+      <Tab.List className={`njn-tabs border-bottom${isFull ? ' grid grid-flow-col justify-stretch' : ''}`}>
         {tabs.map(tab => (
           <Tab as={Fragment} key={tab}>
-            {({ selected }) => <button className={`px-3 py-2 ${selected ? 'tab-active' : 'tab-inactive'}`}>{tab}</button>}
+            {({ selected }) => <button className={`njn-tab px-3 py-2 ${selected ? 'tab-active' : 'tab-inactive'}`}>{tab}</button>}
           </Tab>
         ))}
       </Tab.List>
-      <Tab.Panels>{children}</Tab.Panels>
+      <Tab.Panels className="njn-tabs-content">{children}</Tab.Panels>
     </Tab.Group>
   );
 };

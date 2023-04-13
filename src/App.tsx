@@ -27,7 +27,7 @@ const App = () => {
       <div className="p-3">
         <div className="max-w-lg m-auto">
           <div className="mt-3">
-            <NJText className="text-primary cursor-pointer text-red-500" text="Toggle Theme" onClick={changeTheme} />
+            <NJText className="cursor-pointer text-primary" text="Toggle Theme" onClick={changeTheme} />
           </div>
           <NJDivider className="my-5" />
           <div className="mt-3">

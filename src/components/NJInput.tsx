@@ -11,8 +11,8 @@ interface Props {
 export const NJInput = (props: Props) => {
   const { type = 'text', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
-    <div className={className}>
-      {label && <label className="block pb-1 text-muted">{label}</label>}
+    <div className={`njn-input-block ${className}`}>
+      {label && <label className="njn-input-label block pb-1 text-muted">{label}</label>}
       <input
         type={type}
         {...(value && { value })}
@@ -20,7 +20,7 @@ export const NJInput = (props: Props) => {
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
         {...remaining}
-        className="w-full rounded card-background border text px-3 py-2"
+        className="njn-input w-full rounded card-background border text px-3 py-2"
       />
     </div>
   );
