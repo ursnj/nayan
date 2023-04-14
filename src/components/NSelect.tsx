@@ -20,7 +20,7 @@ export const NSelect = (props: Props) => {
           </span>
         </Listbox.Button>
         <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0">
-          <Listbox.Options className="nyn-select-options absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1">
+          <Listbox.Options className="nyn-select-options absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1 shadow-lg">
             {items.map((item: any) => (
               <Listbox.Option
                 key={item.id}

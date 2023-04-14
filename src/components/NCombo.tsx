@@ -31,7 +31,7 @@ export const NCombo = (props: Props) => {
           </Combobox.Button>
         </div>
         <Transition as={Fragment} leave="transition ease-in duration-100" leaveFrom="opacity-100" leaveTo="opacity-0" afterLeave={() => setQuery('')}>
-          <Combobox.Options className="nyn-combo-options absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1">
+          <Combobox.Options className="nyn-combo-options absolute mt-1 max-h-60 w-full z-10 overflow-auto rounded card-background border py-1 shadow-lg">
             {filteredItems.map((item: any) => (
               <Combobox.Option
                 key={item.id}
