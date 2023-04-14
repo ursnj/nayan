@@ -7,11 +7,15 @@
 }
 
 .nyn-text-primary {
-  color: var(--COLOR_PRIMARY) !important;
+  color: var(--COLOR_PRIMARY);
 }
 
 .nyn-background {
   background-color: var(--COLOR_BACKGROUND) !important;
+}
+
+.nyn-background-card {
+  background-color: var(--COLOR_CARD) !important;
 }
 
 .nyn-background-muted {
@@ -24,10 +28,6 @@
 
 .nyn-background-overlay {
   background-color: var(--COLOR_OVERLAY) !important;
-}
-
-.nyn-background-card {
-  background-color: var(--COLOR_CARD) !important;
 }
 
 .nyn-border {

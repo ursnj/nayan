@@ -7,7 +7,7 @@ interface Props {
 export const NText = (props: Props) => {
   const { text, className = '' } = props;
   return (
-    <div className={`nyn-text text ${className}`} onClick={props.onClick}>
+    <div className={`nyn-text ${className}`} onClick={props.onClick}>
       {text}
     </div>
   );
