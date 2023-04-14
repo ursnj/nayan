@@ -4,13 +4,14 @@ import { Fragment, ReactNode } from 'react';
 interface Props {
   trigger: ReactNode;
   children: ReactNode;
+  className?: string;
 }
 
 export const NMenu = (props: Props) => {
-  const { trigger, children } = props;
+  const { trigger, children, className = '' } = props;
   return (
     <Menu as="span" className="nyn-menu relative">
-      <Menu.Button className="nyn-menu-trigger">{trigger}</Menu.Button>
+      <Menu.Button className={`nyn-menu-trigger ${className}`}>{trigger}</Menu.Button>
       <Transition
         as={Fragment}
         enter="transition ease-out duration-100"
