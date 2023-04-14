@@ -40,7 +40,7 @@ export const NAlert = (props: Props) => {
       </div>
       {onClose && (
         <div className="cursor-pointer" onClick={onClose}>
-          <CloseIcon className="w-5 h-5" />
+          <CloseIcon className="w-5 h-5 ml-2" />
         </div>
       )}
     </div>

@@ -14,6 +14,7 @@ import { NText } from './components/NText';
 import TabsExample from './examples/TabsExample';
 import { NCard } from './components/NCard';
 import AlertExample from './examples/AlertExample';
+import BadgeExample from './examples/BadgeExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -34,6 +35,10 @@ const App = () => {
           <NDivider className="my-5" />
           <div className="mt-3">
             <AlertExample />
+          </div>
+          <NDivider className="my-5" />
+          <div className="mt-3">
+            <BadgeExample />
           </div>
           <NDivider className="my-5" />
           <h1 className="nyn-text mb-3 text-lg text-left">Card:</h1>
