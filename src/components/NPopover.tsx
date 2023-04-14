@@ -9,7 +9,7 @@ interface Props {
 export const NPopover = (props: Props) => {
   return (
     <Popover className="relative">
-      <Popover.Button className="njn.popover-trigger">{props.trigger}</Popover.Button>
+      <Popover.Button className="nyn-popover-trigger">{props.trigger}</Popover.Button>
       <Transition
         as={Fragment}
         enter="transition ease-out duration-200"

@@ -11,7 +11,7 @@ interface Props {
 export const NInput = (props: Props) => {
   const { type = 'text', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
-    <div className={`njn-input-block ${className}`}>
+    <div className={`nyn-input-block ${className}`}>
       {label && <label className="nyn-input-label block pb-1 text-muted">{label}</label>}
       <input
         type={type}

@@ -38,7 +38,7 @@ export const NCombo = (props: Props) => {
                 value={item}
                 disabled={!!item.disable}
                 className={({ active }) =>
-                  `njn-combo-option relative cursor-default select-none py-2 pl-10 pr-4 ${
+                  `nyn-combo-option relative cursor-default select-none py-2 pl-10 pr-4 ${
                     !!item.disable ? 'text-muted cursor-not-allowed' : 'text cursor-pointer'
                   } ${active ? 'background-muted' : ''}`
                 }>

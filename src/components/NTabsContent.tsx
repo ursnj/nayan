@@ -8,5 +8,5 @@ interface Props {
 
 export const NTabsContent = (props: Props) => {
   const { className = '' } = props;
-  return <Tab.Panel className={`njn-tab-content ${className}`}>{props.children}</Tab.Panel>;
+  return <Tab.Panel className={`nyn-tab-content ${className}`}>{props.children}</Tab.Panel>;
 };

@@ -27,13 +27,13 @@ export const NSelect = (props: Props) => {
                 value={item}
                 disabled={!!item.disable}
                 className={({ active }) =>
-                  `njn-select-option relative cursor-default select-none py-2 pl-10 pr-4 ${
+                  `nyn-select-option relative cursor-default select-none py-2 pl-10 pr-4 ${
                     !!item.disable ? 'text-muted cursor-not-allowed' : 'text cursor-pointer'
                   } ${active ? 'background-muted' : ''}`
                 }>
                 {({ selected }) => (
                   <>
-                    <span className={`njn-select-option-text block truncate ${selected ? 'font-medium' : 'font-normal'}`}>{item.label}</span>
+                    <span className={`nyn-select-option-text block truncate ${selected ? 'font-medium' : 'font-normal'}`}>{item.label}</span>
                     {selected ? (
                       <span className="nyn-select-option-icon absolute inset-y-0 left-0 flex items-center pl-3 text-primary">
                         <CheckIcon className="h-5 w-5" aria-hidden="true" />
