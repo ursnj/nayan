@@ -21,7 +21,7 @@ export const NTabs = (props: Props) => {
           </Tab>
         ))}
       </Tab.List>
-      <Tab.Panels className="nyn-tabs-content">{children}</Tab.Panels>
+      <Tab.Panels className="nyn-tabs-content w-full h-full">{children}</Tab.Panels>
     </Tab.Group>
   );
 };
