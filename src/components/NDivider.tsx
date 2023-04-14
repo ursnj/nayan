@@ -4,5 +4,5 @@ interface Props {
 
 export const NDivider = (props: Props) => {
   const { className = '' } = props;
-  return <div className={`nyn-divider border-top ${className}`} />;
+  return <div className={`nyn-divider nyn-border-top ${className}`} />;
 };

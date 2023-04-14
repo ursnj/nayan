@@ -12,7 +12,7 @@ export const NInput = (props: Props) => {
   const { type = 'text', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
     <div className={`nyn-input-block ${className}`}>
-      {label && <label className="nyn-input-label block pb-1 text-muted">{label}</label>}
+      {label && <label className="nyn-input-label block pb-1 nyn-text-muted">{label}</label>}
       <input
         type={type}
         {...(value && { value })}
@@ -20,7 +20,7 @@ export const NInput = (props: Props) => {
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
         {...remaining}
-        className="nyn-input w-full rounded card-background border text px-3 py-2"
+        className="nyn-input w-full rounded nyn-background-card nyn-border nyn-text px-3 py-2"
       />
     </div>
   );

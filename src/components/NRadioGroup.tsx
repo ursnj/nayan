@@ -20,8 +20,8 @@ export const NRadioGroup = (props: Props) => {
           {({ checked }) => (
             <div
               className={`nyn-radio-group-option ${
-                checked ? 'background-primary text-white' : 'card-background text'
-              } p-2 cursor-pointer w-full text-center first:rounded rounded border`}>
+                checked ? 'nyn-background-primary text-white' : 'nyn-background-card nyn-text'
+              } p-2 cursor-pointer w-full text-center first:rounded rounded nyn-border`}>
               {item.label}
             </div>
           )}

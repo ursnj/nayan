@@ -1,57 +1,61 @@
-.text-muted {
-  color: gray;
-}
-
-.text {
+.nyn-text {
   color: var(--COLOR_TEXT);
 }
 
-.text-primary {
+.nyn-text-muted {
+  color: gray;
+}
+
+.nyn-text-primary {
   color: var(--COLOR_PRIMARY) !important;
 }
 
-.background {
+.nyn-background {
   background-color: var(--COLOR_BACKGROUND) !important;
 }
 
-.background-primary {
+.nyn-background-muted {
+  background-color: gray !important;
+}
+
+.nyn-background-primary {
   background-color: var(--COLOR_PRIMARY) !important;
 }
 
-.background-overlay {
+.nyn-background-overlay {
   background-color: var(--COLOR_OVERLAY) !important;
 }
 
-.card-background {
+.nyn-background-card {
   background-color: var(--COLOR_CARD) !important;
 }
 
-.border {
+.nyn-border {
   border: 1px solid var(--COLOR_BORDER) !important;
 }
 
-.border-top {
+.nyn-border-top {
   border-top: 1px solid var(--COLOR_BORDER) !important;
 }
 
-.border-bottom {
+.nyn-border-bottom {
   border-bottom: 1px solid var(--COLOR_BORDER) !important;
 }
 
-.border-right {
+.nyn-border-right {
   border-right: 1px solid var(--COLOR_BORDER) !important;
 }
 
-.border-left {
+.nyn-border-left {
   border-left: 1px solid var(--COLOR_BORDER) !important;
 }
 
-.tab-active {
+.nyn-tab-active {
   color: var(--COLOR_PRIMARY) !important;
   border-bottom: 3px solid var(--COLOR_PRIMARY) !important;
 }
 
-.tab-inactive {
+.nyn-tab-inactive {
   color: var(--COLOR_TEXT) !important;
   border-bottom: 3px solid transparent !important;
 }

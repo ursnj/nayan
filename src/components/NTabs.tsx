@@ -14,10 +14,10 @@ export const NTabs = (props: Props) => {
 
   return (
     <Tab.Group selectedIndex={selected} onChange={props.setSelected}>
-      <Tab.List className={`nyn-tabs border-bottom${isFull ? ' grid grid-flow-col justify-stretch' : ''}`}>
+      <Tab.List className={`nyn-tabs nyn-border-bottom${isFull ? ' grid grid-flow-col justify-stretch' : ''}`}>
         {tabs.map(tab => (
           <Tab as={Fragment} key={tab}>
-            {({ selected }) => <button className={`nyn-tab px-3 py-2 ${selected ? 'tab-active' : 'tab-inactive'}`}>{tab}</button>}
+            {({ selected }) => <button className={`nyn-tab px-3 py-2 ${selected ? 'nyn-tab-active' : 'nyn-tab-inactive'}`}>{tab}</button>}
           </Tab>
         ))}
       </Tab.List>

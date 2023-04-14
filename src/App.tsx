@@ -13,6 +13,7 @@ import InputExample from './examples/InputExample';
 import { NText } from './components/NText';
 import TabsExample from './examples/TabsExample';
 import { NCard } from './components/NCard';
+import AlertExample from './examples/AlertExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -28,8 +29,17 @@ const App = () => {
       <div className="p-3">
         <div className="max-w-lg m-auto">
           <div className="mt-3">
-            <NText className="cursor-pointer text-primary" text="Toggle Theme" onClick={changeTheme} />
+            <NText className="cursor-pointer nyn-text-primary" text="Toggle Theme" onClick={changeTheme} />
           </div>
+          <NDivider className="my-5" />
+          <div className="mt-3">
+            <AlertExample />
+          </div>
+          <NDivider className="my-5" />
+          <h1 className="nyn-text mb-3 text-lg text-left">Card:</h1>
+          <NCard>
+            <div className="nyn-text p-2">Sample card</div>
+          </NCard>
           <NDivider className="my-5" />
           <div className="mt-3">
             <InputExample />
@@ -70,11 +80,6 @@ const App = () => {
           <div className="mt-3 text-right">
             <SwitchExample />
           </div>
-          <NDivider className="my-5" />
-          <h1 className="text mb-3 text-lg text-left">Card:</h1>
-          <NCard>
-            <div className="text p-2">Sample card</div>
-          </NCard>
         </div>
       </div>
     </NTheme>

@@ -6,11 +6,11 @@ import { NButton } from '../components/NButton';
 const MenuExample = () => {
   return (
     <>
-      <h1 className="text mb-3 text-lg text-left">Dropdown Menu:</h1>
+      <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
       <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600" text="Open Menu" />}>
         <>
           <NMenuItem>
-            <button className="text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
+            <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
           </NMenuItem>
           <NDivider />
           <NMenuItem>

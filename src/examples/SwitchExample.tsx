@@ -6,7 +6,7 @@ const SwitchExample = () => {
 
   return (
     <>
-      <h1 className="text mb-3 text-lg text-left">Switch:</h1>
+      <h1 className="nyn-text mb-3 text-lg text-left">Switch:</h1>
       <NSwitch enabled={enabled} setEnabled={setEnabled} />
     </>
   );

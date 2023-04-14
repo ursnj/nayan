@@ -1,3 +1,4 @@
+export * from './src/components/NAlert';
 export * from './src/components/Icons';
 export * from './src/components/NCard';
 export * from './src/components/NCombo';

@@ -10,10 +10,10 @@ const InputExample = () => {
 
   return (
     <>
-      <h1 className="text mb-3 text-lg text-left">Custom Input:</h1>
+      <h1 className="nyn-text mb-3 text-lg text-left">Custom Input:</h1>
       <NInput type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <h1 className="text mb-3 mt-3 text-lg text-left">React Hook Form Input:</h1>
+        <h1 className="nyn-text mb-3 mt-3 text-lg text-left">React Hook Form Input:</h1>
         <NInput
           type="email"
           label="Email"
