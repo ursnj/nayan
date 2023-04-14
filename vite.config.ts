@@ -4,7 +4,6 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/nayan',
   server: {
     host: 'localhost',
     port: 3000,
@@ -13,7 +12,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: 'index.ts',
-      name: 'NJUI',
+      name: 'Nayan',
       fileName: format => `index.${format}.js`
     },
     rollupOptions: {
