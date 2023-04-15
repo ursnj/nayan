@@ -111,9 +111,7 @@ const App = () => {
 
   return (
     <NTheme theme={theme}>
-      <div className="p-3">
-        Your content goes here.
-      </div>
+      <div className="p-3">Your content goes here.</div>
     </NTheme>
   );
 };
@@ -364,13 +362,13 @@ export default DisClosureExample;
 ### Divider
 
 ```jsx
-import { NDivider } from "../components/NDivider";
+import { NDivider } from '../components/NDivider';
 
 const DividerExample = () => {
   return (
     <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg">Divider:</h1>
-      <NDivider className="my-3"/>
+      <NDivider className="my-3" />
     </div>
   );
 };
