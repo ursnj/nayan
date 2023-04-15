@@ -94,15 +94,44 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 
 ## 🔨 Usage
 
+### Theme
+
+```jsx
+import { useState } from 'react';
+import { NTheme } from './components/NTheme';
+
+const App = () => {
+  const [theme, setTheme] = useState(localStorage.getItem('THEME'));
+
+  const changeTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    localStorage.setItem('THEME', newTheme);
+    setTheme(newTheme);
+  };
+
+  return (
+    <NTheme theme={theme}>
+      <div className="p-3">
+        Your content goes here.
+      </div>
+    </NTheme>
+  );
+};
+
+export default App;
+```
+
 ### Alert
 
-```tsx
+```jsx
 import { AlertTypes, NAlert } from '../components/NAlert';
 
 const AlertExample = () => {
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg text-left">Alert:</h1>
+      <NAlert type={AlertTypes.DEFAULT} message="New version of application available!" onClose={() => console.log('Alert closed')} />
+      <div className="mb-3" />
       <NAlert type={AlertTypes.INFO} message="New version of application available!" onClose={() => console.log('Alert closed')} />
       <div className="mb-3" />
       <NAlert type={AlertTypes.SUCCESS} message="New version of application available!" onClose={() => console.log('Alert closed')} />
@@ -111,7 +140,7 @@ const AlertExample = () => {
       <div className="mb-3" />
       <NAlert type={AlertTypes.ERROR} message="New version of application available!" onClose={() => console.log('Alert closed')} />
       <div className="mb-3" />
-    </>
+    </div>
   );
 };
 
@@ -120,27 +149,138 @@ export default AlertExample;
 
 ### Badge
 
-```tsx
-import { BadgeSize, NBadge } from '../components/NBadge';
+```jsx
+import { NBadge } from '../components/NBadge';
+import { Size } from '../components/Types';
 
 const BadgeExample = () => {
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg text-left">Badge:</h1>
-      <NBadge size={BadgeSize.XS} name="Sample" onClose={() => console.log('Badge closed')} className="text-blue-700 bg-blue-300 mr-2" />
-      <NBadge size={BadgeSize.SM} name="Sample" onClose={() => console.log('Badge closed')} className="text-green-700 bg-green-300 mr-2" />
-      <NBadge size={BadgeSize.MD} name="Sample" onClose={() => console.log('Badge closed')} className="text-yellow-700 bg-yellow-300 mr-2" />
-      <NBadge size={BadgeSize.LG} name="Sample" onClose={() => console.log('Badge closed')} className="text-red-700 bg-red-300 mr-2" />
-    </>
+      <NBadge size={Size.XS} name="Sample" onClose={() => console.log('Badge closed')} className="nyn-text nyn-background-card nyn-border mr-2" />
+      <NBadge size={Size.XS} name="Sample" onClose={() => console.log('Badge closed')} className="text-blue-700 bg-blue-300 mr-2" />
+      <NBadge size={Size.SM} name="Sample" onClose={() => console.log('Badge closed')} className="text-green-700 bg-green-300 mr-2" />
+      <NBadge size={Size.MD} name="Sample" onClose={() => console.log('Badge closed')} className="text-yellow-700 bg-yellow-300 mr-2" />
+      <NBadge size={Size.LG} name="Sample" onClose={() => console.log('Badge closed')} className="text-red-700 bg-red-300 mr-2" />
+    </div>
   );
 };
 
 export default BadgeExample;
 ```
 
-### Combobox
+### Button
 
-```tsx
+```jsx
+import { NButton } from '../components/NButton';
+import { Size } from '../components/Types';
+
+const BadgeExample = () => {
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg text-left">Buttons:</h1>
+      <NButton size={Size.XS} onClick={() => console.log('Button clicked')} className="nyn-text nyn-background-card nyn-border mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.XS}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.SM}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.MD}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.LG}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-red-500 hover:bg-red-600 border border-red-600 mr-2">
+        Button
+      </NButton>
+    </div>
+  );
+};
+
+export default BadgeExample;
+```
+
+### Card
+
+```jsx
+import { NCard } from '../components/NCard';
+
+const CardExample = () => {
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg">Card:</h1>
+      <NCard className="p-2">
+        <div className="nyn-text">Sample Card</div>
+      </NCard>
+    </div>
+  );
+};
+
+export default CardExample;
+```
+
+### Checkbox
+
+```jsx
+import { NCheck } from '../components/NCheck';
+import { useState } from 'react';
+import { NLink } from '../components/NLink';
+import { NText } from '../components/NText';
+import { Size } from '../components/Types';
+
+const CheckExample = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg">Checkbox:</h1>
+      <NCheck size={Size.XS} className="" isChecked={isChecked} onChange={(e: any) => setIsChecked(e.target.checked)}>
+        <NText className="inline">
+          Sample label for checkbox. accept <NLink> terms</NLink>
+        </NText>
+      </NCheck>
+      <div className="mb-3" />
+      <NCheck size={Size.SM} className="" isChecked={isChecked} onChange={(e: any) => setIsChecked(e.target.checked)}>
+        <NText className="inline">
+          Sample label for checkbox. accept <NLink> terms</NLink>
+        </NText>
+      </NCheck>
+      <div className="mb-3" />
+      <NCheck size={Size.MD} className="" isChecked={isChecked} onChange={(e: any) => setIsChecked(e.target.checked)}>
+        <NText className="inline">
+          Sample label for checkbox. accept <NLink> terms</NLink>
+        </NText>
+      </NCheck>
+      <div className="mb-3" />
+      <NCheck size={Size.LG} className="" isChecked={isChecked} onChange={(e: any) => setIsChecked(e.target.checked)}>
+        <NText className="inline">
+          Sample label for checkbox. accept <NLink> terms</NLink>
+        </NText>
+      </NCheck>
+      <div className="mb-3" />
+    </div>
+  );
+};
+
+export default CheckExample;
+```
+
+### Combo box
+
+```jsx
 import { NCombo } from '../components/NCombo';
 import { useState } from 'react';
 
@@ -158,7 +298,7 @@ const SelectExample = () => {
   const [selected1, setSelected1] = useState([items[0]]);
 
   return (
-    <div>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg">Combo Single:</h1>
       <NCombo items={items} selected={selected} onSelected={setSelected} />
       <div className="mt-3" />
@@ -173,7 +313,7 @@ export default SelectExample;
 
 ### Dialog
 
-```tsx
+```jsx
 import { NDialog } from '../components/NDialog';
 import { useState } from 'react';
 import { NButton } from '../components/NButton';
@@ -181,11 +321,13 @@ import { NButton } from '../components/NButton';
 const DialogExample = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
+    <div className="my-10 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
       <NDialog
         trigger={
-          <NButton className="text-sm font-medium text-white bg-green-500 hover:bg-green-600" text="Open Dialog" onClick={() => setIsOpen(true)} />
+          <NButton className="text-sm font-medium text-white bg-green-500 hover:bg-green-600" onClick={() => setIsOpen(true)}>
+            Open Dialog
+          </NButton>
         }
         isOpen={isOpen}
         closeModal={() => setIsOpen(false)}>
@@ -195,7 +337,7 @@ const DialogExample = () => {
           </p>
         </div>
       </NDialog>
-    </>
+    </div>
   );
 };
 
@@ -204,15 +346,15 @@ export default DialogExample;
 
 ### Disclosure
 
-```tsx
+```jsx
 import { NDisclosure } from '../components/NDisclosure';
 
 const DisClosureExample = () => {
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg">Disclosure:</h1>
       <NDisclosure title="Enable Notifications" text="Enable Notifications Description." />
-    </>
+    </div>
   );
 };
 
@@ -221,7 +363,7 @@ export default DisClosureExample;
 
 ### Input
 
-```tsx
+```jsx
 import { NInput } from '../components/NInput';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -233,7 +375,7 @@ const InputExample = () => {
   const onSubmit = (data: any) => console.log(data);
 
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg text-left">Custom Input:</h1>
       <NInput type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -247,16 +389,38 @@ const InputExample = () => {
           {...register('email')}
         />
       </form>
-    </>
+    </div>
   );
 };
 
 export default InputExample;
 ```
 
+### Link
+
+```jsx
+import { NLink } from '../components/NLink';
+
+const LinkExample = () => {
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg">Links:</h1>
+      <div className="nyn-text">
+        This is a sample paragraph with some <NLink>Link</NLink>.
+      </div>
+      <div className="nyn-text">
+        This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
+      </div>
+    </div>
+  );
+};
+
+export default LinkExample;
+```
+
 ### Menu
 
-```tsx
+```jsx
 import { NMenu } from '../components/NMenu';
 import { NMenuItem } from '../components/NMenuItem';
 import { NDivider } from '../components/NDivider';
@@ -264,9 +428,9 @@ import { NButton } from '../components/NButton';
 
 const MenuExample = () => {
   return (
-    <>
+    <div className="my-10 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
-      <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600" text="Open Menu" />}>
+      <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600">Open Menu</NButton>}>
         <>
           <NMenuItem>
             <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
@@ -277,7 +441,7 @@ const MenuExample = () => {
           </NMenuItem>
         </>
       </NMenu>
-    </>
+    </div>
   );
 };
 
@@ -286,30 +450,76 @@ export default MenuExample;
 
 ### Popover
 
-```tsx
+```jsx
 import { NPopover } from '../components/NPopover';
 import { NButton } from '../components/NButton';
 
 const PopoverExample = () => {
   return (
-    <>
+    <div className="my-10 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Popover:</h1>
-      <NPopover trigger={<NButton className="text-sm font-medium text-white bg-primary hover:bg-primary-dark" text="Open Popup" />}>
+      <NPopover trigger={<NButton className="text-sm font-medium text-white bg-primary hover:bg-primary-dark">Open Popup</NButton>}>
         <div className="overflow-hidden p-3">
           <div className="text-sm font-medium nyn-text">Documentation</div>
           <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
         </div>
       </NPopover>
-    </>
+    </div>
   );
 };
 
 export default PopoverExample;
 ```
 
-### Radio Group
+### Radio
 
-```tsx
+```jsx
+import { useState } from 'react';
+import { NLink } from '../components/NLink';
+import { NText } from '../components/NText';
+import { Size } from '../components/Types';
+import { NRadio } from '../components/NRadio';
+
+const RadioExample = () => {
+  const [selectedValue, setSelectedValue] = useState('LG');
+
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg">Radio:</h1>
+      <NRadio size={Size.XS} name="radio" value="XS" selectedValue={selectedValue} onChange={(e: any) => setSelectedValue(e.target.value)}>
+        <NText className="inline">
+          Sample label for radio. accept <NLink> terms</NLink>
+        </NText>
+      </NRadio>
+      <div className="mb-3" />
+      <NRadio size={Size.SM} name="radio" value="SM" selectedValue={selectedValue} onChange={(e: any) => setSelectedValue(e.target.value)}>
+        <NText className="inline">
+          Sample label for radio. accept <NLink> terms</NLink>
+        </NText>
+      </NRadio>
+      <div className="mb-3" />
+      <NRadio size={Size.MD} name="radio" value="MD" selectedValue={selectedValue} onChange={(e: any) => setSelectedValue(e.target.value)}>
+        <NText className="inline">
+          Sample label for radio. accept <NLink> terms</NLink>
+        </NText>
+      </NRadio>
+      <div className="mb-3" />
+      <NRadio size={Size.LG} name="radio" value="LG" selectedValue={selectedValue} onChange={(e: any) => setSelectedValue(e.target.value)}>
+        <NText className="inline">
+          Sample label for radio. accept <NLink> terms</NLink>
+        </NText>
+      </NRadio>
+      <div className="mb-3" />
+    </div>
+  );
+};
+
+export default RadioExample;
+```
+
+### Radio group
+
+```jsx
 import { useState } from 'react';
 import { NRadioGroup } from '../components/NRadioGroup';
 
@@ -324,13 +534,13 @@ const RadioGroupExample = () => {
   const [selected1, setSelected1] = useState(items[0]);
 
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg">Radio Group Horizontal:</h1>
       <NRadioGroup items={items} selected={selected} setSelected={setSelected} />
       <div className="mt-3" />
       <h1 className="nyn-text mb-3 text-lg">Radio Group Vertical:</h1>
       <NRadioGroup isVertical={true} items={items} selected={selected1} setSelected={setSelected1} />
-    </>
+    </div>
   );
 };
 
@@ -339,7 +549,7 @@ export default RadioGroupExample;
 
 ### Select
 
-```tsx
+```jsx
 import { NSelect } from '../components/NSelect';
 import { useState } from 'react';
 
@@ -357,7 +567,7 @@ const SelectExample = () => {
   const [selected1, setSelected1] = useState([items[0]]);
 
   return (
-    <div>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg">Select Single:</h1>
       <NSelect items={items} selected={selected} onSelected={setSelected} />
       <div className="mt-3" />
@@ -372,7 +582,7 @@ export default SelectExample;
 
 ### Switch
 
-```tsx
+```jsx
 import { useState } from 'react';
 import { NSwitch } from '../components/NSwitch';
 
@@ -380,10 +590,10 @@ const SwitchExample = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <>
+    <div className="my-10 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Switch:</h1>
       <NSwitch enabled={enabled} setEnabled={setEnabled} />
-    </>
+    </div>
   );
 };
 
@@ -392,7 +602,7 @@ export default SwitchExample;
 
 ### Tabs
 
-```tsx
+```jsx
 import { NTabs } from '../components/NTabs';
 import { useState } from 'react';
 import { NTabsContent } from '../components/NTabsContent';
@@ -402,25 +612,72 @@ const tabs = ['Posts', 'Saved'];
 const TabsExample = () => {
   const [selected, setSelected] = useState(0);
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg text-left">Tabs:</h1>
       <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
-        <NTabsContent className="px-3 py-2 nyn-text">Content1</NTabsContent>
-        <NTabsContent className="px-3 p-2 nyn-text">Content2</NTabsContent>
+        <NTabsContent className="px-3 py-2 nyn-text-muted">Content1</NTabsContent>
+        <NTabsContent className="px-3 p-2 nyn-text-muted">Content2</NTabsContent>
       </NTabs>
-      <h1 className="nyn-text mb-3 mt-3 text-lg text-left">Tabs Full Width:</h1>
+      <h1 className="nyn-text mb-3 mt-5 text-lg text-left">Tabs Full Width:</h1>
       <NTabs isFull={true} tabs={tabs} selected={selected} setSelected={setSelected}>
-        <NTabsContent className="px-3 p-2 nyn-text">Content3</NTabsContent>
-        <NTabsContent className="px-3 p-2 nyn-text">Content4</NTabsContent>
+        <NTabsContent className="px-3 p-2 nyn-text-muted">Content3</NTabsContent>
+        <NTabsContent className="px-3 p-2 nyn-text-muted">Content4</NTabsContent>
       </NTabs>
-    </>
+    </div>
   );
 };
 
 export default TabsExample;
 ```
 
-For more examples checkout [component wise examples](https://github.com/ursnj/nayan/tree/main/src/examples).
+### Textarea
+
+```jsx
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { NTextarea } from '../components/NTextarea';
+
+const TextareaExample = () => {
+  const { register, handleSubmit } = useForm();
+  const [address, setAddress] = useState('Bangalore, India');
+
+  const onSubmit = (data: any) => console.log(data);
+
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg text-left">Custom Textarea:</h1>
+      <NTextarea label="Address" placeholder="Enter address" className="mb-3" rows={3} value={address} onChange={e => setAddress(e.target.value)} />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <h1 className="nyn-text mb-3 mt-3 text-lg text-left">React Hook Form Textarea:</h1>
+        <NTextarea rows={3} label="Address" placeholder="Enter address" className="mb-3" defaultValue="Bangalore, India" {...register('address')} />
+      </form>
+    </div>
+  );
+};
+
+export default TextareaExample;
+```
+
+### Text
+
+```jsx
+import { NLink } from '../components/NLink';
+import { NText } from '../components/NText';
+
+const TextExample = () => {
+  return (
+    <div className="my-10">
+      <h1 className="nyn-text mb-3 text-lg">Text:</h1>
+      <NText>This is a sample text.</NText>
+      <NText className="text-base text-green-600">This is a sample text with custom styles.</NText>
+    </div>
+  );
+};
+
+export default TextExample;
+```
+
+For more info checkout example source code from [Github](https://github.com/ursnj/nayan/tree/main/src/examples) and run it in local.
 
 ## ⌨️ Development
 
