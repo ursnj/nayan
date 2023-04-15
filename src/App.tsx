@@ -20,6 +20,7 @@ import LinkExample from './examples/LinkExample';
 import TextExample from './examples/TextExample';
 import CheckExample from './examples/CheckExample';
 import RadioExample from './examples/RadioExample';
+import TextareaExample from './examples/TextareaExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -48,6 +49,7 @@ const App = () => {
           <LinkExample />
           <DisClosureExample />
           <InputExample />
+          <TextareaExample />
           <CheckExample />
           <RadioExample />
           <SelectExample />
