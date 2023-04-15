@@ -19,6 +19,7 @@ import CardExample from './examples/CardExample';
 import LinkExample from './examples/LinkExample';
 import TextExample from './examples/TextExample';
 import CheckExample from './examples/CheckExample';
+import RadioExample from './examples/RadioExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -48,6 +49,7 @@ const App = () => {
           <DisClosureExample />
           <InputExample />
           <CheckExample />
+          <RadioExample />
           <SelectExample />
           <ComboExample />
           <RadioGroupExample />
