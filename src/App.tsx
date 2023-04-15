@@ -21,6 +21,7 @@ import TextExample from './examples/TextExample';
 import CheckExample from './examples/CheckExample';
 import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
+import DividerExample from './examples/DividerExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -45,6 +46,7 @@ const App = () => {
           <BadgeExample />
           <ButtonExample />
           <CardExample />
+          <DividerExample />
           <TextExample />
           <LinkExample />
           <DisClosureExample />
