@@ -16,6 +16,8 @@ import AlertExample from './examples/AlertExample';
 import BadgeExample from './examples/BadgeExample';
 import ButtonExample from './examples/ButtonExample';
 import CardExample from './examples/CardExample';
+import LinkExample from './examples/LinkExample';
+import TextExample from './examples/TextExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -31,13 +33,17 @@ const App = () => {
       <div className="p-3">
         <div className="max-w-lg m-auto">
           <div className="my-5">
-            <NText className="cursor-pointer nyn-text-primary" text="Toggle Theme" onClick={changeTheme} />
+            <NText className="cursor-pointer nyn-text-primary" onClick={changeTheme}>
+              Toggle Theme
+            </NText>
           </div>
           <NDivider />
           <AlertExample />
           <BadgeExample />
           <ButtonExample />
           <CardExample />
+          <TextExample />
+          <LinkExample />
           <DisClosureExample />
           <InputExample />
           <SelectExample />
