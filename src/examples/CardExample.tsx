@@ -1,5 +1,3 @@
-import { NDisclosure } from '../components/NDisclosure';
-import { NLink } from '../components/NLink';
 import { NCard } from '../components/NCard';
 
 const CardExample = () => {

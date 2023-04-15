@@ -2,6 +2,7 @@ export * from './src/components/Icons';
 export * from './src/components/NAlert';
 export * from './src/components/NBadge';
 export * from './src/components/NCard';
+export * from './src/components/NCheck';
 export * from './src/components/NCombo';
 export * from './src/components/NDialog';
 export * from './src/components/NDivider';
