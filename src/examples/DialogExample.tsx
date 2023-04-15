@@ -5,7 +5,7 @@ import { NButton } from '../components/NButton';
 const DialogExample = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <>
+    <div className="my-10 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
       <NDialog
         trigger={
@@ -21,7 +21,7 @@ const DialogExample = () => {
           </p>
         </div>
       </NDialog>
-    </>
+    </div>
   );
 };
 

@@ -12,11 +12,10 @@ import { NDivider } from './components/NDivider';
 import InputExample from './examples/InputExample';
 import { NText } from './components/NText';
 import TabsExample from './examples/TabsExample';
-import { NCard } from './components/NCard';
 import AlertExample from './examples/AlertExample';
 import BadgeExample from './examples/BadgeExample';
-import { NLink } from './components/NLink';
 import ButtonExample from './examples/ButtonExample';
+import CardExample from './examples/CardExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -38,52 +37,17 @@ const App = () => {
           <AlertExample />
           <BadgeExample />
           <ButtonExample />
-          <h1 className="nyn-text mb-3 text-lg text-left">Card:</h1>
-          <NCard>
-            <div className="nyn-text p-2">
-              Sample <NLink className="">Card</NLink>
-            </div>
-          </NCard>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <InputExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <SelectExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <ComboExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <DisClosureExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <RadioGroupExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <TabsExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3 text-right">
-            <MenuExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3 text-right">
-            <PopoverExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3 text-right">
-            <DialogExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3 text-right">
-            <SwitchExample />
-          </div>
+          <CardExample />
+          <DisClosureExample />
+          <InputExample />
+          <SelectExample />
+          <ComboExample />
+          <RadioGroupExample />
+          <TabsExample />
+          <DialogExample />
+          <MenuExample />
+          <PopoverExample />
+          <SwitchExample />
         </div>
       </div>
     </NTheme>

@@ -13,7 +13,7 @@ export const NDisclosure = (props: Props) => {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="nyn-disclosure flex w-full justify-between px-3 py-2 text-left text-sm nyn-border-bottom">
+          <Disclosure.Button className="nyn-disclosure flex w-full justify-between px-3 py-2 text-left text-sm">
             <span className="nyn-disclosure-title nyn-text">{title}</span>
             <ChevronUpIcon className={`nyn-disclosure-icon ${open ? 'rotate-0 transform' : 'rotate-180'} h-5 w-5 nyn-text-muted`} />
           </Disclosure.Button>

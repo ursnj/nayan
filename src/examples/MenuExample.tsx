@@ -5,7 +5,7 @@ import { NButton } from '../components/NButton';
 
 const MenuExample = () => {
   return (
-    <>
+    <div className="my-10 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
       <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600">Open Menu</NButton>}>
         <>
@@ -18,7 +18,7 @@ const MenuExample = () => {
           </NMenuItem>
         </>
       </NMenu>
-    </>
+    </div>
   );
 };
 

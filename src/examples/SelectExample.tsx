@@ -15,7 +15,7 @@ const SelectExample = () => {
   const [selected1, setSelected1] = useState([items[0]]);
 
   return (
-    <div>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg">Select Single:</h1>
       <NSelect items={items} selected={selected} onSelected={setSelected} />
       <div className="mt-3" />
