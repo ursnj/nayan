@@ -18,4 +18,5 @@ export * from './src/components/NTabs';
 export * from './src/components/NTabsContent';
 export * from './src/components/NText';
 export * from './src/components/NTheme';
+export * from './src/components/Types';
 import './src/styles/styles.css';

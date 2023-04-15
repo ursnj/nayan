@@ -1,6 +1,7 @@
 import { CloseIcon, ErrorIcon, InfoIcon, SuccessIcon, WarningIcon } from './Icons';
 
 export enum AlertTypes {
+  DEFAULT = 'DEFAULT',
   INFO = 'INFO',
   SUCCESS = 'SUCCESS',
   WARNING = 'WARNING',
@@ -8,6 +9,7 @@ export enum AlertTypes {
 }
 
 const iconsMapping = {
+  [AlertTypes.DEFAULT]: <InfoIcon className="w-5 h-5 mr-2" />,
   [AlertTypes.INFO]: <InfoIcon className="w-5 h-5 mr-2" />,
   [AlertTypes.SUCCESS]: <SuccessIcon className="w-5 h-5 mr-2" />,
   [AlertTypes.WARNING]: <WarningIcon className="w-5 h-5 mr-2" />,
@@ -15,10 +17,11 @@ const iconsMapping = {
 };
 
 const classesMapping = {
-  [AlertTypes.INFO]: 'bg-blue-300 text-blue-700 border border-blue-700',
-  [AlertTypes.SUCCESS]: 'bg-green-300 text-green-700 border border-green-700',
-  [AlertTypes.WARNING]: 'bg-yellow-300 text-yellow-700 border border-yellow-700',
-  [AlertTypes.ERROR]: 'bg-red-300 text-red-700 border border-red-700'
+  [AlertTypes.DEFAULT]: 'nyn-background-card nyn-text nyn-border',
+  [AlertTypes.INFO]: 'bg-blue-300 text-blue-700 border border-blue-400',
+  [AlertTypes.SUCCESS]: 'bg-green-300 text-green-700 border border-green-400',
+  [AlertTypes.WARNING]: 'bg-yellow-300 text-yellow-700 border border-yellow-400',
+  [AlertTypes.ERROR]: 'bg-red-300 text-red-700 border border-red-400'
 };
 
 interface Props {

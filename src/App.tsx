@@ -16,6 +16,7 @@ import { NCard } from './components/NCard';
 import AlertExample from './examples/AlertExample';
 import BadgeExample from './examples/BadgeExample';
 import { NLink } from './components/NLink';
+import ButtonExample from './examples/ButtonExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -30,18 +31,13 @@ const App = () => {
     <NTheme theme={theme}>
       <div className="p-3">
         <div className="max-w-lg m-auto">
-          <div className="mt-3">
+          <div className="my-5">
             <NText className="cursor-pointer nyn-text-primary" text="Toggle Theme" onClick={changeTheme} />
           </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <AlertExample />
-          </div>
-          <NDivider className="my-5" />
-          <div className="mt-3">
-            <BadgeExample />
-          </div>
-          <NDivider className="my-5" />
+          <NDivider />
+          <AlertExample />
+          <BadgeExample />
+          <ButtonExample />
           <h1 className="nyn-text mb-3 text-lg text-left">Card:</h1>
           <NCard>
             <div className="nyn-text p-2">

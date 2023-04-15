@@ -7,7 +7,7 @@ const MenuExample = () => {
   return (
     <>
       <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
-      <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600" text="Open Menu" />}>
+      <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600">Open Menu</NButton>}>
         <>
           <NMenuItem>
             <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>

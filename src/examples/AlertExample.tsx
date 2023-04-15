@@ -2,8 +2,10 @@ import { AlertTypes, NAlert } from '../components/NAlert';
 
 const AlertExample = () => {
   return (
-    <>
+    <div className="my-10">
       <h1 className="nyn-text mb-3 text-lg text-left">Alert:</h1>
+      <NAlert type={AlertTypes.DEFAULT} message="New version of application available!" onClose={() => console.log('Alert closed')} />
+      <div className="mb-3" />
       <NAlert type={AlertTypes.INFO} message="New version of application available!" onClose={() => console.log('Alert closed')} />
       <div className="mb-3" />
       <NAlert type={AlertTypes.SUCCESS} message="New version of application available!" onClose={() => console.log('Alert closed')} />
@@ -12,7 +14,7 @@ const AlertExample = () => {
       <div className="mb-3" />
       <NAlert type={AlertTypes.ERROR} message="New version of application available!" onClose={() => console.log('Alert closed')} />
       <div className="mb-3" />
-    </>
+    </div>
   );
 };
 
