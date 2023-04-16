@@ -1,20 +1,32 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Fragment, ReactNode } from 'react';
+import { CloseIcon } from './Icons';
+import { Size } from './Types';
 
 interface Props {
+  size?: Size;
+  title: string;
   isOpen: boolean;
+  isDismissable?: boolean;
   trigger: ReactNode;
   children: ReactNode;
   closeModal: () => void;
 }
 
+const sizeMapping = {
+  [Size.XS]: 'max-w-sm',
+  [Size.SM]: 'max-w-lg',
+  [Size.MD]: 'max-w-2xl',
+  [Size.LG]: 'max-w-4xl'
+};
+
 export const NDialog = (props: Props) => {
-  const { trigger, children, isOpen, closeModal } = props;
+  const { title, trigger, children, isOpen, closeModal, size = Size.SM, isDismissable = true } = props;
   return (
     <>
       <div className="">{trigger}</div>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-10" onClose={isDismissable ? closeModal : () => undefined}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -36,11 +48,17 @@ export const NDialog = (props: Props) => {
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95">
-                <Dialog.Panel className="nyn-dialog-panel w-full max-w-lg max-h-[500px] transform overflow-hidden rounded nyn-background-card nyn-border p-6 text-left align-middle transition-all shadow-lg">
-                  <Dialog.Title as="h3" className="nyn-dialog-title text-lg font-medium leading-6 nyn-text">
-                    Payment successful
-                  </Dialog.Title>
-                  <div className="nyn-dialog-content w-full h-full overflow-y-auto">{children}</div>
+                <Dialog.Panel
+                  className={`nyn-dialog-panel w-full ${sizeMapping[size]} transform overflow-hidden rounded nyn-background-card nyn-border text-left align-middle transition-all shadow-lg`}>
+                  <div className="flex flex-row justify-between items-center p-3">
+                    <Dialog.Title as="div" className="nyn-dialog-title text-base font-medium leading-6 nyn-text">
+                      {title}
+                    </Dialog.Title>
+                    <span className="cursor-pointer" onClick={closeModal}>
+                      <CloseIcon className="w-5 h-5 nyn-text" />
+                    </span>
+                  </div>
+                  <div className="nyn-dialog-content w-full h-full min-h-100 max-h-600">{children}</div>
                 </Dialog.Panel>
               </Transition.Child>
             </div>

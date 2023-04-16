@@ -1,7 +1,7 @@
 import { NButton } from '../components/NButton';
 import { Size } from '../components/Types';
 
-const BadgeExample = () => {
+const ButtonExample = () => {
   return (
     <div className="break-inside-avoid mb-16">
       <h1 className="nyn-text mb-3 text-lg text-left">Buttons:</h1>
@@ -32,8 +32,15 @@ const BadgeExample = () => {
         className="text-white bg-red-500 hover:bg-red-600 border border-red-600 mr-2">
         Button
       </NButton>
+      <NButton
+        isPill={true}
+        size={Size.LG}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 mr-2">
+        Button
+      </NButton>
     </div>
   );
 };
 
-export default BadgeExample;
+export default ButtonExample;

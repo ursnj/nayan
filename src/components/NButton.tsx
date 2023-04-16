@@ -5,13 +5,14 @@ const sizeMapping = {
   [Size.XS]: 'px-2 py-0.5 text-xs',
   [Size.SM]: 'px-2 py-1 text-sm',
   [Size.MD]: 'px-3 py-1 text-base',
-  [Size.LG]: 'px-3 py-1 text-lg'
+  [Size.LG]: 'px-4 py-1 text-lg'
 };
 
 interface Props {
   size?: Size;
   type?: 'button' | 'submit' | 'reset' | undefined;
   className?: string;
+  isPill?: boolean;
   isLoading?: boolean;
   loadingText?: string;
   onClick?: () => void;
@@ -24,6 +25,7 @@ export const NButton = (props: Props) => {
     type = 'button',
     size = Size.MD,
     className = '',
+    isPill = false,
     isLoading = false,
     loadingText = 'Loading...',
     onClick = () => undefined
@@ -32,7 +34,9 @@ export const NButton = (props: Props) => {
   return (
     <button
       type={type}
-      className={`nyn-button ${size.toLowerCase()} rounded ${sizeMapping[size]} ${className} transition duration-150 ease-in-out`}
+      className={`nyn-button ${size.toLowerCase()} ${isPill ? 'rounded-full' : 'rounded'} ${
+        sizeMapping[size]
+      } ${className} transition duration-150 ease-in-out`}
       onClick={onClick}>
       {!isLoading ? children : loadingText}
     </button>
