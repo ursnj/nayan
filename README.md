@@ -346,7 +346,7 @@ const DialogExample = () => {
             Open Dialog
           </NButton>
         }>
-        <div className="p-3 w-full h-full nyn-background">
+        <div className="p-3 w-full h-full">
           <p className="text-sm nyn-text">
             Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
           </p>

@@ -30,7 +30,7 @@ export const NPopover = (props: Props) => {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1">
         <Popover.Panel
-          className={`nyn-popover-content absolute ${position === 'right' ? 'right-0' : 'left-0'} z-10 mt-1 rounded w-screen ${
+          className={`nyn-popover-content absolute ${position === 'right' ? 'right-0' : 'left-0'} z-10 mt-1 rounded ${
             sizeMapping[size]
           } -translate-x-0 transform nyn-background-card nyn-border shadow-lg`}>
           {children}
