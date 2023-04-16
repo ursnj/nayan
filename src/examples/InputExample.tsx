@@ -9,7 +9,7 @@ const InputExample = () => {
   const onSubmit = (data: any) => console.log(data);
 
   return (
-    <div className="my-10">
+    <div className="break-inside mb-16">
       <h1 className="nyn-text mb-3 text-lg text-left">Custom Input:</h1>
       <NInput type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
       <form onSubmit={handleSubmit(onSubmit)}>

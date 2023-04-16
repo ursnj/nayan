@@ -8,7 +8,7 @@ const CheckExample = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   return (
-    <div className="my-10">
+    <div className="break-inside mb-16">
       <h1 className="nyn-text mb-3 text-lg">Checkbox:</h1>
       <NCheck size={Size.XS} className="" isChecked={isChecked} onChange={(e: any) => setIsChecked(e.target.checked)}>
         <NText className="inline">

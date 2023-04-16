@@ -8,7 +8,7 @@ const RadioExample = () => {
   const [selectedValue, setSelectedValue] = useState('LG');
 
   return (
-    <div className="my-10">
+    <div className="break-inside mb-16">
       <h1 className="nyn-text mb-3 text-lg">Radio:</h1>
       <NRadio size={Size.XS} name="radio" value="XS" selectedValue={selectedValue} onChange={(e: any) => setSelectedValue(e.target.value)}>
         <NText className="inline">

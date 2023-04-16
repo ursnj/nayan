@@ -35,7 +35,7 @@ const App = () => {
   return (
     <NTheme theme={theme}>
       <div className="p-3">
-        <div className="max-w-lg m-auto">
+        <div className="max-w-6xl m-auto">
           <div className="my-3 flex flex-row justify-between items-center">
             <img src="/nayan.png" width="50" height="50" />
             <NText className="cursor-pointer nyn-text-primary" onClick={changeTheme}>
@@ -43,26 +43,28 @@ const App = () => {
             </NText>
           </div>
           <NDivider />
-          <AlertExample />
-          <BadgeExample />
-          <ButtonExample />
-          <CardExample />
-          <DividerExample />
-          <TextExample />
-          <LinkExample />
-          <DisClosureExample />
-          <InputExample />
-          <TextareaExample />
-          <CheckExample />
-          <RadioExample />
-          <SelectExample />
-          <ComboExample />
-          <RadioGroupExample />
-          <TabsExample />
-          <DialogExample />
-          <MenuExample />
-          <PopoverExample />
-          <SwitchExample />
+          <div className="mt-10 columns-1 sm:columns-1 md:columns-2 gap-16">
+            <AlertExample />
+            <BadgeExample />
+            <ButtonExample />
+            <CardExample />
+            <DividerExample />
+            <TextExample />
+            <LinkExample />
+            <DisClosureExample />
+            <InputExample />
+            <TextareaExample />
+            <CheckExample />
+            <RadioExample />
+            <SelectExample />
+            <ComboExample />
+            <RadioGroupExample />
+            <TabsExample />
+            <DialogExample />
+            <MenuExample />
+            <PopoverExample />
+            <SwitchExample />
+          </div>
         </div>
       </div>
     </NTheme>

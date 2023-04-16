@@ -7,7 +7,7 @@ const tabs = ['Posts', 'Saved'];
 const TabsExample = () => {
   const [selected, setSelected] = useState(0);
   return (
-    <div className="my-10">
+    <div className="break-inside mb-16">
       <h1 className="nyn-text mb-3 text-lg text-left">Tabs:</h1>
       <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
         <NTabsContent className="px-3 py-2 nyn-text-muted">Content1</NTabsContent>

@@ -2,7 +2,7 @@ import { NLink } from '../components/NLink';
 
 const LinkExample = () => {
   return (
-    <div className="my-10">
+    <div className="break-inside mb-16">
       <h1 className="nyn-text mb-3 text-lg">Links:</h1>
       <div className="nyn-text">
         This is a sample paragraph with some <NLink>Link</NLink>.
