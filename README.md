@@ -18,6 +18,21 @@ Nayan is React based component library based on Tailwind CSS and Headless UI. Th
 
 </div>
 
+## ✨ Features
+
+- 🌈 Enterprise-class UI designed for web applications.
+- 📦 A set of high-quality React components out of the box.
+- 🛡 Written in TypeScript with predictable static types.
+- ⚙️ Whole package of design resources and development tools.
+- 🌍 Internationalization support for dozens of languages.
+- 🎨 Powerful theme customization based on Tailwind CSS.
+
+## 🖥 Environment Support
+
+- Modern browsers
+- Server-side Rendering
+- [Electron](https://www.electronjs.org/)
+
 ## Install
 
 With npm:
@@ -76,21 +91,6 @@ Add library styles to `index.css`, and update theme color variables accordingly 
   --COLOR_MODAL_BACKDROP: rgba(0, 0, 0, 0.7);
 }
 ```
-
-## ✨ Features
-
-- 🌈 Enterprise-class UI designed for web applications.
-- 📦 A set of high-quality React components out of the box.
-- 🛡 Written in TypeScript with predictable static types.
-- ⚙️ Whole package of design resources and development tools.
-- 🌍 Internationalization support for dozens of languages.
-- 🎨 Powerful theme customization based on Tailwind CSS.
-
-## 🖥 Environment Support
-
-- Modern browsers
-- Server-side Rendering
-- [Electron](https://www.electronjs.org/)
 
 ## 🔨 Usage
 
