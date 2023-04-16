@@ -315,21 +315,25 @@ export default SelectExample;
 import { NDialog } from '../components/NDialog';
 import { useState } from 'react';
 import { NButton } from '../components/NButton';
+import { Size } from '../components/Types';
 
 const DialogExample = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="my-10 flex flex-row justify-between">
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
       <NDialog
+        size={Size.SM}
+        isOpen={isOpen}
+        isDismissable={true}
+        title="Payment confirmation"
+        closeModal={() => setIsOpen(false)}
         trigger={
           <NButton className="text-sm font-medium text-white bg-green-500 hover:bg-green-600" onClick={() => setIsOpen(true)}>
             Open Dialog
           </NButton>
-        }
-        isOpen={isOpen}
-        closeModal={() => setIsOpen(false)}>
-        <div className="mt-2">
+        }>
+        <div className="p-3 w-full h-full nyn-background">
           <p className="text-sm nyn-text">
             Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
           </p>
@@ -440,12 +444,16 @@ import { NMenu } from '../components/NMenu';
 import { NMenuItem } from '../components/NMenuItem';
 import { NDivider } from '../components/NDivider';
 import { NButton } from '../components/NButton';
+import { Size } from '../components/Types';
 
 const MenuExample = () => {
   return (
-    <div className="my-10 flex flex-row justify-between">
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
-      <NMenu trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600">Open Menu</NButton>}>
+      <NMenu
+        size={Size.MD}
+        position="right"
+        trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600">Open Menu</NButton>}>
         <>
           <NMenuItem>
             <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
@@ -468,12 +476,16 @@ export default MenuExample;
 ```jsx
 import { NPopover } from '../components/NPopover';
 import { NButton } from '../components/NButton';
+import { Size } from '../components/Types';
 
 const PopoverExample = () => {
   return (
-    <div className="my-10 flex flex-row justify-between">
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Popover:</h1>
-      <NPopover trigger={<NButton className="text-sm font-medium text-white bg-primary hover:bg-primary-dark">Open Popup</NButton>}>
+      <NPopover
+        size={Size.MD}
+        position="right"
+        trigger={<NButton className="text-sm font-medium text-white bg-primary hover:bg-primary-dark">Open Popup</NButton>}>
         <div className="overflow-hidden p-3">
           <div className="text-sm font-medium nyn-text">Documentation</div>
           <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
