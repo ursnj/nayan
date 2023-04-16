@@ -12,7 +12,6 @@ interface Props {
   size?: Size;
   type?: 'button' | 'submit' | 'reset' | undefined;
   className?: string;
-  isPill?: boolean;
   isLoading?: boolean;
   loadingText?: string;
   onClick?: () => void;
@@ -25,7 +24,6 @@ export const NButton = (props: Props) => {
     type = 'button',
     size = Size.MD,
     className = '',
-    isPill = false,
     isLoading = false,
     loadingText = 'Loading...',
     onClick = () => undefined
@@ -34,9 +32,7 @@ export const NButton = (props: Props) => {
   return (
     <button
       type={type}
-      className={`nyn-button ${size.toLowerCase()} ${isPill ? 'rounded-full' : 'rounded'} ${
-        sizeMapping[size]
-      } ${className} transition duration-150 ease-in-out`}
+      className={`nyn-button ${size.toLowerCase()} rounded ${sizeMapping[size]} ${className} transition duration-150 ease-in-out`}
       onClick={onClick}>
       {!isLoading ? children : loadingText}
     </button>
