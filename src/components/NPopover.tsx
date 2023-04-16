@@ -4,6 +4,7 @@ import { Size } from './Types';
 
 interface Props {
   size?: Size;
+  position?: 'left' | 'right';
   trigger: ReactNode;
   children: ReactNode;
 }
@@ -16,7 +17,7 @@ const sizeMapping = {
 };
 
 export const NPopover = (props: Props) => {
-  const { trigger, children, size = Size.SM } = props;
+  const { trigger, children, size = Size.SM, position = 'right' } = props;
   return (
     <Popover className="relative">
       <Popover.Button className="nyn-popover-trigger">{trigger}</Popover.Button>
@@ -29,7 +30,9 @@ export const NPopover = (props: Props) => {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1">
         <Popover.Panel
-          className={`nyn-popover-content absolute right-0 z-10 mt-1 rounded w-screen ${sizeMapping[size]} -translate-x-0 transform nyn-background-card nyn-border shadow-lg`}>
+          className={`nyn-popover-content absolute ${position === 'right' ? 'right-0' : 'left-0'} z-10 mt-1 rounded w-screen ${
+            sizeMapping[size]
+          } -translate-x-0 transform nyn-background-card nyn-border shadow-lg`}>
           {children}
         </Popover.Panel>
       </Transition>

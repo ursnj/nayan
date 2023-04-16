@@ -4,6 +4,7 @@ import { Size } from './Types';
 
 interface Props {
   size?: Size;
+  position?: 'left' | 'right';
   trigger: ReactNode;
   children: ReactNode;
   className?: string;
@@ -17,7 +18,7 @@ const sizeMapping = {
 };
 
 export const NMenu = (props: Props) => {
-  const { trigger, children, className = '', size = Size.MD } = props;
+  const { trigger, children, className = '', size = Size.MD, position = 'right' } = props;
   return (
     <Menu as="span" className="nyn-menu relative">
       <Menu.Button className={`nyn-menu-trigger ${className}`}>{trigger}</Menu.Button>
@@ -30,7 +31,9 @@ export const NMenu = (props: Props) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95">
         <Menu.Items
-          className={`nyn-menu-items absolute right-0 mt-1 z-10 ${sizeMapping[size]} origin-top-right rounded nyn-background-card nyn-border shadow-lg`}>
+          className={`nyn-menu-items absolute ${position === 'right' ? 'right-0' : 'left-0'} mt-1 z-10 ${
+            sizeMapping[size]
+          } origin-top-right rounded nyn-background-card nyn-border shadow-lg`}>
           {children}
         </Menu.Items>
       </Transition>
