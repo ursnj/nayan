@@ -34,7 +34,7 @@ const App = () => {
 
   return (
     <NTheme theme={theme}>
-      <div className="p-3">
+      <div className="p-3 pt-0">
         <div className="max-w-6xl m-auto">
           <div className="my-3 flex flex-row justify-between items-center">
             <img src="/nayan.png" width="50" height="50" />
@@ -43,7 +43,7 @@ const App = () => {
             </NText>
           </div>
           <NDivider />
-          <div className="mt-10 columns-1 sm:columns-1 md:columns-2 gap-16">
+          <div className="mt-10 columns-1 md:columns-2 gap-16">
             <AlertExample />
             <BadgeExample />
             <ButtonExample />

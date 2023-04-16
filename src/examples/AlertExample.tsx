@@ -2,7 +2,7 @@ import { AlertTypes, NAlert } from '../components/NAlert';
 
 const AlertExample = () => {
   return (
-    <div className="break-inside mb-16">
+    <div className="break-inside-avoid mb-16">
       <h1 className="nyn-text mb-3 text-lg text-left">Alert:</h1>
       <NAlert type={AlertTypes.DEFAULT} message="New version of application available!" onClose={() => console.log('Alert closed')} />
       <div className="mb-3" />

@@ -4,27 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .masonry {
-    column-gap: 5rem;
-    row-gap: 5rem;
-    column-count: 1;
-  }
-  .masonry-sm {
-    column-gap: 5rem;
-    row-gap: 5rem;
-    column-count: 1;
-  }
-  .masonry-md {
-    column-gap: 5rem;
-    row-gap: 5rem;
-    column-count: 2;
-  }
-  .break-inside {
-    break-inside: avoid;
-  }
-}
-
 :root {
   --COLOR_PRIMARY: #005ee6;
   --COLOR_PRIMARY_DARK: #0043a3;

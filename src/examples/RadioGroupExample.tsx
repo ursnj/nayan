@@ -12,7 +12,7 @@ const RadioGroupExample = () => {
   const [selected1, setSelected1] = useState(items[0]);
 
   return (
-    <div className="break-inside mb-16">
+    <div className="break-inside-avoid mb-16">
       <h1 className="nyn-text mb-3 text-lg">Radio Group Horizontal:</h1>
       <NRadioGroup items={items} selected={selected} setSelected={setSelected} />
       <div className="mt-3" />

@@ -5,7 +5,7 @@ const SwitchExample = () => {
   const [enabled, setEnabled] = useState(false);
 
   return (
-    <div className="break-inside mb-16 flex flex-row justify-between">
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
       <h1 className="nyn-text mb-3 text-lg text-left">Switch:</h1>
       <NSwitch enabled={enabled} setEnabled={setEnabled} />
     </div>

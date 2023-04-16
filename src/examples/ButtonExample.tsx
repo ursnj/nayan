@@ -3,7 +3,7 @@ import { Size } from '../components/Types';
 
 const BadgeExample = () => {
   return (
-    <div className="break-inside mb-16">
+    <div className="break-inside-avoid mb-16">
       <h1 className="nyn-text mb-3 text-lg text-left">Buttons:</h1>
       <NButton size={Size.XS} onClick={() => console.log('Button clicked')} className="nyn-text nyn-background-card nyn-border mr-2">
         Button
