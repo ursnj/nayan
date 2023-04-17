@@ -15,8 +15,8 @@ export default defineConfig({
     setupFiles: './src/tests/setup.ts',
     coverage: {
       provider: 'c8',
-      reporter: ['text', 'json', 'html'],
-    },
+      reporter: ['text', 'json', 'html']
+    }
   },
   build: {
     lib: {
