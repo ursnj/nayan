@@ -28,7 +28,7 @@ interface Props {
   type: AlertTypes;
   message: string;
   className?: string;
-  onClose?: any;
+  onClose?: () => void;
 }
 
 export const NAlert = (props: Props) => {
@@ -38,11 +38,11 @@ export const NAlert = (props: Props) => {
     <div
       className={`nyn-alert ${type.toLowerCase()} flex flex-row items-center justify-between rounded py-2 px-3 ${classesMapping[type]} ${className}`}>
       <div className="flex flex-row items-center">
-        <span>{iconsMapping[type]}</span>
-        <span>{message}</span>
+        <span className="nyn-alert-icon">{iconsMapping[type]}</span>
+        <span className="nyn-alert-text">{message}</span>
       </div>
       {onClose && (
-        <div className="cursor-pointer" onClick={onClose}>
+        <div className="nyn-alert-close cursor-pointer" onClick={onClose}>
           <CloseIcon className="w-5 h-5 ml-2" />
         </div>
       )}

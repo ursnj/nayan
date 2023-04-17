@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 
@@ -8,6 +8,15 @@ export default defineConfig({
     host: 'localhost',
     port: 3000,
     open: true
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/tests/setup.ts',
+    coverage: {
+      provider: 'c8',
+      reporter: ['text', 'json', 'html'],
+    },
   },
   build: {
     lib: {
