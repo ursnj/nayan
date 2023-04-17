@@ -1,13 +1,15 @@
 <div align="center">
     <img width="200" src="https://github.com/ursnj/nayan/blob/main/public/nayan.png?raw=true">
 </div>
-<h1 align="center">Nayan - React Component Library</h1>
+<h1 align="center">Nayan UI</h1>
 
 <div align="center">
 
-Nayan is React based component library based on Tailwind CSS and Headless UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional user interfaces for your web application.
+Nayan UI provides React component library based on Tailwind CSS and Headless UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web application.
 
-[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url] [![Follow Linked In][linkedin-image]][linkedin-url]
+[![NPM version][npm-image]][npm-url] 
+
+[comment]: <> ([![Follow Twitter][twitter-image]][twitter-url] [![Follow Linked In][linkedin-image]][linkedin-url])
 
 [npm-image]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
 [npm-url]: http://npmjs.org/package/nayan
@@ -31,9 +33,9 @@ Nayan is React based component library based on Tailwind CSS and Headless UI. Th
 
 - Modern browsers
 - Server-side Rendering
-- [Electron](https://www.electronjs.org/)
+- [Electron](https://www.electronjs.org/) and [Tauri](https://tauri.app/)
 
-## Install
+## 🔨 Install
 
 With npm:
 
@@ -92,7 +94,7 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 }
 ```
 
-## 🔨 Usage
+## 🕹 Usage
 
 ### Theme
 
