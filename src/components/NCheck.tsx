@@ -28,7 +28,13 @@ export const NCheck = (props: Props) => {
 
   return (
     <div className={`nyn-check-block flex flex-row items-center ${className}`}>
-      <input className={`nyn-check ${sizeMapping[size]}`} type="checkbox" value={isChecked as any} onChange={onChange} checked={isChecked} />
+      <input
+        className={`nyn-check cursor-pointer ${sizeMapping[size]}`}
+        type="checkbox"
+        value={isChecked as any}
+        onChange={onChange}
+        checked={isChecked}
+      />
       <label className={`nyn-check-label nyn-text ${labelSizeMapping[size]}`}>{children}</label>
     </div>
   );

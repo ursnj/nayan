@@ -31,7 +31,7 @@ export const NRadio = (props: Props) => {
   return (
     <div className={`nyn-radio-block flex flex-row items-center ${className}`}>
       <input
-        className={`nyn-radio ${sizeMapping[size]}`}
+        className={`nyn-radio cursor-pointer ${sizeMapping[size]}`}
         type="radio"
         name={name}
         value={value}
