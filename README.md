@@ -211,10 +211,9 @@ const ButtonExample = () => {
         Button
       </NButton>
       <NButton
-        isPill={true}
         size={Size.LG}
         onClick={() => console.log('Button clicked')}
-        className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 mr-2">
+        className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
         Button
       </NButton>
     </div>
