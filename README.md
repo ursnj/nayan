@@ -725,7 +725,7 @@ For more info checkout example source code from [Github](https://github.com/ursn
 Nayan project is included with all possible cases with examples, it can be ran locally to test each component.
 
 ```bash
-$ git clone git@github.com:uranj/nayan.git
+$ git clone git@github.com:ursnj/nayan.git
 $ cd nayan
 $ npm install
 $ npm start
