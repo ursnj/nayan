@@ -19,7 +19,7 @@ export const NCombo = (props: Props) => {
 
   return (
     <Combobox value={selected} onChange={props.onSelected} {...(Array.isArray(selected) ? ({ multiple: true } as any) : {})}>
-      <div className="relative">
+      <div className="nyn-combo relative">
         <div className="relative w-full cursor-default overflow-hidden rounded text-left">
           <Combobox.Input
             className="nyn-combo-input w-full py-2 pl-3 pr-10 text-sm leading-5 nyn-background-card nyn-border rounded nyn-text focus:ring-0"

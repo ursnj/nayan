@@ -19,7 +19,7 @@ interface Props {
   size: Size;
   name: string;
   className?: string;
-  onClose?: any;
+  onClose?: () => void;
 }
 
 export const NBadge = (props: Props) => {
@@ -27,9 +27,9 @@ export const NBadge = (props: Props) => {
 
   return (
     <span className={`nyn-badge ${size.toLowerCase()} items-center rounded-full ${sizeMapping[size]} ${className}`}>
-      <span className="">{name}</span>
+      <span className="njn-badge-text">{name}</span>
       {onClose && (
-        <span className="cursor-pointer" onClick={onClose}>
+        <span className="nyn-badge-close cursor-pointer" onClick={onClose}>
           <CloseIcon className={`inline ml-2 ${iconMapping[size]}`} />
         </span>
       )}
