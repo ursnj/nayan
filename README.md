@@ -337,12 +337,7 @@ const DialogExample = () => {
       <NButton size={Size.SM} className="text-sm font-medium text-white bg-green-500 hover:bg-green-600" onClick={() => setIsOpen(true)}>
         Open Dialog
       </NButton>
-      <NDialog
-        size={Size.SM}
-        isOpen={isOpen}
-        isDismissable={true}
-        title="Payment confirmation"
-        closeModal={() => setIsOpen(false)}>
+      <NDialog size={Size.SM} isOpen={isOpen} isDismissable={true} title="Payment confirmation" closeModal={() => setIsOpen(false)}>
         <div className="p-3 w-full h-full">
           <p className="text-sm nyn-text">
             Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
