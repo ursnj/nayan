@@ -1,0 +1,29 @@
+name: Build and deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+#    if: contains(github.event.head_commit.message, 'deploy now')
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@main
+        with:
+          persist-credentials: false
+          submodules: true  # TODO remove this if not using submodules in Hexo
+
+      - name: Install 🔧
+        run: yarn install
+
+      - name: Build 🏗️
+        run: yarn build:website
+      - name: Deploy to GH Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_PUBLISH }}
+          publish_dir: build
