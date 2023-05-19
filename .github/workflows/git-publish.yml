@@ -36,7 +36,7 @@ jobs:
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GIT_PUBLISH }}
+          github_token: ${{ secrets.GIT_PUBLISH }}
           exclude_assets: '.github'
           publish_dir: /home/runner/work/nayan/nayan/build
           keep_files: true
