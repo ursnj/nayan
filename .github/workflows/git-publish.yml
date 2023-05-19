@@ -35,7 +35,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GIT_PUBLISH }}
-          destination_dir: nayan
           exclude_assets: '.github'
           publish_dir: ./build
           keep_files: true
