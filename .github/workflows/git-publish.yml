@@ -36,5 +36,5 @@ jobs:
         with:
           personal_token: ${{ secrets.GIT_PUBLISH }}
           exclude_assets: '.github'
-          publish_dir: ./build
+          publish_dir: /build
           keep_files: true
