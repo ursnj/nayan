@@ -20,6 +20,10 @@ Nayan UI provides React component library based on Tailwind CSS and Headless UI.
 
 </div>
 
+## 🖥 Demo
+
+Checkout demo for all the components Nayan UI exposing [Checkout](https://ursnj.github.io/nayan/)
+
 ## ✨ Features
 
 - 🌈 Enterprise-class UI designed for web applications.
