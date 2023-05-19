@@ -7,6 +7,7 @@
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://ursnj.github.com/nayan",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
@@ -89,6 +90,5 @@
   "bugs": {
     "url": "https://github.com/ursnj/nayan/issues"
   },
-  "homepage": "https://github.com/ursnj/nayan#readme",
   "license": "ISC"
 }
