@@ -31,8 +31,6 @@ jobs:
       - name: Build 🏗️
         run: yarn build:website
 
-      - run: pwd
-
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -40,3 +38,6 @@ jobs:
           exclude_assets: '.github'
           publish_dir: /home/runner/work/nayan/nayan/build
           keep_files: true
+
+      - run: pwd
+      - run: ls /home/runner/work/nayan/nayan/build
