@@ -38,5 +38,5 @@ jobs:
         with:
           personal_token: ${{ secrets.GIT_PUBLISH }}
           exclude_assets: '.github'
-          publish_dir: /home/runner/work/nayan/build
+          publish_dir: /home/runner/work/nayan/nayan/build
           keep_files: true
