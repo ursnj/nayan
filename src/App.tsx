@@ -37,7 +37,7 @@ const App = () => {
       <div className="p-3 pt-0">
         <div className="max-w-6xl m-auto">
           <div className="my-3 flex flex-row justify-between items-center">
-            <img src="/nayan.png" width="50" height="50" />
+            <img src="/nayan/nayan.png" width="50" height="50" />
             <NText className="cursor-pointer nyn-text-primary" onClick={changeTheme}>
               Toggle Theme
             </NText>
