@@ -1,14 +1,14 @@
-export const ThresholdUnits = {
-  Pixel: 'Pixel',
-  Percent: 'Percent'
-};
+export enum ThresholdUnits {
+  Pixel = 'Pixel',
+  Percent = 'Percent'
+}
 
 const defaultThreshold = {
   unit: ThresholdUnits.Percent,
   value: 0.8
 };
 
-export function parseThreshold(scrollThreshold: string | number) {
+export function parseThreshold(scrollThreshold: string | number): any {
   if (typeof scrollThreshold === 'number') {
     return {
       unit: ThresholdUnits.Percent,

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ThresholdUnits, parseThreshold, throttle } from './Utils';
 
 type Fn = () => any;
-export interface Props {
+interface Props {
   next: Fn;
   hasMore: boolean;
   children: React.ReactNode;
@@ -11,7 +11,7 @@ export interface Props {
   endMessage?: React.ReactNode;
   style?: React.CSSProperties;
   height?: number | string;
-  scrollableTarget?: React.ReactNode;
+  scrollableTarget?: string;
   hasChildren?: boolean;
   inverse?: boolean;
   pullDownToRefresh?: boolean;
@@ -48,7 +48,7 @@ const InfiniteScroll: React.FC<Props> = props => {
   const actionTriggered = useRef(false);
 
   const onScrollListener = () => {
-    const el = props.scrollableTarget || window;
+    const el: any = props.scrollableTarget || window;
 
     if (!el || dragging.current) return;
 
@@ -152,7 +152,7 @@ const InfiniteScroll: React.FC<Props> = props => {
   }, [props.scrollThreshold]);
 
   useEffect(() => {
-    const el = props.height ? infScrollRef.current : scrollableNodeRef.current || window;
+    const el: any = props.height ? infScrollRef.current : scrollableNodeRef.current || window;
     if (el) {
       if (el.scrollHeight <= (el.clientHeight || document.documentElement.clientHeight) + props.pullDownToRefreshThreshold!) {
         callNext();
@@ -160,8 +160,8 @@ const InfiniteScroll: React.FC<Props> = props => {
     }
   });
 
-  const onStart = (e: Event) => {
-    const el = props.scrollableTarget || window;
+  const onStart = (e: any) => {
+    const el: any = props.scrollableTarget || window;
     dragging.current = true;
     if (e instanceof TouchEvent) {
       startY.current = e.touches[0].screenY;
@@ -177,7 +177,7 @@ const InfiniteScroll: React.FC<Props> = props => {
     el.addEventListener('mouseup', onEnd);
   };
 
-  const onMove = (e: Event) => {
+  const onMove = (e: any) => {
     if (dragging.current) {
       if (e instanceof TouchEvent) {
         currentY.current = e.touches[0].screenY;
