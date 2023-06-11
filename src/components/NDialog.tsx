@@ -36,7 +36,7 @@ export const NDialog = (props: Props) => {
         </Transition.Child>
 
         <div className="nyn-dialog fixed inset-0 overflow-y-auto">
-          <div className="flex min-h-full items-center justify-center p-3 text-center">
+          <div className="nyn-dialog-header flex min-h-full items-center justify-center p-3 text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
