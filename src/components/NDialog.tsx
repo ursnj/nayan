@@ -36,7 +36,7 @@ export const NDialog = (props: Props) => {
         </Transition.Child>
 
         <div className="nyn-dialog fixed inset-0 overflow-y-auto">
-          <div className="nyn-dialog-header flex min-h-full items-center justify-center p-3 text-center">
+          <div className="flex min-h-full items-center justify-center p-3 text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -47,7 +47,7 @@ export const NDialog = (props: Props) => {
               leaveTo="opacity-0 scale-95">
               <Dialog.Panel
                 className={`nyn-dialog-panel w-full ${sizeMapping[size]} transform overflow-hidden rounded nyn-background-card nyn-border text-left align-middle transition-all shadow-lg`}>
-                <div className="flex flex-row justify-between items-center py-2 px-3">
+                <div className="nyn-dialog-header flex flex-row justify-between items-center py-2 px-3">
                   <Dialog.Title as="div" className="nyn-dialog-title text-base font-medium leading-6 nyn-text">
                     {title}
                   </Dialog.Title>

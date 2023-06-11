@@ -2,7 +2,7 @@
   "name": "nayan",
   "private": false,
   "sideEffects": false,
-  "version": "1.4.3",
+  "version": "1.4.4",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
