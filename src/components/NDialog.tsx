@@ -47,7 +47,7 @@ export const NDialog = (props: Props) => {
               leaveTo="opacity-0 scale-95">
               <Dialog.Panel
                 className={`nyn-dialog-panel w-full ${sizeMapping[size]} transform overflow-hidden rounded nyn-background-card nyn-border text-left align-middle transition-all shadow-lg`}>
-                <div className="flex flex-row justify-between items-center py-2 px-3">
+                <div className="nyn-dialog-header flex flex-row justify-between items-center py-2 px-3">
                   <Dialog.Title as="div" className="nyn-dialog-title text-base font-medium leading-6 nyn-text">
                     {title}
                   </Dialog.Title>
@@ -55,7 +55,7 @@ export const NDialog = (props: Props) => {
                     <CloseIcon className="w-5 h-5 nyn-text" />
                   </span>
                 </div>
-                <div className="nyn-dialog-content w-full h-full min-h-100 max-h-600">{children}</div>
+                <div className="nyn-dialog-content w-full h-full min-h-100 max-h-[calc(100vh_-_75px)] overflow-y-auto">{children}</div>
               </Dialog.Panel>
             </Transition.Child>
           </div>
