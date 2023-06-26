@@ -8,6 +8,7 @@ interface Props {
   onChange?: (val: any) => void;
 }
 
+// TODO: Fix React hook form
 export const NTextarea = (props: Props) => {
   const { label = '', rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (

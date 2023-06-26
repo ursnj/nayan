@@ -1,4 +1,5 @@
 import { NInfiniteScroll } from '../components/NInfiniteScroll';
+import { NCard } from '../components/NCard';
 
 const InfiniteScrollExample = () => {
   const items = new Array(5).fill(1);
@@ -12,7 +13,9 @@ const InfiniteScrollExample = () => {
         dataLength={items.length}
         scrollThreshold={0.99}>
         {items.map((_, index) => (
-          <div className="h-[50px] mb-3 nyn-background-card nyn-border rounded" key={index} />
+          <NCard className="mb-3 p-5 nyn-text" key={index}>
+            {index}
+          </NCard>
         ))}
       </NInfiniteScroll>
     </div>

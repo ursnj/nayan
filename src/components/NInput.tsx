@@ -8,6 +8,7 @@ interface Props {
   onChange?: (val: any) => void;
 }
 
+// TODO: Fix React hook form
 export const NInput = (props: Props) => {
   const { type = 'text', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
