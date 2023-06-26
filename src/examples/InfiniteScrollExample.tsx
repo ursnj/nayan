@@ -8,7 +8,7 @@ const InfiniteScrollExample = () => {
       <NInfiniteScroll
         next={() => console.log('Get Next Data')}
         hasMore={true}
-        loader={<div>Loading...</div>}
+        loader={<div className="nyn-text">Loading...</div>}
         dataLength={items.length}
         scrollThreshold={0.99}>
         {items.map((_, index) => (

@@ -333,22 +333,22 @@ import { useState } from 'react';
 import { Size } from '../components/Types';
 
 const DialogExample = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
-            <div className="text-sm font-medium text-green-600" onClick={() => setIsOpen(true)}>
-                Open Dialog
-            </div>
-            <NDialog size={Size.SM} isOpen={isOpen} isDismissable={true} title="Payment confirmation" closeModal={() => setIsOpen(false)}>
-                <div className="p-3 w-full h-full">
-                    <p className="text-sm nyn-text">
-                        Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
-                    </p>
-                </div>
-            </NDialog>
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
+      <div className="text-sm font-medium text-green-600" onClick={() => setIsOpen(true)}>
+        Open Dialog
+      </div>
+      <NDialog size={Size.SM} isOpen={isOpen} isDismissable={true} title="Payment confirmation" closeModal={() => setIsOpen(false)}>
+        <div className="p-3 w-full h-full">
+          <p className="text-sm nyn-text">
+            Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
+          </p>
         </div>
-    );
+      </NDialog>
+    </div>
+  );
 };
 
 export default DialogExample;
@@ -455,25 +455,22 @@ import { NDivider } from '../components/NDivider';
 import { Size } from '../components/Types';
 
 const MenuExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
-            <NMenu
-                size={Size.MD}
-                position="right"
-                trigger={<div className="text-sm font-medium text-red-600">Open Menu</div>}>
-                <>
-                    <NMenuItem>
-                        <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
-                    </NMenuItem>
-                    <NDivider />
-                    <NMenuItem>
-                        <button className="flex w-full items-center rounded px-3 py-2 text-sm text-red-500">Delete</button>
-                    </NMenuItem>
-                </>
-            </NMenu>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
+      <NMenu size={Size.MD} position="right" trigger={<div className="text-sm font-medium text-red-600">Open Menu</div>}>
+        <>
+          <NMenuItem>
+            <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
+          </NMenuItem>
+          <NDivider />
+          <NMenuItem>
+            <button className="flex w-full items-center rounded px-3 py-2 text-sm text-red-500">Delete</button>
+          </NMenuItem>
+        </>
+      </NMenu>
+    </div>
+  );
 };
 
 export default MenuExample;
@@ -486,20 +483,17 @@ import { NPopover } from '../components/NPopover';
 import { Size } from '../components/Types';
 
 const PopoverExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text mb-3 text-lg text-left">Popover:</h1>
-            <NPopover
-                size={Size.MD}
-                position="right"
-                trigger={<div className="text-sm font-medium text-primary">Open Popup</div>}>
-                <div className="overflow-hidden p-3">
-                    <div className="text-sm font-medium nyn-text">Documentation</div>
-                    <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
-                </div>
-            </NPopover>
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text mb-3 text-lg text-left">Popover:</h1>
+      <NPopover size={Size.MD} position="right" trigger={<div className="text-sm font-medium text-primary">Open Popup</div>}>
+        <div className="overflow-hidden p-3">
+          <div className="text-sm font-medium nyn-text">Documentation</div>
+          <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
         </div>
-    );
+      </NPopover>
+    </div>
+  );
 };
 
 export default PopoverExample;
@@ -724,7 +718,7 @@ const InfiniteScrollExample = () => {
             <NInfiniteScroll
                 next={() => console.log('Get Next Data')}
                 hasMore={true}
-                loader={<div>Loading...</div>}
+                loader={<div className="nyn-text">Loading...</div>}
                 dataLength={items.length}
                 scrollThreshold={0.99}>
                 {items.map((_, index) => (
