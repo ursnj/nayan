@@ -8,6 +8,7 @@ export * from './src/components/NCombo';
 export * from './src/components/NDialog';
 export * from './src/components/NDivider';
 export * from './src/components/NDisclosure';
+export * from './src/components/NInfiniteScroll';
 export * from './src/components/NInput';
 export * from './src/components/NLink';
 export * from './src/components/NMenu';
