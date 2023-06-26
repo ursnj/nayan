@@ -55,7 +55,9 @@ export const NDialog = (props: Props) => {
                     <CloseIcon className="w-5 h-5 nyn-text" />
                   </span>
                 </div>
-                <div className="nyn-dialog-content w-full h-full min-h-100 max-h-[calc(100vh_-_75px)] overflow-y-auto">{children}</div>
+                <div className="nyn-dialog-content w-full h-full min-h-100 max-h-[calc(100vh_-_75px)] overflow-y-auto" id="scroll-container">
+                  {children}
+                </div>
               </Dialog.Panel>
             </Transition.Child>
           </div>
