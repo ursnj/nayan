@@ -1,4 +1,4 @@
-import NInfiniteScroll from '../components/NInfiniteScroll';
+import { NInfiniteScroll } from '../components/NInfiniteScroll';
 
 const InfiniteScrollExample = () => {
   const items = new Array(5).fill(1);

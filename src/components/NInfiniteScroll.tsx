@@ -32,7 +32,7 @@ interface State {
   prevDataLength: number | undefined;
 }
 
-export default class NInfiniteScroll extends Component<Props, State> {
+export class NInfiniteScroll extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
