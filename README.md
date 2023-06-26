@@ -330,26 +330,25 @@ export default SelectExample;
 ```jsx
 import { NDialog } from '../components/NDialog';
 import { useState } from 'react';
-import { NButton } from '../components/NButton';
 import { Size } from '../components/Types';
 
 const DialogExample = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-      <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
-      <NButton size={Size.SM} className="text-sm font-medium text-white bg-green-500 hover:bg-green-600" onClick={() => setIsOpen(true)}>
-        Open Dialog
-      </NButton>
-      <NDialog size={Size.SM} isOpen={isOpen} isDismissable={true} title="Payment confirmation" closeModal={() => setIsOpen(false)}>
-        <div className="p-3 w-full h-full">
-          <p className="text-sm nyn-text">
-            Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
-          </p>
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+            <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
+            <div className="text-sm font-medium text-green-600" onClick={() => setIsOpen(true)}>
+                Open Dialog
+            </div>
+            <NDialog size={Size.SM} isOpen={isOpen} isDismissable={true} title="Payment confirmation" closeModal={() => setIsOpen(false)}>
+                <div className="p-3 w-full h-full">
+                    <p className="text-sm nyn-text">
+                        Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
+                    </p>
+                </div>
+            </NDialog>
         </div>
-      </NDialog>
-    </div>
-  );
+    );
 };
 
 export default DialogExample;
@@ -453,29 +452,28 @@ export default LinkExample;
 import { NMenu } from '../components/NMenu';
 import { NMenuItem } from '../components/NMenuItem';
 import { NDivider } from '../components/NDivider';
-import { NButton } from '../components/NButton';
 import { Size } from '../components/Types';
 
 const MenuExample = () => {
-  return (
-    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-      <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
-      <NMenu
-        size={Size.MD}
-        position="right"
-        trigger={<NButton className="text-sm font-medium text-white bg-red-500 hover:bg-red-600">Open Menu</NButton>}>
-        <>
-          <NMenuItem>
-            <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
-          </NMenuItem>
-          <NDivider />
-          <NMenuItem>
-            <button className="flex w-full items-center rounded px-3 py-2 text-sm text-red-500">Delete</button>
-          </NMenuItem>
-        </>
-      </NMenu>
-    </div>
-  );
+    return (
+        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+            <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
+            <NMenu
+                size={Size.MD}
+                position="right"
+                trigger={<div className="text-sm font-medium text-red-600">Open Menu</div>}>
+                <>
+                    <NMenuItem>
+                        <button className="nyn-text flex w-full items-center rounded px-3 py-2 text-sm">Edit</button>
+                    </NMenuItem>
+                    <NDivider />
+                    <NMenuItem>
+                        <button className="flex w-full items-center rounded px-3 py-2 text-sm text-red-500">Delete</button>
+                    </NMenuItem>
+                </>
+            </NMenu>
+        </div>
+    );
 };
 
 export default MenuExample;
@@ -485,24 +483,23 @@ export default MenuExample;
 
 ```jsx
 import { NPopover } from '../components/NPopover';
-import { NButton } from '../components/NButton';
 import { Size } from '../components/Types';
 
 const PopoverExample = () => {
-  return (
-    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-      <h1 className="nyn-text mb-3 text-lg text-left">Popover:</h1>
-      <NPopover
-        size={Size.MD}
-        position="right"
-        trigger={<NButton className="text-sm font-medium text-white bg-primary hover:bg-primary-dark">Open Popup</NButton>}>
-        <div className="overflow-hidden p-3">
-          <div className="text-sm font-medium nyn-text">Documentation</div>
-          <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
+    return (
+        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+            <h1 className="nyn-text mb-3 text-lg text-left">Popover:</h1>
+            <NPopover
+                size={Size.MD}
+                position="right"
+                trigger={<div className="text-sm font-medium text-primary">Open Popup</div>}>
+                <div className="overflow-hidden p-3">
+                    <div className="text-sm font-medium nyn-text">Documentation</div>
+                    <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
+                </div>
+            </NPopover>
         </div>
-      </NPopover>
-    </div>
-  );
+    );
 };
 
 export default PopoverExample;
@@ -717,25 +714,25 @@ export default TextExample;
 ### Infinite Scroll
 
 ```jsx
-import NInfiniteScroll from '../components/NInfiniteScroll';
+import { NInfiniteScroll } from '../components/NInfiniteScroll';
 
 const InfiniteScrollExample = () => {
-  const items = new Array(5).fill(1);
-  return (
-    <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg mt-5">Infinite Scroll</h1>
-      <NInfiniteScroll
-        next={() => console.log('Get Next Data')}
-        hasMore={true}
-        loader={<div>Loading...</div>}
-        dataLength={items.length}
-        scrollThreshold={0.99}>
-        {items.map((_, index) => (
-          <div className="h-[50px] mb-3 bg-green-500 rounded" key={index} />
-        ))}
-      </NInfiniteScroll>
-    </div>
-  );
+    const items = new Array(5).fill(1);
+    return (
+        <div className="break-inside-avoid mb-16">
+            <h1 className="nyn-text mb-3 text-lg mt-5">Infinite Scroll</h1>
+            <NInfiniteScroll
+                next={() => console.log('Get Next Data')}
+                hasMore={true}
+                loader={<div>Loading...</div>}
+                dataLength={items.length}
+                scrollThreshold={0.99}>
+                {items.map((_, index) => (
+                    <div className="h-[50px] mb-3 nyn-background-card nyn-border rounded" key={index} />
+                ))}
+            </NInfiniteScroll>
+        </div>
+    );
 };
 
 export default InfiniteScrollExample;

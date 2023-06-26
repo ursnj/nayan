@@ -12,7 +12,7 @@ const InfiniteScrollExample = () => {
         dataLength={items.length}
         scrollThreshold={0.99}>
         {items.map((_, index) => (
-          <div className="h-[50px] mb-3 bg-green-500 rounded" key={index} />
+          <div className="h-[50px] mb-3 nyn-background-card nyn-border rounded" key={index} />
         ))}
       </NInfiniteScroll>
     </div>
