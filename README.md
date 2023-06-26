@@ -717,16 +717,21 @@ export default TextExample;
 ### Infinite Scroll
 
 ```jsx
-import NInfiniteScroll from "../components/NInfiniteScroll";
+import NInfiniteScroll from '../components/NInfiniteScroll';
 
 const InfiniteScrollExample = () => {
   const items = new Array(5).fill(1);
   return (
     <div className="break-inside-avoid mb-16">
       <h1 className="nyn-text mb-3 text-lg mt-5">Infinite Scroll</h1>
-      <NInfiniteScroll next={() => console.log('Get Next Data')} hasMore={true} loader={<div>Loading...</div>} dataLength={items.length} scrollThreshold={0.99}>
+      <NInfiniteScroll
+        next={() => console.log('Get Next Data')}
+        hasMore={true}
+        loader={<div>Loading...</div>}
+        dataLength={items.length}
+        scrollThreshold={0.99}>
         {items.map((_, index) => (
-          <div className="h-[50px] mb-3 bg-green-500 rounded" key={index}/>
+          <div className="h-[50px] mb-3 bg-green-500 rounded" key={index} />
         ))}
       </NInfiniteScroll>
     </div>
