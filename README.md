@@ -703,7 +703,7 @@ const TextExample = () => {
 };
 
 export default TextExample;
-``` 
+```
 
 ### Infinite Scroll
 
