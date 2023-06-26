@@ -22,6 +22,7 @@ import CheckExample from './examples/CheckExample';
 import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
 import DividerExample from './examples/DividerExample';
+import InfiniteScrollExample from './examples/InfiniteScrollExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -37,7 +38,7 @@ const App = () => {
       <div className="p-3 pt-0">
         <div className="max-w-6xl m-auto">
           <div className="my-3 flex flex-row justify-between items-center">
-            <img src="/nayan/nayan.png" width="50" height="50" />
+            <img src="/nayan.png" width="50" height="50" />
             <NText className="cursor-pointer nyn-text-primary" onClick={changeTheme}>
               Toggle Theme
             </NText>
@@ -65,6 +66,8 @@ const App = () => {
             <PopoverExample />
             <SwitchExample />
           </div>
+          <NDivider />
+          <InfiniteScrollExample />
         </div>
       </div>
     </NTheme>
