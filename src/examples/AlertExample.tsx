@@ -1,4 +1,4 @@
-import { AlertTypes, NAlert } from '../components/NAlert';
+import { AlertTypes, NAlert } from '@/components/NAlert';
 
 const AlertExample = () => {
   return (
@@ -8,7 +8,7 @@ const AlertExample = () => {
       <NAlert type={AlertTypes.INFO} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
       <NAlert type={AlertTypes.SUCCESS} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
       <NAlert type={AlertTypes.WARNING} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-      <NAlert type={AlertTypes.ERROR} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.ERROR} title="Error!" message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
     </div>
   );
 };
