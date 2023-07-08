@@ -8,7 +8,7 @@ const ConfirmAlertExample = () => {
         title="Are you absolutely sure?"
         message="This action cannot be undone. This will permanently delete your account and remove your data from our servers."
         trigger={<div className="text-sm font-medium text-pink-600">Confirm Alert</div>}
-        onConfirmClick={() => console.log('Confirm CLicked')}
+        onConfirmClick={() => console.log('Confirm Clicked')}
         onCancelClick={() => console.log('Cancel clicked')}
       />
     </div>
