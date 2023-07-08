@@ -38,6 +38,10 @@
   border: 1px solid var(--COLOR_BORDER) !important;
 }
 
+.nyn-border-primary {
+  border: 1px solid var(--COLOR_PRIMARY) !important;
+}
+
 .nyn-border-top {
   border-top: 1px solid var(--COLOR_BORDER) !important;
 }

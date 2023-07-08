@@ -23,6 +23,7 @@ import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
 import DividerExample from './examples/DividerExample';
 import InfiniteScrollExample from './examples/InfiniteScrollExample';
+import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -61,6 +62,7 @@ const App = () => {
             <ComboExample />
             <RadioGroupExample />
             <TabsExample />
+            <ConfirmAlertExample />
             <DialogExample />
             <MenuExample />
             <PopoverExample />
