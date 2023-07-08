@@ -8,6 +8,7 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { ReactNode } from 'react';
 import { Size } from './Types';
+import { NDivider } from '@/components/NDivider';
 
 interface Props {
   size?: Size;
@@ -34,8 +35,8 @@ export const NMenu = (props: Props) => {
       <DropdownMenuContent className={`nyn-menu-content rounded nyn-background-card nyn-border shadow-lg ${menuSizeMapping[size]}`}>
         {title && (
           <>
-            <DropdownMenuLabel>{title}</DropdownMenuLabel>
-            <DropdownMenuSeparator />
+            <DropdownMenuLabel className="nyn-text">{title}</DropdownMenuLabel>
+            <NDivider />
           </>
         )}
         <DropdownMenuGroup>{children}</DropdownMenuGroup>

@@ -22,6 +22,10 @@
   background-color: gray !important;
 }
 
+.nyn-background-border {
+  background-color: var(--COLOR_BORDER) !important;
+}
+
 .nyn-background-primary {
   background-color: var(--COLOR_PRIMARY) !important;
 }
