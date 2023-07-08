@@ -12,6 +12,7 @@ export * from './src/components/NInfiniteScroll';
 export * from './src/components/NInput';
 export * from './src/components/NLink';
 export * from './src/components/NMenu';
+export * from './src/components/NMenuNested';
 export * from './src/components/NMenuItem';
 export * from './src/components/NPopover';
 export * from './src/components/NRadioGroup';
