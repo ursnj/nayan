@@ -1,4 +1,4 @@
-import { CloseIcon } from './Icons';
+import { X } from 'lucide-react';
 import { Size } from './Types';
 
 const sizeMapping = {
@@ -30,7 +30,7 @@ export const NBadge = (props: Props) => {
       <span className="njn-badge-text">{name}</span>
       {onClose && (
         <span className="nyn-badge-close cursor-pointer" onClick={onClose}>
-          <CloseIcon className={`inline ml-2 ${iconMapping[size]}`} />
+          <X className={`inline ml-2 ${iconMapping[size]}`} />
         </span>
       )}
     </span>

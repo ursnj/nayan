@@ -1,4 +1,5 @@
 import { ReactNode, useEffect } from 'react';
+import { Toaster } from '@/components/ui/toaster';
 
 interface Props {
   theme: string | null;
@@ -14,5 +15,10 @@ export const NTheme = (props: Props) => {
     document.documentElement.setAttribute('data-theme', finalTheme);
   }, [theme]);
 
-  return <>{children}</>;
+  return (
+    <>
+      <Toaster />
+      <main>{children}</main>
+    </>
+  );
 };

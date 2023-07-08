@@ -20,7 +20,6 @@ import CheckExample from './examples/CheckExample';
 import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
 import DividerExample from './examples/DividerExample';
-import InfiniteScrollExample from './examples/InfiniteScrollExample';
 import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
 
 const App = () => {
@@ -64,8 +63,6 @@ const App = () => {
             <PopoverExample />
             <SwitchExample />
           </div>
-          <NDivider />
-          <InfiniteScrollExample />
         </div>
       </div>
     </NTheme>
