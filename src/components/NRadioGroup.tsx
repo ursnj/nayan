@@ -1,31 +1,30 @@
-import { RadioGroup } from '@headlessui/react';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 
 interface Props {
-  isVertical?: boolean;
-  items: { id: string; label: string }[];
-  selected: { id: string; label: string };
-  setSelected: (item: { id: string; label: string }) => void;
+  orientation?: 'horizontal' | 'vertical';
+  items: { label: string; value: string }[];
+  selected: string;
+  setSelected: (selected: string) => void;
 }
 
 export const NRadioGroup = (props: Props) => {
-  const { isVertical = false, items, selected, setSelected } = props;
+  const { items, selected, setSelected, orientation = 'horizontal' } = props;
 
   return (
     <RadioGroup
+      orientation={orientation}
+      defaultValue={selected}
       value={selected}
-      onChange={setSelected}
-      className={`nyn-radio-group grid ${isVertical ? 'grid-flow-row' : 'grid-flow-col'} justify-stretch`}>
-      {items.map(item => (
-        <RadioGroup.Option key={item.id} value={item}>
-          {({ checked }) => (
-            <div
-              className={`nyn-radio-group-option ${
-                checked ? 'nyn-background-primary text-white' : 'nyn-background-card nyn-text'
-              } p-2 cursor-pointer w-full text-center first:rounded rounded nyn-border`}>
-              {item.label}
-            </div>
-          )}
-        </RadioGroup.Option>
+      onValueChange={setSelected}
+      className={`${orientation === 'horizontal' ? 'flex flex-row' : 'flex flex-col'}`}>
+      {items.map((item, index) => (
+        <div key={index} className="flex items-center space-x-2">
+          <RadioGroupItem value={item.value} id={'r' + index} />
+          <Label htmlFor={'r' + index} className="nyn-text">
+            {item.label}
+          </Label>
+        </div>
       ))}
     </RadioGroup>
   );
