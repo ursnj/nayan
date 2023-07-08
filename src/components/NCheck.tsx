@@ -1,41 +1,28 @@
 import { ReactNode } from 'react';
-import { Size } from './Types';
-
-const sizeMapping = {
-  [Size.XS]: 'mr-1.5 w-3 h-3',
-  [Size.SM]: 'mr-2 w-3.5 h-3.5',
-  [Size.MD]: 'mr-2 w-4 h-4',
-  [Size.LG]: 'mr-3 w-5 h-5'
-};
-
-const labelSizeMapping = {
-  [Size.XS]: 'text-xs',
-  [Size.SM]: 'text-sm',
-  [Size.MD]: 'text-base',
-  [Size.LG]: 'text-lg'
-};
+import { Checkbox } from '@/components/ui/checkbox';
 
 interface Props {
-  size?: Size;
+  id?: string;
   className?: string;
   children: ReactNode;
-  isChecked: boolean;
+  isChecked: any;
   onChange: any;
 }
 
 export const NCheck = (props: Props) => {
-  const { className = '', children, isChecked, onChange, size = Size.SM } = props;
+  const { className = '', id = 'check', children, isChecked, onChange } = props;
 
   return (
-    <div className={`nyn-check-block flex flex-row items-center ${className}`}>
-      <input
-        className={`nyn-check cursor-pointer ${sizeMapping[size]}`}
-        type="checkbox"
-        value={isChecked as any}
-        onChange={onChange}
-        checked={isChecked}
+    <div className={`flex items-center space-x-2 ${className}`}>
+      <Checkbox
+        id={id}
+        value={isChecked}
+        onCheckedChange={onChange}
+        className="data-[state=unchecked]:border-text data-[state=checked]:border-primary"
       />
-      <label className={`nyn-check-label nyn-text ${labelSizeMapping[size]}`}>{children}</label>
+      <label htmlFor={id} className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+        {children}
+      </label>
     </div>
   );
 };

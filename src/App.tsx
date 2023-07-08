@@ -17,7 +17,6 @@ import CardExample from './examples/CardExample';
 import LinkExample from './examples/LinkExample';
 import TextExample from './examples/TextExample';
 import CheckExample from './examples/CheckExample';
-import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
 import DividerExample from './examples/DividerExample';
 import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
@@ -56,7 +55,6 @@ const App = () => {
             <InputExample />
             <TextareaExample />
             <CheckExample />
-            <RadioExample />
             <RadioGroupExample />
             <TabsExample />
             <ConfirmAlertExample />
