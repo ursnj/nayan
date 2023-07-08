@@ -8,9 +8,9 @@ const AccordionExample = () => {
   ];
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg">Single Accordion:</h1>
+      <h1 className="nyn-text mb-3 text-lg">Accordion Single:</h1>
       <NAccordion list={list} />
-      <h1 className="nyn-text mb-3 mt-5 text-lg">Multiple Accordion:</h1>
+      <h1 className="nyn-text mb-3 mt-5 text-lg">Accordion Multiple:</h1>
       <NAccordion type="multiple" list={list} />
     </div>
   );

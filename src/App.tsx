@@ -46,6 +46,7 @@ const App = () => {
           </div>
           <NDivider />
           <div className="mt-10 columns-1 md:columns-2 gap-16">
+            <AccordionExample />
             <AlertExample />
             <BadgeExample />
             <ButtonExample />
@@ -53,7 +54,6 @@ const App = () => {
             <DividerExample />
             <TextExample />
             <LinkExample />
-            <AccordionExample />
             <InputExample />
             <TextareaExample />
             <CheckExample />

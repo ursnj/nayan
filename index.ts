@@ -1,4 +1,5 @@
 export * from './src/components/Icons';
+export * from './src/components/NAccordion';
 export * from './src/components/NAlert';
 export * from './src/components/NBadge';
 export * from './src/components/NButton';
@@ -8,7 +9,6 @@ export * from './src/components/NConfirmAlert';
 export * from './src/components/NCombo';
 export * from './src/components/NDialog';
 export * from './src/components/NDivider';
-export * from './src/components/NDisclosure';
 export * from './src/components/NInfiniteScroll';
 export * from './src/components/NInput';
 export * from './src/components/NLink';
