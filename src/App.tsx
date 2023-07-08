@@ -21,6 +21,8 @@ import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
 import DividerExample from './examples/DividerExample';
 import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
+import ToastExample from '@/examples/ToastExample';
+import TooltipExample from '@/examples/TooltipExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -61,6 +63,8 @@ const App = () => {
             <DialogExample />
             <MenuExample />
             <PopoverExample />
+            <ToastExample />
+            <TooltipExample />
             <SwitchExample />
           </div>
         </div>
