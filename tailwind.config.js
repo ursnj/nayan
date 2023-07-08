@@ -12,7 +12,7 @@ module.exports = {
         border: 'var(--COLOR_BORDER)',
         card: 'var(--COLOR_CARD)',
         shadow: 'var(--COLOR_SHADOW)',
-        overlay: 'var(--COLOR_OVERLAY)',
+        overlay: 'var(--COLOR_OVERLAY)'
       },
       keyframes: {
         'accordion-down': {
