@@ -9,6 +9,7 @@ module.exports = {
         'primary-light': 'var(--COLOR_PRIMARY_LIGHT)',
         'primary-dark': 'var(--COLOR_PRIMARY_DARK)',
         background: 'var(--COLOR_BACKGROUND)',
+        text: 'var(--COLOR_TEXT)',
         border: 'var(--COLOR_BORDER)',
         card: 'var(--COLOR_CARD)',
         shadow: 'var(--COLOR_SHADOW)',

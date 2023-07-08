@@ -39,7 +39,7 @@ export const NConfirmAlert = (props: Props) => {
           <AlertDialogCancel className="nyn-text nyn-background-card nyn-border" onClick={props.onCancelClick}>
             {cancelText}
           </AlertDialogCancel>
-          <AlertDialogAction className="nyn-text nyn-background-primary nyn-border-primary" onClick={props.onConfirmClick}>
+          <AlertDialogAction className="text-white nyn-background-primary nyn-border-primary" onClick={props.onConfirmClick}>
             {confirmText}
           </AlertDialogAction>
         </AlertDialogFooter>
