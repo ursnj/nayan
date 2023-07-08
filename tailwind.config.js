@@ -4,6 +4,16 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx}', './index.html'],
   theme: {
     extend: {
+      colors: {
+        primary: 'var(--COLOR_PRIMARY)',
+        'primary-light': 'var(--COLOR_PRIMARY_LIGHT)',
+        'primary-dark': 'var(--COLOR_PRIMARY_DARK)',
+        background: 'var(--COLOR_BACKGROUND)',
+        border: 'var(--COLOR_BORDER)',
+        card: 'var(--COLOR_CARD)',
+        shadow: 'var(--COLOR_SHADOW)',
+        overlay: 'var(--COLOR_OVERLAY)',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: 0 },

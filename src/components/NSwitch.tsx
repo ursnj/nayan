@@ -1,24 +1,28 @@
-import { Switch } from '@headlessui/react';
+import { Label } from '@/components/ui/label';
+import { Switch } from '@/components/ui/switch';
 
 interface Props {
   enabled: boolean;
-  setEnabled: (enabled: boolean) => void;
+  label?: string;
+  onChange: (enabled: boolean) => void;
 }
 
 export const NSwitch = (props: Props) => {
-  const { enabled, setEnabled } = props;
+  const { label, enabled, onChange } = props;
 
   return (
-    <Switch
-      checked={enabled}
-      onChange={setEnabled}
-      className={`nyn-switch ${enabled ? 'active nyn-background-primary' : 'inactive bg-gray-400'}
-          relative inline-flex h-[28px] w-[52px] shrink-0 cursor-pointer rounded-full nyn-border transition-colors duration-200 ease-in-out p-[1px]`}>
-      <span
-        aria-hidden="true"
-        className={`nyn-switch-knob ${enabled ? 'active translate-x-6' : 'inactive translate-x-0'}
-            pointer-events-none inline-block h-[24px] w-[24px] transform rounded-full nyn-background-card ring-0 transition duration-200 ease-in-out`}
+    <div className="flex items-center space-x-2">
+      <Switch
+        id="airplane-mode"
+        checked={enabled}
+        onCheckedChange={onChange}
+        className="data-[state=checked]:border-primary data-[state=unchecked]:border-border data-[state=checked]:bg-primary data-[state=unchecked]:bg-border"
       />
-    </Switch>
+      {label && (
+        <Label htmlFor="airplane-mode" className="nyn-text">
+          {label}
+        </Label>
+      )}
+    </div>
   );
 };
