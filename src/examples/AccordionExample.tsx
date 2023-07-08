@@ -3,8 +3,7 @@ import { NAccordion } from '@/components/NAccordion';
 const AccordionExample = () => {
   const list = [
     { title: 'Heading 1', message: 'Description 1' },
-    { title: 'Heading 2', message: 'Description 2' },
-    { title: 'Heading 3', message: 'Description 3' }
+    { title: 'Heading 2', message: 'Description 2' }
   ];
   return (
     <div className="break-inside-avoid mb-16">

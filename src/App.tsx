@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { NTheme } from './components/NTheme';
 import MenuExample from './examples/MenuExample';
-import SelectExample from './examples/SelectExample';
 import DialogExample from './examples/DialogExample';
 import SwitchExample from './examples/SwitchExample';
 import AccordionExample from './examples/AccordionExample';
 import PopoverExample from './examples/PopoverExample';
 import RadioGroupExample from './examples/RadioGroupExample';
-import ComboExample from './examples/ComboExample';
 import { NDivider } from './components/NDivider';
 import InputExample from './examples/InputExample';
 import { NText } from './components/NText';
@@ -58,8 +56,6 @@ const App = () => {
             <TextareaExample />
             <CheckExample />
             <RadioExample />
-            <SelectExample />
-            <ComboExample />
             <RadioGroupExample />
             <TabsExample />
             <ConfirmAlertExample />
