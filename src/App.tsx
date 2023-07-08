@@ -4,7 +4,7 @@ import MenuExample from './examples/MenuExample';
 import SelectExample from './examples/SelectExample';
 import DialogExample from './examples/DialogExample';
 import SwitchExample from './examples/SwitchExample';
-import DisClosureExample from './examples/DisClosureExample';
+import AccordionExample from './examples/AccordionExample';
 import PopoverExample from './examples/PopoverExample';
 import RadioGroupExample from './examples/RadioGroupExample';
 import ComboExample from './examples/ComboExample';
@@ -53,7 +53,7 @@ const App = () => {
             <DividerExample />
             <TextExample />
             <LinkExample />
-            <DisClosureExample />
+            <AccordionExample />
             <InputExample />
             <TextareaExample />
             <CheckExample />
