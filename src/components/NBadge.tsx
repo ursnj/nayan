@@ -3,9 +3,9 @@ import { Size } from './Types';
 
 const sizeMapping = {
   [Size.XS]: 'px-2 py-0.5 text-xs',
-  [Size.SM]: 'px-2 py-1 text-sm',
-  [Size.MD]: 'px-2 py-1 text-base',
-  [Size.LG]: 'px-2 py-1 text-lg'
+  [Size.SM]: 'px-2 py-0 text-sm',
+  [Size.MD]: 'px-3 py-0 text-base',
+  [Size.LG]: 'px-3 py-0 text-lg'
 };
 
 interface Props {
