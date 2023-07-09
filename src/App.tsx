@@ -49,18 +49,18 @@ const App = () => {
             <BadgeExample />
             <ButtonExample />
             <CardExample />
+            <CheckExample />
+            <ConfirmAlertExample />
+            <DialogExample />
             <DividerExample />
             <TextExample />
             <LinkExample />
             <InputExample />
-            <TextareaExample />
-            <CheckExample />
-            <RadioGroupExample />
-            <TabsExample />
-            <ConfirmAlertExample />
-            <DialogExample />
             <MenuExample />
             <PopoverExample />
+            <RadioGroupExample />
+            <TextareaExample />
+            <TabsExample />
             <ToastExample />
             <TooltipExample />
             <SwitchExample />
