@@ -38,16 +38,16 @@ const App = () => {
 
   return (
     <NTheme theme={theme}>
-      <div className="p-3 pt-0">
-        <div className="max-w-6xl m-auto">
-          <div className="my-3 flex flex-row justify-between items-center">
+      <div className="pt-0">
+        <div className="w-full">
+          <div className="px-5 my-3 flex flex-row justify-between items-center">
             <img src={import.meta.env.DEV ? '/nayan.png' : '/nayan/nayan.png'} width="50" height="50" />
             <NText className="cursor-pointer nyn-text-primary" onClick={changeTheme}>
               Toggle Theme
             </NText>
           </div>
           <NDivider />
-          <div className="mt-10 columns-1 md:columns-2 gap-16">
+          <div className="p-5 columns-1 sm:columns-2 md:columns-3 gap-16">
             <AccordionExample />
             <AlertExample />
             <BadgeExample />
