@@ -15,7 +15,11 @@ interface Props {
 }
 
 export const NBadge = (props: Props) => {
-  const { className = '', size = Size.SM, name } = props;
+  const { className = '', size = Size.SM, name, ...remaining } = props;
 
-  return <Badge className={`nyn-badge ${size.toLowerCase()} rounded-full font-normal ${sizeMapping[size]} ${className}`}>{name}</Badge>;
+  return (
+    <Badge className={`nyn-badge ${size.toLowerCase()} rounded-full font-normal ${sizeMapping[size]} ${className}`} {...remaining}>
+      {name}
+    </Badge>
+  );
 };

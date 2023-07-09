@@ -27,14 +27,16 @@ export const NButton = (props: Props) => {
     className = '',
     isLoading = false,
     loadingText = 'Loading...',
-    onClick = () => undefined
+    onClick = () => undefined,
+    ...remaining
   } = props;
 
   return (
     <Button
       type={type}
       className={`nyn-button ${size.toLowerCase()} rounded h-auto transition duration-150 ease-in-out ${sizeMapping[size]} ${className}`}
-      onClick={onClick}>
+      onClick={onClick}
+      {...remaining}>
       {!isLoading ? children : loadingText}
     </Button>
   );
