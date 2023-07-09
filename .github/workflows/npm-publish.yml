@@ -5,7 +5,7 @@ name: Publish Nayan to NPM Repo
 
 on:
   push:
-    branches: ['main']
+    branches: ['custom']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,7 +18,7 @@ jobs:
       matrix:
         node-version: [16.x]
 
-    if: contains(github.event.head_commit.message, 'release now')
+#    if: contains(github.event.head_commit.message, 'release now')
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
