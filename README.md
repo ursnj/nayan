@@ -63,31 +63,31 @@ export default {
   ],
   theme: {
     extend: {
-        colors: {
-            primary: 'var(--COLOR_PRIMARY)',
-            'primary-light': 'var(--COLOR_PRIMARY_LIGHT)',
-            'primary-dark': 'var(--COLOR_PRIMARY_DARK)',
-            background: 'var(--COLOR_BACKGROUND)',
-            text: 'var(--COLOR_TEXT)',
-            border: 'var(--COLOR_BORDER)',
-            card: 'var(--COLOR_CARD)',
-            shadow: 'var(--COLOR_SHADOW)',
-            overlay: 'var(--COLOR_OVERLAY)'
+      colors: {
+        primary: 'var(--COLOR_PRIMARY)',
+        'primary-light': 'var(--COLOR_PRIMARY_LIGHT)',
+        'primary-dark': 'var(--COLOR_PRIMARY_DARK)',
+        background: 'var(--COLOR_BACKGROUND)',
+        text: 'var(--COLOR_TEXT)',
+        border: 'var(--COLOR_BORDER)',
+        card: 'var(--COLOR_CARD)',
+        shadow: 'var(--COLOR_SHADOW)',
+        overlay: 'var(--COLOR_OVERLAY)'
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: 0 },
+          to: { height: 'var(--radix-accordion-content-height)' }
         },
-        keyframes: {
-            'accordion-down': {
-                from: { height: 0 },
-                to: { height: 'var(--radix-accordion-content-height)' }
-            },
-            'accordion-up': {
-                from: { height: 'var(--radix-accordion-content-height)' },
-                to: { height: 0 }
-            }
-        },
-        animation: {
-            'accordion-down': 'accordion-down 0.2s ease-out',
-            'accordion-up': 'accordion-up 0.2s ease-out'
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: 0 }
         }
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out'
+      }
     }
   },
   plugins: [require('tailwindcss-animate')]
@@ -104,29 +104,29 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --COLOR_PRIMARY: #005ee6;
-        --COLOR_PRIMARY_DARK: #0043a3;
-        --COLOR_PRIMARY_LIGHT: #0069ff;
-        --COLOR_BACKGROUND: #f5f5f5;
-        --COLOR_CARD: #ffffff;
-        --COLOR_TEXT: #050505;
-        --COLOR_BORDER: #d3d3d3;
-        --COLOR_SHADOW: #d3d3d3;
-        --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
-    }
+  :root {
+    --COLOR_PRIMARY: #005ee6;
+    --COLOR_PRIMARY_DARK: #0043a3;
+    --COLOR_PRIMARY_LIGHT: #0069ff;
+    --COLOR_BACKGROUND: #f5f5f5;
+    --COLOR_CARD: #ffffff;
+    --COLOR_TEXT: #050505;
+    --COLOR_BORDER: #d3d3d3;
+    --COLOR_SHADOW: #d3d3d3;
+    --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
+  }
 
-    [data-theme='dark'] {
-        --COLOR_PRIMARY: #005ee6;
-        --COLOR_PRIMARY_DARK: #0043a3;
-        --COLOR_PRIMARY_LIGHT: #0069ff;
-        --COLOR_BACKGROUND: #1f1f1f;
-        --COLOR_CARD: #303030;
-        --COLOR_TEXT: #f5f5f5;
-        --COLOR_BORDER: #505050;
-        --COLOR_SHADOW: #cbcbcb;
-        --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
-    }
+  [data-theme='dark'] {
+    --COLOR_PRIMARY: #005ee6;
+    --COLOR_PRIMARY_DARK: #0043a3;
+    --COLOR_PRIMARY_LIGHT: #0069ff;
+    --COLOR_BACKGROUND: #1f1f1f;
+    --COLOR_CARD: #303030;
+    --COLOR_TEXT: #f5f5f5;
+    --COLOR_BORDER: #505050;
+    --COLOR_SHADOW: #cbcbcb;
+    --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
+  }
 }
 ```
 
@@ -186,16 +186,16 @@ export default AccordionExample;
 import { AlertTypes, NAlert } from '@/components/NAlert';
 
 const AlertExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg text-left">Alert:</h1>
-            <NAlert type={AlertTypes.DEFAULT} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-            <NAlert type={AlertTypes.INFO} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-            <NAlert type={AlertTypes.SUCCESS} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-            <NAlert type={AlertTypes.WARNING} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-            <NAlert type={AlertTypes.ERROR} title="Error!" message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg text-left">Alert:</h1>
+      <NAlert type={AlertTypes.DEFAULT} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.INFO} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.SUCCESS} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.WARNING} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.ERROR} title="Error!" message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+    </div>
+  );
 };
 
 export default AlertExample;
@@ -208,16 +208,16 @@ import { NBadge } from '@/components/NBadge';
 import { Size } from '@/components/Types';
 
 const BadgeExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg text-left">Badge:</h1>
-            <NBadge size={Size.XS} name="Sample" className="nyn-text nyn-background-card nyn-border mr-2" />
-            <NBadge size={Size.XS} name="Sample" className="text-blue-700 bg-blue-300 mr-2" />
-            <NBadge size={Size.SM} name="Sample" className="text-green-700 bg-green-300 mr-2" />
-            <NBadge size={Size.MD} name="Sample" className="text-yellow-700 bg-yellow-300 mr-2" />
-            <NBadge size={Size.LG} name="Sample" className="text-red-700 bg-red-300 mr-2" />
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg text-left">Badge:</h1>
+      <NBadge size={Size.XS} name="Sample" className="nyn-text nyn-background-card nyn-border mr-2" />
+      <NBadge size={Size.XS} name="Sample" className="text-blue-700 bg-blue-300 mr-2" />
+      <NBadge size={Size.SM} name="Sample" className="text-green-700 bg-green-300 mr-2" />
+      <NBadge size={Size.MD} name="Sample" className="text-yellow-700 bg-yellow-300 mr-2" />
+      <NBadge size={Size.LG} name="Sample" className="text-red-700 bg-red-300 mr-2" />
+    </div>
+  );
 };
 
 export default BadgeExample;
@@ -230,53 +230,53 @@ import { NButton } from '@/components/NButton';
 import { Size } from '@/components/Types';
 
 const ButtonExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg text-left">Buttons:</h1>
-            <NButton size={Size.XS} className="nyn-text nyn-background-card nyn-border mr-2">
-                Button
-            </NButton>
-            <NButton
-                type="submit"
-                size={Size.XS}
-                onClick={() => console.log('Button clicked')}
-                className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
-                Button
-            </NButton>
-            <NButton
-                type="reset"
-                size={Size.SM}
-                onClick={() => console.log('Button clicked')}
-                className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
-                Button
-            </NButton>
-            <NButton
-                size={Size.MD}
-                isLoading={true}
-                onClick={() => console.log('Button clicked')}
-                className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
-                Button
-            </NButton>
-            <NButton
-                size={Size.LG}
-                onClick={() => console.log('Button clicked')}
-                className="text-white bg-red-500 hover:bg-red-600 border border-red-600 mr-2">
-                Button
-            </NButton>
-            <NButton
-                size={Size.LG}
-                onClick={() => console.log('Button clicked')}
-                className="text-orange-600 hover:text-white bg-transparent hover:bg-red-600 border border-orange-600 mr-2">
-                Button
-            </NButton>
-            <NButton
-                size={Size.LG}
-                onClick={() => console.log('Button clicked')}
-                className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
-                Button
-            </NButton>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg text-left">Buttons:</h1>
+      <NButton size={Size.XS} className="nyn-text nyn-background-card nyn-border mr-2">
+        Button
+      </NButton>
+      <NButton
+        type="submit"
+        size={Size.XS}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        type="reset"
+        size={Size.SM}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.MD}
+        isLoading={true}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.LG}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-red-500 hover:bg-red-600 border border-red-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.LG}
+        onClick={() => console.log('Button clicked')}
+        className="text-orange-600 hover:text-white bg-transparent hover:bg-red-600 border border-orange-600 mr-2">
+        Button
+      </NButton>
+      <NButton
+        size={Size.LG}
+        onClick={() => console.log('Button clicked')}
+        className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
+        Button
+      </NButton>
+    </div>
+  );
 };
 
 export default ButtonExample;
@@ -310,18 +310,18 @@ import { NLink } from '@/components/NLink';
 import { NText } from '@/components/NText';
 
 const CheckExample = () => {
-    const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Checkbox:</h1>
-            <NCheck className="" isChecked={isChecked} onChange={(checked: any) => setIsChecked(checked)}>
-                <NText className="inline">
-                    Sample label for checkbox. accept <NLink> terms</NLink>
-                </NText>
-            </NCheck>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Checkbox:</h1>
+      <NCheck className="" isChecked={isChecked} onChange={(checked: any) => setIsChecked(checked)}>
+        <NText className="inline">
+          Sample label for checkbox. accept <NLink> terms</NLink>
+        </NText>
+      </NCheck>
+    </div>
+  );
 };
 
 export default CheckExample;
@@ -334,29 +334,29 @@ import { NCombo } from '@/components/NCombo';
 import { useState } from 'react';
 
 const items = [
-    { value: 'startup', label: 'Startup' },
-    { value: 'business', label: 'Business' },
-    { value: 'enterprise', label: 'Enterprise' }
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
 ];
 
 const ComboExample = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState(items[0].value);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(items[0].value);
 
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Combo Box:</h1>
-            <NCombo
-                isOpen={isOpen}
-                setIsOpen={setIsOpen}
-                selected={selected}
-                placeholder="Select Business"
-                label="Business Type"
-                items={items}
-                onChange={setSelected}
-            />
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Combo Box:</h1>
+      <NCombo
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        selected={selected}
+        placeholder="Select Business"
+        label="Business Type"
+        items={items}
+        onChange={setSelected}
+      />
+    </div>
+  );
 };
 
 export default ComboExample;
@@ -392,16 +392,16 @@ import { NDialog } from '@/components/NDialog';
 import { Size } from '@/components/Types';
 
 const DialogExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
-            <NDialog size={Size.MD} title="Payment confirmation" trigger={<div className="text-sm font-medium text-green-600">Show Dialog</div>}>
-                <div className="w-full h-full p-3 nyn-text">
-                    Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
-                </div>
-            </NDialog>
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text mb-3 text-lg text-left">Dialog:</h1>
+      <NDialog size={Size.MD} title="Payment confirmation" trigger={<div className="text-sm font-medium text-green-600">Show Dialog</div>}>
+        <div className="w-full h-full p-3 nyn-text">
+          Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
         </div>
-    );
+      </NDialog>
+    </div>
+  );
 };
 
 export default DialogExample;
@@ -413,14 +413,14 @@ export default DialogExample;
 import { NDivider } from '@/components/NDivider';
 
 const DividerExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Divider Horizontal:</h1>
-            <NDivider className="my-3" />
-            <h1 className="nyn-text mb-3 text-lg">Divider Vertical:</h1>
-            <NDivider orientation="vertical" className="h-5" />
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Divider Horizontal:</h1>
+      <NDivider className="my-3" />
+      <h1 className="nyn-text mb-3 text-lg">Divider Vertical:</h1>
+      <NDivider orientation="vertical" className="h-5" />
+    </div>
+  );
 };
 
 export default DividerExample;
@@ -464,29 +464,29 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 const InputExample = () => {
-    const { register, handleSubmit } = useForm();
-    const [email, setEmail] = useState('niranjan.devasani@gmail.com');
+  const { register, handleSubmit } = useForm();
+  const [email, setEmail] = useState('niranjan.devasani@gmail.com');
 
-    const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: any) => console.log(data);
 
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg text-left">Input:</h1>
-            <NInput id="in1" type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <h1 className="nyn-text mb-3 mt-3 text-lg text-left">Input with React Hook Form:</h1>
-                <NInput
-                    id="in2"
-                    type="email"
-                    label="Email"
-                    placeholder="Enter email"
-                    className="mb-3"
-                    defaultValue="niranjan.devasani@gmail.com"
-                    {...register('email')}
-                />
-            </form>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg text-left">Input:</h1>
+      <NInput id="in1" type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <h1 className="nyn-text mb-3 mt-3 text-lg text-left">Input with React Hook Form:</h1>
+        <NInput
+          id="in2"
+          type="email"
+          label="Email"
+          placeholder="Enter email"
+          className="mb-3"
+          defaultValue="niranjan.devasani@gmail.com"
+          {...register('email')}
+        />
+      </form>
+    </div>
+  );
 };
 
 export default InputExample;
@@ -498,17 +498,17 @@ export default InputExample;
 import { NLink } from '../components/NLink';
 
 const LinkExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Links:</h1>
-            <div className="nyn-text">
-                This is a sample paragraph with some <NLink>Link</NLink>.
-            </div>
-            <div className="nyn-text">
-                This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
-            </div>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Links:</h1>
+      <div className="nyn-text">
+        This is a sample paragraph with some <NLink>Link</NLink>.
+      </div>
+      <div className="nyn-text">
+        This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
+      </div>
+    </div>
+  );
 };
 
 export default LinkExample;
@@ -524,23 +524,23 @@ import { User } from 'lucide-react';
 import { NMenuNested } from '@/components/NMenuNested';
 
 const MenuExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text text-lg text-left">Dropdown Menu:</h1>
-            <NMenu title="My Account" size={Size.LG} trigger={<div className="text-sm font-medium text-red-600">Show Menu</div>}>
-                <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
-                <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
-                <NMenuItem title="Profile" icon={User} shortcut="⌘P" separator={true} />
-                <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
-                <NMenuNested trigger={<NMenuItem title="Share" icon={User} className="p-0" />}>
-                    <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
-                    <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
-                </NMenuNested>
-                <NMenuItem title="Profile" icon={User} shortcut="⌘P" separator={true} />
-                <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
-            </NMenu>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text text-lg text-left">Dropdown Menu:</h1>
+      <NMenu title="My Account" size={Size.LG} trigger={<div className="text-sm font-medium text-red-600">Show Menu</div>}>
+        <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+        <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+        <NMenuItem title="Profile" icon={User} shortcut="⌘P" separator={true} />
+        <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+        <NMenuNested trigger={<NMenuItem title="Share" icon={User} className="p-0" />}>
+          <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+          <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+        </NMenuNested>
+        <NMenuItem title="Profile" icon={User} shortcut="⌘P" separator={true} />
+        <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+      </NMenu>
+    </div>
+  );
 };
 
 export default MenuExample;
@@ -553,17 +553,17 @@ import { NPopover } from '@/components/NPopover';
 import { Size } from '@/components/Types';
 
 const PopoverExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text text-lg text-left">Popover:</h1>
-            <NPopover size={Size.MD} trigger={<div className="text-sm font-medium nyn-text-primary">Show Popover</div>}>
-                <div className="overflow-hidden p-3">
-                    <div className="text-sm font-medium nyn-text">Documentation</div>
-                    <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
-                </div>
-            </NPopover>
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text text-lg text-left">Popover:</h1>
+      <NPopover size={Size.MD} trigger={<div className="text-sm font-medium nyn-text-primary">Show Popover</div>}>
+        <div className="overflow-hidden p-3">
+          <div className="text-sm font-medium nyn-text">Documentation</div>
+          <div className="text-sm nyn-text-muted">Start integrating products and tools</div>
         </div>
-    );
+      </NPopover>
+    </div>
+  );
 };
 
 export default PopoverExample;
@@ -576,23 +576,23 @@ import { useState } from 'react';
 import { NRadioGroup } from '../components/NRadioGroup';
 
 const items = [
-    { value: 'startup', label: 'Startup' },
-    { value: 'business', label: 'Business' },
-    { value: 'enterprise', label: 'Enterprise' }
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
 ];
 
 const RadioGroupExample = () => {
-    const [selected, setSelected] = useState(items[0].value);
+  const [selected, setSelected] = useState(items[0].value);
 
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Radio Group Horizontal:</h1>
-            <NRadioGroup items={items} selected={selected} setSelected={setSelected} />
-            <div className="mt-3" />
-            <h1 className="nyn-text mb-3 text-lg">Radio Group Vertical:</h1>
-            <NRadioGroup orientation="vertical" items={items} selected={selected} setSelected={setSelected} />
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Radio Group Horizontal:</h1>
+      <NRadioGroup items={items} selected={selected} setSelected={setSelected} />
+      <div className="mt-3" />
+      <h1 className="nyn-text mb-3 text-lg">Radio Group Vertical:</h1>
+      <NRadioGroup orientation="vertical" items={items} selected={selected} setSelected={setSelected} />
+    </div>
+  );
 };
 
 export default RadioGroupExample;
@@ -605,19 +605,19 @@ import { useState } from 'react';
 import { NSelect } from '@/components/NSelect';
 
 const items = [
-    { value: 'startup', label: 'Startup' },
-    { value: 'business', label: 'Business' },
-    { value: 'enterprise', label: 'Enterprise' }
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
 ];
 
 const SelectExample = () => {
-    const [selected, setSelected] = useState(items[0].value);
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Select:</h1>
-            <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
-        </div>
-    );
+  const [selected, setSelected] = useState(items[0].value);
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Select:</h1>
+      <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
+    </div>
+  );
 };
 
 export default SelectExample;
@@ -677,14 +677,14 @@ import { useState } from 'react';
 import { NSwitch } from '@/components/NSwitch';
 
 const SwitchExample = () => {
-    const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(false);
 
-    return (
-        <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-            <h1 className="nyn-text mb-3 text-lg text-left">Switch:</h1>
-            <NSwitch enabled={enabled} onChange={setEnabled} />
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16 flex flex-row justify-between">
+      <h1 className="nyn-text mb-3 text-lg text-left">Switch:</h1>
+      <NSwitch enabled={enabled} onChange={setEnabled} />
+    </div>
+  );
 };
 
 export default SwitchExample;
@@ -700,30 +700,30 @@ import { NTabsContent } from '@/components/NTabsContent';
 const tabs = ['POSTS', 'SAVED'];
 
 const TabsExample = () => {
-    const [selected, setSelected] = useState(tabs[0]);
+  const [selected, setSelected] = useState(tabs[0]);
 
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg text-left">Tabs:</h1>
-            <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
-                <NTabsContent tab={tabs[0]} className="px-3 py-2 nyn-text">
-                    Content1
-                </NTabsContent>
-                <NTabsContent tab={tabs[1]} className="px-3 py-2 nyn-text">
-                    Content2
-                </NTabsContent>
-            </NTabs>
-            <h1 className="nyn-text mb-3 mt-5 text-lg text-left">Tabs Full Width:</h1>
-            <NTabs isFull={true} tabs={tabs} selected={selected} setSelected={setSelected}>
-                <NTabsContent tab={tabs[0]} className="px-3 py-2 nyn-text">
-                    Content3
-                </NTabsContent>
-                <NTabsContent tab={tabs[1]} className="px-3 py-2 nyn-text">
-                    Content4
-                </NTabsContent>
-            </NTabs>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg text-left">Tabs:</h1>
+      <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
+        <NTabsContent tab={tabs[0]} className="px-3 py-2 nyn-text">
+          Content1
+        </NTabsContent>
+        <NTabsContent tab={tabs[1]} className="px-3 py-2 nyn-text">
+          Content2
+        </NTabsContent>
+      </NTabs>
+      <h1 className="nyn-text mb-3 mt-5 text-lg text-left">Tabs Full Width:</h1>
+      <NTabs isFull={true} tabs={tabs} selected={selected} setSelected={setSelected}>
+        <NTabsContent tab={tabs[0]} className="px-3 py-2 nyn-text">
+          Content3
+        </NTabsContent>
+        <NTabsContent tab={tabs[1]} className="px-3 py-2 nyn-text">
+          Content4
+        </NTabsContent>
+      </NTabs>
+    </div>
+  );
 };
 
 export default TabsExample;
@@ -737,37 +737,37 @@ import { useForm } from 'react-hook-form';
 import { NTextarea } from '@/components/NTextarea';
 
 const TextareaExample = () => {
-    const { register, handleSubmit } = useForm();
-    const [address, setAddress] = useState('Bangalore, India');
+  const { register, handleSubmit } = useForm();
+  const [address, setAddress] = useState('Bangalore, India');
 
-    const onSubmit = (data: any) => console.log(data);
+  const onSubmit = (data: any) => console.log(data);
 
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg text-left">Custom Textarea:</h1>
-            <NTextarea
-                id="ta1"
-                label="Address"
-                placeholder="Enter address"
-                className="mb-3"
-                rows={3}
-                value={address}
-                onChange={e => setAddress(e.target.value)}
-            />
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <h1 className="nyn-text mb-3 mt-3 text-lg text-left">React Hook Form Textarea:</h1>
-                <NTextarea
-                    id="ta2"
-                    rows={3}
-                    label="Address"
-                    placeholder="Enter address"
-                    className="mb-3"
-                    defaultValue="Bangalore, India"
-                    {...register('address')}
-                />
-            </form>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg text-left">Custom Textarea:</h1>
+      <NTextarea
+        id="ta1"
+        label="Address"
+        placeholder="Enter address"
+        className="mb-3"
+        rows={3}
+        value={address}
+        onChange={e => setAddress(e.target.value)}
+      />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <h1 className="nyn-text mb-3 mt-3 text-lg text-left">React Hook Form Textarea:</h1>
+        <NTextarea
+          id="ta2"
+          rows={3}
+          label="Address"
+          placeholder="Enter address"
+          className="mb-3"
+          defaultValue="Bangalore, India"
+          {...register('address')}
+        />
+      </form>
+    </div>
+  );
 };
 
 export default TextareaExample;
@@ -779,13 +779,13 @@ export default TextareaExample;
 import { NText } from '@/components/NText';
 
 const TextExample = () => {
-    return (
-        <div className="break-inside-avoid mb-16">
-            <h1 className="nyn-text mb-3 text-lg">Text:</h1>
-            <NText>This is a sample text.</NText>
-            <NText className="text-base text-green-600">This is a sample text with custom styles.</NText>
-        </div>
-    );
+  return (
+    <div className="break-inside-avoid mb-16">
+      <h1 className="nyn-text mb-3 text-lg">Text:</h1>
+      <NText>This is a sample text.</NText>
+      <NText className="text-base text-green-600">This is a sample text with custom styles.</NText>
+    </div>
+  );
 };
 
 export default TextExample;
