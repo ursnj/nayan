@@ -15,6 +15,7 @@ export * from './src/components/NMenuNested';
 export * from './src/components/NMenuItem';
 export * from './src/components/NPopover';
 export * from './src/components/NRadioGroup';
+export * from './src/components/NSheet';
 export * from './src/components/NSwitch';
 export * from './src/components/NTabs';
 export * from './src/components/NTabsContent';

@@ -22,6 +22,7 @@ import DividerExample from './examples/DividerExample';
 import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
 import ToastExample from '@/examples/ToastExample';
 import TooltipExample from '@/examples/TooltipExample';
+import SheetExample from '@/examples/SheetExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -63,6 +64,7 @@ const App = () => {
             <TabsExample />
             <ToastExample />
             <TooltipExample />
+            <SheetExample />
             <SwitchExample />
           </div>
         </div>
