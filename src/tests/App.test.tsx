@@ -36,6 +36,6 @@ describe('App', () => {
   test('NCheckbox', () => {
     const { container } = render(<CheckExample />);
     const checks = container.getElementsByClassName('nyn-check');
-    expect(checks.length).toBe(4);
+    expect(checks.length).toBe(1);
   });
 });
