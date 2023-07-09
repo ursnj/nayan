@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { Size } from './Types';
+import { Button } from '@/components/ui/button';
 
 const sizeMapping = {
   [Size.XS]: 'px-2 py-0.5 text-xs',
@@ -30,11 +31,11 @@ export const NButton = (props: Props) => {
   } = props;
 
   return (
-    <button
+    <Button
       type={type}
-      className={`nyn-button ${size.toLowerCase()} rounded ${sizeMapping[size]} ${className} transition duration-150 ease-in-out`}
+      className={`nyn-button ${size.toLowerCase()} rounded h-auto transition duration-150 ease-in-out ${sizeMapping[size]} ${className}`}
       onClick={onClick}>
       {!isLoading ? children : loadingText}
-    </button>
+    </Button>
   );
 };

@@ -52,7 +52,7 @@ export const NAlert = (props: Props) => {
       {iconsMapping[type]}
       <AlertTitle className="nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center">
         {title}
-        <span className="nyn-alert-close" tabIndex={1} role="button" onClick={onClose}>
+        <span className="nyn-alert-close" tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
           <X className="w-4 h-4" />
         </span>
       </AlertTitle>
