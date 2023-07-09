@@ -24,6 +24,7 @@ import ToastExample from '@/examples/ToastExample';
 import TooltipExample from '@/examples/TooltipExample';
 import SheetExample from '@/examples/SheetExample';
 import SkeletonExample from '@/examples/SkeletonExample';
+import SelectExample from '@/examples/SelectExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -65,6 +66,7 @@ const App = () => {
             <TabsExample />
             <ToastExample />
             <TooltipExample />
+            <SelectExample />
             <SheetExample />
             <SwitchExample />
             <SkeletonExample />
