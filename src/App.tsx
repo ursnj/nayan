@@ -26,6 +26,7 @@ import SheetExample from '@/examples/SheetExample';
 import SkeletonExample from '@/examples/SkeletonExample';
 import SelectExample from '@/examples/SelectExample';
 import ComboExample from '@/examples/ComboExample';
+import InfiniteScrollExample from '@/examples/InfiniteScrollExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -72,6 +73,10 @@ const App = () => {
             <SheetExample />
             <SwitchExample />
             <SkeletonExample />
+          </div>
+          <div className="p-5">
+            <NDivider />
+            <InfiniteScrollExample />
           </div>
         </div>
       </div>
