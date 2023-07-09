@@ -14,14 +14,19 @@ interface Props {
   className?: string;
   trigger: ReactNode;
   children: ReactNode;
+  side?: 'top' | 'bottom' | 'right' | 'left' | undefined;
+  align?: 'start' | 'end' | 'center' | undefined;
 }
 
 export const NPopover = (props: Props) => {
-  const { trigger, children, size = Size.SM, className = '' } = props;
+  const { trigger, children, size = Size.SM, className = '', side = 'bottom', align = 'end' } = props;
   return (
     <Popover>
       <PopoverTrigger className={`nyn-popover ${className}`}>{trigger}</PopoverTrigger>
-      <PopoverContent className={`nyn-popover-content rounded nyn-background-card nyn-border shadow-lg p-0 ${sizeMapping[size]}`}>
+      <PopoverContent
+        side={side}
+        align={align}
+        className={`nyn-popover-content rounded nyn-background-card nyn-border shadow-lg p-0 ${sizeMapping[size]}`}>
         {children}
       </PopoverContent>
     </Popover>

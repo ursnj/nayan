@@ -7,7 +7,7 @@ import { NMenuNested } from '@/components/NMenuNested';
 const MenuExample = () => {
   return (
     <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-      <h1 className="nyn-text mb-3 text-lg text-left">Dropdown Menu:</h1>
+      <h1 className="nyn-text text-lg text-left">Dropdown Menu:</h1>
       <NMenu title="My Account" size={Size.LG} trigger={<div className="text-sm font-medium text-red-600">Show Menu</div>}>
         <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
         <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
