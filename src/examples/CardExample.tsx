@@ -1,4 +1,4 @@
-import { NCard } from '../components/NCard';
+import { NCard } from '@/components/NCard';
 
 const CardExample = () => {
   return (

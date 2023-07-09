@@ -1,16 +1,19 @@
-import { Menu, Transition } from '@headlessui/react';
-import { Fragment, ReactNode } from 'react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuLabel, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { ReactNode } from 'react';
 import { Size } from './Types';
+import { NDivider } from '@/components/NDivider';
 
 interface Props {
   size?: Size;
-  position?: 'left' | 'right';
+  title?: string;
+  side?: 'top' | 'bottom' | 'right' | 'left' | undefined;
+  align?: 'start' | 'end' | 'center' | undefined;
+  className?: string;
   trigger: ReactNode;
   children: ReactNode;
-  className?: string;
 }
 
-const sizeMapping = {
+export const menuSizeMapping = {
   [Size.XS]: 'w-[80px]',
   [Size.SM]: 'w-[100px]',
   [Size.MD]: 'w-[150px]',
@@ -18,25 +21,24 @@ const sizeMapping = {
 };
 
 export const NMenu = (props: Props) => {
-  const { trigger, children, className = '', size = Size.MD, position = 'right' } = props;
+  const { trigger, children, className = '', title = '', size = Size.MD, side = 'bottom', align = 'end' } = props;
   return (
-    <Menu as="span" className="nyn-menu relative">
-      <Menu.Button className={`nyn-menu-trigger ${className}`}>{trigger}</Menu.Button>
-      <Transition
-        as={Fragment}
-        enter="transition ease-out duration-100"
-        enterFrom="transform opacity-0 scale-95"
-        enterTo="transform opacity-100 scale-100"
-        leave="transition ease-in duration-75"
-        leaveFrom="transform opacity-100 scale-100"
-        leaveTo="transform opacity-0 scale-95">
-        <Menu.Items
-          className={`nyn-menu-items absolute ${position === 'right' ? 'right-0' : 'left-0'} mt-1 z-10 ${
-            sizeMapping[size]
-          } origin-top-right rounded nyn-background-card nyn-border shadow-lg`}>
-          {children}
-        </Menu.Items>
-      </Transition>
-    </Menu>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild className={`nyn-menu-trigger ${className}`}>
+        {trigger}
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        side={side}
+        align={align}
+        className={`nyn-menu-content rounded nyn-background-card nyn-border shadow-lg ${menuSizeMapping[size]}`}>
+        {title && (
+          <>
+            <DropdownMenuLabel className="nyn-text">{title}</DropdownMenuLabel>
+            <NDivider />
+          </>
+        )}
+        <DropdownMenuGroup>{children}</DropdownMenuGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 };

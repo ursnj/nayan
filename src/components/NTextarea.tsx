@@ -1,4 +1,8 @@
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+
 interface Props {
+  id: string;
   rows?: number;
   label?: string;
   value?: string;
@@ -10,11 +14,16 @@ interface Props {
 
 // TODO: Fix React hook form
 export const NTextarea = (props: Props) => {
-  const { label = '', rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
+  const { label = '', id, rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
     <div className={`nyn-input-block ${className}`}>
-      {label && <label className="nyn-input-label block pb-1 nyn-text-muted">{label}</label>}
-      <textarea
+      {label && (
+        <Label htmlFor={id} className="nyn-input-label block pb-1 nyn-text-muted">
+          {label}
+        </Label>
+      )}
+      <Textarea
+        id={id}
         rows={rows}
         {...(value && { value })}
         {...(defaultValue && { defaultValue })}

@@ -1,4 +1,5 @@
-import { CloseIcon, ErrorIcon, InfoIcon, SuccessIcon, WarningIcon } from './Icons';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { AlertTriangle, BadgeAlert, CheckCircle2, Info, X, XCircle } from 'lucide-react';
 
 export enum AlertTypes {
   DEFAULT = 'DEFAULT',
@@ -9,11 +10,11 @@ export enum AlertTypes {
 }
 
 const iconsMapping = {
-  [AlertTypes.DEFAULT]: <InfoIcon className="w-5 h-5 mr-2" />,
-  [AlertTypes.INFO]: <InfoIcon className="w-5 h-5 mr-2" />,
-  [AlertTypes.SUCCESS]: <SuccessIcon className="w-5 h-5 mr-2" />,
-  [AlertTypes.WARNING]: <WarningIcon className="w-5 h-5 mr-2" />,
-  [AlertTypes.ERROR]: <ErrorIcon className="w-5 h-5 mr-2" />
+  [AlertTypes.DEFAULT]: <BadgeAlert className="h-4 w-4" />,
+  [AlertTypes.INFO]: <Info className="h-4 w-4" />,
+  [AlertTypes.SUCCESS]: <CheckCircle2 className="h-4 w-4" />,
+  [AlertTypes.WARNING]: <AlertTriangle className="h-4 w-4" />,
+  [AlertTypes.ERROR]: <XCircle className="h-4 w-4" />
 };
 
 const classesMapping = {
@@ -24,28 +25,38 @@ const classesMapping = {
   [AlertTypes.ERROR]: 'bg-red-300 text-red-700 border border-red-400'
 };
 
+const titleMapping = {
+  [AlertTypes.DEFAULT]: 'Alert!',
+  [AlertTypes.INFO]: 'Information!',
+  [AlertTypes.SUCCESS]: 'Success!',
+  [AlertTypes.WARNING]: 'Warning!',
+  [AlertTypes.ERROR]: 'Error!'
+};
+
 interface Props {
   type: AlertTypes;
+  title?: string;
   message: string;
   className?: string;
   onClose?: () => void;
 }
 
 export const NAlert = (props: Props) => {
-  const { className = '', type, message, onClose } = props;
+  const { className = '', type, title = titleMapping[type], message, onClose } = props;
 
   return (
-    <div
-      className={`nyn-alert ${type.toLowerCase()} flex flex-row items-center justify-between rounded py-2 px-3 ${classesMapping[type]} ${className}`}>
-      <div className="flex flex-row items-center">
-        <span className="nyn-alert-icon">{iconsMapping[type]}</span>
-        <span className="nyn-alert-text">{message}</span>
-      </div>
-      {onClose && (
-        <div className="nyn-alert-close cursor-pointer" onClick={onClose}>
-          <CloseIcon className="w-5 h-5 ml-2" />
-        </div>
-      )}
-    </div>
+    <Alert
+      className={`nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${
+        classesMapping[type]
+      } ${className}`}>
+      {iconsMapping[type]}
+      <AlertTitle className="nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center">
+        {title}
+        <span className="nyn-alert-close" tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
+          <X className="w-4 h-4" />
+        </span>
+      </AlertTitle>
+      <AlertDescription className="nyn-alert-message">{message}</AlertDescription>
+    </Alert>
   );
 };

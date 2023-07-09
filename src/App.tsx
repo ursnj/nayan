@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import { NTheme } from './components/NTheme';
 import MenuExample from './examples/MenuExample';
-import SelectExample from './examples/SelectExample';
 import DialogExample from './examples/DialogExample';
 import SwitchExample from './examples/SwitchExample';
-import DisClosureExample from './examples/DisClosureExample';
+import AccordionExample from './examples/AccordionExample';
 import PopoverExample from './examples/PopoverExample';
 import RadioGroupExample from './examples/RadioGroupExample';
-import ComboExample from './examples/ComboExample';
 import { NDivider } from './components/NDivider';
 import InputExample from './examples/InputExample';
 import { NText } from './components/NText';
@@ -19,10 +17,16 @@ import CardExample from './examples/CardExample';
 import LinkExample from './examples/LinkExample';
 import TextExample from './examples/TextExample';
 import CheckExample from './examples/CheckExample';
-import RadioExample from './examples/RadioExample';
 import TextareaExample from './examples/TextareaExample';
 import DividerExample from './examples/DividerExample';
-import InfiniteScrollExample from './examples/InfiniteScrollExample';
+import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
+import ToastExample from '@/examples/ToastExample';
+import TooltipExample from '@/examples/TooltipExample';
+import SheetExample from '@/examples/SheetExample';
+import SkeletonExample from '@/examples/SkeletonExample';
+import SelectExample from '@/examples/SelectExample';
+import ComboExample from '@/examples/ComboExample';
+import InfiniteScrollExample from '@/examples/InfiniteScrollExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -35,39 +39,45 @@ const App = () => {
 
   return (
     <NTheme theme={theme}>
-      <div className="p-3 pt-0">
-        <div className="max-w-6xl m-auto">
-          <div className="my-3 flex flex-row justify-between items-center">
-            <img src="/nayan/nayan.png" width="50" height="50" />
+      <div className="pt-0">
+        <div className="w-full">
+          <div className="px-5 my-3 flex flex-row justify-between items-center">
+            <img src={import.meta.env.DEV ? '/nayan.png' : '/nayan/nayan.png'} width="50" height="50" />
             <NText className="cursor-pointer nyn-text-primary" onClick={changeTheme}>
               Toggle Theme
             </NText>
           </div>
           <NDivider />
-          <div className="mt-10 columns-1 md:columns-2 gap-16">
+          <div className="p-5 columns-1 sm:columns-2 md:columns-3 gap-16">
+            <AccordionExample />
             <AlertExample />
             <BadgeExample />
             <ButtonExample />
             <CardExample />
+            <CheckExample />
+            <ComboExample />
+            <ConfirmAlertExample />
+            <DialogExample />
             <DividerExample />
             <TextExample />
             <LinkExample />
-            <DisClosureExample />
             <InputExample />
-            <TextareaExample />
-            <CheckExample />
-            <RadioExample />
-            <SelectExample />
-            <ComboExample />
-            <RadioGroupExample />
-            <TabsExample />
-            <DialogExample />
             <MenuExample />
             <PopoverExample />
+            <RadioGroupExample />
+            <TextareaExample />
+            <TabsExample />
+            <ToastExample />
+            <TooltipExample />
+            <SelectExample />
+            <SheetExample />
             <SwitchExample />
+            <SkeletonExample />
           </div>
-          <NDivider />
-          <InfiniteScrollExample />
+          <div className="p-5">
+            <NDivider />
+            <InfiniteScrollExample />
+          </div>
         </div>
       </div>
     </NTheme>

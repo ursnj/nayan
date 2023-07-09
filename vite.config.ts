@@ -1,3 +1,4 @@
+import path from 'path';
 import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react-swc';
 import dts from 'vite-plugin-dts';
@@ -36,5 +37,10 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true
   },
-  plugins: [react(), dts()]
+  plugins: [react(), dts()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  }
 });

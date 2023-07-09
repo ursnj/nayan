@@ -1,5 +1,4 @@
-import { NLink } from '../components/NLink';
-import { NText } from '../components/NText';
+import { NText } from '@/components/NText';
 
 const TextExample = () => {
   return (

@@ -1,27 +1,30 @@
-import { Tab } from '@headlessui/react';
-import { Fragment, ReactNode } from 'react';
+import { ReactNode } from 'react';
+import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 interface Props {
   isFull?: boolean;
   tabs: string[];
-  selected: number;
-  setSelected?: any;
+  selected: string;
   children: ReactNode;
+  setSelected?: (selected: string) => void;
 }
 
 export const NTabs = (props: Props) => {
   const { isFull = false, tabs, selected, children } = props;
 
+  const isActive = (tab: string) => selected === tab;
+
   return (
-    <Tab.Group selectedIndex={selected} onChange={props.setSelected}>
-      <Tab.List className={`nyn-tabs nyn-border-bottom${isFull ? ' grid grid-flow-col justify-stretch' : ''}`}>
-        {tabs.map(tab => (
-          <Tab as={Fragment} key={tab}>
-            {({ selected }) => <button className={`nyn-tab px-3 py-2 ${selected ? 'nyn-tab-active' : 'nyn-tab-inactive'}`}>{tab}</button>}
-          </Tab>
+    <Tabs defaultValue={selected} value={selected} onValueChange={props.setSelected} className="w-full">
+      <TabsList
+        className={`nyn-tabs nyn-border-bottom p-0 rounded-none ${isFull ? 'grid grid-flow-col justify-stretch' : 'flex flex-row justify-start'}`}>
+        {tabs.map((tab: string) => (
+          <TabsTrigger key={tab} value={tab} className={`h-full ${isActive(tab) ? 'nyn-tab-active' : 'nyn-tab-inactive'}`}>
+            {tab}
+          </TabsTrigger>
         ))}
-      </Tab.List>
-      <Tab.Panels className="nyn-tabs-content w-full h-full">{children}</Tab.Panels>
-    </Tab.Group>
+      </TabsList>
+      {children}
+    </Tabs>
   );
 };

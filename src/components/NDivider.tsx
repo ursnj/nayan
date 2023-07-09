@@ -1,15 +1,11 @@
+import { Separator } from '@/components/ui/separator';
+
 interface Props {
-  text?: string;
+  orientation?: 'vertical' | 'horizontal' | undefined;
   className?: string;
 }
 
 export const NDivider = (props: Props) => {
-  const { className = '', text = '' } = props;
-  return (
-    <div className={`nyn-divider relative flex items-center ${className}`}>
-      <div className="flex-grow nyn-border-top"></div>
-      {text && <span className="nyn-divider-text nyn-text-muted flex-shrink mx-3">{text}</span>}
-      <div className="flex-grow nyn-border-top"></div>
-    </div>
-  );
+  const { className = '', orientation = 'horizontal' } = props;
+  return <Separator orientation={orientation} className={`nyn-background-border ${className}`} />;
 };

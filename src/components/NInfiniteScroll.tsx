@@ -1,5 +1,5 @@
 import React, { Component, ReactNode, CSSProperties } from 'react';
-import { ThresholdUnits, parseThreshold, throttle } from './Utils';
+import { ThresholdUnits, parseThreshold, throttle } from '@/components/Utils';
 
 type Fn = () => any;
 

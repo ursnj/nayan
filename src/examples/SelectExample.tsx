@@ -1,26 +1,18 @@
-import { NSelect } from '../components/NSelect';
 import { useState } from 'react';
+import { NSelect } from '@/components/NSelect';
 
 const items = [
-  { id: '1', label: 'Wade Cooper' },
-  { id: '2', label: 'Arlene Mccoy' },
-  { id: '3', label: 'Devon Webb' },
-  { id: '4', label: 'Tom Cook' },
-  { id: '5', label: 'Tanya Fox' },
-  { id: '6', label: 'Hellen Schmidt', disable: true }
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
 ];
 
 const SelectExample = () => {
-  const [selected, setSelected] = useState(items[0]);
-  const [selected1, setSelected1] = useState([items[0]]);
-
+  const [selected, setSelected] = useState(items[0].value);
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg">Select Single:</h1>
-      <NSelect items={items} selected={selected} onSelected={setSelected} />
-      <div className="mt-3" />
-      <h1 className="nyn-text mb-3 text-lg">Select Multi:</h1>
-      <NSelect items={items} selected={selected1} onSelected={setSelected1} />
+      <h1 className="nyn-text mb-3 text-lg">Select:</h1>
+      <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
     </div>
   );
 };

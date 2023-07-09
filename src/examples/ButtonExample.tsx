@@ -1,5 +1,5 @@
-import { NButton } from '../components/NButton';
-import { Size } from '../components/Types';
+import { NButton } from '@/components/NButton';
+import { Size } from '@/components/Types';
 
 const ButtonExample = () => {
   return (

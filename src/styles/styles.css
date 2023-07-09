@@ -22,6 +22,10 @@
   background-color: gray !important;
 }
 
+.nyn-background-border {
+  background-color: var(--COLOR_BORDER) !important;
+}
+
 .nyn-background-primary {
   background-color: var(--COLOR_PRIMARY) !important;
 }
@@ -32,6 +36,10 @@
 
 .nyn-border {
   border: 1px solid var(--COLOR_BORDER) !important;
+}
+
+.nyn-border-primary {
+  border: 1px solid var(--COLOR_PRIMARY) !important;
 }
 
 .nyn-border-top {

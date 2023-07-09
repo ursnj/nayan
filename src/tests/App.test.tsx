@@ -6,7 +6,6 @@ import BadgeExample from '../examples/BadgeExample';
 import ButtonExample from '../examples/ButtonExample';
 import CardExample from '../examples/CardExample';
 import CheckExample from '../examples/CheckExample';
-import ComboExample from '../examples/ComboExample';
 
 describe('App', () => {
   test('NAlert', () => {
@@ -38,11 +37,5 @@ describe('App', () => {
     const { container } = render(<CheckExample />);
     const checks = container.getElementsByClassName('nyn-check');
     expect(checks.length).toBe(4);
-  });
-
-  test('NCombo', () => {
-    const { container } = render(<ComboExample />);
-    const combos = container.getElementsByClassName('nyn-combo');
-    expect(combos.length).toBe(2);
   });
 });
