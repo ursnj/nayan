@@ -1,5 +1,5 @@
-import { NSelect } from '@/components/NSelect';
 import { useState } from 'react';
+import { NSelect } from '@/components/NSelect';
 
 const items = [
   { value: 'startup', label: 'Startup' },

@@ -1,5 +1,5 @@
-import { NBadge } from '../components/NBadge';
-import { Size } from '../components/Types';
+import { NBadge } from '@/components/NBadge';
+import { Size } from '@/components/Types';
 
 const BadgeExample = () => {
   return (

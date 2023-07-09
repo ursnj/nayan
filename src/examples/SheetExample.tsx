@@ -1,5 +1,4 @@
-import { NSheet } from '../components/NSheet';
-import { NDialog } from '@/components/NDialog';
+import { NSheet } from '@/components/NSheet';
 import { Size } from '@/components/Types';
 
 const SheetExample = () => {
