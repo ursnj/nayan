@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { NRadioGroup } from '../components/NRadioGroup';
 
 const items = [
-  { value: '1', label: 'Startup' },
-  { value: '2', label: 'Business' },
-  { value: '3', label: 'Enterprise' }
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
 ];
 
 const RadioGroupExample = () => {

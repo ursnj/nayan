@@ -25,6 +25,7 @@ import TooltipExample from '@/examples/TooltipExample';
 import SheetExample from '@/examples/SheetExample';
 import SkeletonExample from '@/examples/SkeletonExample';
 import SelectExample from '@/examples/SelectExample';
+import ComboExample from '@/examples/ComboExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -53,6 +54,7 @@ const App = () => {
             <ButtonExample />
             <CardExample />
             <CheckExample />
+            <ComboExample />
             <ConfirmAlertExample />
             <DialogExample />
             <DividerExample />

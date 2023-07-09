@@ -2,12 +2,12 @@ import { NSelect } from '@/components/NSelect';
 import { useState } from 'react';
 
 const items = [
-  { value: '1', label: 'Startup' },
-  { value: '2', label: 'Business' },
-  { value: '3', label: 'Enterprise' }
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
 ];
 
-const CardExample = () => {
+const SelectExample = () => {
   const [selected, setSelected] = useState(items[0].value);
   return (
     <div className="break-inside-avoid mb-16">
@@ -17,4 +17,4 @@ const CardExample = () => {
   );
 };
 
-export default CardExample;
+export default SelectExample;
