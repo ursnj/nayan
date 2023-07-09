@@ -23,6 +23,7 @@ import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
 import ToastExample from '@/examples/ToastExample';
 import TooltipExample from '@/examples/TooltipExample';
 import SheetExample from '@/examples/SheetExample';
+import SkeletonExample from '@/examples/SkeletonExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -66,6 +67,7 @@ const App = () => {
             <TooltipExample />
             <SheetExample />
             <SwitchExample />
+            <SkeletonExample />
           </div>
         </div>
       </div>
