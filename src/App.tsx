@@ -27,6 +27,7 @@ import SkeletonExample from '@/examples/SkeletonExample';
 import SelectExample from '@/examples/SelectExample';
 import ComboExample from '@/examples/ComboExample';
 import InfiniteScrollExample from '@/examples/InfiniteScrollExample';
+import ButtonGroupExample from '@/examples/ButtonGroupExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -53,6 +54,7 @@ const App = () => {
             <AlertExample />
             <BadgeExample />
             <ButtonExample />
+            <ButtonGroupExample />
             <CardExample />
             <CheckExample />
             <ComboExample />

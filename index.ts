@@ -2,6 +2,7 @@ export * from './src/components/NAccordion';
 export * from './src/components/NAlert';
 export * from './src/components/NBadge';
 export * from './src/components/NButton';
+export * from './src/components/NButtonGroup';
 export * from './src/components/NCard';
 export * from './src/components/NCheck';
 export * from './src/components/NCombo';
