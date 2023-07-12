@@ -24,9 +24,7 @@ export const NMenu = (props: Props) => {
   const { trigger, children, className = '', title = '', size = Size.MD, side = 'bottom', align = 'end' } = props;
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild className={`nyn-menu-trigger ${className}`}>
-        {trigger}
-      </DropdownMenuTrigger>
+      <DropdownMenuTrigger className={`nyn-menu-trigger ${className}`}>{trigger}</DropdownMenuTrigger>
       <DropdownMenuContent
         side={side}
         align={align}
