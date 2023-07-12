@@ -7,7 +7,7 @@ interface Props {
   icon?: any;
   separator?: boolean;
   className?: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const NMenuItem = (props: Props) => {
