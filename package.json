@@ -2,7 +2,7 @@
   "name": "nayan",
   "private": false,
   "sideEffects": false,
-  "version": "2.0.0-beta-4",
+  "version": "2.0.0-beta-5",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
@@ -13,8 +13,7 @@
       "import": "./dist/index.es.js",
       "require": "./dist/index.umd.js",
       "types": "./dist/index.d.ts"
-    },
-    "./dist/style.css": "./dist/style.css"
+    }
   },
   "files": [
     "/dist"
