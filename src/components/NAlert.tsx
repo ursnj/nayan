@@ -1,13 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AlertTriangle, BadgeAlert, CheckCircle2, Info, X, XCircle } from 'lucide-react';
-
-export enum AlertTypes {
-  DEFAULT = 'DEFAULT',
-  INFO = 'INFO',
-  SUCCESS = 'SUCCESS',
-  WARNING = 'WARNING',
-  ERROR = 'ERROR'
-}
+import { AlertTypes } from './Types';
 
 const iconsMapping = {
   [AlertTypes.DEFAULT]: <BadgeAlert className="h-4 w-4" />,
@@ -18,7 +11,7 @@ const iconsMapping = {
 };
 
 const classesMapping = {
-  [AlertTypes.DEFAULT]: 'nyn-background-card nyn-text nyn-border',
+  [AlertTypes.DEFAULT]: 'bg-card text-text border-border',
   [AlertTypes.INFO]: 'bg-blue-300 text-blue-700 border border-blue-400',
   [AlertTypes.SUCCESS]: 'bg-green-300 text-green-700 border border-green-400',
   [AlertTypes.WARNING]: 'bg-yellow-300 text-yellow-700 border border-yellow-400',
@@ -35,8 +28,8 @@ const titleMapping = {
 
 interface Props {
   type: AlertTypes;
-  title?: string;
   message: string;
+  title?: string;
   className?: string;
   onClose?: () => void;
 }
@@ -52,9 +45,11 @@ export const NAlert = (props: Props) => {
       {iconsMapping[type]}
       <AlertTitle className="nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center">
         {title}
-        <span className="nyn-alert-close" tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
-          <X className="w-4 h-4" />
-        </span>
+        {onClose && (
+          <span className="nyn-alert-close" tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
+            <X className="w-4 h-4" />
+          </span>
+        )}
       </AlertTitle>
       <AlertDescription className="nyn-alert-message">{message}</AlertDescription>
     </Alert>

@@ -9,7 +9,7 @@ interface Props {
 export const NLink = (props: Props) => {
   const { className = '', children } = props;
   return (
-    <span className={`nyn-link nyn-text-primary cursor-pointer ${className}`} onClick={props.onClick}>
+    <span className={`nyn-link text-primary cursor-pointer ${className}`} onClick={props.onClick}>
       {children}
     </span>
   );

@@ -4,8 +4,8 @@ import { Size } from '@/components/Types';
 const ButtonExample = () => {
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg text-left">Buttons:</h1>
-      <NButton size={Size.XS} className="nyn-text nyn-background-card nyn-border mr-2">
+      <h1 className="text-text mb-3 text-lg text-left">Buttons:</h1>
+      <NButton size={Size.XS} className="text-text bg-card border border-border mr-2">
         Button
       </NButton>
       <NButton

@@ -12,10 +12,10 @@ const RadioGroupExample = () => {
 
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg">Radio Group Horizontal:</h1>
+      <h1 className="text-text mb-3 text-lg">Radio Group Horizontal:</h1>
       <NRadioGroup items={items} selected={selected} setSelected={setSelected} />
       <div className="mt-3" />
-      <h1 className="nyn-text mb-3 text-lg">Radio Group Vertical:</h1>
+      <h1 className="text-text mb-3 text-lg">Radio Group Vertical:</h1>
       <NRadioGroup orientation="vertical" items={items} selected={selected} setSelected={setSelected} />
     </div>
   );

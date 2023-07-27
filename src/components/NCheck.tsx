@@ -20,7 +20,7 @@ export const NCheck = (props: Props) => {
         onCheckedChange={onChange}
         className="nyn-check data-[state=unchecked]:border-text data-[state=checked]:border-primary"
       />
-      <label htmlFor={id} className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+      <label htmlFor={id} className="font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
         {children}
       </label>
     </div>

@@ -3,7 +3,7 @@ import { NSkeleton } from '@/components/NSkeleton';
 const SkeletonExample = () => {
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg">Skeleton:</h1>
+      <h1 className="text-text mb-3 text-lg">Skeleton:</h1>
       <div className="flex items-center space-x-4">
         <NSkeleton className="h-12 w-12 rounded-full" />
         <div className="space-y-2">

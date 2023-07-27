@@ -21,7 +21,7 @@ export const NRadioGroup = (props: Props) => {
       {items.map((item, index) => (
         <div key={index} className="flex items-center space-x-2">
           <RadioGroupItem value={item.value} id={'r' + index} />
-          <Label htmlFor={'r' + index} className="nyn-text">
+          <Label htmlFor={'r' + index} className="text-text">
             {item.label}
           </Label>
         </div>

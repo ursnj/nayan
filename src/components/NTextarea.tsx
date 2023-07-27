@@ -16,9 +16,9 @@ interface Props {
 export const NTextarea = (props: Props) => {
   const { label = '', id, rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
-    <div className={`nyn-input-block ${className}`}>
+    <div className={`nyn-textarea-block ${className}`}>
       {label && (
-        <Label htmlFor={id} className="nyn-input-label block pb-1 nyn-text-muted">
+        <Label htmlFor={id} className="nyn-textarea-label block pb-2 text-muted">
           {label}
         </Label>
       )}
@@ -30,7 +30,7 @@ export const NTextarea = (props: Props) => {
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
         {...remaining}
-        className="nyn-input w-full rounded nyn-background-card nyn-border nyn-text px-3 py-2"
+        className="nyn-textarea w-full rounded bg-card border border-border text-text px-3 py-2"
       />
     </div>
   );

@@ -6,7 +6,7 @@ const SwitchExample = () => {
 
   return (
     <div className="break-inside-avoid mb-16 flex flex-row justify-between">
-      <h1 className="nyn-text mb-3 text-lg text-left">Switch:</h1>
+      <h1 className="text-text mb-3 text-lg text-left">Switch:</h1>
       <NSwitch enabled={enabled} onChange={setEnabled} />
     </div>
   );

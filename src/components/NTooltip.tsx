@@ -12,7 +12,7 @@ export const NTooltip = (props: Props) => {
   return (
     <Tooltip>
       <TooltipTrigger asChild>{children}</TooltipTrigger>
-      <TooltipContent className={`nyn-card nyn-text nyn-border rounded nyn-background-card p-2 max-w-xs ${className}`}>{message}</TooltipContent>
+      <TooltipContent className={`nyn-tooltip text-text border border-border rounded bg-card p-2 max-w-xs ${className}`}>{message}</TooltipContent>
     </Tooltip>
   );
 };

@@ -10,7 +10,7 @@ const TextareaExample = () => {
 
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg text-left">Custom Textarea:</h1>
+      <h1 className="text-text mb-3 text-lg text-left">Custom Textarea:</h1>
       <NTextarea
         id="ta1"
         label="Address"
@@ -21,7 +21,7 @@ const TextareaExample = () => {
         onChange={e => setAddress(e.target.value)}
       />
       <form onSubmit={handleSubmit(onSubmit)}>
-        <h1 className="nyn-text mb-3 mt-3 text-lg text-left">React Hook Form Textarea:</h1>
+        <h1 className="text-text mb-3 mt-3 text-lg text-left">React Hook Form Textarea:</h1>
         <NTextarea
           id="ta2"
           rows={3}

@@ -21,19 +21,19 @@ export const NCombo = (props: Props) => {
   return (
     <div className={`nyn-combo-block ${className}`}>
       {label && (
-        <Label htmlFor="combo" className="nyn-combo-label block pb-1 nyn-text-muted">
+        <Label htmlFor="combo" className="nyn-combo-label block pb-2 text-muted">
           {label}
         </Label>
       )}
       <Popover open={isOpen} onOpenChange={setIsOpen}>
         <PopoverTrigger asChild>
-          <Button variant="outline" role="combobox" aria-expanded={isOpen} className="w-full justify-between nyn-text nyn-background-card nyn-border">
+          <Button variant="outline" role="combobox" aria-expanded={isOpen} className="w-full justify-between text-text bg-card border border-border">
             {selected ? items.find(item => item.value === selected)?.label : placeholder}
             <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="w-[300px] min-w-full p-0 nyn-text nyn-background-card nyn-border">
-          <Command className="nyn-border-bottom">
+        <PopoverContent className="w-[300px] min-w-full p-0 text-text bg-card border border-border">
+          <Command className="border-0 border-b border-border">
             <CommandInput placeholder="Search options..." />
             <CommandEmpty>No match found.</CommandEmpty>
             <CommandGroup>
@@ -41,7 +41,6 @@ export const NCombo = (props: Props) => {
                 <CommandItem
                   key={item.value}
                   onSelect={currentValue => {
-                    console.log(currentValue);
                     props.onChange(currentValue === selected ? '' : currentValue);
                     setIsOpen(false);
                   }}>

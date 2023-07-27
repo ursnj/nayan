@@ -9,6 +9,7 @@ interface Props {
 
 export const NTabsContent = (props: Props) => {
   const { tab, className = '' } = props;
+
   return (
     <TabsContent value={tab} className={`nyn-tab-content ${className}`}>
       {props.children}

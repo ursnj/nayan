@@ -29,4 +29,3 @@ export * from './src/components/NTheme';
 export * from './src/components/NToast';
 export * from './src/components/NTooltip';
 export * from './src/components/Types';
-import './src/styles/styles.css';

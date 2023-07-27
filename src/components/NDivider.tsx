@@ -7,5 +7,5 @@ interface Props {
 
 export const NDivider = (props: Props) => {
   const { className = '', orientation = 'horizontal' } = props;
-  return <Separator orientation={orientation} className={`nyn-background-border ${className}`} />;
+  return <Separator orientation={orientation} className={`bg-border ${className}`} />;
 };

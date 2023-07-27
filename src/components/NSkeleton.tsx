@@ -6,5 +6,5 @@ interface Props {
 
 export const NSkeleton = (props: Props) => {
   const { className = '' } = props;
-  return <Skeleton className={`nyn-skeleton nyn-background-border ${className}`} />;
+  return <Skeleton className={`nyn-skeleton bg-border ${className}`} />;
 };

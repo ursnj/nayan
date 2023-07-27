@@ -34,7 +34,9 @@ export const NButton = (props: Props) => {
   return (
     <Button
       type={type}
-      className={`nyn-button ${size.toLowerCase()} rounded h-auto transition duration-150 ease-in-out ${sizeMapping[size]} ${className}`}
+      className={`nyn-button ${size.toLowerCase()} text-white bg-primary border-primary hover:bg-primary-dark rounded h-auto transition duration-150 ease-in-out ${
+        sizeMapping[size]
+      } ${className}`}
       onClick={onClick}
       {...remaining}>
       {!isLoading ? children : loadingText}

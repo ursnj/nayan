@@ -3,6 +3,13 @@ import { ReactNode } from 'react';
 import { Size } from './Types';
 import { NDivider } from '@/components/NDivider';
 
+export const menuSizeMapping = {
+  [Size.XS]: 'w-[80px]',
+  [Size.SM]: 'w-[100px]',
+  [Size.MD]: 'w-[150px]',
+  [Size.LG]: 'w-[200px]'
+};
+
 interface Props {
   size?: Size;
   title?: string;
@@ -13,13 +20,6 @@ interface Props {
   children: ReactNode;
 }
 
-export const menuSizeMapping = {
-  [Size.XS]: 'w-[80px]',
-  [Size.SM]: 'w-[100px]',
-  [Size.MD]: 'w-[150px]',
-  [Size.LG]: 'w-[200px]'
-};
-
 export const NMenu = (props: Props) => {
   const { trigger, children, className = '', title = '', size = Size.MD, side = 'bottom', align = 'end' } = props;
   return (
@@ -28,10 +28,10 @@ export const NMenu = (props: Props) => {
       <DropdownMenuContent
         side={side}
         align={align}
-        className={`nyn-menu-content rounded nyn-background-card nyn-border shadow-lg ${menuSizeMapping[size]}`}>
+        className={`nyn-menu-content rounded bg-card border border-border shadow-lg ${menuSizeMapping[size]}`}>
         {title && (
           <>
-            <DropdownMenuLabel className="nyn-text">{title}</DropdownMenuLabel>
+            <DropdownMenuLabel className="text-text">{title}</DropdownMenuLabel>
             <NDivider />
           </>
         )}

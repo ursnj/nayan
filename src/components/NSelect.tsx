@@ -16,15 +16,15 @@ export const NSelect = (props: Props) => {
   return (
     <div className={`nyn-input-block ${className}`}>
       {label && (
-        <Label htmlFor="select" className="nyn-input-label block pb-1 nyn-text-muted">
+        <Label htmlFor="select" className="nyn-input-label block pb-2 text-muted">
           {label}
         </Label>
       )}
       <Select defaultValue={selected} value={selected} onValueChange={props.onChange}>
-        <SelectTrigger className="nyn-text nyn-background-card nyn-border">
+        <SelectTrigger className="text-text bg-card border border-border">
           <SelectValue placeholder={placeholder} />
         </SelectTrigger>
-        <SelectContent className="nyn-text nyn-background-card nyn-border">
+        <SelectContent className="text-text bg-card border border-border">
           <SelectGroup>
             {title && <SelectLabel>{title}</SelectLabel>}
             {items.map((item, index) => (

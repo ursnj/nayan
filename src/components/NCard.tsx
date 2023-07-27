@@ -7,5 +7,5 @@ interface Props {
 
 export const NCard = (props: Props) => {
   const { className = '', children } = props;
-  return <div className={`nyn-card nyn-border rounded nyn-background-card ${className}`}>{children}</div>;
+  return <div className={`nyn-card border border-border bg-card rounded ${className}`}>{children}</div>;
 };

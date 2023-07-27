@@ -26,7 +26,7 @@ export const NPopover = (props: Props) => {
       <PopoverContent
         side={side}
         align={align}
-        className={`nyn-popover-content rounded nyn-background-card nyn-border shadow-lg p-0 ${sizeMapping[size]}`}>
+        className={`nyn-popover-content rounded bg-card border border-border shadow-lg p-0 ${sizeMapping[size]}`}>
         {children}
       </PopoverContent>
     </Popover>

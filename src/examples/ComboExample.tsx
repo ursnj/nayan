@@ -13,7 +13,7 @@ const ComboExample = () => {
 
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg">Combo Box:</h1>
+      <h1 className="text-text mb-3 text-lg">Combo Box:</h1>
       <NCombo
         isOpen={isOpen}
         setIsOpen={setIsOpen}

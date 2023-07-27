@@ -19,7 +19,7 @@ export const NSwitch = (props: Props) => {
         className="data-[state=checked]:border-primary data-[state=unchecked]:border-border data-[state=checked]:bg-primary data-[state=unchecked]:bg-border"
       />
       {label && (
-        <Label htmlFor="airplane-mode" className="nyn-text">
+        <Label htmlFor="airplane-mode" className="text-text">
           {label}
         </Label>
       )}

@@ -1,4 +1,5 @@
 import { NAccordion } from '@/components/NAccordion';
+import { AccordionTypes } from '@/components/Types';
 
 const AccordionExample = () => {
   const list = [
@@ -7,10 +8,10 @@ const AccordionExample = () => {
   ];
   return (
     <div className="break-inside-avoid mb-16">
-      <h1 className="nyn-text mb-3 text-lg">Accordion Single:</h1>
-      <NAccordion list={list} />
-      <h1 className="nyn-text mb-3 mt-5 text-lg">Accordion Multiple:</h1>
-      <NAccordion type="multiple" list={list} />
+      <h1 className="text-text mb-3 text-lg">Accordion Single:</h1>
+      <NAccordion type={AccordionTypes.SINGLE} list={list} />
+      <h1 className="text-text mb-3 mt-5 text-lg">Accordion Multiple:</h1>
+      <NAccordion type={AccordionTypes.MULTIPLE} list={list} />
     </div>
   );
 };
