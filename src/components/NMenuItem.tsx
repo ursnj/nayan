@@ -16,7 +16,7 @@ export const NMenuItem = (props: Props) => {
 
   return (
     <>
-      <DropdownMenuItem className={`nyn-menu-item nyn-text hover:nyn-background-border ${className}`} onClick={props.onClick}>
+      <DropdownMenuItem className={`nyn-menu-item nyn-text hover:nyn-background-border cursor-pointer ${className}`} onClick={props.onClick}>
         {props.icon && <Icon className="mr-2 h-4 w-4" />}
         <span>{title}</span>
         {shortcut && <DropdownMenuShortcut className="nyn-text-muted">⇧⌘P</DropdownMenuShortcut>}
