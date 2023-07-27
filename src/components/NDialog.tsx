@@ -3,11 +3,12 @@ import { ReactNode } from 'react';
 import { Size } from './Types';
 
 interface Props {
-  size?: Size;
+  isOpen: boolean;
   title: string;
+  size?: Size;
   className?: string;
-  trigger: ReactNode;
   children: ReactNode;
+  closeModal: () => void;
 }
 
 const sizeMapping = {
@@ -18,13 +19,11 @@ const sizeMapping = {
 };
 
 export const NDialog = (props: Props) => {
-  const { title, children, trigger, size = Size.SM, className = '' } = props;
+  const { isOpen, title, children, size = Size.SM, className = '' } = props;
   return (
-    <Dialog>
-      <DialogTrigger asChild className={className}>
-        {trigger}
-      </DialogTrigger>
-      <DialogContent className={`nyn-dialog p-0 gap-0 nyn-border nyn-background text-white rounded overflow-hidden ${sizeMapping[size]}`}>
+    <Dialog open={isOpen} onOpenChange={props.closeModal}>
+      <DialogContent
+        className={`nyn-dialog p-0 gap-0 nyn-border nyn-background text-white rounded overflow-hidden ${sizeMapping[size]} ${className}`}>
         <DialogHeader className="nyn-dialog-header p-3 nyn-background-primary text-white">
           <DialogTitle className="nyn-dialog-title text-base font-normal">{title}</DialogTitle>
         </DialogHeader>

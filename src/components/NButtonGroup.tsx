@@ -17,7 +17,7 @@ export const NButtonGroup = (props: Props) => {
           onClick={() => setSelected(item)}
           className={`nyn-button-group ${
             item === selected ? 'bg-primary' : 'bg-card'
-          } text-text hover:bg-primary hover:text-white nyn-border first:border-r-0 last:border-l-0 first:rounded-l-lg rounded-none last:rounded-r-lg px-4 py-2 mx-0 outline-none focus:shadow-outline ${className}`}>
+          } text-text hover:bg-primary hover:text-white nyn-border first:border-r-0 last:border-l-0 first:rounded-l-lg rounded-none last:rounded-r-lg px-4 py-1 mx-0 outline-none focus:shadow-outline ${className}`}>
           {item}
         </Button>
       ))}
