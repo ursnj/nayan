@@ -16,10 +16,10 @@ export const NMenuItem = (props: Props) => {
 
   return (
     <>
-      <DropdownMenuItem className={`nyn-menu-item text-text hover:bg-border cursor-pointer ${className}`} onClick={props.onClick}>
+      <DropdownMenuItem className={`nyn-menu-item text-text hover:bg-border cursor-pointer py-2 ${className}`} onClick={props.onClick}>
         {props.icon && <Icon className="mr-2 h-4 w-4" />}
         <span>{title}</span>
-        {shortcut && <DropdownMenuShortcut className="nyn-text-muted">⇧⌘P</DropdownMenuShortcut>}
+        {shortcut && <DropdownMenuShortcut className="text-muted">⇧⌘P</DropdownMenuShortcut>}
       </DropdownMenuItem>
       {separator && <NDivider />}
     </>
