@@ -14,6 +14,7 @@ export const NButtonGroup = (props: Props) => {
       {items.map(item => (
         <Button
           key={item}
+          type="button"
           onClick={() => setSelected(item)}
           className={`nyn-button-group ${
             item === selected ? 'bg-primary' : 'bg-card'
