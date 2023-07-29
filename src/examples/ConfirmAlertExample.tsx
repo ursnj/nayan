@@ -11,9 +11,8 @@ const ConfirmAlertExample = () => {
         isOpen={isOpen}
         title="Are you absolutely sure?"
         message="This action cannot be undone. This will permanently delete your account and remove your data from our servers."
-        onConfirmClick={() => console.log('Confirm Clicked')}
-        onCancelClick={() => console.log('Cancel clicked')}
-        onCloseAlert={() => setIsOpen(false)}
+        onResult={result => console.log('Alert Clicked', result)}
+        onClose={() => setIsOpen(false)}
       />
       <div className="text-sm font-medium text-pink-600" onClick={() => setIsOpen(true)}>
         Show Alert
