@@ -13,14 +13,14 @@ export const NCheck = (props: Props) => {
   const { className = '', id = 'check', children, isChecked, onChange } = props;
 
   return (
-    <div className={`flex items-center space-x-2 ${className}`}>
+    <div className={`flex space-x-2 ${className}`}>
       <Checkbox
         id={id}
         value={isChecked}
         onCheckedChange={onChange}
         className="nyn-check data-[state=unchecked]:border-text data-[state=checked]:border-primary"
       />
-      <label htmlFor={id} className="font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+      <label htmlFor={id} className="peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
         {children}
       </label>
     </div>
