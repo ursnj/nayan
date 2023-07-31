@@ -1,4 +1,4 @@
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ReactNode } from 'react';
 import { Size } from './Types';
 
@@ -24,11 +24,13 @@ export const NDialog = (props: Props) => {
   return (
     <Dialog open={isOpen} onOpenChange={props.closeModal}>
       <DialogContent
-        className={`nyn-dialog p-0 gap-0 border border-border bg-background text-white rounded overflow-hidden ${sizeMapping[size]} ${className}`}>
+        className={`nyn-dialog p-0 gap-0 border border-border bg-card text-white rounded overflow-hidden ${sizeMapping[size]} ${className}`}>
         <DialogHeader className="nyn-dialog-header px-3 py-2.5 bg-primary text-white">
           <DialogTitle className="nyn-dialog-title text-base font-normal">{title}</DialogTitle>
         </DialogHeader>
-        <div className="nyn-dialog-content text-text min-h-[300px] max-h-[calc(100vh_-_75px)] overflow-y-auto">{children}</div>
+        <div className="nyn-dialog-content text-text min-h-[calc(100vh_-_44px)] sm:min-h-[300px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto">
+          {children}
+        </div>
       </DialogContent>
     </Dialog>
   );

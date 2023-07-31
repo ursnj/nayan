@@ -2,7 +2,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 
 interface Props {
-  id: string;
+  id?: string;
   type?: string;
   label?: string;
   value?: string;
@@ -14,7 +14,7 @@ interface Props {
 
 // TODO: Fix React hook form
 export const NInput = (props: Props) => {
-  const { type = 'text', id, label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
+  const { type = 'text', id = 'input', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
     <div className={`nyn-input-block ${className}`}>
       {label && (

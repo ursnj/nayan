@@ -13,7 +13,7 @@ const SheetExample = () => {
       </div>
       <NSheet isOpen={isOpen} size={Size.SM} title="Edit Profile" onCloseSheet={() => setIsOpen(false)}>
         <div className="w-full h-full p-3">
-          <p className="text-sm text-text">
+          <p className="text-sm text-text h-screen">
             Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
           </p>
         </div>

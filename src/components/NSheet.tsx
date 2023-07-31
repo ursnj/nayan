@@ -24,11 +24,11 @@ export const NSheet = (props: Props) => {
   return (
     <Sheet open={isOpen} onOpenChange={props.onCloseSheet}>
       <SheetContent
-        className={`nyn-sheet p-0 gap-0 border-0 border-l border-border bg-background text-white overflow-hidden w-full ${sizeMapping[size]} ${className}`}>
+        className={`nyn-sheet p-0 gap-0 border-0 border-l border-border bg-card text-white overflow-hidden w-full ${sizeMapping[size]} ${className}`}>
         <SheetHeader className="nyn-sheet-header px-3 py-2.5 bg-primary text-white">
           <SheetTitle className="nyn-sheet-title text-base font-normal">{title}</SheetTitle>
         </SheetHeader>
-        <div className="nyn-sheet-content text-text overflow-y-auto">{children}</div>
+        <div className="nyn-sheet-content text-text h-[calc(100vh_-_44px)] overflow-y-auto">{children}</div>
       </SheetContent>
     </Sheet>
   );

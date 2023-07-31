@@ -2,7 +2,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
 interface Props {
-  id: string;
+  id?: string;
   rows?: number;
   label?: string;
   value?: string;
@@ -14,7 +14,7 @@ interface Props {
 
 // TODO: Fix React hook form
 export const NTextarea = (props: Props) => {
-  const { label = '', id, rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
+  const { label = '', id = 'textarea', rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
   return (
     <div className={`nyn-textarea-block ${className}`}>
       {label && (

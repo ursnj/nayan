@@ -16,7 +16,7 @@ interface Props {
   isOutline?: boolean;
   isLoading?: boolean;
   loadingText?: string;
-  onClick?: () => void;
+  onClick?: (e: any) => void;
   children: ReactNode;
 }
 
