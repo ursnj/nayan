@@ -13,6 +13,7 @@ interface Props {
   size?: Size;
   type?: 'button' | 'submit' | 'reset' | undefined;
   className?: string;
+  isOutline?: boolean;
   isLoading?: boolean;
   loadingText?: string;
   onClick?: () => void;
@@ -25,6 +26,7 @@ export const NButton = (props: Props) => {
     type = 'button',
     size = Size.MD,
     className = '',
+    isOutline = false,
     isLoading = false,
     loadingText = 'Loading...',
     onClick = () => undefined,
@@ -34,9 +36,11 @@ export const NButton = (props: Props) => {
   return (
     <Button
       type={type}
-      className={`nyn-button ${size.toLowerCase()} text-white bg-primary border border-primary hover:bg-primary-dark rounded h-auto transition duration-150 ease-in-out h-auto ${
-        sizeMapping[size]
-      } ${className}`}
+      className={`nyn-button ${size.toLowerCase()} ${
+        isOutline
+          ? 'text-primary hover:text-white bg-transparent hover:bg-primary-dark border border-primary'
+          : 'text-white bg-primary border border-primary hover:bg-primary-dark'
+      } rounded h-auto transition duration-150 ease-in-out h-auto ${sizeMapping[size]} ${className}`}
       onClick={onClick}
       {...remaining}>
       {!isLoading ? children : loadingText}

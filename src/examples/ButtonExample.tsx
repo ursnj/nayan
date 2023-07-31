@@ -29,16 +29,10 @@ const ButtonExample = () => {
         className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
         Button
       </NButton>
-      <NButton
-        size={Size.LG}
-        onClick={() => console.log('Button clicked')}
-        className="text-white bg-red-500 hover:bg-red-600 border border-red-600 mr-2">
+      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="mr-2">
         Button
       </NButton>
-      <NButton
-        size={Size.LG}
-        onClick={() => console.log('Button clicked')}
-        className="text-orange-600 hover:text-white bg-transparent hover:bg-red-600 border border-orange-600 mr-2">
+      <NButton size={Size.LG} isOutline={true} onClick={() => console.log('Button clicked')} className="mr-2">
         Button
       </NButton>
       <NButton
