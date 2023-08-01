@@ -9,12 +9,24 @@ interface Props {
   defaultValue?: string;
   placeholder?: string;
   className?: string;
+  isDisabled?: boolean;
   onChange?: (val: any) => void;
 }
 
 // TODO: Fix React hook form
 export const NInput = (props: Props) => {
-  const { type = 'text', id = 'input', label = '', placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
+  const {
+    type = 'text',
+    id = 'input',
+    label = '',
+    placeholder = '',
+    className = '',
+    value = '',
+    defaultValue = '',
+    isDisabled = false,
+    onChange,
+    ...remaining
+  } = props;
   return (
     <div className={`nyn-input-block ${className}`}>
       {label && (
@@ -28,6 +40,7 @@ export const NInput = (props: Props) => {
         {...(defaultValue && { defaultValue })}
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
+        disabled={isDisabled}
         {...remaining}
         className="nyn-input w-full rounded bg-card border border-border text-text px-3 py-2"
       />

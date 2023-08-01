@@ -9,12 +9,24 @@ interface Props {
   defaultValue?: string;
   placeholder?: string;
   className?: string;
+  isDisabled?: boolean;
   onChange?: (val: any) => void;
 }
 
 // TODO: Fix React hook form
 export const NTextarea = (props: Props) => {
-  const { label = '', id = 'textarea', rows = 2, placeholder = '', className = '', value = '', defaultValue = '', onChange, ...remaining } = props;
+  const {
+    label = '',
+    id = 'textarea',
+    rows = 2,
+    placeholder = '',
+    className = '',
+    value = '',
+    defaultValue = '',
+    isDisabled = false,
+    onChange,
+    ...remaining
+  } = props;
   return (
     <div className={`nyn-textarea-block ${className}`}>
       {label && (
@@ -29,6 +41,7 @@ export const NTextarea = (props: Props) => {
         {...(defaultValue && { defaultValue })}
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
+        disabled={isDisabled}
         {...remaining}
         className="nyn-textarea w-full rounded bg-card border border-border text-text px-3 py-2"
       />

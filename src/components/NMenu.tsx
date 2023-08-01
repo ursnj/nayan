@@ -24,11 +24,11 @@ export const NMenu = (props: Props) => {
   const { trigger, children, className = '', title = '', size = Size.MD, side = 'bottom', align = 'end' } = props;
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className={`nyn-menu-trigger ${className}`}>{trigger}</DropdownMenuTrigger>
+      <DropdownMenuTrigger className="nyn-menu-trigger">{trigger}</DropdownMenuTrigger>
       <DropdownMenuContent
         side={side}
         align={align}
-        className={`nyn-menu-content rounded bg-card border border-border shadow-lg ${menuSizeMapping[size]}`}>
+        className={`nyn-menu-content rounded bg-card border border-border shadow-lg ${menuSizeMapping[size]} ${className}`}>
         {title && (
           <>
             <DropdownMenuLabel className="text-text">{title}</DropdownMenuLabel>
