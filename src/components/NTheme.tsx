@@ -14,6 +14,8 @@ export const NTheme = (props: Props) => {
   useEffect(() => {
     const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const finalTheme = !theme || !defaultDark ? THEMES.LIGHT : theme || THEMES.DARK;
+    // @ts-ignore
+    window.document.documentElement.style.colorScheme = finalTheme;
     document.documentElement.setAttribute('data-theme', finalTheme);
   }, [theme]);
 
