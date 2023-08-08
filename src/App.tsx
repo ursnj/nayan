@@ -28,6 +28,7 @@ import SelectExample from '@/examples/SelectExample';
 import ComboExample from '@/examples/ComboExample';
 import InfiniteScrollExample from '@/examples/InfiniteScrollExample';
 import ButtonGroupExample from '@/examples/ButtonGroupExample';
+import LinkifyExample from '@/examples/LinkifyExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -64,6 +65,7 @@ const App = () => {
             <TextExample />
             <LinkExample />
             <InputExample />
+            <LinkifyExample />
             <MenuExample />
             <PopoverExample />
             <RadioGroupExample />

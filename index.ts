@@ -12,6 +12,7 @@ export * from './src/components/NDivider';
 export * from './src/components/NInfiniteScroll';
 export * from './src/components/NInput';
 export * from './src/components/NLink';
+export * from './src/components/NLinkify';
 export * from './src/components/NLocalStorage';
 export * from './src/components/NMenu';
 export * from './src/components/NMenuNested';
