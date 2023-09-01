@@ -4,18 +4,20 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 interface Props {
   orientation?: 'horizontal' | 'vertical';
   items: { label: string; value: string }[];
+  isDisabled?: boolean;
   selected: string;
   setSelected: (selected: string) => void;
 }
 
 export const NRadioGroup = (props: Props) => {
-  const { items, selected, setSelected, orientation = 'horizontal' } = props;
+  const { items, selected, setSelected, orientation = 'horizontal', isDisabled = false } = props;
 
   return (
     <RadioGroup
       orientation={orientation}
       defaultValue={selected}
       value={selected}
+      disabled={isDisabled}
       onValueChange={setSelected}
       className={`${orientation === 'horizontal' ? 'flex flex-row' : 'flex flex-col'}`}>
       {items.map((item, index) => (

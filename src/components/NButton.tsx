@@ -13,6 +13,7 @@ interface Props {
   size?: Size;
   type?: 'button' | 'submit' | 'reset' | undefined;
   className?: string;
+  isDisabled?: boolean;
   isOutline?: boolean;
   isLoading?: boolean;
   loadingText?: string;
@@ -26,6 +27,7 @@ export const NButton = (props: Props) => {
     type = 'button',
     size = Size.MD,
     className = '',
+    isDisabled = false,
     isOutline = false,
     isLoading = false,
     loadingText = 'Loading...',
@@ -42,6 +44,7 @@ export const NButton = (props: Props) => {
           : 'text-white bg-primary border border-primary hover:bg-primary-dark'
       } rounded h-auto transition duration-150 ease-in-out h-auto ${sizeMapping[size]} ${className}`}
       onClick={onClick}
+      disabled={isDisabled}
       {...remaining}>
       {!isLoading ? children : loadingText}
     </Button>

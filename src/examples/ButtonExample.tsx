@@ -5,7 +5,7 @@ const ButtonExample = () => {
   return (
     <div className="break-inside-avoid mb-16">
       <h1 className="text-text mb-3 text-lg text-left">Buttons:</h1>
-      <NButton size={Size.XS} className="text-text bg-card border border-border mr-2">
+      <NButton size={Size.XS} isDisabled className="text-text bg-card border border-border mr-2">
         Button
       </NButton>
       <NButton
