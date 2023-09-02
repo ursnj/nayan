@@ -30,6 +30,7 @@ import InfiniteScrollExample from '@/examples/InfiniteScrollExample';
 import ButtonGroupExample from '@/examples/ButtonGroupExample';
 import LinkifyExample from '@/examples/LinkifyExample';
 import ProgressExample from '@/examples/ProgressExample';
+import SliderExample from '@/examples/SliderExample';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -51,7 +52,7 @@ const App = () => {
             </NText>
           </div>
           <NDivider />
-          <div className="p-5 columns-1 sm:columns-2 md:columns-3 gap-16">
+          <div className="p-5 columns-1 md:columns-2 lg:columns-3 gap-16">
             <AccordionExample />
             <AlertExample />
             <BadgeExample />
@@ -77,6 +78,7 @@ const App = () => {
             <TooltipExample />
             <SelectExample />
             <SheetExample />
+            <SliderExample />
             <SwitchExample />
             <SkeletonExample />
           </div>

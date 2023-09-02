@@ -7,5 +7,5 @@ interface Props {
 
 export const NProgress = (props: Props) => {
   const { className = '', value } = props;
-  return <Progress value={value} className={`nyn-progress border border-border bg-card rounded ${className}`} />;
+  return <Progress value={value} className={`nyn-progress bg-border rounded ${className}`} />;
 };
