@@ -18,6 +18,7 @@ export * from './src/components/NMenu';
 export * from './src/components/NMenuNested';
 export * from './src/components/NMenuItem';
 export * from './src/components/NPopover';
+export * from './src/components/NProgress';
 export * from './src/components/NRadioGroup';
 export * from './src/components/NSelect';
 export * from './src/components/NSheet';
