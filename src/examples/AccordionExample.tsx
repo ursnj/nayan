@@ -6,6 +6,7 @@ const AccordionExample = () => {
     { title: 'Heading 1', message: 'Description 1' },
     { title: 'Heading 2', message: 'Description 2' }
   ];
+
   return (
     <div className="break-inside-avoid mb-16">
       <h1 className="text-text mb-3 text-lg">Accordion Single:</h1>

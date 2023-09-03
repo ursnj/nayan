@@ -31,12 +31,13 @@ import ButtonGroupExample from '@/examples/ButtonGroupExample';
 import LinkifyExample from '@/examples/LinkifyExample';
 import ProgressExample from '@/examples/ProgressExample';
 import SliderExample from '@/examples/SliderExample';
+import { THEMES } from '@/components/Types';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
 
   const changeTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
+    const newTheme = theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
     localStorage.setItem('THEME', newTheme);
     setTheme(newTheme);
   };

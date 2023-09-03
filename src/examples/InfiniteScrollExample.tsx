@@ -1,5 +1,5 @@
-import { NInfiniteScroll } from '../components/NInfiniteScroll';
-import { NCard } from '../components/NCard';
+import { NInfiniteScroll } from '@/components/NInfiniteScroll';
+import { NCard } from '@/components/NCard';
 
 const InfiniteScrollExample = () => {
   const items = new Array(5).fill(1);
