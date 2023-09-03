@@ -135,7 +135,7 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 ```jsx
 import { useState } from 'react';
 import { NTheme } from './components/NTheme';
-import { THEMES } from "./components/Types";
+import { THEMES } from './components/Types';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('THEME'));
@@ -167,7 +167,7 @@ const AccordionExample = () => {
     { title: 'Heading 1', message: 'Description 1' },
     { title: 'Heading 2', message: 'Description 2' }
   ];
-  
+
   return (
     <div className="break-inside-avoid mb-16">
       <h1 className="text-text mb-3 text-lg">Accordion Single:</h1>
@@ -331,7 +331,7 @@ const CheckExample = () => {
   return (
     <div className="break-inside-avoid mb-16">
       <h1 className="text-text mb-3 text-lg">Checkbox:</h1>
-      <NCheck isChecked={isChecked} onChange={(checked) => setIsChecked(checked)}>
+      <NCheck isChecked={isChecked} onChange={checked => setIsChecked(checked)}>
         Sample label for checkbox. accept <NLink> terms</NLink>
       </NCheck>
     </div>
@@ -493,7 +493,7 @@ const InputExample = () => {
   const { register, handleSubmit } = useForm();
   const [email, setEmail] = useState('niranjan.devasani@gmail.com');
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = data => console.log(data);
 
   return (
     <div className="break-inside-avoid mb-16">
@@ -826,7 +826,7 @@ const TextareaExample = () => {
   const { register, handleSubmit } = useForm();
   const [address, setAddress] = useState('Bangalore, India');
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = data => console.log(data);
 
   return (
     <div className="break-inside-avoid mb-16">
