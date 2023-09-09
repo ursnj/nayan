@@ -47,7 +47,7 @@ const App = () => {
       <div className="pt-0">
         <div className="w-full">
           <div className="px-5 my-3 flex flex-row justify-between items-center">
-            <img src={import.meta.env.DEV ? '/nayan.png' : '/nayan/nayan.png'} width="50" height="50" />
+            <img src="/nayan.png" width="50" height="50" />
             <NText className="cursor-pointer text-primary" onClick={changeTheme}>
               Toggle Theme
             </NText>
