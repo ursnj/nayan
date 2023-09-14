@@ -38,13 +38,8 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="bg-background flex flex-col justify-center text" id="features">
-      <div className="container mx-auto">
-        <div className="text-3xl text text-center mt-12 mb-5">Features</div>
-        <div className="text text-base mb-12 text-center max-w-[900px] mx-auto">
-          Surgy is not just limited to collaboration but also automates your daily tasks in one place like, Managing Employees, Leaves, Documents,
-          Assets, Policies, Projects, Sales, Purchases, Invoices and lot more.
-        </div>
+    <section className="bg-card flex flex-col justify-center text" id="features">
+      <div className="container mx-auto mt-16">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-cols-1 gap-x-12 gap-y-16 mb-16">
           {features.map(a => (
             <FeaturesItem key={a.title} title={a.title} text={a.text} icon={a.icon} />
