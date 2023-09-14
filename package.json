@@ -54,6 +54,7 @@
     "cmdk": "^0.2.0",
     "lucide-react": "^0.259.0",
     "react-linkify": "^1.0.0-alpha",
+    "react-router-dom": "^6.16.0",
     "tailwind-merge": "^1.13.2",
     "tailwindcss-animate": "^1.0.6"
   },
