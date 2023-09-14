@@ -4,10 +4,11 @@ import { CodeBlock, dracula } from 'react-code-blocks';
 interface Props {
   code: string;
   language?: string;
+  hasDemo?: boolean;
 }
 
 const Code = (props: Props) => {
-  const { code, language = 'tsx' } = props;
+  const { code, language = 'tsx', hasDemo = false } = props;
 
   return (
     <div className="mb-5">

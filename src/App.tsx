@@ -6,6 +6,7 @@ import Wrapper from '@/website/helpers/Wrapper';
 import { useLocalStorage } from '@/components/NLocalStorage';
 import Home from '@/website/home/Home';
 import Installation from './website/installation/Installation';
+import Accordion from './website/components/Accordion';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -19,7 +20,8 @@ const App = () => {
             <Route path="/installation" element={<Installation />} />
             <Route path="/contributions" element={<Home />} />
             <Route path="/components">
-              <Route index element={<Home />} />
+              <Route index element={<Accordion />} />
+              <Route path="accordion" element={<Accordion />} />
             </Route>
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

@@ -11,7 +11,7 @@ interface Props {
 const items = [
   { title: 'Installation', link: '/installation', icon: Package },
   { title: 'Components', link: '/components', isHeading: true },
-  { title: 'Accordian', link: '/components/accordian', icon: Package },
+  { title: 'Accordion', link: '/components/accordion', icon: Package },
   { title: 'Alert', link: '/components/alert', icon: Package },
   { title: 'Badge', link: '/components/badge', icon: Package },
   { title: 'Button', link: '/components/button', icon: Package },
