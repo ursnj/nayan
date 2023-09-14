@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import Header from '@/website/helpers/Header';
 import { NCard } from '@/components/NCard';
 import { Package } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Props {
   children: ReactNode;
@@ -55,10 +56,12 @@ const Sidebar = (props: Props) => {
             return (
               <>
                 {!item.isHeading && (
-                  <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center" key={item.link}>
-                    <Icon className="w-4 h-4 inline mr-3" />
-                    <span>{item.title}</span>
-                  </div>
+                  <Link to={item.link}>
+                    <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center" key={item.link}>
+                      <Icon className="w-4 h-4 inline mr-3" />
+                      <span>{item.title}</span>
+                    </div>
+                  </Link>
                 )}
                 {!!item.isHeading && (
                   <div className="text-lg p-2" key={item.link}>
