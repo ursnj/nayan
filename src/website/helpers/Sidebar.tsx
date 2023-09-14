@@ -72,7 +72,7 @@ const Sidebar = (props: Props) => {
             );
           })}
         </div>
-        <div className="content">{props.children}</div>
+        <div className="content w-full">{props.children}</div>
       </div>
     </div>
   );
