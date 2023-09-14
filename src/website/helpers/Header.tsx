@@ -38,11 +38,11 @@ const HeaderMenu = () => {
         </li>
       </ul>
       <div className="w-full md:w-auto form-inline md:text-center md:justify-center items-center mt-5 md:mt-0">
-        <span className="p-2 mx-2 md:my-2 mr-2 text cursor-pointer" onClick={toggleTheme} title="Theme Switch">
+        <span tabIndex={0} className="md:my-2 mr-5 text cursor-pointer" onClick={toggleTheme} title="Theme Switch">
           {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
           {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
         </span>
-        <Link to="https://www.npmjs.com/package/nayan" target="_blank" className="mr-4">
+        <Link to="https://www.npmjs.com/package/nayan" target="_blank" className="mr-5">
           <Package className="w-6 h-6 text-text inline" />
         </Link>
         <Link to="https://www.github.com/ursnj/nayan" target="_blank">

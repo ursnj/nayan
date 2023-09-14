@@ -32,7 +32,7 @@
   body {
     color: var(--COLOR_TEXT) !important;
     background: var(--COLOR_BACKGROUND) !important;
-    font-size: 0.875rem !important;
+    font-size: 1rem !important;
     font-family: arial, sans-serif !important;
     overflow-x: hidden !important;
   }
