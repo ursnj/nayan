@@ -37,17 +37,17 @@ const HeaderMenu = () => {
           </Link>
         </li>
       </ul>
-      <div className="w-full md:w-auto form-inline md:text-center md:justify-center items-center mt-5 md:mt-0">
-        <span tabIndex={0} className="md:my-2 mr-5 text cursor-pointer" onClick={toggleTheme} title="Theme Switch">
+      <div className="w-full md:w-auto form-inline md:text-center md:justify-center items-center mt-3 md:mt-0">
+        <Link to="https://www.npmjs.com/package/nayan" target="_blank" className="mr-5 ml-3 md:ml-0">
+          <Package className="w-6 h-6 text-text inline" />
+        </Link>
+        <Link to="https://www.github.com/ursnj/nayan" target="_blank" className="mr-5">
+          <Github className="w-6 h-6 text-text inline" />
+        </Link>
+        <span tabIndex={0} className="text cursor-pointer" onClick={toggleTheme} title="Theme Switch">
           {theme !== THEMES.DARK && <MoonStar className="w-6 h-6 text-text inline" />}
           {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
         </span>
-        <Link to="https://www.npmjs.com/package/nayan" target="_blank" className="mr-5">
-          <Package className="w-6 h-6 text-text inline" />
-        </Link>
-        <Link to="https://www.github.com/ursnj/nayan" target="_blank">
-          <Github className="w-6 h-6 text-text inline" />
-        </Link>
       </div>
     </div>
   );
@@ -59,10 +59,10 @@ const Header = () => {
   return (
     <header className="bg-card fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto">
-        <NSheet isOpen={menu} title="Surgy" onCloseSheet={() => setMenu(false)}>
+        <NSheet isOpen={menu} title="Nayan UI" onCloseSheet={() => setMenu(false)}>
           <HeaderMenu />
         </NSheet>
-        <nav className="flex flex-row py-3 justify-between items-center">
+        <nav className="flex flex-row py-2.5 justify-between items-center">
           <Link to="/">
             <img src="/nayan.png" className="d-inline-block align-top main-logo mr-6" alt="Surgy Logo" loading="lazy" width={50} height={50} />
           </Link>

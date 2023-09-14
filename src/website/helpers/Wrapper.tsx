@@ -9,7 +9,7 @@ const Wrapper = (props: Props) => {
   return (
     <>
       <Header />
-      <div className="main mt-[62px]">{props.children}</div>
+      <div className="main mt-[58px]">{props.children}</div>
     </>
   );
 };
