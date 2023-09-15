@@ -178,3 +178,23 @@ const Button = () => {
 };
 
 export default Button`;
+
+export const buttonGroupCode = `import { useState } from 'react';
+import { NButtonGroup } from 'nayan';
+
+const items = ['Startup', 'Business', 'Enterprise'];
+
+const ButtonGroup = () => {
+  const [selected, setSelected] = useState(items[0]);
+  return <NButtonGroup items={items} selected={selected} setSelected={setSelected} />;
+};
+
+export default ButtonGroup;`;
+
+export const cardCode = `import { NCard } from 'nayan';
+
+const Card = () => {
+  return <NCard className="p-3">This is sample card.</NCard>
+};
+
+export default Card;`;

@@ -1,8 +1,5 @@
-import { NAccordion } from '@/components/NAccordion';
-import { NAlert } from '@/components/NAlert';
 import { NBadge } from '@/components/NBadge';
-import { NCard } from '@/components/NCard';
-import { AccordionTypes, AlertTypes, Size } from '@/components/Types';
+import { Size } from '@/components/Types';
 import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';

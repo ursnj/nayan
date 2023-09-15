@@ -73,7 +73,7 @@ const Sidebar = (props: Props) => {
             );
           })}
         </div>
-        <div className="content col-span-12 sm:col-span-8 md:col-span-9">{props.children}</div>
+        <div className="content col-span-12 sm:col-span-8 md:col-span-9 pt-2">{props.children}</div>
       </div>
     </div>
   );

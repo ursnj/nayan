@@ -21,7 +21,9 @@ const Code = (props: Props) => {
           maxHeight: '600px',
           overflow: 'scroll',
           width: '100%',
-          maxWidth: '100%'
+          maxWidth: '100%',
+          backgroundColor: 'var(--COLOR_CARD)',
+          padding: '10px'
         }}
       />
     </div>

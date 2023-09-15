@@ -1,7 +1,5 @@
-import { NAccordion } from '@/components/NAccordion';
 import { NAlert } from '@/components/NAlert';
-import { NCard } from '@/components/NCard';
-import { AccordionTypes, AlertTypes } from '@/components/Types';
+import { AlertTypes } from '@/components/Types';
 import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';

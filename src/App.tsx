@@ -10,6 +10,8 @@ import Accordion from './website/components/Accordion';
 import Alert from './website/components/Alert';
 import Badge from './website/components/Badge';
 import Button from './website/components/Button';
+import ButtonGroup from './website/components/ButtonGroup';
+import Card from './website/components/Card';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -28,6 +30,8 @@ const App = () => {
               <Route path="alert" element={<Alert />} />
               <Route path="badge" element={<Badge />} />
               <Route path="button" element={<Button />} />
+              <Route path="button-group" element={<ButtonGroup />} />
+              <Route path="card" element={<Card />} />
             </Route>
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
