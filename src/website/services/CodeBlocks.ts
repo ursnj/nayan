@@ -105,12 +105,28 @@ const Accordion = () => {
 
   return (
     <div>
-      <h1 className="text-text mb-3 text-lg">Accordion Single:</h1>
+      <h1 className="text-text mb-3 text-lg">Single:</h1>
       <NAccordion type={AccordionTypes.SINGLE} list={list} />
-      <h1 className="text-text mb-3 mt-5 text-lg">Accordion Multiple:</h1>
+      <h1 className="text-text mb-3 mt-5 text-lg">Multiple:</h1>
       <NAccordion type={AccordionTypes.MULTIPLE} list={list} />
     </div>
   );
 };
 
 export default Accordion;`;
+
+export const alertCode = `import { NAlert, AlertTypes } from 'nayan';
+
+const Alert = () => {
+  return (
+    <div>
+      <NAlert type={AlertTypes.DEFAULT} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.INFO} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.SUCCESS} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.WARNING} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <NAlert type={AlertTypes.ERROR} title="Error!" message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+    </div>
+  );
+};
+
+export default Alert;`;

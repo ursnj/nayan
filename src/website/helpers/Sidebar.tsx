@@ -9,6 +9,7 @@ interface Props {
 }
 
 const items = [
+  { title: 'Get Started', link: '/get-started', isHeading: true },
   { title: 'Installation', link: '/installation', icon: Package },
   { title: 'Components', link: '/components', isHeading: true },
   { title: 'Accordion', link: '/components/accordion', icon: Package },
