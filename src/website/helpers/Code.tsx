@@ -12,7 +12,18 @@ const Code = (props: Props) => {
 
   return (
     <div className="mb-5">
-      <CodeBlock codeContainerStyle={{ width: '100%' }} text={props.code} language={language} showLineNumbers={false} theme={dracula} />
+      <CodeBlock
+        theme={dracula}
+        text={props.code}
+        language={language}
+        showLineNumbers={false}
+        customStyle={{
+          maxHeight: '600px',
+          overflow: 'scroll',
+          width: '100%',
+          maxWidth: '100%'
+        }}
+      />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { AccordionTypes, AlertTypes } from '@/components/Types';
 import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
-import { accordionCode, alertCode, appCode, cssCode, installCode, tailwindCode } from '../services/CodeBlocks';
+import { alertCode } from '../services/CodeBlocks';
 
 const Alert = () => {
   return (

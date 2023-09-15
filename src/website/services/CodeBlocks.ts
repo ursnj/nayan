@@ -130,3 +130,51 @@ const Alert = () => {
 };
 
 export default Alert;`;
+
+export const badgeCode = `import { NBadge, Size } from 'nayan';
+
+const Badge = () => {
+  return (
+    <div>
+      <NBadge size={Size.XS} name="Sample" className="text-text bg-card border border-border mr-2" />
+      <NBadge size={Size.XS} name="Sample" className="text-blue-700 bg-blue-300 mr-2" />
+      <NBadge size={Size.SM} name="Sample" className="text-green-700 bg-green-300 mr-2" />
+      <NBadge size={Size.MD} name="Sample" className="text-yellow-700 bg-yellow-300 mr-2" />
+      <NBadge size={Size.LG} name="Sample" className="text-red-700 bg-red-300 mr-2" />
+    </div>
+  );
+};
+
+export default Badge;`;
+
+export const buttonCode = `import { NButton, Size } from 'nayan';
+
+const Button = () => {
+  return (
+    <div>
+      <NButton size={Size.XS} isDisabled className="text-text bg-card border border-border mr-2">
+        Button
+      </NButton>
+      <NButton type="submit" size={Size.XS} onClick={() => console.log('Button clicked')} className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
+        Button
+      </NButton>
+      <NButton type="reset" size={Size.SM} onClick={() => console.log('Button clicked')} className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
+        Button
+      </NButton>
+      <NButton size={Size.MD} isLoading={true} onClick={() => console.log('Button clicked')} className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
+        Button
+      </NButton>
+      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="mr-2">
+        Button
+      </NButton>
+      <NButton size={Size.LG} isOutline={true} onClick={() => console.log('Button clicked')} className="mr-2">
+        Button
+      </NButton>
+      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
+        Button
+      </NButton>
+    </div>
+  );
+};
+
+export default Button`;

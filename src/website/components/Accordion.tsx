@@ -4,7 +4,7 @@ import { AccordionTypes } from '@/components/Types';
 import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
-import { accordionCode, appCode, cssCode, installCode, tailwindCode } from '../services/CodeBlocks';
+import { accordionCode } from '../services/CodeBlocks';
 
 const Accordion = () => {
   const list = [
@@ -18,12 +18,10 @@ const Accordion = () => {
       <div className="text-xl mb-5">Usage</div>
       <Code code={accordionCode} />
       <div className="text-xl mb-5">Demo</div>
-      <NCard className="p-5">
-        <h1 className="text-text mb-3 text-lg">Single:</h1>
-        <NAccordion type={AccordionTypes.SINGLE} list={list} />
-        <h1 className="text-text mb-3 mt-5 text-lg">Multiple:</h1>
-        <NAccordion type={AccordionTypes.MULTIPLE} list={list} />
-      </NCard>
+      <h1 className="text-text mb-3 text-lg">Single:</h1>
+      <NAccordion type={AccordionTypes.SINGLE} list={list} />
+      <h1 className="text-text mb-3 mt-5 text-lg">Multiple:</h1>
+      <NAccordion type={AccordionTypes.MULTIPLE} list={list} />
     </Sidebar>
   );
 };
