@@ -51,7 +51,7 @@ const Sidebar = (props: Props) => {
   return (
     <div className="container mx-auto pt-3 mb-3">
       <div className="grid grid-cols-12 gap-3">
-        <div className="col-span-3 mr-3">
+        <div className="col-span-12 sm:col-span-4 md:col-span-3 mr-3">
           {items.map(item => {
             const Icon = item.icon as any;
             return (
@@ -73,7 +73,7 @@ const Sidebar = (props: Props) => {
             );
           })}
         </div>
-        <div className="content col-span-9">{props.children}</div>
+        <div className="content col-span-12 sm:col-span-8 md:col-span-9">{props.children}</div>
       </div>
     </div>
   );

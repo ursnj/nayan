@@ -1,5 +1,4 @@
 import { NAccordion } from '@/components/NAccordion';
-import { NCard } from '@/components/NCard';
 import { AccordionTypes } from '@/components/Types';
 import React from 'react';
 import Code from '../helpers/Code';

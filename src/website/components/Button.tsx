@@ -1,5 +1,5 @@
 import { NButton } from '@/components/NButton';
-import { AccordionTypes, AlertTypes, Size } from '@/components/Types';
+import { Size } from '@/components/Types';
 import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
