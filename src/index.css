@@ -36,4 +36,8 @@
     font-family: arial, sans-serif !important;
     overflow-x: hidden !important;
   }
+
+  .container {
+    padding: 0px 10px;
+  }
 }

@@ -198,3 +198,18 @@ const Card = () => {
 };
 
 export default Card;`;
+
+export const checkBoxCode = `import { useState } from 'react';
+import { NCheck, NLink } from 'nayan';
+
+const Checkbox = () => {
+  const [isChecked, setIsChecked] = useState(true);
+
+  return (
+    <NCheck isChecked={isChecked} onChange={checked => setIsChecked(checked)}>
+      Sample label for checkbox. accept <NLink> terms</NLink>
+    </NCheck>
+  );
+};
+
+export default Checkbox;`;

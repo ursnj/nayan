@@ -12,6 +12,7 @@ import Badge from './website/components/Badge';
 import Button from './website/components/Button';
 import ButtonGroup from './website/components/ButtonGroup';
 import Card from './website/components/Card';
+import Checkbox from './website/components/Checkbox';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -32,6 +33,7 @@ const App = () => {
               <Route path="button" element={<Button />} />
               <Route path="button-group" element={<ButtonGroup />} />
               <Route path="card" element={<Card />} />
+              <Route path="checkbox" element={<Checkbox />} />
             </Route>
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
