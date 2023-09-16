@@ -309,3 +309,30 @@ const Input = () => {
 };
 
 export default Input;`;
+
+export const linkCode = `import { NLink } from 'nayan';
+
+const Link = () => {
+  return (
+    <div>
+      <div className="text-text">
+        This is a sample paragraph with some <NLink>Link</NLink>.
+      </div>
+      <div className="text-text">
+        This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
+      </div>
+    </div>
+  );
+};
+
+export default Link;`;
+
+export const linkifyCode = `import { NLinkify } from 'nayan';
+
+const Linkify = () => {
+  return (
+    <NLinkify>Checkout our new landing page at nayanui.com and new email hello@nayanui.com</NLinkify>
+  );
+};
+
+export default Linkify;`;

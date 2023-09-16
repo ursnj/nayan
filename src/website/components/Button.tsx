@@ -10,7 +10,8 @@ const Badge = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Button</div>
       <div className="mb-5">Displays a button or a component that looks like a button.</div>
-      <div className="text-xl mb-5">Demo</div>
+
+      <div className="text-xl mb-5"># Demo</div>
       <NButton size={Size.XS} isDisabled className="text-text bg-card border border-border mr-2">
         Button
       </NButton>
@@ -47,7 +48,8 @@ const Badge = () => {
         className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
         Button
       </NButton>
-      <div className="text-xl mb-5 mt-5">Usage</div>
+
+      <div className="text-xl mb-5 mt-5"># Usage</div>
       <Code code={buttonCode} />
     </Sidebar>
   );

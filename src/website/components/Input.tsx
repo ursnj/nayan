@@ -11,9 +11,11 @@ const Input = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Input</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
-      <div className="text-xl mb-5">Demo</div>
+
+      <div className="text-xl mb-5"># Demo</div>
       <NInput id="in1" type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
-      <div className="text-xl mb-5 mt-5">Usage</div>
+
+      <div className="text-xl mb-5 mt-5"># Usage</div>
       <Code code={inputCode} />
     </Sidebar>
   );

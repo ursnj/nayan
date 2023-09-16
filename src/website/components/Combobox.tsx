@@ -20,7 +20,8 @@ const Combobox = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Combobox</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
-      <div className="text-xl mb-5">Demo</div>
+
+      <div className="text-xl mb-5"># Demo</div>
       <NCombo
         isOpen={isOpen}
         setIsOpen={setIsOpen}
@@ -30,7 +31,8 @@ const Combobox = () => {
         items={items}
         onChange={setSelected}
       />
-      <div className="text-xl mb-5 mt-5">Usage</div>
+
+      <div className="text-xl mb-5 mt-5"># Usage</div>
       <Code code={comboBoxCode} />
     </Sidebar>
   );

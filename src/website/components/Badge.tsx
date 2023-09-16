@@ -10,13 +10,15 @@ const Badge = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Badge</div>
       <div className="mb-5">Displays a badge or a component that looks like a badge.</div>
-      <div className="text-xl mb-5">Demo</div>
+
+      <div className="text-xl mb-5"># Demo</div>
       <NBadge size={Size.XS} name="Sample" className="text-text bg-card border border-border mr-2" />
       <NBadge size={Size.XS} name="Sample" className="text-blue-700 bg-blue-300 mr-2" />
       <NBadge size={Size.SM} name="Sample" className="text-green-700 bg-green-300 mr-2" />
       <NBadge size={Size.MD} name="Sample" className="text-yellow-700 bg-yellow-300 mr-2" />
       <NBadge size={Size.LG} name="Sample" className="text-red-700 bg-red-300 mr-2" />
-      <div className="text-xl mb-5 mt-5">Usage</div>
+
+      <div className="text-xl mb-5 mt-5"># Usage</div>
       <Code code={badgeCode} />
     </Sidebar>
   );

@@ -1,25 +1,22 @@
-import { NCheck } from '@/components/NCheck';
-import { NLink } from '@/components/NLink';
+import { NLinkify } from '@/components/NLinkify';
 import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
-import { checkBoxCode } from '../services/CodeBlocks';
+import { linkifyCode } from '../services/CodeBlocks';
 
-const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
-
+const Linkify = () => {
   return (
     <Sidebar>
-      <div className="text-2xl mb-5">Checkbox</div>
+      <div className="text-2xl mb-5">Linkify</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
-      <div className="text-xl mb-5">Demo</div>
-      <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
-        Sample label for checkbox. accept <NLink> terms</NLink>
-      </NCheck>
-      <div className="text-xl mb-5 mt-5">Usage</div>
-      <Code code={checkBoxCode} />
+
+      <div className="text-xl mb-5"># Demo</div>
+      <NLinkify>Checkout our new landing page at nayanui.com and new email hello@nayanui.com</NLinkify>
+
+      <div className="text-xl mb-5 mt-5"># Usage</div>
+      <Code code={linkifyCode} />
     </Sidebar>
   );
 };
 
-export default Checkbox;
+export default Linkify;

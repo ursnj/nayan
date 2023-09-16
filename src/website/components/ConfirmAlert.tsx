@@ -14,7 +14,8 @@ const ConfirmAlert = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Confirm Alert</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
-      <div className="text-xl mb-5">Demo</div>
+
+      <div className="text-xl mb-5"># Demo</div>
       <NConfirmAlert
         isOpen={isOpen}
         title="Are you absolutely sure?"
@@ -23,7 +24,8 @@ const ConfirmAlert = () => {
         onClose={() => setIsOpen(false)}
       />
       <NButton onClick={() => setIsOpen(true)}>Show Alert</NButton>
-      <div className="text-xl mb-5 mt-5">Usage</div>
+
+      <div className="text-xl mb-5 mt-5"># Usage</div>
       <Code code={confirmAlertCode} />
     </Sidebar>
   );
