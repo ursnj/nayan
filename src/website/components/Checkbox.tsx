@@ -12,12 +12,12 @@ const Checkbox = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Checkbox</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
-      <div className="text-xl mb-5">Usage</div>
-      <Code code={checkBoxCode} />
       <div className="text-xl mb-5">Demo</div>
       <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
         Sample label for checkbox. accept <NLink> terms</NLink>
       </NCheck>
+      <div className="text-xl mb-5 mt-5">Usage</div>
+      <Code code={checkBoxCode} />
     </Sidebar>
   );
 };

@@ -13,10 +13,10 @@ const ButtonGroup = () => {
     <Sidebar>
       <div className="text-2xl mb-5">Button Group</div>
       <div className="mb-5">Displays a badge or a component that looks like a badge.</div>
-      <div className="text-xl mb-5">Usage</div>
-      <Code code={buttonGroupCode} />
       <div className="text-xl mb-5">Demo</div>
       <NButtonGroup items={items} selected={selected} setSelected={setSelected} />
+      <div className="text-xl mb-5 mt-5">Usage</div>
+      <Code code={buttonGroupCode} />
     </Sidebar>
   );
 };
