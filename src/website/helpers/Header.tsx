@@ -57,7 +57,7 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="bg-card fixed top-0 left-0 right-0 z-10">
+    <header className="bg-card fixed top-0 left-0 right-0 z-10 shadow">
       <div className="container mx-auto">
         <NSheet isOpen={menu} title="Nayan UI" onCloseSheet={() => setMenu(false)}>
           <HeaderMenu />
