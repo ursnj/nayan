@@ -1,5 +1,7 @@
+import { useLocalStorage } from '@/components/NLocalStorage';
+import { THEMES } from '@/components/Types';
 import React from 'react';
-import { CodeBlock, dracula } from 'react-code-blocks';
+import { CodeBlock, dracula, github } from 'react-code-blocks';
 
 interface Props {
   code: string;
@@ -8,12 +10,13 @@ interface Props {
 }
 
 const Code = (props: Props) => {
+  const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
   const { code, language = 'tsx', hasDemo = false } = props;
 
   return (
     <div className="mb-5">
       <CodeBlock
-        theme={dracula}
+        theme={theme === THEMES.LIGHT ? github : dracula}
         text={props.code}
         language={language}
         showLineNumbers={false}
@@ -22,6 +25,8 @@ const Code = (props: Props) => {
           overflow: 'scroll',
           width: '100%',
           maxWidth: '100%',
+          borderRadius: '4px',
+          border: '1px solid var(--COLOR_BORDER)',
           backgroundColor: 'var(--COLOR_CARD)',
           padding: '10px'
         }}
