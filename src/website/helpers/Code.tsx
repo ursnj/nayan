@@ -21,7 +21,7 @@ const Code = (props: Props) => {
         language={language}
         showLineNumbers={false}
         customStyle={{
-          maxHeight: '600px',
+          // maxHeight: '600px',
           overflow: 'scroll',
           width: '100%',
           maxWidth: '100%',

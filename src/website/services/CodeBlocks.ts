@@ -213,3 +213,99 @@ const Checkbox = () => {
 };
 
 export default Checkbox;`;
+
+export const comboBoxCode = `import { NCombo } from 'nayan';
+import { useState } from 'react';
+
+const items = [
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
+];
+
+const Combobox = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(items[0].value);
+
+  return (
+    <NCombo
+      isOpen={isOpen}
+      setIsOpen={setIsOpen}
+      selected={selected}
+      placeholder="Select Business"
+      label="Business Type"
+      items={items}
+      onChange={setSelected}
+    />
+  );
+};
+
+export default Combobox;`;
+
+export const confirmAlertCode = `import { useState } from 'react';
+import { NConfirmAlert, NButton } from 'nayan';
+
+const ConfirmAlert = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <NConfirmAlert
+        isOpen={isOpen}
+        title="Are you absolutely sure?"
+        message="This action cannot be undone. This will permanently delete your account and remove your data from our servers."
+        onResult={result => console.log('Alert Clicked', result)}
+        onClose={() => setIsOpen(false)}
+      />
+      <NButton onClick={() => setIsOpen(true)}>Show Alert</NButton>
+    </div>
+  );
+};
+
+export default ConfirmAlert;`;
+
+export const dialogCode = `import { useState } from 'react';
+import { NDialog, Size } from 'nayan';
+
+const Dialog = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <NDialog isOpen={isOpen} closeModal={() => setIsOpen(false)} size={Size.MD} title="Payment confirmation">
+        Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
+      </NDialog>
+      <NButton onClick={() => setIsOpen(true)}>Show Dialog</NButton>
+    </div>
+  );
+};
+
+export default Dialog;`;
+
+export const dividerCode = `import { NDivider } from 'nayan';
+
+const Divider = () => {
+  return (
+    <div>
+      <h1 className="text-text mb-3 text-lg">Horizontal:</h1>
+      <NDivider className="my-3" />
+      <h1 className="text-text mb-3 text-lg">Vertical:</h1>
+      <NDivider orientation="vertical" className="h-5" />
+    </div>
+  );
+};
+
+export default Divider;`;
+
+export const inputCode = `import { NInput } from 'nayan';
+import { useState } from 'react';
+
+const Input = () => {
+  const [email, setEmail] = useState('niranjan.devasani@gmail.com');
+
+  return (
+    <NInput id="email" type="email" label="Email" placeholder="Enter email" className="mb-3" value={email} onChange={e => setEmail(e.target.value)} />
+  );
+};
+
+export default Input;`;
