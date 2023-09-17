@@ -15,7 +15,6 @@ const Toast = () => {
 
       <div className="text-xl mb-5"># Demo</div>
       <NButton onClick={() => toast('Simple Toaster!')}>Show Simple Toast</NButton>
-
       <NButton className="ml-5" onClick={() => toast('Toaster Description!', 'Toaster Title')}>
         Show Toast with Title
       </NButton>

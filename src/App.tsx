@@ -34,6 +34,7 @@ import Tabs from './website/components/Tabs';
 import Textarea from './website/components/Textarea';
 import Toast from './website/components/Toast';
 import Tooltip from './website/components/Tooltip';
+import Contribution from './website/contributions/Contribution';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -45,7 +46,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/installation" element={<Installation />} />
-            <Route path="/contributions" element={<Home />} />
+            <Route path="/contribution" element={<Contribution />} />
             <Route path="/components">
               <Route index element={<Accordion />} />
               <Route path="accordion" element={<Accordion />} />

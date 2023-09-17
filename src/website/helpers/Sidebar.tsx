@@ -39,7 +39,9 @@ const items = [
   { title: 'Tabs', link: '/components/tabs', icon: Package },
   { title: 'Textarea', link: '/components/textarea', icon: Package },
   { title: 'Toast', link: '/components/toast', icon: Package },
-  { title: 'Tooltip', link: '/components/tooltip', icon: Package }
+  { title: 'Tooltip', link: '/components/tooltip', icon: Package },
+  { title: 'More Guides', link: '/guides', isHeading: true },
+  { title: 'Contribution', link: '/contribution', icon: Package }
 ];
 
 const Sidebar = (props: Props) => {
@@ -52,8 +54,8 @@ const Sidebar = (props: Props) => {
             return (
               <>
                 {!item.isHeading && (
-                  <Link to={item.link}>
-                    <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center" key={item.link}>
+                  <Link to={item.link} key={item.link}>
+                    <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center">
                       <Icon className="w-4 h-4 inline mr-3" />
                       <span>{item.title}</span>
                     </div>
