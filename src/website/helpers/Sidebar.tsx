@@ -38,7 +38,6 @@ const items = [
   { title: 'Switch', link: '/components/switch', icon: Package },
   { title: 'Tabs', link: '/components/tabs', icon: Package },
   { title: 'Textarea', link: '/components/textarea', icon: Package },
-  { title: 'Theme', link: '/components/theme', icon: Package },
   { title: 'Tooltip', link: '/components/tooltip', icon: Package },
   { title: 'Hooks', link: '/hooks', isHeading: true },
   { title: 'Local Storge', link: '/components/local-storage', icon: Package },

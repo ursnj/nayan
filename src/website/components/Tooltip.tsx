@@ -1,27 +1,25 @@
-import { NCheck } from '@/components/NCheck';
-import { NLink } from '@/components/NLink';
+import { NButton } from '@/components/NButton';
+import { NTooltip } from '@/components/NTooltip';
 import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
-import { checkBoxCode } from '../services/CodeBlocks';
+import { tooltipCode } from '../services/CodeBlocks';
 
-const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
-
+const Tooltip = () => {
   return (
     <Sidebar>
-      <div className="text-2xl mb-5">Checkbox</div>
+      <div className="text-2xl mb-5">Tooltip</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
 
       <div className="text-xl mb-5"># Demo</div>
-      <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
-        Sample label for checkbox. accept <NLink> terms</NLink>
-      </NCheck>
+      <NTooltip message="This is sample tool tip! This is sample tool tip This is sample tool tip This is sample tool tip ">
+        <NButton>Hover to show Tooltip</NButton>
+      </NTooltip>
 
       <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={checkBoxCode} />
+      <Code code={tooltipCode} />
     </Sidebar>
   );
 };
 
-export default Checkbox;
+export default Tooltip;

@@ -532,3 +532,15 @@ const Textarea = () => {
 };
 
 export default Textarea;`;
+
+export const tooltipCode = `import { NTooltip, NButton } from 'nayan';
+
+const Tooltip = () => {
+  return (
+    <NTooltip message="This is sample tool tip! This is sample tool tip This is sample tool tip This is sample tool tip ">
+      <NButton>Show Tooltip</NButton>
+    </NTooltip>
+  );
+};
+
+export default Tooltip;`;
