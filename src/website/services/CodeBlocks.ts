@@ -336,3 +336,88 @@ const Linkify = () => {
 };
 
 export default Linkify;`;
+
+export const menuCode = `import { NMenu,NMenuItem, Size, NMenuNested, NButton } from 'nayan';
+import { User } from 'lucide-react';
+
+const Menu = () => {
+  return (
+    <NMenu align="start" title="My Account" size={Size.LG} trigger={<NButton>Show Menu</NButton>}>
+      <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
+      <NMenuNested trigger={<NMenuItem title="Share" icon={User} className="p-0" />}>
+        <NMenuItem title="Facebook" icon={User} shortcut="⌘P" />
+        <NMenuItem title="Twitter" icon={User} shortcut="⌘P" />
+      </NMenuNested>
+      <NMenuItem title="Settings" icon={User} shortcut="⌘P" separator={true} />
+      <NMenuItem title="Logout" icon={User} shortcut="⌘P" />
+    </NMenu>
+  );
+};
+
+export default Menu;`;
+
+export const popoverCode = `import { NPopover, NButton, Size } from 'nayan';
+
+const Popover = () => {
+  return (
+    <NPopover size={Size.MD} trigger={<NButton>Show Popover</NButton>}>
+      <div className="overflow-hidden p-3">
+        <div className="text-sm font-medium text-text">Documentation</div>
+        <div className="text-sm text-muted">Start integrating products and tools</div>
+      </div>
+    </NPopover>
+  );
+};
+
+export default Popover;`;
+
+export const progressCode = `import { NProgress } from 'nayan';
+
+const Progress = () => {
+  return <NProgress value={50} />;
+};
+
+export default Progress;`;
+
+export const radioGroupCode = `import { useState } from 'react';
+import { NRadioGroup } from 'nayan';
+
+const items = [
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
+];
+
+const RadioGroupExample = () => {
+  const [selected, setSelected] = useState(items[0].value);
+
+  return (
+    <div>
+      <h1 className="text-text mb-3 text-base">Horizontal:</h1>
+      <NRadioGroup items={items} selected={selected} setSelected={setSelected} />
+      <div className="mt-5" />
+      <h1 className="text-text mb-3 text-base">Vertical:</h1>
+      <NRadioGroup orientation="vertical" items={items} selected={selected} setSelected={setSelected} />
+    </div>
+  );
+};
+
+export default RadioGroup;`;
+
+export const selectCode = `import { useState } from 'react';
+import { NSelect } from 'nayan';
+
+const items = [
+  { value: 'startup', label: 'Startup' },
+  { value: 'business', label: 'Business' },
+  { value: 'enterprise', label: 'Enterprise' }
+];
+
+const Select = () => {
+  const [selected, setSelected] = useState(items[0].value);
+  return (
+    <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
+  );
+};
+
+export default Select;`;

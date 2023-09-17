@@ -28,7 +28,7 @@ const Code = (props: Props) => {
           borderRadius: '4px',
           border: '1px solid var(--COLOR_BORDER)',
           backgroundColor: 'var(--COLOR_CARD)',
-          padding: '10px'
+          padding: '8px'
         }}
       />
     </div>
