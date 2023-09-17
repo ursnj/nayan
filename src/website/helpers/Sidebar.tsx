@@ -49,7 +49,7 @@ const Sidebar = (props: Props) => {
     <div className="container mx-auto pt-3 mb-3">
       <div className="grid grid-cols-12 gap-3">
         <div className="col-span-12 sm:col-span-4 md:col-span-3 lg:col-span-3">
-          <div className="sticky top-[70px] h-[calc(100vh-80px)] overflow-y-auto">
+          <div className="sticky top-[70px] h-[calc(100vh-82px)] overflow-y-auto">
             {items.map(item => {
               const Icon = item.icon as any;
               return (
