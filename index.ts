@@ -26,7 +26,6 @@ export * from './src/components/NSkeleton';
 export * from './src/components/NSwitch';
 export * from './src/components/NTabs';
 export * from './src/components/NTabsContent';
-export * from './src/components/NText';
 export * from './src/components/NTextarea';
 export * from './src/components/NTheme';
 export * from './src/components/NToast';

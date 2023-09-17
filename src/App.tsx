@@ -32,11 +32,9 @@ import Skeleton from './website/components/Skeleton';
 import Slider from './website/components/Slider';
 import Switch from './website/components/Switch';
 import Tabs from './website/components/Tabs';
-import Text from './website/components/Text';
 import Textarea from './website/components/Textarea';
 import Toast from './website/components/Toast';
 import Tooltip from './website/components/Tooltip';
-import Theme from './website/components/Theme';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -77,10 +75,8 @@ const App = () => {
               <Route path="slider" element={<Slider />} />
               <Route path="switch" element={<Switch />} />
               <Route path="tabs" element={<Tabs />} />
-              <Route path="text" element={<Text />} />
               <Route path="textarea" element={<Textarea />} />
               <Route path="toast" element={<Toast />} />
-              <Route path="theme" element={<Theme />} />
               <Route path="tooltip" element={<Tooltip />} />
             </Route>
             <Route path="*" element={<Navigate to="/" />} />

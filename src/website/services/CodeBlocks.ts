@@ -457,3 +457,78 @@ const Skeleton = () => {
 };
 
 export default Skeleton;`;
+
+export const sliderCode = `import { NSlider } from 'nayan';
+
+const Slider = () => {
+  return (
+    <NSlider defaultValue={50} max={100} step={1} isDisabled={false} onChange={value => console.log(value)} />
+  );
+};
+
+export default Slider;`;
+
+export const switchCode = `import { useState } from 'react';
+import { NSwitch } from 'nayan';
+
+const Switch = () => {
+  const [enabled, setEnabled] = useState(false);
+  return <NSwitch enabled={enabled} onChange={setEnabled} />;
+};
+
+export default Switch;`;
+
+export const tabsCode = `import { useState } from 'react';
+import { NTabs, NTabsContent } from 'nayan';
+
+const tabs = ['POSTS', 'SAVED'];
+
+const Tabs = () => {
+  const [selected, setSelected] = useState(tabs[0]);
+
+  return (
+    <div>
+      <h1 className="text-text mb-3 text-lg text-left">Tabs:</h1>
+      <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
+        <NTabsContent tab={tabs[0]} className="px-3 py-2 text-text">
+          Content 1
+        </NTabsContent>
+        <NTabsContent tab={tabs[1]} className="px-3 py-2 text-text">
+          Content 2
+        </NTabsContent>
+      </NTabs>
+      <h1 className="text-text mb-3 mt-5 text-lg text-left">Full Width:</h1>
+      <NTabs isFull={true} tabs={tabs} selected={selected} setSelected={setSelected}>
+        <NTabsContent tab={tabs[0]} className="px-3 py-2 text-text">
+          Content 3
+        </NTabsContent>
+        <NTabsContent tab={tabs[1]} className="px-3 py-2 text-text">
+          Content 4
+        </NTabsContent>
+      </NTabs>
+    </div>
+  );
+};
+
+export default Tabs;`;
+
+export const textareaCode = `import { useState } from 'react';
+import { NTextarea } from 'nayan';
+
+const Textarea = () => {
+  const [address, setAddress] = useState('Bangalore, India');
+
+  return (
+    <NTextarea
+      id="ta1"
+      label="Address"
+      placeholder="Enter address"
+      className="mb-3"
+      rows={3}
+      value={address}
+      onChange={e => setAddress(e.target.value)}
+    />
+  );
+};
+
+export default Textarea;`;

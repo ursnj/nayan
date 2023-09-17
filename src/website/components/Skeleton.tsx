@@ -1,14 +1,12 @@
 import { NCheck } from '@/components/NCheck';
 import { NLink } from '@/components/NLink';
 import { NSkeleton } from '@/components/NSkeleton';
-import React, { useState } from 'react';
+import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { skeletonCode } from '../services/CodeBlocks';
 
 const Skeleton = () => {
-  const [isChecked, setIsChecked] = useState(true);
-
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Skeleton</div>

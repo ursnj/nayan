@@ -37,7 +37,6 @@ const items = [
   { title: 'Slider', link: '/components/slider', icon: Package },
   { title: 'Switch', link: '/components/switch', icon: Package },
   { title: 'Tabs', link: '/components/tabs', icon: Package },
-  { title: 'Text', link: '/components/text', icon: Package },
   { title: 'Textarea', link: '/components/textarea', icon: Package },
   { title: 'Theme', link: '/components/theme', icon: Package },
   { title: 'Tooltip', link: '/components/tooltip', icon: Package },
