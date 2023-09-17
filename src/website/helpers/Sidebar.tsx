@@ -48,27 +48,29 @@ const Sidebar = (props: Props) => {
   return (
     <div className="container mx-auto pt-3 mb-3">
       <div className="grid grid-cols-12 gap-3">
-        <div className="col-span-12 sm:col-span-4 md:col-span-3 lg:col-span-3 mr-3">
-          {items.map(item => {
-            const Icon = item.icon as any;
-            return (
-              <>
-                {!item.isHeading && (
-                  <Link to={item.link} key={item.link}>
-                    <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center">
-                      <Icon className="w-4 h-4 inline mr-3" />
-                      <span>{item.title}</span>
+        <div className="col-span-12 sm:col-span-4 md:col-span-3 lg:col-span-3">
+          <div className="sticky top-[70px] h-[calc(100vh-80px)] overflow-y-auto">
+            {items.map(item => {
+              const Icon = item.icon as any;
+              return (
+                <>
+                  {!item.isHeading && (
+                    <Link to={item.link} key={item.link}>
+                      <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center">
+                        <Icon className="w-4 h-4 inline mr-3" />
+                        <span>{item.title}</span>
+                      </div>
+                    </Link>
+                  )}
+                  {!!item.isHeading && (
+                    <div className="text-lg p-2" key={item.link}>
+                      {item.title}
                     </div>
-                  </Link>
-                )}
-                {!!item.isHeading && (
-                  <div className="text-lg p-2" key={item.link}>
-                    {item.title}
-                  </div>
-                )}
-              </>
-            );
-          })}
+                  )}
+                </>
+              );
+            })}
+          </div>
         </div>
         <div className="content col-span-12 sm:col-span-8 md:col-span-9 lg:col-span-9 pt-2">{props.children}</div>
       </div>
