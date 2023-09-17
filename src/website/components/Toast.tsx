@@ -11,7 +11,7 @@ const Toast = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Toast</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A succinct message that is displayed temporarily.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NButton onClick={() => toast('Simple Toaster!')}>Show Simple Toast</NButton>

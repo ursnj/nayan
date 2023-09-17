@@ -11,7 +11,7 @@ const Textarea = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Textarea</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">Displays a form textarea or a component that looks like a textarea.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NTextarea

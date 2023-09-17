@@ -8,7 +8,7 @@ const Checkbox = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Progress</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NProgress value={50} />

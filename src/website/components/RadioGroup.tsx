@@ -18,7 +18,7 @@ const RadioGroup = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Radio Group</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <h1 className="text-text mb-3 text-base">Horizontal:</h1>

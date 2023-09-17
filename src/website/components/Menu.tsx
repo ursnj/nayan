@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Menu</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">Displays a menu to the user — such as a set of actions or functions — triggered by a button.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NMenu align="start" title="My Account" size={Size.LG} trigger={<NButton>Show Menu</NButton>}>

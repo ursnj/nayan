@@ -12,7 +12,7 @@ const Dialog = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Dialog</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NDialog isOpen={isOpen} closeModal={() => setIsOpen(false)} size={Size.MD} title="Payment confirmation">

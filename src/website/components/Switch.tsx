@@ -10,7 +10,7 @@ const Switch = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Switch</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NSwitch enabled={enabled} onChange={setEnabled} />

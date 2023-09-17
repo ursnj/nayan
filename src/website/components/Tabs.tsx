@@ -13,7 +13,7 @@ const Tabs = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Tabs</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A set of layered sections of content—known as tab panels—that are displayed one at a time.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <h1 className="text-text mb-3 text-base text-left">Tabs:</h1>

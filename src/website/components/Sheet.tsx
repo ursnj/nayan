@@ -12,7 +12,7 @@ const Sheet = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Sheet</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">Extends the Dialog component to display content that complements the main content of the screen.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NButton onClick={() => setIsOpen(true)}>Show Sheet</NButton>

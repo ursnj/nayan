@@ -8,7 +8,7 @@ const Linkify = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Linkify</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A component to elivate links, phone numbers and fax.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NLinkify>Checkout our new landing page at nayanui.com and new email hello@nayanui.com</NLinkify>

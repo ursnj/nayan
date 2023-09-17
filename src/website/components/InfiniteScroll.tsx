@@ -11,7 +11,7 @@ const Checkbox = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Checkbox</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A component to load more data when user scroll on the screen.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>

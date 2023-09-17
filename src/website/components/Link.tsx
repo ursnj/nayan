@@ -8,7 +8,7 @@ const Link = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Link</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A link to show with all of customizations.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <div className="text-text">

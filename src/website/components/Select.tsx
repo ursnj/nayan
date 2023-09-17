@@ -16,7 +16,7 @@ const Select = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Select</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">Displays a list of options for the user to pick from—triggered by a button.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />

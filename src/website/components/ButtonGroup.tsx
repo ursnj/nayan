@@ -12,7 +12,7 @@ const ButtonGroup = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Button Group</div>
-      <div className="mb-5">Displays a badge or a component that looks like a badge.</div>
+      <div className="mb-5">Displays a group of buttons that looks like a button group.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NButtonGroup items={items} selected={selected} setSelected={setSelected} />

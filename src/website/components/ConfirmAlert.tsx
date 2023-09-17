@@ -13,7 +13,7 @@ const ConfirmAlert = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Confirm Alert</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">A modal dialog that interrupts the user with important content and expects a response.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NConfirmAlert

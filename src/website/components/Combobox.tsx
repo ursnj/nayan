@@ -19,7 +19,7 @@ const Combobox = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Combobox</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">Autocomplete input and command palette with a list of suggestions.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NCombo

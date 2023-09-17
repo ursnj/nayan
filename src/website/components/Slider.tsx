@@ -8,7 +8,7 @@ const Slider = () => {
   return (
     <Sidebar>
       <div className="text-2xl mb-5">Slider</div>
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">An input where the user selects a value from within a given range.</div>
 
       <div className="text-xl mb-5"># Demo</div>
       <NSlider defaultValue={50} max={100} step={1} isDisabled={false} onChange={(value: number) => console.log(value)} />
