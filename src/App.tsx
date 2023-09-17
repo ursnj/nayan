@@ -21,7 +21,6 @@ import InfiniteScroll from './website/components/InfiniteScroll';
 import Input from './website/components/Input';
 import Link from './website/components/Link';
 import Linkify from './website/components/Linkify';
-import LocalStorage from './website/components/LocalStorage';
 import Menu from './website/components/Menu';
 import Popover from './website/components/Popover';
 import Progress from './website/components/Progress';
@@ -64,7 +63,6 @@ const App = () => {
               <Route path="input" element={<Input />} />
               <Route path="link" element={<Link />} />
               <Route path="linkify" element={<Linkify />} />
-              <Route path="local-storage" element={<LocalStorage />} />
               <Route path="menu" element={<Menu />} />
               <Route path="popover" element={<Popover />} />
               <Route path="progress" element={<Progress />} />

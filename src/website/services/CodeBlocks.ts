@@ -533,6 +533,24 @@ const Textarea = () => {
 
 export default Textarea;`;
 
+export const toastCode = `import { useToast } from 'nayan';
+
+const Toast = () => {
+  const toast = useToast();
+  return (
+    <div>
+      <NButton onClick={() => toast('Simple Toaster!')}>
+        Show Simple Toast
+      </NButton>
+      <NButton className="ml-5" onClick={() => toast('Toaster Description!', 'Toaster Title')}>
+        Show Toast with Title
+      </NButton>
+    </div>
+  );
+};
+
+export default Toast;`;
+
 export const tooltipCode = `import { NTooltip, NButton } from 'nayan';
 
 const Tooltip = () => {
