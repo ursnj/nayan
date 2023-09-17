@@ -1,94 +1,87 @@
 import { useState } from 'react';
-import { NTheme } from './components/NTheme';
-import MenuExample from './examples/MenuExample';
-import DialogExample from './examples/DialogExample';
-import SwitchExample from './examples/SwitchExample';
-import AccordionExample from './examples/AccordionExample';
-import PopoverExample from './examples/PopoverExample';
-import RadioGroupExample from './examples/RadioGroupExample';
-import { NDivider } from './components/NDivider';
-import InputExample from './examples/InputExample';
-import { NText } from './components/NText';
-import TabsExample from './examples/TabsExample';
-import AlertExample from './examples/AlertExample';
-import BadgeExample from './examples/BadgeExample';
-import ButtonExample from './examples/ButtonExample';
-import CardExample from './examples/CardExample';
-import LinkExample from './examples/LinkExample';
-import TextExample from './examples/TextExample';
-import CheckExample from './examples/CheckExample';
-import TextareaExample from './examples/TextareaExample';
-import DividerExample from './examples/DividerExample';
-import ConfirmAlertExample from '@/examples/ConfirmAlertExample';
-import ToastExample from '@/examples/ToastExample';
-import TooltipExample from '@/examples/TooltipExample';
-import SheetExample from '@/examples/SheetExample';
-import SkeletonExample from '@/examples/SkeletonExample';
-import SelectExample from '@/examples/SelectExample';
-import ComboExample from '@/examples/ComboExample';
-import InfiniteScrollExample from '@/examples/InfiniteScrollExample';
-import ButtonGroupExample from '@/examples/ButtonGroupExample';
-import LinkifyExample from '@/examples/LinkifyExample';
-import ProgressExample from '@/examples/ProgressExample';
-import SliderExample from '@/examples/SliderExample';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { NTheme } from '@/components/NTheme';
 import { THEMES } from '@/components/Types';
+import Wrapper from '@/website/helpers/Wrapper';
+import { useLocalStorage } from '@/components/NLocalStorage';
+import Home from '@/website/home/Home';
+import Installation from './website/installation/Installation';
+import Accordion from './website/components/Accordion';
+import Alert from './website/components/Alert';
+import Badge from './website/components/Badge';
+import Button from './website/components/Button';
+import ButtonGroup from './website/components/ButtonGroup';
+import Card from './website/components/Card';
+import Checkbox from './website/components/Checkbox';
+import Combobox from './website/components/Combobox';
+import ConfirmAlert from './website/components/ConfirmAlert';
+import Dialog from './website/components/Dialog';
+import Divider from './website/components/Divider';
+import InfiniteScroll from './website/components/InfiniteScroll';
+import Input from './website/components/Input';
+import Link from './website/components/Link';
+import Linkify from './website/components/Linkify';
+import Menu from './website/components/Menu';
+import Popover from './website/components/Popover';
+import Progress from './website/components/Progress';
+import RadioGroup from './website/components/RadioGroup';
+import Select from './website/components/Select';
+import Sheet from './website/components/Sheet';
+import Skeleton from './website/components/Skeleton';
+import Slider from './website/components/Slider';
+import Switch from './website/components/Switch';
+import Tabs from './website/components/Tabs';
+import Textarea from './website/components/Textarea';
+import Toast from './website/components/Toast';
+import Tooltip from './website/components/Tooltip';
+import Contribution from './website/contributions/Contribution';
 
 const App = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('THEME'));
-
-  const changeTheme = () => {
-    const newTheme = theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT;
-    localStorage.setItem('THEME', newTheme);
-    setTheme(newTheme);
-  };
+  const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
 
   return (
     <NTheme theme={theme}>
-      <div className="pt-0">
-        <div className="w-full">
-          <div className="px-5 my-3 flex flex-row justify-between items-center">
-            <img src="/nayan.png" width="50" height="50" />
-            <NText className="cursor-pointer text-primary" onClick={changeTheme}>
-              Toggle Theme
-            </NText>
-          </div>
-          <NDivider />
-          <div className="p-5 columns-1 md:columns-2 lg:columns-3 gap-16">
-            <AccordionExample />
-            <AlertExample />
-            <BadgeExample />
-            <ButtonExample />
-            <ButtonGroupExample />
-            <CardExample />
-            <CheckExample />
-            <ComboExample />
-            <ConfirmAlertExample />
-            <DialogExample />
-            <DividerExample />
-            <TextExample />
-            <LinkExample />
-            <InputExample />
-            <LinkifyExample />
-            <MenuExample />
-            <PopoverExample />
-            <ProgressExample />
-            <RadioGroupExample />
-            <TextareaExample />
-            <TabsExample />
-            <ToastExample />
-            <TooltipExample />
-            <SelectExample />
-            <SheetExample />
-            <SliderExample />
-            <SwitchExample />
-            <SkeletonExample />
-          </div>
-          <div className="p-5">
-            <NDivider />
-            <InfiniteScrollExample />
-          </div>
-        </div>
-      </div>
+      <BrowserRouter>
+        <Wrapper>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/installation" element={<Installation />} />
+            <Route path="/contribution" element={<Contribution />} />
+            <Route path="/components">
+              <Route index element={<Accordion />} />
+              <Route path="accordion" element={<Accordion />} />
+              <Route path="alert" element={<Alert />} />
+              <Route path="badge" element={<Badge />} />
+              <Route path="button" element={<Button />} />
+              <Route path="button-group" element={<ButtonGroup />} />
+              <Route path="card" element={<Card />} />
+              <Route path="checkbox" element={<Checkbox />} />
+              <Route path="combobox" element={<Combobox />} />
+              <Route path="confirm-alert" element={<ConfirmAlert />} />
+              <Route path="dialog" element={<Dialog />} />
+              <Route path="divider" element={<Divider />} />
+              <Route path="infinite-scroll" element={<InfiniteScroll />} />
+              <Route path="input" element={<Input />} />
+              <Route path="link" element={<Link />} />
+              <Route path="linkify" element={<Linkify />} />
+              <Route path="menu" element={<Menu />} />
+              <Route path="popover" element={<Popover />} />
+              <Route path="progress" element={<Progress />} />
+              <Route path="radio-group" element={<RadioGroup />} />
+              <Route path="select" element={<Select />} />
+              <Route path="sheet" element={<Sheet />} />
+              <Route path="skeleton" element={<Skeleton />} />
+              <Route path="slider" element={<Slider />} />
+              <Route path="switch" element={<Switch />} />
+              <Route path="tabs" element={<Tabs />} />
+              <Route path="textarea" element={<Textarea />} />
+              <Route path="toast" element={<Toast />} />
+              <Route path="tooltip" element={<Tooltip />} />
+            </Route>
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </Wrapper>
+      </BrowserRouter>
     </NTheme>
   );
 };
