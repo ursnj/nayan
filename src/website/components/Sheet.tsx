@@ -1,27 +1,31 @@
-import { NCheck } from '@/components/NCheck';
-import { NLink } from '@/components/NLink';
+import { NButton } from '@/components/NButton';
+import { NSheet } from '@/components/NSheet';
+import { Size } from '@/components/Types';
 import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
-import { checkBoxCode } from '../services/CodeBlocks';
+import { sheetCode } from '../services/CodeBlocks';
 
-const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
+const Sheet = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Sidebar>
-      <div className="text-2xl mb-5">Checkbox</div>
+      <div className="text-2xl mb-5">Sheet</div>
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
 
       <div className="text-xl mb-5"># Demo</div>
-      <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
-        Sample label for checkbox. accept <NLink> terms</NLink>
-      </NCheck>
+      <NButton onClick={() => setIsOpen(true)}>Show Sheet</NButton>
+      <NSheet isOpen={isOpen} size={Size.SM} title="Edit Profile" onCloseSheet={() => setIsOpen(false)}>
+        <div className="w-full h-full p-3">
+          Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
+        </div>
+      </NSheet>
 
       <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={checkBoxCode} />
+      <Code code={sheetCode} />
     </Sidebar>
   );
 };
 
-export default Checkbox;
+export default Sheet;

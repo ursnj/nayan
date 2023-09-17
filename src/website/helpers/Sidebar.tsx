@@ -33,7 +33,7 @@ const items = [
   { title: 'Radio Group', link: '/components/radio-group', icon: Package },
   { title: 'Select', link: '/components/select', icon: Package },
   { title: 'Sheet', link: '/components/sheet', icon: Package },
-  { title: 'Skelton', link: '/components/skelton', icon: Package },
+  { title: 'Skeleton', link: '/components/skeleton', icon: Package },
   { title: 'Slider', link: '/components/slider', icon: Package },
   { title: 'Switch', link: '/components/switch', icon: Package },
   { title: 'Tabs', link: '/components/tabs', icon: Package },

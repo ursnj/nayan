@@ -28,7 +28,7 @@ import Progress from './website/components/Progress';
 import RadioGroup from './website/components/RadioGroup';
 import Select from './website/components/Select';
 import Sheet from './website/components/Sheet';
-import Skelton from './website/components/Skelton';
+import Skeleton from './website/components/Skeleton';
 import Slider from './website/components/Slider';
 import Switch from './website/components/Switch';
 import Tabs from './website/components/Tabs';
@@ -73,7 +73,7 @@ const App = () => {
               <Route path="radio-group" element={<RadioGroup />} />
               <Route path="select" element={<Select />} />
               <Route path="sheet" element={<Sheet />} />
-              <Route path="skelton" element={<Skelton />} />
+              <Route path="skeleton" element={<Skeleton />} />
               <Route path="slider" element={<Slider />} />
               <Route path="switch" element={<Switch />} />
               <Route path="tabs" element={<Tabs />} />

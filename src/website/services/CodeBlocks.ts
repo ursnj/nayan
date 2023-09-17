@@ -421,3 +421,39 @@ const Select = () => {
 };
 
 export default Select;`;
+
+export const sheetCode = `import { useState } from 'react';
+import { NSheet, NButton, Size } from 'nayan';
+
+const SheetExample = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <NButton onClick={() => setIsOpen(true)}>Show Sheet</NButton>
+      <NSheet isOpen={isOpen} size={Size.SM} title="Edit Profile" onCloseSheet={() => setIsOpen(false)}>
+        <div className="w-full h-full p-3">
+          Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
+        </div>
+      </NSheet>
+    </div>
+  );
+};
+
+export default Sheet;`;
+
+export const skeletonCode = `import { NSkeleton } from 'nayan';
+
+const Skeleton = () => {
+  return (
+    <div className="flex items-center space-x-4">
+      <NSkeleton className="h-12 w-12 rounded-full" />
+      <div className="space-y-2">
+        <NSkeleton className="h-4 w-[250px]" />
+        <NSkeleton className="h-4 w-[180px]" />
+      </div>
+    </div>
+  );
+};
+
+export default Skeleton;`;
