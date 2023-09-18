@@ -7,8 +7,7 @@ import { tooltipCode } from '../services/CodeBlocks';
 
 const Tooltip = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Tooltip</div>
+    <Sidebar title="Tooltip">
       <div className="mb-5">
         A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
       </div>

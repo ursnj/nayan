@@ -4,10 +4,9 @@ import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { dividerCode } from '../services/CodeBlocks';
 
-const Checkbox = () => {
+const Divider = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Checkbox</div>
+    <Sidebar title="Divider">
       <div className="mb-5">Visually or semantically separates content.</div>
 
       <div className="text-xl mb-5"># Demo</div>
@@ -22,4 +21,4 @@ const Checkbox = () => {
   );
 };
 
-export default Checkbox;
+export default Divider;

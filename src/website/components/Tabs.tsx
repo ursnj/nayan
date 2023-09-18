@@ -11,8 +11,7 @@ const Tabs = () => {
   const [selected, setSelected] = useState(tabs[0]);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Tabs</div>
+    <Sidebar title="Tabs">
       <div className="mb-5">A set of layered sections of content—known as tab panels—that are displayed one at a time.</div>
 
       <div className="text-xl mb-5"># Demo</div>

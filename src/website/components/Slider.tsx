@@ -6,8 +6,7 @@ import { sliderCode } from '../services/CodeBlocks';
 
 const Slider = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Slider</div>
+    <Sidebar title="Slider">
       <div className="mb-5">An input where the user selects a value from within a given range.</div>
 
       <div className="text-xl mb-5"># Demo</div>

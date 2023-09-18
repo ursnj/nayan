@@ -6,8 +6,7 @@ import { linkCode } from '../services/CodeBlocks';
 
 const Link = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Link</div>
+    <Sidebar title="Link">
       <div className="mb-5">A link to show with all of customizations.</div>
 
       <div className="text-xl mb-5"># Demo</div>

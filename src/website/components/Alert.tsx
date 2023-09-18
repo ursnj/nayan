@@ -7,8 +7,7 @@ import { alertCode } from '../services/CodeBlocks';
 
 const Alert = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Alert</div>
+    <Sidebar title="Alert">
       <div className="mb-5">Displays a callout for user attention.</div>
 
       <div className="text-xl mb-5"># Demo</div>

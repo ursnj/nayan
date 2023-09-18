@@ -8,8 +8,7 @@ import { skeletonCode } from '../services/CodeBlocks';
 
 const Skeleton = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Skeleton</div>
+    <Sidebar title="Skeleton">
       <div className="mb-5">Use to show a placeholder while content is loading.</div>
 
       <div className="text-xl mb-5"># Demo</div>

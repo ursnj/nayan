@@ -10,8 +10,7 @@ const Sheet = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Sheet</div>
+    <Sidebar title="Sheet">
       <div className="mb-5">Extends the Dialog component to display content that complements the main content of the screen.</div>
 
       <div className="text-xl mb-5"># Demo</div>

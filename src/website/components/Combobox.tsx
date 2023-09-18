@@ -17,8 +17,7 @@ const Combobox = () => {
   const [selected, setSelected] = useState(items[0].value);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Combobox</div>
+    <Sidebar title="Combobox">
       <div className="mb-5">Autocomplete input and command palette with a list of suggestions.</div>
 
       <div className="text-xl mb-5"># Demo</div>

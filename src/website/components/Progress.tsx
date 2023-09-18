@@ -6,8 +6,7 @@ import { progressCode } from '../services/CodeBlocks';
 
 const Checkbox = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Progress</div>
+    <Sidebar title="Progress">
       <div className="mb-5">Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</div>
 
       <div className="text-xl mb-5"># Demo</div>

@@ -7,8 +7,7 @@ import { buttonCode } from '../services/CodeBlocks';
 
 const Badge = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Button</div>
+    <Sidebar title="Button">
       <div className="mb-5">Displays a button or a component that looks like a button.</div>
 
       <div className="text-xl mb-5"># Demo</div>

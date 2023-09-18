@@ -16,8 +16,7 @@ const RadioGroup = () => {
   const [selected, setSelected] = useState(items[0].value);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Radio Group</div>
+    <Sidebar title="Radio Group">
       <div className="mb-5">A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.</div>
 
       <div className="text-xl mb-5"># Demo</div>

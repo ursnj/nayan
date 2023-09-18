@@ -5,8 +5,7 @@ import { appCode, cssCode, installCode, tailwindCode } from '../services/CodeBlo
 
 const Installation = () => {
   return (
-    <Sidebar>
-      <h1 className="text-2xl mb-5">Installation</h1>
+    <Sidebar title="Installation">
       <Code language="bash" code={installCode} />
       <div className="mb-5">Include module in `tailwind.config.js` to read tailwind classes, this will help in reusing same tailwind classes.</div>
       <Code code={tailwindCode} />

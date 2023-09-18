@@ -6,8 +6,7 @@ import { linkifyCode } from '../services/CodeBlocks';
 
 const Linkify = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Linkify</div>
+    <Sidebar title="Linkify">
       <div className="mb-5">A component to elivate links, phone numbers and fax.</div>
 
       <div className="text-xl mb-5"># Demo</div>

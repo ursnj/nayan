@@ -11,8 +11,7 @@ const ConfirmAlert = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Confirm Alert</div>
+    <Sidebar title="Confirm Alert">
       <div className="mb-5">A modal dialog that interrupts the user with important content and expects a response.</div>
 
       <div className="text-xl mb-5"># Demo</div>

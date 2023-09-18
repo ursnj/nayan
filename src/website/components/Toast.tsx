@@ -9,8 +9,7 @@ const Toast = () => {
   const toast = useToast();
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Toast</div>
+    <Sidebar title="Toast">
       <div className="mb-5">A succinct message that is displayed temporarily.</div>
 
       <div className="text-xl mb-5"># Demo</div>

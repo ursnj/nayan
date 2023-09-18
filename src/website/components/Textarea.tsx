@@ -9,8 +9,7 @@ const Textarea = () => {
   const [address, setAddress] = useState('Bangalore, India');
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Textarea</div>
+    <Sidebar title="Textarea">
       <div className="mb-5">Displays a form textarea or a component that looks like a textarea.</div>
 
       <div className="text-xl mb-5"># Demo</div>

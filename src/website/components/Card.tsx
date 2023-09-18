@@ -6,8 +6,7 @@ import { cardCode } from '../services/CodeBlocks';
 
 const Badge = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Card</div>
+    <Sidebar title="Card">
       <div className="mb-5">Displays a card with header, content, and footer.</div>
 
       <div className="text-xl mb-5"># Demo</div>

@@ -10,8 +10,7 @@ const Dialog = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Dialog</div>
+    <Sidebar title="Dialog">
       <div className="mb-5">A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.</div>
 
       <div className="text-xl mb-5"># Demo</div>

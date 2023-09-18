@@ -8,8 +8,7 @@ const Input = () => {
   const [email, setEmail] = useState('niranjan.devasani@gmail.com');
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Input</div>
+    <Sidebar title="Input">
       <div className="mb-5">Displays a form input field or a component that looks like an input field.</div>
 
       <div className="text-xl mb-5"># Demo</div>

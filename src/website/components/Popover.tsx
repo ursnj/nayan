@@ -8,8 +8,7 @@ import { popoverCode } from '../services/CodeBlocks';
 
 const Popover = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Popover</div>
+    <Sidebar title="Popover">
       <div className="mb-5">Displays rich content in a portal, triggered by a button.</div>
 
       <div className="text-xl mb-5"># Demo</div>

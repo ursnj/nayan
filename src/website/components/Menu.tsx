@@ -11,8 +11,7 @@ import { menuCode } from '../services/CodeBlocks';
 
 const Menu = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Menu</div>
+    <Sidebar title="Menu">
       <div className="mb-5">Displays a menu to the user — such as a set of actions or functions — triggered by a button.</div>
 
       <div className="text-xl mb-5"># Demo</div>

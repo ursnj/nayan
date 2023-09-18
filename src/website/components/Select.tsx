@@ -14,8 +14,7 @@ const Select = () => {
   const [selected, setSelected] = useState(items[0].value);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Select</div>
+    <Sidebar title="Select">
       <div className="mb-5">Displays a list of options for the user to pick from—triggered by a button.</div>
 
       <div className="text-xl mb-5"># Demo</div>

@@ -8,8 +8,7 @@ const Switch = () => {
   const [enabled, setEnabled] = useState(true);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Switch</div>
+    <Sidebar title="Switch">
       <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
 
       <div className="text-xl mb-5"># Demo</div>

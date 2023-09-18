@@ -10,8 +10,7 @@ const ButtonGroup = () => {
   const [selected, setSelected] = useState(items[0]);
 
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Button Group</div>
+    <Sidebar title="Button Group">
       <div className="mb-5">Displays a group of buttons that looks like a button group.</div>
 
       <div className="text-xl mb-5"># Demo</div>

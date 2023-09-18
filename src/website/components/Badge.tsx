@@ -7,8 +7,7 @@ import { badgeCode } from '../services/CodeBlocks';
 
 const Badge = () => {
   return (
-    <Sidebar>
-      <div className="text-2xl mb-5">Badge</div>
+    <Sidebar title="Badge">
       <div className="mb-5">Displays a badge or a component that looks like a badge.</div>
 
       <div className="text-xl mb-5"># Demo</div>
