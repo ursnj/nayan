@@ -11,7 +11,7 @@ const FeaturesItem = (props: Props) => {
   const Icon = props.icon;
   return (
     <div className="col-span-1 justify-center">
-      <div className="text-base text mb-2 flex">
+      <div className="text-lg text mb-2 flex">
         <span className="mr-3 text-primary">
           <Icon size="1.3em" />
         </span>
