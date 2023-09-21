@@ -28,7 +28,7 @@ export const NDialog = (props: Props) => {
         <DialogHeader className="nyn-dialog-header px-3 py-2.5 bg-primary text-white">
           <DialogTitle className="nyn-dialog-title text-base font-normal">{title}</DialogTitle>
         </DialogHeader>
-        <div className="nyn-dialog-content text-text min-h-[calc(100vh_-_44px)] sm:min-h-[300px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto">
+        <div className="nyn-dialog-content text-text h-[calc(100vh_-_46px)] sm:min-h-[300px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto">
           {children}
         </div>
       </DialogContent>
