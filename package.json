@@ -26,7 +26,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "rimraf dist && tsc && vite build",
-    "build:website": "rimraf build && tsc && vite build -c vite.website.ts && cpx 'build/index.html' 'build/404.html'",
+    "build:website": "rimraf build && tsc && vite build -c vite.website.ts && cp build/index.html build/404.html",
     "preview": "vite preview",
     "prepare": "husky install",
     "format": "prettier --write ."
@@ -72,7 +72,6 @@
     "@vitejs/plugin-react-swc": "^3.1.0",
     "@vitest/coverage-c8": "^0.30.1",
     "autoprefixer": "^10.4.14",
-    "cpx": "^1.5.0",
     "husky": "^8.0.3",
     "jsdom": "^21.1.1",
     "lint-staged": "^13.2.1",
