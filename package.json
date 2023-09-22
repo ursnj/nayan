@@ -26,7 +26,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "build": "rimraf dist && tsc && vite build",
-    "build:website": "rimraf build && tsc && vite build -c vite.website.ts && cpx 'build/index.html' 'build/404.html ",
+    "build:website": "rimraf build && tsc && vite build -c vite.website.ts && cpx 'build/index.html' 'build/404.html'",
     "preview": "vite preview",
     "prepare": "husky install",
     "format": "prettier --write ."
