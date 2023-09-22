@@ -12,13 +12,13 @@ const Checkbox = () => {
     <Sidebar title="Checkbox">
       <div className="mb-5">A component to load more data when user scroll on the screen.</div>
 
+      <div className="text-xl mb-5 mt-5"># Usage</div>
+      <Code code={checkBoxCode} />
+
       <div className="text-xl mb-5"># Demo</div>
       <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
         Sample label for checkbox. accept <NLink> terms</NLink>
       </NCheck>
-
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={checkBoxCode} />
     </Sidebar>
   );
 };
