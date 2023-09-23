@@ -1,26 +1,47 @@
-import { NCheck } from '@/components/NCheck';
-import { NLink } from '@/components/NLink';
+import { NCard } from '@/components/NCard';
+import { NInfiniteScroll } from '@/components/NInfiniteScroll';
+import { NLoading } from '@/components/NLoading';
 import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
-import { checkBoxCode } from '../services/CodeBlocks';
+import SubHeader from '../helpers/SubHeader';
+import { infiniteScrollCode } from '../services/CodeBlocks';
 
-const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
+const InfiniteScroll = () => {
+  const [items, setItems] = useState(new Array(20).fill(''));
+  const [isFetching, setIsFetching] = useState(false);
+
+  const fetchNextPage = () => {
+    setIsFetching(true);
+    setTimeout(() => {
+      const newItems = [...items, ...new Array(20).fill('')];
+      setItems(newItems);
+      setIsFetching(false);
+    }, 2000);
+  };
 
   return (
-    <Sidebar title="Checkbox">
+    <Sidebar title="Infinite Scroll">
       <div className="mb-5">A component to load more data when user scroll on the screen.</div>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={checkBoxCode} />
+      <SubHeader title="Usage">
+        <Code code={infiniteScrollCode} />
+      </SubHeader>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
-        Sample label for checkbox. accept <NLink> terms</NLink>
-      </NCheck>
+      <SubHeader title="Demo">
+        <NInfiniteScroll
+          next={() => !isFetching && fetchNextPage()}
+          hasMore={true}
+          loader={<NLoading />}
+          dataLength={items.length}
+          scrollThreshold={0.99}>
+          {items.map((item: any, index: number) => (
+            <NCard className="p-3 mb-3">Item {index}</NCard>
+          ))}
+        </NInfiniteScroll>
+      </SubHeader>
     </Sidebar>
   );
 };
 
-export default Checkbox;
+export default InfiniteScroll;
