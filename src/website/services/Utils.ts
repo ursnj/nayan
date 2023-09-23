@@ -1,4 +1,3 @@
-import * as fs from 'fs';
 import { Package } from 'lucide-react';
 
 export const sidebarItems = [
@@ -36,7 +35,3 @@ export const sidebarItems = [
   { title: 'More Guides', link: '/guides', isHeading: true },
   { title: 'Contribution', link: '/contribution', icon: Package }
 ];
-
-export const readFile = (path: string) => {
-  return fs.readFileSync(path, 'utf8');
-};

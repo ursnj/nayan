@@ -5,6 +5,7 @@ import { useLocalStorage } from '@/components/NLocalStorage';
 import { THEMES } from '@/components/Types';
 import { NButton } from '@/components/NButton';
 import { NSheet } from '@/components/NSheet';
+import { sidebarItems } from '../services/Utils';
 
 const HeaderMenu = () => {
   const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -49,12 +50,41 @@ const HeaderMenu = () => {
           {theme === THEMES.DARK && <Sun className="w-6 h-6 text-text inline" />}
         </span>
       </div>
+
+      <div className="w-full block md:hidden mt-5 mb-5">
+        {sidebarItems.map(item => {
+          const Icon = item.icon as any;
+          return (
+            <>
+              {!item.isHeading && (
+                <Link to={item.link} key={item.link}>
+                  <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center">
+                    <Icon className="w-4 h-4 inline mr-3" />
+                    <span>{item.title}</span>
+                  </div>
+                </Link>
+              )}
+              {!!item.isHeading && (
+                <div className="text-lg p-2" key={item.link}>
+                  {item.title}
+                </div>
+              )}
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 };
 
 const Header = () => {
+  const location = useLocation();
   const [menu, setMenu] = useState(false);
+
+  useEffect(() => {
+    setMenu(false);
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <header className="bg-card fixed top-0 left-0 right-0 z-10 shadow">
