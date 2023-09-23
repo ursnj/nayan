@@ -369,9 +369,7 @@ const Divider = () => {
 
 export default Divider;`;
 
-export const infiniteScrollCode = `import { NCard } from '@/components/NCard';
-import { NInfiniteScroll } from '@/components/NInfiniteScroll';
-import { NLoading } from '@/components/NLoading';
+export const infiniteScrollCode = `import { NCard, NInfiniteScroll, NLoading } from 'nayan';
 import React, { useState } from 'react';
 
 const InfiniteScroll = () => {
@@ -442,6 +440,14 @@ const Linkify = () => {
 };
 
 export default Linkify;`;
+
+export const loadingCode = `import { NLoading } from 'nayan';
+
+const Loading = () => {
+  return <NLoading color="red" />
+};
+
+export default Loading;`;
 
 export const menuCode = `import { NMenu,NMenuItem, Size, NMenuNested, NButton } from 'nayan';
 import { User } from 'lucide-react';

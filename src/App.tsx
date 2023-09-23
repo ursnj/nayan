@@ -35,6 +35,7 @@ import Textarea from './website/components/Textarea';
 import Toast from './website/components/Toast';
 import Tooltip from './website/components/Tooltip';
 import Contribution from './website/contributions/Contribution';
+import Loading from './website/components/Loading';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -64,6 +65,7 @@ const App = () => {
               <Route path="input" element={<Input />} />
               <Route path="link" element={<Link />} />
               <Route path="linkify" element={<Linkify />} />
+              <Route path="loading" element={<Loading />} />
               <Route path="menu" element={<Menu />} />
               <Route path="popover" element={<Popover />} />
               <Route path="progress" element={<Progress />} />

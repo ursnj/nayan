@@ -19,6 +19,7 @@ export const sidebarItems = [
   { title: 'Input', link: '/components/input', icon: Package },
   { title: 'Link', link: '/components/link', icon: Package },
   { title: 'Linkify', link: '/components/linkify', icon: Package },
+  { title: 'Loading', link: '/components/loading', icon: Package },
   { title: 'Menu', link: '/components/menu', icon: Package },
   { title: 'Popover', link: '/components/popover', icon: Package },
   { title: 'Progress', link: '/components/progress', icon: Package },
