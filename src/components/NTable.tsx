@@ -30,7 +30,7 @@ export const NTable = (props: Props) => {
                 const CustomComponent = col.component;
                 return (
                   <TableCell key={index + '' + colIndex} className={`px-3 py-3 border-b border-border ${col.className}`}>
-                    {!col.component ? row[col.name] : <CustomComponent {...props} />}
+                    {!col.component ? row[col.name] : <CustomComponent row={row} col={col} {...props} />}
                   </TableCell>
                 );
               })}
