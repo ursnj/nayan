@@ -4,7 +4,7 @@ import { ColumnDef } from '@/components/Types';
 interface Props {
   className?: string;
   caption?: string;
-  columnDef: ColumnDef[];
+  columnDef: ColumnDef[] | any[];
   data: any[];
 }
 

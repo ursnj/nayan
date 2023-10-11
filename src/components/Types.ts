@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export enum Size {
   'XS' = 'XS',
   'SM' = 'SM',
@@ -27,5 +29,5 @@ export interface ColumnDef {
   name: string;
   title: string;
   className?: string;
-  component?: JSX.Element;
+  component?: ReactNode;
 }

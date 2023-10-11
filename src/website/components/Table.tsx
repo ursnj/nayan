@@ -3,7 +3,6 @@ import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { tableCode } from '../services/CodeBlocks';
 import { NTable } from '@/components/NTable';
-import { ColumnDef } from '@/components/Types';
 
 const CustomComponent = ({ row, col, ...remaining }: any) => {
   return <div className="text-primary">Oops</div>;
@@ -16,7 +15,7 @@ const Table = () => {
     { name: 'method', title: 'Method' },
     { name: 'amount', title: 'Amount', className: 'text-right' },
     { name: 'custom', title: 'Custom', className: 'text-right', component: CustomComponent }
-  ] as unknown as ColumnDef;
+  ];
 
   const data = [
     { invoice: '10001', status: 'Completed', method: 'Credit Card', amount: '$1000' },
