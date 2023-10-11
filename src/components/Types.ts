@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export enum Size {
   'XS' = 'XS',
   'SM' = 'SM',
@@ -21,4 +23,11 @@ export enum THEMES {
 export enum AccordionTypes {
   SINGLE = 'single',
   MULTIPLE = 'multiple'
+}
+
+export interface ColumnDef {
+  name: string;
+  title: string;
+  className?: string;
+  component?: ReactNode;
 }

@@ -29,6 +29,7 @@ export const sidebarItems = [
   { title: 'Skeleton', link: '/components/skeleton', icon: Package },
   { title: 'Slider', link: '/components/slider', icon: Package },
   { title: 'Switch', link: '/components/switch', icon: Package },
+  { title: 'Table', link: '/components/table', icon: Package },
   { title: 'Tabs', link: '/components/tabs', icon: Package },
   { title: 'Textarea', link: '/components/textarea', icon: Package },
   { title: 'Toast', link: '/components/toast', icon: Package },

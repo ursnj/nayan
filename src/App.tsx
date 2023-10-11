@@ -36,6 +36,7 @@ import Toast from './website/components/Toast';
 import Tooltip from './website/components/Tooltip';
 import Contribution from './website/contributions/Contribution';
 import Loading from './website/components/Loading';
+import Table from '@/website/components/Table';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -75,6 +76,7 @@ const App = () => {
               <Route path="skeleton" element={<Skeleton />} />
               <Route path="slider" element={<Slider />} />
               <Route path="switch" element={<Switch />} />
+              <Route path="table" element={<Table />} />
               <Route path="tabs" element={<Tabs />} />
               <Route path="textarea" element={<Textarea />} />
               <Route path="toast" element={<Toast />} />

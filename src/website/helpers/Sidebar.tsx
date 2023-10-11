@@ -1,6 +1,4 @@
 import React, { ReactNode } from 'react';
-import Header from '@/website/helpers/Header';
-import { NCard } from '@/components/NCard';
 import { Link } from 'react-router-dom';
 import { sidebarItems } from '../services/Utils';
 
@@ -18,21 +16,17 @@ const Sidebar = (props: Props) => {
             {sidebarItems.map(item => {
               const Icon = item.icon as any;
               return (
-                <>
+                <div key={item.link}>
                   {!item.isHeading && (
-                    <Link to={item.link} key={item.link}>
+                    <Link to={item.link}>
                       <div className="rounded cursor-pointer hover:bg-border p-1.5 px-3 flex items-center">
                         <Icon className="w-4 h-4 inline mr-3" />
                         <span>{item.title}</span>
                       </div>
                     </Link>
                   )}
-                  {!!item.isHeading && (
-                    <div className="text-lg p-2" key={item.link}>
-                      {item.title}
-                    </div>
-                  )}
-                </>
+                  {!!item.isHeading && <div className="text-lg p-2">{item.title}</div>}
+                </div>
               );
             })}
           </div>
