@@ -29,7 +29,6 @@
     "generate": "vite build --outDir dist/static && npm run build:server && node prerender",
     "serve": "NODE_ENV=production node server",
     "debug": "node --inspect-brk server",
-
     "start": "vite --host",
     "test": "vitest",
     "coverage": "vitest run --coverage",
