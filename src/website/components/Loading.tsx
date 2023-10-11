@@ -11,7 +11,7 @@ const Badge = () => {
       <div className="mb-5">Displays a loading icon with nice animation.</div>
 
       <SubHeader title="Demo">
-        <NLoading color="red" />
+        <NLoading className="text-[6px] text-red-500" />
       </SubHeader>
 
       <SubHeader title="Usage">
