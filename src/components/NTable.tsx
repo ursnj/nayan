@@ -1,9 +1,10 @@
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { ColumnDef } from '@/components/Types';
 
 interface Props {
   className?: string;
   caption?: string;
-  columnDef: any[];
+  columnDef: ColumnDef[];
   data: any[];
 }
 

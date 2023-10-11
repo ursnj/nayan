@@ -22,3 +22,10 @@ export enum AccordionTypes {
   SINGLE = 'single',
   MULTIPLE = 'multiple'
 }
+
+export interface ColumnDef {
+  name: string;
+  title: string;
+  className?: string;
+  component?: JSX.Element;
+}
