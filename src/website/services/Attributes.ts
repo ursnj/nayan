@@ -48,3 +48,13 @@ export const checkboxAttributes = [
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass checkbox content as children.' },
   { name: 'onChange', type: '(checked: boolean) => void', default: 'Required', details: 'You can get callback when checkbox state changed.' }
 ];
+
+export const comboAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'label', type: 'string', default: "' '", details: 'You can pass label to show label for combobox.' },
+  { name: 'isOpen', type: 'boolean', default: 'false', details: 'You can pass isOpen to show / hide combobox.' },
+  { name: 'items', type: 'ComboBoxItem[]', default: 'Required', details: 'You can pass items for the combobox options.' },
+  { name: 'placeholder', type: 'string', default: 'Required', details: 'You can pass placeholder to show while searching.' },
+  { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
+  { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when button group changed.' }
+];

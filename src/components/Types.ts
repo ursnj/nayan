@@ -44,6 +44,11 @@ export interface AccordionListItem {
   message: string;
 }
 
+export interface ComboBoxItem {
+  label: string;
+  value: string;
+}
+
 export interface ColumnDef {
   name: string;
   title: string;
