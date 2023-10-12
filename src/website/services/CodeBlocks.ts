@@ -244,10 +244,10 @@ export const checkBoxCode = `import { useState } from 'react';
 import { NCheck, NLink } from 'nayan';
 
 const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
+  const [checked, setChecked] = useState(true);
 
   return (
-    <NCheck isChecked={isChecked} onChange={checked => setIsChecked(checked)}>
+    <NCheck checked={checked} disabled={false} onChange={checked => setChecked(checked)}>
       Sample label for checkbox. accept <NLink> terms</NLink>
     </NCheck>
   );

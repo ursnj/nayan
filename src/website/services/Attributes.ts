@@ -37,5 +37,14 @@ export const buttonGroupAttributes = [
 
 export const cardAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
-  { name: 'children', type: 'ReactNode', default: 'Required', details: 'You can pass card content as children.' }
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass card content as children.' }
+];
+
+export const checkboxAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'id', type: 'string', default: 'check', details: 'You can pass id to create unique identifier.' },
+  { name: 'checked', type: 'boolean', default: 'Required', details: 'You can pass checked to set default checkbox state.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default checkbox state.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass checkbox content as children.' },
+  { name: 'onChange', type: '(checked: boolean) => void', default: 'Required', details: 'You can get callback when checkbox state changed.' }
 ];

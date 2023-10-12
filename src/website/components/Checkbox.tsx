@@ -4,21 +4,28 @@ import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { checkBoxCode } from '../services/CodeBlocks';
+import Attributes from '@/website/helpers/Attributes';
+import { checkboxAttributes } from '@/website/services/Attributes';
+import SubHeader from '@/website/helpers/SubHeader';
 
 const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
+  const [checked, setChecked] = useState(true);
 
   return (
     <Sidebar title="Checkbox">
       <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NCheck isChecked={isChecked} onChange={(checked: boolean) => setIsChecked(checked)}>
-        Sample label for checkbox. accept <NLink> terms</NLink>
-      </NCheck>
+      <SubHeader title="Demo">
+        <NCheck checked={checked} disabled={false} onChange={(checked: boolean) => setChecked(checked)}>
+          Sample label for checkbox. accept <NLink> terms</NLink>
+        </NCheck>
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={checkBoxCode} />
+      <Attributes data={checkboxAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={checkBoxCode} />
+      </SubHeader>
     </Sidebar>
   );
 };
