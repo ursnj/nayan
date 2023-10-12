@@ -25,11 +25,11 @@ const Accordion = () => {
         <NAccordion type={AccordionTypes.MULTIPLE} items={items} />
       </SubHeader>
 
+      <Attributes data={accordionAttributes} />
+
       <SubHeader title="Usage">
         <Code code={accordionCode} />
       </SubHeader>
-
-      <Attributes data={accordionAttributes} />
     </Sidebar>
   );
 };

@@ -27,11 +27,11 @@ const Alert = () => {
         />
       </SubHeader>
 
+      <Attributes data={alertAttributes} />
+
       <SubHeader title="Usage">
         <Code code={alertCode} />
       </SubHeader>
-
-      <Attributes data={alertAttributes} />
     </Sidebar>
   );
 };
