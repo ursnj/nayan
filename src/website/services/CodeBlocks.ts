@@ -188,30 +188,30 @@ const Badge = () => {
 
 export default Badge;`;
 
-export const buttonCode = `import { NButton, Size } from 'nayan';
+export const buttonCode = `import { NButton, ButtonSize } from 'nayan';
 
 const Button = () => {
   return (
     <div>
-      <NButton size={Size.XS} isDisabled className="text-text bg-card border border-border mr-2">
+      <NButton size={Size.XS} disabled className="text-text bg-card border border-border mr-2">
         Button
       </NButton>
-      <NButton type="submit" size={Size.XS} onClick={() => console.log('Button clicked')} className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
+      <NButton type="submit" size={ButtonSize.XS} onClick={() => console.log('Button clicked')} className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
         Button
       </NButton>
-      <NButton type="reset" size={Size.SM} onClick={() => console.log('Button clicked')} className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
+      <NButton type="reset" size={ButtonSize.SM} onClick={() => console.log('Button clicked')} className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
         Button
       </NButton>
-      <NButton size={Size.MD} isLoading={true} onClick={() => console.log('Button clicked')} className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
+      <NButton size={ButtonSize.MD} isLoading={true} onClick={() => console.log('Button clicked')} className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
         Button
       </NButton>
-      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="mr-2">
+      <NButton size={ButtonSize.LG} onClick={() => console.log('Button clicked')} className="mr-2">
         Button
       </NButton>
-      <NButton size={Size.LG} isOutline={true} onClick={() => console.log('Button clicked')} className="mr-2">
+      <NButton size={ButtonSize.LG} isOutline={true} onClick={() => console.log('Button clicked')} className="mr-2">
         Button
       </NButton>
-      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
+      <NButton size={ButtonSize.LG} onClick={() => console.log('Button clicked')} className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
         Button
       </NButton>
     </div>

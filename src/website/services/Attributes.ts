@@ -17,3 +17,13 @@ export const badgeAttributes = [
   { name: 'size', type: 'BadgeSize', default: 'BadgeSize.SM', details: 'You can pass size of the badge.' },
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass badge content as children.' }
 ];
+
+export const buttonAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'isOutline', type: 'boolean', default: 'false', details: 'You can pass this to create outline button.' },
+  { name: 'isLoading', type: 'boolean', default: 'false', details: 'You can pass this to show loading indication.' },
+  { name: 'loadingText', type: 'string', default: "' '", details: 'You can pass this to show customised loading text.' },
+  { name: 'size', type: 'ButtonSize', default: 'ButtonSize.MD', details: 'You can pass size of the button.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass button content as children.' },
+  { name: 'onClick', type: '(e: any) => void', default: 'Required', details: 'You can get callback when button clicked.' }
+];

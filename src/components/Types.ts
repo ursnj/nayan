@@ -14,6 +14,13 @@ export enum BadgeSize {
   LG = 'LG'
 }
 
+export enum ButtonSize {
+  XS = 'XS',
+  SM = 'SM',
+  MD = 'MD',
+  LG = 'LG'
+}
+
 export enum AlertTypes {
   DEFAULT = 'DEFAULT',
   INFO = 'INFO',
