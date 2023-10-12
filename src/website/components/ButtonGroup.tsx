@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { buttonGroupCode } from '../services/CodeBlocks';
+import Attributes from '@/website/helpers/Attributes';
+import { buttonGroupAttributes } from '@/website/services/Attributes';
+import SubHeader from '@/website/helpers/SubHeader';
 
 const items = ['Startup', 'Business', 'Enterprise'];
 
@@ -13,11 +16,15 @@ const ButtonGroup = () => {
     <Sidebar title="Button Group">
       <div className="mb-5">Displays a group of buttons that looks like a button group.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NButtonGroup items={items} selected={selected} setSelected={setSelected} />
+      <SubHeader title="Demo">
+        <NButtonGroup items={items} selected={selected} onChange={setSelected} />
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={buttonGroupCode} />
+      <Attributes data={buttonGroupAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={buttonGroupCode} />
+      </SubHeader>
     </Sidebar>
   );
 };

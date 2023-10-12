@@ -227,7 +227,7 @@ const items = ['Startup', 'Business', 'Enterprise'];
 
 const ButtonGroup = () => {
   const [selected, setSelected] = useState(items[0]);
-  return <NButtonGroup items={items} selected={selected} setSelected={setSelected} />;
+  return <NButtonGroup items={items} selected={selected} onChange={setSelected} />;
 };
 
 export default ButtonGroup;`;

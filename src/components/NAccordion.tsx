@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const NAccordion = (props: Props) => {
-  const { type = AccordionTypes.SINGLE, items = [], className = '' } = props;
+  const { type = AccordionTypes.SINGLE, items, className = '' } = props;
 
   return (
     <Accordion type={type} collapsible={true} className="w-full">
