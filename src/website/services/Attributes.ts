@@ -78,3 +78,8 @@ export const dialogAttributes = [
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass dialog content as children.' },
   { name: 'onClose', type: '() => void', default: 'Required', details: 'You can get callback when dialog got closed.' }
 ];
+
+export const dividerAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'orientation', type: 'vertical | horizontal', default: 'horizontal', details: 'You can pass divider orientation.' }
+];
