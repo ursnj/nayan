@@ -69,3 +69,12 @@ export const confirmAlertAttributes = [
   { name: 'onClose', type: '() => void', default: 'Required', details: 'You can get callback when confirm alert got closed.' },
   { name: 'onResult', type: '(result: boolean) => void', default: 'Required', details: 'You can get callback when alert confirmed / cancelled.' }
 ];
+
+export const dialogAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'title', type: 'string', default: 'Required', details: 'You can pass title for dialog.' },
+  { name: 'size', type: 'DialogSize', default: 'DialogSize.MD', details: 'You can pass size of the dialog.' },
+  { name: 'isOpen', type: 'boolean', default: 'false', details: 'You can pass isOpen to show / hide alert box.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass dialog content as children.' },
+  { name: 'onClose', type: '() => void', default: 'Required', details: 'You can get callback when dialog got closed.' }
+];

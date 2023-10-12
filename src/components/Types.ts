@@ -20,6 +20,12 @@ export enum ButtonSize {
   MD = 'MD',
   LG = 'LG'
 }
+export enum DialogSize {
+  XS = 'XS',
+  SM = 'SM',
+  MD = 'MD',
+  LG = 'LG'
+}
 
 export enum AlertTypes {
   DEFAULT = 'DEFAULT',
