@@ -58,3 +58,14 @@ export const comboAttributes = [
   { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
   { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when button group changed.' }
 ];
+
+export const confirmAlertAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'title', type: 'string', default: 'Are you absolutely sure?', details: 'You can pass title for confirm alert.' },
+  { name: 'message', type: 'string', default: 'Required', details: 'You can pass message for confirm alert.' },
+  { name: 'confirmText', type: 'string', default: 'Confirm', details: 'You can pass confirmText for confirm alert.' },
+  { name: 'cancelText', type: 'string', default: 'Cancel', details: 'You can pass cancelText for confirm alert.' },
+  { name: 'isOpen', type: 'boolean', default: 'false', details: 'You can pass isOpen to show / hide alert box.' },
+  { name: 'onClose', type: '() => void', default: 'Required', details: 'You can get callback when confirm alert got closed.' },
+  { name: 'onResult', type: '(result: boolean) => void', default: 'Required', details: 'You can get callback when alert confirmed / cancelled.' }
+];
