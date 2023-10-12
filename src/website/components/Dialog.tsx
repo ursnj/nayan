@@ -7,6 +7,7 @@ import Sidebar from '../helpers/Sidebar';
 import { dialogCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
+import { dialogAttributes } from '@/website/services/Attributes';
 
 const Dialog = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const Dialog = () => {
         <NButton onClick={() => setIsOpen(true)}>Show Dialog</NButton>
       </SubHeader>
 
-      <Attributes data={[]} />
+      <Attributes data={dialogAttributes} />
 
       <SubHeader title="Usage">
         <Code code={dialogCode} />
