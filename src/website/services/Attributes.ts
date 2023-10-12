@@ -34,3 +34,8 @@ export const buttonGroupAttributes = [
   { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
   { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when button group changed.' }
 ];
+
+export const cardAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'children', type: 'ReactNode', default: 'Required', details: 'You can pass card content as children.' }
+];
