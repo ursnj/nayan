@@ -4,21 +4,34 @@ import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { alertCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { alertAttributes } from '@/website/services/Attributes';
 
 const Alert = () => {
   return (
     <Sidebar title="Alert">
       <div className="mb-5">Displays a callout for user attention.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NAlert type={AlertTypes.DEFAULT} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-      <NAlert type={AlertTypes.INFO} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-      <NAlert type={AlertTypes.SUCCESS} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-      <NAlert type={AlertTypes.WARNING} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
-      <NAlert type={AlertTypes.ERROR} title="Error!" message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+      <SubHeader title="Demo">
+        <NAlert type={AlertTypes.DEFAULT} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+        <NAlert type={AlertTypes.INFO} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+        <NAlert type={AlertTypes.SUCCESS} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+        <NAlert type={AlertTypes.WARNING} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />
+        <NAlert
+          type={AlertTypes.ERROR}
+          title="Error!"
+          message="New version available!"
+          className="mb-3"
+          onClose={() => console.log('Alert closed')}
+        />
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={alertCode} />
+      <SubHeader title="Usage">
+        <Code code={alertCode} />
+      </SubHeader>
+
+      <Attributes data={alertAttributes} />
     </Sidebar>
   );
 };
