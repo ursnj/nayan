@@ -1,10 +1,10 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { AccordionTypes } from '@/components/Types';
+import { AccordionListItem, AccordionTypes } from '@/components/Types';
 
 interface Props {
   className?: string;
   type?: AccordionTypes;
-  items: { title: string; message: string }[];
+  items: AccordionListItem[];
 }
 
 export const NAccordion = (props: Props) => {

@@ -25,6 +25,11 @@ export enum AccordionTypes {
   MULTIPLE = 'multiple'
 }
 
+export interface AccordionListItem {
+  title: string;
+  message: string;
+}
+
 export interface ColumnDef {
   name: string;
   title: string;
