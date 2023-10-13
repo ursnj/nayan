@@ -554,7 +554,7 @@ import { NSwitch } from 'nayan';
 
 const Switch = () => {
   const [enabled, setEnabled] = useState(false);
-  return <NSwitch enabled={enabled} onChange={setEnabled} />;
+  return <NSwitch label="Is Dark Mode" enabled={enabled} onChange={setEnabled} />;
 };
 
 export default Switch;`;

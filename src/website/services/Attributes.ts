@@ -276,3 +276,11 @@ export const sliderAttributes = [
   { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to slider.' },
   { name: 'onChange', type: '(value: number) => void', default: 'Required', details: 'You can get callback when slider changed.' }
 ];
+
+export const switchAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'label', type: 'string', default: "' '", details: 'You can pass label to switch.' },
+  { name: 'enabled', type: 'boolean', default: 'false', details: 'You can pass enabled to switch.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to switch.' },
+  { name: 'onChange', type: '(enabled: boolean) => void', default: 'Required', details: 'You can get callback when switch changed.' }
+];
