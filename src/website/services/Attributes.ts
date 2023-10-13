@@ -265,3 +265,14 @@ export const sheetAttributes = [
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass sheet content as children.' },
   { name: 'onClose', type: '() => void', default: 'Required', details: 'You can get callback when sheet got closed.' }
 ];
+
+export const skeletonAttributes = [{ name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' }];
+
+export const sliderAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'defaultValue', type: 'number', default: '0', details: 'You can pass default value to slider.' },
+  { name: 'max', type: 'number', default: '100', details: 'You can pass max value to slider.' },
+  { name: 'step', type: 'number', default: '1', details: 'You can pass step value to slider.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to slider.' },
+  { name: 'onChange', type: '(value: number) => void', default: 'Required', details: 'You can get callback when slider changed.' }
+];

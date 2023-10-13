@@ -543,7 +543,7 @@ export const sliderCode = `import { NSlider } from 'nayan';
 
 const Slider = () => {
   return (
-    <NSlider defaultValue={50} max={100} step={1} isDisabled={false} onChange={value => console.log(value)} />
+    <NSlider defaultValue={50} max={100} step={1} disabled={false} onChange={value => console.log(value)} />
   );
 };
 
