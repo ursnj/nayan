@@ -237,3 +237,12 @@ export const progressAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'value', type: 'number', default: 'Required', details: 'You can pass value to render progress.' }
 ];
+
+export const radioGroupAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'orientation', type: 'vertical | horizontal', default: 'horizontal', details: 'You can pass radio group orientation.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default checkbox state.' },
+  { name: 'items', type: 'RadioItem[]', default: 'Required', details: 'You can pass list of radio items.' },
+  { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
+  { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when radio group changed.' }
+];

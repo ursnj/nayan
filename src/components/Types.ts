@@ -70,6 +70,11 @@ export interface ComboBoxItem {
   value: string;
 }
 
+export interface RadioItem {
+  label: string;
+  value: string;
+}
+
 export interface ColumnDef {
   name: string;
   title: string;
