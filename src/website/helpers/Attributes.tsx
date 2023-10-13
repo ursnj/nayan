@@ -2,10 +2,12 @@ import { NTable } from '@/components/NTable';
 import SubHeader from './SubHeader';
 
 interface Props {
+  title?: string;
   data: any[];
 }
 
 const Attributes = (props: Props) => {
+  const { data, title = 'Attributes' } = props;
   const columnDef = [
     { name: 'name', title: 'Name', className: 'min-w-[100px] max-w-[200px]' },
     { name: 'type', title: 'Type', className: 'min-w-[100px] max-w-[200px]' },
@@ -14,8 +16,8 @@ const Attributes = (props: Props) => {
   ];
 
   return (
-    <SubHeader title="Attributes">
-      <NTable columnDef={columnDef} data={props.data} />
+    <SubHeader title={title}>
+      <NTable columnDef={columnDef} data={data} />
     </SubHeader>
   );
 };

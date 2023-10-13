@@ -197,3 +197,29 @@ export const linkifyAttributes = [
 ];
 
 export const loadingAttributes = [{ name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' }];
+
+export const menuAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'title', type: 'string', default: "' '", details: 'You can pass title for menu.' },
+  { name: 'size', type: 'MenuSize', default: 'MenuSize.MD', details: 'You can pass size of the menu.' },
+  { name: 'side', type: 'top | bottom | right | left', default: 'bottom', details: 'You can pass side to menu.' },
+  { name: 'align', type: 'start | end | center', default: 'end', details: 'You can pass align to menu.' },
+  { name: 'trigger', type: 'string | ReactNode', default: 'Required', details: 'You can pass trigger to menu.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass dialog content as children.' }
+];
+
+export const menuItemAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'title', type: 'string', default: 'Required', details: 'You can pass title for menu item.' },
+  { name: 'shortcut', type: 'string', default: "' '", details: 'You can pass shortcut key for menu item.' },
+  { name: 'icon', type: 'ReactNode', default: 'Required', details: 'You can pass icon for menu item.' },
+  { name: 'separator', type: 'boolean', default: 'false', details: 'You can pass separator for menu item.' },
+  { name: 'onClick', type: '() => void', default: '', details: 'You can get callback when menu item clicked.' }
+];
+
+export const menuNestedAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'size', type: 'MenuSize', default: 'MenuSize.MD', details: 'You can pass size of the menu.' },
+  { name: 'trigger', type: 'string | ReactNode', default: 'Required', details: 'You can pass trigger to menu.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass dialog content as children.' }
+];

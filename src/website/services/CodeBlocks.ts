@@ -418,12 +418,12 @@ const Loading = () => {
 
 export default Loading;`;
 
-export const menuCode = `import { NMenu,NMenuItem, Size, NMenuNested, NButton } from 'nayan';
+export const menuCode = `import { NMenu,NMenuItem, MenuSize, NMenuNested, NButton } from 'nayan';
 import { User } from 'lucide-react';
 
 const Menu = () => {
   return (
-    <NMenu align="start" title="My Account" size={Size.LG} trigger={<NButton>Show Menu</NButton>}>
+    <NMenu align="start" title="My Account" size={MenuSize.LG} trigger={<NButton>Show Menu</NButton>}>
       <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
       <NMenuNested trigger={<NMenuItem title="Share" icon={User} className="p-0" />}>
         <NMenuItem title="Facebook" icon={User} shortcut="⌘P" />
