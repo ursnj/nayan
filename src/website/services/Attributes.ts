@@ -184,3 +184,14 @@ export const inputAttributes = [
   { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default checkbox state.' },
   { name: 'onChange', type: '(value: string | number) => void', default: 'Required', details: 'You can get callback when input value changed.' }
 ];
+
+export const linkAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass link content as children.' },
+  { name: 'href', type: 'string', default: "' '", details: 'You can pass href to render anchor element.' },
+  { name: 'onClick', type: '() => void', default: '', details: 'You can get callback when link element clicked.' }
+];
+
+export const linkifyAttributes = [
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass linkify content as children.' }
+];
