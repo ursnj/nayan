@@ -232,3 +232,8 @@ export const popoverAttributes = [
   { name: 'trigger', type: 'string | ReactNode', default: 'Required', details: 'You can pass trigger to popover.' },
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass popover content as children.' }
 ];
+
+export const progressAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'value', type: 'number', default: 'Required', details: 'You can pass value to render progress.' }
+];
