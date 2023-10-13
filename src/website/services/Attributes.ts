@@ -195,3 +195,5 @@ export const linkAttributes = [
 export const linkifyAttributes = [
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass linkify content as children.' }
 ];
+
+export const loadingAttributes = [{ name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' }];
