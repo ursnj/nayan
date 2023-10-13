@@ -42,6 +42,13 @@ export enum PopoverSize {
   LG = 'LG'
 }
 
+export enum SheetSize {
+  XS = 'XS',
+  SM = 'SM',
+  MD = 'MD',
+  LG = 'LG'
+}
+
 export enum AlertTypes {
   DEFAULT = 'DEFAULT',
   INFO = 'INFO',
@@ -71,6 +78,11 @@ export interface ComboBoxItem {
 }
 
 export interface RadioItem {
+  label: string;
+  value: string;
+}
+
+export interface SelectBoxItem {
   label: string;
   value: string;
 }

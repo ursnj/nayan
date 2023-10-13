@@ -246,3 +246,22 @@ export const radioGroupAttributes = [
   { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
   { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when radio group changed.' }
 ];
+
+export const selectAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'title', type: 'string', default: "' '", details: 'You can pass title to show title for select.' },
+  { name: 'label', type: 'string', default: "' '", details: 'You can pass label to show label for select.' },
+  { name: 'items', type: 'SelectBoxItem[]', default: 'Required', details: 'You can pass items for the select options.' },
+  { name: 'placeholder', type: 'string', default: 'Required', details: 'You can pass placeholder to show while searching.' },
+  { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
+  { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when select changed.' }
+];
+
+export const sheetAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'title', type: 'string', default: 'Required', details: 'You can pass title for sheet.' },
+  { name: 'size', type: 'SheetSize', default: 'SheetSize.MD', details: 'You can pass size of the sheet.' },
+  { name: 'isOpen', type: 'boolean', default: 'false', details: 'You can pass isOpen to show / hide alert box.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass sheet content as children.' },
+  { name: 'onClose', type: '() => void', default: 'Required', details: 'You can get callback when sheet got closed.' }
+];

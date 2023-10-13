@@ -1,5 +1,6 @@
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
+import { SelectBoxItem } from '@/components/Types';
 
 interface Props {
   selected: string;
@@ -7,7 +8,7 @@ interface Props {
   label?: string;
   title?: string;
   className?: string;
-  items: { label: string; value: string }[];
+  items: SelectBoxItem[];
   onChange: (selected: string) => void;
 }
 
@@ -16,7 +17,7 @@ export const NSelect = (props: Props) => {
   return (
     <div className={`nyn-input-block ${className}`}>
       {label && (
-        <Label htmlFor="select" className="nyn-input-label block pb-2 text-muted">
+        <Label htmlFor="select" className="nyn-input-label block pb-2 text-text">
           {label}
         </Label>
       )}
