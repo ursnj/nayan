@@ -54,7 +54,7 @@ const Button = () => {
 
       <Attributes data={buttonAttributes} />
 
-      <div className="text-primary mb-5">Note: Along with these params you can also pass default button params.</div>
+      <div className="text-primary mb-5">Note: Along with these params you can also pass all default button params.</div>
 
       <SubHeader title="Usage">
         <Code code={buttonCode} />

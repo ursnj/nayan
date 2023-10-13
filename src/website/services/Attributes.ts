@@ -173,3 +173,14 @@ export const infiniteScrollAttributes = [
   { name: 'initialScrollY', type: 'number', default: '', details: 'set a scroll y position for the component to render with.' },
   { name: 'inverse', type: 'boolean', default: '', details: 'set infinite scroll on top.' }
 ];
+
+export const inputAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'id', type: 'string', default: 'check', details: 'You can pass id to create unique identifier.' },
+  { name: 'label', type: 'string', default: "' '", details: 'You can pass label of the input.' },
+  { name: 'placeholder', type: 'string', default: "' '", details: 'You can pass placeholder of the input.' },
+  { name: 'value', type: 'string', default: "' '", details: 'You can pass value of the input.' },
+  { name: 'type', type: 'text | email | number | date ..etc', default: 'text', details: 'You can pass type of the input.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default checkbox state.' },
+  { name: 'onChange', type: '(value: string | number) => void', default: 'Required', details: 'You can get callback when input value changed.' }
+];
