@@ -205,7 +205,7 @@ export const menuAttributes = [
   { name: 'side', type: 'top | bottom | right | left', default: 'bottom', details: 'You can pass side to menu.' },
   { name: 'align', type: 'start | end | center', default: 'end', details: 'You can pass align to menu.' },
   { name: 'trigger', type: 'string | ReactNode', default: 'Required', details: 'You can pass trigger to menu.' },
-  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass dialog content as children.' }
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass menu content as children.' }
 ];
 
 export const menuItemAttributes = [
@@ -221,5 +221,14 @@ export const menuNestedAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'size', type: 'MenuSize', default: 'MenuSize.MD', details: 'You can pass size of the menu.' },
   { name: 'trigger', type: 'string | ReactNode', default: 'Required', details: 'You can pass trigger to menu.' },
-  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass dialog content as children.' }
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass menu content as children.' }
+];
+
+export const popoverAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'size', type: 'PopoverSize', default: 'PopoverSize.MD', details: 'You can pass size of the popover.' },
+  { name: 'side', type: 'top | bottom | right | left', default: 'bottom', details: 'You can pass side to popover.' },
+  { name: 'align', type: 'start | end | center', default: 'end', details: 'You can pass align to popover.' },
+  { name: 'trigger', type: 'string | ReactNode', default: 'Required', details: 'You can pass trigger to popover.' },
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass popover content as children.' }
 ];

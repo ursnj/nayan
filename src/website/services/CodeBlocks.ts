@@ -437,11 +437,11 @@ const Menu = () => {
 
 export default Menu;`;
 
-export const popoverCode = `import { NPopover, NButton, Size } from 'nayan';
+export const popoverCode = `import { NPopover, NButton, PopoverSize } from 'nayan';
 
 const Popover = () => {
   return (
-    <NPopover size={Size.MD} trigger={<NButton>Show Popover</NButton>}>
+    <NPopover size={PopoverSize.MD} trigger={<NButton>Show Popover</NButton>}>
       <div className="overflow-hidden p-3">
         <div className="text-sm font-medium text-text">Documentation</div>
         <div className="text-sm text-muted">Start integrating products and tools</div>
