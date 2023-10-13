@@ -284,3 +284,10 @@ export const switchAttributes = [
   { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to switch.' },
   { name: 'onChange', type: '(enabled: boolean) => void', default: 'Required', details: 'You can get callback when switch changed.' }
 ];
+
+export const tableAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'caption', type: 'string', default: "' '", details: 'You can pass caption to table.' },
+  { name: 'columnDef', type: 'ColumnDef[]', default: 'Required', details: 'You can pass column definition to table.' },
+  { name: 'data', type: 'Object[]', default: 'Required', details: 'You can pass data to table.' }
+];
