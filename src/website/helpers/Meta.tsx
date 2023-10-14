@@ -21,6 +21,7 @@ const Meta = (props: Props) => {
     <Helmet>
       {/* Standard metadata tags */}
       <title>{finalTitle}</title>
+      <link rel="canonical" href="https://nayanui.com/" />
       <meta name="description" content={description} />
       <meta
         property="keywords"
