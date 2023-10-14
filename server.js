@@ -90,8 +90,8 @@ export async function createServer(root = process.cwd(), isProd = process.env.NO
 
 if (!isTest) {
   createServer().then(({ app }) =>
-    app.listen(5173, () => {
-      console.log('http://localhost:5173');
+    app.listen(3000, () => {
+      console.log('http://localhost:3000');
     })
   );
 }
