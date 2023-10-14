@@ -4,21 +4,21 @@ import { Checkbox } from '@/components/ui/checkbox';
 interface Props {
   id?: string;
   className?: string;
-  isDisabled?: boolean;
+  disabled?: boolean;
   children: ReactNode;
-  isChecked: any;
-  onChange: any;
+  checked: any;
+  onChange: (checked: boolean) => void;
 }
 
 export const NCheck = (props: Props) => {
-  const { className = '', id = 'check', children, isChecked, isDisabled = false, onChange } = props;
+  const { className = '', id = 'check', children, checked, disabled = false, onChange } = props;
 
   return (
     <div className={`flex space-x-2 ${className}`}>
       <Checkbox
         id={id}
-        disabled={isDisabled}
-        checked={isChecked}
+        disabled={disabled}
+        checked={checked}
         onCheckedChange={onChange}
         className="nyn-check data-[state=checked]:bg-primary data-[state=checked]:text-white data-[state=unchecked]:border-muted data-[state=checked]:border-primary"
       />

@@ -3,20 +3,27 @@ import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { dividerCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { dividerAttributes } from '@/website/services/Attributes';
 
 const Divider = () => {
   return (
     <Sidebar title="Divider">
       <div className="mb-5">Visually or semantically separates content.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <h1 className="text-text mb-3 text-lg">Horizontal:</h1>
-      <NDivider className="my-3" />
-      <h1 className="text-text mb-3 text-lg">Vertical:</h1>
-      <NDivider orientation="vertical" className="h-5" />
+      <SubHeader title="Demo">
+        <h1 className="text-text mb-3 text-lg">Horizontal:</h1>
+        <NDivider className="my-3" />
+        <h1 className="text-text mb-3 text-lg">Vertical:</h1>
+        <NDivider orientation="vertical" className="h-5" />
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={dividerCode} />
+      <Attributes data={dividerAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={dividerCode} />
+      </SubHeader>
     </Sidebar>
   );
 };

@@ -1,19 +1,26 @@
+import React from 'react';
 import { NLinkify } from '@/components/NLinkify';
-import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { linkifyCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { linkifyAttributes } from '@/website/services/Attributes';
 
 const Linkify = () => {
   return (
     <Sidebar title="Linkify">
       <div className="mb-5">A component to elivate links, phone numbers and fax.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NLinkify>Checkout our new landing page at nayanui.com and new email hello@nayanui.com</NLinkify>
+      <SubHeader title="Demo">
+        <NLinkify>Checkout our new landing page at nayanui.com and new email hello@nayanui.com</NLinkify>
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={linkifyCode} />
+      <Attributes data={linkifyAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={linkifyCode} />
+      </SubHeader>
     </Sidebar>
   );
 };

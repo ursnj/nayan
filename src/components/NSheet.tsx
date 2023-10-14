@@ -1,25 +1,25 @@
 import { ReactNode } from 'react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import { Size } from '@/components/Types';
+import { SheetSize } from '@/components/Types';
 
 const sizeMapping = {
-  [Size.XS]: 'md:max-w-sm',
-  [Size.SM]: 'md:max-w-lg',
-  [Size.MD]: 'md:max-w-2xl',
-  [Size.LG]: 'md:max-w-4xl'
+  [SheetSize.XS]: 'md:max-w-sm',
+  [SheetSize.SM]: 'md:max-w-lg',
+  [SheetSize.MD]: 'md:max-w-2xl',
+  [SheetSize.LG]: 'md:max-w-4xl'
 };
 
 interface Props {
   isOpen: boolean;
   title: string;
-  size?: Size;
+  size?: SheetSize;
   className?: string;
   children: ReactNode;
   onCloseSheet: () => void;
 }
 
 export const NSheet = (props: Props) => {
-  const { isOpen, className = '', title, children, size = Size.XS } = props;
+  const { isOpen, className = '', title, children, size = SheetSize.XS } = props;
 
   return (
     <Sheet open={isOpen} onOpenChange={props.onCloseSheet}>

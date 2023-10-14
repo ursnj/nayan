@@ -1,8 +1,11 @@
-import { NSwitch } from '@/components/NSwitch';
 import React, { useState } from 'react';
+import { NSwitch } from '@/components/NSwitch';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { switchCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { switchAttributes } from '@/website/services/Attributes';
 
 const Switch = () => {
   const [enabled, setEnabled] = useState(true);
@@ -11,11 +14,15 @@ const Switch = () => {
     <Sidebar title="Switch">
       <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NSwitch enabled={enabled} onChange={setEnabled} />
+      <SubHeader title="Demo">
+        <NSwitch label="Is Dark Mode" enabled={enabled} onChange={setEnabled} />
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={switchCode} />
+      <Attributes data={switchAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={switchCode} />
+      </SubHeader>
     </Sidebar>
   );
 };

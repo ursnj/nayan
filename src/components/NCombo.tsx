@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
+import { ComboBoxItem } from '@/components/Types';
 
 interface Props {
   isOpen: boolean;
@@ -11,7 +12,7 @@ interface Props {
   placeholder: string;
   label?: string;
   className?: string;
-  items: { label: string; value: string }[];
+  items: ComboBoxItem[];
   onChange: (selected: string) => void;
   setIsOpen: (isOpen: boolean) => void;
 }
@@ -21,7 +22,7 @@ export const NCombo = (props: Props) => {
   return (
     <div className={`nyn-combo-block ${className}`}>
       {label && (
-        <Label htmlFor="combo" className="nyn-combo-label block pb-2 text-muted">
+        <Label htmlFor="combo" className="nyn-combo-label block pb-2 text-text">
           {label}
         </Label>
       )}

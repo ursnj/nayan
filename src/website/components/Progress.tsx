@@ -1,21 +1,28 @@
+import React from 'react';
 import { NProgress } from '@/components/NProgress';
-import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { progressCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { progressAttributes } from '@/website/services/Attributes';
 
-const Checkbox = () => {
+const Progress = () => {
   return (
     <Sidebar title="Progress">
       <div className="mb-5">Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NProgress value={50} />
+      <SubHeader title="Demo">
+        <NProgress value={50} />
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={progressCode} />
+      <Attributes data={progressAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={progressCode} />
+      </SubHeader>
     </Sidebar>
   );
 };
 
-export default Checkbox;
+export default Progress;
