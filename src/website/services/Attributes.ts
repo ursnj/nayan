@@ -176,7 +176,7 @@ export const infiniteScrollAttributes = [
 
 export const inputAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
-  { name: 'id', type: 'string', default: 'check', details: 'You can pass id to create unique identifier.' },
+  { name: 'id', type: 'string', default: 'input', details: 'You can pass id to create unique identifier.' },
   { name: 'label', type: 'string', default: "' '", details: 'You can pass label of the input.' },
   { name: 'placeholder', type: 'string', default: "' '", details: 'You can pass placeholder of the input.' },
   { name: 'value', type: 'string', default: "' '", details: 'You can pass value of the input.' },
@@ -305,4 +305,14 @@ export const tabsContentAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'item', type: 'string', default: 'Required', details: 'You can pass item for the tab content.' },
   { name: 'children', type: 'ReactNode', default: 'Required', details: 'You can pass tabs content as children.' }
+];
+
+export const textareaAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'id', type: 'string', default: 'textarea', details: 'You can pass id to create unique identifier.' },
+  { name: 'label', type: 'string', default: "' '", details: 'You can pass label of the textarea.' },
+  { name: 'placeholder', type: 'string', default: "' '", details: 'You can pass placeholder of the textarea.' },
+  { name: 'value', type: 'string', default: "' '", details: 'You can pass value of the textarea.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default textarea state.' },
+  { name: 'onChange', type: '(value: string | number) => void', default: 'Required', details: 'You can get callback when textarea value changed.' }
 ];

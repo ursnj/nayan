@@ -6,7 +6,6 @@ interface Props extends InputProps {
   type?: string;
   label?: string;
   value?: string;
-  defaultValue?: string;
   placeholder?: string;
   className?: string;
   onChange?: (val: any) => void;
