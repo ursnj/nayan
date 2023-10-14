@@ -316,3 +316,14 @@ export const textareaAttributes = [
   { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default textarea state.' },
   { name: 'onChange', type: '(value: string | number) => void', default: 'Required', details: 'You can get callback when textarea value changed.' }
 ];
+
+export const toastAttributes = [
+  { name: 'description', type: 'string', default: 'Required', details: 'You can pass description to show toast.' },
+  { name: 'title', type: 'string', default: "' '", details: 'You can pass title to show toast with title.' }
+];
+
+export const tooltipAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'message', type: 'string', default: 'Required', details: 'You can pass message for the tooltip content.' },
+  { name: 'children', type: 'ReactNode', default: 'Required', details: 'You can pass tooltip content as children.' }
+];
