@@ -6,6 +6,8 @@ import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import SubHeader from '../helpers/SubHeader';
 import { infiniteScrollCode } from '../services/CodeBlocks';
+import Attributes from '@/website/helpers/Attributes';
+import { infiniteScrollAttributes } from '@/website/services/Attributes';
 
 const InfiniteScroll = () => {
   const [items, setItems] = useState(new Array(20).fill(''));
@@ -23,6 +25,8 @@ const InfiniteScroll = () => {
   return (
     <Sidebar title="Infinite Scroll">
       <div className="mb-5">A component to load more data when user scroll on the screen.</div>
+
+      <Attributes data={infiniteScrollAttributes} />
 
       <SubHeader title="Usage">
         <Code code={infiniteScrollCode} />

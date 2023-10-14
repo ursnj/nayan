@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { toastCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { toastAttributes } from '@/website/services/Attributes';
 
 const Toast = () => {
   const toast = useToast();
@@ -12,14 +15,18 @@ const Toast = () => {
     <Sidebar title="Toast">
       <div className="mb-5">A succinct message that is displayed temporarily.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <NButton onClick={() => toast('Simple Toaster!')}>Show Simple Toast</NButton>
-      <NButton className="ml-5" onClick={() => toast('Toaster Description!', 'Toaster Title')}>
-        Show Toast with Title
-      </NButton>
+      <SubHeader title="Demo">
+        <NButton onClick={() => toast('Simple Toaster!')}>Show Simple Toast</NButton>
+        <NButton className="ml-5" onClick={() => toast('Toaster Description!', 'Toaster Title')}>
+          Show Toast with Title
+        </NButton>
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={toastCode} />
+      <Attributes data={toastAttributes} />
+
+      <SubHeader title="usage">
+        <Code code={toastCode} />
+      </SubHeader>
     </Sidebar>
   );
 };

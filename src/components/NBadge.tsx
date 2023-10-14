@@ -1,25 +1,22 @@
 import { Badge } from '@/components/ui/badge';
-import { Size } from './Types';
+import { BadgeSize } from './Types';
+import { ReactNode } from 'react';
 
 const sizeMapping = {
-  [Size.XS]: 'px-2 py-0.5 text-xs',
-  [Size.SM]: 'px-2 py-0 text-sm',
-  [Size.MD]: 'px-3 py-0 text-base',
-  [Size.LG]: 'px-3 py-0 text-lg'
+  [BadgeSize.XS]: 'px-2 py-0.5 text-xs',
+  [BadgeSize.SM]: 'px-2 py-0 text-sm',
+  [BadgeSize.MD]: 'px-3 py-0 text-base',
+  [BadgeSize.LG]: 'px-3 py-0 text-lg'
 };
 
 interface Props {
-  size: Size;
-  name: string;
+  size: BadgeSize;
+  children: string | ReactNode;
   className?: string;
 }
 
 export const NBadge = (props: Props) => {
-  const { className = '', size = Size.SM, name, ...remaining } = props;
+  const { className = '', size = BadgeSize.SM, children } = props;
 
-  return (
-    <Badge className={`nyn-badge ${size.toLowerCase()} rounded-full font-normal ${sizeMapping[size]} ${className}`} {...remaining}>
-      {name}
-    </Badge>
-  );
+  return <Badge className={`nyn-badge ${size.toLowerCase()} rounded-full font-normal ${sizeMapping[size]} ${className}`}>{children}</Badge>;
 };

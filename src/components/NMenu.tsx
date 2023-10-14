@@ -1,17 +1,17 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuLabel, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { ReactNode } from 'react';
-import { Size } from './Types';
+import { MenuSize } from './Types';
 import { NDivider } from '@/components/NDivider';
 
 export const menuSizeMapping = {
-  [Size.XS]: 'w-[80px]',
-  [Size.SM]: 'w-[100px]',
-  [Size.MD]: 'w-[150px]',
-  [Size.LG]: 'w-[200px]'
+  [MenuSize.XS]: 'w-[80px]',
+  [MenuSize.SM]: 'w-[100px]',
+  [MenuSize.MD]: 'w-[150px]',
+  [MenuSize.LG]: 'w-[200px]'
 };
 
 interface Props {
-  size?: Size;
+  size?: MenuSize;
   title?: string;
   side?: 'top' | 'bottom' | 'right' | 'left' | undefined;
   align?: 'start' | 'end' | 'center' | undefined;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 export const NMenu = (props: Props) => {
-  const { trigger, children, className = '', title = '', size = Size.MD, side = 'bottom', align = 'end' } = props;
+  const { trigger, children, className = '', title = '', size = MenuSize.MD, side = 'bottom', align = 'end' } = props;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="nyn-menu-trigger">{trigger}</DropdownMenuTrigger>

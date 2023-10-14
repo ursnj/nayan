@@ -2,16 +2,16 @@ import { ReactNode } from 'react';
 import { TabsContent } from '@/components/ui/tabs';
 
 interface Props {
-  tab: string;
+  item: string;
   className?: string;
   children: ReactNode;
 }
 
 export const NTabsContent = (props: Props) => {
-  const { tab, className = '' } = props;
+  const { item, className = '' } = props;
 
   return (
-    <TabsContent value={tab} className={`nyn-tab-content ${className}`}>
+    <TabsContent value={item} className={`nyn-tab-content ${className}`}>
       {props.children}
     </TabsContent>
   );

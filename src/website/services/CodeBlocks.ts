@@ -139,7 +139,7 @@ export default App;`;
 export const accordionCode = `import { NAccordion, AccordionTypes } from 'nayan';
 
 const Accordion = () => {
-  const list = [
+  const items = [
     { title: 'Heading 1', message: 'Description 1' },
     { title: 'Heading 2', message: 'Description 2' }
   ];
@@ -147,9 +147,9 @@ const Accordion = () => {
   return (
     <div>
       <h1 className="text-text mb-3 text-lg">Single:</h1>
-      <NAccordion type={AccordionTypes.SINGLE} list={list} />
+      <NAccordion type={AccordionTypes.SINGLE} items={items} />
       <h1 className="text-text mb-3 mt-5 text-lg">Multiple:</h1>
-      <NAccordion type={AccordionTypes.MULTIPLE} list={list} />
+      <NAccordion type={AccordionTypes.MULTIPLE} items={items} />
     </div>
   );
 };
@@ -172,46 +172,46 @@ const Alert = () => {
 
 export default Alert;`;
 
-export const badgeCode = `import { NBadge, Size } from 'nayan';
+export const badgeCode = `import { NBadge, BadgeSize } from 'nayan';
 
 const Badge = () => {
   return (
     <div>
-      <NBadge size={Size.XS} name="Sample" className="text-text bg-card border border-border mr-2" />
-      <NBadge size={Size.XS} name="Sample" className="text-blue-700 bg-blue-300 mr-2" />
-      <NBadge size={Size.SM} name="Sample" className="text-green-700 bg-green-300 mr-2" />
-      <NBadge size={Size.MD} name="Sample" className="text-yellow-700 bg-yellow-300 mr-2" />
-      <NBadge size={Size.LG} name="Sample" className="text-red-700 bg-red-300 mr-2" />
+      <NBadge size={BadgeSize.XS} className="text-text bg-card border border-border mr-2">Sample</NBadge>
+      <NBadge size={BadgeSize.XS} className="text-blue-700 bg-blue-300 mr-2">Sample</NBadge>
+      <NBadge size={BadgeSize.SM} className="text-green-700 bg-green-300 mr-2">Sample</NBadge>
+      <NBadge size={BadgeSize.MD} className="text-yellow-700 bg-yellow-300 mr-2">Sample</NBadge>
+      <NBadge size={BadgeSize.LG} className="text-red-700 bg-red-300 mr-2">Sample</NBadge>
     </div>
   );
 };
 
 export default Badge;`;
 
-export const buttonCode = `import { NButton, Size } from 'nayan';
+export const buttonCode = `import { NButton, ButtonSize } from 'nayan';
 
 const Button = () => {
   return (
     <div>
-      <NButton size={Size.XS} isDisabled className="text-text bg-card border border-border mr-2">
+      <NButton size={Size.XS} disabled className="text-text bg-card border border-border mr-2">
         Button
       </NButton>
-      <NButton type="submit" size={Size.XS} onClick={() => console.log('Button clicked')} className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
+      <NButton type="submit" size={ButtonSize.XS} onClick={() => console.log('Button clicked')} className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
         Button
       </NButton>
-      <NButton type="reset" size={Size.SM} onClick={() => console.log('Button clicked')} className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
+      <NButton type="reset" size={ButtonSize.SM} onClick={() => console.log('Button clicked')} className="text-white bg-green-500 hover:bg-green-600 border border-green-600 mr-2">
         Button
       </NButton>
-      <NButton size={Size.MD} isLoading={true} onClick={() => console.log('Button clicked')} className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
+      <NButton size={ButtonSize.MD} isLoading={true} onClick={() => console.log('Button clicked')} className="text-white bg-yellow-500 hover:bg-yellow-600 border border-yellow-600 mr-2">
         Button
       </NButton>
-      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="mr-2">
+      <NButton size={ButtonSize.LG} onClick={() => console.log('Button clicked')} className="mr-2">
         Button
       </NButton>
-      <NButton size={Size.LG} isOutline={true} onClick={() => console.log('Button clicked')} className="mr-2">
+      <NButton size={ButtonSize.LG} isOutline={true} onClick={() => console.log('Button clicked')} className="mr-2">
         Button
       </NButton>
-      <NButton size={Size.LG} onClick={() => console.log('Button clicked')} className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
+      <NButton size={ButtonSize.LG} onClick={() => console.log('Button clicked')} className="text-white bg-purple-500 hover:bg-purple-600 border border-purple-600 rounded-full mr-2">
         Button
       </NButton>
     </div>
@@ -227,7 +227,7 @@ const items = ['Startup', 'Business', 'Enterprise'];
 
 const ButtonGroup = () => {
   const [selected, setSelected] = useState(items[0]);
-  return <NButtonGroup items={items} selected={selected} setSelected={setSelected} />;
+  return <NButtonGroup items={items} selected={selected} onChange={setSelected} />;
 };
 
 export default ButtonGroup;`;
@@ -244,10 +244,10 @@ export const checkBoxCode = `import { useState } from 'react';
 import { NCheck, NLink } from 'nayan';
 
 const Checkbox = () => {
-  const [isChecked, setIsChecked] = useState(true);
+  const [checked, setChecked] = useState(true);
 
   return (
-    <NCheck isChecked={isChecked} onChange={checked => setIsChecked(checked)}>
+    <NCheck checked={checked} disabled={false} onChange={checked => setChecked(checked)}>
       Sample label for checkbox. accept <NLink> terms</NLink>
     </NCheck>
   );
@@ -306,14 +306,14 @@ const ConfirmAlert = () => {
 export default ConfirmAlert;`;
 
 export const dialogCode = `import { useState } from 'react';
-import { NDialog, Size } from 'nayan';
+import { NButton, NDialog, DialogSize } from 'nayan';
 
 const Dialog = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <NDialog isOpen={isOpen} closeModal={() => setIsOpen(false)} size={Size.MD} title="Payment confirmation">
+      <NDialog isOpen={isOpen} closeModal={() => setIsOpen(false)} size={DialogSize.MD} title="Payment confirmation">
         Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
       </NDialog>
       <NButton onClick={() => setIsOpen(true)}>Show Dialog</NButton>
@@ -418,12 +418,12 @@ const Loading = () => {
 
 export default Loading;`;
 
-export const menuCode = `import { NMenu,NMenuItem, Size, NMenuNested, NButton } from 'nayan';
+export const menuCode = `import { NMenu,NMenuItem, MenuSize, NMenuNested, NButton } from 'nayan';
 import { User } from 'lucide-react';
 
 const Menu = () => {
   return (
-    <NMenu align="start" title="My Account" size={Size.LG} trigger={<NButton>Show Menu</NButton>}>
+    <NMenu align="start" title="My Account" size={MenuSize.LG} trigger={<NButton>Show Menu</NButton>}>
       <NMenuItem title="Profile" icon={User} shortcut="⌘P" />
       <NMenuNested trigger={<NMenuItem title="Share" icon={User} className="p-0" />}>
         <NMenuItem title="Facebook" icon={User} shortcut="⌘P" />
@@ -437,11 +437,11 @@ const Menu = () => {
 
 export default Menu;`;
 
-export const popoverCode = `import { NPopover, NButton, Size } from 'nayan';
+export const popoverCode = `import { NPopover, NButton, PopoverSize } from 'nayan';
 
 const Popover = () => {
   return (
-    <NPopover size={Size.MD} trigger={<NButton>Show Popover</NButton>}>
+    <NPopover size={PopoverSize.MD} trigger={<NButton>Show Popover</NButton>}>
       <div className="overflow-hidden p-3">
         <div className="text-sm font-medium text-text">Documentation</div>
         <div className="text-sm text-muted">Start integrating products and tools</div>
@@ -543,7 +543,7 @@ export const sliderCode = `import { NSlider } from 'nayan';
 
 const Slider = () => {
   return (
-    <NSlider defaultValue={50} max={100} step={1} isDisabled={false} onChange={value => console.log(value)} />
+    <NSlider defaultValue={50} max={100} step={1} disabled={false} onChange={value => console.log(value)} />
   );
 };
 
@@ -554,7 +554,7 @@ import { NSwitch } from 'nayan';
 
 const Switch = () => {
   const [enabled, setEnabled] = useState(false);
-  return <NSwitch enabled={enabled} onChange={setEnabled} />;
+  return <NSwitch label="Is Dark Mode" enabled={enabled} onChange={setEnabled} />;
 };
 
 export default Switch;`;
@@ -587,28 +587,28 @@ export default Table;`;
 export const tabsCode = `import { useState } from 'react';
 import { NTabs, NTabsContent } from 'nayan';
 
-const tabs = ['POSTS', 'SAVED'];
+const items = ['POSTS', 'SAVED'];
 
 const Tabs = () => {
-  const [selected, setSelected] = useState(tabs[0]);
+  const [selected, setSelected] = useState(items[0]);
 
   return (
     <div>
       <h1 className="text-text mb-3 text-lg text-left">Tabs:</h1>
-      <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
-        <NTabsContent tab={tabs[0]} className="px-3 py-2 text-text">
+      <NTabs items={items} selected={selected} onChange={setSelected}>
+        <NTabsContent item={items[0]} className="px-3 py-2 text-text">
           Content 1
         </NTabsContent>
-        <NTabsContent tab={tabs[1]} className="px-3 py-2 text-text">
+        <NTabsContent item={items[1]} className="px-3 py-2 text-text">
           Content 2
         </NTabsContent>
       </NTabs>
       <h1 className="text-text mb-3 mt-5 text-lg text-left">Full Width:</h1>
-      <NTabs isFull={true} tabs={tabs} selected={selected} setSelected={setSelected}>
-        <NTabsContent tab={tabs[0]} className="px-3 py-2 text-text">
+      <NTabs isFull={true} items={items} selected={selected} onChange={setSelected}>
+        <NTabsContent item={items[0]} className="px-3 py-2 text-text">
           Content 3
         </NTabsContent>
-        <NTabsContent tab={tabs[1]} className="px-3 py-2 text-text">
+        <NTabsContent otem={items[1]} className="px-3 py-2 text-text">
           Content 4
         </NTabsContent>
       </NTabs>

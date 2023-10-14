@@ -1,16 +1,16 @@
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { ReactNode } from 'react';
-import { Size } from './Types';
+import { PopoverSize } from './Types';
 
 const sizeMapping = {
-  [Size.XS]: 'w-[150px]',
-  [Size.SM]: 'w-[200px]',
-  [Size.MD]: 'w-[250px]',
-  [Size.LG]: 'w-[300px]'
+  [PopoverSize.XS]: 'w-[150px]',
+  [PopoverSize.SM]: 'w-[200px]',
+  [PopoverSize.MD]: 'w-[250px]',
+  [PopoverSize.LG]: 'w-[300px]'
 };
 
 interface Props {
-  size?: Size;
+  size?: PopoverSize;
   className?: string;
   trigger: ReactNode;
   children: ReactNode;
@@ -19,7 +19,7 @@ interface Props {
 }
 
 export const NPopover = (props: Props) => {
-  const { trigger, children, size = Size.SM, className = '', side = 'bottom', align = 'end' } = props;
+  const { trigger, children, size = PopoverSize.SM, className = '', side = 'bottom', align = 'end' } = props;
   return (
     <Popover>
       <PopoverTrigger className={`nyn-popover ${className}`}>{trigger}</PopoverTrigger>

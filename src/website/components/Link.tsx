@@ -1,24 +1,31 @@
 import { NLink } from '@/components/NLink';
-import React, { useState } from 'react';
+import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { linkCode } from '../services/CodeBlocks';
+import SubHeader from '@/website/helpers/SubHeader';
+import Attributes from '@/website/helpers/Attributes';
+import { linkAttributes } from '@/website/services/Attributes';
 
 const Link = () => {
   return (
     <Sidebar title="Link">
       <div className="mb-5">A link to show with all of customizations.</div>
 
-      <div className="text-xl mb-5"># Demo</div>
-      <div className="text-text">
-        This is a sample paragraph with some <NLink>Link</NLink>.
-      </div>
-      <div className="text-text">
-        This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
-      </div>
+      <SubHeader title="Demo">
+        <div className="text-text">
+          This is a sample paragraph with some <NLink>Link</NLink>.
+        </div>
+        <div className="text-text">
+          This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
+        </div>
+      </SubHeader>
 
-      <div className="text-xl mb-5 mt-5"># Usage</div>
-      <Code code={linkCode} />
+      <Attributes data={linkAttributes} />
+
+      <SubHeader title="Usage">
+        <Code code={linkCode} />
+      </SubHeader>
     </Sidebar>
   );
 };
