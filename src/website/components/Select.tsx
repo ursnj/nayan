@@ -6,6 +6,7 @@ import { selectCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { selectAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const items = [
   { value: 'startup', label: 'Startup' },
@@ -18,6 +19,7 @@ const Select = () => {
 
   return (
     <Sidebar title="Select">
+      <Meta title="Select" />
       <div className="mb-5">Displays a list of options for the user to pick from—triggered by a button.</div>
 
       <SubHeader title="Demo">

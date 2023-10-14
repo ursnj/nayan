@@ -7,12 +7,14 @@ import { confirmAlertCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { confirmAlertAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const ConfirmAlert = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Sidebar title="Confirm Alert">
+      <Meta title="Confirm Alert" />
       <div className="mb-5">A modal dialog that interrupts the user with important content and expects a response.</div>
 
       <SubHeader title="Demo">

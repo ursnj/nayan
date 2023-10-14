@@ -6,12 +6,14 @@ import { textareaCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { textareaAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Textarea = () => {
   const [address, setAddress] = useState('Bangalore, India');
 
   return (
     <Sidebar title="Textarea">
+      <Meta title="Textarea" />
       <div className="mb-5">Displays a form textarea or a component that looks like a textarea.</div>
 
       <SubHeader title="Demo">

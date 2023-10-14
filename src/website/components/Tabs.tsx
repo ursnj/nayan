@@ -7,6 +7,7 @@ import { tabsCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { tabsAttributes, tabsContentAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const items = ['POSTS', 'SAVED'];
 
@@ -15,6 +16,7 @@ const Tabs = () => {
 
   return (
     <Sidebar title="Tabs">
+      <Meta title="Tabs" />
       <div className="mb-5">A set of layered sections of content—known as tab panels—that are displayed one at a time.</div>
 
       <SubHeader title="Demo">

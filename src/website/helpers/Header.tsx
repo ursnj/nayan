@@ -32,8 +32,8 @@ const HeaderMenu = () => {
           </Link>
         </li>
         <li className="w-full md:w-auto">
-          <Link className="text-base font-medium text-text px-4 py-3 block md:inline" to="/contribution">
-            Contribution
+          <Link className="text-base font-medium text-text px-4 py-3 block md:inline" to="/contributions">
+            Contributions
           </Link>
         </li>
       </ul>

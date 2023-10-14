@@ -6,6 +6,7 @@ import { buttonGroupCode } from '../services/CodeBlocks';
 import Attributes from '@/website/helpers/Attributes';
 import { buttonGroupAttributes } from '@/website/services/Attributes';
 import SubHeader from '@/website/helpers/SubHeader';
+import Meta from '@/website/helpers/Meta';
 
 const items = ['Startup', 'Business', 'Enterprise'];
 
@@ -14,6 +15,7 @@ const ButtonGroup = () => {
 
   return (
     <Sidebar title="Button Group">
+      <Meta title="Button Group" />
       <div className="mb-5">Displays a group of buttons that looks like a button group.</div>
 
       <SubHeader title="Demo">

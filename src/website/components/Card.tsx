@@ -6,10 +6,12 @@ import { cardCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { cardAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Badge = () => {
   return (
     <Sidebar title="Card">
+      <Meta title="Card" />
       <div className="mb-5">Displays a card with content.</div>
 
       <SubHeader title="Demo">

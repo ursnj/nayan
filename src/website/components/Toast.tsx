@@ -7,12 +7,14 @@ import { toastCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { toastAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Toast = () => {
   const toast = useToast();
 
   return (
     <Sidebar title="Toast">
+      <Meta title="Toast" />
       <div className="mb-5">A succinct message that is displayed temporarily.</div>
 
       <SubHeader title="Demo">

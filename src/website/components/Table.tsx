@@ -6,6 +6,7 @@ import { NTable } from '@/components/NTable';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { tableAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const CustomComponent = ({ row, col, ...remaining }: any) => {
   return <div className="text-primary">Oops</div>;
@@ -27,6 +28,7 @@ const Table = () => {
 
   return (
     <Sidebar title="Table">
+      <Meta title="Table" />
       <div className="mb-5">Displays a responsive table with header, content, and caption.</div>
 
       <SubHeader title="Demo">

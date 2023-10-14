@@ -6,12 +6,14 @@ import { inputCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { inputAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Input = () => {
   const [email, setEmail] = useState('niranjan.devasani@gmail.com');
 
   return (
     <Sidebar title="Input">
+      <Meta title="Input" />
       <div className="mb-5">Displays a form input field or a component that looks like an input field.</div>
 
       <SubHeader title="Demo">
