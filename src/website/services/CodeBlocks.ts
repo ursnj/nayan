@@ -587,28 +587,28 @@ export default Table;`;
 export const tabsCode = `import { useState } from 'react';
 import { NTabs, NTabsContent } from 'nayan';
 
-const tabs = ['POSTS', 'SAVED'];
+const items = ['POSTS', 'SAVED'];
 
 const Tabs = () => {
-  const [selected, setSelected] = useState(tabs[0]);
+  const [selected, setSelected] = useState(items[0]);
 
   return (
     <div>
       <h1 className="text-text mb-3 text-lg text-left">Tabs:</h1>
-      <NTabs tabs={tabs} selected={selected} setSelected={setSelected}>
-        <NTabsContent tab={tabs[0]} className="px-3 py-2 text-text">
+      <NTabs items={items} selected={selected} onChange={setSelected}>
+        <NTabsContent item={items[0]} className="px-3 py-2 text-text">
           Content 1
         </NTabsContent>
-        <NTabsContent tab={tabs[1]} className="px-3 py-2 text-text">
+        <NTabsContent item={items[1]} className="px-3 py-2 text-text">
           Content 2
         </NTabsContent>
       </NTabs>
       <h1 className="text-text mb-3 mt-5 text-lg text-left">Full Width:</h1>
-      <NTabs isFull={true} tabs={tabs} selected={selected} setSelected={setSelected}>
-        <NTabsContent tab={tabs[0]} className="px-3 py-2 text-text">
+      <NTabs isFull={true} items={items} selected={selected} onChange={setSelected}>
+        <NTabsContent item={items[0]} className="px-3 py-2 text-text">
           Content 3
         </NTabsContent>
-        <NTabsContent tab={tabs[1]} className="px-3 py-2 text-text">
+        <NTabsContent otem={items[1]} className="px-3 py-2 text-text">
           Content 4
         </NTabsContent>
       </NTabs>

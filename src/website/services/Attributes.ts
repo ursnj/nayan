@@ -291,3 +291,18 @@ export const tableAttributes = [
   { name: 'columnDef', type: 'ColumnDef[]', default: 'Required', details: 'You can pass column definition to table.' },
   { name: 'data', type: 'Object[]', default: 'Required', details: 'You can pass data to table.' }
 ];
+
+export const tabsAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'items', type: 'string[]', default: 'Required', details: 'You can pass items for the tabs.' },
+  { name: 'isFull', type: 'boolean', default: 'false', details: 'You can pass isFull to occupy full width.' },
+  { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected tab.' },
+  { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when tabs changed.' },
+  { name: 'children', type: 'ReactNode', default: 'Required', details: 'You can pass tabs content as children.' }
+];
+
+export const tabsContentAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'item', type: 'string', default: 'Required', details: 'You can pass item for the tab content.' },
+  { name: 'children', type: 'ReactNode', default: 'Required', details: 'You can pass tabs content as children.' }
+];
