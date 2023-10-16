@@ -36,6 +36,7 @@ import Tooltip from './website/components/Tooltip';
 import Contributions from './website/contributions/Contributions';
 import Loading from './website/components/Loading';
 import Table from '@/website/components/Table';
+import Components from '@/website/components/Components';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -48,7 +49,7 @@ const App = () => {
           <Route path="/installation" element={<Installation />} />
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/components">
-            <Route index element={<Accordion />} />
+            <Route index element={<Components />} />
             <Route path="accordion" element={<Accordion />} />
             <Route path="alert" element={<Alert />} />
             <Route path="badge" element={<Badge />} />
