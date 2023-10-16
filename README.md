@@ -216,8 +216,8 @@ We welcome all contributions. You can submit any ideas as [Pull Requests](https:
 
 [comment]: <> (# Deployment)
 
-[comment]: <> (```docker build -t ursnj/nayanui:latest .```)
+[comment]: <> (`docker build -t ursnj/nayanui:latest .`)
 
-[comment]: <> (```docker push ursnj/nayanui:latest```)
+[comment]: <> (`docker push ursnj/nayanui:latest`)
 
-[comment]: <> (```docker run -d -p 7100:7100 ursnj/nayanui```)
+[comment]: <> (`docker run -d -p 7100:7100 ursnj/nayanui`)
