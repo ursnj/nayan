@@ -213,3 +213,11 @@ Open your browser and visit http://localhost:3000
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 We welcome all contributions. You can submit any ideas as [Pull Requests](https://github.com/ursnj/nayan/pulls) or as [GitHub Issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
+
+[comment]: <> (# Deployment)
+
+[comment]: <> (```docker build -t ursnj/nayanui:latest .```)
+
+[comment]: <> (```docker push ursnj/nayanui:latest```)
+
+[comment]: <> (```docker run -d -p 7100:7100 ursnj/nayanui```)
