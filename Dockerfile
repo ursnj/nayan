@@ -1,11 +1,11 @@
-FROM oven/bun:latest
+FROM node:18.18-alpine
 
 USER root
 WORKDIR /app
 COPY . .
-RUN bun install
-RUN bun run build:website
+RUN npm i --force
+RUN npm run build:website
 
 EXPOSE 7100
 
-CMD ["bun", "run", "preview"]
+CMD ["npm", "run", "preview"]
