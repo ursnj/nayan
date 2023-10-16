@@ -75,7 +75,7 @@ export async function createServer(root = process.cwd(), isProd = process.env.NO
         return res.redirect(301, context.url);
       }
 
-      const {helmet} = context;
+      const { helmet } = context;
       const metaData = `${helmet?.title?.toString()}${helmet?.meta?.toString()}${helmet?.link?.toString()}`;
 
       const html = template.replace(`<!--app-html-->`, appHtml).replace(`<!--app-meta-data-->`, metaData);
