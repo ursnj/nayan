@@ -75,7 +75,10 @@ export async function createServer(root = process.cwd(), isProd = process.env.NO
         return res.redirect(301, context.url);
       }
 
-      const html = template.replace(`<!--app-html-->`, appHtml);
+      const {helmet} = context;
+      const metaData = `${helmet?.title?.toString()}${helmet?.meta?.toString()}${helmet?.link?.toString()}`;
+
+      const html = template.replace(`<!--app-html-->`, appHtml).replace(`<!--app-meta-data-->`, metaData);
 
       res.status(200).set({ 'Content-Type': 'text/html' }).end(html);
     } catch (e) {

@@ -89,7 +89,7 @@ const Header = () => {
         </NSheet>
         <nav className="flex flex-row py-2.5 justify-between items-center">
           <Link to="/">
-            <img src="/nayan.png" className="d-inline-block align-top main-logo mr-6" alt="Surgy Logo" loading="lazy" width={50} height={50} />
+            <img src="/nayan.png" className="d-inline-block align-top main-logo mr-6" alt="Nayan UI Logo" loading="lazy" width={50} height={50} />
           </Link>
           <div className="block md:hidden p-2" onClick={() => setMenu(true)}>
             <AlignJustify className="w-6 h-6 text-text" />
