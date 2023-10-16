@@ -6,10 +6,12 @@ import SubHeader from '../helpers/SubHeader';
 import { loadingCode } from '../services/CodeBlocks';
 import Attributes from '@/website/helpers/Attributes';
 import { loadingAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Badge = () => {
   return (
     <Sidebar title="Loading">
+      <Meta title="Loading" />
       <div className="mb-5">Displays a loading icon with nice animation.</div>
 
       <SubHeader title="Demo">

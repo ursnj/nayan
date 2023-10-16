@@ -6,10 +6,12 @@ import { sliderCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { sliderAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Slider = () => {
   return (
     <Sidebar title="Slider">
+      <Meta title="Slider" />
       <div className="mb-5">An input where the user selects a value from within a given range.</div>
 
       <SubHeader title="Demo">

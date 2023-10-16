@@ -8,10 +8,12 @@ import { popoverCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { popoverAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Popover = () => {
   return (
     <Sidebar title="Popover">
+      <Meta title="Popover" />
       <div className="mb-5">Displays rich content in a portal, triggered by a button.</div>
 
       <SubHeader title="Demo">

@@ -8,6 +8,7 @@ import { radioGroupCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { radioGroupAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const items = [
   { value: 'startup', label: 'Startup' },
@@ -20,6 +21,7 @@ const RadioGroup = () => {
 
   return (
     <Sidebar title="Radio Group">
+      <Meta title="Radio Group" />
       <div className="mb-5">A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.</div>
 
       <SubHeader title="Demo">

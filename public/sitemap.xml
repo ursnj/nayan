@@ -9,7 +9,168 @@
 
 <url>
   <loc>https://nayanui.com/</loc>
-  <lastmod>2023-09-18T04:42:56+00:00</lastmod>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/installation</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/contributions</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/accordion</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/alert</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/badge</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/button</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/button-group</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/card</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/checkbox</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/combobox</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/confirm-alert</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/dialog</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/divider</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/infinite-scroll</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/input</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/link</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/loading</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/menu</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/popover</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/progress</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/radio-group</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/select</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/sheet</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/skeleton</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/slider</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/switch</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/table</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/tabs</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/textarea</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/toast</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://nayanui.com/components/tooltip</loc>
+  <lastmod>2023-10-16T10:21:30+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 
 

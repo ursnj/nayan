@@ -35,5 +35,5 @@ export const sidebarItems = [
   { title: 'Toast', link: '/components/toast', icon: Package },
   { title: 'Tooltip', link: '/components/tooltip', icon: Package },
   { title: 'More Guides', link: '/guides', isHeading: true },
-  { title: 'Contribution', link: '/contribution', icon: Package }
+  { title: 'Contributions', link: '/contributions', icon: Package }
 ];

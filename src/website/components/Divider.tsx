@@ -6,10 +6,12 @@ import { dividerCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { dividerAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Divider = () => {
   return (
     <Sidebar title="Divider">
+      <Meta title="Divider" />
       <div className="mb-5">Visually or semantically separates content.</div>
 
       <SubHeader title="Demo">

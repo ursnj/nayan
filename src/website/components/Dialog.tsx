@@ -8,12 +8,14 @@ import { dialogCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { dialogAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Dialog = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Sidebar title="Dialog">
+      <Meta title="Dialog" />
       <div className="mb-5">A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.</div>
 
       <SubHeader title="Demo">

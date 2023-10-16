@@ -6,10 +6,12 @@ import { skeletonCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { skeletonAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Skeleton = () => {
   return (
     <Sidebar title="Skeleton">
+      <Meta title="Skeleton" />
       <div className="mb-5">Use to show a placeholder while content is loading.</div>
 
       <SubHeader title="Demo">

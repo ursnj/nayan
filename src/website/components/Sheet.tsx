@@ -8,12 +8,14 @@ import { sheetCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { sheetAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Sheet = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Sidebar title="Sheet">
+      <Meta title="Sheet" />
       <div className="mb-5">Extends the Dialog component to display content that complements the main content of the screen.</div>
 
       <SubHeader title="Demo">

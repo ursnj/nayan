@@ -6,10 +6,12 @@ import { progressCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { progressAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Progress = () => {
   return (
     <Sidebar title="Progress">
+      <Meta title="Progress" />
       <div className="mb-5">Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</div>
 
       <SubHeader title="Demo">

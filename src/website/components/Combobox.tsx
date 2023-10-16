@@ -6,6 +6,7 @@ import { comboBoxCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { comboAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const items = [
   { value: 'startup', label: 'Startup' },
@@ -19,6 +20,7 @@ const Combobox = () => {
 
   return (
     <Sidebar title="Combobox">
+      <Meta title="Combobox" />
       <div className="mb-5">Autocomplete input and command palette with a list of suggestions.</div>
 
       <SubHeader title="Demo">

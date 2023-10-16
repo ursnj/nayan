@@ -6,10 +6,12 @@ import { linkifyCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { linkifyAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Linkify = () => {
   return (
     <Sidebar title="Linkify">
+      <Meta title="Linkify" />
       <div className="mb-5">A component to elivate links, phone numbers and fax.</div>
 
       <SubHeader title="Demo">

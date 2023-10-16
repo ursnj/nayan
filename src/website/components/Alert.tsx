@@ -7,10 +7,12 @@ import { alertCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { alertAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Alert = () => {
   return (
     <Sidebar title="Alert">
+      <Meta title="Alert" />
       <div className="mb-5">Displays a callout for user attention.</div>
 
       <SubHeader title="Demo">

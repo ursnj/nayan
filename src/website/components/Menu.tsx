@@ -11,10 +11,12 @@ import { menuCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { menuAttributes, menuItemAttributes, menuNestedAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Menu = () => {
   return (
     <Sidebar title="Menu">
+      <Meta title="Menu" />
       <div className="mb-5">Displays a menu to the user — such as a set of actions or functions — triggered by a button.</div>
 
       <SubHeader title="Demo">

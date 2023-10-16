@@ -2,10 +2,12 @@ import React from 'react';
 import Code from '../helpers/Code';
 import Sidebar from '../helpers/Sidebar';
 import { appCode, cssCode, installCode, tailwindCode } from '../services/CodeBlocks';
+import Meta from '@/website/helpers/Meta';
 
 const Installation = () => {
   return (
     <Sidebar title="Installation">
+      <Meta title="Installation" />
       <Code language="bash" code={installCode} />
       <div className="mb-5">Include module in `tailwind.config.js` to read tailwind classes, this will help in reusing same tailwind classes.</div>
       <Code code={tailwindCode} />

@@ -11,7 +11,7 @@ export const NAccordion = (props: Props) => {
   const { type = AccordionTypes.SINGLE, items, className = '' } = props;
 
   return (
-    <Accordion type={type} collapsible={true} className="w-full">
+    <Accordion type={type} className="w-full">
       {items.map((item, index) => (
         <AccordionItem key={index} value={`item-${index}`} className={`nyn-accordion border-0 border-b border-border ${className}`}>
           <AccordionTrigger className="nyn-accordion-title text-text hover:no-underline">{item.title}</AccordionTrigger>

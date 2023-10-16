@@ -6,10 +6,12 @@ import { linkCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { linkAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Link = () => {
   return (
     <Sidebar title="Link">
+      <Meta title="Link" />
       <div className="mb-5">A link to show with all of customizations.</div>
 
       <SubHeader title="Demo">

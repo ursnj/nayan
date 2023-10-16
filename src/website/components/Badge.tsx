@@ -7,10 +7,12 @@ import { badgeCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { badgeAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const Badge = () => {
   return (
     <Sidebar title="Badge">
+      <Meta title="Badge" />
       <div className="mb-5">Displays a badge or a component that looks like a badge.</div>
 
       <SubHeader title="Demo">

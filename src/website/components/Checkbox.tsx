@@ -7,12 +7,14 @@ import { checkBoxCode } from '../services/CodeBlocks';
 import Attributes from '@/website/helpers/Attributes';
 import { checkboxAttributes } from '@/website/services/Attributes';
 import SubHeader from '@/website/helpers/SubHeader';
+import Meta from '@/website/helpers/Meta';
 
 const Checkbox = () => {
   const [checked, setChecked] = useState(true);
 
   return (
     <Sidebar title="Checkbox">
+      <Meta title="Checkbox" />
       <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
 
       <SubHeader title="Demo">

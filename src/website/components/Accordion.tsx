@@ -7,6 +7,7 @@ import { accordionCode } from '../services/CodeBlocks';
 import SubHeader from '@/website/helpers/SubHeader';
 import Attributes from '@/website/helpers/Attributes';
 import { accordionAttributes } from '@/website/services/Attributes';
+import Meta from '@/website/helpers/Meta';
 
 const items = [
   { title: 'Heading 1', message: 'Description 1' },
@@ -16,6 +17,7 @@ const items = [
 const Accordion = () => {
   return (
     <Sidebar title="Accordion">
+      <Meta title="Accordion" />
       <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
 
       <SubHeader title="Demo">
