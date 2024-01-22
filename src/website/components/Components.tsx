@@ -4,10 +4,12 @@ import { sidebarItems } from '../services/Utils';
 import Sidebar from '@/website/helpers/Sidebar';
 import { NCard } from '@/components/NCard';
 import { Package } from 'lucide-react';
+import Meta from '@/website/helpers/Meta';
 
 const Components = () => {
   return (
     <Sidebar title="Components">
+      <Meta title="Components" />
       <div className="mb-5 leading-relaxed">
         Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return
         HTML.
