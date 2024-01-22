@@ -11,9 +11,9 @@ const Banner = () => {
           <div className="flex flex-col justify-center md:p-0 py-5 px-3">
             <div className="text-3xl mb-5 text">React Component Library</div>
             <div className="text-base leading-loose mb-5 text">
-              Nayan UI provides React component library based on Tailwind CSS and @shadcn/ui. This library is a collection of pre-designed and
-              pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces
-              for your web application.
+              Nayan UI provides React component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built
+              React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web
+              application.
             </div>
             <div className="p-0">
               <Link to="/components" className="mr-3">
