@@ -71,6 +71,13 @@ export const sidebarItems = [
     icon: Package,
     isComponent: true
   },
+  {
+    title: 'Input Hook Form',
+    description: 'Displays a form input field or a component that looks like an input field uses react-hook-form.',
+    link: '/components/input-hook-form',
+    icon: Package,
+    isComponent: true
+  },
   { title: 'Link', description: 'A link to show with all of customizations.', link: '/components/link', icon: Package, isComponent: true },
   {
     title: 'Linkify',

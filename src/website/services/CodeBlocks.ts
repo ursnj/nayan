@@ -383,6 +383,35 @@ const Input = () => {
 
 export default Input;`;
 
+export const inputHookCode = `import { NButton, NFormInput } from 'nayan';
+import { useForm } from 'react-hook-form';
+
+const FormInput = () => {
+  const { control, handleSubmit, formState: { errors },} = useForm({
+    defaultValues: {
+      email: "niranjan.devasani@gmail.com"
+    },
+  });
+
+  return (
+    <form onSubmit={handleSubmit(onSubmit)}>
+      <NFormInput
+        control={control}
+        errors={errors}
+        name="email"
+        id="in1"
+        type="email"
+        label="Email"
+        placeholder="Enter email"
+        className="mb-3"
+      />
+      <NButton type="submit">Submit</NButton>
+    </form>
+  );
+};
+
+export default FormInput;`;
+
 export const linkCode = `import { NLink } from 'nayan';
 
 const Link = () => {

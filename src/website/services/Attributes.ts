@@ -185,6 +185,19 @@ export const inputAttributes = [
   { name: 'onChange', type: '(value: string | number) => void', default: 'Required', details: 'You can get callback when input value changed.' }
 ];
 
+export const inputHookAttributes = [
+  { name: 'control', type: 'react-hook-form control', default: "' '", details: 'React hook form control.' },
+  { name: 'errors', type: 'react-hook-form errors', default: "' '", details: 'React hook form errors.' },
+  { name: 'rules', type: 'react-hook-form rules', default: "' '", details: 'React hook form rules.' },
+  { name: 'name', type: 'string', default: 'form-input', details: 'You can pass name to name the changed value.' },
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'id', type: 'string', default: 'input', details: 'You can pass id to create unique identifier.' },
+  { name: 'label', type: 'string', default: "' '", details: 'You can pass label of the input.' },
+  { name: 'placeholder', type: 'string', default: "' '", details: 'You can pass placeholder of the input.' },
+  { name: 'type', type: 'text | email | number | date ..etc', default: 'text', details: 'You can pass type of the input.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default checkbox state.' }
+];
+
 export const linkAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass link content as children.' },

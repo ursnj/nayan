@@ -37,6 +37,7 @@ import Contributions from './website/contributions/Contributions';
 import Loading from './website/components/Loading';
 import Table from '@/website/components/Table';
 import Components from '@/website/components/Components';
+import FormInput from '@/website/components/FormInput';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -63,6 +64,7 @@ const App = () => {
             <Route path="divider" element={<Divider />} />
             <Route path="infinite-scroll" element={<InfiniteScroll />} />
             <Route path="input" element={<Input />} />
+            <Route path="input-hook-form" element={<FormInput />} />
             <Route path="link" element={<Link />} />
             <Route path="linkify" element={<Linkify />} />
             <Route path="loading" element={<Loading />} />
