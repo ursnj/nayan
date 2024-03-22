@@ -5,7 +5,7 @@
 
 <div align="center">
 
-Nayan UI provides React component library based on Tailwind CSS and @shadcn/ui. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web application.
+Nayan UI provides React component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for your web applications.
 
 [![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]
 
@@ -73,11 +73,11 @@ module.exports = {
 Add library styles to `index.css`, and update theme color variables accordingly for both light and dark modes.
 
 ```css
+@import 'node_modules/nayan/dist/styles.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import 'node_modules/nayan/dist/styles.css';
 
 @layer base {
   :root {
