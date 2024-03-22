@@ -1,5 +1,6 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { AccordionListItem, AccordionTypes } from '@/components/Types';
+import './NStyles.css';
 
 interface Props {
   className?: string;

@@ -8,14 +8,14 @@ import Attributes from '@/website/helpers/Attributes';
 import { loadingAttributes } from '@/website/services/Attributes';
 import Meta from '@/website/helpers/Meta';
 
-const Badge = () => {
+const Loading = () => {
   return (
     <Sidebar title="Loading">
       <Meta title="Loading" />
       <div className="mb-5">Displays a loading icon with nice animation.</div>
 
       <SubHeader title="Demo">
-        <NLoading className="text-[6px] text-red-500" />
+        <NLoading className="text-[6px] text-primary" />
       </SubHeader>
 
       <Attributes data={loadingAttributes} />
@@ -27,4 +27,4 @@ const Badge = () => {
   );
 };
 
-export default Badge;
+export default Loading;
