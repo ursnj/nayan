@@ -1,6 +1,7 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { ReactNode } from 'react';
 import { DialogSize } from './Types';
+import { cn } from '@/lib/utils';
 
 const sizeMapping = {
   [DialogSize.XS]: 'max-w-sm',
@@ -14,21 +15,24 @@ interface Props {
   title: string;
   size?: DialogSize;
   className?: string;
+  titleClassName?: string;
+  headerClassName?: string;
+  contentClassName?: string;
   children: ReactNode;
   onClose: () => void;
 }
 
 export const NDialog = (props: Props) => {
-  const { isOpen, title, children, size = DialogSize.SM, className = '' } = props;
+  const { isOpen, title, children, size = DialogSize.SM, className = '', headerClassName = '', titleClassName = '', contentClassName = '' } = props;
 
   return (
     <Dialog open={isOpen} onOpenChange={props.onClose}>
       <DialogContent
-        className={`nyn-dialog p-0 gap-0 border border-border bg-card text-white rounded overflow-hidden ${sizeMapping[size]} ${className}`}>
-        <DialogHeader className="nyn-dialog-header px-3 py-2.5 bg-primary text-white">
-          <DialogTitle className="nyn-dialog-title text-base font-normal">{title}</DialogTitle>
+        className={cn(`nyn-dialog p-0 gap-0 border border-border bg-card text-white rounded overflow-hidden ${sizeMapping[size]} ${className}`)}>
+        <DialogHeader className={cn(`nyn-dialog-header px-3 py-2.5 bg-primary text-white ${headerClassName}`)}>
+          <DialogTitle className={cn(`nyn-dialog-title text-base font-normal ${titleClassName}`)}>{title}</DialogTitle>
         </DialogHeader>
-        <div className="nyn-dialog-content text-text h-[calc(100vh_-_140px)] sm:h-auto sm:min-h-[350px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto">
+        <div className={cn(`nyn-dialog-content text-text h-[calc(100vh_-_140px)] sm:h-auto sm:min-h-[350px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto ${contentClassName}`)}>
           {children}
         </div>
       </DialogContent>

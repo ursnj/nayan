@@ -8,12 +8,17 @@ import {
   AlertDialogHeader,
   AlertDialogTitle
 } from '@/components/ui/alert-dialog';
+import { cn } from '@/lib/utils';
 
 interface Props {
   isOpen: boolean;
   message: string;
   title?: string;
   className?: string;
+  titleClassName?: string;
+  messageClassName?: string;
+  cancelClassName?: string;
+  confirmClassName?: string;
   confirmText?: string;
   cancelText?: string;
   onResult: (result: boolean) => void;
@@ -21,20 +26,20 @@ interface Props {
 }
 
 export const NConfirmAlert = (props: Props) => {
-  const { isOpen, title = 'Are you absolutely sure?', message, className = '', confirmText = 'Confirm', cancelText = 'Cancel' } = props;
+  const { isOpen, title = 'Are you absolutely sure?', message, className = '', titleClassName = '', messageClassName = '', confirmClassName = '', cancelClassName = '', confirmText = 'Confirm', cancelText = 'Cancel' } = props;
 
   return (
     <AlertDialog open={isOpen} onOpenChange={props.onClose}>
-      <AlertDialogContent className={`nyn-confirm-alert border border-border bg-card p-3 ${className}`}>
+      <AlertDialogContent className={cn(`nyn-confirm-alert border border-border bg-card p-3 ${className}`)}>
         <AlertDialogHeader>
-          <AlertDialogTitle className="nyn-confirm-alert-title text-text">{title}</AlertDialogTitle>
-          <AlertDialogDescription className="nyn-confirm-alert-message text-text">{message}</AlertDialogDescription>
+          <AlertDialogTitle className={cn(`nyn-confirm-alert-title text-text ${titleClassName}`)}>{title}</AlertDialogTitle>
+          <AlertDialogDescription className={cn(`nyn-confirm-alert-message text-text ${messageClassName}`)}>{message}</AlertDialogDescription>
         </AlertDialogHeader>
         <AlertDialogFooter>
-          <AlertDialogCancel className="text-text bg-card border border-border" onClick={() => props.onResult(false)}>
+          <AlertDialogCancel className={cn(`text-text bg-card border border-border ${cancelClassName}`)} onClick={() => props.onResult(false)}>
             {cancelText}
           </AlertDialogCancel>
-          <AlertDialogAction className="text-white bg-primary border border-primary" onClick={() => props.onResult(true)}>
+          <AlertDialogAction className={cn(`text-white bg-primary border border-primary ${confirmClassName}`)} onClick={() => props.onResult(true)}>
             {confirmText}
           </AlertDialogAction>
         </AlertDialogFooter>

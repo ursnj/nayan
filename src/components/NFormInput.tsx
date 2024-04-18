@@ -1,6 +1,7 @@
 import { Input, InputProps } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Controller } from 'react-hook-form';
+import { cn } from '@/lib/utils';
 
 interface Props extends InputProps {
   id?: string;
@@ -8,6 +9,8 @@ interface Props extends InputProps {
   label?: string;
   placeholder?: string;
   className?: string;
+  labelClassName?: string;
+  inputClassName?: string;
   control: any;
   rules?: any;
   name: string;
@@ -15,7 +18,7 @@ interface Props extends InputProps {
 }
 
 export const NFormInput = (props: Props) => {
-  const { control, rules, errors = {}, name, type = 'text', id = 'form-input', label = '', placeholder = '', className = '', ...remaining } = props;
+  const { control, rules, errors = {}, name, type = 'text', id = 'form-input', label = '', placeholder = '', className = '', labelClassName = '', inputClassName = '', ...remaining } = props;
   return (
     <Controller
       control={control}
@@ -27,9 +30,9 @@ export const NFormInput = (props: Props) => {
       //   }
       // } as any : null}
       render={({ field: { onChange, value, onBlur } }) => (
-        <div className={`nyn-form-input-block ${className}`}>
+        <div className={cn(`nyn-form-input-block ${className}`)}>
           {label && (
-            <Label htmlFor={id} className="nyn-form-input-label block pb-2 text-text">
+            <Label htmlFor={id} className={cn(`nyn-form-input-label block pb-2 text-text ${labelClassName}`)}>
               {label}
             </Label>
           )}
@@ -40,7 +43,7 @@ export const NFormInput = (props: Props) => {
             {...(value && { value })}
             {...(placeholder && { placeholder })}
             {...remaining}
-            className="nyn-form-input w-full rounded bg-card border border-border text-text px-3 py-2"
+            className={cn(`nyn-form-input w-full rounded bg-card border border-border text-text px-3 py-2 ${inputClassName}`)}
           />
         </div>
       )}

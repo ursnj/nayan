@@ -1,5 +1,6 @@
 import { Input, InputProps } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { cn } from '@/lib/utils';
 
 interface Props extends InputProps {
   id?: string;
@@ -27,9 +28,9 @@ export const NInput = (props: Props) => {
     ...remaining
   } = props;
   return (
-    <div className={`nyn-input-block ${className}`}>
+    <div className={cn(`nyn-input-block ${className}`)}>
       {label && (
-        <Label htmlFor={id} className={`nyn-input-label block pb-2 text-text ${labelClassName}`}>
+        <Label htmlFor={id} className={cn(`nyn-input-label block pb-2 text-text ${labelClassName}`)}>
           {label}
         </Label>
       )}
@@ -39,7 +40,7 @@ export const NInput = (props: Props) => {
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
         {...remaining}
-        className={`nyn-input w-full rounded bg-card border border-border text-text px-3 py-2 ${inputClassName}`}
+        className={cn(`nyn-input w-full rounded bg-card border border-border text-text px-3 py-2 ${inputClassName}`)}
       />
     </div>
   );
