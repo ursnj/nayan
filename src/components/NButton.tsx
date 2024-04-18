@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import { ButtonSize } from './Types';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 const sizeMapping = {
   [ButtonSize.XS]: 'px-2 py-0.5 text-xs',
@@ -33,11 +34,11 @@ export const NButton = (props: Props) => {
 
   return (
     <Button
-      className={`nyn-button ${size.toLowerCase()} ${
+      className={cn(`nyn-button ${size.toLowerCase()} ${
         isOutline
           ? 'text-primary hover:text-white bg-transparent hover:bg-primary-dark border border-primary'
           : 'text-white bg-primary border border-primary hover:bg-primary-dark'
-      } rounded h-auto transition duration-150 ease-in-out h-auto ${sizeMapping[size]} ${className}`}
+      } rounded h-auto transition duration-150 ease-in-out h-auto ${sizeMapping[size]} ${className}`)}
       onClick={onClick}
       {...remaining}>
       {!isLoading ? children : loadingText}
