@@ -18,7 +18,7 @@ const Tooltip = () => {
       </div>
 
       <SubHeader title="Demo">
-        <NTooltip message="This is sample tool tip! This is sample tool tip This is sample tool tip This is sample tool tip ">
+        <NTooltip message="This is sample tool tip!">
           <NButton>Hover to show Tooltip</NButton>
         </NTooltip>
       </SubHeader>

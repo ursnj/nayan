@@ -13,7 +13,7 @@ export const NTooltip = (props: Props) => {
   const { message, className = '', triggerClassName = '', children } = props;
   return (
     <Tooltip>
-      <TooltipTrigger className={triggerClassName} asChild>{children}</TooltipTrigger>
+      <TooltipTrigger className={triggerClassName}>{children}</TooltipTrigger>
       <TooltipContent className={cn(`nyn-tooltip text-text border border-border rounded bg-card p-2 max-w-xs ${className}`)}>{message}</TooltipContent>
     </Tooltip>
   );
