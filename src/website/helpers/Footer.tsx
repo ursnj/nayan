@@ -1,5 +1,4 @@
 import React from 'react';
-import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react';
 import { NDivider } from '@/components/NDivider';
 
 const Footer = () => {
