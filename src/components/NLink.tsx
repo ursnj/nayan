@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
 
 interface Props {
   children: ReactNode;
@@ -11,13 +12,13 @@ export const NLink = (props: Props) => {
   const { className = '', children, href = '' } = props;
   if (!!href) {
     return (
-      <a className={`nyn-link text-primary cursor-pointer ${className}`} href={href} target="_blank">
+      <a role="link" className={cn(`nyn-link text-primary cursor-pointer ${className}`)} href={href} target="_blank">
         {children}
       </a>
     );
   }
   return (
-    <span className={`nyn-link text-primary cursor-pointer ${className}`} onClick={props.onClick}>
+    <span role="link" className={cn(`nyn-link text-primary cursor-pointer ${className}`)} onClick={props.onClick}>
       {children}
     </span>
   );
