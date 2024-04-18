@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="text-sm text text-center">
             Designed by{' '}
             <a className="text-primary font-semibold no-underline" href="http://www.ursnj.com" target="_blank" aria-label="Niranjan Devasani">
-              Niranjan Devasani
+              UrsNJ
             </a>
           </div>
         </div>
