@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { SheetSize } from '@/components/Types';
+import { cn } from '@/lib/utils';
 
 const sizeMapping = {
   [SheetSize.XS]: 'md:max-w-sm',
@@ -14,21 +15,24 @@ interface Props {
   title: string;
   size?: SheetSize;
   className?: string;
+  headerClassName?: string;
+  titleClassName?: string;
+  contentClassName?: string;
   children: ReactNode;
   onCloseSheet: () => void;
 }
 
 export const NSheet = (props: Props) => {
-  const { isOpen, className = '', title, children, size = SheetSize.XS } = props;
+  const { isOpen, className = '', headerClassName = '', titleClassName = '', contentClassName = '', title, children, size = SheetSize.XS } = props;
 
   return (
     <Sheet open={isOpen} onOpenChange={props.onCloseSheet}>
       <SheetContent
-        className={`nyn-sheet p-0 gap-0 border-0 border-l border-border bg-card text-white overflow-hidden w-full ${sizeMapping[size]} ${className}`}>
-        <SheetHeader className="nyn-sheet-header px-3 py-2.5 bg-primary text-white">
-          <SheetTitle className="nyn-sheet-title text-base font-normal">{title}</SheetTitle>
+        className={cn(`nyn-sheet p-0 gap-0 border-0 border-l border-border bg-card text-white overflow-hidden w-full ${sizeMapping[size]} ${className}`)}>
+        <SheetHeader className={cn(`nyn-sheet-header px-3 py-2.5 bg-primary text-white ${headerClassName}`)}>
+          <SheetTitle className={cn(`nyn-sheet-title text-base font-normal ${titleClassName}`)}>{title}</SheetTitle>
         </SheetHeader>
-        <div className="nyn-sheet-content text-text h-[calc(100vh_-_44px)] overflow-y-auto">{children}</div>
+        <div className={cn(`nyn-sheet-content text-text h-[calc(100vh_-_44px)] overflow-y-auto ${contentClassName}`)}>{children}</div>
       </SheetContent>
     </Sheet>
   );

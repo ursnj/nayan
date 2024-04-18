@@ -1,4 +1,5 @@
 import { Slider } from '@/components/ui/slider';
+import { cn } from '@/lib/utils';
 
 interface Props {
   className?: string;
@@ -18,7 +19,7 @@ export const NSlider = (props: Props) => {
       step={step}
       disabled={disabled}
       onValueChange={value => props.onChange(value[0])}
-      className={`nyn-slider bg-border rounded  ${className}`}
+      className={cn(`nyn-slider bg-border rounded  ${className}`)}
     />
   );
 };

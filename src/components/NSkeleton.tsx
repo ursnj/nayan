@@ -1,4 +1,5 @@
 import { Skeleton } from '@/components/ui/skeleton';
+import { cn } from '@/lib/utils';
 
 interface Props {
   className?: string;
@@ -6,5 +7,5 @@ interface Props {
 
 export const NSkeleton = (props: Props) => {
   const { className = '' } = props;
-  return <Skeleton className={`nyn-skeleton bg-border ${className}`} />;
+  return <Skeleton className={cn(`nyn-skeleton bg-border ${className}`)} />;
 };
