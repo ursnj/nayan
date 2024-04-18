@@ -40,7 +40,7 @@ import Components from '@/website/components/Components';
 import FormInput from '@/website/components/FormInput';
 
 const App = () => {
-  const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
+  const [theme] = useLocalStorage('THEME', '');
 
   return (
     <NTheme theme={theme}>

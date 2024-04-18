@@ -64,7 +64,7 @@ export const appCode = `import { useState } from 'react';
 import { NTheme, THEMES, useLocalStorage } from 'nayan';
 
 const App = () => {
-  const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
+  const [theme, setTheme] = useLocalStorage('THEME', '');
 
   const toggleTheme = () => {
     setTheme(theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT);
