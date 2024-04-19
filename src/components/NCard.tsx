@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 interface Props {
   className?: string;
   children: ReactNode;
-  onClick: (e: any) => void;
+  onClick?: (e: any) => void;
 }
 
 export const NCard = (props: Props) => {
