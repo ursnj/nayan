@@ -31,7 +31,9 @@ export const NTabs = (props: Props) => {
             key={item}
             value={item}
             className={cn(
-              `h-full border-0 border-b-4 ${isActive(item) ? 'text-primary border-primary' + ' ' + activeItemClassName : 'text-text border-transparent' + ' ' + itemClassName}`
+              `h-full border-0 border-b-4 ${
+                isActive(item) ? 'text-primary border-primary' + ' ' + activeItemClassName : 'text-text border-transparent' + ' ' + itemClassName
+              }`
             )}>
             {item}
           </TabsTrigger>

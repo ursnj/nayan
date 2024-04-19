@@ -20,7 +20,6 @@ export const NSelectCreatable = (props: Props) => {
           {label}
         </Label>
       )}
-
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 
 describe('App', () => {
   test('NAccordion', () => {
-    render(<NAccordion items={[]} />)
+    render(<NAccordion items={[]} />);
     screen.debug();
   });
 });

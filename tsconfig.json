@@ -22,9 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "src/**/*.ts",
-    "node_modules/vitest/globals.d.ts"
-  ],
+  "include": ["src/**/*.ts", "node_modules/vitest/globals.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
