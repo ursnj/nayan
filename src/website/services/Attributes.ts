@@ -1,11 +1,17 @@
 export const accordionAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'itemClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'triggerClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'contentClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'type', type: 'AccordionTypes', default: 'AccordionTypes.SINGLE', details: 'You can pass type of the accordion.' },
   { name: 'items', type: 'AccordionListItem[]', default: 'Required', details: 'You can pass list of accordion items.' }
 ];
 
 export const alertAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'titleClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'closeClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'descriptionClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'type', type: 'AlertTypes', default: 'AlertTypes.DEFAULT', details: 'You can pass type of the alert.' },
   { name: 'title', type: 'string', default: 'Renders based on the type you passed.', details: 'You can pass alert title.' },
   { name: 'message', type: 'string', default: 'Required', details: 'You can pass alert message.' },
