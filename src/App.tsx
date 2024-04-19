@@ -58,7 +58,6 @@ const App = () => {
             <Route path="button-group" element={<ButtonGroup />} />
             <Route path="card" element={<Card />} />
             <Route path="checkbox" element={<Checkbox />} />
-            <Route path="combobox" element={<Combobox />} />
             <Route path="confirm-alert" element={<ConfirmAlert />} />
             <Route path="dialog" element={<Dialog />} />
             <Route path="divider" element={<Divider />} />

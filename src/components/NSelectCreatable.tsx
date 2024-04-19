@@ -1,6 +1,5 @@
 import { Label } from '@/components/ui/label';
 import { SelectBoxItem } from '@/components/Types';
-import Select from 'react-select';
 
 interface Props {
   selected: string;
@@ -12,7 +11,7 @@ interface Props {
   onChange: (selected: string) => void;
 }
 
-export const NSelect = (props: Props) => {
+export const NSelectCreatable = (props: Props) => {
   const { className = '', placeholder, title = '', label = '', items, selected } = props;
   return (
     <div className={`nyn-select-block ${className}`}>
@@ -21,7 +20,7 @@ export const NSelect = (props: Props) => {
           {label}
         </Label>
       )}
-      <Select />
+
     </div>
   );
 };
