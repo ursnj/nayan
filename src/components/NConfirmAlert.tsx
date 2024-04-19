@@ -26,7 +26,18 @@ interface Props {
 }
 
 export const NConfirmAlert = (props: Props) => {
-  const { isOpen, title = 'Are you absolutely sure?', message, className = '', titleClassName = '', messageClassName = '', confirmClassName = '', cancelClassName = '', confirmText = 'Confirm', cancelText = 'Cancel' } = props;
+  const {
+    isOpen,
+    title = 'Are you absolutely sure?',
+    message,
+    className = '',
+    titleClassName = '',
+    messageClassName = '',
+    confirmClassName = '',
+    cancelClassName = '',
+    confirmText = 'Confirm',
+    cancelText = 'Cancel'
+  } = props;
 
   return (
     <AlertDialog open={isOpen} onOpenChange={props.onClose}>

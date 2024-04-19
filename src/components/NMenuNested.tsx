@@ -16,7 +16,8 @@ export const NMenuNested = (props: Props) => {
   const { trigger, children, className = '', triggerClassName = '', size = Size.MD } = props;
   return (
     <DropdownMenuSub>
-      <DropdownMenuSubTrigger className={cn(`nyn-menu-nested-trigger text-muted hover:bg-border focus:bg-border active:bg-border py-2.5 ${triggerClassName}`)}>
+      <DropdownMenuSubTrigger
+        className={cn(`nyn-menu-nested-trigger text-muted hover:bg-border focus:bg-border active:bg-border py-2.5 ${triggerClassName}`)}>
         {trigger}
       </DropdownMenuSubTrigger>
       <DropdownMenuPortal>

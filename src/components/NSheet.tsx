@@ -28,7 +28,9 @@ export const NSheet = (props: Props) => {
   return (
     <Sheet open={isOpen} onOpenChange={props.onCloseSheet}>
       <SheetContent
-        className={cn(`nyn-sheet p-0 gap-0 border-0 border-l border-border bg-card text-white overflow-hidden w-full ${sizeMapping[size]} ${className}`)}>
+        className={cn(
+          `nyn-sheet p-0 gap-0 border-0 border-l border-border bg-card text-white overflow-hidden w-full ${sizeMapping[size]} ${className}`
+        )}>
         <SheetHeader className={cn(`nyn-sheet-header px-3 py-2.5 bg-primary text-white ${headerClassName}`)}>
           <SheetTitle className={cn(`nyn-sheet-title text-base font-normal ${titleClassName}`)}>{title}</SheetTitle>
         </SheetHeader>

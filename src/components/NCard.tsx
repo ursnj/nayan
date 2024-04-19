@@ -9,5 +9,9 @@ interface Props {
 
 export const NCard = (props: Props) => {
   const { className = '', children, onClick, ...remaining } = props;
-  return <div className={cn(`nyn-card border border-border bg-card rounded ${className}`)} onClick={onClick} onKeyDown={onClick} {...remaining}>{children}</div>;
+  return (
+    <div className={cn(`nyn-card border border-border bg-card rounded ${className}`)} onClick={onClick} onKeyDown={onClick} {...remaining}>
+      {children}
+    </div>
+  );
 };

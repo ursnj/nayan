@@ -27,7 +27,9 @@ export const NSwitch = (props: Props) => {
         checked={enabled}
         disabled={disabled}
         onCheckedChange={onChange}
-        className={cn(`nyn-switch data-[state=checked]:border-primary data-[state=unchecked]:border-border data-[state=checked]:bg-primary data-[state=unchecked]:bg-border ${switchClassName}`)}
+        className={cn(
+          `nyn-switch data-[state=checked]:border-primary data-[state=unchecked]:border-border data-[state=checked]:bg-primary data-[state=unchecked]:bg-border ${switchClassName}`
+        )}
       />
     </div>
   );

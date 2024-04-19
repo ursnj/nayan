@@ -18,7 +18,20 @@ interface Props extends InputProps {
 }
 
 export const NFormInput = (props: Props) => {
-  const { control, rules, errors = {}, name, type = 'text', id = 'form-input', label = '', placeholder = '', className = '', labelClassName = '', inputClassName = '', ...remaining } = props;
+  const {
+    control,
+    rules,
+    errors = {},
+    name,
+    type = 'text',
+    id = 'form-input',
+    label = '',
+    placeholder = '',
+    className = '',
+    labelClassName = '',
+    inputClassName = '',
+    ...remaining
+  } = props;
   return (
     <Controller
       control={control}

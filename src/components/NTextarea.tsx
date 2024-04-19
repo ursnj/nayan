@@ -14,7 +14,17 @@ interface Props extends TextareaProps {
 }
 
 export const NTextarea = (props: Props) => {
-  const { label = '', id = 'textarea', placeholder = '', className = '', labelClassName = '', textareaClassName = '', value = '', onChange, ...remaining } = props;
+  const {
+    label = '',
+    id = 'textarea',
+    placeholder = '',
+    className = '',
+    labelClassName = '',
+    textareaClassName = '',
+    value = '',
+    onChange,
+    ...remaining
+  } = props;
   return (
     <div className={cn(`nyn-textarea-block ${className}`)}>
       {label && (

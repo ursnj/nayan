@@ -23,7 +23,9 @@ export const NCheck = (props: Props) => {
         disabled={disabled}
         checked={checked}
         onCheckedChange={onChange}
-        className={cn(`nyn-check data-[state=checked]:bg-primary data-[state=checked]:text-white data-[state=unchecked]:border-muted data-[state=checked]:border-primary ${checkClassName}`)}
+        className={cn(
+          `nyn-check data-[state=checked]:bg-primary data-[state=checked]:text-white data-[state=unchecked]:border-muted data-[state=checked]:border-primary ${checkClassName}`
+        )}
       />
       <label htmlFor={id} className={cn(`-mt-1 peer-disabled:cursor-not-allowed peer-disabled:opacity-70 ${labelClassName}`)}>
         {children}

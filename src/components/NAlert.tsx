@@ -39,13 +39,24 @@ interface Props {
 }
 
 export const NAlert = (props: Props) => {
-  const { className = '', titleClassName = '', messageClassName = '', closeClassName = '', type, title = titleMapping[type], message, onClose } = props;
+  const {
+    className = '',
+    titleClassName = '',
+    messageClassName = '',
+    closeClassName = '',
+    type,
+    title = titleMapping[type],
+    message,
+    onClose
+  } = props;
 
   return (
     <Alert
-      className={cn(`nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${
-        classesMapping[type]
-      } ${className}`)}>
+      className={cn(
+        `nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${
+          classesMapping[type]
+        } ${className}`
+      )}>
       {iconsMapping[type]}
       <AlertTitle className={cn(`nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center ${titleClassName}`)}>
         {title}

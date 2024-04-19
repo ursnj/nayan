@@ -24,7 +24,17 @@ interface Props {
 }
 
 export const NMenu = (props: Props) => {
-  const { trigger, children, className = '', triggerClassName = '', titleClassName = '', title = '', size = MenuSize.MD, side = 'bottom', align = 'end' } = props;
+  const {
+    trigger,
+    children,
+    className = '',
+    triggerClassName = '',
+    titleClassName = '',
+    title = '',
+    size = MenuSize.MD,
+    side = 'bottom',
+    align = 'end'
+  } = props;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className={cn(`nyn-menu-trigger ${triggerClassName}`)}>{trigger}</DropdownMenuTrigger>

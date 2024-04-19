@@ -16,7 +16,17 @@ interface Props {
 }
 
 export const NRadioGroup = (props: Props) => {
-  const { items, selected, onChange, orientation = 'horizontal', className = '', itemClassName = '', radioClassName = '', labelClassName = '', disabled = false } = props;
+  const {
+    items,
+    selected,
+    onChange,
+    orientation = 'horizontal',
+    className = '',
+    itemClassName = '',
+    radioClassName = '',
+    labelClassName = '',
+    disabled = false
+  } = props;
 
   return (
     <RadioGroup

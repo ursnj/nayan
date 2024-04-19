@@ -32,7 +32,10 @@ export const NDialog = (props: Props) => {
         <DialogHeader className={cn(`nyn-dialog-header px-3 py-2.5 bg-primary text-white ${headerClassName}`)}>
           <DialogTitle className={cn(`nyn-dialog-title text-base font-normal ${titleClassName}`)}>{title}</DialogTitle>
         </DialogHeader>
-        <div className={cn(`nyn-dialog-content text-text h-[calc(100vh_-_140px)] sm:h-auto sm:min-h-[350px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto ${contentClassName}`)}>
+        <div
+          className={cn(
+            `nyn-dialog-content text-text h-[calc(100vh_-_140px)] sm:h-auto sm:min-h-[350px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto ${contentClassName}`
+          )}>
           {children}
         </div>
       </DialogContent>

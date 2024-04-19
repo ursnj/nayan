@@ -17,7 +17,19 @@ interface Props {
 }
 
 export const NTable = (props: Props) => {
-  const { columnDef, caption = '', data, className = '', captionClassName = '', headerClassName = '', headerRowClassName = '', headerCellClassName = '', bodyClassName = '', bodyRowClassName = '', bodyCellClassName = '' } = props;
+  const {
+    columnDef,
+    caption = '',
+    data,
+    className = '',
+    captionClassName = '',
+    headerClassName = '',
+    headerRowClassName = '',
+    headerCellClassName = '',
+    bodyClassName = '',
+    bodyRowClassName = '',
+    bodyCellClassName = ''
+  } = props;
 
   return (
     <Table className={cn(`border border-border bg-card rounded ${className}`)}>

@@ -21,14 +21,18 @@ export const NTabs = (props: Props) => {
   return (
     <Tabs defaultValue={selected} value={selected} onValueChange={props.onChange} className="w-full">
       <TabsList
-        className={cn(`nyn-tabs bg-transparent border-0 border-b border-border  p-0 rounded-none ${
-          isFull ? 'grid grid-flow-col justify-stretch' : 'flex flex-row justify-start'
-        } ${className}`)}>
+        className={cn(
+          `nyn-tabs bg-transparent border-0 border-b border-border  p-0 rounded-none ${
+            isFull ? 'grid grid-flow-col justify-stretch' : 'flex flex-row justify-start'
+          } ${className}`
+        )}>
         {items.map((item: string) => (
           <TabsTrigger
             key={item}
             value={item}
-            className={cn(`h-full border-0 border-b-4 ${isActive(item) ? 'text-primary border-primary' + ' ' + activeItemClassName : 'text-text border-transparent' + ' ' + itemClassName}`)}>
+            className={cn(
+              `h-full border-0 border-b-4 ${isActive(item) ? 'text-primary border-primary' + ' ' + activeItemClassName : 'text-text border-transparent' + ' ' + itemClassName}`
+            )}>
             {item}
           </TabsTrigger>
         ))}
