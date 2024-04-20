@@ -22,7 +22,20 @@ const Select = () => {
       <Meta title="Select" />
       <div className="mb-5">Displays a list of options for the user to pick from—triggered by a button.</div>
 
-      <SubHeader title="Demo">
+      <SubHeader title="Select Demo">
+        <NSelect
+          isMulti={false}
+          placeholder="Select something..."
+          isClearable={true}
+          isSearchable={true}
+          isDisabled={false}
+          value={selected}
+          options={items}
+          onChangeOptions={values => setSelected(values)}
+        />
+      </SubHeader>
+
+      <SubHeader title="Combobox Demo">
         <NSelect
           isMulti={true}
           placeholder="Select something..."
@@ -31,6 +44,21 @@ const Select = () => {
           isDisabled={false}
           value={selected}
           options={items}
+          onChangeOptions={values => setSelected(values)}
+        />
+      </SubHeader>
+
+      <SubHeader title="Creatable Select Demo">
+        <NSelect
+          isMulti={false}
+          isCreatable={true}
+          placeholder="Select something..."
+          isClearable={true}
+          isSearchable={true}
+          isDisabled={false}
+          value={selected}
+          options={items}
+          onCreateOptions={value => console.log(value)}
           onChangeOptions={values => setSelected(values)}
         />
       </SubHeader>

@@ -1,6 +1,7 @@
 import { Label } from '@/components/ui/label';
 import { ReactSelectOption } from '@/components/Types';
 import Select, { ActionMeta, OnChangeValue } from 'react-select';
+import CreatableSelect from 'react-select/creatable';
 import { cn } from '../lib/utils';
 import { reactSelectCustomClassNames, reactSelectTheme } from './Utils';
 
@@ -9,6 +10,7 @@ interface Props {
   label?: string;
   placeholder?: string;
   isLoading?: boolean;
+  isCreatable?: boolean;
   isClearable?: boolean;
   isSearchable?: boolean;
   isDisabled?: boolean;
@@ -17,7 +19,8 @@ interface Props {
   selectClassName?: string;
   value: ReactSelectOption | ReactSelectOption[] | any;
   options: ReactSelectOption[] | any;
-  onChangeOptions: (values: ReactSelectOption[]) => void;
+  onCreateOptions?: (value: string) => void;
+  onChangeOptions?: (values: ReactSelectOption[]) => void;
 }
 
 export const NSelect = (props: Props) => {
@@ -28,6 +31,7 @@ export const NSelect = (props: Props) => {
     label,
     isMulti = false,
     isLoading = false,
+    isCreatable = false,
     placeholder = 'Select...',
     isSearchable = false,
     isClearable = false,
@@ -41,6 +45,10 @@ export const NSelect = (props: Props) => {
     props.onChangeOptions(values as any);
   };
 
+  const handleCreate = (value: string) => {
+    props.onCreateOptions(value);
+  };
+
   return (
     <div className={cn(`nyn-select-block mb-3 ${className}`)}>
       {label && (
@@ -48,22 +56,43 @@ export const NSelect = (props: Props) => {
           {label}
         </Label>
       )}
-      <Select
-        isMulti={isMulti as any}
-        isLoading={isLoading}
-        isDisabled={isDisabled}
-        isClearable={isClearable}
-        isSearchable={isSearchable}
-        className={cn(`nyn-select ${selectClassName}`)}
-        placeholder={placeholder}
-        classNamePrefix="nyn-select"
-        value={value}
-        options={options}
-        classNames={reactSelectCustomClassNames}
-        onChange={handleChange}
-        theme={reactSelectTheme}
-        menuPortalTarget={d.body}
-      />
+      {!isCreatable && (
+        <Select
+          isMulti={isMulti as any}
+          isLoading={isLoading}
+          isDisabled={isDisabled}
+          isClearable={isClearable}
+          isSearchable={isSearchable}
+          className={cn(`nyn-select ${selectClassName}`)}
+          placeholder={placeholder}
+          classNamePrefix="nyn-select"
+          value={value}
+          options={options}
+          classNames={reactSelectCustomClassNames}
+          onChange={handleChange}
+          theme={reactSelectTheme}
+          menuPortalTarget={d.body}
+        />
+      )}
+      {!!isCreatable && (
+        <CreatableSelect
+          isMulti={isMulti as any}
+          isLoading={isLoading}
+          isDisabled={isDisabled}
+          isClearable={isClearable}
+          isSearchable={isSearchable}
+          className={cn(`nyn-select ${selectClassName}`)}
+          placeholder={placeholder}
+          classNamePrefix="nyn-select"
+          value={value}
+          options={options}
+          classNames={reactSelectCustomClassNames}
+          onCreateOption={handleCreate}
+          onChange={handleChange}
+          theme={reactSelectTheme}
+          menuPortalTarget={d.body}
+        />
+      )}
     </div>
   );
 };
