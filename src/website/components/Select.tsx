@@ -15,7 +15,7 @@ const items = [
 ];
 
 const Select = () => {
-  const [selected, setSelected] = useState(items[0].value);
+  const [selected, setSelected] = useState(items[0]);
 
   return (
     <Sidebar title="Select">
@@ -23,7 +23,16 @@ const Select = () => {
       <div className="mb-5">Displays a list of options for the user to pick from—triggered by a button.</div>
 
       <SubHeader title="Demo">
-        <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
+        <NSelect
+          isMulti={true}
+          placeholder="Select something..."
+          isClearable={true}
+          isSearchable={true}
+          isDisabled={false}
+          value={selected}
+          options={items}
+          onChangeOptions={values => setSelected(values)}
+        />
       </SubHeader>
 
       <Attributes data={selectAttributes} />
