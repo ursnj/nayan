@@ -50,7 +50,7 @@ const Select = () => {
 
       <SubHeader title="Creatable Select Demo">
         <NSelect
-          isMulti={false}
+          isMulti={true}
           isCreatable={true}
           placeholder="Select something..."
           isClearable={true}
