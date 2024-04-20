@@ -65,6 +65,10 @@ const Select = () => {
 
       <Attributes data={selectAttributes} />
 
+      <div className="text-primary mb-5">
+        Note: this component is created on top of react-select library, for more customizations you can directly use it.
+      </div>
+
       <SubHeader title="Usage">
         <Code code={selectCode} />
       </SubHeader>

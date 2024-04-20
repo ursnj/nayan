@@ -168,6 +168,6 @@ export const reactSelectTheme = (theme: any) => ({
 });
 
 export const reactSelectCustomClassNames = {
-  control: state => 'flex h-10 w-full rounded bg-card border border-border focus:border-border text-text',
-  menu: state => 'w-full rounded bg-card border border-border focus:border-border'
+  control: (state: any) => 'flex h-10 w-full rounded bg-card border border-border focus:border-border text-text',
+  menu: (state: any) => 'w-full rounded bg-card border border-border focus:border-border'
 } as any;

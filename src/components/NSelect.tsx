@@ -1,6 +1,6 @@
 import { Label } from '@/components/ui/label';
 import { ReactSelectOption } from '@/components/Types';
-import Select, { ActionMeta, OnChangeValue } from 'react-select';
+import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 import { cn } from '../lib/utils';
 import { reactSelectCustomClassNames, reactSelectTheme } from './Utils';
@@ -41,12 +41,12 @@ export const NSelect = (props: Props) => {
     selectClassName = ''
   } = props;
 
-  const handleChange = (values: OnChangeValue<ReactSelectOption, true>, actionMeta: ActionMeta<ReactSelectOption>) => {
-    props.onChangeOptions(values as any);
+  const handleChange = (values: any[]) => {
+    props.onChangeOptions && props.onChangeOptions(values as any);
   };
 
   const handleCreate = (value: string) => {
-    props.onCreateOptions(value);
+    props.onCreateOptions && props.onCreateOptions(value);
   };
 
   return (
