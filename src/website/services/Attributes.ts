@@ -11,7 +11,7 @@ export const alertAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'titleClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'closeClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
-  { name: 'descriptionClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'messageClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'type', type: 'AlertTypes', default: 'AlertTypes.DEFAULT', details: 'You can pass type of the alert.' },
   { name: 'title', type: 'string', default: 'Renders based on the type you passed.', details: 'You can pass alert title.' },
   { name: 'message', type: 'string', default: 'Required', details: 'You can pass alert message.' },
@@ -36,6 +36,7 @@ export const buttonAttributes = [
 
 export const buttonGroupAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'buttonClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'items', type: 'string[]', default: 'Required', details: 'You can pass items for the button group.' },
   { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
   { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when button group changed.' }
@@ -43,11 +44,14 @@ export const buttonGroupAttributes = [
 
 export const cardAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
-  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass card content as children.' }
+  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass card content as children.' },
+  { name: 'onClick', type: '(e: any) => void', default: 'Required', details: 'You can get callback when button clicked.' }
 ];
 
 export const checkboxAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'labelClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'checkClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'id', type: 'string', default: 'check', details: 'You can pass id to create unique identifier.' },
   { name: 'checked', type: 'boolean', default: 'Required', details: 'You can pass checked to set default checkbox state.' },
   { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disabled to set default checkbox state.' },
@@ -55,18 +59,12 @@ export const checkboxAttributes = [
   { name: 'onChange', type: '(checked: boolean) => void', default: 'Required', details: 'You can get callback when checkbox state changed.' }
 ];
 
-export const comboAttributes = [
-  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
-  { name: 'label', type: 'string', default: "' '", details: 'You can pass label to show label for combobox.' },
-  { name: 'isOpen', type: 'boolean', default: 'false', details: 'You can pass isOpen to show / hide combobox.' },
-  { name: 'items', type: 'ComboBoxItem[]', default: 'Required', details: 'You can pass items for the combobox options.' },
-  { name: 'placeholder', type: 'string', default: 'Required', details: 'You can pass placeholder to show while searching.' },
-  { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
-  { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when button group changed.' }
-];
-
 export const confirmAlertAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'titleClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'messageClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'confirmClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'cancelClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'title', type: 'string', default: 'Are you absolutely sure?', details: 'You can pass title for confirm alert.' },
   { name: 'message', type: 'string', default: 'Required', details: 'You can pass message for confirm alert.' },
   { name: 'confirmText', type: 'string', default: 'Confirm', details: 'You can pass confirmText for confirm alert.' },
@@ -78,6 +76,9 @@ export const confirmAlertAttributes = [
 
 export const dialogAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'titleClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'headerClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'contentClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'title', type: 'string', default: 'Required', details: 'You can pass title for dialog.' },
   { name: 'size', type: 'DialogSize', default: 'DialogSize.MD', details: 'You can pass size of the dialog.' },
   { name: 'isOpen', type: 'boolean', default: 'false', details: 'You can pass isOpen to show / hide alert box.' },
@@ -182,6 +183,8 @@ export const infiniteScrollAttributes = [
 
 export const inputAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'labelClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'inputClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'id', type: 'string', default: 'input', details: 'You can pass id to create unique identifier.' },
   { name: 'label', type: 'string', default: "' '", details: 'You can pass label of the input.' },
   { name: 'placeholder', type: 'string', default: "' '", details: 'You can pass placeholder of the input.' },
@@ -192,11 +195,13 @@ export const inputAttributes = [
 ];
 
 export const inputHookAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'labelClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
+  { name: 'inputClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'control', type: 'react-hook-form control', default: "' '", details: 'React hook form control.' },
   { name: 'errors', type: 'react-hook-form errors', default: "' '", details: 'React hook form errors.' },
   { name: 'rules', type: 'react-hook-form rules', default: "' '", details: 'React hook form rules.' },
   { name: 'name', type: 'string', default: 'form-input', details: 'You can pass name to name the changed value.' },
-  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'id', type: 'string', default: 'input', details: 'You can pass id to create unique identifier.' },
   { name: 'label', type: 'string', default: "' '", details: 'You can pass label of the input.' },
   { name: 'placeholder', type: 'string', default: "' '", details: 'You can pass placeholder of the input.' },
@@ -212,6 +217,7 @@ export const linkAttributes = [
 ];
 
 export const linkifyAttributes = [
+  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass linkify content as children.' }
 ];
 

@@ -17,7 +17,7 @@ export const NCheck = (props: Props) => {
   const { className = '', checkClassName = '', labelClassName = '', id = 'check', children, checked, disabled = false, onChange } = props;
 
   return (
-    <div className={cn(`flex space-x-2 ${className}`)}>
+    <div className={cn(`flex space-x-2 mb-3 ${className}`)}>
       <Checkbox
         id={id}
         disabled={disabled}

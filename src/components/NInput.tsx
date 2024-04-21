@@ -28,7 +28,7 @@ export const NInput = (props: Props) => {
     ...remaining
   } = props;
   return (
-    <div className={cn(`nyn-input-block ${className}`)}>
+    <div className={cn(`nyn-input-block mb-3 ${className}`)}>
       {label && (
         <Label htmlFor={id} className={cn(`nyn-input-label block pb-2 text-text ${labelClassName}`)}>
           {label}
