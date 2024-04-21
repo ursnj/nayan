@@ -1,6 +1,6 @@
 import React from 'react';
-import { Facebook, Linkedin, Twitter, Youtube } from 'lucide-react';
 import { NDivider } from '@/components/NDivider';
+import { NLink } from '@/components/NLink';
 
 const Footer = () => {
   return (
@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="text-sm text text-center md:mb-0 mb-2">All Rights Reserved © {new Date().getFullYear()}</div>
           <div className="text-sm text text-center">
             Designed by{' '}
-            <a className="text-primary font-semibold no-underline" href="http://www.ursnj.com" target="_blank" aria-label="Niranjan Devasani">
-              Niranjan Devasani
-            </a>
+            <NLink className="font-semibold" href="http://www.ursnj.com" aria-label="Niranjan Devasani">
+              UrsNJ
+            </NLink>
           </div>
         </div>
       </div>

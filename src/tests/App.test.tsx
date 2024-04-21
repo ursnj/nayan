@@ -1,8 +1,9 @@
-import { render, fireEvent } from '@testing-library/react';
-import { vi } from 'vitest';
+import { NAccordion } from '@/components/NAccordion';
+import { render, screen } from '@testing-library/react';
 
 describe('App', () => {
-  test('NAlert', () => {
-    expect(true).toBe(true);
+  test('NAccordion', () => {
+    render(<NAccordion items={[]} />);
+    screen.debug();
   });
 });

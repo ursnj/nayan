@@ -151,3 +151,23 @@ export const debounce = (delay: number, callback: () => any, options: { atBegin?
   const { atBegin = false } = options || {};
   return throttle(delay, callback, { debounceMode: atBegin !== false });
 };
+
+export const reactSelectTheme = (theme: any) => ({
+  ...theme,
+  borderRadius: 4,
+  colors: {
+    ...theme.colors,
+    neutral0: 'var(--COLOR_BACKGROUND)',
+    neutral10: 'var(--COLOR_BORDER)',
+    neutral5: 'var(--COLOR_BACKGROUND)',
+    neutral20: 'var(--COLOR_BORDER)',
+    neutral80: 'var(--COLOR_TEXT)',
+    primary25: 'gray',
+    primary: 'var(--COLOR_PRIMARY)'
+  }
+});
+
+export const reactSelectCustomClassNames = {
+  control: (state: any) => 'flex h-10 w-full rounded bg-card border border-border focus:border-border text-text',
+  menu: (state: any) => 'w-full rounded bg-card border border-border focus:border-border'
+} as any;

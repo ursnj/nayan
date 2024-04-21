@@ -36,13 +36,6 @@ export const sidebarItems = [
     isComponent: true
   },
   {
-    title: 'Combo Box',
-    description: 'Autocomplete input and command palette with a list of suggestions.',
-    link: '/components/combobox',
-    icon: Package,
-    isComponent: true
-  },
-  {
     title: 'Confirm Alert',
     description: 'A modal dialog that interrupts the user with important content and expects a response.',
     link: '/components/confirm-alert',

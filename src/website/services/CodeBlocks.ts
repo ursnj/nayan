@@ -23,11 +23,11 @@ export const tailwindCode = `module.exports = {
   plugins: [require('tailwindcss-animate')]
 };`;
 
-export const cssCode = `@tailwind base;
+export const cssCode = `@import 'node_modules/nayan/dist/styles.css';
+
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import 'node_modules/nayan/dist/styles.css';
 
 @layer base {
   :root {
@@ -37,6 +37,7 @@ export const cssCode = `@tailwind base;
     --COLOR_BACKGROUND: #f5f5f5;
     --COLOR_CARD: #ffffff;
     --COLOR_TEXT: #050505;
+    --COLOR_MUTED: gray;
     --COLOR_BORDER: #d3d3d3;
     --COLOR_SHADOW: #d3d3d3;
     --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
@@ -49,6 +50,7 @@ export const cssCode = `@tailwind base;
     --COLOR_BACKGROUND: #1f1f1f;
     --COLOR_CARD: #303030;
     --COLOR_TEXT: #f5f5f5;
+    --COLOR_MUTED: gray;
     --COLOR_BORDER: #505050;
     --COLOR_SHADOW: #cbcbcb;
     --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
@@ -64,7 +66,7 @@ export const appCode = `import { useState } from 'react';
 import { NTheme, THEMES, useLocalStorage } from 'nayan';
 
 const App = () => {
-  const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
+  const [theme, setTheme] = useLocalStorage('THEME', '');
 
   const toggleTheme = () => {
     setTheme(theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT);
@@ -467,9 +469,20 @@ const items = [
 ];
 
 const Select = () => {
-  const [selected, setSelected] = useState(items[0].value);
+  const [selected, setSelected] = useState(items[0]);
   return (
-    <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
+    <NSelect
+      isMulti={true}
+      isCreatable={true}
+      placeholder="Select something..."
+      isClearable={true}
+      isSearchable={true}
+      isDisabled={false}
+      value={selected}
+      options={items}
+      onCreateOptions={value => console.log(value)}
+      onChangeOptions={values => setSelected(values)}
+    />
   );
 };
 

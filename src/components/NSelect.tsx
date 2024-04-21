@@ -1,41 +1,98 @@
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { SelectBoxItem } from '@/components/Types';
+import { ReactSelectOption } from '@/components/Types';
+import Select from 'react-select';
+import CreatableSelect from 'react-select/creatable';
+import { cn } from '../lib/utils';
+import { reactSelectCustomClassNames, reactSelectTheme } from './Utils';
 
 interface Props {
-  selected: string;
-  placeholder: string;
+  isMulti?: boolean;
   label?: string;
-  title?: string;
+  placeholder?: string;
+  isLoading?: boolean;
+  isCreatable?: boolean;
+  isClearable?: boolean;
+  isSearchable?: boolean;
+  isDisabled?: boolean;
   className?: string;
-  items: SelectBoxItem[];
-  onChange: (selected: string) => void;
+  labelClassName?: string;
+  selectClassName?: string;
+  value: ReactSelectOption | ReactSelectOption[] | any;
+  options: ReactSelectOption[] | any;
+  onCreateOptions?: (value: string) => void;
+  onChangeOptions?: (values: ReactSelectOption[]) => void;
 }
 
 export const NSelect = (props: Props) => {
-  const { className = '', placeholder, title = '', label = '', items, selected } = props;
+  const d: any = typeof document !== 'undefined' ? document : {};
+  const {
+    options,
+    value,
+    label,
+    isMulti = false,
+    isLoading = false,
+    isCreatable = false,
+    placeholder = 'Select...',
+    isSearchable = false,
+    isClearable = false,
+    isDisabled = false,
+    className = '',
+    labelClassName = '',
+    selectClassName = ''
+  } = props;
+
+  const handleChange = (values: any[]) => {
+    props.onChangeOptions && props.onChangeOptions(values as any);
+  };
+
+  const handleCreate = (value: string) => {
+    props.onCreateOptions && props.onCreateOptions(value);
+  };
+
   return (
-    <div className={`nyn-input-block ${className}`}>
+    <div className={cn(`nyn-select-block mb-3 ${className}`)}>
       {label && (
-        <Label htmlFor="select" className="nyn-input-label block pb-2 text-text">
+        <Label htmlFor="select" className={cn(`nyn-select-label block pb-2 text-text ${labelClassName}`)}>
           {label}
         </Label>
       )}
-      <Select defaultValue={selected} value={selected} onValueChange={props.onChange}>
-        <SelectTrigger className="text-text bg-card border border-border">
-          <SelectValue placeholder={placeholder} />
-        </SelectTrigger>
-        <SelectContent className="text-text bg-card border border-border">
-          <SelectGroup>
-            {title && <SelectLabel>{title}</SelectLabel>}
-            {items.map((item, index) => (
-              <SelectItem key={index} value={item.value}>
-                {item.label}
-              </SelectItem>
-            ))}
-          </SelectGroup>
-        </SelectContent>
-      </Select>
+      {!isCreatable && (
+        <Select
+          isMulti={isMulti as any}
+          isLoading={isLoading}
+          isDisabled={isDisabled}
+          isClearable={isClearable}
+          isSearchable={isSearchable}
+          className={cn(`nyn-select ${selectClassName}`)}
+          placeholder={placeholder}
+          classNamePrefix="nyn-select"
+          value={value}
+          options={options}
+          classNames={reactSelectCustomClassNames}
+          onChange={handleChange}
+          theme={reactSelectTheme}
+          menuPortalTarget={d.body}
+        />
+      )}
+      {!!isCreatable && (
+        <CreatableSelect
+          isMulti={isMulti as any}
+          isLoading={isLoading}
+          isDisabled={isDisabled}
+          isClearable={isClearable}
+          isSearchable={isSearchable}
+          className={cn(`nyn-select ${selectClassName}`)}
+          placeholder={placeholder}
+          classNamePrefix="nyn-select"
+          value={value}
+          options={options}
+          classNames={reactSelectCustomClassNames}
+          onCreateOption={handleCreate}
+          onChange={handleChange}
+          theme={reactSelectTheme}
+          menuPortalTarget={d.body}
+        />
+      )}
     </div>
   );
 };

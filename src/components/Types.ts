@@ -93,3 +93,8 @@ export interface ColumnDef {
   className?: string;
   component?: ReactNode;
 }
+
+export interface ReactSelectOption {
+  label: string;
+  value: string;
+}

@@ -1,6 +1,7 @@
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AlertTriangle, BadgeAlert, CheckCircle2, Info, X, XCircle } from 'lucide-react';
 import { AlertTypes } from './Types';
+import { cn } from '@/lib/utils';
 
 const iconsMapping = {
   [AlertTypes.DEFAULT]: <BadgeAlert className="h-4 w-4" />,
@@ -31,27 +32,41 @@ interface Props {
   message: string;
   title?: string;
   className?: string;
+  titleClassName?: string;
+  messageClassName?: string;
+  closeClassName?: string;
   onClose?: () => void;
 }
 
 export const NAlert = (props: Props) => {
-  const { className = '', type, title = titleMapping[type], message, onClose } = props;
+  const {
+    className = '',
+    titleClassName = '',
+    messageClassName = '',
+    closeClassName = '',
+    type,
+    title = titleMapping[type],
+    message,
+    onClose
+  } = props;
 
   return (
     <Alert
-      className={`nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${
-        classesMapping[type]
-      } ${className}`}>
+      className={cn(
+        `nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${
+          classesMapping[type]
+        } ${className}`
+      )}>
       {iconsMapping[type]}
-      <AlertTitle className="nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center">
+      <AlertTitle className={cn(`nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center ${titleClassName}`)}>
         {title}
         {onClose && (
-          <span className="nyn-alert-close" tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
+          <span className={cn(`nyn-alert-close${closeClassName}`)} tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
             <X className="w-4 h-4" />
           </span>
         )}
       </AlertTitle>
-      <AlertDescription className="nyn-alert-message">{message}</AlertDescription>
+      <AlertDescription className={cn(`nyn-alert-message ${messageClassName}`)}>{message}</AlertDescription>
     </Alert>
   );
 };

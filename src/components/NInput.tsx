@@ -1,5 +1,6 @@
 import { Input, InputProps } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { cn } from '@/lib/utils';
 
 interface Props extends InputProps {
   id?: string;
@@ -8,15 +9,28 @@ interface Props extends InputProps {
   value?: string;
   placeholder?: string;
   className?: string;
+  labelClassName?: string;
+  inputClassName?: string;
   onChange?: (val: any) => void;
 }
 
 export const NInput = (props: Props) => {
-  const { type = 'text', id = 'input', label = '', placeholder = '', className = '', value = '', onChange, ...remaining } = props;
+  const {
+    type = 'text',
+    id = 'input',
+    label = '',
+    placeholder = '',
+    className = '',
+    labelClassName = '',
+    inputClassName = '',
+    value = '',
+    onChange,
+    ...remaining
+  } = props;
   return (
-    <div className={`nyn-input-block ${className}`}>
+    <div className={cn(`nyn-input-block mb-3 ${className}`)}>
       {label && (
-        <Label htmlFor={id} className="nyn-input-label block pb-2 text-text">
+        <Label htmlFor={id} className={cn(`nyn-input-label block pb-2 text-text ${labelClassName}`)}>
           {label}
         </Label>
       )}
@@ -26,7 +40,7 @@ export const NInput = (props: Props) => {
         {...(placeholder && { placeholder })}
         {...(onChange && { onChange })}
         {...remaining}
-        className="nyn-input w-full rounded bg-card border border-border text-text px-3 py-2"
+        className={cn(`nyn-input w-full rounded bg-card border border-border text-text px-3 py-2 ${inputClassName}`)}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import React, { Component, ReactNode, CSSProperties } from 'react';
 import { ThresholdUnits, parseThreshold, throttle } from '@/components/Utils';
+import { cn } from '@/lib/utils';
 
 type Fn = () => any;
 
@@ -269,8 +270,8 @@ export class NInfiniteScroll extends Component<Props, State> {
       this.props.height || this._scrollableNode
         ? (event.target as HTMLElement)
         : document.documentElement.scrollTop
-        ? document.documentElement
-        : document.body;
+          ? document.documentElement
+          : document.body;
 
     // return immediately if the action has already been triggered,
     // prevents multiple triggers.
@@ -305,7 +306,7 @@ export class NInfiniteScroll extends Component<Props, State> {
     return (
       <div style={outerDivStyle} className="infinite-scroll-component__outerdiv">
         <div
-          className={`infinite-scroll-component ${this.props.className || ''}`}
+          className={cn(`infinite-scroll-component ${this.props.className || ''}`)}
           ref={(infScroll: HTMLDivElement) => (this._infScroll = infScroll)}
           style={style}>
           {this.props.pullDownToRefresh && (

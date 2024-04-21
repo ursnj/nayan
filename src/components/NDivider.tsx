@@ -1,4 +1,5 @@
 import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
 interface Props {
   orientation?: 'vertical' | 'horizontal' | undefined;
@@ -7,5 +8,5 @@ interface Props {
 
 export const NDivider = (props: Props) => {
   const { className = '', orientation = 'horizontal' } = props;
-  return <Separator orientation={orientation} className={`bg-border ${className}`} />;
+  return <Separator orientation={orientation as any} className={cn(`bg-border ${className}`)} />;
 };
