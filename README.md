@@ -5,7 +5,7 @@
 
 <div align="center">
 
-Nayan UI provides React component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for your web applications.
+Nayan UI provides React Reusable Components based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for your web applications.
 
 [![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]
 
