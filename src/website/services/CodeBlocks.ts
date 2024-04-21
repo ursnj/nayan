@@ -469,9 +469,20 @@ const items = [
 ];
 
 const Select = () => {
-  const [selected, setSelected] = useState(items[0].value);
+  const [selected, setSelected] = useState(items[0]);
   return (
-    <NSelect selected={selected} placeholder="Select Business" label="Business Type" title="Select Type" items={items} onChange={setSelected} />
+    <NSelect
+      isMulti={true}
+      isCreatable={true}
+      placeholder="Select something..."
+      isClearable={true}
+      isSearchable={true}
+      isDisabled={false}
+      value={selected}
+      options={items}
+      onCreateOptions={value => console.log(value)}
+      onChangeOptions={values => setSelected(values)}
+    />
   );
 };
 
