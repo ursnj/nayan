@@ -17,6 +17,10 @@ const items = [
 const Select = () => {
   const [selected, setSelected] = useState(items[0]);
 
+  const handleCreateOption = (value: string) => {
+    setSelected(prev => [...prev, { value, label: value }] as any);
+  };
+
   return (
     <Sidebar title="Select">
       <Meta title="Select" />
@@ -58,7 +62,7 @@ const Select = () => {
           isDisabled={false}
           value={selected}
           options={items}
-          onCreateOptions={value => console.log(value)}
+          onCreateOptions={handleCreateOption}
           onChangeOptions={values => setSelected(values)}
         />
       </SubHeader>
