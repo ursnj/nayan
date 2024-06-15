@@ -39,6 +39,7 @@ export const buttonGroupAttributes = [
   { name: 'buttonClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'items', type: 'string[]', default: 'Required', details: 'You can pass items for the button group.' },
   { name: 'selected', type: 'string', default: 'Required', details: 'You can pass default selected item.' },
+  { name: 'disabled', type: 'boolean', default: 'false', details: 'You can pass disable state to disable items.' },
   { name: 'onChange', type: '(selected: string) => void', default: 'Required', details: 'You can get callback when button group changed.' }
 ];
 

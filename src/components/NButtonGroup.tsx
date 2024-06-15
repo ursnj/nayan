@@ -6,17 +6,19 @@ interface Props {
   buttonClassName?: string;
   items: string[];
   selected: string;
+  disabled?: boolean;
   onChange: (selected: string) => void;
 }
 
 export const NButtonGroup = (props: Props) => {
-  const { className = '', buttonClassName = '', items, selected, onChange } = props;
+  const { className = '', buttonClassName = '', items, selected, disabled = false, onChange } = props;
   return (
     <div className={cn(`nyn-button-group rounded ${className}`)} role="group">
       {items.map(item => (
         <Button
           key={item}
           type="button"
+          disabled={disabled}
           onClick={() => onChange(item)}
           className={cn(
             `nyn-button-group-item ${

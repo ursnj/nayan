@@ -19,7 +19,7 @@ const ButtonGroup = () => {
       <div className="mb-5">Displays a group of buttons that looks like a button group.</div>
 
       <SubHeader title="Demo">
-        <NButtonGroup items={items} selected={selected} onChange={setSelected} />
+        <NButtonGroup disabled={false} items={items} selected={selected} onChange={setSelected} />
       </SubHeader>
 
       <Attributes data={buttonGroupAttributes} />
