@@ -28,7 +28,7 @@ export const NTextarea = (props: Props) => {
   return (
     <div className={cn(`nyn-textarea-block ${className}`)}>
       {label && (
-        <Label htmlFor={id} className={cn(`nyn-textarea-label block pb-2 text-muted ${labelClassName}`)}>
+        <Label htmlFor={id} className={cn(`nyn-textarea-label block pb-2 text-text ${labelClassName}`)}>
           {label}
         </Label>
       )}
