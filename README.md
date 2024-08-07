@@ -48,7 +48,6 @@ Include module in `tailwind.config.js` to read tailwind classes, this will help 
 
 ```js
 module.exports = {
-  important: true,
   darkMode: ['class'],
   content: ['./src/**/*.{ts,tsx}', './index.html', './node_modules/nayan/dist/index.es.js'], // Check node_modules path properly
   theme: {
@@ -74,7 +73,7 @@ module.exports = {
 Add library styles to `index.css`, and update theme color variables accordingly for both light and dark modes.
 
 ```css
-@import 'node_modules/nayan/dist/styles.css';
+@import 'nayan/dist/styles.css';
 
 @tailwind base;
 @tailwind components;

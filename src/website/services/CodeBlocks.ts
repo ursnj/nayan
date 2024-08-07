@@ -23,7 +23,7 @@ export const tailwindCode = `module.exports = {
   plugins: [require('tailwindcss-animate')]
 };`;
 
-export const cssCode = `@import 'node_modules/nayan/dist/styles.css';
+export const cssCode = `@import 'nayan/dist/styles.css';
 
 @tailwind base;
 @tailwind components;
