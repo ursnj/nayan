@@ -18,7 +18,11 @@ const Accordion = () => {
   return (
     <Sidebar title="Accordion">
       <Meta title="Accordion" />
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
+      <div className="mb-5">
+        An Accordion component is a UI element that allows users to expand and collapse sections of content. It is commonly used to organize
+        information in a compact and accessible manner, displaying only the headers by default and revealing the associated content when clicked. This
+        helps improve the readability of complex or lengthy information by reducing clutter on the page.
+      </div>
 
       <SubHeader title="Demo">
         <h1 className="text-text mb-3 text-lg">Single:</h1>

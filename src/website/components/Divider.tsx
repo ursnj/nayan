@@ -12,7 +12,12 @@ const Divider = () => {
   return (
     <Sidebar title="Divider">
       <Meta title="Divider" />
-      <div className="mb-5">Visually or semantically separates content.</div>
+      <div className="mb-5">
+        A Divider component is a simple UI element used to separate content within a layout, creating visual distinction between sections. It helps
+        enhance the organization and readability of the interface by providing clear boundaries between different elements, such as text blocks,
+        images, or other components. Dividers can be styled in various ways (solid, dashed, or dotted) and can vary in thickness and color to match
+        the overall design of the application.
+      </div>
 
       <SubHeader title="Demo">
         <h1 className="text-text mb-3 text-lg">Horizontal:</h1>

@@ -16,7 +16,11 @@ const ButtonGroup = () => {
   return (
     <Sidebar title="Button Group">
       <Meta title="Button Group" />
-      <div className="mb-5">Displays a group of buttons that looks like a button group.</div>
+      <div className="mb-5">
+        A Button Group component is a UI element that groups multiple buttons together, allowing users to select from a set of related actions or
+        options. It helps organize buttons in a compact, cohesive layout, typically displayed in a horizontal or vertical row. Button Groups are
+        useful for actions that are closely related or mutually exclusive, providing a clean and structured way to present multiple controls.
+      </div>
 
       <SubHeader title="Demo">
         <NButtonGroup disabled={false} items={items} selected={selected} onChange={setSelected} />

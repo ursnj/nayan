@@ -13,7 +13,11 @@ const Badge = () => {
   return (
     <Sidebar title="Badge">
       <Meta title="Badge" />
-      <div className="mb-5">Displays a badge or a component that looks like a badge.</div>
+      <div className="mb-5">
+        A Badge component is a small UI element used to display a count, status, or label associated with another element, such as an icon or button.
+        Badges are commonly used to highlight notifications, messages, or any relevant information in a compact and visually distinct way, often
+        appearing as small circles or rectangles with numbers or text.
+      </div>
 
       <SubHeader title="Demo">
         <NBadge size={BadgeSize.XS} className="text-text bg-card border border-border mr-2">

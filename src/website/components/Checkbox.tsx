@@ -15,7 +15,11 @@ const Checkbox = () => {
   return (
     <Sidebar title="Checkbox">
       <Meta title="Checkbox" />
-      <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
+      <div className="mb-5">
+        A Checkbox component is a UI element that allows users to select or deselect one or more options from a list. It typically appears as a small
+        square that can be checked (ticked) or unchecked. Checkboxes are often used in forms, settings, or filters where multiple selections are
+        needed, and they provide a clear, binary choice for users.
+      </div>
 
       <SubHeader title="Demo">
         <NCheck checked={checked} disabled={false} onChange={(checked: boolean) => setChecked(checked)}>

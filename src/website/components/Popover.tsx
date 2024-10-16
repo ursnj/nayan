@@ -14,7 +14,11 @@ const Popover = () => {
   return (
     <Sidebar title="Popover">
       <Meta title="Popover" />
-      <div className="mb-5">Displays rich content in a portal, triggered by a button.</div>
+      <div className="mb-5">
+        A Popover component is a UI element that displays additional information or actions when users interact with a specific trigger, such as a
+        button or link. It typically appears as a small overlay or tooltip that provides context, tips, or options without navigating away from the
+        current page. Popovers enhance user experience by offering relevant content in a concise format while maintaining focus on the main interface.
+      </div>
 
       <SubHeader title="Demo">
         <NPopover align="start" size={PopoverSize.MD} trigger={<NButton>Show Popover</NButton>}>

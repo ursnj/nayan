@@ -11,8 +11,10 @@ const Components = () => {
     <Sidebar title="Components">
       <Meta title="Components" />
       <div className="mb-5 leading-relaxed">
-        Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return
-        HTML.
+        Components are reusable building blocks of a user interface that encapsulate a specific piece of functionality or UI design. Each component
+        can represent a distinct part of the application, such as buttons, forms, modals, or navigation bars. Components help organize and structure
+        code, making it easier to manage, maintain, and scale applications by allowing developers to reuse consistent elements across different parts
+        of the project.
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
         {sidebarItems

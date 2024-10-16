@@ -16,7 +16,11 @@ const Dialog = () => {
   return (
     <Sidebar title="Dialog">
       <Meta title="Dialog" />
-      <div className="mb-5">A window overlaid on either the primary window or another dialog window, rendering the content underneath inert.</div>
+      <div className="mb-5">
+        A Dialog component is a UI element that displays a pop-up window over the main content to capture user attention or request input. It is often
+        used for tasks like confirmations, alerts, forms, or other interactions that require user feedback before proceeding. Dialogs can include
+        buttons like "OK" or "Cancel" to confirm or dismiss actions, and typically block interaction with the underlying content until closed.
+      </div>
 
       <SubHeader title="Demo">
         <NDialog isOpen={isOpen} onClose={() => setIsOpen(false)} size={DialogSize.MD} title="Payment confirmation" contentClassName="p-3">

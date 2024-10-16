@@ -26,7 +26,12 @@ const InfiniteScroll = () => {
   return (
     <Sidebar title="Infinite Scroll">
       <Meta title="Infinite Scroll" />
-      <div className="mb-5">A component to load more data when user scroll on the screen.</div>
+      <div className="mb-5">
+        An Infinite Scroll component is a user interface feature that automatically loads and displays additional content as the user scrolls down a
+        page. Instead of traditional pagination, this component creates a seamless browsing experience by continuously appending new items, such as
+        images or articles, when the user reaches the bottom of the viewport. This enhances user engagement and keeps the content flow uninterrupted,
+        making it ideal for applications like social media feeds, product galleries, and news websites.
+      </div>
 
       <Attributes data={infiniteScrollAttributes} />
 

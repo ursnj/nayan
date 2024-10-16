@@ -13,7 +13,11 @@ const Button = () => {
   return (
     <Sidebar title="Button">
       <Meta title="Button" />
-      <div className="mb-5">Displays a button or a component that looks like a button.</div>
+      <div className="mb-5">
+        A Button component is a fundamental UI element that allows users to trigger actions or events, such as submitting a form, opening a dialog, or
+        navigating to another page. Buttons are interactive and typically styled to stand out, making it easy for users to identify and interact with
+        them. They can come in various types, such as primary, secondary, or disabled, depending on their purpose or state.
+      </div>
 
       <SubHeader title="Demo">
         <NButton size={ButtonSize.XS} disabled className="text-text bg-card border border-border mr-2">

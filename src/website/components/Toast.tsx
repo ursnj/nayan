@@ -15,7 +15,12 @@ const Toast = () => {
   return (
     <Sidebar title="Toast">
       <Meta title="Toast" />
-      <div className="mb-5">A succinct message that is displayed temporarily.</div>
+      <div className="mb-5">
+        A Toast component is a transient notification that appears on the screen to provide feedback or information to users without interrupting
+        their workflow. Typically displayed at the top or bottom of the screen, toasts are brief messages that automatically disappear after a short
+        duration. They are commonly used to inform users about actions such as successful submissions, updates, or alerts, enhancing the overall user
+        experience with minimal disruption.
+      </div>
 
       <SubHeader title="Demo">
         <NButton onClick={() => toast('Simple Toaster!')}>Show Simple Toast</NButton>

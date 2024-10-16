@@ -29,7 +29,12 @@ const Table = () => {
   return (
     <Sidebar title="Table">
       <Meta title="Table" />
-      <div className="mb-5">Displays a responsive table with header, content, and caption.</div>
+      <div className="mb-5">
+        A Table component is a structured UI element that organizes and displays data in rows and columns, making it easy to read and compare
+        information. Tables can include features like sorting, filtering, pagination, and inline editing, allowing users to interact with the data
+        efficiently. They are commonly used to present datasets, such as user information, product listings, or any structured content that benefits
+        from a grid-like layout.
+      </div>
 
       <SubHeader title="Demo">
         <NTable className="bg-card" caption="Invoice table" columnDef={columnDef} data={data} />

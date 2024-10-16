@@ -16,7 +16,11 @@ const Sheet = () => {
   return (
     <Sidebar title="Sheet">
       <Meta title="Sheet" />
-      <div className="mb-5">Extends the Dialog component to display content that complements the main content of the screen.</div>
+      <div className="mb-5">
+        A Sheet component is a UI element that presents content in a sliding panel, often overlaying the main application interface. It is typically
+        used for displaying additional information, forms, or actions without navigating away from the current view. Sheets can be swiped or tapped to
+        expand or collapse, providing a clean and efficient way to manage user interactions and maintain focus on the main content.
+      </div>
 
       <SubHeader title="Demo">
         <NButton onClick={() => setIsOpen(true)}>Show Sheet</NButton>

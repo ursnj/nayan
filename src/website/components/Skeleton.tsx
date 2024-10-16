@@ -12,7 +12,12 @@ const Skeleton = () => {
   return (
     <Sidebar title="Skeleton">
       <Meta title="Skeleton" />
-      <div className="mb-5">Use to show a placeholder while content is loading.</div>
+      <div className="mb-5">
+        A Skeleton component is a placeholder UI element that represents the layout of content before it loads. It typically features a grey or
+        light-colored shape mimicking the structure of the actual content (such as text blocks, images, or buttons) to indicate that loading is in
+        progress. Skeleton components enhance user experience by providing a visual cue that content is being fetched, reducing perceived loading
+        times and preventing layout shifts.
+      </div>
 
       <SubHeader title="Demo">
         <div className="flex items-center space-x-4">

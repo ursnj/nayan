@@ -13,7 +13,11 @@ const Alert = () => {
   return (
     <Sidebar title="Alert">
       <Meta title="Alert" />
-      <div className="mb-5">Displays a callout for user attention.</div>
+      <div className="mb-5">
+        An Alert component is a UI element used to display important messages or notifications to users. It can convey different types of information
+        such as success, warning, error, or informational messages, typically styled with distinct colors and icons to highlight the message's
+        significance. Alerts are often used to grab the user's attention and provide immediate feedback on actions or events.
+      </div>
 
       <SubHeader title="Demo">
         <NAlert type={AlertTypes.DEFAULT} message="New version available!" className="mb-3" onClose={() => console.log('Alert closed')} />

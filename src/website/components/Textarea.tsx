@@ -14,7 +14,11 @@ const Textarea = () => {
   return (
     <Sidebar title="Textarea">
       <Meta title="Textarea" />
-      <div className="mb-5">Displays a form textarea or a component that looks like a textarea.</div>
+      <div className="mb-5">
+        A Textarea component is an input field that allows users to enter multi-line text. It provides a larger area for text input compared to a
+        standard text input field, making it ideal for comments, feedback, or any scenario where users need to provide detailed information. Textareas
+        can be resized, styled, and configured to support features like character limits, placeholders, and auto-resizing to enhance user experience.
+      </div>
 
       <SubHeader title="Demo">
         <NTextarea

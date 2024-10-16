@@ -12,7 +12,11 @@ const Link = () => {
   return (
     <Sidebar title="Link">
       <Meta title="Link" />
-      <div className="mb-5">A link to show with all of customizations.</div>
+      <div className="mb-5">
+        A Link component is a UI element that allows users to navigate from one page or section to another within a web application or website.
+        Typically styled as underlined text or buttons, links provide a clear indication of interactivity. They can point to internal or external
+        resources and often include features like hover effects or icons to enhance user experience and accessibility.
+      </div>
 
       <SubHeader title="Demo">
         <div className="text-text">

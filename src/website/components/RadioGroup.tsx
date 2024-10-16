@@ -22,7 +22,12 @@ const RadioGroup = () => {
   return (
     <Sidebar title="Radio Group">
       <Meta title="Radio Group" />
-      <div className="mb-5">A set of checkable buttons—known as radio buttons—where no more than one of the buttons can be checked at a time.</div>
+      <div className="mb-5">
+        A Radio Group component is a UI element that allows users to select one option from a set of mutually exclusive choices. It typically consists
+        of multiple radio buttons, where only one button can be selected at a time. Radio groups are commonly used in forms to gather user
+        preferences, ensuring a clear and organized way to present options for selection. They enhance user experience by providing a straightforward
+        interface for making single-choice decisions.
+      </div>
 
       <SubHeader title="Demo">
         <h1 className="text-text mb-3 text-base">Horizontal:</h1>

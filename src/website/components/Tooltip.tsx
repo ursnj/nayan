@@ -14,7 +14,9 @@ const Tooltip = () => {
     <Sidebar title="Tooltip">
       <Meta title="Tooltip" />
       <div className="mb-5">
-        A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.
+        A Tooltip component is a small, informative pop-up that appears when a user hovers over or focuses on an element, such as a button or icon. It
+        provides additional context or explanations about that element without cluttering the interface. Tooltips enhance user experience by offering
+        helpful hints, instructions, or details, ensuring that information is accessible without overwhelming the layout.
       </div>
 
       <SubHeader title="Demo">

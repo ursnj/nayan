@@ -17,7 +17,11 @@ const Menu = () => {
   return (
     <Sidebar title="Menu">
       <Meta title="Menu" />
-      <div className="mb-5">Displays a menu to the user — such as a set of actions or functions — triggered by a button.</div>
+      <div className="mb-5">
+        A Dropdown Menu component is a UI element that allows users to select an option from a list that appears when the user clicks or hovers over a
+        button or link. This component helps save space on the interface by displaying additional options only when needed. Dropdown menus are
+        commonly used for navigation, settings, or forms, enabling users to choose from multiple choices in a clean and organized manner.
+      </div>
 
       <SubHeader title="Demo">
         <NMenu align="start" title="My Account" size={MenuSize.LG} trigger={<NButton>Show Menu</NButton>}>

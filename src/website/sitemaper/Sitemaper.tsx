@@ -7,8 +7,8 @@ import React from 'react';
 
 const Sitemaper = () => {
   return (
-    <Sidebar title="Sitemaper - Powerful sitemap generator">
-      <Meta title="Sitemaper - Powerful sitemap generator`````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````2" />
+    <Sidebar title="Sitemaper">
+      <Meta title="Sitemaper" />
       <div className="mb-5 leading-relaxed">
         Sitemaper is a powerful sitemap generator designed to simplify the process of creating accurate and efficient sitemaps for websites. It crawls
         through your site, maps its structure, and generates an optimized sitemap, helping improve SEO and site visibility. With customizable options

@@ -14,7 +14,12 @@ const Switch = () => {
   return (
     <Sidebar title="Switch">
       <Meta title="Switch" />
-      <div className="mb-5">A control that allows the user to toggle between checked and not checked.</div>
+      <div className="mb-5">
+        A Switch component is a UI element that allows users to toggle between two states, typically representing an on/off or enabled/disabled
+        choice. It is visually represented as a sliding toggle or checkbox and provides immediate feedback when the user interacts with it. Switch
+        components are commonly used for settings, preferences, and feature activations in applications, enhancing user experience by simplifying the
+        selection process.
+      </div>
 
       <SubHeader title="Demo">
         <NSwitch label="Is Dark Mode" enabled={enabled} onChange={setEnabled} />

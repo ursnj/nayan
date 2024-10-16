@@ -17,7 +17,12 @@ const Tabs = () => {
   return (
     <Sidebar title="Tabs">
       <Meta title="Tabs" />
-      <div className="mb-5">A set of layered sections of content—known as tab panels—that are displayed one at a time.</div>
+      <div className="mb-5">
+        A Tabs component is a UI element that allows users to switch between different views or sections of content within the same interface.
+        Organized as a series of labeled tabs, this component enhances navigation by displaying only one section at a time, helping to reduce clutter
+        and improve user experience. Users can easily access various related content or features by clicking on the respective tabs, making it ideal
+        for dashboards, settings pages, or any multi-section layout.
+      </div>
 
       <SubHeader title="Demo">
         <h1 className="text-text mb-3 text-base text-left">Tabs:</h1>

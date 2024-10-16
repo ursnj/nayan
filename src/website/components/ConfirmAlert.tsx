@@ -15,7 +15,11 @@ const ConfirmAlert = () => {
   return (
     <Sidebar title="Confirm Alert">
       <Meta title="Confirm Alert" />
-      <div className="mb-5">A modal dialog that interrupts the user with important content and expects a response.</div>
+      <div className="mb-5">
+        A Confirm Alert component is a UI element that prompts users to confirm or cancel an action before proceeding. It typically displays a message
+        asking for confirmation, along with "Confirm" and "Cancel" buttons, ensuring that the user consciously approves or rejects the action, often
+        used for critical tasks like deletions or irreversible changes.
+      </div>
 
       <SubHeader title="Demo">
         <NConfirmAlert

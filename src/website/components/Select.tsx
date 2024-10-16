@@ -24,7 +24,12 @@ const Select = () => {
   return (
     <Sidebar title="Select">
       <Meta title="Select" />
-      <div className="mb-5">Displays a list of options for the user to pick from—triggered by a button.</div>
+      <div className="mb-5">
+        A Select or ComboBox component is a UI element that allows users to choose one or more options from a dropdown list. It typically displays a
+        default value or prompt, and when clicked, it expands to show a list of available choices. Users can either select an option from the list or,
+        in the case of a ComboBox, input custom values. This component is ideal for conserving space in forms and making it easy for users to make
+        selections quickly.
+      </div>
 
       <SubHeader title="Select Demo">
         <NSelect

@@ -12,7 +12,11 @@ const Slider = () => {
   return (
     <Sidebar title="Slider">
       <Meta title="Slider" />
-      <div className="mb-5">An input where the user selects a value from within a given range.</div>
+      <div className="mb-5">
+        A Slider component is a UI element that allows users to select a value from a range by sliding a handle along a track. It provides an
+        interactive way to adjust settings, such as volume, brightness, or other continuous values, with smooth transitions. Sliders can be single or
+        multi-valued, enabling users to make precise selections visually, enhancing the overall user experience.
+      </div>
 
       <SubHeader title="Demo">
         <NSlider label="Select range" defaultValue={50} max={100} step={1} disabled={false} onChange={(value: number) => console.log(value)} />

@@ -26,7 +26,12 @@ const FormInput = () => {
   return (
     <Sidebar title="Input Hook Form">
       <Meta title="Input Hook Form" />
-      <div className="mb-5">Displays a form input field or a component that looks like an input field uses react-hook-form.</div>
+      <div className="mb-5">
+        An Input with React Hook Form component is a controlled input field that integrates with the React Hook Form library for efficient form
+        handling in React applications. It simplifies the process of managing form state, validation, and submission. By utilizing React Hook Form,
+        this component enables easy tracking of input values, ensures validation rules are applied, and provides streamlined error handling, making it
+        a powerful tool for building robust forms with minimal boilerplate code.
+      </div>
 
       <SubHeader title="Demo">
         <form onSubmit={handleSubmit(onSubmit)}>

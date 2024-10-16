@@ -12,7 +12,11 @@ const Badge = () => {
   return (
     <Sidebar title="Card">
       <Meta title="Card" />
-      <div className="mb-5">Displays a card with content.</div>
+      <div className="mb-5">
+        A Card component is a versatile UI element used to display content in a structured and visually appealing way. It typically contains related
+        information, such as text, images, buttons, and other elements, within a bordered or shadowed container. Cards are often used for presenting
+        individual items, like products, articles, or profiles, making the content easy to scan and interact with.
+      </div>
 
       <SubHeader title="Demo">
         <NCard className="p-3">This is sample card.</NCard>

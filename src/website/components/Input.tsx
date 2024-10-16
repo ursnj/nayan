@@ -14,7 +14,11 @@ const Input = () => {
   return (
     <Sidebar title="Input">
       <Meta title="Input" />
-      <div className="mb-5">Displays a form input field or a component that looks like an input field.</div>
+      <div className="mb-5">
+        An Input component is a user interface element that allows users to enter data, such as text, numbers, or selections. It typically includes
+        various types, such as text fields, checkboxes, radio buttons, and dropdowns, providing flexibility for different data types. Input components
+        are essential for forms and interactive applications, enabling users to submit information effectively and efficiently.
+      </div>
 
       <SubHeader title="Demo">
         <NInput
