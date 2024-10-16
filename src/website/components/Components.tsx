@@ -24,7 +24,7 @@ const Components = () => {
                   <Package className="w-4 h-4 inline mr-3" />
                 </div>
                 <div>
-                  <div>{item.title}</div>
+                  <div className="text-base font-medium pb-1">{item.title}</div>
                   <div className="text-sm">{item.description}</div>
                 </div>
               </NCard>

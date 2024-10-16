@@ -9,18 +9,22 @@ const Banner = () => {
       <div className="container mx-auto">
         <div className="grid md:grid-cols-2 grid-cols-1 gap-8">
           <div className="flex flex-col justify-center md:p-0 py-5 px-3">
-            <div className="text-3xl mb-5 text">React Component Library</div>
+            <div className="text-3xl mb-5 text">React Reusable Component Library</div>
             <div className="text-base leading-loose mb-5 text">
-              Nayan UI provides React component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built
-              React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for your web
-              application.
+              Nayan UI provides React re-usable component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and
+              pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for
+              your web application.
             </div>
             <div className="p-0">
               <Link to="/components" className="mr-3">
-                <NButton className="px-4 bg-green-700 hover:bg-green-800 border-green-700">Components</NButton>
+                <NButton tabIndex={-1} className="px-4 bg-green-700 hover:bg-green-800 border-green-700">
+                  Components
+                </NButton>
               </Link>
               <Link to="/installation">
-                <NButton className="px-4">Installation</NButton>
+                <NButton tabIndex={-1} className="px-4">
+                  Installation
+                </NButton>
               </Link>
             </div>
           </div>

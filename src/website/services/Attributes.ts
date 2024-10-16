@@ -1,3 +1,21 @@
+export const sitemaperAttributes = [
+  { name: '--website / -w', type: 'string', default: 'https://www.nayanui.com', details: 'Pass website base URL to start crawling.' },
+  { name: '--depth / -d', type: 'number', default: '10', details: 'Pass depth to let the generator know how depth it need to crawl.' },
+  {
+    name: '--output / -o',
+    type: 'string',
+    default: './sitemap.xml',
+    details: 'Pass output to let the generator know where to keep generated sitemap.\n'
+  },
+  {
+    name: '--changefreq / -f',
+    type: 'string',
+    default: 'daily',
+    details:
+      'Pass change frequency to let the generator know how frequently your content change, possible options are always, hourly, daily, weekly, monthly, yearly, never.'
+  }
+];
+
 export const accordionAttributes = [
   { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
   { name: 'itemClassName', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
