@@ -58,14 +58,16 @@ export const NAlert = (props: Props) => {
         } ${className}`
       )}>
       {iconsMapping[type]}
-      <AlertTitle className={cn(`nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center ${titleClassName}`)}>
-        {title}
-        {onClose && (
-          <span className={cn(`nyn-alert-close${closeClassName}`)} tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
-            <X className="w-4 h-4" />
-          </span>
-        )}
-      </AlertTitle>
+      {title && (
+        <AlertTitle className={cn(`nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center ${titleClassName}`)}>
+          {title}
+          {onClose && (
+            <span className={cn(`nyn-alert-close${closeClassName}`)} tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
+              <X className="w-4 h-4" />
+            </span>
+          )}
+        </AlertTitle>
+      )}
       <AlertDescription className={cn(`nyn-alert-message ${messageClassName}`)}>{message}</AlertDescription>
     </Alert>
   );

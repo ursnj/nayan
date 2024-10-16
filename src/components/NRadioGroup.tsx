@@ -35,7 +35,7 @@ export const NRadioGroup = (props: Props) => {
       value={selected}
       disabled={disabled}
       onValueChange={onChange}
-      className={cn(`${orientation === 'horizontal' ? 'flex flex-row' : 'flex flex-col'} ${className}`)}>
+      className={cn(`${orientation === 'horizontal' ? 'flex flex-row flex-wrap' : 'flex flex-col'} ${className}`)}>
       {items.map((item, index) => (
         <div key={index} className={cn(`flex items-center space-x-2 ${itemClassName}`)}>
           <RadioGroupItem className={'' + radioClassName} value={item.value} id={'r' + index} />
