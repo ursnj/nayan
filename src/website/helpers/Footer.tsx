@@ -9,12 +9,7 @@ const Footer = () => {
         <NDivider />
         <div className="md:flex justify-between items-center py-3">
           <div className="text-sm text text-center md:mb-0 mb-2">All Rights Reserved © {new Date().getFullYear()}</div>
-          <div className="text-sm text text-center">
-            Designed by{' '}
-            <NLink className="font-semibold" href="http://www.ursnj.com" aria-label="Niranjan Devasani">
-              UrsNJ
-            </NLink>
-          </div>
+          <div className="text-sm text text-center">Made with ❤️ in India</div>
         </div>
       </div>
     </section>

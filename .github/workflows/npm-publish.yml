@@ -1,30 +1,46 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+name: Publish Nayan UI to npm
 
-name: Publish NPM Repository
-
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.12.1]
-
-    #    if: contains(github.event.head_commit.message, 'release now')
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Node.js environment
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          registry-url: 'https://registry.npmjs.org'
+          node-version: '20'
           cache: 'npm'
-      - run: npm ci
-      - run: npm run test
-      - run: npm run build
-      - run: npm publish
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH }}
+
+      # Add npm authentication for publishing
+      - name: Authenticate with npm
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Test the project
+      - name: Build the project
+        run: npm run test
+
+      # Build the project
+      - name: Build the project
+        run: npm run build
+
+      # Publish to npm if it's a new version and a tagged release
+      - name: Publish to npm
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # Clean up after the build
+      - name: Clean node_modules
+        run: rm -rf node_modules

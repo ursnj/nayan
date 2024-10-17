@@ -2,12 +2,12 @@
   "name": "nayan",
   "private": false,
   "sideEffects": false,
-  "version": "2.18.0",
+  "version": "2.19.0",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://nayanui.com",
+  "homepage": "https://www.nayanui.com",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
@@ -36,7 +36,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepare": "husky install",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "sitemaper": "npx sitemaper -w http://localhost:7100 -o ./public/sitemap.xml -r https://www.nayanui.com"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.1.2",
@@ -115,6 +116,7 @@
   "keywords": [
     "Nayan UI",
     "React Component Library",
+    "React Reusable Components",
     "React UI Library",
     "Tailwind CSS",
     "Radix UI",
@@ -122,7 +124,8 @@
     "React JS",
     "Next JS",
     "Vite",
-    "Vitest"
+    "Dev Tools",
+    "Sitemaper"
   ],
   "author": "Niranjan Devasani",
   "bugs": {

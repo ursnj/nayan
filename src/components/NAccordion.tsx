@@ -18,7 +18,10 @@ export const NAccordion = (props: Props) => {
   return (
     <Accordion type={type} className={cn(`w-full ${className}`)}>
       {items.map((item, index) => (
-        <AccordionItem key={index} value={`item-${index}`} className={cn(`nyn-accordion border-0 border-b border-border ${itemClassName}`)}>
+        <AccordionItem
+          key={index}
+          value={`item-${index}`}
+          className={cn(`nyn-accordion border border-border px-3 bg-card rounded mb-2.5 ${itemClassName}`)}>
           <AccordionTrigger className={cn(`nyn-accordion-title text-text hover:no-underline ${triggerClassName}`)}>{item.title}</AccordionTrigger>
           <AccordionContent className={cn(`nyn-accordion-message text-text ${contentClassName}`)}>{item.message}</AccordionContent>
         </AccordionItem>

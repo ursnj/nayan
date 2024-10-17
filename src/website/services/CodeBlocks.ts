@@ -34,26 +34,26 @@ export const cssCode = `@import 'nayan/dist/styles.css';
     --COLOR_PRIMARY: #005ee6;
     --COLOR_PRIMARY_DARK: #0043a3;
     --COLOR_PRIMARY_LIGHT: #0069ff;
-    --COLOR_BACKGROUND: #f5f5f5;
+    --COLOR_BACKGROUND: #f0f2f5;
     --COLOR_CARD: #ffffff;
     --COLOR_TEXT: #050505;
-    --COLOR_MUTED: gray;
-    --COLOR_BORDER: #d3d3d3;
+    --COLOR_MUTED: 'gray';
+    --COLOR_BORDER: #e0e0e0;
     --COLOR_SHADOW: #d3d3d3;
-    --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
+    --COLOR_OVERLAY: rgba(255, 255, 255, .7);
   }
 
   [data-theme='dark'] {
-    --COLOR_PRIMARY: #005ee6;
-    --COLOR_PRIMARY_DARK: #0043a3;
-    --COLOR_PRIMARY_LIGHT: #0069ff;
+    --COLOR_PRIMARY: #2997ff;
+    --COLOR_PRIMARY_DARK: #0a84ff;
+    --COLOR_PRIMARY_LIGHT: #7dc1ff;
     --COLOR_BACKGROUND: #1f1f1f;
-    --COLOR_CARD: #303030;
+    --COLOR_CARD: #353535;
     --COLOR_TEXT: #f5f5f5;
-    --COLOR_MUTED: gray;
-    --COLOR_BORDER: #505050;
+    --COLOR_MUTED: #afafaf;
+    --COLOR_BORDER: #4f4f4f;
     --COLOR_SHADOW: #cbcbcb;
-    --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
+    --COLOR_OVERLAY: rgba(0, 0, 0, .7);
   }
 
   body {
@@ -66,7 +66,7 @@ export const appCode = `import { useState } from 'react';
 import { NTheme, THEMES, useLocalStorage } from 'nayan';
 
 const App = () => {
-  const [theme, setTheme] = useLocalStorage('THEME', '');
+  const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
 
   const toggleTheme = () => {
     setTheme(theme === THEMES.LIGHT ? THEMES.DARK : THEMES.LIGHT);

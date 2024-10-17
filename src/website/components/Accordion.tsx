@@ -1,13 +1,7 @@
+import React from 'react';
 import { NAccordion } from '@/components/NAccordion';
 import { AccordionTypes } from '@/components/Types';
-import React from 'react';
-import Code from '../helpers/Code';
-import Sidebar from '../helpers/Sidebar';
-import { accordionCode } from '../services/CodeBlocks';
-import SubHeader from '@/website/helpers/SubHeader';
-import Attributes from '@/website/helpers/Attributes';
-import { accordionAttributes } from '@/website/services/Attributes';
-import Meta from '@/website/helpers/Meta';
+import ComponentWrapper from '../helpers/ComponentWrapper';
 
 const items = [
   { title: 'Heading 1', message: 'Description 1' },
@@ -16,23 +10,12 @@ const items = [
 
 const Accordion = () => {
   return (
-    <Sidebar title="Accordion">
-      <Meta title="Accordion" />
-      <div className="mb-5">A vertically stacked set of interactive headings that each reveal a section of content.</div>
-
-      <SubHeader title="Demo">
-        <h1 className="text-text mb-3 text-lg">Single:</h1>
-        <NAccordion type={AccordionTypes.SINGLE} items={items} />
-        <h1 className="text-text mb-3 mt-5 text-lg">Multiple:</h1>
-        <NAccordion type={AccordionTypes.MULTIPLE} items={items} />
-      </SubHeader>
-
-      <Attributes data={accordionAttributes} />
-
-      <SubHeader title="Usage">
-        <Code code={accordionCode} />
-      </SubHeader>
-    </Sidebar>
+    <ComponentWrapper>
+      <h1 className="text-text mb-3 text-lg">Single:</h1>
+      <NAccordion type={AccordionTypes.SINGLE} items={items} />
+      <h1 className="text-text mb-3 mt-5 text-lg">Multiple:</h1>
+      <NAccordion type={AccordionTypes.MULTIPLE} items={items} />
+    </ComponentWrapper>
   );
 };
 

@@ -1,12 +1,6 @@
 import React from 'react';
-import Code from '../helpers/Code';
-import Sidebar from '../helpers/Sidebar';
-import { tableCode } from '../services/CodeBlocks';
 import { NTable } from '@/components/NTable';
-import SubHeader from '@/website/helpers/SubHeader';
-import Attributes from '@/website/helpers/Attributes';
-import { tableAttributes } from '@/website/services/Attributes';
-import Meta from '@/website/helpers/Meta';
+import ComponentWrapper from '../helpers/ComponentWrapper';
 
 const CustomComponent = ({ row, col, ...remaining }: any) => {
   return <div className="text-primary">Oops</div>;
@@ -27,20 +21,9 @@ const Table = () => {
   ];
 
   return (
-    <Sidebar title="Table">
-      <Meta title="Table" />
-      <div className="mb-5">Displays a responsive table with header, content, and caption.</div>
-
-      <SubHeader title="Demo">
-        <NTable className="bg-card" caption="Invoice table" columnDef={columnDef} data={data} />
-      </SubHeader>
-
-      <Attributes data={tableAttributes} />
-
-      <SubHeader title="Usage">
-        <Code code={tableCode} />
-      </SubHeader>
-    </Sidebar>
+    <ComponentWrapper>
+      <NTable className="bg-card" caption="Invoice table" columnDef={columnDef} data={data} />
+    </ComponentWrapper>
   );
 };
 

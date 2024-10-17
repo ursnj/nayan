@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AlignJustify, Github, MoonStar, Package, Sun } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useLocalStorage } from '@/components/NLocalStorage';
 import { THEMES } from '@/components/Types';
 import { NSheet } from '@/components/NSheet';
@@ -17,24 +17,29 @@ const HeaderMenu = () => {
     <div className="w-full flex flex-col md:flex-row justify-between items-center">
       <ul className="w-full md:w-auto flex flex-col md:flex-row items-center">
         <li className="w-full md:w-auto">
-          <Link className="text-base font-medium text-text px-4 py-3 block md:inline" to="/">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/">
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <Link className="text-base font-medium text-text px-4 py-3 block md:inline" to="/installation">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/installation">
             Installation
-          </Link>
+          </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <Link className="text-base font-medium text-text px-4 py-3 block md:inline" to="/components">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/components">
             Components
-          </Link>
+          </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <Link className="text-base font-medium text-text px-4 py-3 block md:inline" to="/contributions">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/sitemaper">
+            Sitemaper
+          </NavLink>
+        </li>
+        <li className="w-full md:w-auto">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/contributions">
             Contributions
-          </Link>
+          </NavLink>
         </li>
       </ul>
       <div className="w-full md:w-auto form-inline md:text-center md:justify-center items-center mt-3 md:mt-0">
@@ -78,6 +83,7 @@ const Header = () => {
 
   useEffect(() => {
     setMenu(false);
+    // @ts-ignore
     window.scrollTo(0, 0);
   }, [location.pathname]);
 

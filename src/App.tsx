@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { NTheme } from '@/components/NTheme';
-import { THEMES } from '@/components/Types';
 import Wrapper from '@/website/helpers/Wrapper';
 import { useLocalStorage } from '@/components/NLocalStorage';
 import Home from '@/website/home/Home';
@@ -12,7 +11,6 @@ import Button from './website/components/Button';
 import ButtonGroup from './website/components/ButtonGroup';
 import Card from './website/components/Card';
 import Checkbox from './website/components/Checkbox';
-import Combobox from './website/components/Combobox';
 import ConfirmAlert from './website/components/ConfirmAlert';
 import Dialog from './website/components/Dialog';
 import Divider from './website/components/Divider';
@@ -38,9 +36,13 @@ import Loading from './website/components/Loading';
 import Table from '@/website/components/Table';
 import Components from '@/website/components/Components';
 import FormInput from '@/website/components/FormInput';
+import { THEMES } from './components/Types';
+import Sitemaper from './website/sitemaper/Sitemaper';
+import Tags from './website/tags/Tags';
+import TagsDetails from './website/tags/TagsDetails';
 
 const App = () => {
-  const [theme] = useLocalStorage('THEME', '');
+  const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
 
   return (
     <NTheme theme={theme}>
@@ -48,6 +50,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/installation" element={<Installation />} />
+          <Route path="/sitemaper" element={<Sitemaper />} />
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/components">
             <Route index element={<Components />} />
@@ -82,6 +85,12 @@ const App = () => {
             <Route path="toast" element={<Toast />} />
             <Route path="tooltip" element={<Tooltip />} />
           </Route>
+
+          <Route path="/tags">
+            <Route index element={<Tags />} />
+            <Route path=":tag" element={<TagsDetails />} />
+          </Route>
+
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Wrapper>
