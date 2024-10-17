@@ -11,7 +11,7 @@ export const NLinkify = (props: Props) => {
   return (
     <Linkify
       componentDecorator={(decoratedHref: string, decoratedText: string, key: string) => (
-        <a className={cn(`text-primary ${props.className}`)} target="blank" href={decoratedHref} key={key}>
+        <a className={cn(`text-primary ${props.className}`)} target="_blank" href={decoratedHref} key={key}>
           {decoratedText}
         </a>
       )}>
