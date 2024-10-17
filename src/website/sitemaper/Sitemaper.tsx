@@ -6,6 +6,7 @@ import { sitemaperAttributes } from '../services/Attributes';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { getMenuItem } from '../services/Utils';
+import TagsList from '../tags/TagsList';
 
 const Sitemaper = () => {
   const location = useLocation();
@@ -39,6 +40,9 @@ const Sitemaper = () => {
         We welcome all contributions. You can submit any ideas as Pull Requests or as GitHub Issues. If you'd like to improve code, check out the
         Development Instructions and have a good time! :)
       </div>
+
+      <h2 className="text-xl mb-5">🌈 Tags</h2>
+      <TagsList tags={component.tags} />
     </Sidebar>
   );
 };
