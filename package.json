@@ -2,12 +2,12 @@
   "name": "nayan",
   "private": false,
   "sideEffects": false,
-  "version": "2.18.0",
+  "version": "2.19.0",
   "type": "module",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
-  "homepage": "https://nayanui.com",
+  "homepage": "https://www.nayanui.com",
   "exports": {
     ".": {
       "import": "./dist/index.es.js",
@@ -116,6 +116,7 @@
   "keywords": [
     "Nayan UI",
     "React Component Library",
+    "React Reusable Components",
     "React UI Library",
     "Tailwind CSS",
     "Radix UI",
@@ -123,7 +124,8 @@
     "React JS",
     "Next JS",
     "Vite",
-    "Vitest"
+    "Dev Tools",
+    "Sitemaper"
   ],
   "author": "Niranjan Devasani",
   "bugs": {
