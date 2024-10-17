@@ -3,6 +3,7 @@ import Meta from '@/website/helpers/Meta';
 import { useLocation } from 'react-router-dom';
 import { getMenuItem } from '../services/Utils';
 import React from 'react';
+import { NLinkify } from '../../components/NLinkify';
 
 const Contributions = () => {
   const location = useLocation();
@@ -11,7 +12,7 @@ const Contributions = () => {
   return (
     <Sidebar title={component.title}>
       <Meta title={component.title} description={component.description} />
-      <div className="mb-5 leading-relaxed">{component.description}</div>
+      <NLinkify className="mb-5 leading-relaxed">{component.description}</NLinkify>
     </Sidebar>
   );
 };

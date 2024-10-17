@@ -1,5 +1,11 @@
 export const sitemaperAttributes = [
   { name: '--website / -w', type: 'string', default: 'https://www.nayanui.com', details: 'Pass website base URL to start crawling.' },
+  {
+    name: '--replacer / -r',
+    type: 'string',
+    default: '',
+    details: 'Pass replacement URL to replace crawled url, this will be mostly useful to crawl localhost and replace it with original URL..'
+  },
   { name: '--depth / -d', type: 'number', default: '10', details: 'Pass depth to let the generator know how depth it need to crawl.' },
   {
     name: '--output / -o',

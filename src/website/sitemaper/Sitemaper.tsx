@@ -7,6 +7,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { getMenuItem } from '../services/Utils';
 import TagsList from '../tags/TagsList';
+import { NLinkify } from '../../components/NLinkify';
 
 const Sitemaper = () => {
   const location = useLocation();
@@ -30,16 +31,19 @@ const Sitemaper = () => {
       <Code language="bash" code={`npx sitemaper --website https://www.nayanui.com --depth 10 --output ./sitemap.xml --changefreq daily`} />
       <div className="mb-5">You can also use the shorter version of this command.</div>
       <Code language="bash" code={`npx sitemaper -w https://www.nayanui.com -d 10 -o ./sitemap.xml -f daily`} />
+      <div className="mb-5">You can also integrate Sitemaper with your localhost</div>
+      <Code language="bash" code={`npx sitemaper -w http://localhost:3000 -r https://www.nayanui.com -d 10 -o ./sitemap.xml -f daily`} />
 
       <Attributes data={sitemaperAttributes} />
 
       <h2 className="text-xl mb-5">🖥 Future plans</h2>
       <div className="mb-5">Create a web application to automatically generate and submit sitemaps to search engines on a schedule.</div>
       <h2 className="text-xl mb-5">🤝 Contributing</h2>
-      <div className="mb-5">
-        We welcome all contributions. You can submit any ideas as Pull Requests or as GitHub Issues. If you'd like to improve code, check out the
-        Development Instructions and have a good time! :)
-      </div>
+      <NLinkify className="mb-5">
+        We encourage and welcome all contributions! Feel free to submit ideas via Pull Requests (https://github.com/ursnj/sitemaper/pulls) or GitHub
+        Issues (https://github.com/ursnj/sitemaper/issues). If you're looking to improve the code, check out our Development Instructions and enjoy
+        the process!
+      </NLinkify>
 
       <h2 className="text-xl mb-5">🌈 Tags</h2>
       <TagsList tags={component.tags} />
