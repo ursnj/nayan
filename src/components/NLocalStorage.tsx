@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import { isWindowDefined } from '../website/services/Utils';
 
 type Serializer<T> = (object: T | undefined) => string;
 type Parser<T> = (val: string) => T | undefined;
@@ -28,7 +29,7 @@ export function useLocalStorage<T>(key: string, defaultValue?: T, options?: Opti
   const rawValueRef = useRef<string | null>(null);
 
   const [value, setValue] = useState(() => {
-    if (typeof window === 'undefined') return defaultValue;
+    if (!isWindowDefined()) return defaultValue;
 
     try {
       rawValueRef.current = window.localStorage.getItem(key);
@@ -41,7 +42,7 @@ export function useLocalStorage<T>(key: string, defaultValue?: T, options?: Opti
   });
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (!isWindowDefined()) return;
 
     const updateLocalStorage = () => {
       // Browser ONLY dispatch storage events to other tabs, NOT current tab.
@@ -95,7 +96,7 @@ export function useLocalStorage<T>(key: string, defaultValue?: T, options?: Opti
       }
     };
 
-    if (typeof window === 'undefined') return;
+    if (!isWindowDefined()) return;
 
     window.addEventListener('storage', handleStorageChange);
     return () => window.removeEventListener('storage', handleStorageChange);

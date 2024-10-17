@@ -37,9 +37,9 @@ import Table from '@/website/components/Table';
 import Components from '@/website/components/Components';
 import FormInput from '@/website/components/FormInput';
 import { THEMES } from './components/Types';
-import Sitemaper from './website/sitemaper/Sitemaper';
-import Tags from './website/tags/Tags';
-import TagsDetails from './website/tags/TagsDetails';
+import Sitemaper from '@/website/sitemaper/Sitemaper';
+import Tags from '@/website/tags/Tags';
+import TagsDetails from '@/website/tags/TagsDetails';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);

@@ -127,6 +127,10 @@ import {
   tooltipTags
 } from '@/website/services/Tags';
 
+export const isWindowDefined = () => {
+  return typeof window !== 'undefined';
+};
+
 export const getMenuItem = (path: string) => {
   return sidebarItems.find(item => item.link === path);
 };
