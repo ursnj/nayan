@@ -11,8 +11,8 @@ const Meta = (props: Props) => {
   const {
     name = 'Nayan UI',
     type = 'article',
-    title = 'React Component Library',
-    description = 'Nayan UI provides React component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web application.'
+    title = 'React Reusable Component Library',
+    description = 'Nayan UI provides React re-usable component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web application.'
   } = props;
 
   const finalTitle = 'Nayan UI - ' + title;

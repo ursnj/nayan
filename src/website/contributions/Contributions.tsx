@@ -1,14 +1,17 @@
 import Sidebar from '../helpers/Sidebar';
 import Meta from '@/website/helpers/Meta';
+import { useLocation } from 'react-router-dom';
+import { getMenuItem } from '../services/Utils';
+import React from 'react';
 
 const Contributions = () => {
+  const location = useLocation();
+  const component: any = getMenuItem(location.pathname);
+
   return (
-    <Sidebar title="Contributions">
-      <Meta title="Contributions" />
-      <div className="mb-5">
-        We welcome all contributions. You can submit any ideas as Pull Requests or as GitHub Issues. If you'd like to improve code, check out the
-        Development Instructions and have a good time! :)
-      </div>
+    <Sidebar title={component.title}>
+      <Meta title={component.title} description={component.description} />
+      <div className="mb-5 leading-relaxed">{component.description}</div>
     </Sidebar>
   );
 };

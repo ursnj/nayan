@@ -4,17 +4,17 @@ import Code from '../helpers/Code';
 import Attributes from '../helpers/Attributes';
 import { sitemaperAttributes } from '../services/Attributes';
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { getMenuItem } from '../services/Utils';
 
 const Sitemaper = () => {
+  const location = useLocation();
+  const component: any = getMenuItem(location.pathname);
+
   return (
-    <Sidebar title="Sitemaper">
-      <Meta title="Sitemaper" />
-      <div className="mb-5 leading-relaxed">
-        Sitemaper is a powerful sitemap generator designed to simplify the process of creating accurate and efficient sitemaps for websites. It crawls
-        through your site, maps its structure, and generates an optimized sitemap, helping improve SEO and site visibility. With customizable options
-        for depth, frequency, and output paths, Sitemaper is a versatile tool for developers and site owners aiming to keep their web presence indexed
-        properly.
-      </div>
+    <Sidebar title={component.title}>
+      <Meta title={component.title} description={component.description} />
+      <div className="mb-5 leading-relaxed">{component.description}</div>
       <h2 className="text-xl mb-5">✨ Features</h2>
       <ul className="list-disc list-inside leading-relaxed mb-5">
         <li>⌨️ Framework Agnostic Integration.</li>

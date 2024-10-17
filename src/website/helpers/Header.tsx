@@ -17,27 +17,27 @@ const HeaderMenu = () => {
     <div className="w-full flex flex-col md:flex-row justify-between items-center">
       <ul className="w-full md:w-auto flex flex-col md:flex-row items-center">
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-4 py-3 block md:inline" to="/">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/">
             Home
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-4 py-3 block md:inline" to="/installation">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/installation">
             Installation
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-4 py-3 block md:inline" to="/components">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/components">
             Components
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-4 py-3 block md:inline" to="/sitemaper">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/sitemaper">
             Sitemaper
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-4 py-3 block md:inline" to="/contributions">
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/contributions">
             Contributions
           </NavLink>
         </li>

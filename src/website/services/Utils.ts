@@ -1,6 +1,71 @@
 import { Package } from 'lucide-react';
-import { accordionAttributes } from '@/website/services/Attributes';
-import { accordionCode } from '@/website/services/CodeBlocks';
+import {
+  accordionAttributes,
+  alertAttributes,
+  badgeAttributes,
+  buttonAttributes,
+  buttonGroupAttributes,
+  cardAttributes,
+  checkboxAttributes,
+  confirmAlertAttributes,
+  dialogAttributes,
+  dividerAttributes,
+  infiniteScrollAttributes,
+  inputAttributes,
+  inputHookAttributes,
+  linkAttributes,
+  loadingAttributes,
+  menuAttributes,
+  popoverAttributes,
+  progressAttributes,
+  radioGroupAttributes,
+  selectAttributes,
+  sheetAttributes,
+  skeletonAttributes,
+  sliderAttributes,
+  switchAttributes,
+  tableAttributes,
+  tabsAttributes,
+  textareaAttributes,
+  toastAttributes,
+  tooltipAttributes
+} from '@/website/services/Attributes';
+import {
+  accordionCode,
+  alertCode,
+  badgeCode,
+  buttonCode,
+  buttonGroupCode,
+  cardCode,
+  checkBoxCode,
+  confirmAlertCode,
+  dialogCode,
+  dividerCode,
+  infiniteScrollCode,
+  inputCode,
+  inputHookCode,
+  linkCode,
+  linkifyCode,
+  loadingCode,
+  menuCode,
+  popoverCode,
+  progressCode,
+  radioGroupCode,
+  selectCode,
+  sheetCode,
+  skeletonCode,
+  sliderCode,
+  switchCode,
+  tableCode,
+  tabsCode,
+  textareaCode,
+  toastCode,
+  tooltipCode
+} from '@/website/services/CodeBlocks';
+
+export const getMenuItem = (path: string) => {
+  return sidebarItems.find(item => item.link === path);
+};
 
 export const sidebarItems = [
   { title: 'Get Started', description: '', link: '', isHeading: true },
@@ -27,6 +92,8 @@ export const sidebarItems = [
     description:
       "An Alert component is a UI element used to display important messages or notifications to users. It can convey different types of information such as success, warning, error, or informational messages, typically styled with distinct colors and icons to highlight the message's significance. Alerts are often used to grab the user's attention and provide immediate feedback on actions or events.",
     link: '/components/alert',
+    attributes: alertAttributes,
+    code: alertCode,
     icon: Package,
     isComponent: true
   },
@@ -35,6 +102,8 @@ export const sidebarItems = [
     description:
       'A Badge component is a small UI element used to display a count, status, or label associated with another element, such as an icon or button. Badges are commonly used to highlight notifications, messages, or any relevant information in a compact and visually distinct way, often appearing as small circles or rectangles with numbers or text.',
     link: '/components/badge',
+    attributes: badgeAttributes,
+    code: badgeCode,
     icon: Package,
     isComponent: true
   },
@@ -43,13 +112,18 @@ export const sidebarItems = [
     description:
       'A Button component is a fundamental UI element that allows users to trigger actions or events, such as submitting a form, opening a dialog, or navigating to another page. Buttons are interactive and typically styled to stand out, making it easy for users to identify and interact with them. They can come in various types, such as primary, secondary, or disabled, depending on their purpose or state.',
     link: '/components/button',
-    icon: Package
+    attributes: buttonAttributes,
+    code: buttonCode,
+    icon: Package,
+    isComponent: true
   },
   {
     title: 'Button Group',
     description:
       'A Button Group component is a UI element that groups multiple buttons together, allowing users to select from a set of related actions or options. It helps organize buttons in a compact, cohesive layout, typically displayed in a horizontal or vertical row. Button Groups are useful for actions that are closely related or mutually exclusive, providing a clean and structured way to present multiple controls.',
     link: '/components/button-group',
+    attributes: buttonGroupAttributes,
+    code: buttonGroupCode,
     icon: Package,
     isComponent: true
   },
@@ -58,6 +132,8 @@ export const sidebarItems = [
     description:
       'A Card component is a versatile UI element used to display content in a structured and visually appealing way. It typically contains related information, such as text, images, buttons, and other elements, within a bordered or shadowed container. Cards are often used for presenting individual items, like products, articles, or profiles, making the content easy to scan and interact with.',
     link: '/components/card',
+    attributes: cardAttributes,
+    code: cardCode,
     icon: Package,
     isComponent: true
   },
@@ -66,6 +142,8 @@ export const sidebarItems = [
     description:
       'A Checkbox component is a UI element that allows users to select or deselect one or more options from a list. It typically appears as a small square that can be checked (ticked) or unchecked. Checkboxes are often used in forms, settings, or filters where multiple selections are needed, and they provide a clear, binary choice for users.',
     link: '/components/checkbox',
+    attributes: checkboxAttributes,
+    code: checkBoxCode,
     icon: Package,
     isComponent: true
   },
@@ -74,6 +152,8 @@ export const sidebarItems = [
     description:
       'A Confirm Alert component is a UI element that prompts users to confirm or cancel an action before proceeding. It typically displays a message asking for confirmation, along with "Confirm" and "Cancel" buttons, ensuring that the user consciously approves or rejects the action, often used for critical tasks like deletions or irreversible changes.',
     link: '/components/confirm-alert',
+    attributes: confirmAlertAttributes,
+    code: confirmAlertCode,
     icon: Package,
     isComponent: true
   },
@@ -82,6 +162,8 @@ export const sidebarItems = [
     description:
       'A Dialog component is a UI element that displays a pop-up window over the main content to capture user attention or request input. It is often used for tasks like confirmations, alerts, forms, or other interactions that require user feedback before proceeding. Dialogs can include buttons like "OK" or "Cancel" to confirm or dismiss actions, and typically block interaction with the underlying content until closed.',
     link: '/components/dialog',
+    attributes: dialogAttributes,
+    code: dialogCode,
     icon: Package,
     isComponent: true
   },
@@ -90,6 +172,8 @@ export const sidebarItems = [
     description:
       'A Divider component is a simple UI element used to separate content within a layout, creating visual distinction between sections. It helps enhance the organization and readability of the interface by providing clear boundaries between different elements, such as text blocks, images, or other components. Dividers can be styled in various ways (solid, dashed, or dotted) and can vary in thickness and color to match the overall design of the application.',
     link: '/components/divider',
+    attributes: dividerAttributes,
+    code: dividerCode,
     icon: Package,
     isComponent: true
   },
@@ -98,6 +182,8 @@ export const sidebarItems = [
     description:
       'An Infinite Scroll component is a user interface feature that automatically loads and displays additional content as the user scrolls down a page. Instead of traditional pagination, this component creates a seamless browsing experience by continuously appending new items, such as images or articles, when the user reaches the bottom of the viewport. This enhances user engagement and keeps the content flow uninterrupted, making it ideal for applications like social media feeds, product galleries, and news websites.',
     link: '/components/infinite-scroll',
+    attributes: infiniteScrollAttributes,
+    code: infiniteScrollCode,
     icon: Package,
     isComponent: true
   },
@@ -106,6 +192,8 @@ export const sidebarItems = [
     description:
       'An Input component is a user interface element that allows users to enter data, such as text, numbers, or selections. It typically includes various types, such as text fields, checkboxes, radio buttons, and dropdowns, providing flexibility for different data types. Input components are essential for forms and interactive applications, enabling users to submit information effectively and efficiently.',
     link: '/components/input',
+    attributes: inputAttributes,
+    code: inputCode,
     icon: Package,
     isComponent: true
   },
@@ -114,6 +202,8 @@ export const sidebarItems = [
     description:
       'An Input with React Hook Form component is a controlled input field that integrates with the React Hook Form library for efficient form handling in React applications. It simplifies the process of managing form state, validation, and submission. By utilizing React Hook Form, this component enables easy tracking of input values, ensures validation rules are applied, and provides streamlined error handling, making it a powerful tool for building robust forms with minimal boilerplate code.',
     link: '/components/input-hook-form',
+    attributes: inputHookAttributes,
+    code: inputHookCode,
     icon: Package,
     isComponent: true
   },
@@ -122,6 +212,8 @@ export const sidebarItems = [
     description:
       'A Link component is a UI element that allows users to navigate from one page or section to another within a web application or website. Typically styled as underlined text or buttons, links provide a clear indication of interactivity. They can point to internal or external resources and often include features like hover effects or icons to enhance user experience and accessibility.',
     link: '/components/link',
+    attributes: linkAttributes,
+    code: linkCode,
     icon: Package,
     isComponent: true
   },
@@ -130,6 +222,8 @@ export const sidebarItems = [
     description:
       'A Linkify component is a UI tool that automatically detects and converts plain text URLs within a content area into clickable hyperlinks. This enhances user experience by allowing easy access to external resources without the need for manual formatting. Linkify typically recognizes various URL formats and ensures that they are presented in a visually distinct manner, making navigation seamless and intuitive.',
     link: '/components/linkify',
+    attributes: linkAttributes,
+    code: linkifyCode,
     icon: Package,
     isComponent: true
   },
@@ -138,6 +232,8 @@ export const sidebarItems = [
     description:
       'A Loading component is a UI element that indicates to users that a process is ongoing, such as data fetching, page loading, or background tasks. It typically features visual indicators like spinners, progress bars, or animated icons to convey that the application is busy and to enhance the user experience by preventing confusion or frustration during waiting periods.',
     link: '/components/loading',
+    attributes: loadingAttributes,
+    code: loadingCode,
     icon: Package,
     isComponent: true
   },
@@ -146,6 +242,8 @@ export const sidebarItems = [
     description:
       'A Dropdown Menu component is a UI element that allows users to select an option from a list that appears when the user clicks or hovers over a button or link. This component helps save space on the interface by displaying additional options only when needed. Dropdown menus are commonly used for navigation, settings, or forms, enabling users to choose from multiple choices in a clean and organized manner.',
     link: '/components/menu',
+    attributes: menuAttributes,
+    code: menuCode,
     icon: Package,
     isComponent: true
   },
@@ -154,6 +252,8 @@ export const sidebarItems = [
     description:
       'A Popover component is a UI element that displays additional information or actions when users interact with a specific trigger, such as a button or link. It typically appears as a small overlay or tooltip that provides context, tips, or options without navigating away from the current page. Popovers enhance user experience by offering relevant content in a concise format while maintaining focus on the main interface.',
     link: '/components/popover',
+    attributes: popoverAttributes,
+    code: popoverCode,
     icon: Package,
     isComponent: true
   },
@@ -162,6 +262,8 @@ export const sidebarItems = [
     description:
       'A Progress component visually indicates the completion status of a task or process. It typically consists of a progress bar that fills up as the task progresses, providing users with a clear and immediate understanding of how much of the task is completed and how much remains. This component is commonly used in forms, uploads, downloads, and loading states to enhance user experience by managing expectations and keeping users informed.',
     link: '/components/progress',
+    attributes: progressAttributes,
+    code: progressCode,
     icon: Package,
     isComponent: true
   },
@@ -170,6 +272,8 @@ export const sidebarItems = [
     description:
       'A Radio Group component is a UI element that allows users to select one option from a set of mutually exclusive choices. It typically consists of multiple radio buttons, where only one button can be selected at a time. Radio groups are commonly used in forms to gather user preferences, ensuring a clear and organized way to present options for selection. They enhance user experience by providing a straightforward interface for making single-choice decisions.',
     link: '/components/radio-group',
+    attributes: radioGroupAttributes,
+    code: radioGroupCode,
     icon: Package,
     isComponent: true
   },
@@ -178,6 +282,8 @@ export const sidebarItems = [
     description:
       'A Select or ComboBox component is a UI element that allows users to choose one or more options from a dropdown list. It typically displays a default value or prompt, and when clicked, it expands to show a list of available choices. Users can either select an option from the list or, in the case of a ComboBox, input custom values. This component is ideal for conserving space in forms and making it easy for users to make selections quickly.',
     link: '/components/select',
+    attributes: selectAttributes,
+    code: selectCode,
     icon: Package,
     isComponent: true
   },
@@ -186,6 +292,8 @@ export const sidebarItems = [
     description:
       'A Sheet component is a UI element that presents content in a sliding panel, often overlaying the main application interface. It is typically used for displaying additional information, forms, or actions without navigating away from the current view. Sheets can be swiped or tapped to expand or collapse, providing a clean and efficient way to manage user interactions and maintain focus on the main content.',
     link: '/components/sheet',
+    attributes: sheetAttributes,
+    code: sheetCode,
     icon: Package,
     isComponent: true
   },
@@ -194,6 +302,8 @@ export const sidebarItems = [
     description:
       'A Skeleton component is a placeholder UI element that represents the layout of content before it loads. It typically features a grey or light-colored shape mimicking the structure of the actual content (such as text blocks, images, or buttons) to indicate that loading is in progress. Skeleton components enhance user experience by providing a visual cue that content is being fetched, reducing perceived loading times and preventing layout shifts.',
     link: '/components/skeleton',
+    attributes: skeletonAttributes,
+    code: skeletonCode,
     icon: Package,
     isComponent: true
   },
@@ -202,6 +312,8 @@ export const sidebarItems = [
     description:
       'A Slider component is a UI element that allows users to select a value from a range by sliding a handle along a track. It provides an interactive way to adjust settings, such as volume, brightness, or other continuous values, with smooth transitions. Sliders can be single or multi-valued, enabling users to make precise selections visually, enhancing the overall user experience.',
     link: '/components/slider',
+    attributes: sliderAttributes,
+    code: sliderCode,
     icon: Package,
     isComponent: true
   },
@@ -210,6 +322,8 @@ export const sidebarItems = [
     description:
       'A Switch component is a UI element that allows users to toggle between two states, typically representing an on/off or enabled/disabled choice. It is visually represented as a sliding toggle or checkbox and provides immediate feedback when the user interacts with it. Switch components are commonly used for settings, preferences, and feature activations in applications, enhancing user experience by simplifying the selection process.',
     link: '/components/switch',
+    attributes: switchAttributes,
+    code: switchCode,
     icon: Package,
     isComponent: true
   },
@@ -218,6 +332,8 @@ export const sidebarItems = [
     description:
       'A Table component is a structured UI element that organizes and displays data in rows and columns, making it easy to read and compare information. Tables can include features like sorting, filtering, pagination, and inline editing, allowing users to interact with the data efficiently. They are commonly used to present datasets, such as user information, product listings, or any structured content that benefits from a grid-like layout.',
     link: '/components/table',
+    attributes: tableAttributes,
+    code: tableCode,
     icon: Package,
     isComponent: true
   },
@@ -226,6 +342,8 @@ export const sidebarItems = [
     description:
       'A Tabs component is a UI element that allows users to switch between different views or sections of content within the same interface. Organized as a series of labeled tabs, this component enhances navigation by displaying only one section at a time, helping to reduce clutter and improve user experience. Users can easily access various related content or features by clicking on the respective tabs, making it ideal for dashboards, settings pages, or any multi-section layout.',
     link: '/components/tabs',
+    attributes: tabsAttributes,
+    code: tabsCode,
     icon: Package,
     isComponent: true
   },
@@ -234,6 +352,8 @@ export const sidebarItems = [
     description:
       'A Textarea component is an input field that allows users to enter multi-line text. It provides a larger area for text input compared to a standard text input field, making it ideal for comments, feedback, or any scenario where users need to provide detailed information. Textareas can be resized, styled, and configured to support features like character limits, placeholders, and auto-resizing to enhance user experience.',
     link: '/components/textarea',
+    attributes: textareaAttributes,
+    code: textareaCode,
     icon: Package,
     isComponent: true
   },
@@ -242,6 +362,8 @@ export const sidebarItems = [
     description:
       'A Toast component is a transient notification that appears on the screen to provide feedback or information to users without interrupting their workflow. Typically displayed at the top or bottom of the screen, toasts are brief messages that automatically disappear after a short duration. They are commonly used to inform users about actions such as successful submissions, updates, or alerts, enhancing the overall user experience with minimal disruption.',
     link: '/components/toast',
+    attributes: toastAttributes,
+    code: toastCode,
     icon: Package,
     isComponent: true
   },
@@ -250,10 +372,12 @@ export const sidebarItems = [
     description:
       'A Tooltip component is a small, informative pop-up that appears when a user hovers over or focuses on an element, such as a button or icon. It provides additional context or explanations about that element without cluttering the interface. Tooltips enhance user experience by offering helpful hints, instructions, or details, ensuring that information is accessible without overwhelming the layout.',
     link: '/components/tooltip',
+    attributes: tooltipAttributes,
+    code: tooltipCode,
     icon: Package,
     isComponent: true
   },
-  { title: 'Dev Tools', description: '', link: '/dev-tools', isHeading: true },
+  { title: 'Dev Tools', description: '', link: '', isHeading: true },
   {
     title: 'Sitemaper',
     description:
