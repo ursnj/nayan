@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { getMenuItem, sidebarItems } from '../services/Utils';
 import Sidebar from '@/website/helpers/Sidebar';
 import { NCard } from '@/components/NCard';
-import { Package } from 'lucide-react';
 import Meta from '@/website/helpers/Meta';
 
 const Components = () => {

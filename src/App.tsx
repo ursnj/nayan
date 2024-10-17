@@ -38,6 +38,8 @@ import Components from '@/website/components/Components';
 import FormInput from '@/website/components/FormInput';
 import { THEMES } from './components/Types';
 import Sitemaper from './website/sitemaper/Sitemaper';
+import Tags from './website/tags/Tags';
+import TagsDetails from './website/tags/TagsDetails';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -83,6 +85,12 @@ const App = () => {
             <Route path="toast" element={<Toast />} />
             <Route path="tooltip" element={<Tooltip />} />
           </Route>
+
+          <Route path="/tags">
+            <Route index element={<Tags />} />
+            <Route path=":tag" element={<TagsDetails />} />
+          </Route>
+
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Wrapper>

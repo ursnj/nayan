@@ -6,6 +6,7 @@ import Attributes from '@/website/helpers/Attributes';
 import Meta from '@/website/helpers/Meta';
 import { useLocation } from 'react-router-dom';
 import { getMenuItem } from '../services/Utils';
+import TagsList from '../tags/TagsList';
 
 interface Props {
   children: any;
@@ -27,6 +28,10 @@ const ComponentWrapper = (props: Props) => {
 
       <SubHeader title="Usage">
         <Code code={component.code} />
+      </SubHeader>
+
+      <SubHeader title="Tags">
+        <TagsList tags={component.tags} />
       </SubHeader>
     </Sidebar>
   );

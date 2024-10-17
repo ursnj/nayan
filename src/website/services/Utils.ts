@@ -3,11 +3,9 @@ import {
   CircleAlert,
   CreditCard,
   GalleryVertical,
-  Grid2x2,
   ListCollapse,
   MessageSquare,
   MessageSquareWarning,
-  Package,
   Slash,
   Square,
   Link,
@@ -96,9 +94,44 @@ import {
   toastCode,
   tooltipCode
 } from '@/website/services/CodeBlocks';
+import {
+  accordionTags,
+  alertTags,
+  badgeTags,
+  buttonGroupTags,
+  buttonTags,
+  cardTags,
+  checkboxTags,
+  confirmAlertTags,
+  dialogTags,
+  dividerTags,
+  infiniteScrollTags,
+  inputTags,
+  linkifyTags,
+  linkTags,
+  loadingTags,
+  menuTags,
+  popoverTags,
+  progressTags,
+  radioGroupTags,
+  selectTags,
+  sheetTags,
+  sitemaperTags,
+  skeletonTags,
+  sliderTags,
+  switchTags,
+  tableTags,
+  tabsTags,
+  textareaTags,
+  toastTags,
+  tooltipTags
+} from '@/website/services/Tags';
 
 export const getMenuItem = (path: string) => {
   return sidebarItems.find(item => item.link === path);
+};
+export const getMenuItemByTag = (tag: string) => {
+  return sidebarItems.find((component: any) => component.tags?.find((tg: any) => tg.sku === tag));
 };
 
 export const sidebarItems = [
@@ -118,6 +151,7 @@ export const sidebarItems = [
     link: '/components/accordion',
     attributes: accordionAttributes,
     code: accordionCode,
+    tags: accordionTags,
     icon: ListCollapse,
     isComponent: true
   },
@@ -128,6 +162,7 @@ export const sidebarItems = [
     link: '/components/alert',
     attributes: alertAttributes,
     code: alertCode,
+    tags: alertTags,
     icon: CircleAlert,
     isComponent: true
   },
@@ -138,6 +173,7 @@ export const sidebarItems = [
     link: '/components/badge',
     attributes: badgeAttributes,
     code: badgeCode,
+    tags: badgeTags,
     icon: Badge,
     isComponent: true
   },
@@ -148,6 +184,7 @@ export const sidebarItems = [
     link: '/components/button',
     attributes: buttonAttributes,
     code: buttonCode,
+    tags: buttonTags,
     icon: Square,
     isComponent: true
   },
@@ -158,6 +195,7 @@ export const sidebarItems = [
     link: '/components/button-group',
     attributes: buttonGroupAttributes,
     code: buttonGroupCode,
+    tags: buttonGroupTags,
     icon: Columns3,
     isComponent: true
   },
@@ -168,6 +206,7 @@ export const sidebarItems = [
     link: '/components/card',
     attributes: cardAttributes,
     code: cardCode,
+    tags: cardTags,
     icon: CreditCard,
     isComponent: true
   },
@@ -178,6 +217,7 @@ export const sidebarItems = [
     link: '/components/checkbox',
     attributes: checkboxAttributes,
     code: checkBoxCode,
+    tags: checkboxTags,
     icon: SquareCheck,
     isComponent: true
   },
@@ -188,6 +228,7 @@ export const sidebarItems = [
     link: '/components/confirm-alert',
     attributes: confirmAlertAttributes,
     code: confirmAlertCode,
+    tags: confirmAlertTags,
     icon: MessageSquareWarning,
     isComponent: true
   },
@@ -198,6 +239,7 @@ export const sidebarItems = [
     link: '/components/dialog',
     attributes: dialogAttributes,
     code: dialogCode,
+    tags: dialogTags,
     icon: MessageSquare,
     isComponent: true
   },
@@ -208,6 +250,7 @@ export const sidebarItems = [
     link: '/components/divider',
     attributes: dividerAttributes,
     code: dividerCode,
+    tags: dividerTags,
     icon: Slash,
     isComponent: true
   },
@@ -218,6 +261,7 @@ export const sidebarItems = [
     link: '/components/infinite-scroll',
     attributes: infiniteScrollAttributes,
     code: infiniteScrollCode,
+    tags: infiniteScrollTags,
     icon: GalleryVertical,
     isComponent: true
   },
@@ -228,6 +272,7 @@ export const sidebarItems = [
     link: '/components/input',
     attributes: inputAttributes,
     code: inputCode,
+    tags: inputTags,
     icon: TextCursorInput,
     isComponent: true
   },
@@ -238,6 +283,7 @@ export const sidebarItems = [
     link: '/components/input-hook-form',
     attributes: inputHookAttributes,
     code: inputHookCode,
+    tags: inputTags,
     icon: TextCursorInput,
     isComponent: true
   },
@@ -248,6 +294,7 @@ export const sidebarItems = [
     link: '/components/link',
     attributes: linkAttributes,
     code: linkCode,
+    tags: linkTags,
     icon: Link,
     isComponent: true
   },
@@ -258,6 +305,7 @@ export const sidebarItems = [
     link: '/components/linkify',
     attributes: linkAttributes,
     code: linkifyCode,
+    tags: linkifyTags,
     icon: SquareArrowOutUpRight,
     isComponent: true
   },
@@ -268,6 +316,7 @@ export const sidebarItems = [
     link: '/components/loading',
     attributes: loadingAttributes,
     code: loadingCode,
+    tags: loadingTags,
     icon: Loader,
     isComponent: true
   },
@@ -278,6 +327,7 @@ export const sidebarItems = [
     link: '/components/menu',
     attributes: menuAttributes,
     code: menuCode,
+    tags: menuTags,
     icon: EllipsisVertical,
     isComponent: true
   },
@@ -288,6 +338,7 @@ export const sidebarItems = [
     link: '/components/popover',
     attributes: popoverAttributes,
     code: popoverCode,
+    tags: popoverTags,
     icon: PictureInPicture2,
     isComponent: true
   },
@@ -298,6 +349,7 @@ export const sidebarItems = [
     link: '/components/progress',
     attributes: progressAttributes,
     code: progressCode,
+    tags: progressTags,
     icon: RectangleEllipsis,
     isComponent: true
   },
@@ -308,6 +360,7 @@ export const sidebarItems = [
     link: '/components/radio-group',
     attributes: radioGroupAttributes,
     code: radioGroupCode,
+    tags: radioGroupTags,
     icon: CircleCheck,
     isComponent: true
   },
@@ -318,6 +371,7 @@ export const sidebarItems = [
     link: '/components/select',
     attributes: selectAttributes,
     code: selectCode,
+    tags: selectTags,
     icon: SquareMousePointer,
     isComponent: true
   },
@@ -328,6 +382,7 @@ export const sidebarItems = [
     link: '/components/sheet',
     attributes: sheetAttributes,
     code: sheetCode,
+    tags: sheetTags,
     icon: StickyNote,
     isComponent: true
   },
@@ -338,6 +393,7 @@ export const sidebarItems = [
     link: '/components/skeleton',
     attributes: skeletonAttributes,
     code: skeletonCode,
+    tags: skeletonTags,
     icon: TextSelect,
     isComponent: true
   },
@@ -348,6 +404,7 @@ export const sidebarItems = [
     link: '/components/slider',
     attributes: sliderAttributes,
     code: sliderCode,
+    tags: sliderTags,
     icon: SlidersHorizontal,
     isComponent: true
   },
@@ -358,6 +415,7 @@ export const sidebarItems = [
     link: '/components/switch',
     attributes: switchAttributes,
     code: switchCode,
+    tags: switchTags,
     icon: ToggleRight,
     isComponent: true
   },
@@ -368,6 +426,7 @@ export const sidebarItems = [
     link: '/components/table',
     attributes: tableAttributes,
     code: tableCode,
+    tags: tableTags,
     icon: Grid3x3,
     isComponent: true
   },
@@ -378,6 +437,7 @@ export const sidebarItems = [
     link: '/components/tabs',
     attributes: tabsAttributes,
     code: tabsCode,
+    tags: tabsTags,
     icon: AppWindow,
     isComponent: true
   },
@@ -388,6 +448,7 @@ export const sidebarItems = [
     link: '/components/textarea',
     attributes: textareaAttributes,
     code: textareaCode,
+    tags: textareaTags,
     icon: TextCursorInput,
     isComponent: true
   },
@@ -398,6 +459,7 @@ export const sidebarItems = [
     link: '/components/toast',
     attributes: toastAttributes,
     code: toastCode,
+    tags: toastTags,
     icon: MessageSquareText,
     isComponent: true
   },
@@ -408,6 +470,7 @@ export const sidebarItems = [
     link: '/components/tooltip',
     attributes: tooltipAttributes,
     code: tooltipCode,
+    tags: tooltipTags,
     icon: MessageSquareDot,
     isComponent: true
   },
@@ -417,6 +480,7 @@ export const sidebarItems = [
     description:
       'Sitemaper is a powerful sitemap generator designed to simplify the process of creating accurate and efficient sitemaps for websites. It crawls through your site, maps its structure, and generates an optimized sitemap, helping improve SEO and site visibility. With customizable options for depth, frequency, and output paths, Sitemaper is a versatile tool for developers and site owners aiming to keep their web presence indexed properly.',
     link: '/sitemaper',
+    tags: sitemaperTags,
     icon: FileCode
   },
   { title: 'More Guides', description: '', link: '/guides', isHeading: true },
