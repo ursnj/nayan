@@ -30,7 +30,8 @@ import {
   MessageSquareText,
   MessageSquareDot,
   FileCode,
-  HandCoins
+  HandCoins,
+  Settings
 } from 'lucide-react';
 import {
   accordionAttributes,
@@ -102,7 +103,7 @@ export const getMenuItem = (path: string) => {
 
 export const sidebarItems = [
   { title: 'Get Started', description: '', link: '', isHeading: true },
-  { title: 'Installation', description: '', link: '/installation', icon: Package },
+  { title: 'Installation', description: '', link: '/installation', icon: Settings },
   {
     title: 'Components',
     description:

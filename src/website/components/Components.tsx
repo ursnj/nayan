@@ -17,17 +17,20 @@ const Components = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
         {sidebarItems
           .filter(item => item.isComponent)
-          .map(item => (
-            <Link to={item.link} key={item.link}>
-              <NCard className="p-3 h-full">
-                <div className="flex flex-row items-center mb-1">
-                  <Package className="w-4 h-4 inline mr-3" />
-                  <div className="text-base font-medium">{item.title}</div>
-                </div>
-                <div className="text-sm line-clamp-5">{item.description}</div>
-              </NCard>
-            </Link>
-          ))}
+          .map(item => {
+            const Icon = item.icon as any;
+            return (
+              <Link to={item.link} key={item.link}>
+                <NCard className="p-3 h-full">
+                  <div className="flex flex-row items-center mb-1">
+                    <Icon className="w-4 h-4 inline mr-3 text-primary" />
+                    <div className="text-base font-medium">{item.title}</div>
+                  </div>
+                  <div className="text-sm line-clamp-5">{item.description}</div>
+                </NCard>
+              </Link>
+            );
+          })}
       </div>
     </Sidebar>
   );
