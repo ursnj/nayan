@@ -1,3062 +1,3162 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://localhost:7100</loc>
+    <loc>https://www.nayanui.com</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/</loc>
+    <loc>https://www.nayanui.com/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/installation</loc>
+    <loc>https://www.nayanui.com/installation</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components</loc>
+    <loc>https://www.nayanui.com/components</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/sitemaper</loc>
+    <loc>https://www.nayanui.com/sitemaper</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/contributions</loc>
+    <loc>https://www.nayanui.com/contributions</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/accordion</loc>
+    <loc>https://www.nayanui.com/components/accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/alert</loc>
+    <loc>https://www.nayanui.com/components/alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/badge</loc>
+    <loc>https://www.nayanui.com/components/badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/button</loc>
+    <loc>https://www.nayanui.com/components/button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/button-group</loc>
+    <loc>https://www.nayanui.com/components/button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/card</loc>
+    <loc>https://www.nayanui.com/components/card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/checkbox</loc>
+    <loc>https://www.nayanui.com/components/checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/confirm-alert</loc>
+    <loc>https://www.nayanui.com/components/confirm-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/dialog</loc>
+    <loc>https://www.nayanui.com/components/dialog</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/divider</loc>
+    <loc>https://www.nayanui.com/components/divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/infinite-scroll</loc>
+    <loc>https://www.nayanui.com/components/infinite-scroll</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/input</loc>
+    <loc>https://www.nayanui.com/components/input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/input-hook-form</loc>
+    <loc>https://www.nayanui.com/components/input-hook-form</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/link</loc>
+    <loc>https://www.nayanui.com/components/link</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/linkify</loc>
+    <loc>https://www.nayanui.com/components/linkify</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/loading</loc>
+    <loc>https://www.nayanui.com/components/loading</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/menu</loc>
+    <loc>https://www.nayanui.com/components/menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/popover</loc>
+    <loc>https://www.nayanui.com/components/popover</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/progress</loc>
+    <loc>https://www.nayanui.com/components/progress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/radio-group</loc>
+    <loc>https://www.nayanui.com/components/radio-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/select</loc>
+    <loc>https://www.nayanui.com/components/select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/sheet</loc>
+    <loc>https://www.nayanui.com/components/sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/skeleton</loc>
+    <loc>https://www.nayanui.com/components/skeleton</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/slider</loc>
+    <loc>https://www.nayanui.com/components/slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/switch</loc>
+    <loc>https://www.nayanui.com/components/switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/table</loc>
+    <loc>https://www.nayanui.com/components/table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/tabs</loc>
+    <loc>https://www.nayanui.com/components/tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/textarea</loc>
+    <loc>https://www.nayanui.com/components/textarea</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/toast</loc>
+    <loc>https://www.nayanui.com/components/toast</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/components/tooltip</loc>
+    <loc>https://www.nayanui.com/components/tooltip</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-collapsible-component</loc>
+    <loc>https://www.nayanui.com/tags/xml-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-accordion</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-creator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toggle-panel</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-builder</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/automated-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-expandable-list</loc>
+    <loc>https://www.nayanui.com/tags/website-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-menu</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-tool</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/accordion-component-react</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/collapsible-ui-react</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator-for-seo</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-plugin</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator-online</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-accordion</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator-plugin</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/accordion-animation-react</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator-xml</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-hooks</loc>
+    <loc>https://www.nayanui.com/tags/easy-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-library-accordion</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator-free</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-example</loc>
+    <loc>https://www.nayanui.com/tags/custom-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-styling</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-generator-for-wordpress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-component</loc>
+    <loc>https://www.nayanui.com/tags/responsive-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-react-accordion</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-xml-creator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accordion-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/simple-sitemap-generator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-accordion</loc>
+    <loc>https://www.nayanui.com/tags/sitemap-scraper</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-component</loc>
+    <loc>https://www.nayanui.com/tags/react-collapsible-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-notification</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-message</loc>
+    <loc>https://www.nayanui.com/tags/react-toggle-panel</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popup-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-expandable-list</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dismissible-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-alert</loc>
+    <loc>https://www.nayanui.com/tags/accordion-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-hooks</loc>
+    <loc>https://www.nayanui.com/tags/collapsible-ui-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-component</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-plugin</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-example</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-notification-system</loc>
+    <loc>https://www.nayanui.com/tags/accordion-animation-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-banner-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-library-accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-error-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-success-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-styling</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-react-accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-accordion-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-accordion</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-notification-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-status-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-notification</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-component</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-message</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-with-icon</loc>
+    <loc>https://www.nayanui.com/tags/react-popup-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-examples</loc>
+    <loc>https://www.nayanui.com/tags/react-dismissible-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-list</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-counter</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-notification-system</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-library-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-banner-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/badge-component-react</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-notification</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-react-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-error-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-success-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-badge-design</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-badge</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button</loc>
+    <loc>https://www.nayanui.com/tags/react-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-button</loc>
+    <loc>https://www.nayanui.com/tags/react-notification-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-styled-button</loc>
+    <loc>https://www.nayanui.com/tags/react-status-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-icon-button</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-button</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-with-icon</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-component</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-examples</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-with-icon</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-list</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-disabled-button</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-styles</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-counter</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-example</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-rounded-button</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-with-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-library-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-animation</loc>
+    <loc>https://www.nayanui.com/tags/badge-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-onclick</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-notification</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-submit-button</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-react-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-primary-button</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-secondary-button</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-tooltip</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-badge-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-with-loading</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-badge</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-toolbar</loc>
+    <loc>https://www.nayanui.com/tags/react-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toggle-buttons</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-component</loc>
+    <loc>https://www.nayanui.com/tags/react-styled-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-button-group</loc>
+    <loc>https://www.nayanui.com/tags/react-icon-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-example</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-button-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-button-with-icon</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-button-group</loc>
+    <loc>https://www.nayanui.com/tags/react-disabled-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-button-group</loc>
+    <loc>https://www.nayanui.com/tags/react-button-styles</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-icon-button-group</loc>
+    <loc>https://www.nayanui.com/tags/react-button-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-layout</loc>
+    <loc>https://www.nayanui.com/tags/react-rounded-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-with-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/react-button-with-tooltip</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-usage</loc>
+    <loc>https://www.nayanui.com/tags/react-button-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-library</loc>
+    <loc>https://www.nayanui.com/tags/react-button-onclick</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-react-button-group</loc>
+    <loc>https://www.nayanui.com/tags/react-submit-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-variants</loc>
+    <loc>https://www.nayanui.com/tags/react-primary-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-interaction</loc>
+    <loc>https://www.nayanui.com/tags/react-secondary-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-button-group-best-practices</loc>
+    <loc>https://www.nayanui.com/tags/react-button-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card</loc>
+    <loc>https://www.nayanui.com/tags/react-button-with-loading</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-component</loc>
+    <loc>https://www.nayanui.com/tags/react-button-toolbar</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-card</loc>
+    <loc>https://www.nayanui.com/tags/react-toggle-buttons</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-example</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-design</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-responsive-card</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-layout</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-image-card</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-header</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-footer</loc>
+    <loc>https://www.nayanui.com/tags/react-icon-button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-list</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-layout</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-interaction</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-with-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-flip-card</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-elevated-card</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-group</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-react-button-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-card</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-variants</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-with-image</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-interaction</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-card-component-library</loc>
+    <loc>https://www.nayanui.com/tags/react-button-group-best-practices</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox</loc>
+    <loc>https://www.nayanui.com/tags/react-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-component</loc>
+    <loc>https://www.nayanui.com/tags/react-card-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-checkbox</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-group</loc>
+    <loc>https://www.nayanui.com/tags/react-card-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-example</loc>
+    <loc>https://www.nayanui.com/tags/react-card-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-with-label</loc>
+    <loc>https://www.nayanui.com/tags/react-responsive-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-card-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/styled-react-checkbox</loc>
+    <loc>https://www.nayanui.com/tags/react-card-layout</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accessible-checkbox</loc>
+    <loc>https://www.nayanui.com/tags/react-card-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-checkbox</loc>
+    <loc>https://www.nayanui.com/tags/react-image-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-validation</loc>
+    <loc>https://www.nayanui.com/tags/react-card-header</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-onchange</loc>
+    <loc>https://www.nayanui.com/tags/react-card-footer</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-card-list</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-card-interaction</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-api</loc>
+    <loc>https://www.nayanui.com/tags/react-flip-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-library</loc>
+    <loc>https://www.nayanui.com/tags/react-elevated-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-controlled-checkbox</loc>
+    <loc>https://www.nayanui.com/tags/react-card-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-with-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-card</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-using-typescript</loc>
+    <loc>https://www.nayanui.com/tags/react-card-with-image</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-ui</loc>
+    <loc>https://www.nayanui.com/tags/react-card-component-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-design</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-dialog</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-warning-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-popup</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-with-label</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-confirmation</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-notification</loc>
+    <loc>https://www.nayanui.com/tags/styled-react-checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-message</loc>
+    <loc>https://www.nayanui.com/tags/react-accessible-checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-user-confirmation</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-system</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-validation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-dialog</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-onchange</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-alert</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-prompt-confirmation</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-box</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-api</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-box</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-handler</loc>
+    <loc>https://www.nayanui.com/tags/react-controlled-checkbox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-ui</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-with-tooltip</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirmation-service</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-using-typescript</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-alert-user-interface</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dialog</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popup</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-dialog</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-component</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dialog-component</loc>
+    <loc>https://www.nayanui.com/tags/react-warning-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-popup</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-confirmation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-with-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-notification</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dialog-example</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-message</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-user-confirmation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/accessible-react-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-system</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-confirm-dialog</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-dialog</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-animation</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-alert</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/modal-overlay-react</loc>
+    <loc>https://www.nayanui.com/tags/react-prompt-confirmation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-library</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-box</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dialog-with-form</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-box</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-simple-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-handler</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-usage</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/draggable-react-modal</loc>
+    <loc>https://www.nayanui.com/tags/react-confirmation-service</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-with-backdrop</loc>
+    <loc>https://www.nayanui.com/tags/react-alert-user-interface</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-dialog</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-horizontal-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-vertical-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-popup</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-component</loc>
+    <loc>https://www.nayanui.com/tags/react-dialog-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-example</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-divider</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-with-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-with-text</loc>
+    <loc>https://www.nayanui.com/tags/react-dialog-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-animation</loc>
+    <loc>https://www.nayanui.com/tags/accessible-react-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-confirm-dialog</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-simple-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-thin-divider</loc>
+    <loc>https://www.nayanui.com/tags/modal-overlay-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-customizable-divider</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-usage</loc>
+    <loc>https://www.nayanui.com/tags/react-dialog-with-form</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-best-practices</loc>
+    <loc>https://www.nayanui.com/tags/react-simple-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-in-layout</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-library</loc>
+    <loc>https://www.nayanui.com/tags/draggable-react-modal</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-with-icons</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-with-backdrop</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-divider-design</loc>
+    <loc>https://www.nayanui.com/tags/react-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-scroll</loc>
+    <loc>https://www.nayanui.com/tags/react-horizontal-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/infinite-scroll-component</loc>
+    <loc>https://www.nayanui.com/tags/react-vertical-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-scrolling</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-virtual-scroll</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/load-more-on-scroll</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/infinite-scroll-library</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-scroll-hook</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/infinite-scroll-example</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-with-text</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/lazy-load-in-react</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-scroll-pagination</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/infinite-scroll-implementation</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-list</loc>
+    <loc>https://www.nayanui.com/tags/react-simple-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/scrolling-content-react</loc>
+    <loc>https://www.nayanui.com/tags/react-thin-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-infinite-scroll</loc>
+    <loc>https://www.nayanui.com/tags/react-customizable-divider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-scroll-component</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/optimized-infinite-scroll</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-best-practices</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-load-more</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-in-layout</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/infinite-scrolling-list</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-scroll-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-with-icons</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/infinite-scroll-performance</loc>
+    <loc>https://www.nayanui.com/tags/react-divider-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-infinite-scrolling-example</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-scroll</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input</loc>
+    <loc>https://www.nayanui.com/tags/infinite-scroll-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/input-component-react</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-scrolling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-text-input</loc>
+    <loc>https://www.nayanui.com/tags/react-virtual-scroll</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-number-input</loc>
+    <loc>https://www.nayanui.com/tags/load-more-on-scroll</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-password-input</loc>
+    <loc>https://www.nayanui.com/tags/infinite-scroll-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-scroll-hook</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/controlled-input-react</loc>
+    <loc>https://www.nayanui.com/tags/infinite-scroll-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/uncontrolled-input-react</loc>
+    <loc>https://www.nayanui.com/tags/lazy-load-in-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input-validation</loc>
+    <loc>https://www.nayanui.com/tags/react-scroll-pagination</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input-styling</loc>
+    <loc>https://www.nayanui.com/tags/infinite-scroll-implementation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-input</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-list</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input-with-hooks</loc>
+    <loc>https://www.nayanui.com/tags/scrolling-content-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/input-label-component-react</loc>
+    <loc>https://www.nayanui.com/tags/custom-infinite-scroll</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-search-input</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-scroll-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-autocomplete-input</loc>
+    <loc>https://www.nayanui.com/tags/optimized-infinite-scroll</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input-group</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-load-more</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input-placeholder</loc>
+    <loc>https://www.nayanui.com/tags/infinite-scrolling-list</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-input-react</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-scroll-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/input-component-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/infinite-scroll-performance</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-input-example</loc>
+    <loc>https://www.nayanui.com/tags/react-infinite-scrolling-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-link-component</loc>
+    <loc>https://www.nayanui.com/tags/react-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/link-component-react-router</loc>
+    <loc>https://www.nayanui.com/tags/input-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-navigation-link</loc>
+    <loc>https://www.nayanui.com/tags/react-text-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linking-library</loc>
+    <loc>https://www.nayanui.com/tags/react-number-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-anchor-tag</loc>
+    <loc>https://www.nayanui.com/tags/react-password-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-link-component-react</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-link-component</loc>
+    <loc>https://www.nayanui.com/tags/controlled-input-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-link-component</loc>
+    <loc>https://www.nayanui.com/tags/uncontrolled-input-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/link-styling-react</loc>
+    <loc>https://www.nayanui.com/tags/react-input-validation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-link-example</loc>
+    <loc>https://www.nayanui.com/tags/react-input-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-link-props</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/external-link-react</loc>
+    <loc>https://www.nayanui.com/tags/react-input-with-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/internal-link-react</loc>
+    <loc>https://www.nayanui.com/tags/input-label-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-link-redirect</loc>
+    <loc>https://www.nayanui.com/tags/react-search-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linking-components</loc>
+    <loc>https://www.nayanui.com/tags/react-autocomplete-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/accessibility-react-link</loc>
+    <loc>https://www.nayanui.com/tags/react-input-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/link-component-usage</loc>
+    <loc>https://www.nayanui.com/tags/react-input-placeholder</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-link-state</loc>
+    <loc>https://www.nayanui.com/tags/responsive-input-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/link-navigation-react</loc>
+    <loc>https://www.nayanui.com/tags/input-component-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/link-component-implementation</loc>
+    <loc>https://www.nayanui.com/tags/react-input-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify</loc>
+    <loc>https://www.nayanui.com/tags/react-link-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-component</loc>
+    <loc>https://www.nayanui.com/tags/link-component-react-router</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-react</loc>
+    <loc>https://www.nayanui.com/tags/react-navigation-link</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-url-linkify</loc>
+    <loc>https://www.nayanui.com/tags/react-linking-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-text</loc>
+    <loc>https://www.nayanui.com/tags/react-anchor-tag</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-autolinker</loc>
+    <loc>https://www.nayanui.com/tags/custom-link-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-js-react</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-link-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/url-linkify-react</loc>
+    <loc>https://www.nayanui.com/tags/responsive-link-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-html</loc>
+    <loc>https://www.nayanui.com/tags/link-styling-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify-plugin</loc>
+    <loc>https://www.nayanui.com/tags/react-link-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-url-component</loc>
+    <loc>https://www.nayanui.com/tags/react-link-props</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-library-react</loc>
+    <loc>https://www.nayanui.com/tags/external-link-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify-example</loc>
+    <loc>https://www.nayanui.com/tags/internal-link-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-mentions-react</loc>
+    <loc>https://www.nayanui.com/tags/react-link-redirect</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify-customization</loc>
+    <loc>https://www.nayanui.com/tags/react-linking-components</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/linkify-component-usage</loc>
+    <loc>https://www.nayanui.com/tags/accessibility-react-link</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/link-component-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-linkify-react</loc>
+    <loc>https://www.nayanui.com/tags/react-link-state</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify-functionality</loc>
+    <loc>https://www.nayanui.com/tags/link-navigation-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linkify-urls</loc>
+    <loc>https://www.nayanui.com/tags/link-component-implementation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/loading-component-react</loc>
+    <loc>https://www.nayanui.com/tags/linkify-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-spinner</loc>
+    <loc>https://www.nayanui.com/tags/linkify-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-url-linkify</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-indicator</loc>
+    <loc>https://www.nayanui.com/tags/linkify-text</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-loading-react</loc>
+    <loc>https://www.nayanui.com/tags/react-autolinker</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-animation</loc>
+    <loc>https://www.nayanui.com/tags/linkify-js-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/asynchronous-loading-react</loc>
+    <loc>https://www.nayanui.com/tags/url-linkify-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-placeholder</loc>
+    <loc>https://www.nayanui.com/tags/linkify-html</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/progress-indicator-react</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify-plugin</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-overlay</loc>
+    <loc>https://www.nayanui.com/tags/linkify-url-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/linkify-library-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/loading-state-react</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-spinner-component</loc>
+    <loc>https://www.nayanui.com/tags/linkify-mentions-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-ui</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify-customization</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/lightweight-react-loader</loc>
+    <loc>https://www.nayanui.com/tags/linkify-component-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-loading-react</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-circular-loader</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-linkify-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linear-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify-functionality</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-progress-bar</loc>
+    <loc>https://www.nayanui.com/tags/react-linkify-urls</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-menu</loc>
+    <loc>https://www.nayanui.com/tags/react-loading</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-collapsible-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/loading-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-component</loc>
+    <loc>https://www.nayanui.com/tags/react-spinner</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dropdown-ui-react</loc>
+    <loc>https://www.nayanui.com/tags/react-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-indicator</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dropdown-navigation-react</loc>
+    <loc>https://www.nayanui.com/tags/custom-loading-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-list</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/asynchronous-loading-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multilevel-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-placeholder</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-dropdown-react</loc>
+    <loc>https://www.nayanui.com/tags/progress-indicator-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-overlay</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-with-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dropdown-accessibility-react</loc>
+    <loc>https://www.nayanui.com/tags/loading-state-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-examples</loc>
+    <loc>https://www.nayanui.com/tags/react-spinner-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-library</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dropdown-styling</loc>
+    <loc>https://www.nayanui.com/tags/lightweight-react-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dropdown-toggle-react</loc>
+    <loc>https://www.nayanui.com/tags/responsive-loading-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-filterable-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/react-circular-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/simple-react-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/react-linear-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/advanced-react-dropdown</loc>
+    <loc>https://www.nayanui.com/tags/react-progress-bar</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-menu</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-menu</loc>
+    <loc>https://www.nayanui.com/tags/react-collapsible-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-context-menu</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-clickable-popover</loc>
+    <loc>https://www.nayanui.com/tags/dropdown-ui-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-menu-component</loc>
+    <loc>https://www.nayanui.com/tags/react-select-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-component</loc>
+    <loc>https://www.nayanui.com/tags/dropdown-navigation-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-popover</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-list</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-menu</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-multilevel-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-popover</loc>
+    <loc>https://www.nayanui.com/tags/responsive-dropdown-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-with-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-menu-toggle</loc>
+    <loc>https://www.nayanui.com/tags/dropdown-accessibility-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/advanced-react-popover</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-examples</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-with-options</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-conditional-popover</loc>
+    <loc>https://www.nayanui.com/tags/react-dropdown-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-library</loc>
+    <loc>https://www.nayanui.com/tags/dropdown-toggle-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popover-example</loc>
+    <loc>https://www.nayanui.com/tags/react-filterable-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-popup-menu</loc>
+    <loc>https://www.nayanui.com/tags/simple-react-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-progress</loc>
+    <loc>https://www.nayanui.com/tags/advanced-react-dropdown</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/progress-component-react</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-progress</loc>
+    <loc>https://www.nayanui.com/tags/react-tooltip-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-progress-circle</loc>
+    <loc>https://www.nayanui.com/tags/react-context-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/animated-progress-react</loc>
+    <loc>https://www.nayanui.com/tags/react-clickable-popover</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-linear-progress</loc>
+    <loc>https://www.nayanui.com/tags/react-menu-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-determinate-progress</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-indeterminate-progress</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-popover</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-progress-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-progress-bar</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/progress-tracker-react</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-popover</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-progress-with-steps</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/customizable-progress-bar</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/progress-animation-react</loc>
+    <loc>https://www.nayanui.com/tags/react-menu-toggle</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/progress-tooltip-react</loc>
+    <loc>https://www.nayanui.com/tags/advanced-react-popover</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/multi-step-progress-react</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-with-options</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/progress-component-library</loc>
+    <loc>https://www.nayanui.com/tags/react-conditional-popover</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-progress-api</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group</loc>
+    <loc>https://www.nayanui.com/tags/react-popover-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/radio-button-group-react</loc>
+    <loc>https://www.nayanui.com/tags/react-popup-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-component</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-progress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/radio-group-ui</loc>
+    <loc>https://www.nayanui.com/tags/progress-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-buttons</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-progress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-radio-group</loc>
+    <loc>https://www.nayanui.com/tags/react-progress-circle</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-example</loc>
+    <loc>https://www.nayanui.com/tags/animated-progress-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-linear-progress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/accessible-radio-group-react</loc>
+    <loc>https://www.nayanui.com/tags/react-determinate-progress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/radio-group-validation-react</loc>
+    <loc>https://www.nayanui.com/tags/react-indeterminate-progress</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-radio-group-react</loc>
+    <loc>https://www.nayanui.com/tags/react-progress-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-styling</loc>
+    <loc>https://www.nayanui.com/tags/responsive-progress-bar</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-selection</loc>
+    <loc>https://www.nayanui.com/tags/progress-tracker-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-controlled-radio-group</loc>
+    <loc>https://www.nayanui.com/tags/react-progress-with-steps</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/radio-group-component</loc>
+    <loc>https://www.nayanui.com/tags/customizable-progress-bar</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-library</loc>
+    <loc>https://www.nayanui.com/tags/progress-animation-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/simple-react-radio-group</loc>
+    <loc>https://www.nayanui.com/tags/progress-tooltip-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-api</loc>
+    <loc>https://www.nayanui.com/tags/multi-step-progress-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-radio-group-usage</loc>
+    <loc>https://www.nayanui.com/tags/progress-component-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-radio-group-react</loc>
+    <loc>https://www.nayanui.com/tags/react-progress-api</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-combobox</loc>
+    <loc>https://www.nayanui.com/tags/radio-button-group-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-select</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-single-select</loc>
+    <loc>https://www.nayanui.com/tags/radio-group-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-component</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-buttons</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-select</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-radio-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/accessible-react-select</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-styling</loc>
+    <loc>https://www.nayanui.com/tags/accessible-radio-group-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/async-react-select</loc>
+    <loc>https://www.nayanui.com/tags/radio-group-validation-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-combobox-component</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-radio-group-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-options</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-search</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-selection</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-api</loc>
+    <loc>https://www.nayanui.com/tags/react-controlled-radio-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-select</loc>
+    <loc>https://www.nayanui.com/tags/radio-group-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-example</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-combobox</loc>
+    <loc>https://www.nayanui.com/tags/simple-react-radio-group</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-select-input</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-api</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-react-select</loc>
+    <loc>https://www.nayanui.com/tags/react-radio-group-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet</loc>
+    <loc>https://www.nayanui.com/tags/responsive-radio-group-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-component</loc>
+    <loc>https://www.nayanui.com/tags/react-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-ui</loc>
+    <loc>https://www.nayanui.com/tags/react-combobox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-dynamic-sheet</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-modal-sheet</loc>
+    <loc>https://www.nayanui.com/tags/react-single-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-menu</loc>
+    <loc>https://www.nayanui.com/tags/react-select-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-overlay</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/collapsible-sheet-react</loc>
+    <loc>https://www.nayanui.com/tags/react-select-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-bottom-sheet</loc>
+    <loc>https://www.nayanui.com/tags/accessible-react-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-design</loc>
+    <loc>https://www.nayanui.com/tags/react-select-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-sheet</loc>
+    <loc>https://www.nayanui.com/tags/async-react-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-combobox-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-select-options</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-sheet</loc>
+    <loc>https://www.nayanui.com/tags/react-select-search</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-example</loc>
+    <loc>https://www.nayanui.com/tags/react-select-api</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/sheet-component-react</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-advanced-sheet</loc>
+    <loc>https://www.nayanui.com/tags/react-select-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-data-sheet</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-combobox</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-templates</loc>
+    <loc>https://www.nayanui.com/tags/react-select-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/interactive-react-sheet</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-react-select</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-sheet-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loading-component</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-loading-skeleton</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-placeholder</loc>
+    <loc>https://www.nayanui.com/tags/react-dynamic-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-placeholder-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-modal-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-screen-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-menu</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-skeleton-ui</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-overlay</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loader-animation</loc>
+    <loc>https://www.nayanui.com/tags/collapsible-sheet-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/dynamic-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-bottom-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loader-implementation</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loading-effect</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loader-example</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-skeleton-loader-library</loc>
+    <loc>https://www.nayanui.com/tags/sheet-component-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/css-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-advanced-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/lightweight-skeleton-loader</loc>
+    <loc>https://www.nayanui.com/tags/react-data-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loader-best-practices</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-templates</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/skeleton-loader-for-react</loc>
+    <loc>https://www.nayanui.com/tags/interactive-react-sheet</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider</loc>
+    <loc>https://www.nayanui.com/tags/react-sheet-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-carousel</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loading-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-image-slider</loc>
+    <loc>https://www.nayanui.com/tags/react-loading-skeleton</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-slider-react</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-placeholder</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-range-slider</loc>
+    <loc>https://www.nayanui.com/tags/react-placeholder-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider-component</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-screen-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-skeleton-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-item-slider</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loader-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-autoplay-slider</loc>
+    <loc>https://www.nayanui.com/tags/dynamic-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-touch-slider</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loader-implementation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider-hooks</loc>
+    <loc>https://www.nayanui.com/tags/custom-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-slider</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider-example</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loading-effect</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider-ui</loc>
+    <loc>https://www.nayanui.com/tags/responsive-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/slider-with-thumbnails-react</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loader-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-fade-slider</loc>
+    <loc>https://www.nayanui.com/tags/react-skeleton-loader-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-image-carousel</loc>
+    <loc>https://www.nayanui.com/tags/css-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-content-slider</loc>
+    <loc>https://www.nayanui.com/tags/lightweight-skeleton-loader</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-vertical-slider</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loader-best-practices</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-slider-design</loc>
+    <loc>https://www.nayanui.com/tags/skeleton-loader-for-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/toggle-switch-component</loc>
+    <loc>https://www.nayanui.com/tags/react-carousel</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toggle-button</loc>
+    <loc>https://www.nayanui.com/tags/react-image-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-switch</loc>
+    <loc>https://www.nayanui.com/tags/responsive-slider-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-checkbox-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-range-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-component</loc>
+    <loc>https://www.nayanui.com/tags/react-slider-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-slider-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-on-off-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-item-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/animated-react-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-autoplay-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-example</loc>
+    <loc>https://www.nayanui.com/tags/react-touch-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-accessible-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-slider-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/styled-react-switch</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-hook</loc>
+    <loc>https://www.nayanui.com/tags/react-slider-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/multi-state-react-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-slider-ui</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-library</loc>
+    <loc>https://www.nayanui.com/tags/slider-with-thumbnails-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-switch</loc>
+    <loc>https://www.nayanui.com/tags/react-fade-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-with-label</loc>
+    <loc>https://www.nayanui.com/tags/react-image-carousel</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/toggle-switch-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-content-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-demo</loc>
+    <loc>https://www.nayanui.com/tags/react-vertical-slider</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-switch-integration</loc>
+    <loc>https://www.nayanui.com/tags/react-slider-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table</loc>
+    <loc>https://www.nayanui.com/tags/react-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-data-table</loc>
+    <loc>https://www.nayanui.com/tags/toggle-switch-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-component</loc>
+    <loc>https://www.nayanui.com/tags/react-toggle-button</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-table</loc>
+    <loc>https://www.nayanui.com/tags/react-checkbox-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-example</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-advanced-table</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-pagination</loc>
+    <loc>https://www.nayanui.com/tags/react-on-off-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-filter</loc>
+    <loc>https://www.nayanui.com/tags/animated-react-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-table</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-sorting</loc>
+    <loc>https://www.nayanui.com/tags/react-accessible-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-virtualized-table</loc>
+    <loc>https://www.nayanui.com/tags/styled-react-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-CRUD</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-hook</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-inline-edit-table</loc>
+    <loc>https://www.nayanui.com/tags/multi-state-react-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-optimization</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-column-resizing</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-switch</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-selection</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-with-label</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-customizable-table</loc>
+    <loc>https://www.nayanui.com/tags/toggle-switch-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-plugins</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-demo</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-table-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-switch-integration</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs</loc>
+    <loc>https://www.nayanui.com/tags/react-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tab-component</loc>
+    <loc>https://www.nayanui.com/tags/react-data-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-ui-tabs</loc>
+    <loc>https://www.nayanui.com/tags/react-table-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-example</loc>
+    <loc>https://www.nayanui.com/tags/react-table-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-horizontal-tabs</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-vertical-tabs</loc>
+    <loc>https://www.nayanui.com/tags/react-table-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-tabs</loc>
+    <loc>https://www.nayanui.com/tags/react-advanced-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tab-navigation</loc>
+    <loc>https://www.nayanui.com/tags/react-table-pagination</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-library</loc>
+    <loc>https://www.nayanui.com/tags/react-table-filter</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-hooks</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-table-sorting</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/react-virtualized-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-tabs</loc>
+    <loc>https://www.nayanui.com/tags/react-table-CRUD</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-inline-edit-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-tabs</loc>
+    <loc>https://www.nayanui.com/tags/react-table-optimization</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-usage</loc>
+    <loc>https://www.nayanui.com/tags/react-table-column-resizing</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-with-icons</loc>
+    <loc>https://www.nayanui.com/tags/react-table-selection</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-design</loc>
+    <loc>https://www.nayanui.com/tags/react-customizable-table</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-demos</loc>
+    <loc>https://www.nayanui.com/tags/react-table-plugins</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tabs-customization</loc>
+    <loc>https://www.nayanui.com/tags/react-table-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multiline-input</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-component</loc>
+    <loc>https://www.nayanui.com/tags/react-tab-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-autoresizing-textarea</loc>
+    <loc>https://www.nayanui.com/tags/react-ui-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-textarea</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-horizontal-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/controlled-textarea-react</loc>
+    <loc>https://www.nayanui.com/tags/react-vertical-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/uncontrolled-textarea-react</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-validation</loc>
+    <loc>https://www.nayanui.com/tags/react-tab-navigation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-autocomplete</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-textarea</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-example</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-accessibility</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-placeholder</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-resize</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-aria</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-tabs</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-character-count-textarea</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-usage</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-onchange</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-with-icons</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-default-value</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-design</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-limited-input</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-demos</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-textarea-error-message</loc>
+    <loc>https://www.nayanui.com/tags/react-tabs-customization</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast</loc>
+    <loc>https://www.nayanui.com/tags/react-multiline-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-notifications</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-component</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-notifications</loc>
+    <loc>https://www.nayanui.com/tags/react-autoresizing-textarea</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-message</loc>
+    <loc>https://www.nayanui.com/tags/react-custom-textarea</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-library</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/toast-notifications-react</loc>
+    <loc>https://www.nayanui.com/tags/controlled-textarea-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/custom-react-toast</loc>
+    <loc>https://www.nayanui.com/tags/uncontrolled-textarea-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-example</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-validation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-styling</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-autocomplete</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-auto-dismiss-toast</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-textarea</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-container</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-animation</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-placeholder</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-position</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-resize</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-multi-toast</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-aria</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-toast</loc>
+    <loc>https://www.nayanui.com/tags/react-character-count-textarea</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-customization</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-onchange</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-toast-integration</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-default-value</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-limited-input</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-component</loc>
+    <loc>https://www.nayanui.com/tags/react-textarea-error-message</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-custom-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-toast</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-library</loc>
+    <loc>https://www.nayanui.com/tags/react-notifications</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-example</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-notifications</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-hooks</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-message</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-positioning</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-library</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-accessibility</loc>
+    <loc>https://www.nayanui.com/tags/toast-notifications-react</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-animation</loc>
+    <loc>https://www.nayanui.com/tags/custom-react-toast</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-css</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-example</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-trigger</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-styling</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-api</loc>
+    <loc>https://www.nayanui.com/tags/react-auto-dismiss-toast</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-examples</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-hooks</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-hover-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-container</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-click-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-animation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-position</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-position</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/responsive-react-tooltip</loc>
+    <loc>https://www.nayanui.com/tags/react-multi-toast</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-tips</loc>
+    <loc>https://www.nayanui.com/tags/responsive-react-toast</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-interaction</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-customization</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-advanced</loc>
+    <loc>https://www.nayanui.com/tags/react-toast-integration</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:7100/tags/react-tooltip-implementation</loc>
+    <loc>https://www.nayanui.com/tags/react-tooltip</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-component</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-custom-tooltip</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-library</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-example</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-hooks</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-positioning</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-accessibility</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-animation</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-css</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-trigger</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-api</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-examples</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-hover-tooltip</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-click-tooltip</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-position</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/responsive-react-tooltip</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-tips</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-interaction</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-advanced</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.nayanui.com/tags/react-tooltip-implementation</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
