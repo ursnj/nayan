@@ -1,4 +1,37 @@
-import { Package } from 'lucide-react';
+import {
+  Badge,
+  CircleAlert,
+  CreditCard,
+  GalleryVertical,
+  Grid2x2,
+  ListCollapse,
+  MessageSquare,
+  MessageSquareWarning,
+  Package,
+  Slash,
+  Square,
+  Link,
+  SquareCheck,
+  TextCursorInput,
+  SquareArrowOutUpRight,
+  Loader,
+  EllipsisVertical,
+  PictureInPicture2,
+  SlidersHorizontal,
+  Columns3,
+  RectangleEllipsis,
+  CircleCheck,
+  SquareMousePointer,
+  StickyNote,
+  TextSelect,
+  ToggleRight,
+  Grid3x3,
+  AppWindow,
+  MessageSquareText,
+  MessageSquareDot,
+  FileCode,
+  HandCoins
+} from 'lucide-react';
 import {
   accordionAttributes,
   alertAttributes,
@@ -84,7 +117,7 @@ export const sidebarItems = [
     link: '/components/accordion',
     attributes: accordionAttributes,
     code: accordionCode,
-    icon: Package,
+    icon: ListCollapse,
     isComponent: true
   },
   {
@@ -94,7 +127,7 @@ export const sidebarItems = [
     link: '/components/alert',
     attributes: alertAttributes,
     code: alertCode,
-    icon: Package,
+    icon: CircleAlert,
     isComponent: true
   },
   {
@@ -104,7 +137,7 @@ export const sidebarItems = [
     link: '/components/badge',
     attributes: badgeAttributes,
     code: badgeCode,
-    icon: Package,
+    icon: Badge,
     isComponent: true
   },
   {
@@ -114,7 +147,7 @@ export const sidebarItems = [
     link: '/components/button',
     attributes: buttonAttributes,
     code: buttonCode,
-    icon: Package,
+    icon: Square,
     isComponent: true
   },
   {
@@ -124,7 +157,7 @@ export const sidebarItems = [
     link: '/components/button-group',
     attributes: buttonGroupAttributes,
     code: buttonGroupCode,
-    icon: Package,
+    icon: Columns3,
     isComponent: true
   },
   {
@@ -134,7 +167,7 @@ export const sidebarItems = [
     link: '/components/card',
     attributes: cardAttributes,
     code: cardCode,
-    icon: Package,
+    icon: CreditCard,
     isComponent: true
   },
   {
@@ -144,7 +177,7 @@ export const sidebarItems = [
     link: '/components/checkbox',
     attributes: checkboxAttributes,
     code: checkBoxCode,
-    icon: Package,
+    icon: SquareCheck,
     isComponent: true
   },
   {
@@ -154,7 +187,7 @@ export const sidebarItems = [
     link: '/components/confirm-alert',
     attributes: confirmAlertAttributes,
     code: confirmAlertCode,
-    icon: Package,
+    icon: MessageSquareWarning,
     isComponent: true
   },
   {
@@ -164,7 +197,7 @@ export const sidebarItems = [
     link: '/components/dialog',
     attributes: dialogAttributes,
     code: dialogCode,
-    icon: Package,
+    icon: MessageSquare,
     isComponent: true
   },
   {
@@ -174,7 +207,7 @@ export const sidebarItems = [
     link: '/components/divider',
     attributes: dividerAttributes,
     code: dividerCode,
-    icon: Package,
+    icon: Slash,
     isComponent: true
   },
   {
@@ -184,7 +217,7 @@ export const sidebarItems = [
     link: '/components/infinite-scroll',
     attributes: infiniteScrollAttributes,
     code: infiniteScrollCode,
-    icon: Package,
+    icon: GalleryVertical,
     isComponent: true
   },
   {
@@ -194,7 +227,7 @@ export const sidebarItems = [
     link: '/components/input',
     attributes: inputAttributes,
     code: inputCode,
-    icon: Package,
+    icon: TextCursorInput,
     isComponent: true
   },
   {
@@ -204,7 +237,7 @@ export const sidebarItems = [
     link: '/components/input-hook-form',
     attributes: inputHookAttributes,
     code: inputHookCode,
-    icon: Package,
+    icon: TextCursorInput,
     isComponent: true
   },
   {
@@ -214,7 +247,7 @@ export const sidebarItems = [
     link: '/components/link',
     attributes: linkAttributes,
     code: linkCode,
-    icon: Package,
+    icon: Link,
     isComponent: true
   },
   {
@@ -224,7 +257,7 @@ export const sidebarItems = [
     link: '/components/linkify',
     attributes: linkAttributes,
     code: linkifyCode,
-    icon: Package,
+    icon: SquareArrowOutUpRight,
     isComponent: true
   },
   {
@@ -234,7 +267,7 @@ export const sidebarItems = [
     link: '/components/loading',
     attributes: loadingAttributes,
     code: loadingCode,
-    icon: Package,
+    icon: Loader,
     isComponent: true
   },
   {
@@ -244,7 +277,7 @@ export const sidebarItems = [
     link: '/components/menu',
     attributes: menuAttributes,
     code: menuCode,
-    icon: Package,
+    icon: EllipsisVertical,
     isComponent: true
   },
   {
@@ -254,7 +287,7 @@ export const sidebarItems = [
     link: '/components/popover',
     attributes: popoverAttributes,
     code: popoverCode,
-    icon: Package,
+    icon: PictureInPicture2,
     isComponent: true
   },
   {
@@ -264,7 +297,7 @@ export const sidebarItems = [
     link: '/components/progress',
     attributes: progressAttributes,
     code: progressCode,
-    icon: Package,
+    icon: RectangleEllipsis,
     isComponent: true
   },
   {
@@ -274,7 +307,7 @@ export const sidebarItems = [
     link: '/components/radio-group',
     attributes: radioGroupAttributes,
     code: radioGroupCode,
-    icon: Package,
+    icon: CircleCheck,
     isComponent: true
   },
   {
@@ -284,7 +317,7 @@ export const sidebarItems = [
     link: '/components/select',
     attributes: selectAttributes,
     code: selectCode,
-    icon: Package,
+    icon: SquareMousePointer,
     isComponent: true
   },
   {
@@ -294,7 +327,7 @@ export const sidebarItems = [
     link: '/components/sheet',
     attributes: sheetAttributes,
     code: sheetCode,
-    icon: Package,
+    icon: StickyNote,
     isComponent: true
   },
   {
@@ -304,7 +337,7 @@ export const sidebarItems = [
     link: '/components/skeleton',
     attributes: skeletonAttributes,
     code: skeletonCode,
-    icon: Package,
+    icon: TextSelect,
     isComponent: true
   },
   {
@@ -314,7 +347,7 @@ export const sidebarItems = [
     link: '/components/slider',
     attributes: sliderAttributes,
     code: sliderCode,
-    icon: Package,
+    icon: SlidersHorizontal,
     isComponent: true
   },
   {
@@ -324,7 +357,7 @@ export const sidebarItems = [
     link: '/components/switch',
     attributes: switchAttributes,
     code: switchCode,
-    icon: Package,
+    icon: ToggleRight,
     isComponent: true
   },
   {
@@ -334,7 +367,7 @@ export const sidebarItems = [
     link: '/components/table',
     attributes: tableAttributes,
     code: tableCode,
-    icon: Package,
+    icon: Grid3x3,
     isComponent: true
   },
   {
@@ -344,7 +377,7 @@ export const sidebarItems = [
     link: '/components/tabs',
     attributes: tabsAttributes,
     code: tabsCode,
-    icon: Package,
+    icon: AppWindow,
     isComponent: true
   },
   {
@@ -354,7 +387,7 @@ export const sidebarItems = [
     link: '/components/textarea',
     attributes: textareaAttributes,
     code: textareaCode,
-    icon: Package,
+    icon: TextCursorInput,
     isComponent: true
   },
   {
@@ -364,7 +397,7 @@ export const sidebarItems = [
     link: '/components/toast',
     attributes: toastAttributes,
     code: toastCode,
-    icon: Package,
+    icon: MessageSquareText,
     isComponent: true
   },
   {
@@ -374,7 +407,7 @@ export const sidebarItems = [
     link: '/components/tooltip',
     attributes: tooltipAttributes,
     code: tooltipCode,
-    icon: Package,
+    icon: MessageSquareDot,
     isComponent: true
   },
   { title: 'Dev Tools', description: '', link: '', isHeading: true },
@@ -383,7 +416,7 @@ export const sidebarItems = [
     description:
       'Sitemaper is a powerful sitemap generator designed to simplify the process of creating accurate and efficient sitemaps for websites. It crawls through your site, maps its structure, and generates an optimized sitemap, helping improve SEO and site visibility. With customizable options for depth, frequency, and output paths, Sitemaper is a versatile tool for developers and site owners aiming to keep their web presence indexed properly.',
     link: '/sitemaper',
-    icon: Package
+    icon: FileCode
   },
   { title: 'More Guides', description: '', link: '/guides', isHeading: true },
   {
@@ -391,6 +424,6 @@ export const sidebarItems = [
     description:
       "We encourage and welcome all contributions! Feel free to submit ideas via Pull Requests or GitHub Issues. If you're looking to improve the code, check out our Development Instructions and enjoy the process!",
     link: '/contributions',
-    icon: Package
+    icon: HandCoins
   }
 ];
