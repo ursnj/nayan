@@ -21,7 +21,7 @@ jobs:
 
       # Add npm authentication for publishing
       - name: Authenticate with npm
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_PUBLISH }}" > ~/.npmrc
 
       # Install dependencies
       - name: Install dependencies
@@ -39,7 +39,7 @@ jobs:
       - name: Publish to npm
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH }}
 
       # Clean up after the build
       - name: Clean node_modules
