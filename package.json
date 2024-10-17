@@ -30,7 +30,7 @@
     "preview": "NODE_ENV=production node server",
     "debug": "node --inspect-brk server",
     "build": "rimraf dist && vite build",
-    "build:website": "rimraf dist && tsc && npm run build:client && npm run build:server",
+    "build:website": "rimraf dist && tsc && npm run sitemaper && npm run build:client && npm run build:server",
     "build:client": "vite build -c vite.website.ts --outDir dist/client",
     "build:server": "vite build -c vite.website.ts --outDir dist/server --ssr src/entry-server.jsx",
     "test": "vitest",
