@@ -1,13 +1,13 @@
-import Sidebar from '../helpers/Sidebar';
-import Meta from '@/website/helpers/Meta';
-import Code from '../helpers/Code';
-import Attributes from '../helpers/Attributes';
-import { sitemaperAttributes } from '../services/Attributes';
+import Sidebar from '../../helpers/Sidebar';
+import Meta from '../../helpers/Meta';
+import Code from '../../helpers/Code';
+import Attributes from '../../helpers/Attributes';
+import { sitemaperAttributes } from '../../services/Attributes';
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { getMenuItem, isWindowDefined } from '../services/Utils';
-import TagsList from '../tags/TagsList';
-import { NLinkify } from '../../components/NLinkify';
+import { getMenuItem, isWindowDefined } from '../../services/Utils';
+import TagsList from '../../tags/TagsList';
+import { NLinkify } from '../../../components/NLinkify';
 
 const Sitemaper = () => {
   const location = useLocation();

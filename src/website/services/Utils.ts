@@ -478,14 +478,21 @@ export const sidebarItems = [
     icon: MessageSquareDot,
     isComponent: true
   },
-  { title: 'Dev Tools', description: '', link: '', isHeading: true },
+  {
+    title: 'Dev Tools',
+    description:
+      'Nayan UI also provides powerful development tools, helping developers efficiently build and customize user interfaces with ease and flexibility.',
+    link: '/devtools',
+    isHeading: true
+  },
   {
     title: 'Sitemaper',
     description:
       'Sitemaper is a powerful sitemap generator designed to simplify the process of creating accurate and efficient sitemaps for websites. It crawls through your site, maps its structure, and generates an optimized sitemap, helping improve SEO and site visibility. With customizable options for depth, frequency, and output paths, Sitemaper is a versatile tool for developers and site owners aiming to keep their web presence indexed properly.',
-    link: '/sitemaper',
+    link: '/devtools/sitemaper',
     tags: sitemaperTags,
-    icon: FileCode
+    icon: FileCode,
+    isDevtools: true
   },
   { title: 'More Guides', description: '', link: '/guides', isHeading: true },
   {

@@ -37,9 +37,10 @@ import Table from '@/website/components/Table';
 import Components from '@/website/components/Components';
 import FormInput from '@/website/components/FormInput';
 import { THEMES } from './components/Types';
-import Sitemaper from '@/website/sitemaper/Sitemaper';
+import Sitemaper from '@/website/devtools/sitemaper/Sitemaper';
 import Tags from '@/website/tags/Tags';
 import TagsDetails from '@/website/tags/TagsDetails';
+import Devtools from '@/website/devtools/Devtools';
 
 const App = () => {
   const [theme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -50,7 +51,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/installation" element={<Installation />} />
-          <Route path="/sitemaper" element={<Sitemaper />} />
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/components">
             <Route index element={<Components />} />
@@ -89,6 +89,11 @@ const App = () => {
           <Route path="/tags">
             <Route index element={<Tags />} />
             <Route path=":tag" element={<TagsDetails />} />
+          </Route>
+
+          <Route path="/devtools">
+            <Route index element={<Devtools />} />
+            <Route path="sitemaper" element={<Sitemaper />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/" />} />

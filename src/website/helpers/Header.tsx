@@ -32,8 +32,8 @@ const HeaderMenu = () => {
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/sitemaper">
-            Sitemaper
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/devtools">
+            Devtools
           </NavLink>
         </li>
         <li className="w-full md:w-auto">

@@ -5,7 +5,7 @@ import Sidebar from '@/website/helpers/Sidebar';
 import { NCard } from '@/components/NCard';
 import Meta from '@/website/helpers/Meta';
 
-const Components = () => {
+const Devtools = () => {
   const location = useLocation();
   const component: any = getMenuItem(location.pathname);
 
@@ -15,7 +15,7 @@ const Components = () => {
       <div className="mb-5 leading-relaxed">{component.description}</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
         {sidebarItems
-          .filter(item => item.isComponent)
+          .filter(item => item.isDevtools)
           .map(item => {
             const Icon = item.icon as any;
             return (
@@ -35,4 +35,4 @@ const Components = () => {
   );
 };
 
-export default Components;
+export default Devtools;
