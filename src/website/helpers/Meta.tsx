@@ -6,6 +6,7 @@ interface Props {
   type?: string;
   title?: string;
   description?: string;
+  keywords?: string;
 }
 
 const Meta = (props: Props) => {
@@ -14,8 +15,9 @@ const Meta = (props: Props) => {
   const {
     name = 'Nayan UI',
     type = 'article',
-    title = 'React Reusable Component Library',
-    description = 'Nayan UI provides React re-usable component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web application.'
+    title = 'React Component Library | React Reusable Components | React UI Library | Tailwind react Components',
+    description = 'Nayan UI provides React component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful and functional and fully accessible user interfaces for your web application.',
+    keywords = 'React Component Library, React Reusable Components, React UI Library, react libraries, js react, Tailwind react Components, semantic ui react, Nayan UI'
   } = props;
 
   const finalTitle = 'Nayan UI - ' + title;
@@ -26,10 +28,7 @@ const Meta = (props: Props) => {
       <title>{finalTitle}</title>
       <link rel="canonical" href={canonicalUrl} />
       <meta name="description" content={description} />
-      <meta
-        property="keywords"
-        content="React Component Library, React Reusable Components, React UI, Nayan UI, tailwind CSS Components, React UI Library, React JS Libraries"
-      />
+      <meta property="keywords" content={keywords} />
 
       {/* End standard metadata tags */}
       {/* Facebook tags */}

@@ -15,7 +15,11 @@ const Sitemaper = () => {
 
   return (
     <Sidebar title={component.title}>
-      <Meta title={component.title} description={component.description} />
+      <Meta
+        title="Sitemaper - Free Sitemap Generator | Create XML Sitemaps for SEO"
+        description="Easily create XML sitemaps to boost your SEO. Generate sitemaps for free and ensure search engines properly index your website."
+        keywords="sitemap generator, free sitemap generator, create XML sitemap, SEO sitemap tool, generate sitemap, XML sitemap, website SEO tool"
+      />
       <div className="mb-5 leading-relaxed">{component.description}</div>
       <h2 className="text-xl mb-5">✨ Features</h2>
       <ul className="list-disc list-inside leading-relaxed mb-5">
