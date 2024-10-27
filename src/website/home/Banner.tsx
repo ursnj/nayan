@@ -11,7 +11,7 @@ const Banner = () => {
           <div className="flex flex-col justify-center md:p-0 py-5 px-3">
             <h1 className="text-3xl md:mb-5 mb-3 leading-relaxed">React Reusable Component Library</h1>
             <div className="text-base leading-loose mb-5 text">
-              Nayan UI provides React re-usable component library based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and
+              Nayan UI provides React component library based on Tailwind CSS and Radix UI (Shadcn). This library is a collection of pre-designed and
               pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for
               your web application.
             </div>

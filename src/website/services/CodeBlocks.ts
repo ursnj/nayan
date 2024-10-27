@@ -653,7 +653,3 @@ const Tooltip = () => {
 };
 
 export default Tooltip;`;
-
-export const sitemaperCode = `import { generateSitemap, validateSitemap } from 'sitemaper';
-generateSitemap('https://www.nayanui.com', '', 10, './sitemap.xml', 'daily');
-validateSitemap('./sitemap.xml');`;

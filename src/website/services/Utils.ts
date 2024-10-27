@@ -115,8 +115,8 @@ import {
   progressTags,
   radioGroupTags,
   selectTags,
+  seoMasterTags,
   sheetTags,
-  sitemaperTags,
   skeletonTags,
   sliderTags,
   switchTags,
@@ -486,11 +486,11 @@ export const sidebarItems = [
     isHeading: true
   },
   {
-    title: 'Sitemaper',
+    title: 'SEO Master',
     description:
-      'Sitemaper is a powerful sitemap generator designed to simplify the process of creating accurate and efficient sitemaps for websites. It crawls through your site, maps its structure, and generates an optimized sitemap, helping improve SEO and site visibility. With customizable options for depth, frequency, and output paths, Sitemaper is a versatile tool for developers and site owners aiming to keep their web presence indexed properly.',
-    link: '/devtools/sitemaper',
-    tags: sitemaperTags,
+      "SEO Master is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation, SEO-optimized metadata, Image assets generation and seamless integration with major search engines, SEO Master simplifies the process of optimizing your site for search engines. Whether you're monitoring backlinks, improving page speed, or fine-tuning on-page SEO, SEO Master offers everything you need to achieve top search engine performance.",
+    link: '/devtools/seo-master',
+    tags: seoMasterTags,
     icon: FileCode,
     isDevtools: true
   },

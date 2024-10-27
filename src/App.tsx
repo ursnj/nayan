@@ -37,7 +37,7 @@ import Table from '@/website/components/Table';
 import Components from '@/website/components/Components';
 import FormInput from '@/website/components/FormInput';
 import { THEMES } from './components/Types';
-import Sitemaper from '@/website/devtools/sitemaper/Sitemaper';
+import SEOMaster from './website/devtools/seo-master/SEOMaster';
 import Tags from '@/website/tags/Tags';
 import TagsDetails from '@/website/tags/TagsDetails';
 import Devtools from '@/website/devtools/Devtools';
@@ -93,7 +93,7 @@ const App = () => {
 
           <Route path="/devtools">
             <Route index element={<Devtools />} />
-            <Route path="sitemaper" element={<Sitemaper />} />
+            <Route path="seo-master" element={<SEOMaster />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/" />} />

@@ -671,7 +671,7 @@ export const tooltipTags = [
   { sku: 'react-tooltip-implementation', text: 'Implementing Tooltip in React' }
 ];
 
-export const sitemaperTags = [
+export const seoMasterTags = [
   { sku: 'sitemap-generator', text: 'Sitemap Generator' },
   { sku: 'xml-sitemap-generator', text: 'XML Sitemap Generator' },
   { sku: 'sitemap-creator', text: 'Sitemap Creator' },
@@ -691,5 +691,43 @@ export const sitemaperTags = [
   { sku: 'responsive-sitemap-generator', text: 'Responsive Sitemap Generator' },
   { sku: 'sitemap-xml-creator', text: 'Sitemap XML Creator' },
   { sku: 'simple-sitemap-generator', text: 'Simple Sitemap Generator' },
-  { sku: 'sitemap-scraper', text: 'Sitemap Scraper' }
+  { sku: 'sitemap-scraper', text: 'Sitemap Scraper' },
+  // Robots.txt Generator and Validator
+  { sku: 'robots-txt-generator', text: 'Robots.txt Generator' },
+  { sku: 'robots-txt-validator', text: 'Robots.txt Validator' },
+  { sku: 'robots-txt-creator', text: 'Robots.txt Creator' },
+  { sku: 'robots-txt-file-generator', text: 'Robots.txt File Generator' },
+  { sku: 'robots-txt-online-tool', text: 'Online Robots.txt Tool' },
+  { sku: 'robots-txt-generator-for-seo', text: 'Robots.txt Generator for SEO' },
+  { sku: 'robots-txt-checker', text: 'Robots.txt Checker' },
+  { sku: 'robots-txt-editor', text: 'Robots.txt Editor' },
+  { sku: 'robots-txt-file-creator', text: 'Robots.txt File Creator' },
+  { sku: 'robots-txt-test-tool', text: 'Robots.txt Test Tool' },
+  { sku: 'robots-txt-file-validator', text: 'Robots.txt File Validator' },
+  // Meta Tags Generator and Validator
+  { sku: 'meta-tags-generator', text: 'Meta Tags Generator' },
+  { sku: 'meta-tags-validator', text: 'Meta Tags Validator' },
+  { sku: 'meta-description-generator', text: 'Meta Description Generator' },
+  { sku: 'meta-tags-tool', text: 'Meta Tags Tool' },
+  { sku: 'seo-meta-tags-generator', text: 'SEO Meta Tags Generator' },
+  { sku: 'meta-title-generator', text: 'Meta Title Generator' },
+  { sku: 'meta-description-editor', text: 'Meta Description Editor' },
+  { sku: 'meta-keywords-generator', text: 'Meta Keywords Generator' },
+  { sku: 'open-graph-meta-tags-generator', text: 'Open Graph Meta Tags Generator' },
+  { sku: 'meta-tags-analyzer', text: 'Meta Tags Analyzer' },
+  { sku: 'meta-tags-checker', text: 'Meta Tags Checker' },
+  // Favicon and Image Assets Generator
+  { sku: 'favicon-generator', text: 'Favicon Generator' },
+  { sku: 'image-assets-generator', text: 'Image Assets Generator' },
+  { sku: 'favicon-creator', text: 'Favicon Creator' },
+  { sku: 'favicon-maker', text: 'Favicon Maker' },
+  { sku: 'website-favicon-generator', text: 'Website Favicon Generator' },
+  { sku: 'favicon-generator-online', text: 'Online Favicon Generator' },
+  { sku: 'image-optimizer', text: 'Image Optimizer' },
+  { sku: 'responsive-image-generator', text: 'Responsive Image Generator' },
+  { sku: 'favicon-converter', text: 'Favicon Converter' },
+  { sku: 'web-assets-generator', text: 'Web Assets Generator' },
+  { sku: 'favicon-resizer', text: 'Favicon Resizer' },
+  { sku: 'web-icons-generator', text: 'Web Icons Generator' },
+  { sku: 'website-assets-creator', text: 'Website Assets Creator' }
 ];
