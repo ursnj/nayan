@@ -1,13 +1,8 @@
-<div align="center">
-    <img width="200" src="https://github.com/ursnj/nayan/blob/main/public/nayan.png?raw=true">
-</div>
-<h1 align="center">Nayan UI</h1>
+Nayan UI provides React component library based on Tailwind CSS and Radix UI (Shadcn). This library is a collection of pre-designed and
+pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for
+your web application.
 
-<div align="center">
-
-Nayan UI provides React Reusable Components based on Tailwind CSS and Radix UI. This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for your web applications.
-
-[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]
+[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]  [![Follow LinkedIn][linkedin-image]][linkedin-url]
 
 [npm-image]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
 [npm-url]: http://npmjs.org/package/nayan
@@ -16,11 +11,9 @@ Nayan UI provides React Reusable Components based on Tailwind CSS and Radix UI. 
 [linkedin-image]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [linkedin-url]: https://www.linkedin.com/in/ursNj
 
-</div>
-
 ## 🖥 Demo
 
-Checkout demo for all the components Nayan UI exposing [Checkout](https://nayanui.com/)
+Checkout demo for all the components Nayan UI exposing [Checkout](https://www.nayanui.com)
 
 ## ✨ Features
 
@@ -42,6 +35,7 @@ Checkout demo for all the components Nayan UI exposing [Checkout](https://nayanu
 ```bash
 npm install nayan
 yarn add nayan
+bun install nayan
 ```
 
 Include module in `tailwind.config.js` to read tailwind classes, this will help in reusing same tailwind classes.
@@ -73,7 +67,7 @@ module.exports = {
 Add library styles to `index.css`, and update theme color variables accordingly for both light and dark modes.
 
 ```css
-@import 'nayan/dist/styles.css';
+@import 'nayan/dist/style.css';
 
 @tailwind base;
 @tailwind components;
@@ -84,26 +78,26 @@ Add library styles to `index.css`, and update theme color variables accordingly 
     --COLOR_PRIMARY: #005ee6;
     --COLOR_PRIMARY_DARK: #0043a3;
     --COLOR_PRIMARY_LIGHT: #0069ff;
-    --COLOR_BACKGROUND: #f5f5f5;
+    --COLOR_BACKGROUND: #f0f2f5;
     --COLOR_CARD: #ffffff;
     --COLOR_TEXT: #050505;
-    --COLOR_MUTED: gray;
-    --COLOR_BORDER: #d3d3d3;
+    --COLOR_MUTED: 'gray';
+    --COLOR_BORDER: #e0e0e0;
     --COLOR_SHADOW: #d3d3d3;
-    --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
+    --COLOR_OVERLAY: rgba(255, 255, 255, .7);
   }
 
   [data-theme='dark'] {
-    --COLOR_PRIMARY: #005ee6;
-    --COLOR_PRIMARY_DARK: #0043a3;
-    --COLOR_PRIMARY_LIGHT: #0069ff;
+    --COLOR_PRIMARY: #2997ff;
+    --COLOR_PRIMARY_DARK: #0a84ff;
+    --COLOR_PRIMARY_LIGHT: #7dc1ff;
     --COLOR_BACKGROUND: #1f1f1f;
-    --COLOR_CARD: #303030;
+    --COLOR_CARD: #353535;
     --COLOR_TEXT: #f5f5f5;
-    --COLOR_MUTED: gray;
-    --COLOR_BORDER: #505050;
+    --COLOR_MUTED: #afafaf;
+    --COLOR_BORDER: #4f4f4f;
     --COLOR_SHADOW: #cbcbcb;
-    --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
+    --COLOR_OVERLAY: rgba(0, 0, 0, .7);
   }
 
   body {
@@ -158,11 +152,3 @@ Open your browser and visit http://localhost:7100
 ## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 We welcome all contributions. You can submit any ideas as [Pull Requests](https://github.com/ursnj/nayan/pulls) or as [GitHub Issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
-
-[comment]: <> (# Deployment)
-
-[comment]: <> (`docker build -t ursnj/nayanui:latest .`)
-
-[comment]: <> (`docker push ursnj/nayanui:latest`)
-
-[comment]: <> (`docker run -d -p 7100:7100 ursnj/nayanui`)

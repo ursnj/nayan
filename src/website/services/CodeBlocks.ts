@@ -1,5 +1,6 @@
 export const installCode = `npm install nayan
-yarn add nayan`;
+yarn add nayan
+bun install nayan`;
 
 export const tailwindCode = `module.exports = {
   darkMode: ['class'],
@@ -23,7 +24,7 @@ export const tailwindCode = `module.exports = {
   plugins: [require('tailwindcss-animate')]
 };`;
 
-export const cssCode = `@import 'nayan/dist/styles.css';
+export const cssCode = `@import 'nayan/dist/style.css';
 
 @tailwind base;
 @tailwind components;
