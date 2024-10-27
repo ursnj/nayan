@@ -1,3 +1,5 @@
+# Nayan UI - Simplest React Component Library
+
 Nayan UI provides React component library based on Tailwind CSS and Radix UI (Shadcn). This library is a collection of pre-designed and
 pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for
 your web application.
