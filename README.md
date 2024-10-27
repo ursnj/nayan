@@ -2,7 +2,7 @@ Nayan UI provides React component library based on Tailwind CSS and Radix UI (Sh
 pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for
 your web application.
 
-[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url]  [![Follow LinkedIn][linkedin-image]][linkedin-url]
+[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url] [![Follow LinkedIn][linkedin-image]][linkedin-url]
 
 [npm-image]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
 [npm-url]: http://npmjs.org/package/nayan
@@ -84,7 +84,7 @@ Add library styles to `index.css`, and update theme color variables accordingly 
     --COLOR_MUTED: 'gray';
     --COLOR_BORDER: #e0e0e0;
     --COLOR_SHADOW: #d3d3d3;
-    --COLOR_OVERLAY: rgba(255, 255, 255, .7);
+    --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
   }
 
   [data-theme='dark'] {
@@ -97,7 +97,7 @@ Add library styles to `index.css`, and update theme color variables accordingly 
     --COLOR_MUTED: #afafaf;
     --COLOR_BORDER: #4f4f4f;
     --COLOR_SHADOW: #cbcbcb;
-    --COLOR_OVERLAY: rgba(0, 0, 0, .7);
+    --COLOR_OVERLAY: rgba(0, 0, 0, 0.7);
   }
 
   body {
