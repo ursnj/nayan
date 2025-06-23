@@ -4,6 +4,8 @@ import { Label } from './ui/label';
 
 interface Props {
   className?: string;
+  labelClassName?: string;
+  sliderClassName?: string;
   label?: string;
   defaultValue?: number;
   max?: number;
