@@ -26,7 +26,7 @@ export default defineConfig({
       fileName: format => `index.${format}.js`
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ['react', 'react-dom', 'src/App.ts', 'src/website/**', 'src/tests/**'],
       output: {
         globals: {
           react: 'React',
@@ -35,7 +35,8 @@ export default defineConfig({
       }
     },
     sourcemap: true,
-    emptyOutDir: true
+    emptyOutDir: true,
+    copyPublicDir: false
   },
   plugins: [react(), dts()],
   resolve: {
