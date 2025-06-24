@@ -21,9 +21,13 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: './src/index.ts',
+      entry: {
+        index: './src/index.ts',
+        lib: './src/lib.ts'
+      },
       name: 'Nayan',
-      fileName: format => `index.${format}.js`
+      fileName: (format, entryName) => `${entryName}.${format}.js`,
+      formats: ['es']
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

@@ -1,3 +1,5 @@
+'use client';
+
 export * from './components/NAccordion';
 export * from './components/NAlert';
 export * from './components/NBadge';
@@ -33,4 +35,3 @@ export * from './components/NTheme';
 export * from './components/NToast';
 export * from './components/NTooltip';
 export * from './components/Types';
-export * from './lib/utils';
