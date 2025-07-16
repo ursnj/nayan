@@ -7,6 +7,8 @@ interface Props {
   orientation?: 'horizontal' | 'vertical';
   items: RadioItem[];
   className?: boolean;
+  id?: string;
+  label?: string;
   itemClassName?: boolean;
   radioClassName?: boolean;
   labelClassName?: boolean;
@@ -21,6 +23,8 @@ export const NRadioGroup = (props: Props) => {
     selected,
     onChange,
     orientation = 'horizontal',
+    id = 'radio-group',
+    label = '',
     className = '',
     itemClassName = '',
     radioClassName = '',
@@ -29,21 +33,28 @@ export const NRadioGroup = (props: Props) => {
   } = props;
 
   return (
-    <RadioGroup
-      orientation={orientation}
-      defaultValue={selected}
-      value={selected}
-      disabled={disabled}
-      onValueChange={onChange}
-      className={cn(`${orientation === 'horizontal' ? 'flex flex-row flex-wrap' : 'flex flex-col'} ${className}`)}>
-      {items.map((item, index) => (
-        <div key={index} className={cn(`flex items-center space-x-2 ${itemClassName}`)}>
-          <RadioGroupItem className={'' + radioClassName} value={item.value} id={'r' + index} />
-          <Label htmlFor={'radio-' + index} className={cn(`text-text ${labelClassName}`)}>
-            {item.label}
-          </Label>
-        </div>
-      ))}
-    </RadioGroup>
+    <div className={cn(`nyn-radio-block mb-3 ${className}`)}>
+      {label && (
+        <Label htmlFor={id} className={cn(`nyn-radio-label block pb-2 text-text ${labelClassName}`)}>
+          {label}
+        </Label>
+      )}
+      <RadioGroup
+        orientation={orientation}
+        defaultValue={selected}
+        value={selected}
+        disabled={disabled}
+        onValueChange={onChange}
+        className={cn(`${orientation === 'horizontal' ? 'flex flex-row flex-wrap' : 'flex flex-col'} ${className}`)}>
+        {items.map((item, index) => (
+          <div key={index} className={cn(`flex items-center space-x-2 ${itemClassName}`)}>
+            <RadioGroupItem className={'' + radioClassName} value={item.value} id={'r' + index} />
+            <Label htmlFor={'radio-' + index} className={cn(`text-text ${labelClassName}`)}>
+              {item.label}
+            </Label>
+          </div>
+        ))}
+      </RadioGroup>
+    </div>
   );
 };
