@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, memo } from 'react';
 import { ButtonSize } from './Types';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -10,40 +10,55 @@ const sizeMapping = {
   [ButtonSize.LG]: 'px-3 py-2 text-base'
 };
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface NButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
   className?: string;
   isOutline?: boolean;
   isLoading?: boolean;
   loadingText?: string;
-  onClick?: (e: any) => void;
-  children: string | ReactNode;
+  leftIcon?: ReactNode;
+  rightIcon?: ReactNode;
+  children: ReactNode;
 }
 
-export const NButton = (props: Props) => {
-  const {
+const NButtonComponent: React.FC<NButtonProps> = memo(
+  ({
     children,
     size = ButtonSize.MD,
     className = '',
     isOutline = false,
     isLoading = false,
     loadingText = 'Loading...',
-    onClick = () => undefined,
+    leftIcon,
+    rightIcon,
+    disabled,
+    type = 'button',
     ...remaining
-  } = props;
+  }) => {
+    const isDisabled = isLoading || disabled;
+    return (
+      <Button
+        type={type}
+        aria-busy={isLoading}
+        aria-disabled={isDisabled}
+        disabled={isDisabled}
+        className={cn(
+          `nyn-button ${size.toLowerCase()} ${
+            isOutline
+              ? 'text-primary hover:text-white bg-transparent hover:bg-primary-dark border border-primary'
+              : 'text-white bg-primary border border-primary hover:bg-primary-dark'
+          } rounded h-auto transition duration-150 ease-in-out ${sizeMapping[size]}`,
+          className
+        )}
+        {...remaining}>
+        {leftIcon && <span className="mr-2 flex items-center">{leftIcon}</span>}
+        {!isLoading ? children : <span aria-live="polite">{loadingText}</span>}
+        {rightIcon && <span className="ml-2 flex items-center">{rightIcon}</span>}
+      </Button>
+    );
+  }
+);
 
-  return (
-    <Button
-      className={cn(
-        `nyn-button ${size.toLowerCase()} ${
-          isOutline
-            ? 'text-primary hover:text-white bg-transparent hover:bg-primary-dark border border-primary'
-            : 'text-white bg-primary border border-primary hover:bg-primary-dark'
-        } rounded h-auto transition duration-150 ease-in-out ${sizeMapping[size]} ${className}`
-      )}
-      onClick={onClick}
-      {...remaining}>
-      {!isLoading ? children : loadingText}
-    </Button>
-  );
-};
+NButtonComponent.displayName = 'NButton';
+
+export const NButton = NButtonComponent;
