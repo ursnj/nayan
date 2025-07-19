@@ -11,8 +11,6 @@ export interface NInputProps extends Omit<InputHTMLAttributes<HTMLInputElement>,
   wrapperClassName?: string;
   error?: ReactNode;
   helperText?: ReactNode;
-  leftIcon?: ReactNode;
-  rightIcon?: ReactNode;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
@@ -27,8 +25,6 @@ export const NInput = React.memo(
         wrapperClassName = '',
         error,
         helperText,
-        leftIcon,
-        rightIcon,
         className = '',
         type = 'text',
         onChange,
@@ -45,25 +41,16 @@ export const NInput = React.memo(
               {label}
             </Label>
           )}
-          <div className="relative flex items-center">
-            {leftIcon && <span className="absolute left-3 flex items-center">{leftIcon}</span>}
-            <Input
-              ref={ref}
-              id={inputId}
-              type={type}
-              aria-invalid={!!error}
-              aria-describedby={describedBy}
-              onChange={onChange}
-              className={cn(
-                'nyn-input w-full rounded bg-card border border-border text-text px-3 py-2',
-                leftIcon && 'pl-10',
-                rightIcon && 'pr-10',
-                inputClassName
-              )}
-              {...rest}
-            />
-            {rightIcon && <span className="absolute right-3 flex items-center">{rightIcon}</span>}
-          </div>
+          <Input
+            ref={ref}
+            id={inputId}
+            type={type}
+            aria-invalid={!!error}
+            aria-describedby={describedBy}
+            onChange={onChange}
+            className={cn('nyn-input w-full rounded bg-card border border-border text-text px-3 py-2', inputClassName)}
+            {...rest}
+          />
           {error ? (
             <div id={`${inputId}-error`} className="mt-1 text-xs text-red-600" role="alert">
               {error}
