@@ -1,21 +1,38 @@
+import React, { ReactNode, AnchorHTMLAttributes, useCallback } from 'react';
 // @ts-ignore
 import Linkify from 'react-linkify';
 import { cn } from '@/lib/utils';
 
-interface Props {
-  children: any;
+export interface NLinkifyProps {
+  children: ReactNode;
   className?: string;
+  anchorProps?: Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'target' | 'rel' | 'className' | 'children'>;
+  linkComponent?: React.ComponentType<any>; // for custom link, e.g., NLink
 }
 
-export const NLinkify = (props: Props) => {
-  return (
-    <Linkify
-      componentDecorator={(decoratedHref: string, decoratedText: string, key: string) => (
-        <a className={cn(`text-primary ${props.className}`)} target="_blank" href={decoratedHref} key={key}>
-          {decoratedText}
-        </a>
-      )}>
-      {props.children}
-    </Linkify>
+export const NLinkify = React.memo((props: NLinkifyProps) => {
+  const { children, className, anchorProps = {}, linkComponent: LinkComponent } = props;
+
+  // Stable decorator
+  const componentDecorator = useCallback(
+    (decoratedHref: string, decoratedText: string, key: number) => {
+      const linkProps = {
+        className: cn('text-primary', className),
+        href: decoratedHref,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        key,
+        ...anchorProps
+      };
+      if (LinkComponent) {
+        return <LinkComponent {...linkProps}>{decoratedText}</LinkComponent>;
+      }
+      return <a {...linkProps}>{decoratedText}</a>;
+    },
+    [className, anchorProps, LinkComponent]
   );
-};
+
+  return <Linkify componentDecorator={componentDecorator}>{children}</Linkify>;
+});
+
+NLinkify.displayName = 'NLinkify';
