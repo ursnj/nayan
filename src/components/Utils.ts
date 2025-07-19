@@ -8,6 +8,10 @@ const defaultThreshold = {
   value: 0.8
 };
 
+export const isWindowDefined = () => {
+  return typeof window !== 'undefined';
+};
+
 export function parseThreshold(scrollThreshold: string | number): any {
   if (typeof scrollThreshold === 'number') {
     return {

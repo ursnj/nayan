@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { isWindowDefined } from '../website/services/Utils';
+import { isWindowDefined } from '@/components/Utils';
 
 type Serializer<T> = (object: T | undefined) => string;
 type Parser<T> = (val: string) => T | undefined;
