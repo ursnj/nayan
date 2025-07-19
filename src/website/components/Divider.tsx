@@ -9,6 +9,9 @@ const Divider = () => {
       <NDivider className="my-3" />
       <h1 className="text-text mb-3 text-lg">Vertical:</h1>
       <NDivider orientation="vertical" className="h-5" />
+      <NDivider orientation="horizontal" className="h-5">
+        OR
+      </NDivider>
     </ComponentWrapper>
   );
 };
