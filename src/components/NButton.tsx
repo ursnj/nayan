@@ -39,7 +39,7 @@ export const NButton = (props: Props) => {
           isOutline
             ? 'text-primary hover:text-white bg-transparent hover:bg-primary-dark border border-primary'
             : 'text-white bg-primary border border-primary hover:bg-primary-dark'
-        } rounded h-auto transition duration-150 ease-in-out h-auto ${sizeMapping[size]} ${className}`
+        } rounded h-auto transition duration-150 ease-in-out ${sizeMapping[size]} ${className}`
       )}
       onClick={onClick}
       {...remaining}>

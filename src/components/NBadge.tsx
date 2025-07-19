@@ -1,6 +1,6 @@
+import React, { ReactNode, memo } from 'react';
 import { Badge } from '@/components/ui/badge';
 import { BadgeSize } from './Types';
-import { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
 const sizeMapping = {
@@ -10,14 +10,25 @@ const sizeMapping = {
   [BadgeSize.LG]: 'px-3 py-0 text-lg'
 };
 
-interface Props {
-  size: BadgeSize;
-  children: string | ReactNode;
+export interface NBadgeProps extends React.HTMLAttributes<HTMLElement> {
+  size?: BadgeSize;
+  children: ReactNode;
   className?: string;
+  role?: string;
 }
 
-export const NBadge = (props: Props) => {
-  const { className = '', size = BadgeSize.SM, children } = props;
+const NBadgeComponent: React.FC<NBadgeProps> = memo(({ className = '', size = BadgeSize.SM, children, role = 'status', ...rest }) => {
+  return (
+    <Badge
+      role={role}
+      aria-live={role === 'status' ? 'polite' : undefined}
+      className={cn(`nyn-badge ${size.toLowerCase()} rounded-full font-normal ${sizeMapping[size]}`, className)}
+      {...rest}>
+      {children}
+    </Badge>
+  );
+});
 
-  return <Badge className={cn(`nyn-badge ${size.toLowerCase()} rounded-full font-normal ${sizeMapping[size]} ${className}`)}>{children}</Badge>;
-};
+NBadgeComponent.displayName = 'NBadge';
+
+export const NBadge = NBadgeComponent;
