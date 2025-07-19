@@ -7,6 +7,7 @@ import Meta from '@/website/helpers/Meta';
 import { useLocation } from 'react-router-dom';
 import { getMenuItem } from '../services/Utils';
 import TagsList from '../tags/TagsList';
+import { NCard } from '@/components/NCard';
 
 interface Props {
   children: any;
@@ -22,7 +23,9 @@ const ComponentWrapper = (props: Props) => {
       <Meta title={component.title} description={component.description} />
       <div className="mb-5">{component.description}</div>
 
-      <SubHeader title="Demo">{children}</SubHeader>
+      <SubHeader title="Demo">
+        <NCard className="p-3">{children}</NCard>
+      </SubHeader>
 
       <Attributes data={component.attributes} />
 

@@ -23,7 +23,7 @@ export const NLink = forwardRef<HTMLElement, NLinkProps>((props, ref) => {
         href={href}
         target={anchorProps.target || '_blank'}
         rel={anchorProps.rel || 'noopener noreferrer'}
-        className={cn(`nyn-link text-primary cursor-pointer ${className}`)}
+        className={cn('nyn-link text-primary cursor-pointer', className)}
         {...anchorProps}>
         {children}
       </a>
@@ -35,7 +35,7 @@ export const NLink = forwardRef<HTMLElement, NLinkProps>((props, ref) => {
       ref={ref as React.Ref<HTMLSpanElement>}
       role="link"
       tabIndex={0}
-      className={cn(`nyn-link text-primary cursor-pointer ${className}`)}
+      className={cn('nyn-link text-primary cursor-pointer', className)}
       onKeyDown={e => {
         if (spanProps.onClick && (e.key === 'Enter' || e.key === ' ')) {
           e.preventDefault();
