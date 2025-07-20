@@ -15,14 +15,14 @@ export interface NFormInputProps<TFieldValues extends FieldValues = FieldValues>
   control: Control<TFieldValues>;
   rules?: RegisterOptions;
   name: string;
-  errors?: Record<string, FieldError | undefined>;
+  error?: FieldError;
   renderError?: (error?: FieldError) => React.ReactNode;
 }
 
 const NFormInputComponent = <TFieldValues extends FieldValues = FieldValues>({
   control,
   rules,
-  errors = {},
+  error,
   name,
   type = 'text',
   id = 'form-input',
@@ -34,7 +34,6 @@ const NFormInputComponent = <TFieldValues extends FieldValues = FieldValues>({
   renderError,
   ...remaining
 }: NFormInputProps<TFieldValues>) => {
-  const error = errors?.[name];
   const describedBy = error ? `${id}-error` : undefined;
 
   return (
