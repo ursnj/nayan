@@ -8,13 +8,17 @@ COPY package.json yarn.lock ./
 COPY packages/react/package.json ./packages/react/
 COPY packages/website/package.json ./packages/website/
 
-# Install dependencies
+# Clear yarn cache and install dependencies
+RUN yarn cache clean
 RUN yarn install --frozen-lockfile
 
 FROM base AS builder
 
 # Copy all source files
 COPY . .
+
+# Verify workspace resolution
+RUN yarn workspace website why nayan
 
 # Build nayan package first
 RUN yarn workspace nayan build
@@ -29,9 +33,15 @@ WORKDIR /app
 
 # Copy package files for production dependencies
 COPY package.json yarn.lock ./
+COPY packages/react/package.json ./packages/react/
 COPY packages/website/package.json ./packages/website/
 
-# Install only production dependencies
+# Copy built nayan package from builder stage to ensure workspace dependency works
+COPY --from=builder /app/packages/react/dist ./packages/react/dist
+COPY --from=builder /app/packages/react/package.json ./packages/react/package.json
+
+# Clear cache and install only production dependencies
+RUN yarn cache clean
 RUN yarn install --frozen-lockfile --production
 
 # Copy built website from builder stage
@@ -49,5 +59,5 @@ WORKDIR /app/packages/website
 # Expose port
 EXPOSE 7100
 
-# Run the application
+# Start the application
 CMD ["npm", "run", "preview"]
