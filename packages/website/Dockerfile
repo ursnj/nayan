@@ -3,9 +3,6 @@ FROM node:20.19-alpine as base
 # Set working directory
 WORKDIR /app
 
-# Install yarn globally
-RUN npm install -g yarn
-
 # Copy root package.json and yarn.lock for workspace dependencies
 COPY package.json yarn.lock ./
 COPY packages/react/package.json ./packages/react/
@@ -29,9 +26,6 @@ FROM node:20.19-alpine as runner
 
 # Set working directory
 WORKDIR /app
-
-# Install yarn globally
-RUN npm install -g yarn
 
 # Copy package files for production dependencies
 COPY package.json yarn.lock ./
