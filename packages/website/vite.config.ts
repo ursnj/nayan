@@ -16,8 +16,8 @@ export default defineConfig(({ command, mode }) => {
   const alias = isDev
     ? {
         '@': path.resolve(__dirname, './src'),
-        // Point nayan package to source files for development
-        nayan: path.resolve(__dirname, '../react/src/index.ts')
+        // Point nayan package to source directory for development
+        nayan: path.resolve(__dirname, '../react/src')
       }
     : baseAlias;
 

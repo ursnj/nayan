@@ -1,4 +1,4 @@
-@import 'nayan/dist/nayan.css';
+@import '../../react/src/components/NStyles.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
