@@ -39,6 +39,10 @@ export default defineConfig(({ command, mode }) => {
           if (warning.code === 'MODULE_LEVEL_DIRECTIVE' && warning.message.includes('use client')) {
             return;
           }
+          // Suppress PURE comment annotation warnings from react-helmet-async
+          if (warning.message && warning.message.includes('/*#__PURE__*/') && warning.message.includes('react-helmet-async')) {
+            return;
+          }
           warn(warning);
         }
       }
