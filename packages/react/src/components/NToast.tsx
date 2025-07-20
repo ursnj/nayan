@@ -1,6 +1,6 @@
 import { useToast as useToaster, toast } from './ui/use-toast';
 
-export const useToast = () => {
+export const useNToast = () => {
   const { toast: toaster } = useToaster();
   return (description: string, title: string = '') => {
     toaster(Object.assign({ description }, title && { title }));
