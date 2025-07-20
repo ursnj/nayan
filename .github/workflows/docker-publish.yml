@@ -12,5 +12,5 @@ jobs:
         working-directory: ./
         run: |
           docker login -u ursnj -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker build -f packages/website/Dockerfile -t ursnj/nayanui:latest .
+          docker build --no-cache -f packages/website/Dockerfile -t ursnj/nayanui:latest .
           docker push ursnj/nayanui:latest
