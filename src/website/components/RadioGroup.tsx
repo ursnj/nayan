@@ -14,10 +14,10 @@ const RadioGroup = () => {
   return (
     <ComponentWrapper>
       <h1 className="text-text mb-3 text-base">Horizontal:</h1>
-      <NRadioGroup items={items} selected={selected} onChange={setSelected} />
+      <NRadioGroup items={items} value={selected} onChange={setSelected} />
       <div className="mt-3" />
       <h1 className="text-text mb-3 text-base">Vertical:</h1>
-      <NRadioGroup orientation="vertical" items={items} selected={selected} onChange={setSelected} />
+      <NRadioGroup orientation="vertical" items={items} value={selected} onChange={setSelected} />
     </ComponentWrapper>
   );
 };

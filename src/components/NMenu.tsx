@@ -1,5 +1,5 @@
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuLabel, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { ReactNode } from 'react';
+import React, { ReactNode, HTMLAttributes, ButtonHTMLAttributes } from 'react';
 import { MenuSize } from './Types';
 import { NDivider } from '@/components/NDivider';
 import { cn } from '@/lib/utils';
@@ -9,13 +9,13 @@ export const menuSizeMapping = {
   [MenuSize.SM]: 'w-[100px]',
   [MenuSize.MD]: 'w-[150px]',
   [MenuSize.LG]: 'w-[200px]'
-};
+} as const;
 
-interface Props {
+export interface NMenuProps {
   size?: MenuSize;
-  title?: string;
-  side?: 'top' | 'bottom' | 'right' | 'left' | undefined;
-  align?: 'start' | 'end' | 'center' | undefined;
+  title?: ReactNode;
+  side?: 'top' | 'bottom' | 'right' | 'left';
+  align?: 'start' | 'end' | 'center';
   className?: string;
   triggerClassName?: string;
   titleClassName?: string;
@@ -23,8 +23,8 @@ interface Props {
   children: ReactNode;
 }
 
-export const NMenu = (props: Props) => {
-  const {
+export const NMenu: React.FC<NMenuProps> = React.memo(
+  ({
     trigger,
     children,
     className = '',
@@ -34,22 +34,28 @@ export const NMenu = (props: Props) => {
     size = MenuSize.MD,
     side = 'bottom',
     align = 'end'
-  } = props;
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger className={cn(`nyn-menu-trigger ${triggerClassName}`)}>{trigger}</DropdownMenuTrigger>
-      <DropdownMenuContent
-        side={side}
-        align={align}
-        className={cn(`nyn-menu-content rounded bg-card border border-border shadow-lg ${menuSizeMapping[size]} ${className}`)}>
-        {title && (
-          <>
-            <DropdownMenuLabel className={cn(`text-text ${titleClassName}`)}>{title}</DropdownMenuLabel>
-            <NDivider />
-          </>
-        )}
-        <DropdownMenuGroup>{children}</DropdownMenuGroup>
-      </DropdownMenuContent>
-    </DropdownMenu>
-  );
-};
+  }) => {
+    return (
+      <DropdownMenu>
+        <DropdownMenuTrigger className={cn('nyn-menu-trigger', triggerClassName)} aria-haspopup="menu">
+          {trigger}
+        </DropdownMenuTrigger>
+        <DropdownMenuContent
+          side={side}
+          align={align}
+          className={cn('nyn-menu-content rounded bg-card border border-border shadow-lg', menuSizeMapping[size], className)}
+          role="menu">
+          {title && (
+            <>
+              <DropdownMenuLabel className={cn('text-text', titleClassName)}>{title}</DropdownMenuLabel>
+              <NDivider />
+            </>
+          )}
+          <DropdownMenuGroup>{children}</DropdownMenuGroup>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    );
+  }
+);
+
+NMenu.displayName = 'NMenu';

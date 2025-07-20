@@ -35,7 +35,8 @@ export default defineConfig({
       }
     },
     sourcemap: true,
-    emptyOutDir: true
+    emptyOutDir: true,
+    copyPublicDir: false
   },
   plugins: [react(), dts()],
   resolve: {

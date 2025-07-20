@@ -23,7 +23,16 @@ const FormInput = () => {
   return (
     <ComponentWrapper>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <NFormInput control={control} errors={errors} name="email" id="in1" type="email" label="Email" placeholder="Enter email" className="mb-3" />
+        <NFormInput
+          control={control}
+          error={errors.email}
+          name="email"
+          id="in1"
+          type="email"
+          label="Email"
+          placeholder="Enter email"
+          className="mb-3"
+        />
         <NButton type="submit">Submit</NButton>
       </form>
     </ComponentWrapper>

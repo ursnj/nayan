@@ -1,12 +1,13 @@
+import React, { memo, useCallback, useId } from 'react';
 import { Label } from '@/components/ui/label';
 import { ReactSelectOption } from '@/components/Types';
 import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
-import { cn } from '../lib/utils';
+import { cn } from '@/lib/utils';
 import { reactSelectCustomClassNames, reactSelectTheme } from './Utils';
 
-interface Props {
-  isMulti?: boolean;
+export interface NSelectProps<OptionType = ReactSelectOption, IsMulti extends boolean = false> {
+  isMulti?: IsMulti;
   label?: string;
   placeholder?: string;
   isLoading?: boolean;
@@ -17,19 +18,27 @@ interface Props {
   className?: string;
   labelClassName?: string;
   selectClassName?: string;
-  value: ReactSelectOption | ReactSelectOption[] | any;
-  options: ReactSelectOption[] | any;
-  onCreateOptions?: (value: string) => void;
-  onChangeOptions?: (values: ReactSelectOption[]) => void;
+  value: IsMulti extends true ? OptionType[] : OptionType | null;
+  options: OptionType[];
+  onCreateOption?: (inputValue: string) => void;
+  onChange?: (value: IsMulti extends true ? OptionType[] : OptionType | null) => void;
+  onChangeOptions?: (value: IsMulti extends true ? OptionType[] : OptionType | null) => void;
+  getOptionLabel?: (option: OptionType) => string;
+  getOptionValue?: (option: OptionType) => string;
+  inputId?: string;
+  name?: string;
+  menuPortalTarget?: HTMLElement;
+  [key: string]: any; // for additional react-select props
 }
 
-export const NSelect = (props: Props) => {
-  const d: any = typeof document !== 'undefined' ? document : {};
+const NSelectInner = <OptionType extends ReactSelectOption = ReactSelectOption, IsMulti extends boolean = false>(
+  props: NSelectProps<OptionType, IsMulti>
+) => {
   const {
     options,
     value,
     label,
-    isMulti = false,
+    isMulti = false as IsMulti,
     isLoading = false,
     isCreatable = false,
     placeholder = 'Select...',
@@ -38,61 +47,75 @@ export const NSelect = (props: Props) => {
     isDisabled = false,
     className = '',
     labelClassName = '',
-    selectClassName = ''
+    selectClassName = '',
+    onChange,
+    onChangeOptions,
+    onCreateOption,
+    getOptionLabel,
+    getOptionValue,
+    inputId,
+    name,
+    menuPortalTarget,
+    ...rest
   } = props;
+  const generatedId = useId();
+  const selectId = inputId || `nyn-select-${generatedId}`;
 
-  const handleChange = (values: any[]) => {
-    props.onChangeOptions && props.onChangeOptions(values as any);
-  };
+  // Accept both onChange and onChangeOptions for compatibility
+  const handleChange = useCallback(
+    (selected: any) => {
+      if (props.onChangeOptions) {
+        props.onChangeOptions(selected);
+      } else if (onChange) {
+        onChange(selected);
+      }
+    },
+    [onChange, props]
+  );
 
-  const handleCreate = (value: string) => {
-    props.onCreateOptions && props.onCreateOptions(value);
-  };
+  const handleCreate = useCallback(
+    (inputValue: string) => {
+      if (onCreateOption) onCreateOption(inputValue);
+    },
+    [onCreateOption]
+  );
+
+  const SelectComponent = isCreatable ? CreatableSelect : Select;
 
   return (
-    <div className={cn(`nyn-select-block mb-3 ${className}`)}>
+    <div className={cn('nyn-select-block mb-3', className)}>
       {label && (
-        <Label htmlFor="select" className={cn(`nyn-select-label block pb-2 text-text ${labelClassName}`)}>
+        <Label htmlFor={selectId} className={cn('nyn-select-label block pb-2 text-text', labelClassName)}>
           {label}
         </Label>
       )}
-      {!isCreatable && (
-        <Select
-          isMulti={isMulti as any}
-          isLoading={isLoading}
-          isDisabled={isDisabled}
-          isClearable={isClearable}
-          isSearchable={isSearchable}
-          className={cn(`nyn-select ${selectClassName}`)}
-          placeholder={placeholder}
-          classNamePrefix="nyn-select"
-          value={value}
-          options={options}
-          classNames={reactSelectCustomClassNames}
-          onChange={handleChange}
-          theme={reactSelectTheme}
-          menuPortalTarget={d.body}
-        />
-      )}
-      {!!isCreatable && (
-        <CreatableSelect
-          isMulti={isMulti as any}
-          isLoading={isLoading}
-          isDisabled={isDisabled}
-          isClearable={isClearable}
-          isSearchable={isSearchable}
-          className={cn(`nyn-select ${selectClassName}`)}
-          placeholder={placeholder}
-          classNamePrefix="nyn-select"
-          value={value}
-          options={options}
-          classNames={reactSelectCustomClassNames}
-          onCreateOption={handleCreate}
-          onChange={handleChange}
-          theme={reactSelectTheme}
-          menuPortalTarget={d.body}
-        />
-      )}
+      <SelectComponent
+        inputId={selectId}
+        name={name}
+        isMulti={isMulti}
+        isLoading={isLoading}
+        isDisabled={isDisabled}
+        isClearable={isClearable}
+        isSearchable={isSearchable}
+        className={cn('nyn-select', selectClassName)}
+        placeholder={placeholder}
+        classNamePrefix="nyn-select"
+        value={isMulti ? (value as OptionType[]) : (value as OptionType | null)}
+        options={options}
+        getOptionLabel={getOptionLabel}
+        getOptionValue={getOptionValue}
+        classNames={reactSelectCustomClassNames}
+        onChange={handleChange}
+        onCreateOption={isCreatable ? handleCreate : undefined}
+        theme={reactSelectTheme}
+        aria-label={label}
+        menuPortalTarget={typeof window !== 'undefined' ? menuPortalTarget || document.body : undefined}
+        {...rest}
+      />
     </div>
   );
 };
+
+export const NSelect = memo(NSelectInner) as typeof NSelectInner;
+
+(NSelect as React.FC).displayName = 'NSelect';

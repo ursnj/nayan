@@ -17,7 +17,7 @@ const Attributes = (props: Props) => {
 
   return (
     <SubHeader title={title}>
-      <NTable columnDef={columnDef} data={data} />
+      <NTable columns={columnDef} data={data} />
     </SubHeader>
   );
 };

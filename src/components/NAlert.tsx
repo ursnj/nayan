@@ -1,3 +1,4 @@
+import React, { memo } from 'react';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { AlertTriangle, BadgeAlert, CheckCircle2, Info, X, XCircle } from 'lucide-react';
 import { AlertTypes } from './Types';
@@ -27,48 +28,71 @@ const titleMapping = {
   [AlertTypes.ERROR]: 'Error!'
 };
 
-interface Props {
+export interface NAlertProps extends React.HTMLAttributes<HTMLDivElement> {
   type: AlertTypes;
-  message: string;
+  message?: string;
   title?: string;
+  icon?: React.ReactNode;
+  actions?: React.ReactNode;
   className?: string;
   titleClassName?: string;
   messageClassName?: string;
   closeClassName?: string;
   onClose?: () => void;
+  role?: 'alert' | 'status';
+  children?: React.ReactNode;
 }
 
-export const NAlert = (props: Props) => {
-  const {
+const NAlertComponent: React.FC<NAlertProps> = memo(
+  ({
     className = '',
     titleClassName = '',
     messageClassName = '',
     closeClassName = '',
     type,
-    title = titleMapping[type],
+    title,
     message,
-    onClose
-  } = props;
-
-  return (
-    <Alert
-      className={cn(
-        `nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${
-          classesMapping[type]
-        } ${className}`
-      )}>
-      {iconsMapping[type]}
-      {title && (
-        <AlertTitle className={cn(`nyn-alert-title mb-1.5 font-semibold flex flex-row justify-between items-center ${titleClassName}`)}>
-          {title}
-          {onClose && (
-            <span className={cn(`nyn-alert-close${closeClassName}`)} tabIndex={1} role="button" onClick={onClose} onKeyDown={onClose}>
-              <X className="w-4 h-4" />
-            </span>
+    icon,
+    actions,
+    onClose,
+    role = 'alert',
+    children,
+    ...rest
+  }) => {
+    return (
+      <Alert
+        role={role}
+        tabIndex={0}
+        aria-live={role === 'alert' ? 'assertive' : 'polite'}
+        className={cn(
+          `nyn-alert ${type.toLowerCase()} [&:has(svg)]:pl-10 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-3 [&>svg]:top-3 [&>svg]:nyn-text rounded p-3 ${classesMapping[type]}`,
+          className
+        )}
+        {...rest}>
+        {icon !== undefined ? icon : iconsMapping[type]}
+        <div className="flex items-start justify-between w-full">
+          <div className="flex-1">
+            <AlertTitle className={cn('nyn-alert-title font-semibold', titleClassName)}>{title ?? titleMapping[type]}</AlertTitle>
+            {(message || children) && (
+              <AlertDescription className={cn('nyn-alert-message', messageClassName)}>{message || children}</AlertDescription>
+            )}
+          </div>
+          {(onClose || actions) && (
+            <div className="flex items-center ml-3">
+              {actions}
+              {onClose && (
+                <button type="button" className={cn('ml-2 focus:outline-none', closeClassName)} aria-label="Close alert" onClick={onClose}>
+                  <X className="h-4 w-4" aria-hidden />
+                </button>
+              )}
+            </div>
           )}
-        </AlertTitle>
-      )}
-      <AlertDescription className={cn(`nyn-alert-message ${messageClassName}`)}>{message}</AlertDescription>
-    </Alert>
-  );
-};
+        </div>
+      </Alert>
+    );
+  }
+);
+
+NAlertComponent.displayName = 'NAlert';
+
+export const NAlert = NAlertComponent;

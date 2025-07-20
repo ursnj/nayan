@@ -1,11 +1,17 @@
+import React from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
 import { cn } from '@/lib/utils';
 
-interface Props {
-  className?: string;
+export interface NSkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
+  role?: string;
+  'aria-busy'?: boolean;
+  'aria-live'?: 'off' | 'polite' | 'assertive';
 }
 
-export const NSkeleton = (props: Props) => {
-  const { className = '' } = props;
-  return <Skeleton className={cn(`nyn-skeleton bg-border ${className}`)} />;
-};
+export const NSkeleton: React.FC<NSkeletonProps> = React.memo(
+  ({ className = '', role = 'status', 'aria-busy': ariaBusy = true, 'aria-live': ariaLive = 'polite', ...rest }) => {
+    return <Skeleton className={cn('nyn-skeleton bg-border', className)} role={role} aria-busy={ariaBusy} aria-live={ariaLive} {...rest} />;
+  }
+);
+
+NSkeleton.displayName = 'NSkeleton';

@@ -2,18 +2,16 @@ import { ReactNode } from 'react';
 import { TabsContent } from '@/components/ui/tabs';
 import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NTabsContentProps {
   item: string;
   className?: string;
   children: ReactNode;
 }
 
-export const NTabsContent = (props: Props) => {
-  const { item, className = '' } = props;
+export const NTabsContent = ({ item, className = '', children }: NTabsContentProps) => (
+  <TabsContent value={item} className={cn('nyn-tab-content', className)}>
+    {children}
+  </TabsContent>
+);
 
-  return (
-    <TabsContent value={item} className={cn(`nyn-tab-content ${className}`)}>
-      {props.children}
-    </TabsContent>
-  );
-};
+NTabsContent.displayName = 'NTabsContent';

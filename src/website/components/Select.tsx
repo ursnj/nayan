@@ -1,12 +1,5 @@
 import React, { useState } from 'react';
 import { NSelect } from '@/components/NSelect';
-import Code from '../helpers/Code';
-import Sidebar from '../helpers/Sidebar';
-import { selectCode } from '../services/CodeBlocks';
-import SubHeader from '@/website/helpers/SubHeader';
-import Attributes from '@/website/helpers/Attributes';
-import { selectAttributes } from '@/website/services/Attributes';
-import Meta from '@/website/helpers/Meta';
 import ComponentWrapper from '../helpers/ComponentWrapper';
 
 const items = [
@@ -17,9 +10,10 @@ const items = [
 
 const Select = () => {
   const [selected, setSelected] = useState(items[0]);
+  const [mSelected, setMSelected] = useState([items[0]]);
 
   const handleCreateOption = (value: string) => {
-    setSelected((prev: any) => [...prev, { value, label: value }] as any);
+    setSelected([...mSelected, { value, label: value }] as any);
   };
 
   return (
@@ -36,6 +30,20 @@ const Select = () => {
         options={items}
         onChangeOptions={(values: any) => setSelected(values)}
       />
+      <h2 className="text-lg mb-3">Creatable Select Demo</h2>
+      <NSelect
+        isCreatable={true}
+        isMulti={false}
+        label="Choose Business type"
+        placeholder="Select something..."
+        isClearable={true}
+        isSearchable={true}
+        isDisabled={false}
+        value={selected}
+        options={items}
+        onCreateOption={handleCreateOption}
+        onChangeOptions={(values: any) => setSelected(values)}
+      />
       <h2 className="text-lg mb-3">Combo Box Demo</h2>
       <NSelect
         isMulti={true}
@@ -44,9 +52,9 @@ const Select = () => {
         isClearable={true}
         isSearchable={true}
         isDisabled={false}
-        value={selected}
+        value={mSelected}
         options={items}
-        onChangeOptions={(values: any) => setSelected(values)}
+        onChangeOptions={(values: any) => setMSelected(values)}
       />
 
       <div className="text-primary mb-5">

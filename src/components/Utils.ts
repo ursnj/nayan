@@ -8,6 +8,10 @@ const defaultThreshold = {
   value: 0.8
 };
 
+export const isWindowDefined = () => {
+  return typeof window !== 'undefined';
+};
+
 export function parseThreshold(scrollThreshold: string | number): any {
   if (typeof scrollThreshold === 'number') {
     return {
@@ -41,7 +45,11 @@ export function parseThreshold(scrollThreshold: string | number): any {
   return defaultThreshold;
 }
 
-export const throttle = (delay: number, callback: () => any, options: { noTrailing?: boolean; noLeading?: boolean; debounceMode?: boolean } = {}) => {
+export const throttle = (
+  delay: number,
+  callback: (...args: any[]) => any,
+  options: { noTrailing?: boolean; noLeading?: boolean; debounceMode?: boolean } = {}
+) => {
   const { noTrailing = false, noLeading = false, debounceMode = undefined } = options || {};
   /*
    * After wrapper has stopped being called, this timeout ensures that

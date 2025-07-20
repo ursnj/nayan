@@ -2,17 +2,17 @@ import React from 'react';
 import { NTable } from '@/components/NTable';
 import ComponentWrapper from '../helpers/ComponentWrapper';
 
-const CustomComponent = ({ row, col, ...remaining }: any) => {
+const CustomComponent = (row: any, col: any, rowIndex: number, colIndex: number) => {
   return <div className="text-primary">Oops</div>;
 };
 
 const Table = () => {
-  const columnDef = [
+  const columns = [
     { name: 'invoice', title: 'Invoice', className: 'w-[100px]' },
     { name: 'status', title: 'Status' },
     { name: 'method', title: 'Method' },
     { name: 'amount', title: 'Amount', className: 'text-right' },
-    { name: 'custom', title: 'Custom', className: 'text-right', component: CustomComponent }
+    { name: 'custom', title: 'Custom', className: 'text-right', renderCell: CustomComponent }
   ];
 
   const data = [
@@ -22,7 +22,7 @@ const Table = () => {
 
   return (
     <ComponentWrapper>
-      <NTable className="bg-card" caption="Invoice table" columnDef={columnDef} data={data} />
+      <NTable className="bg-card" caption="Invoice table" columns={columns} data={data} />
     </ComponentWrapper>
   );
 };

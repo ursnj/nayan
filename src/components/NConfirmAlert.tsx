@@ -1,3 +1,4 @@
+import React, { memo, ReactNode } from 'react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -10,7 +11,7 @@ import {
 } from '@/components/ui/alert-dialog';
 import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NConfirmAlertProps extends Omit<React.ComponentProps<typeof AlertDialog>, 'open' | 'onOpenChange'> {
   isOpen: boolean;
   message: string;
   title?: string;
@@ -23,10 +24,13 @@ interface Props {
   cancelText?: string;
   onResult: (result: boolean) => void;
   onClose: () => void;
+  children?: ReactNode;
+  renderActions?: (onResult: (result: boolean) => void) => ReactNode;
+  renderHeader?: (title: string, message: string) => ReactNode;
 }
 
-export const NConfirmAlert = (props: Props) => {
-  const {
+const NConfirmAlertComponent: React.FC<NConfirmAlertProps> = memo(
+  ({
     isOpen,
     title = 'Are you absolutely sure?',
     message,
@@ -36,25 +40,46 @@ export const NConfirmAlert = (props: Props) => {
     confirmClassName = '',
     cancelClassName = '',
     confirmText = 'Confirm',
-    cancelText = 'Cancel'
-  } = props;
+    cancelText = 'Cancel',
+    onResult,
+    onClose,
+    children,
+    renderActions,
+    renderHeader,
+    ...rest
+  }) => {
+    return (
+      <AlertDialog open={isOpen} onOpenChange={onClose} {...rest}>
+        <AlertDialogContent className={cn('nyn-confirm-alert border border-border bg-card p-3', className)}>
+          {renderHeader ? (
+            renderHeader(title, message)
+          ) : (
+            <AlertDialogHeader>
+              <AlertDialogTitle className={cn('nyn-confirm-alert-title text-text', titleClassName)}>{title}</AlertDialogTitle>
+              <AlertDialogDescription className={cn('nyn-confirm-alert-message text-text', messageClassName)}>{message}</AlertDialogDescription>
+            </AlertDialogHeader>
+          )}
+          {children}
+          <AlertDialogFooter>
+            {renderActions ? (
+              renderActions(onResult)
+            ) : (
+              <>
+                <AlertDialogCancel className={cn('text-text bg-border border border-border', cancelClassName)} onClick={() => onResult(false)}>
+                  {cancelText}
+                </AlertDialogCancel>
+                <AlertDialogAction className={cn('text-white bg-primary border border-primary', confirmClassName)} onClick={() => onResult(true)}>
+                  {confirmText}
+                </AlertDialogAction>
+              </>
+            )}
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    );
+  }
+);
 
-  return (
-    <AlertDialog open={isOpen} onOpenChange={props.onClose}>
-      <AlertDialogContent className={cn(`nyn-confirm-alert border border-border bg-card p-3 ${className}`)}>
-        <AlertDialogHeader>
-          <AlertDialogTitle className={cn(`nyn-confirm-alert-title text-text ${titleClassName}`)}>{title}</AlertDialogTitle>
-          <AlertDialogDescription className={cn(`nyn-confirm-alert-message text-text ${messageClassName}`)}>{message}</AlertDialogDescription>
-        </AlertDialogHeader>
-        <AlertDialogFooter>
-          <AlertDialogCancel className={cn(`text-text bg-card border border-border ${cancelClassName}`)} onClick={() => props.onResult(false)}>
-            {cancelText}
-          </AlertDialogCancel>
-          <AlertDialogAction className={cn(`text-white bg-primary border border-primary ${confirmClassName}`)} onClick={() => props.onResult(true)}>
-            {confirmText}
-          </AlertDialogAction>
-        </AlertDialogFooter>
-      </AlertDialogContent>
-    </AlertDialog>
-  );
-};
+NConfirmAlertComponent.displayName = 'NConfirmAlert';
+
+export const NConfirmAlert = NConfirmAlertComponent;

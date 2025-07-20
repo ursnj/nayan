@@ -328,10 +328,12 @@ export const inputHookAttributes = [
 ];
 
 export const linkAttributes = [
-  { name: 'className', type: 'string', default: "' '", details: 'You can customise by passing tailwind classes.' },
-  { name: 'children', type: 'string | ReactNode', default: 'Required', details: 'You can pass link content as children.' },
-  { name: 'href', type: 'string', default: "' '", details: 'You can pass href to render anchor element.' },
-  { name: 'onClick', type: '() => void', default: '', details: 'You can get callback when link element clicked.' }
+  { name: 'href', type: 'string', default: "''", details: 'URL to link to. If provided, renders an <a>.' },
+  { name: 'onClick', type: '(e: MouseEvent) => void', default: '', details: 'Click handler. If href is not provided, renders a <span>.' },
+  { name: 'className', type: 'string', default: "''", details: 'Custom CSS classes.' },
+  { name: 'target', type: 'string', default: '', details: 'Target for anchor links (e.g., _blank, _self).' },
+  { name: 'rel', type: 'string', default: '', details: 'Rel attribute for anchor links.' },
+  { name: 'children', type: 'ReactNode', default: 'Required', details: 'Content inside the link.' }
 ];
 
 export const linkifyAttributes = [

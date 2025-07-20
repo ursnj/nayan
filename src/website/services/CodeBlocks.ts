@@ -360,16 +360,44 @@ export default FormInput;`;
 
 export const linkCode = `import { NLink } from 'nayan';
 
+const handleClick = () => alert('Span clicked!');
+const doSomething = (e) => alert('Custom action!');
+
 const Link = () => {
   return (
-    <div>
-      <div className="text-text">
-        This is a sample paragraph with some <NLink>Link</NLink>.
+    <>
+      <div className="mb-4">
+        <NLink href="https://example.com">External Link</NLink>
       </div>
-      <div className="text-text">
-        This is a sample paragraph with some custom styled <NLink className="text-red-700">Link</NLink>.
+
+      <div className="mb-4">
+        <NLink href="https://example.com" target="_self" rel="nofollow" className="text-blue-700 underline">
+          Custom Anchor
+        </NLink>
       </div>
-    </div>
+
+      <div className="mb-4">
+        <NLink onClick={handleClick}>Clickable Span</NLink>
+      </div>
+
+      <div className="mb-4">
+        <NLink className="font-bold text-green-700" onClick={handleClick}>
+          Styled Span
+        </NLink>
+      </div>
+
+      <div className="mb-4">
+        <NLink href="/about" className="underline text-purple-700">About (Internal Link)</NLink>
+        <br />
+        <NLink className="cursor-pointer text-orange-700" onClick={doSomething}>
+          Do Something
+        </NLink>
+      </div>
+
+      <div className="mb-4">
+        <NLink onClick={handleClick}>Focus me and press Enter or Space</NLink>
+      </div>
+    </>
   );
 };
 
