@@ -4,7 +4,7 @@ import Sidebar from '../../helpers/Sidebar';
 import Meta from '../../helpers/Meta';
 import { getMenuItem } from '../../services/Utils';
 import TagsList from '../../tags/TagsList';
-import { NLink } from '../../../components/NLink';
+import { NLink } from 'nayan';
 import SEOSitemaps from './SEOSitemaps';
 import SEOFeatures from './SEOFeatures';
 import SEOFuturePlans from './SEOFuturePlans';

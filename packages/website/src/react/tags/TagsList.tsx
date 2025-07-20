@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import { NBadge } from '../../components/NBadge';
-import { BadgeSize } from '../../components/Types';
+import { NBadge, BadgeSize } from 'nayan';
 
 interface Props {
   tags: { sku: string; text: string }[];

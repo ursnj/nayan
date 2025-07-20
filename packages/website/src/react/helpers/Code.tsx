@@ -1,6 +1,6 @@
 import React from 'react';
 import { CodeBlock, dracula, github } from 'react-code-blocks';
-import { useLocalStorage } from 'nayan';
+import { useLocalStorage, THEMES } from 'nayan';
 
 interface Props {
   code: string;

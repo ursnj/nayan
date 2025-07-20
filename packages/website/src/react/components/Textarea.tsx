@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NTextarea } from '@/components/NTextarea';
+import { NTextarea } from 'nayan';
 import ComponentWrapper from '../helpers/ComponentWrapper';
 
 const Textarea = () => {

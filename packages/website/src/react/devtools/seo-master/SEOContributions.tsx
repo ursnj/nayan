@@ -1,5 +1,5 @@
 import { isWindowDefined } from '../../services/Utils';
-import { NLinkify } from '../../../components/NLinkify';
+import { NLinkify } from 'nayan';
 import React from 'react';
 
 const SEOContributing = () => {

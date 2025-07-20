@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { AlignJustify, Github, MoonStar, Package, Sun } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { sidebarItems } from '../services/Utils';
-import { NSheet, useLocalStorage } from 'nayan';
+import { NSheet, useLocalStorage, THEMES } from 'nayan';
 
 const HeaderMenu = () => {
   const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);

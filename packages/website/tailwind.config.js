@@ -2,7 +2,7 @@
 module.exports = {
   important: true,
   darkMode: ['class'],
-  content: ['./src/**/*.{ts,tsx}', './index.html'],
+  content: ['./src/**/*.{ts,tsx}', './index.html', '../../node_modules/nayan/dist/index.es.js'],
   theme: {
     extend: {
       colors: {

@@ -1,3 +1,4 @@
+@import 'nayan/dist/nayan.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

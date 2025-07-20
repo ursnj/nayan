@@ -3,7 +3,7 @@ import Meta from '../helpers/Meta';
 import { useLocation } from 'react-router-dom';
 import { getMenuItem, isWindowDefined } from '../services/Utils';
 import React from 'react';
-import { NLinkify } from '../../components/NLinkify';
+import { NLinkify } from 'nayan';
 
 const Contributions = () => {
   const location = useLocation();

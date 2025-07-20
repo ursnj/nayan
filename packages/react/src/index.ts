@@ -24,6 +24,7 @@ export * from './components/NRadioGroup';
 export * from './components/NSelect';
 export * from './components/NSheet';
 export * from './components/NSkeleton';
+export * from './components/NSlider';
 export * from './components/NSwitch';
 export * from './components/NTable';
 export * from './components/NTabs';

@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { sidebarItems } from '../services/Utils';
-import { NCard } from '../../components/NCard';
+import { NCard } from 'nayan';
 
 interface Props {
   title?: string;
