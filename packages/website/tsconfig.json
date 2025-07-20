@@ -19,7 +19,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "nayan": ["../react/src/index.ts"]
     }
   },
   "include": ["src/**/*.ts", "node_modules/vitest/globals.d.ts"],

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { cn } from '@/lib/utils';
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
+import { cn } from '../lib/utils';
 
 // Generic column definition with flexible accessor and custom cell/header renderers
 export interface NTableColumn<T> {

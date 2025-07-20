@@ -1,6 +1,6 @@
 import React, { forwardRef, memo } from 'react';
-import { Progress } from '@/components/ui/progress';
-import { cn } from '@/lib/utils';
+import { Progress } from './ui/progress';
+import { cn } from '../lib/utils';
 
 export interface NProgressProps extends React.ComponentPropsWithoutRef<typeof Progress> {
   value: number;

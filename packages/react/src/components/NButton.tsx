@@ -1,7 +1,7 @@
 import React, { ReactNode, memo } from 'react';
 import { ButtonSize } from './Types';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
+import { cn } from '../lib/utils';
 
 const sizeMapping = {
   [ButtonSize.XS]: 'px-2 py-0.5 text-xs',

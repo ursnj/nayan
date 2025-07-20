@@ -1,5 +1,5 @@
 import React, { ReactNode, KeyboardEvent, memo } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 export interface NCardProps extends React.HTMLAttributes<HTMLElement> {
   className?: string;

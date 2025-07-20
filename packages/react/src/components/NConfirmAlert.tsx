@@ -8,8 +8,8 @@ import {
   AlertDialogFooter,
   AlertDialogHeader,
   AlertDialogTitle
-} from '@/components/ui/alert-dialog';
-import { cn } from '@/lib/utils';
+} from './ui/alert-dialog';
+import { cn } from '../lib/utils';
 
 export interface NConfirmAlertProps extends Omit<React.ComponentProps<typeof AlertDialog>, 'open' | 'onOpenChange'> {
   isOpen: boolean;

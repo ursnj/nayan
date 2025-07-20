@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
-import { Input, InputProps } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
+import { Input, InputProps } from './ui/input';
+import { Label } from './ui/label';
 import { Controller, FieldValues, Control, FieldError, RegisterOptions } from 'react-hook-form';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 export interface NFormInputProps<TFieldValues extends FieldValues = FieldValues> extends Omit<InputProps, 'name'> {
   id?: string;

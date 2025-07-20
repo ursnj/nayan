@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Alert, AlertDescription, AlertTitle } from './ui/alert';
 import { AlertTriangle, BadgeAlert, CheckCircle2, Info, X, XCircle } from 'lucide-react';
 import { AlertTypes } from './Types';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const iconsMapping = {
   [AlertTypes.DEFAULT]: <BadgeAlert className="h-4 w-4" />,

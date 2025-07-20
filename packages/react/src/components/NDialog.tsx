@@ -1,7 +1,7 @@
 import React, { ReactNode, memo } from 'react';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 import { DialogSize } from './Types';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const sizeMapping = {
   [DialogSize.XS]: 'max-w-sm',

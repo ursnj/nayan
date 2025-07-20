@@ -1,7 +1,7 @@
 import React, { ReactNode, ElementType, isValidElement } from 'react';
-import { DropdownMenuItem, DropdownMenuShortcut } from '@/components/ui/dropdown-menu';
-import { NDivider } from '@/components/NDivider';
-import { cn } from '@/lib/utils';
+import { DropdownMenuItem, DropdownMenuShortcut } from './ui/dropdown-menu';
+import { NDivider } from './NDivider';
+import { cn } from '../lib/utils';
 
 export interface NMenuItemProps extends Omit<React.ComponentPropsWithoutRef<typeof DropdownMenuItem>, 'title'> {
   title: ReactNode;

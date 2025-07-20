@@ -1,6 +1,6 @@
 import React, { ReactNode, forwardRef, memo } from 'react';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { cn } from '@/lib/utils';
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import { cn } from '../lib/utils';
 
 export interface NTooltipProps extends React.HTMLAttributes<HTMLDivElement> {
   /** Tooltip message or node */

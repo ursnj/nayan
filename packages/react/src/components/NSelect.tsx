@@ -1,9 +1,9 @@
 import React, { memo, useCallback, useId } from 'react';
-import { Label } from '@/components/ui/label';
-import { ReactSelectOption } from '@/components/Types';
+import { Label } from './ui/label';
+import { ReactSelectOption } from './Types';
 import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 import { reactSelectCustomClassNames, reactSelectTheme } from './Utils';
 
 export interface NSelectProps<OptionType = ReactSelectOption, IsMulti extends boolean = false> {

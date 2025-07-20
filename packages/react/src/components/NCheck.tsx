@@ -1,6 +1,6 @@
 import React, { ReactNode, memo } from 'react';
-import { Checkbox } from '@/components/ui/checkbox';
-import { cn } from '@/lib/utils';
+import { Checkbox } from './ui/checkbox';
+import { cn } from '../lib/utils';
 
 export interface NCheckProps {
   id?: string;

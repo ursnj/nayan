@@ -1,8 +1,8 @@
 import React, { ReactNode, ReactElement, HTMLAttributes, forwardRef } from 'react';
-import { DropdownMenuPortal, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger } from '@/components/ui/dropdown-menu';
-import { Size } from '@/components/Types';
-import { menuSizeMapping } from '@/components/NMenu';
-import { cn } from '@/lib/utils';
+import { DropdownMenuPortal, DropdownMenuSub, DropdownMenuSubContent, DropdownMenuSubTrigger } from './ui/dropdown-menu';
+import { Size } from './Types';
+import { menuSizeMapping } from './NMenu';
+import { cn } from '../lib/utils';
 
 export interface NMenuNestedProps {
   size?: Size;

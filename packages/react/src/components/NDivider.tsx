@@ -1,6 +1,6 @@
 import React, { ReactNode, memo } from 'react';
-import { Separator } from '@/components/ui/separator';
-import { cn } from '@/lib/utils';
+import { Separator } from './ui/separator';
+import { cn } from '../lib/utils';
 
 export interface NDividerProps extends React.ComponentProps<typeof Separator> {
   children?: ReactNode;

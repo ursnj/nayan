@@ -1,7 +1,7 @@
 import React, { ReactNode, memo } from 'react';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from './ui/badge';
 import { BadgeSize } from './Types';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const sizeMapping = {
   [BadgeSize.XS]: 'px-2 py-0.5 text-xs',

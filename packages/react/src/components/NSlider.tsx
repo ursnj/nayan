@@ -1,6 +1,6 @@
 import React, { useId, useCallback, useState, useEffect } from 'react';
-import { Slider } from '@/components/ui/slider';
-import { cn } from '@/lib/utils';
+import { Slider } from './ui/slider';
+import { cn } from '../lib/utils';
 import { Label } from './ui/label';
 
 export interface NSliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {

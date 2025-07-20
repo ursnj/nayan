@@ -1,7 +1,7 @@
 import React, { useId } from 'react';
-import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
-import { cn } from '@/lib/utils';
+import { Label } from './ui/label';
+import { Switch } from './ui/switch';
+import { cn } from '../lib/utils';
 
 export interface NSwitchProps extends Omit<React.ComponentPropsWithoutRef<typeof Switch>, 'checked' | 'onCheckedChange' | 'onChange' | 'id'> {
   enabled?: boolean;

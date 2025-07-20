@@ -1,6 +1,6 @@
 import React, { ReactNode, useCallback, memo } from 'react';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { cn } from '@/lib/utils';
+import { Tabs, TabsList, TabsTrigger } from './ui/tabs';
+import { cn } from '../lib/utils';
 
 export interface NTabsProps {
   isFull?: boolean;

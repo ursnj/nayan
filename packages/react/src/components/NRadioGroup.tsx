@@ -1,8 +1,8 @@
 import React, { forwardRef, memo, useId } from 'react';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { RadioItem } from '@/components/Types';
-import { cn } from '@/lib/utils';
+import { Label } from './ui/label';
+import { RadioGroup, RadioGroupItem } from './ui/radio-group';
+import { RadioItem } from './Types';
+import { cn } from '../lib/utils';
 
 export interface NRadioGroupProps
   extends Omit<React.ComponentPropsWithoutRef<typeof RadioGroup>, 'onValueChange' | 'value' | 'defaultValue' | 'onChange'> {

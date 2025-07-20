@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { TabsContent } from '@/components/ui/tabs';
-import { cn } from '@/lib/utils';
+import { TabsContent } from './ui/tabs';
+import { cn } from '../lib/utils';
 
 export interface NTabsContentProps {
   item: string;

@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { AccordionListItem, AccordionTypes } from '@/components/Types';
-import { cn } from '@/lib/utils';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
+import { AccordionListItem, AccordionTypes } from './Types';
+import { cn } from '../lib/utils';
 import './NStyles.css';
 
 export interface NAccordionProps<T = AccordionListItem> {

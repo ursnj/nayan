@@ -1,7 +1,7 @@
 import React, { ReactNode, memo } from 'react';
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import { SheetSize } from '@/components/Types';
-import { cn } from '@/lib/utils';
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from './ui/sheet';
+import { SheetSize } from './Types';
+import { cn } from '../lib/utils';
 
 const sizeMapping: Record<SheetSize, string> = {
   [SheetSize.XS]: 'md:max-w-sm',

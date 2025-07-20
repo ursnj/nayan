@@ -1,7 +1,7 @@
 import React, { ReactNode, ReactElement, forwardRef, useId, memo } from 'react';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
 import { PopoverSize } from './Types';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 const sizeMapping = {
   [PopoverSize.XS]: 'w-[150px]',

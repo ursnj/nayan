@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useCallback, useState, ReactNode, CSSProperties } from 'react';
-import { ThresholdUnits, parseThreshold, throttle } from '@/components/Utils';
-import { cn } from '@/lib/utils';
+import { ThresholdUnits, parseThreshold, throttle } from './Utils';
+import { cn } from '../lib/utils';
 
 type Fn = () => any;
 

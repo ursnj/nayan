@@ -1,8 +1,8 @@
 import React, { ReactNode, useEffect, useMemo, HTMLAttributes } from 'react';
-import { Toaster } from '@/components/ui/toaster';
-import { TooltipProvider } from '@/components/ui/tooltip';
-import { THEMES } from '@/components/Types';
-import { useLocalStorage } from '@/components/NLocalStorage';
+import { Toaster } from './ui/toaster';
+import { TooltipProvider } from './ui/tooltip';
+import { THEMES } from './Types';
+import { useLocalStorage } from './NLocalStorage';
 
 export type ThemeType = keyof typeof THEMES | (typeof THEMES)[keyof typeof THEMES] | null;
 

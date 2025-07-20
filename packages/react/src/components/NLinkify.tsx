@@ -1,7 +1,7 @@
 import React, { ReactNode, AnchorHTMLAttributes, useCallback } from 'react';
 // @ts-ignore
 import Linkify from 'react-linkify';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 export interface NLinkifyProps {
   children: ReactNode;

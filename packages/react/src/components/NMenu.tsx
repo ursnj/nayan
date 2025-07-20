@@ -1,8 +1,8 @@
-import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuLabel, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuLabel, DropdownMenuTrigger } from './ui/dropdown-menu';
 import React, { ReactNode, HTMLAttributes, ButtonHTMLAttributes } from 'react';
 import { MenuSize } from './Types';
-import { NDivider } from '@/components/NDivider';
-import { cn } from '@/lib/utils';
+import { NDivider } from './NDivider';
+import { cn } from '../lib/utils';
 
 export const menuSizeMapping = {
   [MenuSize.XS]: 'w-[80px]',
