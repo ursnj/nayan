@@ -9,6 +9,7 @@
   "scripts": {
     "prepare": "husky install",
     "format": "prettier --write .",
+    "build:nayan": "yarn workspace nayan build",
     "test": "yarn workspaces run test"
   },
   "devDependencies": {
