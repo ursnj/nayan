@@ -12,7 +12,7 @@ COPY packages/website/package.json ./packages/website/package.json
 
 # Clear yarn cache and install dependencies with workspace resolution
 RUN yarn cache clean
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --non-interactive
 
 FROM base AS builder
 
@@ -49,7 +49,7 @@ COPY packages/website/package.json ./packages/website/package.json
 COPY --from=builder /app/packages/react/ ./packages/react/
 
 # Install dependencies (this should resolve to the local workspace)
-RUN yarn install --frozen-lockfile --production
+RUN yarn install --frozen-lockfile --production --non-interactive
 
 # Copy built website from builder stage
 COPY --from=builder /app/packages/website/dist ./packages/website/dist
