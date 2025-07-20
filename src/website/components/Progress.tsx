@@ -5,7 +5,7 @@ import ComponentWrapper from '../helpers/ComponentWrapper';
 const Progress = () => {
   return (
     <ComponentWrapper>
-      <NProgress value={50} />
+      <NProgress value={50} label="Sample Progress" showLabel={true} />
     </ComponentWrapper>
   );
 };
