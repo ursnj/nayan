@@ -8,17 +8,15 @@ export default defineConfig(({ command, mode }) => {
   const isDev = command === 'serve' || mode === 'development';
 
   // Base alias configuration
-  const baseAlias = {
-    '@': path.resolve(__dirname, './src')
-  };
+  const baseAlias = [{ find: '@', replacement: path.resolve(__dirname, './src') }];
 
   // Add nayan source alias only in development
   const alias = isDev
-    ? {
-        '@': path.resolve(__dirname, './src'),
-        // Point nayan package to source directory for development
-        nayan: path.resolve(__dirname, '../react/src/index.ts')
-      }
+    ? [
+        { find: /^nayan$/, replacement: path.resolve(__dirname, '../react/src/index.ts') },
+        { find: /^nayan\/(.*)$/, replacement: path.resolve(__dirname, '../react/src/$1') },
+        ...baseAlias
+      ]
     : baseAlias;
 
   const plugins = [react()];
