@@ -33,7 +33,7 @@ export * from './components/NTextarea';
 export * from './components/NTheme';
 export * from './components/NToast';
 export * from './components/NTooltip';
+export * from './components/Types';
 
 // Export lib utilities
 export * from './lib/utils';
-export * from './components/Types';
