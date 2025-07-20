@@ -5,8 +5,10 @@ WORKDIR /app
 
 # Copy root package.json and yarn.lock for workspace dependencies
 COPY package.json yarn.lock ./
-COPY packages/react/package.json ./packages/react/
-COPY packages/website/package.json ./packages/website/
+
+# Copy all package.json files to establish workspace structure
+COPY packages/react/package.json ./packages/react/package.json
+COPY packages/website/package.json ./packages/website/package.json
 
 # Clear yarn cache and install dependencies
 RUN yarn cache clean
@@ -15,7 +17,7 @@ RUN yarn install --frozen-lockfile
 FROM base AS builder
 
 # Copy all source files
-COPY . .
+COPY packages/ ./packages/
 
 # Verify workspace resolution
 RUN yarn workspace website why nayan
@@ -31,10 +33,12 @@ FROM node:20.19-alpine as runner
 # Set working directory
 WORKDIR /app
 
-# Copy package files for production dependencies
+# Copy root package.json and yarn.lock
 COPY package.json yarn.lock ./
-COPY packages/react/package.json ./packages/react/
-COPY packages/website/package.json ./packages/website/
+
+# Copy package.json files
+COPY packages/react/package.json ./packages/react/package.json
+COPY packages/website/package.json ./packages/website/package.json
 
 # Copy built nayan package from builder stage to ensure workspace dependency works
 COPY --from=builder /app/packages/react/dist ./packages/react/dist
