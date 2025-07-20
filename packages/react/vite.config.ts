@@ -1,7 +1,14 @@
+// @ts-ignore
+import path from 'path';
 import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  },
   build: {
     lib: {
       entry: './src/index.ts',
@@ -15,6 +22,13 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM'
         }
+      },
+      onwarn(warning, warn) {
+        // Suppress "use client" directive warnings from node_modules
+        if (warning.code === 'MODULE_LEVEL_DIRECTIVE' && warning.message.includes('use client')) {
+          return;
+        }
+        warn(warning);
       }
     },
     sourcemap: true,
