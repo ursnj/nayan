@@ -27,18 +27,9 @@
     "access": "public"
   },
   "scripts": {
-    "start": "node server",
-    "preview": "NODE_ENV=production node server",
-    "debug": "node --inspect-brk server",
     "build": "rimraf dist && vite build && tsc -p tsconfig.build.json",
-    "build:website": "rimraf dist && tsc && npm run build:client && npm run build:server",
-    "build:client": "vite build -c vite.website.ts --outDir dist/client",
-    "build:server": "vite build -c vite.website.ts --outDir dist/server --ssr src/entry-server.jsx",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
-    "prepare": "husky install",
-    "format": "prettier --write .",
-    "sitemaper": "npx seo-master create sitemap -w http://localhost:7100 -r https://www.nayanui.com -o ./public/sitemap.xml"
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
@@ -80,18 +71,12 @@
     "@vitejs/plugin-react-swc": "^3.11.0",
     "@vitest/coverage-istanbul": "^3.2.4",
     "autoprefixer": "^10.4.21",
-    "compression": "^1.8.1",
-    "express": "^4.21.2",
-    "husky": "^9.1.7",
     "jsdom": "^26.1.0",
-    "lint-staged": "^16.1.2",
     "postcss": "^8.5.6",
-    "prettier": "^3.6.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.1",
     "rimraf": "^6.0.1",
-    "serve-static": "^2.2.0",
     "tailwind-merge": "^3.3.1",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
