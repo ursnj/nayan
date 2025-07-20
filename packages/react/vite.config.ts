@@ -1,24 +1,7 @@
-import path from 'path';
-import { defineConfig } from 'vitest/config';
-import react from '@vitejs/plugin-react-swc';
-import dts from 'vite-plugin-dts';
+import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    host: 'localhost',
-    port: 3000,
-    open: true
-  },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/tests/setup.ts',
-    coverage: {
-      provider: 'istanbul',
-      reporter: ['text', 'json', 'html']
-    }
-  },
   build: {
     lib: {
       entry: './src/index.ts',
@@ -37,11 +20,5 @@ export default defineConfig({
     sourcemap: true,
     emptyOutDir: true,
     copyPublicDir: false
-  },
-  plugins: [react(), dts()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
-    }
   }
 });
