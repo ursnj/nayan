@@ -1,36 +1,93 @@
+import React, { useId, useCallback, useState, useEffect } from 'react';
 import { Slider } from '@/components/ui/slider';
 import { cn } from '@/lib/utils';
 import { Label } from './ui/label';
 
-interface Props {
+export interface NSliderProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
+  label?: React.ReactNode;
   className?: string;
   labelClassName?: string;
   sliderClassName?: string;
-  label?: string;
+  id?: string;
+  value?: number;
   defaultValue?: number;
+  min?: number;
   max?: number;
   step?: number;
   disabled?: boolean;
-  onChange: (value: number) => void;
+  orientation?: 'horizontal' | 'vertical';
+  onChange?: (value: number) => void;
+  'aria-label'?: string;
+  'aria-labelledby'?: string;
+  'aria-valuetext'?: string;
 }
 
-export const NSlider = (props: Props) => {
-  const { className = '', labelClassName = '', sliderClassName = '', label = '', defaultValue = 0, max = 100, step = 1, disabled = false } = props;
-  return (
-    <div className={cn(`nyn-select-block mb-3 ${className}`)}>
-      {label && (
-        <Label htmlFor="select" className={cn(`nyn-select-label block pb-4 text-text ${labelClassName}`)}>
-          {label}
-        </Label>
-      )}
-      <Slider
-        defaultValue={[defaultValue]}
-        max={max}
-        step={step}
-        disabled={disabled}
-        onValueChange={value => props.onChange(value[0])}
-        className={cn(`nyn-slider bg-border rounded  ${sliderClassName}`)}
-      />
-    </div>
-  );
-};
+export const NSlider: React.FC<NSliderProps> = React.memo(
+  ({
+    className = '',
+    labelClassName = '',
+    sliderClassName = '',
+    label,
+    id,
+    value,
+    defaultValue = 0,
+    min = 0,
+    max = 100,
+    step = 1,
+    disabled = false,
+    orientation = 'horizontal',
+    onChange,
+    'aria-label': ariaLabel,
+    'aria-labelledby': ariaLabelledBy,
+    'aria-valuetext': ariaValueText,
+    ...rest
+  }) => {
+    const generatedId = useId();
+    const sliderId = id || `nyn-slider-${generatedId}`;
+    const [internalValue, setInternalValue] = useState<number[]>([typeof value === 'number' ? value : defaultValue]);
+
+    // Sync internal value with controlled value
+    useEffect(() => {
+      if (typeof value === 'number') setInternalValue([value]);
+    }, [value]);
+
+    const handleValueChange = useCallback((v: number[]) => {
+      setInternalValue(v);
+    }, []);
+
+    const handleValueCommit = useCallback(
+      (v: number[]) => {
+        if (onChange) onChange(v[0]);
+      },
+      [onChange]
+    );
+
+    return (
+      <div className={cn('nyn-slider-block mb-3', className)} {...rest}>
+        {label && (
+          <Label htmlFor={sliderId} className={cn('nyn-slider-label block pb-4 text-text', labelClassName)}>
+            {label}
+          </Label>
+        )}
+        <Slider
+          id={sliderId}
+          value={internalValue}
+          defaultValue={[defaultValue]}
+          min={min}
+          max={max}
+          step={step}
+          disabled={disabled}
+          orientation={orientation}
+          onValueChange={handleValueChange}
+          onValueCommit={handleValueCommit}
+          className={cn('nyn-slider bg-border rounded', sliderClassName)}
+          aria-label={ariaLabel}
+          aria-labelledby={ariaLabelledBy}
+          aria-valuetext={ariaValueText}
+        />
+      </div>
+    );
+  }
+);
+
+NSlider.displayName = 'NSlider';
