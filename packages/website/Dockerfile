@@ -10,7 +10,7 @@ COPY package.json yarn.lock ./
 COPY packages/react/package.json ./packages/react/package.json
 COPY packages/website/package.json ./packages/website/package.json
 
-# Clear yarn cache and install dependencies
+# Clear yarn cache and install dependencies with workspace resolution
 RUN yarn cache clean
 RUN yarn install --frozen-lockfile
 
@@ -19,13 +19,18 @@ FROM base AS builder
 # Copy all source files
 COPY packages/ ./packages/
 
-# Verify workspace resolution
+# Verify workspace resolution and show what's being used
 RUN yarn workspace website why nayan
+RUN ls -la packages/react/
+RUN cat packages/react/package.json | grep version
 
-# Build nayan package first
+# Build nayan package first to ensure it's available
 RUN yarn workspace nayan build
 
-# Build website
+# Verify the built package exists
+RUN ls -la packages/react/dist/
+
+# Build website with the local workspace nayan
 RUN yarn workspace website build:website
 
 FROM node:20.19-alpine as runner
@@ -36,16 +41,14 @@ WORKDIR /app
 # Copy root package.json and yarn.lock
 COPY package.json yarn.lock ./
 
-# Copy package.json files
+# Copy package.json files to maintain workspace structure
 COPY packages/react/package.json ./packages/react/package.json
 COPY packages/website/package.json ./packages/website/package.json
 
-# Copy built nayan package from builder stage to ensure workspace dependency works
-COPY --from=builder /app/packages/react/dist ./packages/react/dist
-COPY --from=builder /app/packages/react/package.json ./packages/react/package.json
+# Copy the entire built nayan package to maintain workspace resolution
+COPY --from=builder /app/packages/react/ ./packages/react/
 
-# Clear cache and install only production dependencies
-RUN yarn cache clean
+# Install dependencies (this should resolve to the local workspace)
 RUN yarn install --frozen-lockfile --production
 
 # Copy built website from builder stage
