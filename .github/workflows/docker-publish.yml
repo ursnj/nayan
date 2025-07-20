@@ -7,9 +7,19 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'yarn'
+      
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      
       - name: Build & Publish Image
         working-directory: ./
         run: |
           docker login -u ursnj -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker build -t ursnj/nayanui:latest .
+          docker build -f packages/website/Dockerfile -t ursnj/nayanui:latest .
           docker push ursnj/nayanui:latest
