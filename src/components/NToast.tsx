@@ -1,4 +1,4 @@
-import { useToast as useToaster } from '@/components/ui/use-toast';
+import { useToast as useToaster, toast } from '@/components/ui/use-toast';
 
 export const useToast = () => {
   const { toast: toaster } = useToaster();
@@ -6,3 +6,7 @@ export const useToast = () => {
     toaster(Object.assign({ description }, title && { title }));
   };
 };
+
+export function showToast(description: string, title: string = '') {
+  toast(Object.assign({ description }, title && { title }));
+}
