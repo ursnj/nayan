@@ -3,7 +3,7 @@
   "private": false,
   "sideEffects": false,
   "description": "Nayan UI provides React component library based on Tailwind CSS and Radix UI (Shadcn). This library is a collection of pre-designed and pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for your web application.",
-  "version": "2.23.0",
+  "version": "2.24.0-beta.0",
   "type": "module",
   "types": "./dist/index.d.ts",
   "homepage": "https://www.nayanui.com",
