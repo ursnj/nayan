@@ -1,9 +1,7 @@
 #!/usr/bin/env node --no-warnings
 
 import { Command } from 'commander';
-import { generateImages } from './images.js';
 import { generateSitemap, validateSitemap } from './sitemaps.js';
-import { generateMetaTags, validateMetaTags } from './metatags.js';
 import { generateRobots, validateRobots } from './robots.js';
 import { validateChangefreq, validateDepth, validateOutput, validateWebsite } from './utils.js';
 import packageJSON from '../package.json' assert { type: 'json' };
@@ -21,13 +19,13 @@ program
 
 const create = program
   .command('create')
-  .description('Create SEO Tools')
+  .description('Create Dev Tools')
   .action(function (this: Command) {
     this.help();
   });
 const validate = program
   .command('validate')
-  .description('Validate SEO Tools')
+  .description('Validate Dev Tools')
   .action(function (this: Command) {
     this.help();
   });
@@ -86,33 +84,6 @@ validate
     validateRobots(input, isRemote);
   });
 
-create
-  .command('metadata')
-  .description('Create metadata for your website.')
-  .action(() => {
-    generateMetaTags();
-  });
-
-validate
-  .command('metadata')
-  .description('Validate SEO metadata for the given website')
-  .option('-w, --website <url>', 'The URL of the website to crawl', validateWebsite)
-  .action(options => {
-    const website = options.website || '';
-    validateMetaTags(website);
-  });
-
-create
-  .command('images')
-  .description('Create images for your website.')
-  .option('-i, --image <path>', 'Input path of source image', validateOutput)
-  .option('-o, --output <path>', 'Output directory path for generated images', validateOutput)
-  .action(options => {
-    const image = options.image || '';
-    const directory = options.image || './images';
-    generateImages(image, directory);
-  });
-
-export { generateSitemap, validateSitemap, generateImages, generateMetaTags, validateMetaTags, generateRobots, validateRobots };
+export { generateSitemap, validateSitemap, generateRobots, validateRobots };
 
 program.parse(process.argv);

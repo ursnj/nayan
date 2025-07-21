@@ -1,6 +1,6 @@
 {
   "name": "@nayan-ui/cli",
-  "version": "1.4.0",
+  "version": "1.4.0-beta.0",
   "private": false,
   "sideEffects": false,
   "description": "SEO Master is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation, SEO-optimized metadata, Image assets generation and seamless integration with major search engines.",
@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "homepage": "https://www.nayanui.com",
   "bin": {
-    "seo-master": "./dist/index.js"
+    "@nayan-ui/cli": "./dist/index.js"
   },
   "exports": {
     ".": {
@@ -33,7 +33,6 @@
     "cheerio": "^1.0.0",
     "commander": "^12.1.0",
     "ora": "^8.1.0",
-    "sharp": "^0.33.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3",
     "xml2js": "^0.6.2",

@@ -1,14 +1,12 @@
-# Nayan Ui CLI - Search Engine Optimization Tools
+# NayanUI CLI - Dev Tools needed for Every Website
 
-**SEO Master** is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation, SEO-optimized metadata, Image assets generation and seamless integration with major search engines, SEO Master simplifies the process of optimizing your site for search engines. Whether you're monitoring backlinks, improving page speed, or fine-tuning on-page SEO, SEO Master offers everything you need to achieve top search engine performance.
+**NayanUI CLI** is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation and seamless integration with major search engines, SEO Master simplifies the process of optimizing your site for search engines. Whether you're monitoring backlinks, improving page speed, or fine-tuning on-page SEO, SEO Master offers everything you need to achieve top search engine performance.
 
 ## ✨ Features
 
 - ⌨️ **Framework-Agnostic Integration:** Easily integrates into any framework with simple commands.
 - 🌈 **Automatic Sitemap Generation:** Creates sitemaps with domain-specific crawling.
 - 🛡 **Customizable Robots.txt Creation:** Generate a fully customizable robots.txt file.
-- 🌍 **Image Asset Creation:** Automatically create all the necessary image assets for your website.
-- 📦 **SEO-Optimized Metadata Generation:** Generate metadata to boost your website’s SEO.
 - ⚙️ **Search Engine Integration:** Works with all major search engines for seamless optimization.
 - 🎨 **SEO Resource Validation:** Validate key SEO elements like sitemaps, robots.txt, metadata, and other assets.
 
@@ -17,25 +15,25 @@
 ### Simple sitemap creation:
 
 ```
-npx seo-master create sitemap -w https://www.nayanui.com
+npx @nayan-ui/cli create sitemap -w https://www.nayanui.com
 ```
 
 ### Advanced sitemap creation:
 
 ```
-npx seo-master create sitemap --website https://www.nayanui.com --depth 10 --changefreq daily --output ./sitemap.xml
+npx @nayan-ui/cli create sitemap --website https://www.nayanui.com --depth 10 --changefreq daily --output ./sitemap.xml
 ```
 
 You can also use the shorter version of this command.
 
 ```
-npx seo-master create sitemap -w https://www.nayanui.com -d 10 -f daily -o ./sitemap.xml
+npx @nayan-ui/cli create sitemap -w https://www.nayanui.com -d 10 -f daily -o ./sitemap.xml
 ```
 
-You can also integrate seo-master with your localhost to generate sitemaps without any deployments.
+You can also integrate @nayan-ui/cli with your localhost to generate sitemaps without any deployments.
 
 ```
-npx seo-master create sitemap -w http://localhost:3000 -r https://www.nayanui.com -d 10 -f daily -o ./sitemap.xml
+npx @nayan-ui/cli create sitemap -w http://localhost:3000 -r https://www.nayanui.com -d 10 -f daily -o ./sitemap.xml
 ```
 
 this case it crawl your localhost URL and replace it with replacement URL.
@@ -51,19 +49,19 @@ this case it crawl your localhost URL and replace it with replacement URL.
 ### Sitemap validation:
 
 ```
-npx seo-master validate sitemap --input ./sitemap.xml
+npx @nayan-ui/cli validate sitemap --input ./sitemap.xml
 ```
 
 You can also use the shorter version of this command.
 
 ```
-npx seo-master validate sitemap -i ./sitemap.xml
+npx @nayan-ui/cli validate sitemap -i ./sitemap.xml
 ```
 
 You can also validate sitemap.xml of your live website by passing URL.
 
 ```
-npx seo-master validate sitemap --input https://www.nayanui.com/sitemap.xml --isremote true
+npx @nayan-ui/cli validate sitemap --input https://www.nayanui.com/sitemap.xml --isremote true
 ```
 
 | Name          | Parameter        | Default       | Usage                                                                             |
@@ -76,13 +74,13 @@ npx seo-master validate sitemap --input https://www.nayanui.com/sitemap.xml --is
 ### Robots.txt creation:
 
 ```
-npx seo-master create robots --allowed /home,/about --disallowed /admin,/security --sitemap https://www.nayanui.com/sitemap.xml --output ./robots.txt
+npx @nayan-ui/cli create robots --allowed /home,/about --disallowed /admin,/security --sitemap https://www.nayanui.com/sitemap.xml --output ./robots.txt
 ```
 
 You can also use the shorter version of this command.
 
 ```
-npx seo-master create robots -a /home,/about -d /admin,/security -s https://www.nayanui.com/sitemap.xml -o ./robots.txt
+npx @nayan-ui/cli create robots -a /home,/about -d /admin,/security -s https://www.nayanui.com/sitemap.xml -o ./robots.txt
 ```
 
 | Name             | Parameter         | Default      | Usage                                                                     |
@@ -95,19 +93,19 @@ npx seo-master create robots -a /home,/about -d /admin,/security -s https://www.
 ### Robots.txt validation:
 
 ```
-npx seo-master validate robots --input ./robots.txt
+npx @nayan-ui/cli validate robots --input ./robots.txt
 ```
 
 You can also use the shorter version of this command.
 
 ```
-npx seo-master validate robots -i ./robots.txt
+npx @nayan-ui/cli validate robots -i ./robots.txt
 ```
 
 You can also validate robots.txt of your live website by passing URL.
 
 ```
-npx seo-master validate robots --input https://www.nayanui.com/robots.txt --isremote true
+npx @nayan-ui/cli validate robots --input https://www.nayanui.com/robots.txt --isremote true
 ```
 
 | Name             | Parameter        | Default      | Usage                                                                             |
@@ -115,62 +113,13 @@ npx seo-master validate robots --input https://www.nayanui.com/robots.txt --isre
 | Input Robots.txt | --input / -i     | ./robots.xml | Pass output to let the generator know where to find and validate sitemap.         |
 | Is Remote        | --isremote / -ir | false        | Pass isremote true / false to the tool to know if its a local file or remote URL. |
 
-## 🕹 Meta tags Creation and Validation
-
-### Meta tags creation:
-
-This will create an index.html file with all the required meta tags required for optimised SEO. once its generated you can copy generated content and change content as per your needs.
-
-```
-npx seo-master create metatags
-```
-
-### Meta tags validation:
-
-```
-npx seo-master validate metatags --website https://www.nayanui.com
-```
-
-You can also use the shorter version of this command.
-
-```
-npx seo-master validate metatags -w https://www.nayanui.com
-```
-
-| Name    | Parameter      | Default | Usage                                                     |
-| ------- | -------------- | ------- | --------------------------------------------------------- |
-| Website | --website / -w | ''      | Pass website link to validate meta tags required for SEO. |
-
-## 🕹 Image Assets & Favicon creation
-
-This will create all the required images and favicons for your website so you no need to remember all the sizes required and edit them manually.
-
-We recommend input image is at least of 512X512 resolution for better results.
-
-```
-npx seo-master create images --image ./logo.png
-```
-
-You can also use the shorter version of this command.
-
-```
-npx seo-master create images -i ./logo.png
-```
-
-| Name             | Parameter     | Default  | Usage                                                   |
-| ---------------- | ------------- | -------- | ------------------------------------------------------- |
-| Input image      | --image / -i  | ''       | Pass input image to generate all required assets.       |
-| Output directory | --output / -o | ./images | Pass output directory to keep all the generated images. |
-
 ## 🖥 Future plans
 
 - [x] Create SEO Master CLI tool to generate and validate **sitemaps** efficiently.
 - [x] Create SEO Master CLI tool to generate and validate **robots.txt** efficiently.
-- [x] Create SEO Master CLI tool to generate and validate **meta tags** for your website.
-- [x] Create SEO Master CLI tool to generate **image assets** for your website.
 - [ ] Support multiple sitemaps if website is bigger than certain limit.
-- [ ] Create a web application to automatically generate and submit sitemaps, robots.txt and image assets to search engines on a schedule.
+- [ ] Create a web application to automatically generate and submit sitemap, robots.txt to search engines on a schedule.
 
 ## 🤝 Contributing
 
-We welcome all contributions. You can submit any ideas as [Pull Requests](https://github.com/ursnj/seo-master/pulls) or as [GitHub Issues](https://github.com/ursnj/seo-master/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
+We welcome all contributions. You can submit any ideas as [Pull Requests](https://github.com/ursnj/nayan/pulls) or as [GitHub Issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)

@@ -12,9 +12,9 @@ const SEOImages = () => {
         manually.
       </div>
       <div className="mb-5">We recommend input image is at least of 512X512 resolution for better results.</div>
-      <Code language="sh" code={`npx seo-master create images --image ./logo.png`} />
+      <Code language="sh" code={`npx @nayan-ui/cli create images --image ./logo.png`} />
       <div className="mb-5">You can also use the shorter version of this command.</div>
-      <Code code={`npx seo-master create images -i ./logo.png`} />
+      <Code code={`npx @nayan-ui/cli create images -i ./logo.png`} />
       <Attributes data={faviconAttributes} />
     </div>
   );

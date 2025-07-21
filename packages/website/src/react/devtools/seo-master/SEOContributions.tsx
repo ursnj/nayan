@@ -9,9 +9,9 @@ const SEOContributing = () => {
       <div className="mb-5">
         {isWindowDefined() && (
           <NLinkify>
-            We encourage and welcome all contributions! Feel free to submit ideas via Pull Requests (https://github.com/ursnj/seo-master/pulls) or
-            GitHub Issues (https://github.com/ursnj/seo-master/issues). If you're looking to improve the code, check out our Development Instructions
-            and enjoy the process!
+            We encourage and welcome all contributions! Feel free to submit ideas via Pull Requests (https://github.com/ursnj/nayan/pulls) or GitHub
+            Issues (https://github.com/ursnj/nayan/issues). If you're looking to improve the code, check out our Development Instructions and enjoy
+            the process!
           </NLinkify>
         )}
       </div>

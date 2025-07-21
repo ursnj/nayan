@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./packages/seo-master
+        working-directory: ./packages/cli
     steps:
       - uses: actions/checkout@v4
 
