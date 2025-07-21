@@ -1,5 +1,5 @@
 {
-  "name": "nayanui",
+  "name": "@nayan-ui/root",
   "private": true,
   "workspaces": [
     "packages/*"
@@ -12,8 +12,7 @@
     "start:website": "yarn workspace website start",
     "build:website": "yarn workspace website build:website",
     "build:react": "yarn workspace @nayan-ui/react build",
-    "build:react-native": "yarn workspace @nayan-ui/react-native build",
-    "test": "yarn workspaces run test"
+    "build:react-native": "yarn workspace @nayan-ui/react-native build"
   },
   "devDependencies": {
     "husky": "^9.1.7",
