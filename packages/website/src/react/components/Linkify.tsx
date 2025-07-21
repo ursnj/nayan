@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { isWindowDefined } from '../services/Utils';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { isWindowDefined } from '../../services/Utils';
 import { NLinkify } from 'nayan';
 
 const Linkify = () => {

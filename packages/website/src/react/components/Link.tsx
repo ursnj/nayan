@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NLink } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NLink } from '@nayan-ui/react';
 
 const handleClick = () => alert('Span clicked!');
 const doSomething = (e: React.MouseEvent) => alert('Custom action!');

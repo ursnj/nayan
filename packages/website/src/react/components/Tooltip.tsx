@@ -1,5 +1,5 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
 import { NButton, NTooltip } from 'nayan';
 
 const Tooltip = () => {

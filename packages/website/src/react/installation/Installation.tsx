@@ -1,8 +1,8 @@
 import React from 'react';
-import Code from '../helpers/Code';
-import Sidebar from '../helpers/Sidebar';
-import { appCode, cssCode, installCode, tailwindCode } from '../services/CodeBlocks';
-import Meta from '../helpers/Meta';
+import Code from '../../helpers/Code';
+import Sidebar from '../../helpers/Sidebar';
+import { appCode, cssCode, installCode, tailwindCode } from '../../services/CodeBlocks';
+import Meta from '../../helpers/Meta';
 
 const Installation = () => {
   return (

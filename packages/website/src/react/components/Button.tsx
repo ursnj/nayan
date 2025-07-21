@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { ButtonSize, NButton } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { ButtonSize, NButton } from '@nayan-ui/react';
 
 const Button = () => {
   return (

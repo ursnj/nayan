@@ -1,5 +1,5 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
 import { NTable } from 'nayan';
 
 const CustomComponent = (row: any, col: any, rowIndex: number, colIndex: number) => {

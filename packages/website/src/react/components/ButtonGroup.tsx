@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NButtonGroup } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NButtonGroup } from '@nayan-ui/react';
 
 const items = ['Startup', 'Business', 'Enterprise'];
 

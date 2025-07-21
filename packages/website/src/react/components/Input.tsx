@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NInput } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NInput } from '@nayan-ui/react';
 
 const Input = () => {
   const [email, setEmail] = useState('niranjan.devasani@gmail.com');

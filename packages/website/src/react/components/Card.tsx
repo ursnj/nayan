@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NCard } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NCard } from '@nayan-ui/react';
 
 const Badge = () => {
   return (

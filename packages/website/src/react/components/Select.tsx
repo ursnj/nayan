@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
 import { NSelect } from 'nayan';
 
 const items = [

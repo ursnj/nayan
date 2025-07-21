@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NTextarea } from 'nayan';
-import ComponentWrapper from '../helpers/ComponentWrapper';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
 
 const Textarea = () => {
   const [address, setAddress] = useState('Bangalore, India');

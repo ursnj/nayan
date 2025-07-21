@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NCheck, NLink } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NCheck, NLink } from '@nayan-ui/react';
 
 const Checkbox = () => {
   const [checked, setChecked] = useState(true);

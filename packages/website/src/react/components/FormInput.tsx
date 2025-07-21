@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NButton, NFormInput } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NButton, NFormInput } from '@nayan-ui/react';
 
 const FormInput = () => {
   const {

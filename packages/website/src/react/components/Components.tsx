@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { getMenuItem, sidebarItems } from '../services/Utils';
-import Sidebar from '../helpers/Sidebar';
-import Meta from '../helpers/Meta';
-import { NCard } from 'nayan';
+import { getMenuItem, sidebarItems } from '../../services/Utils';
+import Sidebar from '../../helpers/Sidebar';
+import Meta from '../../helpers/Meta';
+import { NCard } from '@nayan-ui/react';
 
 const Components = () => {
   const location = useLocation();

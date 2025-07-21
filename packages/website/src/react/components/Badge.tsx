@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { BadgeSize, NBadge } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { BadgeSize, NBadge } from '@nayan-ui/react';
 
 const Badge = () => {
   return (
