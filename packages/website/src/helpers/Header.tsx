@@ -20,13 +20,13 @@ const HeaderMenu = () => {
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/installation">
-            Installation
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/react/installation">
+            React JS
           </NavLink>
         </li>
         <li className="w-full md:w-auto">
-          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/components">
-            Components
+          <NavLink className="text-base font-medium text-text px-3 py-3 block md:inline" to="/react-native/installation">
+            React Native
           </NavLink>
         </li>
         <li className="w-full md:w-auto">

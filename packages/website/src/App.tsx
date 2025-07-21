@@ -71,9 +71,6 @@ import RNTextarea from './react-native/components/Textarea';
 import RNToast from './react-native/components/Toast';
 import RNTooltip from './react-native/components/Tooltip';
 import RNInstallation from './react-native/installation/Installation';
-import RNTags from './react-native/tags/Tags';
-import RNTagsDetails from './react-native/tags/TagsDetails';
-import RNTagsList from './react-native/tags/TagsList';
 import Components from './react/components/Components';
 
 const App = () => {
@@ -84,11 +81,11 @@ const App = () => {
       <Wrapper>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cli" element={<Cli />} />
+          <Route path="/devtools" element={<Cli />} />
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/react">
-            <Route path="/installation" element={<Installation />} />
-            <Route path="/components">
+            <Route path="installation" element={<Installation />} />
+            <Route path="components">
               <Route index element={<Components />} />
               <Route path="accordion" element={<Accordion />} />
               <Route path="alert" element={<Alert />} />
@@ -122,16 +119,16 @@ const App = () => {
               <Route path="tooltip" element={<Tooltip />} />
             </Route>
 
-            <Route path="/tags">
+            <Route path="tags">
               <Route index element={<Tags />} />
               <Route path=":tag" element={<TagsDetails />} />
             </Route>
           </Route>
 
           <Route path="/react-native">
-            <Route path="/installation" element={<RNInstallation />} />
-            <Route path="/contributions" element={<Contributions />} />
-            <Route path="/components">
+            <Route path="installation" element={<RNInstallation />} />
+            <Route path="contributions" element={<Contributions />} />
+            <Route path="components">
               <Route index element={<RNComponents />} />
               <Route path="accordion" element={<RNAccordion />} />
               <Route path="alert" element={<RNAlert />} />
@@ -165,9 +162,9 @@ const App = () => {
               <Route path="tooltip" element={<RNTooltip />} />
             </Route>
 
-            <Route path="/tags">
-              <Route index element={<RNTags />} />
-              <Route path=":tag" element={<RNTagsDetails />} />
+            <Route path="tags">
+              <Route index element={<Tags />} />
+              <Route path=":tag" element={<TagsDetails />} />
             </Route>
           </Route>
 
