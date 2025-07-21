@@ -3,22 +3,15 @@ FROM node:20.19-alpine as base
 # Set working directory
 WORKDIR /app
 
-# Copy root package.json and yarn.lock for workspace dependencies
-COPY package.json yarn.lock ./
+# Copy the entire monorepo (all packages and configs)
+COPY . .
 
-# Copy all package.json files to establish workspace structure
-COPY packages/react/package.json ./packages/react/package.json
-COPY packages/website/package.json ./packages/website/package.json
-
-# Clear yarn cache and install dependencies with workspace resolution
+# Clean and install dependencies with proper workspace linking
 RUN yarn cache clean
 RUN rm -rf node_modules yarn.lock packages/website/node_modules packages/react/node_modules
 RUN yarn install --force
 
 FROM base AS builder
-
-# Copy all source files
-COPY packages/ ./packages/
 
 # Verify workspace resolution and show what's being used
 RUN yarn workspace website why nayan
