@@ -1,6 +1,6 @@
 {
   "name": "nayan",
-  "private": true,
+  "private": false,
   "sideEffects": false,
   "description": "Reusable UI Component Library for React JS.",
   "version": "2.24.0-beta.1",
