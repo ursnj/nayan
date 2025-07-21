@@ -1,0 +1,73 @@
+{
+  "name": "@nayan-ui/cli",
+  "version": "1.4.0",
+  "private": false,
+  "sideEffects": false,
+  "description": "SEO Master is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation, SEO-optimized metadata, Image assets generation and seamless integration with major search engines.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "homepage": "https://www.nayanui.com",
+  "bin": {
+    "seo-master": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    }
+  },
+  "author": {
+    "name": "Niranjan Devasani",
+    "email": "niranjan.devasani@gmail.com",
+    "url": "https://www.ursnj.com"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^22.7.5",
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "commander": "^12.1.0",
+    "ora": "^8.1.0",
+    "sharp": "^0.33.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "xml2js": "^0.6.2",
+    "xmlbuilder": "^15.1.1"
+  },
+  "files": [
+    "/dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ursnj/nayan"
+  },
+  "bugs": {
+    "url": "https://github.com/ursnj/nayan/issues"
+  },
+  "keywords": [
+    "Sitemap Generator",
+    "Sitemap Validator",
+    "Free Sitemap Generator",
+    "XML Sitemap Generator",
+    "Automated Sitemap Generator",
+    "Website Sitemap Generator",
+    "Online Sitemap Generator",
+    "Easy Sitemap Generator",
+    "Simple Sitemap Generator",
+    "Robots.txt Generator",
+    "Robots.txt Validator",
+    "Meta Tags Generator",
+    "Meta Tags Validator",
+    "Favicon Generator",
+    "Website Assets Generator",
+    "Social Media Metatags"
+  ]
+}

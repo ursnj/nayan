@@ -1,5 +1,5 @@
 {
-  "name": "nayan",
+  "name": "@nayan-ui/react",
   "private": false,
   "sideEffects": false,
   "description": "Reusable UI Component Library for React JS.",
@@ -98,7 +98,11 @@
     "Dev Tools",
     "seo-master"
   ],
-  "author": "Niranjan Devasani",
+  "author": {
+    "name": "Niranjan Devasani",
+    "email": "niranjan.devasani@gmail.com",
+    "url": "https://www.ursnj.com"
+  },
   "bugs": {
     "url": "https://github.com/ursnj/nayan/issues"
   },
