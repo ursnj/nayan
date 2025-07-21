@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NRadioGroup } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NRadioGroup } from '@nayan-ui/react';
 
 const items = [
   { value: 'startup', label: 'Startup' },

@@ -1,6 +1,6 @@
 import React from 'react';
-import { NAccordion, AccordionTypes } from 'nayan';
-import ComponentWrapper from '../helpers/ComponentWrapper';
+import { NAccordion, AccordionTypes } from '@nayan-ui/react';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
 
 const items = [
   { title: 'Heading 1', message: 'Description 1' },

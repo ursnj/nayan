@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NSwitch } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NSwitch } from '@nayan-ui/react';
 
 const Switch = () => {
   const [enabled, setEnabled] = useState(true);

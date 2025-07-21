@@ -3,7 +3,7 @@ import { User } from 'lucide-react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
 import { menuItemAttributes, menuNestedAttributes } from '../../services/Attributes';
 import Attributes from '../../helpers/Attributes';
-import { MenuSize, NButton, NMenu, NMenuItem, NMenuNested } from 'nayan';
+import { MenuSize, NButton, NMenu, NMenuItem, NMenuNested } from '@nayan-ui/react';
 
 const Menu = () => {
   return (

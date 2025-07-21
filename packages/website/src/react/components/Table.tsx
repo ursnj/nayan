@@ -1,6 +1,6 @@
 import React from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NTable } from 'nayan';
+import { NTable } from '@nayan-ui/react';
 
 const CustomComponent = (row: any, col: any, rowIndex: number, colIndex: number) => {
   return <div className="text-primary">Oops</div>;

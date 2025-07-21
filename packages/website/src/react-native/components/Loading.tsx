@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NLoading } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NLoading } from '@nayan-ui/react';
 
 const Loading = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NButton, NTooltip } from 'nayan';
+import { NButton, NTooltip } from '@nayan-ui/react';
 
 const Tooltip = () => {
   return (

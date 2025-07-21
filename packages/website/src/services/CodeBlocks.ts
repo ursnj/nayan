@@ -1,10 +1,10 @@
-export const installCode = `npm install nayan
-yarn add nayan
-bun install nayan`;
+export const installCode = `npm install @nayan-ui/react
+yarn add @nayan-ui/react
+bun install @nayan-ui/react`;
 
 export const tailwindCode = `module.exports = {
   darkMode: ['class'],
-  content: ['./src/**/*.{ts,tsx}', './index.html', './node_modules/nayan/dist/index.es.js'], // Check node_modules path properly
+  content: ['./src/**/*.{ts,tsx}', './index.html', './node_modules/@nayan-ui/react/dist/index.es.js'], // Check node_modules path properly
   theme: {
     extend: {
       colors: {
@@ -24,7 +24,7 @@ export const tailwindCode = `module.exports = {
   plugins: [require('tailwindcss-animate')]
 };`;
 
-export const cssCode = `@import 'nayan/dist/style.css';
+export const cssCode = `@import '@nayan-ui/react/dist/style.css';
 
 @tailwind base;
 @tailwind components;
@@ -64,7 +64,7 @@ export const cssCode = `@import 'nayan/dist/style.css';
 }`;
 
 export const appCode = `import { useState } from 'react';
-import { NTheme, THEMES, useLocalStorage } from 'nayan';
+import { NTheme, THEMES, useLocalStorage } from '@nayan-ui/react';
 
 const App = () => {
   const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
@@ -82,7 +82,7 @@ const App = () => {
 
 export default App;`;
 
-export const accordionCode = `import { NAccordion, AccordionTypes } from 'nayan';
+export const accordionCode = `import { NAccordion, AccordionTypes } from '@nayan-ui/react';
 
 const Accordion = () => {
   const items = [
@@ -102,7 +102,7 @@ const Accordion = () => {
 
 export default Accordion;`;
 
-export const alertCode = `import { NAlert, AlertTypes } from 'nayan';
+export const alertCode = `import { NAlert, AlertTypes } from '@nayan-ui/react';
 
 const Alert = () => {
   return (
@@ -118,7 +118,7 @@ const Alert = () => {
 
 export default Alert;`;
 
-export const badgeCode = `import { NBadge, BadgeSize } from 'nayan';
+export const badgeCode = `import { NBadge, BadgeSize } from '@nayan-ui/react';
 
 const Badge = () => {
   return (
@@ -134,12 +134,12 @@ const Badge = () => {
 
 export default Badge;`;
 
-export const buttonCode = `import { NButton, ButtonSize } from 'nayan';
+export const buttonCode = `import { NButton, ButtonSize } from '@nayan-ui/react';
 
 const Button = () => {
   return (
     <div>
-      <NButton size={Size.XS} disabled className="text-text bg-card border border-border mr-2">
+      <NButton size={ButtonSize.XS} disabled className="text-text bg-card border border-border mr-2">
         Button
       </NButton>
       <NButton type="submit" size={ButtonSize.XS} onClick={() => console.log('Button clicked')} className="text-white bg-blue-500 hover:bg-blue-600 border border-blue-600 mr-2">
@@ -167,7 +167,7 @@ const Button = () => {
 export default Button`;
 
 export const buttonGroupCode = `import { useState } from 'react';
-import { NButtonGroup } from 'nayan';
+import { NButtonGroup } from '@nayan-ui/react';
 
 const items = ['Startup', 'Business', 'Enterprise'];
 
@@ -178,7 +178,7 @@ const ButtonGroup = () => {
 
 export default ButtonGroup;`;
 
-export const cardCode = `import { NCard } from 'nayan';
+export const cardCode = `import { NCard } from '@nayan-ui/react';
 
 const Card = () => {
   return <NCard className="p-3">This is sample card.</NCard>
@@ -187,7 +187,7 @@ const Card = () => {
 export default Card;`;
 
 export const checkBoxCode = `import { useState } from 'react';
-import { NCheck, NLink } from 'nayan';
+import { NCheck, NLink } from '@nayan-ui/react';
 
 const Checkbox = () => {
   const [checked, setChecked] = useState(true);
@@ -201,7 +201,7 @@ const Checkbox = () => {
 
 export default Checkbox;`;
 
-export const comboBoxCode = `import { NCombo } from 'nayan';
+export const comboBoxCode = `import { NCombo } from '@nayan-ui/react';
 import { useState } from 'react';
 
 const items = [
@@ -230,7 +230,7 @@ const Combobox = () => {
 export default Combobox;`;
 
 export const confirmAlertCode = `import { useState } from 'react';
-import { NConfirmAlert, NButton } from 'nayan';
+import { NConfirmAlert, NButton } from '@nayan-ui/react';
 
 const ConfirmAlert = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -252,14 +252,14 @@ const ConfirmAlert = () => {
 export default ConfirmAlert;`;
 
 export const dialogCode = `import { useState } from 'react';
-import { NButton, NDialog, DialogSize } from 'nayan';
+import { NButton, NDialog, DialogSize } from '@nayan-ui/react';
 
 const Dialog = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <NDialog isOpen={isOpen} onClose="" {() => setIsOpen(false)} size={DialogSize.MD} title="Payment confirmation">
+      <NDialog isOpen={isOpen} onClose={() => setIsOpen(false)} size={DialogSize.MD} title="Payment confirmation">
         Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order.
       </NDialog>
       <NButton onClick={() => setIsOpen(true)}>Show Dialog</NButton>
@@ -269,7 +269,7 @@ const Dialog = () => {
 
 export default Dialog;`;
 
-export const dividerCode = `import { NDivider } from 'nayan';
+export const dividerCode = `import { NDivider } from '@nayan-ui/react';
 
 const Divider = () => {
   return (
@@ -284,7 +284,7 @@ const Divider = () => {
 
 export default Divider;`;
 
-export const infiniteScrollCode = `import { NCard, NInfiniteScroll, NLoading } from 'nayan';
+export const infiniteScrollCode = `import { NCard, NInfiniteScroll, NLoading } from '@nayan-ui/react';
 import React, { useState } from 'react';
 
 const InfiniteScroll = () => {
@@ -316,7 +316,7 @@ const InfiniteScroll = () => {
 
 export default InfiniteScroll;`;
 
-export const inputCode = `import { NInput } from 'nayan';
+export const inputCode = `import { NInput } from '@nayan-ui/react';
 import { useState } from 'react';
 
 const Input = () => {
@@ -329,7 +329,7 @@ const Input = () => {
 
 export default Input;`;
 
-export const inputHookCode = `import { NButton, NFormInput } from 'nayan';
+export const inputHookCode = `import { NButton, NFormInput } from '@nayan-ui/react';
 import { useForm } from 'react-hook-form';
 
 const FormInput = () => {
@@ -358,7 +358,7 @@ const FormInput = () => {
 
 export default FormInput;`;
 
-export const linkCode = `import { NLink } from 'nayan';
+export const linkCode = `import { NLink } from '@nayan-ui/react';
 
 const handleClick = () => alert('Span clicked!');
 const doSomething = (e) => alert('Custom action!');
@@ -403,7 +403,7 @@ const Link = () => {
 
 export default Link;`;
 
-export const linkifyCode = `import { NLinkify } from 'nayan';
+export const linkifyCode = `import { NLinkify } from '@nayan-ui/react';
 
 const Linkify = () => {
   return (
@@ -413,7 +413,7 @@ const Linkify = () => {
 
 export default Linkify;`;
 
-export const loadingCode = `import { NLoading } from 'nayan';
+export const loadingCode = `import { NLoading } from '@nayan-ui/react';
 
 const Loading = () => {
   return <NLoading className="text-primary" />
@@ -421,7 +421,7 @@ const Loading = () => {
 
 export default Loading;`;
 
-export const menuCode = `import { NMenu,NMenuItem, MenuSize, NMenuNested, NButton } from 'nayan';
+export const menuCode = `import { NMenu,NMenuItem, MenuSize, NMenuNested, NButton } from '@nayan-ui/react';
 import { User } from 'lucide-react';
 
 const Menu = () => {
@@ -440,7 +440,7 @@ const Menu = () => {
 
 export default Menu;`;
 
-export const popoverCode = `import { NPopover, NButton, PopoverSize } from 'nayan';
+export const popoverCode = `import { NPopover, NButton, PopoverSize } from '@nayan-ui/react';
 
 const Popover = () => {
   return (
@@ -455,7 +455,7 @@ const Popover = () => {
 
 export default Popover;`;
 
-export const progressCode = `import { NProgress } from 'nayan';
+export const progressCode = `import { NProgress } from '@nayan-ui/react';
 
 const Progress = () => {
   return <NProgress value={50} />;
@@ -464,7 +464,7 @@ const Progress = () => {
 export default Progress;`;
 
 export const radioGroupCode = `import { useState } from 'react';
-import { NRadioGroup } from 'nayan';
+import { NRadioGroup } from '@nayan-ui/react';
 
 const items = [
   { value: 'startup', label: 'Startup' },
@@ -489,7 +489,7 @@ const RadioGroupExample = () => {
 export default RadioGroup;`;
 
 export const selectCode = `import { useState } from 'react';
-import { NSelect } from 'nayan';
+import { NSelect } from '@nayan-ui/react';
 
 const items = [
   { value: 'startup', label: 'Startup' },
@@ -518,7 +518,7 @@ const Select = () => {
 export default Select;`;
 
 export const sheetCode = `import { useState } from 'react';
-import { NSheet, NButton, Size } from 'nayan';
+import { NSheet, NButton, Size } from '@nayan-ui/react';
 
 const SheetExample = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -537,7 +537,7 @@ const SheetExample = () => {
 
 export default Sheet;`;
 
-export const skeletonCode = `import { NSkeleton } from 'nayan';
+export const skeletonCode = `import { NSkeleton } from '@nayan-ui/react';
 
 const Skeleton = () => {
   return (
@@ -553,7 +553,7 @@ const Skeleton = () => {
 
 export default Skeleton;`;
 
-export const sliderCode = `import { NSlider } from 'nayan';
+export const sliderCode = `import { NSlider } from '@nayan-ui/react';
 
 const Slider = () => {
   return (
@@ -564,7 +564,7 @@ const Slider = () => {
 export default Slider;`;
 
 export const switchCode = `import { useState } from 'react';
-import { NSwitch } from 'nayan';
+import { NSwitch } from '@nayan-ui/react';
 
 const Switch = () => {
   const [enabled, setEnabled] = useState(false);
@@ -573,7 +573,7 @@ const Switch = () => {
 
 export default Switch;`;
 
-export const tableCode = `import { NTable } from 'nayan';
+export const tableCode = `import { NTable } from '@nayan-ui/react';
 
 const CustomComponent = ({row, col, ...remaining}: any) => {
   return <div className="text-primary">Oops</div>;
@@ -599,7 +599,7 @@ const Table = () => {
 export default Table;`;
 
 export const tabsCode = `import { useState } from 'react';
-import { NTabs, NTabsContent } from 'nayan';
+import { NTabs, NTabsContent } from '@nayan-ui/react';
 
 const items = ['POSTS', 'SAVED'];
 
@@ -622,7 +622,7 @@ const Tabs = () => {
         <NTabsContent item={items[0]} className="px-3 py-2 text-text">
           Content 3
         </NTabsContent>
-        <NTabsContent otem={items[1]} className="px-3 py-2 text-text">
+        <NTabsContent item={items[1]} className="px-3 py-2 text-text">
           Content 4
         </NTabsContent>
       </NTabs>
@@ -633,7 +633,7 @@ const Tabs = () => {
 export default Tabs;`;
 
 export const textareaCode = `import { useState } from 'react';
-import { NTextarea } from 'nayan';
+import { NTextarea } from '@nayan-ui/react';
 
 const Textarea = () => {
   const [address, setAddress] = useState('Bangalore, India');
@@ -653,7 +653,7 @@ const Textarea = () => {
 
 export default Textarea;`;
 
-export const toastCode = `import { useToast } from 'nayan';
+export const toastCode = `import { useToast } from '@nayan-ui/react';
 
 const Toast = () => {
   const toast = useToast();
@@ -671,7 +671,7 @@ const Toast = () => {
 
 export default Toast;`;
 
-export const tooltipCode = `import { NTooltip, NButton } from 'nayan';
+export const tooltipCode = `import { NTooltip, NButton } from '@nayan-ui/react';
 
 const Tooltip = () => {
   return (

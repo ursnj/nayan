@@ -1,7 +1,7 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
 import { isWindowDefined } from '../../services/Utils';
-import { NLinkify } from 'nayan';
+import { NLinkify } from '@nayan-ui/react';
 
 const Linkify = () => {
   return (

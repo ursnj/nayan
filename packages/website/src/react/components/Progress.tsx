@@ -1,6 +1,6 @@
 import React from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NProgress } from 'nayan';
+import { NProgress } from '@nayan-ui/react';
 
 const Progress = () => {
   return (

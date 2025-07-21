@@ -1,6 +1,6 @@
 import React from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NSkeleton } from 'nayan';
+import { NSkeleton } from '@nayan-ui/react';
 
 const Skeleton = () => {
   return (

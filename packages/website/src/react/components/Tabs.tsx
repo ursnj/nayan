@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NTabs, NTabsContent } from 'nayan';
+import { NTabs, NTabsContent } from '@nayan-ui/react';
 
 const items = ['POSTS', 'SAVED'];
 

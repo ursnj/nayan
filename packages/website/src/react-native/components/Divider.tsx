@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NDivider } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NDivider } from '@nayan-ui/react';
 
 const Divider = () => {
   return (

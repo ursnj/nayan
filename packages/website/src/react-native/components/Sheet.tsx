@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NButton, NSheet, SheetSize } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NButton, NSheet, SheetSize } from '@nayan-ui/react';
 
 const Sheet = () => {
   const [isOpen, setIsOpen] = useState(false);

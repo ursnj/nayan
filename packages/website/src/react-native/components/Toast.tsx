@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NButton, useNToast, showToast } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NButton, useNToast, showToast } from '@nayan-ui/react';
 
 const Toast = () => {
   const toast = useNToast();

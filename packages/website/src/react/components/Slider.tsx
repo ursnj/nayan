@@ -1,6 +1,6 @@
 import React from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NSlider } from 'nayan';
+import { NSlider } from '@nayan-ui/react';
 
 const Slider = () => {
   return (

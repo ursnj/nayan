@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { NSelect } from 'nayan';
+import { NSelect } from '@nayan-ui/react';
 
 const items = [
   { value: 'startup', label: 'Startup' },

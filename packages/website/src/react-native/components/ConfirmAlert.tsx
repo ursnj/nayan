@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NButton, NConfirmAlert } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NButton, NConfirmAlert } from '@nayan-ui/react';
 
 const ConfirmAlert = () => {
   const [isOpen, setIsOpen] = useState(false);

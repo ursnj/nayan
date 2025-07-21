@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { DialogSize, NButton, NDialog } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { DialogSize, NButton, NDialog } from '@nayan-ui/react';
 
 const Dialog = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { AlertTypes, NAlert } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { AlertTypes, NAlert } from '@nayan-ui/react';
 
 const Alert = () => {
   return (

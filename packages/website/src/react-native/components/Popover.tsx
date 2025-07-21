@@ -1,6 +1,6 @@
 import React from 'react';
-import ComponentWrapper from '../helpers/ComponentWrapper';
-import { NButton, NPopover, PopoverSize } from 'nayan';
+import ComponentWrapper from '../../helpers/ComponentWrapper';
+import { NButton, NPopover, PopoverSize } from '@nayan-ui/react';
 
 const Popover = () => {
   return (
