@@ -17,10 +17,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./src/*": {
-      "development": "./src/*",
-      "default": "./dist/*"
     }
   },
   "files": [
