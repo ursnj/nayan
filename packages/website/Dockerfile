@@ -12,7 +12,8 @@ COPY packages/website/package.json ./packages/website/package.json
 
 # Clear yarn cache and install dependencies with workspace resolution
 RUN yarn cache clean
-RUN yarn install --frozen-lockfile --non-interactive
+RUN rm -rf node_modules yarn.lock packages/website/node_modules packages/react/node_modules
+RUN yarn install --force
 
 FROM base AS builder
 
