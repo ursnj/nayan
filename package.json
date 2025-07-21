@@ -1,9 +1,18 @@
 {
   "name": "@nayan-ui/root",
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/expo",
+      "**/expo/**",
+      "**/@expo/**",
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
   "version": "1.0.0",
   "description": "Reusable UI Component Libraries for React and React Native.",
   "scripts": {
@@ -12,7 +21,11 @@
     "start:website": "yarn workspace website start",
     "build:website": "yarn workspace website build:website",
     "build:react": "yarn workspace @nayan-ui/react build",
-    "build:react-native": "yarn workspace @nayan-ui/react-native build"
+    "build:react-native": "yarn workspace @nayan-ui/react-native build",
+    "example:ios": "yarn workspace @nayan-ui/react-native-example ios",
+    "example:android": "yarn workspace @nayan-ui/react-native-example android",
+    "example:start": "yarn workspace @nayan-ui/react-native-example start",
+    "example:prebuild": "yarn workspace @nayan-ui/react-native-example prebuild"
   },
   "devDependencies": {
     "husky": "^9.1.7",

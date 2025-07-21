@@ -1,5 +1,5 @@
 {
-  "name": "react-native-example",
+  "name": "@nayan-ui/react-native-example",
   "version": "1.0.0",
   "scripts": {
     "android": "expo start --android",
