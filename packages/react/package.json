@@ -18,27 +18,6 @@
       "require": "./dist/index.js",
       "default": "./dist/index.js"
     },
-    "./src/*": {
-      "development": "./src/*",
-      "types": "./dist/*.d.ts",
-      "import": "./dist/*",
-      "require": "./dist/*",
-      "default": "./dist/*"
-    },
-    "./components/*": {
-      "development": "./src/components/*",
-      "types": "./dist/components/*.d.ts",
-      "import": "./dist/components/*",
-      "require": "./dist/components/*",
-      "default": "./dist/components/*"
-    },
-    "./lib/*": {
-      "development": "./src/lib/*",
-      "types": "./dist/lib/*.d.ts",
-      "import": "./dist/lib/*",
-      "require": "./dist/lib/*",
-      "default": "./dist/lib/*"
-    },
     "./styles.css": {
       "import": "./dist/styles.css",
       "require": "./dist/styles.css",
