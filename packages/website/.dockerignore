@@ -4,13 +4,10 @@
 .dockerignore
 
 # Build dependencies
-dist
-node_modules
 coverage
 
 # Files not required for production
 .idea
 .github
 .husky
-Dockerfile
 README.md

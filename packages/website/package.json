@@ -16,13 +16,13 @@
     "sitemaper": "npx seo-master create sitemap -w http://localhost:7100 -r https://www.nayanui.com -o ./public/sitemap.xml"
   },
   "dependencies": {
-    "nayan": "file:../react",
-    "react-code-blocks": "^0.1.6",
-    "react-helmet-async": "^1.3.0",
     "compression": "^1.8.1",
     "express": "^4.21.2",
+    "nayan": "file:../react",
     "react": "^18.3.1",
+    "react-code-blocks": "^0.1.6",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^1.3.0",
     "react-router-dom": "^6.30.1",
     "serve-static": "^2.2.0"
   },

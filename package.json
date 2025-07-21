@@ -15,9 +15,9 @@
     "test": "yarn workspaces run test"
   },
   "devDependencies": {
-    "prettier": "^3.6.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
     "rimraf": "^6.0.1"
   },
   "husky": {
