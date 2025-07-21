@@ -5,10 +5,7 @@ WORKDIR /app
 # Copy the entire monorepo (all packages and configs)
 COPY . .
 
-# Clean and install dependencies with proper workspace linking
-#RUN yarn cache clean
-#RUN rm -rf node_modules yarn.lock packages/website/node_modules packages/react/node_modules
-#RUN yarn install --force
+# Install dependencies with proper workspace linking
 RUN yarn install --frozen-lockfile --non-interactive
 
 FROM base AS builder
