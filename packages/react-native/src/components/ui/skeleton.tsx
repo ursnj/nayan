@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Animated, { useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
-import { cn } from '@/lib/utils';
+import { cn } from '../../lib/utils';
 
 const duration = 1000;
 

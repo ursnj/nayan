@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { View } from 'react-native';
 import { format } from 'date-fns';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
-import { NText } from '@/components/NText';
-import { Calendar } from '@/lib/icons/Calender';
-import { cn } from '@/lib/utils';
-import { NPress } from '@/components/NPress';
-import { useNTheme } from '@/hooks/useNTheme';
+import { NText } from './NText';
+import { Calendar } from '../lib/icons/Calender';
+import { cn } from '../lib/utils';
+import { NPress } from './NPress';
+import { useNTheme } from '../hooks/useNTheme';
 
 interface Props {
   value: Date;

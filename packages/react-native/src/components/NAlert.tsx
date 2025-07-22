@@ -1,6 +1,6 @@
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { AlertCircle } from '@/lib/icons/AlertCircle';
-import { cn } from '@/lib/utils';
+import { Alert, AlertDescription, AlertTitle } from './ui/alert';
+import { AlertCircle } from '../lib/icons/AlertCircle';
+import { cn } from '../lib/utils';
 
 interface Props {
   title?: string;

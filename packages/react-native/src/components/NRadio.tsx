@@ -1,8 +1,8 @@
 import { View } from 'react-native';
-import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { NText } from '@/components/NText';
-import { cn } from '@/lib/utils';
+import { Label } from './ui/label';
+import { RadioGroup, RadioGroupItem } from './ui/radio-group';
+import { NText } from './NText';
+import { cn } from '../lib/utils';
 
 interface RadioGroupProps {
   disabled?: boolean;

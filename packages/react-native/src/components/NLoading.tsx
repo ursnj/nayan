@@ -1,6 +1,6 @@
 import { ActivityIndicator, View } from 'react-native';
-import { cn } from '@/lib/utils';
-import { useNTheme } from '@/hooks/useNTheme';
+import { cn } from '../lib/utils';
+import { useNTheme } from '../hooks/useNTheme';
 
 interface Props {
   color?: string;

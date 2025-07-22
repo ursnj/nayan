@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
-import { NText } from '@/components/NText';
-import { cn } from '@/lib/utils';
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import { NText } from './NText';
+import { cn } from '../lib/utils';
 
 interface Props {
   children: React.ReactNode;

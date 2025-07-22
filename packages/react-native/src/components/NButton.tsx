@@ -1,7 +1,7 @@
 import { type PressableProps } from 'react-native';
-import { NPress } from '@/components/NPress';
-import { NText } from '@/components/NText';
-import { cn } from '@/lib/utils';
+import { NPress } from './NPress';
+import { NText } from './NText';
+import { cn } from '../lib/utils';
 
 interface Props extends PressableProps {
   className?: string;

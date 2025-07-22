@@ -4,8 +4,8 @@ import { Linking, Platform, Text, type TextProps, type TextStyle, View, type Vie
 import linkifyIt from 'linkify-it';
 // @ts-ignore
 import mdurl from 'mdurl';
-import { NText } from '@/components/NText';
-import { useNTheme } from '@/hooks/useNTheme';
+import { NText } from './NText';
+import { useNTheme } from '../hooks/useNTheme';
 
 const defaultLinkify = linkifyIt();
 const { OS } = Platform;

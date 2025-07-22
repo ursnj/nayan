@@ -7,10 +7,10 @@ import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { ThemeProvider } from '@react-navigation/native';
 import { PortalHost } from '@rn-primitives/portal';
 import { NToast } from './NToast';
-import { THEMES } from '@/lib/utils';
-import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
+import { THEMES } from '../lib/utils';
+import { setAndroidNavigationBar } from '../lib/android-navigation-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import { useNTheme } from '@/hooks/useNTheme';
+import { useNTheme } from '../hooks/useNTheme';
 
 interface Props {
   children: React.ReactNode;

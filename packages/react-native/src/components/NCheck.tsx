@@ -1,6 +1,6 @@
 import { View } from 'react-native';
-import { Checkbox } from '@/components/ui/checkbox';
-import { NText } from '@/components/NText';
+import { Checkbox } from './ui/checkbox';
+import { NText } from './NText';
 
 interface Props {
   checked: boolean;

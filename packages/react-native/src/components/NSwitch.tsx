@@ -1,7 +1,7 @@
 import { View } from 'react-native';
-import { Label } from '@/components/ui/label';
-import { Switch } from '@/components/ui/switch';
-import { cn } from '@/lib/utils';
+import { Label } from './ui/label';
+import { Switch } from './ui/switch';
+import { cn } from '../lib/utils';
 
 interface Props {
   label?: string;

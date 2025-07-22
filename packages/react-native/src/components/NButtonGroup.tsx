@@ -1,7 +1,7 @@
 import { View } from 'react-native';
-import { Button } from '@/components/ui/button';
-import { NText } from '@/components/NText';
-import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
+import { NText } from './NText';
+import { cn } from '../lib/utils';
 
 interface Props {
   className?: string;

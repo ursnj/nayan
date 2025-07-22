@@ -1,6 +1,6 @@
 import { useColorScheme as useNativewindColorScheme } from 'nativewind';
 import { useTheme } from '@react-navigation/native';
-import { THEMES } from '@/lib/utils';
+import { THEMES } from '../lib/utils';
 import { useState } from 'react';
 
 export function useNTheme() {

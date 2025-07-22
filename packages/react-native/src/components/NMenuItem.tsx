@@ -1,6 +1,6 @@
-import { DropdownMenuItem, DropdownMenuSeparator, DropdownMenuShortcut } from '@/components/ui/dropdown-menu';
+import { DropdownMenuItem, DropdownMenuSeparator, DropdownMenuShortcut } from './ui/dropdown-menu';
 import { NText } from './NText';
-import { cn } from '@/lib/utils';
+import { cn } from '../lib/utils';
 
 interface Props {
   title: string;
