@@ -11,7 +11,7 @@ import Animated, {
   useDerivedValue,
   withTiming
 } from 'react-native-reanimated';
-import { TextClassContext } from './ui/text';
+import { TextClassContext } from './text';
 import { ChevronDown } from '../../lib/icons/ChevronDown';
 import { cn } from '../../lib/utils';
 import * as AccordionPrimitive from '@rn-primitives/accordion';

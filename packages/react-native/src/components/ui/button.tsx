@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Pressable } from 'react-native';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { TextClassContext } from './ui/text';
+import { TextClassContext } from './text';
 import { cn } from '../../lib/utils';
 
 const buttonVariants = cva(

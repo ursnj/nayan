@@ -6,7 +6,7 @@ import { ChevronDown } from '../../lib/icons/ChevronDown';
 import { ChevronRight } from '../../lib/icons/ChevronRight';
 import { ChevronUp } from '../../lib/icons/ChevronUp';
 import { cn } from '../../lib/utils';
-import { TextClassContext } from './ui/text';
+import { TextClassContext } from './text';
 
 const DropdownMenu = DropdownMenuPrimitive.Root;
 
