@@ -1593,6 +1593,38 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@nayan-ui/react-native@file:packages/react-native":
+  version "1.0.0-beta.0"
+  dependencies:
+    "@gorhom/bottom-sheet" "^5.1.4"
+    "@rn-primitives/accordion" "^1.1.0"
+    "@rn-primitives/alert-dialog" "^1.1.0"
+    "@rn-primitives/checkbox" "^1.1.0"
+    "@rn-primitives/dialog" "^1.1.0"
+    "@rn-primitives/dropdown-menu" "^1.1.0"
+    "@rn-primitives/label" "^1.1.0"
+    "@rn-primitives/popover" "^1.1.0"
+    "@rn-primitives/portal" "^1.1.0"
+    "@rn-primitives/progress" "^1.1.0"
+    "@rn-primitives/radio-group" "^1.1.0"
+    "@rn-primitives/select" "^1.1.0"
+    "@rn-primitives/separator" "^1.1.0"
+    "@rn-primitives/slot" "^1.1.0"
+    "@rn-primitives/switch" "^1.1.0"
+    "@rn-primitives/tooltip" "^1.1.0"
+    "@rn-primitives/types" "^1.1.0"
+    class-variance-authority "^0.7.1"
+    clsx "^2.1.1"
+    date-fns "^4.1.0"
+    expo-status-bar "^2.2.3"
+    linkify-it "^5.0.0"
+    lucide-react-native "^0.525.0"
+    mdurl "^2.0.0"
+    react-native-modal-datetime-picker "^18.0.0"
+    react-native-toast-message "^2.3.0"
+    react-native-wheel-color-picker "^1.3.1"
+    tailwind-merge "^3.3.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -2101,6 +2133,13 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@radix-ui/rect/-/rect-1.1.1.tgz#78244efe12930c56fd255d7923865857c41ac8cb"
   integrity sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==
+
+"@react-native-community/datetimepicker@^8.4.2":
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/@react-native-community/datetimepicker/-/datetimepicker-8.4.2.tgz#7b5cfcf537db83568b7338d77db9db58ffce0cd6"
+  integrity sha512-V/s+foBfjlWGV8MKdMhxugq0SPMtYqUEYlf+sMrKUUm5Gx3pA9Qoum2ZQUqBfI4A8kgaEPIGyG/YsNX7ycnNSA==
+  dependencies:
+    invariant "^2.2.4"
 
 "@react-native/assets-registry@0.76.5":
   version "0.76.5"
@@ -7409,7 +7448,7 @@ react-native-elevation@^1.0.0:
   resolved "https://registry.yarnpkg.com/react-native-elevation/-/react-native-elevation-1.0.0.tgz#2a091c688290ac9b08b5842d1a8e8a00fc84233e"
   integrity sha512-BWIKcEYtzjRV6GpkX0Km5/w2E7fgIcywiQOT7JZTc5NSbv/YI9kpFinB9lRFsOoRVGmiqq/O3VfP/oH2clIiBA==
 
-react-native-gesture-handler@^2.27.2:
+react-native-gesture-handler@^2.27.2, react-native-gesture-handler@~2.27.2:
   version "2.27.2"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-2.27.2.tgz#d52e839e9cb225e75c9b6fce7438979ca6917512"
   integrity sha512-+kNaY2m7uQu5+5ls8os6z92DTk9expsEAYsaPv30n08mrqX2r64G8iVGDwNWzZcId54+P7RlDnhyszTql0sQ0w==

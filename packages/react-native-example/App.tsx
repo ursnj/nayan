@@ -1,16 +1,21 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
 import './global.css';
+import 'react-native-reanimated';
+import { View } from 'react-native';
+import { NButton, NTheme, useNTheme, THEMES } from '@nayan-ui/react-native';
+import { themeColors } from '@/Config';
 
 export default function App() {
-  console.log('App component rendering...');
+  const {theme, isDarkMode, setTheme} = useNTheme();
+
+  const changeTheme = () => {
+    setTheme(isDarkMode ? THEMES.light : THEMES.dark);
+  }
 
   return (
-    <View className="flex-1 items-center justify-center bg-white">
-      <Text className="mb-2 text-xl font-bold">Nayan UI React Native Example</Text>
-      <Text className="text-base text-gray-600">Hello World with NativeWind!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NTheme theme={theme || THEMES.light} themeColors={themeColors}>
+      <View className="flex-1 justify-center items-center bg-background">
+        <NButton onPress={changeTheme}>Change Theme</NButton>
+      </View>
+    </NTheme>
   );
 }
