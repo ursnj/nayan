@@ -1,32 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import './global.css';
 
 export default function App() {
+  console.log('App component rendering...');
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Nayan UI React Native Example</Text>
-      <Text style={styles.subtitle}>Hello World!</Text>
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="mb-2 text-xl font-bold">Nayan UI React Native Example</Text>
+      <Text className="text-base text-gray-600">Hello World with NativeWind!</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#666',
-  },
-});
