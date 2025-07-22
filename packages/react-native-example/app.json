@@ -3,6 +3,7 @@
     "name": "Nayan UI React Native Example",
     "slug": "nayan-ui-react-native-example",
     "version": "1.0.0",
+    "sdkVersion": "52.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -29,6 +30,6 @@
     "experiments": {
       "tsconfigPaths": true
     },
-    "plugins": ["nativewind/expo"]
+    "plugins": []
   }
 }

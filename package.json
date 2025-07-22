@@ -6,11 +6,14 @@
       "packages/*"
     ],
     "nohoist": [
+      "**/@nayan-ui/react-native-example/**",
       "**/expo",
       "**/expo/**",
       "**/@expo/**",
       "**/react-native",
-      "**/react-native/**"
+      "**/react-native/**",
+      "**/react",
+      "**/react-dom"
     ]
   },
   "version": "1.0.0",
