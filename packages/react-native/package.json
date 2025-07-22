@@ -26,7 +26,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rimraf dist && tsc --noEmit"
+    "build": "rimraf dist && tsc"
   },
   "dependencies": {
     "@gorhom/bottom-sheet": "^5.1.4",
@@ -102,6 +102,6 @@
     "Android",
     "Dev Tools"
   ],
-  "author": "Naresh Jangra",
+  "author": "Niranjan Devasani",
   "license": "MIT"
 }
