@@ -1,31 +1,19 @@
-import { useCallback } from 'react';
-import {
-  BottomSheetBackdrop,
-  type BottomSheetBackdropProps,
-  BottomSheetModal,
-  BottomSheetView,
-} from '@gorhom/bottom-sheet';
+import React, { useCallback } from 'react';
+import { BottomSheetBackdrop, type BottomSheetBackdropProps, BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
 import { useNTheme } from '@/hooks/useNTheme';
 
-interface Props {
-  sheetRef: any;
+export interface NSheetProps {
+  sheetRef: React.RefObject<BottomSheetModal>;
   snapPoints?: string[] | number[];
   children: React.ReactNode;
 }
 
-export const NSheet = (props: Props) => {
+export const NSheet = React.memo<NSheetProps>(({ sheetRef, children, snapPoints = null }) => {
   const { colors } = useNTheme();
-  const { sheetRef, children, snapPoints = null } = props;
 
   const renderBackdrop = useCallback(
     (props: BottomSheetBackdropProps) => (
-      <BottomSheetBackdrop
-        {...props}
-        opacity={0.6}
-        appearsOnIndex={0}
-        disappearsOnIndex={-1}
-        pressBehavior="close"
-      />
+      <BottomSheetBackdrop {...props} opacity={0.6} appearsOnIndex={0} disappearsOnIndex={-1} pressBehavior="close" />
     ),
     []
   );
@@ -42,10 +30,11 @@ export const NSheet = (props: Props) => {
       handleStyle={{
         backgroundColor: colors.card,
         borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
-      }}
-    >
+        borderTopRightRadius: 10
+      }}>
       <BottomSheetView className="flex-1">{children}</BottomSheetView>
     </BottomSheetModal>
   );
-};
+});
+
+NSheet.displayName = 'NSheet';
