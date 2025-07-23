@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
 import { BottomSheetBackdrop, type BottomSheetBackdropProps, BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
-import { useNTheme } from '../hooks/useNTheme';
+import { useNTheme } from '@/hooks/useNTheme';
 
 interface Props {
   sheetRef: any;

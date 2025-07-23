@@ -1,11 +1,12 @@
-import { type ReactNode } from 'react';
+import React from 'react';
+import { ScrollView, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
-import { cn } from '../lib/utils';
+import { cn } from '@/lib/utils';
 
 interface Props {
-  children?: ReactNode;
-  trigger: ReactNode;
+  children?: React.ReactNode;
+  trigger: React.ReactNode;
   icon?: any;
   title?: string;
   className?: string;

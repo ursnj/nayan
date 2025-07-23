@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Platform } from 'react-native';
 import Animated, { interpolateColor, useAnimatedStyle, useDerivedValue, withTiming } from 'react-native-reanimated';
-import { cn } from '../../lib/utils';
+import { cn } from '@/lib/utils';
 import * as SwitchPrimitives from '@rn-primitives/switch';
-import { useNTheme } from '../../hooks/useNTheme';
+import { useNTheme } from '@/hooks/useNTheme';
 
 const SwitchWeb = React.forwardRef<SwitchPrimitives.RootRef, SwitchPrimitives.RootProps>(({ className, ...props }, ref) => (
   <SwitchPrimitives.Root

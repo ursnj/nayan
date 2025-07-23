@@ -1,8 +1,8 @@
 import { Pressable, View } from 'react-native';
 import ColorPicker from 'react-native-wheel-color-picker';
-import { NPopover } from './NPopover';
-import { NText } from './NText';
-import { cn } from '../lib/utils';
+import { NPopover } from '@/components/NPopover';
+import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
 interface Props {
   value: string;

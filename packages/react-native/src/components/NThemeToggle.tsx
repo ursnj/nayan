@@ -1,9 +1,10 @@
+import React from 'react';
 import { Pressable } from 'react-native';
-import { useNTheme } from '../hooks/useNTheme';
-import { MoonStar } from '../lib/icons/MoonStar';
-import { Sun } from '../lib/icons/Sun';
-import { cn, THEMES } from '../lib/utils';
-import { setAndroidNavigationBar } from '../lib/android-navigation-bar';
+import { useNTheme } from '@/hooks/useNTheme';
+import { MoonStar } from '@/lib/icons/MoonStar';
+import { Sun } from '@/lib/icons/Sun';
+import { cn, THEMES } from '@/lib/utils';
+import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
 
 interface Props {
   size?: number;

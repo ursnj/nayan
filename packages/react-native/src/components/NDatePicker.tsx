@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import { View } from 'react-native';
-import { format } from 'date-fns';
+import React, { useState } from 'react';
+import { Platform, Pressable, Text, View } from 'react-native';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
-import { NText } from './NText';
-import { Calendar } from '../lib/icons/Calender';
-import { cn } from '../lib/utils';
-import { NPress } from './NPress';
-import { useNTheme } from '../hooks/useNTheme';
+import { format } from 'date-fns';
+import { NText } from '@/components/NText';
+import { Calendar } from '@/lib/icons/Calender';
+import { cn } from '@/lib/utils';
+import { useNTheme } from '@/hooks/useNTheme';
 
 interface Props {
   value: Date;
@@ -74,12 +73,12 @@ export const NDatePicker = (props: Props) => {
         onConfirm={handleConfirm}
         onCancel={hideDatePicker}
       />
-      <NPress
+      <Pressable
         onPress={showDatePicker}
         className={cn('flex flex-row justify-between items-center bg-card border border-border rounded px-3 py-2.5', inputClassName)}>
-        <NText className={cn('text-lg', inputTextClassName)}>{formatValue(value)}</NText>
+        <Text className={cn('text-lg', inputTextClassName)}>{formatValue(value)}</Text>
         <Calendar strokeWidth={1} className={cn('w-5 h-5 text-text', inputIconClassName)} />
-      </NPress>
+      </Pressable>
     </View>
   );
 };

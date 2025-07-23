@@ -1,6 +1,8 @@
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
-import { NText } from './NText';
-import { cn } from '../lib/utils';
+import React from 'react';
+import { View } from 'react-native';
+import { cn } from '@/lib/utils';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { NText } from '@/components/NText';
 
 interface Props {
   className?: string;

@@ -1,7 +1,8 @@
+import React from 'react';
 import { View } from 'react-native';
-import { Button } from './ui/button';
-import { NText } from './NText';
-import { cn } from '../lib/utils';
+import { NButton } from '@/components/NButton';
+import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
 interface Props {
   className?: string;
@@ -20,8 +21,7 @@ export const NButtonGroup = (props: Props) => {
       {label && <NText className="mb-1">{label}</NText>}
       <View className="flex-row rounded">
         {items.map((item, index) => (
-          <Button
-            size={size}
+          <NButton
             key={item}
             disabled={disabled}
             onPress={() => onChange(item)}
@@ -29,7 +29,7 @@ export const NButtonGroup = (props: Props) => {
               `${item === value ? 'bg-primary' : 'bg-card'} rounded-none border border-border ${index === 0 ? 'rounded-l-lg' : ''} ${index === items.length - 1 ? 'rounded-r-lg' : ''} ${className}`
             )}>
             <NText className={`${item === value ? 'text-white' : ''}`}>{item}</NText>
-          </Button>
+          </NButton>
         ))}
       </View>
     </View>

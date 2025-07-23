@@ -1,3 +1,5 @@
+import React from 'react';
+import { View } from 'react-native';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -8,9 +10,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger
-} from './ui/alert-dialog';
-import { NText } from './NText';
-import { cn } from '../lib/utils';
+} from '@/components/ui/alert-dialog';
+import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
 interface Props {
   className?: string;

@@ -1,7 +1,9 @@
-import { type PressableProps } from 'react-native';
-import { NPress } from './NPress';
-import { NText } from './NText';
-import { cn } from '../lib/utils';
+import React from 'react';
+import { Pressable, type PressableProps } from 'react-native';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from '@/lib/utils';
+import { NPress } from '@/components/NPress';
+import { NText } from '@/components/NText';
 
 interface Props extends PressableProps {
   className?: string;

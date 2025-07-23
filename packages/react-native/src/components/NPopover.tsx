@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Platform } from 'react-native';
+import React from 'react';
+import { Platform, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
-import { cn } from '../lib/utils';
+import { cn } from '@/lib/utils';
 
 interface Props {
   trigger?: React.ReactNode;

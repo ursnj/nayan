@@ -1,5 +1,6 @@
+import React from 'react';
 import { Pressable, type PressableProps } from 'react-native';
-import { cn } from '../lib/utils';
+import { cn } from '@/lib/utils';
 
 export const NPress = (props: PressableProps) => {
   const { children, className = '', ...remaining } = props;

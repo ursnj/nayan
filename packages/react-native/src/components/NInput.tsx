@@ -1,7 +1,8 @@
-import { type TextInputProps, View } from 'react-native';
+import React from 'react';
+import { TextInput, type TextInputProps, View } from 'react-native';
 import { Input } from './ui/input';
-import { NText } from './NText';
-import { cn } from '../lib/utils';
+import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
 interface Props extends TextInputProps {
   value: string;
