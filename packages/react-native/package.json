@@ -1,66 +1,48 @@
 {
   "name": "@nayan-ui/react-native",
-  "version": "1.0.0-beta.3",
-  "description": "React Native Component Library",
+  "version": "1.0.0-beta.4",
+  "description": "Reusable Component Library for React Native.",
   "source": "./src/index.tsx",
   "main": "./dist/commonjs/index.js",
   "module": "./dist/module/index.js",
-  "types": "./dist/typescript/src/index.d.ts",
+  "types": "./dist/typescript/commonjs/src/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/typescript/src/index.d.ts",
       "import": {
+        "types": "./dist/typescript/commonjs/src/index.d.ts",
         "default": "./dist/module/index.js"
       },
       "require": {
+        "types": "./dist/typescript/commonjs/src/index.d.ts",
         "default": "./dist/commonjs/index.js"
       }
     }
   },
   "files": [
-    "src",
-    "dist",
-    "android",
-    "ios",
-    "cpp",
-    "*.podspec",
-    "react-native.config.js",
-    "!ios/build",
-    "!android/build",
-    "!android/gradle",
-    "!android/gradlew",
-    "!android/gradlew.bat",
-    "!android/local.properties",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__",
-    "!**/.*"
+    "dist"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-nayan-example",
-    "test": "jest",
-    "typecheck": "tsc",
-    "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "clean": "del-cli dist",
-    "build": "bob build",
-    "prepare": "bob build",
-    "release": "release-it"
+    "build": "rimraf dist && bob build"
   },
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "component-library",
+    "reusable-components",
+    "nayan-ui"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ursnj/react-native-nayan.git"
+    "url": "git+https://github.com/ursnj/nayan.git",
+    "directory": "packages/react-native"
   },
   "author": "ursnj <niranjan.devasani@gmail.com> (https://github.com/ursnj)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ursnj/react-native-nayan/issues"
+    "url": "https://github.com/ursnj/nayan/issues"
   },
-  "homepage": "https://github.com/ursnj/react-native-nayan#readme",
+  "homepage": "https://github.com/ursnj/nayan/tree/main/packages/react-native#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -87,7 +69,7 @@
     "date-fns": "^4.1.0",
     "expo-status-bar": "^2.2.3",
     "linkify-it": "^5.0.0",
-    "lucide-react-native": "^0.511.0",
+    "lucide-react-native": "^0.525.0",
     "mdurl": "^2.0.0",
     "react-native-modal-datetime-picker": "^18.0.0",
     "react-native-toast-message": "^2.3.0",
@@ -95,32 +77,18 @@
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.8.1",
-    "@evilmartians/lefthook": "^1.5.0",
     "@react-native-community/datetimepicker": "^8.3.0",
-    "@react-native/eslint-config": "^0.79.2",
     "@react-navigation/native": "^7.1.9",
-    "@release-it/conventional-changelog": "^10.0.1",
-    "@types/jest": "^29.5.5",
     "@types/react": "^19.1.5",
-    "commitlint": "^17.0.2",
-    "del-cli": "^5.1.0",
-    "eslint": "^8.51.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
     "expo-navigation-bar": "^4.2.4",
-    "jest": "^29.7.0",
     "nativewind": "^4.1.23",
-    "prettier": "^3.0.3",
-    "react": "19.0.0",
-    "react-native": "0.79.2",
-    "react-native-builder-bob": "^0.37.0",
+    "react": "19.1.0",
+    "react-native": "0.80.1",
+    "react-native-builder-bob": "^0.40.13",
     "react-native-gesture-handler": "^2.24.0",
-    "react-native-mmkv": "^3.2.0",
     "react-native-reanimated": "^3.17.5",
     "react-native-safe-area-context": "^5.4.0",
     "react-native-svg": "^15.12.0",
-    "release-it": "^17.10.0",
     "typescript": "^5.8.3"
   },
   "resolutions": {
@@ -139,66 +107,6 @@
     "react-native-svg": "*",
     "tailwindcss": ">=3"
   },
-  "jest": {
-    "preset": "react-native",
-    "modulePathIgnorePatterns": [
-      "<rootDir>/example/node_modules",
-      "<rootDir>/dist/"
-    ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": [
-      "@react-native",
-      "prettier"
-    ],
-    "rules": {
-      "react/react-in-jsx-scope": "off",
-      "prettier/prettier": [
-        "error",
-        {
-          "quoteProps": "consistent",
-          "singleQuote": true,
-          "tabWidth": 2,
-          "trailingComma": "es5",
-          "useTabs": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "dist/"
-  ],
-  "prettier": {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
-  },
   "react-native-builder-bob": {
     "source": "src",
     "output": "dist",
@@ -206,29 +114,21 @@
       [
         "commonjs",
         {
-          "configFile": true,
           "esm": true
         }
       ],
       [
         "module",
         {
-          "configFile": true,
           "esm": true
         }
       ],
       [
         "typescript",
         {
-          "project": "tsconfig.build.json",
-          "configFile": true
+          "project": "tsconfig.build.json"
         }
       ]
     ]
-  },
-  "create-react-native-library": {
-    "languages": "js",
-    "type": "library",
-    "version": "0.48.2"
   }
 }
