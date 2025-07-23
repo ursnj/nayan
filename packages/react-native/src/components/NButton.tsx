@@ -1,6 +1,5 @@
 import React from 'react';
-import { Pressable, type PressableProps } from 'react-native';
-import { cva, type VariantProps } from 'class-variance-authority';
+import { type PressableProps } from 'react-native';
 import { cn } from '@/lib/utils';
 import { NPress } from '@/components/NPress';
 import { NText } from '@/components/NText';

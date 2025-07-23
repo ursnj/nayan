@@ -1,5 +1,5 @@
 import React from 'react';
-import { Pressable, View } from 'react-native';
+import { View } from 'react-native';
 import { NText } from '@/components/NText';
 import { NPress } from '@/components/NPress';
 import { cn } from '@/lib/utils';
