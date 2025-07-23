@@ -1,24 +1,25 @@
+import React from 'react';
 import { View } from 'react-native';
 import { Checkbox } from '@/components/ui/checkbox';
 import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NCheckProps {
   checked: boolean;
   disabled?: boolean;
   label: string;
   onChange: (checked: boolean) => void;
+  className?: string;
+  labelClassName?: string;
 }
 
-export const NCheck = (props: Props) => {
-  const { checked = false, disabled = false, label = '', onChange } = props;
+export const NCheck = React.memo<NCheckProps>(({ checked = false, disabled = false, label = '', onChange, className, labelClassName }) => {
   return (
-    <View className="flex flex-row items-center mb-3">
-      <Checkbox
-        checked={checked}
-        disabled={disabled}
-        onCheckedChange={onChange}
-      />
-      {label && <NText className="pl-3">{label}</NText>}
+    <View className={cn('flex-row items-center mb-3', className)}>
+      <Checkbox checked={checked} disabled={disabled} onCheckedChange={onChange} />
+      {label && <NText className={cn('pl-3', labelClassName)}>{label}</NText>}
     </View>
   );
-};
+});
+
+NCheck.displayName = 'NCheck';
