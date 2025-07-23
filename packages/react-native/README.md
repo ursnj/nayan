@@ -148,11 +148,7 @@ For detailed documentation, component APIs, examples, and guides, visit **[www.n
 
 ## 🤝 Contributing
 
-We welcome contributions! See the [contribution guide](https://github.com/ursnj/nayan/blob/main/CONTRIBUTING.md) to learn how to contribute to the repository and development workflow.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/ursnj/nayan/blob/main/LICENSE) file for details.
+We welcome contributions! See the [contribution guide](https://www.nayanui.com/contributions) to learn how to contribute to the repository and development workflow.
 
 ---
 
