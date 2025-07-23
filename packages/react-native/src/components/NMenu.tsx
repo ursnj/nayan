@@ -1,50 +1,36 @@
-import { type ReactNode } from 'react';
+import React, { type ReactNode, useMemo } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NMenuProps {
   children?: ReactNode;
   trigger: ReactNode;
-  icon?: any;
   title?: string;
   className?: string;
   titleClassName?: string;
 }
 
-export const NMenu = (props: Props) => {
-  const {
-    children,
-    trigger,
-    title = '',
-    className = '',
-    titleClassName = '',
-  } = props;
+export const NMenu = React.memo<NMenuProps>(({ children, trigger, title = '', className = '', titleClassName = '' }) => {
   const insets = useSafeAreaInsets();
-  const contentInsets = {
-    top: insets.top,
-    bottom: insets.bottom,
-    left: 12,
-    right: 12,
-  };
+
+  const contentInsets = useMemo(
+    () => ({
+      top: insets.top,
+      bottom: insets.bottom,
+      left: 12,
+      right: 12
+    }),
+    [insets.top, insets.bottom]
+  );
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>{trigger}</DropdownMenuTrigger>
-      <DropdownMenuContent
-        insets={contentInsets}
-        className={cn('w-64 native:w-64 bg-card', className)}
-      >
+      <DropdownMenuContent insets={contentInsets} className={cn('w-64 native:w-64 bg-card', className)}>
         {title && (
           <>
-            <DropdownMenuLabel className={cn('text-text', titleClassName)}>
-              {title}
-            </DropdownMenuLabel>
+            <DropdownMenuLabel className={cn('text-text', titleClassName)}>{title}</DropdownMenuLabel>
             <DropdownMenuSeparator />
           </>
         )}
@@ -52,4 +38,6 @@ export const NMenu = (props: Props) => {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-};
+});
+
+NMenu.displayName = 'NMenu';
