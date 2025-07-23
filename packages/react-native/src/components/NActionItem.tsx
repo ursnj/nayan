@@ -18,7 +18,7 @@ export interface NActionItemProps {
 
 export const NActionItem = React.memo<NActionItemProps>(
   ({ name, description, icon, disabled = false, className, titleClassName, descriptionClassName, onPress, onLongPress }) => {
-    const renderIcon = useMemo(() => {
+    const actionIcon = useMemo(() => {
       if (!icon) return null;
 
       if (React.isValidElement(icon)) {
@@ -35,8 +35,8 @@ export const NActionItem = React.memo<NActionItemProps>(
         onPress={onPress}
         onLongPress={onLongPress}
         disabled={disabled}>
-        {renderIcon}
-        <View className={cn('flex-1', renderIcon && 'ml-3')}>
+        {actionIcon}
+        <View className={cn('flex-1', actionIcon && 'ml-3')}>
           <NText className={cn('font-medium', titleClassName)}>{name}</NText>
           {description && <NText className={cn('text-sm text-muted-foreground mt-0.5', descriptionClassName)}>{description}</NText>}
         </View>
