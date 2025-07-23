@@ -19,51 +19,54 @@ export interface NButtonGroupProps {
   disabled?: boolean;
   className?: string;
   buttonClassName?: string;
+  labelClassName?: string;
 }
 
-export const NButtonGroup = React.memo<NButtonGroupProps>(({ items, value, onChange, label, disabled = false, className, buttonClassName }) => {
-  const renderIcon = useMemo(() => {
-    return (icon: React.ComponentType<any> | React.ReactElement | undefined) => {
-      if (!icon) return null;
+export const NButtonGroup = React.memo<NButtonGroupProps>(
+  ({ items, value, onChange, label, disabled = false, className, buttonClassName, labelClassName }) => {
+    const renderIcon = useMemo(() => {
+      return (icon: React.ComponentType<any> | React.ReactElement | undefined) => {
+        if (!icon) return null;
 
-      if (React.isValidElement(icon)) {
-        return icon;
-      }
+        if (React.isValidElement(icon)) {
+          return icon;
+        }
 
-      const IconComponent = icon as React.ComponentType<any>;
-      return <IconComponent size={16} />;
-    };
-  }, []);
+        const IconComponent = icon as React.ComponentType<any>;
+        return <IconComponent size={16} />;
+      };
+    }, []);
 
-  return (
-    <View className="w-full">
-      {label && <NText className="mb-2 font-medium">{label}</NText>}
-      <View className={cn('flex-row rounded overflow-hidden', className)}>
-        {items.map((item, index) => {
-          const isSelected = item.value === value;
-          const isDisabled = disabled || item.disabled;
-          const buttonIcon = renderIcon(item.icon);
+    return (
+      <View className="w-full">
+        {label && <NText className={cn('mb-2 font-medium', labelClassName)}>{label}</NText>}
+        <View className={cn('flex-row rounded overflow-hidden', className)}>
+          {items.map((item, index) => {
+            const isSelected = item.value === value;
+            const isDisabled = disabled || item.disabled;
+            const buttonIcon = renderIcon(item.icon);
 
-          return (
-            <Button
-              key={item.value}
-              disabled={isDisabled}
-              onPress={() => onChange(item.value)}
-              className={cn(
-                'rounded-none border-r border-border flex-row items-center justify-center',
-                index === 0 && 'rounded-l',
-                index === items.length - 1 && 'rounded-r border-r-0',
-                isSelected ? 'bg-primary' : 'bg-card',
-                buttonClassName
-              )}>
-              {buttonIcon && <View className="mr-1">{buttonIcon}</View>}
-              <NText className={cn('font-medium', isSelected ? 'text-primary-foreground' : 'text-foreground')}>{item.label}</NText>
-            </Button>
-          );
-        })}
+            return (
+              <Button
+                key={item.value}
+                disabled={isDisabled}
+                onPress={() => onChange(item.value)}
+                className={cn(
+                  'rounded-none border-r border-border flex-row items-center justify-center',
+                  index === 0 && 'rounded-l',
+                  index === items.length - 1 && 'rounded-r border-r-0',
+                  isSelected ? 'bg-primary' : 'bg-card',
+                  buttonClassName
+                )}>
+                {buttonIcon && <View className="mr-1">{buttonIcon}</View>}
+                <NText className={cn('font-medium', isSelected ? 'text-primary-foreground' : 'text-foreground')}>{item.label}</NText>
+              </Button>
+            );
+          })}
+        </View>
       </View>
-    </View>
-  );
-});
+    );
+  }
+);
 
 NButtonGroup.displayName = 'NButtonGroup';
