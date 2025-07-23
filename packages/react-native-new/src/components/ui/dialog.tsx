@@ -61,7 +61,9 @@ const DialogOverlayNative = React.forwardRef<
 
 DialogOverlayNative.displayName = 'DialogOverlayNative';
 
-const DialogOverlay = Platform.select({
+const DialogOverlay: React.ForwardRefExoticComponent<
+  DialogPrimitive.OverlayProps & React.RefAttributes<DialogPrimitive.OverlayRef>
+> = Platform.select({
   web: DialogOverlayWeb,
   default: DialogOverlayNative,
 });

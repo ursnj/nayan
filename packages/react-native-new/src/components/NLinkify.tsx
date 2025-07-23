@@ -124,24 +124,23 @@ const Linkify = (props: LinkifyProps) => {
   const parseComponent = (
     component: React.ReactElement
   ): React.ReactElement => {
-    if (!component?.props?.children) return component;
+    const props = component.props as any;
+    if (!props?.children) return component;
     return React.cloneElement(
       component,
       {},
-      React.Children.map(component.props.children, (child) => {
+      React.Children.map(props.children, (child) => {
         if (typeof child === 'string' && linkifyInstance?.pretest?.(child)) {
-          return processLinkify(
-            <NText style={component.props.style}>{child}</NText>
-          );
+          return processLinkify(<NText style={props.style}>{child}</NText>);
         }
         if (
           React.isValidElement(child) &&
           child.type === Text &&
           !isTextNested(child)
         ) {
-          return processLinkify(child as any);
+          return processLinkify(child as React.ReactElement<any>);
         }
-        return parseComponent(child as React.ReactElement);
+        return parseComponent(child as React.ReactElement<any>);
       })
     );
   };
@@ -150,7 +149,7 @@ const Linkify = (props: LinkifyProps) => {
     <View {...viewProps} style={style}>
       {!onPress && !onLongPress && !linkStyle
         ? children
-        : parseComponent(<NText>{children}</NText>).props.children}
+        : (parseComponent(<NText>{children}</NText>).props as any).children}
     </View>
   );
 };

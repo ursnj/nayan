@@ -28,7 +28,10 @@ const DropdownMenuSub = DropdownMenuPrimitive.Sub;
 
 const DropdownMenuRadioGroup = DropdownMenuPrimitive.RadioGroup;
 
-const DropdownMenuSubTrigger = React.forwardRef<
+const DropdownMenuSubTrigger: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.SubTriggerProps &
+    React.RefAttributes<DropdownMenuPrimitive.SubTriggerRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.SubTriggerRef,
   DropdownMenuPrimitive.SubTriggerProps & {
     inset?: boolean;
@@ -63,7 +66,10 @@ const DropdownMenuSubTrigger = React.forwardRef<
 DropdownMenuSubTrigger.displayName =
   DropdownMenuPrimitive.SubTrigger.displayName;
 
-const DropdownMenuSubContent = React.forwardRef<
+const DropdownMenuSubContent: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.SubContentProps &
+    React.RefAttributes<DropdownMenuPrimitive.SubContentRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.SubContentRef,
   DropdownMenuPrimitive.SubContentProps
 >(({ className, ...props }, ref) => {
@@ -85,7 +91,10 @@ const DropdownMenuSubContent = React.forwardRef<
 DropdownMenuSubContent.displayName =
   DropdownMenuPrimitive.SubContent.displayName;
 
-const DropdownMenuContent = React.forwardRef<
+const DropdownMenuContent: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.ContentProps &
+    React.RefAttributes<DropdownMenuPrimitive.ContentRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.ContentRef,
   DropdownMenuPrimitive.ContentProps & {
     overlayStyle?: StyleProp<ViewStyle>;
@@ -131,7 +140,10 @@ const DropdownMenuContent = React.forwardRef<
 );
 DropdownMenuContent.displayName = DropdownMenuPrimitive.Content.displayName;
 
-const DropdownMenuItem = React.forwardRef<
+const DropdownMenuItem: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.ItemProps &
+    React.RefAttributes<DropdownMenuPrimitive.ItemRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.ItemRef,
   DropdownMenuPrimitive.ItemProps & {
     inset?: boolean;
@@ -152,7 +164,10 @@ const DropdownMenuItem = React.forwardRef<
 ));
 DropdownMenuItem.displayName = DropdownMenuPrimitive.Item.displayName;
 
-const DropdownMenuCheckboxItem = React.forwardRef<
+const DropdownMenuCheckboxItem: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.CheckboxItemProps &
+    React.RefAttributes<DropdownMenuPrimitive.CheckboxItemRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.CheckboxItemRef,
   DropdownMenuPrimitive.CheckboxItemProps
 >(({ className, children, checked, ...props }, ref) => (
@@ -177,7 +192,10 @@ const DropdownMenuCheckboxItem = React.forwardRef<
 DropdownMenuCheckboxItem.displayName =
   DropdownMenuPrimitive.CheckboxItem.displayName;
 
-const DropdownMenuRadioItem = React.forwardRef<
+const DropdownMenuRadioItem: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.RadioItemProps &
+    React.RefAttributes<DropdownMenuPrimitive.RadioItemRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.RadioItemRef,
   DropdownMenuPrimitive.RadioItemProps
 >(({ className, children, ...props }, ref) => (
@@ -200,7 +218,10 @@ const DropdownMenuRadioItem = React.forwardRef<
 ));
 DropdownMenuRadioItem.displayName = DropdownMenuPrimitive.RadioItem.displayName;
 
-const DropdownMenuLabel = React.forwardRef<
+const DropdownMenuLabel: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.LabelProps &
+    React.RefAttributes<DropdownMenuPrimitive.LabelRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.LabelRef,
   DropdownMenuPrimitive.LabelProps & {
     inset?: boolean;
@@ -218,7 +239,10 @@ const DropdownMenuLabel = React.forwardRef<
 ));
 DropdownMenuLabel.displayName = DropdownMenuPrimitive.Label.displayName;
 
-const DropdownMenuSeparator = React.forwardRef<
+const DropdownMenuSeparator: React.ForwardRefExoticComponent<
+  DropdownMenuPrimitive.SeparatorProps &
+    React.RefAttributes<DropdownMenuPrimitive.SeparatorRef>
+> = React.forwardRef<
   DropdownMenuPrimitive.SeparatorRef,
   DropdownMenuPrimitive.SeparatorProps
 >(({ className, ...props }, ref) => (

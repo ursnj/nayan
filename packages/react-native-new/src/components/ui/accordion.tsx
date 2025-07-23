@@ -59,7 +59,10 @@ AccordionItem.displayName = AccordionPrimitive.Item.displayName;
 
 const Trigger = Platform.OS === 'web' ? View : Pressable;
 
-const AccordionTrigger = React.forwardRef<
+const AccordionTrigger: React.ForwardRefExoticComponent<
+  AccordionPrimitive.TriggerProps &
+    React.RefAttributes<AccordionPrimitive.TriggerRef>
+> = React.forwardRef<
   AccordionPrimitive.TriggerRef,
   AccordionPrimitive.TriggerProps
 >(({ className, children, ...props }, ref) => {

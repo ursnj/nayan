@@ -136,7 +136,10 @@ const AlertDialogDescription = React.forwardRef<
 AlertDialogDescription.displayName =
   AlertDialogPrimitive.Description.displayName;
 
-const AlertDialogAction = React.forwardRef<
+const AlertDialogAction: React.ForwardRefExoticComponent<
+  AlertDialogPrimitive.ActionProps &
+    React.RefAttributes<AlertDialogPrimitive.ActionRef>
+> = React.forwardRef<
   AlertDialogPrimitive.ActionRef,
   AlertDialogPrimitive.ActionProps
 >(({ className, ...props }, ref) => (
@@ -150,7 +153,10 @@ const AlertDialogAction = React.forwardRef<
 ));
 AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
 
-const AlertDialogCancel = React.forwardRef<
+const AlertDialogCancel: React.ForwardRefExoticComponent<
+  AlertDialogPrimitive.CancelProps &
+    React.RefAttributes<AlertDialogPrimitive.CancelRef>
+> = React.forwardRef<
   AlertDialogPrimitive.CancelRef,
   AlertDialogPrimitive.CancelProps
 >(({ className, ...props }, ref) => (

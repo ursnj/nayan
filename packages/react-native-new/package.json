@@ -123,7 +123,7 @@
     "typescript": "^5.8.3"
   },
   "resolutions": {
-    "@types/react": "^18.2.44"
+    "@types/react": "^19.1.5"
   },
   "peerDependencies": {
     "@react-native-community/datetimepicker": "*",
@@ -138,10 +138,6 @@
     "react-native-svg": "*",
     "tailwindcss": ">=3"
   },
-  "workspaces": [
-    "example"
-  ],
-  "packageManager": "yarn@3.6.1",
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [

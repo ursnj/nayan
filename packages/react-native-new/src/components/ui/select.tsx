@@ -9,42 +9,43 @@ import * as SelectPrimitive from '@rn-primitives/select';
 
 type Option = SelectPrimitive.Option;
 
-const Select = SelectPrimitive.Root;
+const Select: typeof SelectPrimitive.Root = SelectPrimitive.Root;
 
-const SelectGroup = SelectPrimitive.Group;
+const SelectGroup: typeof SelectPrimitive.Group = SelectPrimitive.Group;
 
-const SelectValue = SelectPrimitive.Value;
+const SelectValue: typeof SelectPrimitive.Value = SelectPrimitive.Value;
 
-const SelectTrigger = React.forwardRef<
-  SelectPrimitive.TriggerRef,
-  SelectPrimitive.TriggerProps
->(({ className, children, ...props }, ref) => (
-  <SelectPrimitive.Trigger
-    ref={ref}
-    className={cn(
-      'flex flex-row h-10 native:h-12 items-center text-sm justify-between rounded-md border border-input bg-background px-3 py-2 web:ring-offset-background text-muted-foreground web:focus:outline-none web:focus:ring-2 web:focus:ring-ring web:focus:ring-offset-2 [&>span]:line-clamp-1',
-      props.disabled && 'web:cursor-not-allowed opacity-50',
-      className
-    )}
-    {...props}
-  >
-    <>{children}</>
-    <ChevronDown
-      size={16}
-      aria-hidden={true}
-      className="text-text opacity-60"
-    />
-  </SelectPrimitive.Trigger>
-));
+const SelectTrigger: React.ForwardRefExoticComponent<
+  SelectPrimitive.TriggerProps & React.RefAttributes<SelectPrimitive.TriggerRef>
+> = React.forwardRef<SelectPrimitive.TriggerRef, SelectPrimitive.TriggerProps>(
+  ({ className, children, ...props }, ref) => (
+    <SelectPrimitive.Trigger
+      ref={ref}
+      className={cn(
+        'flex flex-row h-10 native:h-12 items-center text-sm justify-between rounded-md border border-input bg-background px-3 py-2 web:ring-offset-background text-muted-foreground web:focus:outline-none web:focus:ring-2 web:focus:ring-ring web:focus:ring-offset-2 [&>span]:line-clamp-1',
+        props.disabled && 'web:cursor-not-allowed opacity-50',
+        className
+      )}
+      {...props}
+    >
+      <>{children}</>
+      <ChevronDown
+        size={16}
+        aria-hidden={true}
+        className="text-text opacity-60"
+      />
+    </SelectPrimitive.Trigger>
+  )
+);
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;
 
 /**
  * Platform: WEB ONLY
  */
-const SelectScrollUpButton = ({
+const SelectScrollUpButton: React.FC<SelectPrimitive.ScrollUpButtonProps> = ({
   className,
   ...props
-}: SelectPrimitive.ScrollUpButtonProps) => {
+}) => {
   if (Platform.OS !== 'web') {
     return null;
   }
@@ -64,10 +65,9 @@ const SelectScrollUpButton = ({
 /**
  * Platform: WEB ONLY
  */
-const SelectScrollDownButton = ({
-  className,
-  ...props
-}: SelectPrimitive.ScrollDownButtonProps) => {
+const SelectScrollDownButton: React.FC<
+  SelectPrimitive.ScrollDownButtonProps
+> = ({ className, ...props }) => {
   if (Platform.OS !== 'web') {
     return null;
   }
@@ -84,7 +84,12 @@ const SelectScrollDownButton = ({
   );
 };
 
-const SelectContent = React.forwardRef<
+const SelectContent: React.ForwardRefExoticComponent<
+  SelectPrimitive.ContentProps &
+    React.RefAttributes<SelectPrimitive.ContentRef> & {
+      portalHost?: string;
+    }
+> = React.forwardRef<
   SelectPrimitive.ContentRef,
   SelectPrimitive.ContentProps & { portalHost?: string }
 >(({ className, children, position = 'popper', portalHost, ...props }, ref) => {
@@ -129,45 +134,54 @@ const SelectContent = React.forwardRef<
 });
 SelectContent.displayName = SelectPrimitive.Content.displayName;
 
-const SelectLabel = React.forwardRef<
-  SelectPrimitive.LabelRef,
-  SelectPrimitive.LabelProps
->(({ className, ...props }, ref) => (
-  <SelectPrimitive.Label
-    ref={ref}
-    className={cn(
-      'py-1.5 native:pb-2 pl-8 native:pl-10 pr-2 text-popover-foreground text-sm native:text-base font-semibold',
-      className
-    )}
-    {...props}
-  />
-));
+const SelectLabel: React.ForwardRefExoticComponent<
+  SelectPrimitive.LabelProps & React.RefAttributes<SelectPrimitive.LabelRef>
+> = React.forwardRef<SelectPrimitive.LabelRef, SelectPrimitive.LabelProps>(
+  ({ className, ...props }, ref) => (
+    <SelectPrimitive.Label
+      ref={ref}
+      className={cn(
+        'py-1.5 native:pb-2 pl-8 native:pl-10 pr-2 text-popover-foreground text-sm native:text-base font-semibold',
+        className
+      )}
+      {...props}
+    />
+  )
+);
 SelectLabel.displayName = SelectPrimitive.Label.displayName;
 
-const SelectItem = React.forwardRef<
-  SelectPrimitive.ItemRef,
-  SelectPrimitive.ItemProps
->(({ className, children, ...props }, ref) => (
-  <SelectPrimitive.Item
-    ref={ref}
-    className={cn(
-      'relative web:group flex flex-row w-full web:cursor-default web:select-none items-center rounded-sm py-1.5 native:py-2 pl-8 native:pl-10 pr-2 web:hover:bg-accent/50 active:bg-accent web:outline-none web:focus:bg-accent',
-      props.disabled && 'web:pointer-events-none opacity-50',
-      className
-    )}
-    {...props}
-  >
-    <View className="absolute left-2 native:left-3.5 flex h-3.5 native:pt-px w-3.5 items-center justify-center">
-      <SelectPrimitive.ItemIndicator>
-        <Check size={16} strokeWidth={3} className="text-popover-foreground" />
-      </SelectPrimitive.ItemIndicator>
-    </View>
-    <SelectPrimitive.ItemText className="text-sm native:text-lg text-text native:text-base web:group-focus:text-accent-foreground" />
-  </SelectPrimitive.Item>
-));
+const SelectItem: React.ForwardRefExoticComponent<
+  SelectPrimitive.ItemProps & React.RefAttributes<SelectPrimitive.ItemRef>
+> = React.forwardRef<SelectPrimitive.ItemRef, SelectPrimitive.ItemProps>(
+  ({ className, children, ...props }, ref) => (
+    <SelectPrimitive.Item
+      ref={ref}
+      className={cn(
+        'relative web:group flex flex-row w-full web:cursor-default web:select-none items-center rounded-sm py-1.5 native:py-2 pl-8 native:pl-10 pr-2 web:hover:bg-accent/50 active:bg-accent web:outline-none web:focus:bg-accent',
+        props.disabled && 'web:pointer-events-none opacity-50',
+        className
+      )}
+      {...props}
+    >
+      <View className="absolute left-2 native:left-3.5 flex h-3.5 native:pt-px w-3.5 items-center justify-center">
+        <SelectPrimitive.ItemIndicator>
+          <Check
+            size={16}
+            strokeWidth={3}
+            className="text-popover-foreground"
+          />
+        </SelectPrimitive.ItemIndicator>
+      </View>
+      <SelectPrimitive.ItemText className="text-sm native:text-lg text-text native:text-base web:group-focus:text-accent-foreground" />
+    </SelectPrimitive.Item>
+  )
+);
 SelectItem.displayName = SelectPrimitive.Item.displayName;
 
-const SelectSeparator = React.forwardRef<
+const SelectSeparator: React.ForwardRefExoticComponent<
+  SelectPrimitive.SeparatorProps &
+    React.RefAttributes<SelectPrimitive.SeparatorRef>
+> = React.forwardRef<
   SelectPrimitive.SeparatorRef,
   SelectPrimitive.SeparatorProps
 >(({ className, ...props }, ref) => (

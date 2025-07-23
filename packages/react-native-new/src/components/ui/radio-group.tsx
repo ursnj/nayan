@@ -17,7 +17,10 @@ const RadioGroup = React.forwardRef<
 });
 RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 
-const RadioGroupItem = React.forwardRef<
+const RadioGroupItem: React.ForwardRefExoticComponent<
+  RadioGroupPrimitive.ItemProps &
+    React.RefAttributes<RadioGroupPrimitive.ItemRef>
+> = React.forwardRef<
   RadioGroupPrimitive.ItemRef,
   RadioGroupPrimitive.ItemProps
 >(({ className, ...props }, ref) => {
