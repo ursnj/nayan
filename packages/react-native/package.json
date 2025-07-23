@@ -1,5 +1,5 @@
 {
-  "name": "@nayan-ui/react-native",
+  "name": "@nayan-ui/react-native-old",
   "private": false,
   "sideEffects": false,
   "description": "Reusable UI Component Library for React Native.",

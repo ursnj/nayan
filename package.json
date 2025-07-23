@@ -5,16 +5,7 @@
     "packages": [
       "packages/*"
     ],
-    "nohoist": [
-      "**/@nayan-ui/react-native-example/**",
-      "**/expo",
-      "**/expo/**",
-      "**/@expo/**",
-      "**/react-native",
-      "**/react-native/**",
-      "**/react",
-      "**/react-dom"
-    ]
+    "nohoist": []
   },
   "version": "1.0.0",
   "description": "Reusable UI Component Libraries for React and React Native.",
