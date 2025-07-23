@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "@nayan-ui/website",
   "private": true,
   "description": "Reusable UI Component Libraries for React and React Native.",
   "version": "1.0.0",

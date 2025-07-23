@@ -1,4 +1,4 @@
-@import '../../react/src/components/NStyles.css';
+@import '../../react/src/styles.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
