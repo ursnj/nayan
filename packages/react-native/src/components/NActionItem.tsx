@@ -1,52 +1,48 @@
-import { useCallback } from 'react';
+import React, { useMemo } from 'react';
 import { View } from 'react-native';
 import { NPress } from '@/components/NPress';
 import { NText } from '@/components/NText';
 import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NActionItemProps {
   name: string;
   description?: string;
+  icon?: React.ComponentType<any> | React.ReactElement;
+  disabled?: boolean;
   className?: string;
   titleClassName?: string;
   descriptionClassName?: string;
-  icon: any;
-  onPress: () => void;
+  onPress?: () => void;
+  onLongPress?: () => void;
 }
 
-export const NActionItem = (props: Props) => {
-  const {
-    name,
-    description = '',
-    className = '',
-    titleClassName = '',
-    descriptionClassName = '',
-    icon,
-    onPress,
-  } = props;
-  const Icon = useCallback(() => icon, []);
+export const NActionItem = React.memo<NActionItemProps>(
+  ({ name, description, icon, disabled = false, className, titleClassName, descriptionClassName, onPress, onLongPress }) => {
+    const renderIcon = useMemo(() => {
+      if (!icon) return null;
 
-  return (
-    <NPress
-      className={cn(
-        'flex flex-row justify-start items-center px-3 py-2 bg-card',
-        className
-      )}
-      onPress={onPress}
-    >
-      {icon && <Icon />}
-      <View className="pl-3">
-        <NText className={cn('font-medium mb-0.5', titleClassName)}>
-          {name}
-        </NText>
-        {description && (
-          <NText
-            className={cn('text-sm text-muted mt-0', descriptionClassName)}
-          >
-            {description}
-          </NText>
-        )}
-      </View>
-    </NPress>
-  );
-};
+      if (React.isValidElement(icon)) {
+        return icon;
+      }
+
+      const IconComponent = icon as React.ComponentType<any>;
+      return <IconComponent />;
+    }, [icon]);
+
+    return (
+      <NPress
+        className={cn('flex-row items-center px-3 py-2 bg-card', disabled && 'opacity-50', className)}
+        onPress={onPress}
+        onLongPress={onLongPress}
+        disabled={disabled}>
+        {renderIcon}
+        <View className={cn('flex-1', renderIcon && 'ml-3')}>
+          <NText className={cn('font-medium', titleClassName)}>{name}</NText>
+          {description && <NText className={cn('text-sm text-muted-foreground mt-0.5', descriptionClassName)}>{description}</NText>}
+        </View>
+      </NPress>
+    );
+  }
+);
+
+NActionItem.displayName = 'NActionItem';
