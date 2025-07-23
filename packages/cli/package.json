@@ -8,7 +8,7 @@
   "main": "./dist/index.js",
   "homepage": "https://www.nayanui.com",
   "bin": {
-    "@nayan-ui/cli": "./dist/index.js"
+    "nayan-cli": "./dist/index.js"
   },
   "exports": {
     ".": {

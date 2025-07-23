@@ -52,10 +52,10 @@ export const NTheme = (props: Props) => {
   } as any;
 
   return (
-    <View className="flex-1" style={themeVars[theme as any]}>
+    <View className="flex-1" style={themeVars[theme || THEMES.light]}>
       <StatusBar style={isDarkMode ? THEMES.light : THEMES.dark} />
       <GestureHandlerRootView className="flex-1">
-        <SafeAreaProvider>
+        <SafeAreaProvider className="flex-1">
           <BottomSheetModalProvider>{props.children}</BottomSheetModalProvider>
           <PortalHost />
           <NToast />
