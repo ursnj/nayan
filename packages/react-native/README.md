@@ -13,7 +13,7 @@ React Native Component Library for smooth and faster mobile application developm
 ## 🔨 Installation
 
 ```sh
-npm install react-native-nayan
+npm install @nayan-ui/react-native
 ```
 
 Install peer dependencies
@@ -22,7 +22,7 @@ Install peer dependencies
 npm install @react-native-community/datetimepicker @react-navigation/native expo-navigation-bar react-native-reanimated react-native-gesture-handler react-native-safe-area-context react-native-svg
 ```
 
-This library completely depends on nativewind, Follow Nativewind installation as per the [nativewind](https://www.nativewind.dev/getting-started/installation) documentation.
+This library completely depends on Nativewind, Follow Nativewind installation as per the [nativewind](https://www.nativewind.dev/getting-started/installation) documentation.
 
 ## 🕹 Usage
 
@@ -35,7 +35,7 @@ const colors = require('tailwindcss/colors');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/react-native-nayan/src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/@nayan-ui/react-native/**/*.{js,jsx,ts,tsx}'],
   presets: [require('nativewind/preset')],
   theme: {
     colors: {
@@ -110,7 +110,7 @@ Change your app starting file as bellow
 import '../global.css';
 import 'react-native-reanimated';
 import { View } from 'react-native';
-import { NButton, NTheme, useNTheme, THEMES } from 'react-native-nayan';
+import { NButton, NTheme, useNTheme, THEMES } from '@nayan-ui/react-native';
 import { themeColors } from './constants';
 
 export default function App() {
@@ -132,4 +132,4 @@ export default function App() {
 
 ## 🤝 Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+See the contribution guide to learn how to contribute to the repository and the development workflow.
