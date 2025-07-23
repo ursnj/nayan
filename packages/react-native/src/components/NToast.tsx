@@ -1,4 +1,8 @@
-import Toast, { BaseToast, ErrorToast, type ToastConfig } from 'react-native-toast-message';
+import Toast, {
+  BaseToast,
+  ErrorToast,
+  type ToastConfig,
+} from 'react-native-toast-message';
 import { useNTheme } from '@/hooks/useNTheme';
 
 const toastConfig = (colors: any) => ({
@@ -6,14 +10,19 @@ const toastConfig = (colors: any) => ({
     <BaseToast
       {...props}
       style={{ borderLeftColor: colors.primary }}
-      contentContainerStyle={{ paddingHorizontal: 10, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }}
+      contentContainerStyle={{
+        paddingHorizontal: 10,
+        backgroundColor: colors.card,
+        borderWidth: 1,
+        borderColor: colors.border,
+      }}
       text2NumberOfLines={2}
       text1Style={{ height: 0 }}
       text2Style={{
         marginTop: -3,
         fontSize: 16,
         lineHeight: 25,
-        color: colors.text
+        color: colors.text,
       }}
     />
   ),
@@ -21,17 +30,22 @@ const toastConfig = (colors: any) => ({
     <ErrorToast
       {...props}
       style={{ borderLeftColor: 'red' }}
-      contentContainerStyle={{ paddingHorizontal: 10, backgroundColor: colors.card, borderWidth: 1, borderColor: colors.border }}
+      contentContainerStyle={{
+        paddingHorizontal: 10,
+        backgroundColor: colors.card,
+        borderWidth: 1,
+        borderColor: colors.border,
+      }}
       text2NumberOfLines={2}
       text1Style={{ height: 0 }}
       text2Style={{
         marginTop: -3,
         fontSize: 16,
         lineHeight: 25,
-        color: colors.text
+        color: colors.text,
       }}
     />
-  )
+  ),
 });
 
 interface Props {
@@ -53,7 +67,7 @@ NToast.success = (message: string) =>
     type: 'success',
     text2: message,
     position: 'bottom',
-    bottomOffset: 50
+    bottomOffset: 50,
   });
 
 NToast.error = (message: string) =>
@@ -61,5 +75,5 @@ NToast.error = (message: string) =>
     type: 'error',
     text2: message,
     position: 'bottom',
-    bottomOffset: 50
+    bottomOffset: 50,
   });

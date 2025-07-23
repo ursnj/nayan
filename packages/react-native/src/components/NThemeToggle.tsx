@@ -1,4 +1,3 @@
-import React from 'react';
 import { Pressable } from 'react-native';
 import { useNTheme } from '@/hooks/useNTheme';
 import { MoonStar } from '@/lib/icons/MoonStar';
@@ -27,7 +26,11 @@ export const NThemeToggle = (props: Props) => {
 
   return (
     <Pressable onPress={toggleTheme}>
-      <Component className={cn('text-primary', className)} size={size} strokeWidth={strokeWidth} />
+      <Component
+        className={cn('text-primary', className)}
+        size={size}
+        strokeWidth={strokeWidth}
+      />
     </Pressable>
   );
 };

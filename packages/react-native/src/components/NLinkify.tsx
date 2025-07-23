@@ -1,5 +1,13 @@
 import React, { type ReactNode, useEffect, useState } from 'react';
-import { Linking, Platform, Text, type TextProps, type TextStyle, View, type ViewProps } from 'react-native';
+import {
+  Linking,
+  Platform,
+  Text,
+  type TextProps,
+  type TextStyle,
+  View,
+  type ViewProps,
+} from 'react-native';
 // @ts-ignore
 import linkifyIt from 'linkify-it';
 // @ts-ignore
@@ -35,7 +43,9 @@ const Linkify = (props: LinkifyProps) => {
     ...viewProps
   } = props;
 
-  const [linkifyInstance, setLinkifyInstance] = useState(() => customLinkify || defaultLinkify);
+  const [linkifyInstance, setLinkifyInstance] = useState(
+    () => customLinkify || defaultLinkify
+  );
 
   useEffect(() => {
     if (customLinkify && customLinkify !== linkifyInstance) {
@@ -62,7 +72,10 @@ const Linkify = (props: LinkifyProps) => {
     const textContent = component.props.children as string;
     if (!textContent || typeof textContent !== 'string') return component;
 
-    if (!linkifyInstance.pretest(textContent) || !linkifyInstance.test(textContent)) {
+    if (
+      !linkifyInstance.pretest(textContent) ||
+      !linkifyInstance.test(textContent)
+    ) {
       return component;
     }
 
@@ -78,14 +91,23 @@ const Linkify = (props: LinkifyProps) => {
           if (nonLinkedText) elements.push(nonLinkedText);
           lastIndex = endIndex;
 
-          const displayText = typeof linkText === 'function' ? linkText(url) : linkText || text;
+          const displayText =
+            typeof linkText === 'function' ? linkText(url) : linkText || text;
           const clickHandlers = {
             onPress: onPress ? () => onPress(url, displayText) : undefined,
-            onLongPress: OS !== 'web' && onLongPress ? () => onLongPress(url, displayText) : undefined
+            onLongPress:
+              OS !== 'web' && onLongPress
+                ? () => onLongPress(url, displayText)
+                : undefined,
           };
 
           elements.push(
-            <NText key={url + index} style={[component.props.style, linkStyle]} {...clickHandlers} {...injectViewProps(url)}>
+            <NText
+              key={url + index}
+              style={[component.props.style, linkStyle]}
+              {...clickHandlers}
+              {...injectViewProps(url)}
+            >
               {displayText}
             </NText>
           );
@@ -99,40 +121,56 @@ const Linkify = (props: LinkifyProps) => {
     }
   };
 
-  const parseComponent = (component: React.ReactElement): React.ReactElement => {
-    if (!component?.props?.children) return component;
+  const parseComponent = (
+    component: React.ReactElement
+  ): React.ReactElement => {
+    const props = component.props as any;
+    if (!props?.children) return component;
     return React.cloneElement(
       component,
       {},
-      React.Children.map(component.props.children, child => {
+      React.Children.map(props.children, (child) => {
         if (typeof child === 'string' && linkifyInstance?.pretest?.(child)) {
-          return processLinkify(<NText style={component.props.style}>{child}</NText>);
+          return processLinkify(<NText style={props.style}>{child}</NText>);
         }
-        if (React.isValidElement(child) && child.type === Text && !isTextNested(child)) {
-          return processLinkify(child as any);
+        if (
+          React.isValidElement(child) &&
+          child.type === Text &&
+          !isTextNested(child)
+        ) {
+          return processLinkify(child as React.ReactElement<any>);
         }
-        return parseComponent(child as React.ReactElement);
+        return parseComponent(child as React.ReactElement<any>);
       })
     );
   };
 
   return (
     <View {...viewProps} style={style}>
-      {!onPress && !onLongPress && !linkStyle ? children : parseComponent(<NText>{children}</NText>).props.children}
+      {!onPress && !onLongPress && !linkStyle
+        ? children
+        : (parseComponent(<NText>{children}</NText>).props as any).children}
     </View>
   );
 };
 
 type NLinkifyProps = LinkifyProps & { linkDefault?: boolean };
 
-export const NLinkify: React.FC<NLinkifyProps> = ({ linkDefault, ...props }) => {
+export const NLinkify: React.FC<NLinkifyProps> = ({
+  linkDefault,
+  ...props
+}) => {
   const handleLink = (url: string) => {
     const urlObject = mdurl.parse(url);
     urlObject.protocol = urlObject.protocol.toLowerCase();
     const normalizedURL = mdurl.format(urlObject);
 
-    Linking.canOpenURL(normalizedURL).then(supported => supported && Linking.openURL(normalizedURL));
+    Linking.canOpenURL(normalizedURL).then(
+      (supported) => supported && Linking.openURL(normalizedURL)
+    );
   };
 
-  return <Linkify {...props} onPress={!linkDefault ? handleLink : props.onPress} />;
+  return (
+    <Linkify {...props} onPress={!linkDefault ? handleLink : props.onPress} />
+  );
 };

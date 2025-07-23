@@ -3,12 +3,27 @@ import { View } from 'react-native';
 import { cn } from '@/lib/utils';
 import * as RadioGroupPrimitive from '@rn-primitives/radio-group';
 
-const RadioGroup = React.forwardRef<RadioGroupPrimitive.RootRef, RadioGroupPrimitive.RootProps>(({ className, ...props }, ref) => {
-  return <RadioGroupPrimitive.Root className={cn('web:grid gap-2', className)} {...props} ref={ref} />;
+const RadioGroup = React.forwardRef<
+  RadioGroupPrimitive.RootRef,
+  RadioGroupPrimitive.RootProps
+>(({ className, ...props }, ref) => {
+  return (
+    <RadioGroupPrimitive.Root
+      className={cn('web:grid gap-2', className)}
+      {...props}
+      ref={ref}
+    />
+  );
 });
 RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
 
-const RadioGroupItem = React.forwardRef<RadioGroupPrimitive.ItemRef, RadioGroupPrimitive.ItemProps>(({ className, ...props }, ref) => {
+const RadioGroupItem: React.ForwardRefExoticComponent<
+  RadioGroupPrimitive.ItemProps &
+    React.RefAttributes<RadioGroupPrimitive.ItemRef>
+> = React.forwardRef<
+  RadioGroupPrimitive.ItemRef,
+  RadioGroupPrimitive.ItemProps
+>(({ className, ...props }, ref) => {
   return (
     <RadioGroupPrimitive.Item
       ref={ref}
@@ -17,7 +32,8 @@ const RadioGroupItem = React.forwardRef<RadioGroupPrimitive.ItemRef, RadioGroupP
         props.disabled && 'web:cursor-not-allowed opacity-50',
         className
       )}
-      {...props}>
+      {...props}
+    >
       <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
         <View className="aspect-square h-[9px] w-[9px] native:h-[10] native:w-[10] bg-primary rounded-full" />
       </RadioGroupPrimitive.Indicator>

@@ -1,6 +1,5 @@
-import React from 'react';
-import { cn } from '@/lib/utils';
 import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
 interface Props {
   className?: string;

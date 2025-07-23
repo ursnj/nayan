@@ -1,6 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 import { NText } from '@/components/NText';
 import { cn } from '@/lib/utils';
 
@@ -18,13 +22,16 @@ export const NTooltip = (props: Props) => {
     top: insets.top,
     bottom: insets.bottom,
     left: 12,
-    right: 12
+    right: 12,
   };
 
   return (
     <Tooltip delayDuration={150}>
       <TooltipTrigger>{children}</TooltipTrigger>
-      <TooltipContent insets={contentInsets} className={cn('bg-card border border-border max-w-[250px]', className)}>
+      <TooltipContent
+        insets={contentInsets}
+        className={cn('bg-card border border-border max-w-[250px]', className)}
+      >
         <NText className={textClassName}>{message}</NText>
       </TooltipContent>
     </Tooltip>

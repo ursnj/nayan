@@ -8,5 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 export enum THEMES {
   light = 'light',
   dark = 'dark',
-  system = 'system'
+  system = 'system',
 }

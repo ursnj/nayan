@@ -1,6 +1,9 @@
-import React from 'react';
-import { DropdownMenuItem, DropdownMenuSeparator, DropdownMenuShortcut } from '@/components/ui/dropdown-menu';
-import { NText } from '@/components/NText';
+import {
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+} from '@/components/ui/dropdown-menu';
+import { NText } from './NText';
 import { cn } from '@/lib/utils';
 
 interface Props {
@@ -15,7 +18,15 @@ interface Props {
 }
 
 export const NMenuItem = (props: Props) => {
-  const { title, shortcut = '', hasSeparator = false, icon = null, className = '', textClassName = '', shortcutClassName = '' } = props;
+  const {
+    title,
+    shortcut = '',
+    hasSeparator = false,
+    icon = null,
+    className = '',
+    textClassName = '',
+    shortcutClassName = '',
+  } = props;
   const Icon = () => icon;
 
   return (
@@ -23,7 +34,11 @@ export const NMenuItem = (props: Props) => {
       <DropdownMenuItem className={className} onPress={props.onPress}>
         {icon && <Icon />}
         <NText className={textClassName}>{title}</NText>
-        {shortcut && <DropdownMenuShortcut className={cn('text-muted', shortcutClassName)}>{shortcut}</DropdownMenuShortcut>}
+        {shortcut && (
+          <DropdownMenuShortcut className={cn('text-muted', shortcutClassName)}>
+            {shortcut}
+          </DropdownMenuShortcut>
+        )}
       </DropdownMenuItem>
       {hasSeparator && <DropdownMenuSeparator />}
     </>

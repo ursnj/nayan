@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-import { Pressable, Text, View } from 'react-native';
-import DateTimePickerModal from 'react-native-modal-datetime-picker';
+import { useState } from 'react';
+import { View } from 'react-native';
 import { format } from 'date-fns';
+import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import { NText } from '@/components/NText';
 import { Calendar } from '@/lib/icons/Calender';
 import { cn } from '@/lib/utils';
+import { NPress } from '@/components/NPress';
 import { useNTheme } from '@/hooks/useNTheme';
 
 interface Props {
@@ -34,7 +35,7 @@ export const NDatePicker = (props: Props) => {
     inputTextClassName = '',
     inputIconClassName = '',
     value,
-    onChange
+    onChange,
   } = props;
   const [isVisible, setIsVisible] = useState(false);
 
@@ -73,12 +74,21 @@ export const NDatePicker = (props: Props) => {
         onConfirm={handleConfirm}
         onCancel={hideDatePicker}
       />
-      <Pressable
+      <NPress
         onPress={showDatePicker}
-        className={cn('flex flex-row justify-between items-center bg-card border border-border rounded px-3 py-2.5', inputClassName)}>
-        <Text className={cn('text-lg', inputTextClassName)}>{formatValue(value)}</Text>
-        <Calendar strokeWidth={1} className={cn('w-5 h-5 text-text', inputIconClassName)} />
-      </Pressable>
+        className={cn(
+          'flex flex-row justify-between items-center bg-card border border-border rounded px-3 py-2.5',
+          inputClassName
+        )}
+      >
+        <NText className={cn('text-lg', inputTextClassName)}>
+          {formatValue(value)}
+        </NText>
+        <Calendar
+          strokeWidth={1}
+          className={cn('w-5 h-5 text-text', inputIconClassName)}
+        />
+      </NPress>
     </View>
   );
 };

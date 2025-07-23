@@ -1,5 +1,10 @@
 import { useCallback } from 'react';
-import { BottomSheetBackdrop, type BottomSheetBackdropProps, BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
+import {
+  BottomSheetBackdrop,
+  type BottomSheetBackdropProps,
+  BottomSheetModal,
+  BottomSheetView,
+} from '@gorhom/bottom-sheet';
 import { useNTheme } from '@/hooks/useNTheme';
 
 interface Props {
@@ -14,7 +19,13 @@ export const NSheet = (props: Props) => {
 
   const renderBackdrop = useCallback(
     (props: BottomSheetBackdropProps) => (
-      <BottomSheetBackdrop {...props} opacity={0.6} appearsOnIndex={0} disappearsOnIndex={-1} pressBehavior="close" />
+      <BottomSheetBackdrop
+        {...props}
+        opacity={0.6}
+        appearsOnIndex={0}
+        disappearsOnIndex={-1}
+        pressBehavior="close"
+      />
     ),
     []
   );
@@ -28,7 +39,12 @@ export const NSheet = (props: Props) => {
       {...(snapPoints && { snapPoints, enableDynamicSizing: false })}
       backgroundStyle={{ backgroundColor: colors.card }}
       handleIndicatorStyle={{ backgroundColor: colors.muted }}
-      handleStyle={{ backgroundColor: colors.card, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+      handleStyle={{
+        backgroundColor: colors.card,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10,
+      }}
+    >
       <BottomSheetView className="flex-1">{children}</BottomSheetView>
     </BottomSheetModal>
   );

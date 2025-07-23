@@ -1,4 +1,3 @@
-import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { cn } from '@/lib/utils';
 import { useNTheme } from '@/hooks/useNTheme';

@@ -1,6 +1,5 @@
-import React from 'react';
-import { TextInput, type TextInputProps, View } from 'react-native';
-import { Input } from './ui/input';
+import { type TextInputProps, View } from 'react-native';
+import { Input } from '@/components/ui/input';
 import { NText } from '@/components/NText';
 import { cn } from '@/lib/utils';
 
@@ -36,7 +35,10 @@ export const NInput = (props: Props) => {
         editable={!disabled}
         placeholder={placeholder}
         onChangeText={onChangeText}
-        className={cn('text-text text-base border border-border bg-card', inputClassName)}
+        className={cn(
+          'text-text text-base border border-border bg-card',
+          inputClassName
+        )}
         {...remaining}
       />
     </View>
