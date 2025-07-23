@@ -2,7 +2,6 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-nayan": ["./src/index"],
       "@/*": ["./src/*"]
     },
     "allowUnreachableCode": false,
