@@ -4,7 +4,7 @@
     "useDefineForClassFields": true,
     "lib": ["ES2020"],
     "module": "ESNext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
