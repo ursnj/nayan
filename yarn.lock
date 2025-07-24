@@ -1476,7 +1476,7 @@
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
 "@nayan-ui/react@file:packages/react":
-  version "2.0.0-beta.0"
+  version "2.0.0-beta.2"
   dependencies:
     "@radix-ui/react-accordion" "^1.2.11"
     "@radix-ui/react-alert-dialog" "^1.1.14"
