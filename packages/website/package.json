@@ -5,12 +5,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
     "start": "node server",
     "preview": "NODE_ENV=production node server",
     "debug": "node --inspect-brk server",
-    "build:website": "rimraf dist && tsc && npm run build:client && npm run build:server",
+    "build": "rimraf dist && tsc && npm run build:client && npm run build:server",
     "build:client": "vite build --mode production --outDir dist/client",
     "build:server": "vite build --mode production --outDir dist/server --ssr src/entry-server.jsx",
     "sitemaper": "npx @nayan-ui/cli create sitemap -w http://localhost:7100 -r https://www.nayanui.com -o ./public/sitemap.xml"
