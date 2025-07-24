@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, type ViewProps } from 'react-native';
 import { cva, type VariantProps } from 'class-variance-authority';
 import type { LucideIcon } from 'lucide-react-native';
-import { Text } from './text';
+import { Text } from '@/components/ui/text';
 import { cn } from '@/lib/utils';
 import { useTheme } from '@react-navigation/native';
 

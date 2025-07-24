@@ -4,83 +4,81 @@ import { StatusBar } from 'expo-status-bar';
 import { vars } from 'nativewind';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { ThemeProvider } from '@react-navigation/native';
 import { PortalHost } from '@rn-primitives/portal';
-import { NToast } from '@/components/NToast';
-import { defaultThemeColors, THEMES } from '@/lib/utils';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NToast } from './NToast';
+import { THEMES } from '@/lib/utils';
 import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
 import { useNTheme } from '@/hooks/useNTheme';
 
-export interface ThemeColors {
-  primary: string;
-  background: string;
-  card: string;
-  text: string;
-  muted: string;
-  border: string;
-}
-
 export interface ThemeConfig {
-  light: { colors: ThemeColors };
-  dark: { colors: ThemeColors };
+  light: ReactNavigation.Theme & { colors: ReactNavigation.Theme['colors'] & { muted: string } };
+  dark: ReactNavigation.Theme & { colors: ReactNavigation.Theme['colors'] & { muted: string } };
 }
 
 export interface NThemeProps {
   children: React.ReactNode;
-  theme?: 'light' | 'dark';
-  themeColors?: ThemeConfig;
-  onThemeChange?: (theme: string) => void;
+  theme: string;
+  themeColors: ThemeConfig;
 }
 
-export const NTheme: React.FC<NThemeProps> = ({ children, theme: rawTheme, themeColors, onThemeChange }) => {
+export const NTheme = React.memo<NThemeProps>(({ children, theme: rawTheme, themeColors }) => {
   const { theme, setTheme, setThemeColors, isDarkMode } = useNTheme();
 
-  // Use provided theme colors or defaults
-  const currentThemeColors = themeColors || defaultThemeColors;
-
-  // Determine final theme
-  const finalTheme = rawTheme || theme || THEMES.light;
-
-  // Create theme variables
-  const themeVars = useMemo(() => {
-    const colors = currentThemeColors[finalTheme === THEMES.dark ? 'dark' : 'light'].colors;
-
-    return vars({
-      '--color-primary': colors.primary,
-      '--color-background': colors.background,
-      '--color-card': colors.card,
-      '--color-text': colors.text,
-      '--color-muted': colors.muted,
-      '--color-border': colors.border
-    });
-  }, [currentThemeColors, finalTheme]);
-
-  // Initialize theme on mount
   useEffect(() => {
+    const finalTheme = rawTheme ?? theme ?? THEMES.light;
     setTheme(finalTheme as any);
-    setThemeColors(currentThemeColors);
-    setAndroidNavigationBar(finalTheme, currentThemeColors);
-    onThemeChange?.(finalTheme);
-  }, [finalTheme, currentThemeColors, onThemeChange, setTheme, setThemeColors]);
+    setThemeColors(themeColors);
+    setAndroidNavigationBar(finalTheme, themeColors);
+  }, [rawTheme, theme, themeColors]);
 
-  // Update Android navigation bar when theme changes
   useEffect(() => {
     if (theme) {
-      setAndroidNavigationBar(theme, currentThemeColors);
-      onThemeChange?.(theme);
+      setAndroidNavigationBar(theme, themeColors);
     }
-  }, [theme, currentThemeColors, onThemeChange]);
+  }, [theme, themeColors]);
+
+  const themeVars = useMemo(
+    () => ({
+      light: vars({
+        '--color-primary': themeColors.light.colors.primary,
+        '--color-background': themeColors.light.colors.background,
+        '--color-card': themeColors.light.colors.card,
+        '--color-text': themeColors.light.colors.text,
+        '--color-muted': themeColors.light.colors.muted,
+        '--color-border': themeColors.light.colors.border,
+        '--color-notification': themeColors.light.colors.notification
+      }),
+      dark: vars({
+        '--color-primary': themeColors.dark.colors.primary,
+        '--color-background': themeColors.dark.colors.background,
+        '--color-card': themeColors.dark.colors.card,
+        '--color-text': themeColors.dark.colors.text,
+        '--color-muted': themeColors.dark.colors.muted,
+        '--color-border': themeColors.dark.colors.border,
+        '--color-notification': themeColors.dark.colors.notification
+      })
+    }),
+    [themeColors]
+  );
+
+  const currentThemeColors = useMemo(() => (isDarkMode ? themeColors.dark : themeColors.light), [isDarkMode, themeColors]);
 
   return (
-    <View className="flex-1" style={themeVars}>
-      <StatusBar style={isDarkMode ? THEMES.light : THEMES.dark} />
-      <GestureHandlerRootView className="flex-1">
-        <SafeAreaProvider className="flex-1">
-          <BottomSheetModalProvider>{children}</BottomSheetModalProvider>
-          <PortalHost />
-          <NToast />
-        </SafeAreaProvider>
-      </GestureHandlerRootView>
-    </View>
+    <ThemeProvider value={currentThemeColors}>
+      <View className="flex-1" style={themeVars[theme as keyof typeof themeVars]}>
+        <StatusBar style={isDarkMode ? THEMES.light : THEMES.dark} />
+        <GestureHandlerRootView className="flex-1">
+          <SafeAreaProvider>
+            <BottomSheetModalProvider>{children}</BottomSheetModalProvider>
+            <PortalHost />
+            <NToast />
+          </SafeAreaProvider>
+        </GestureHandlerRootView>
+      </View>
+    </ThemeProvider>
   );
-};
+});
+
+NTheme.displayName = 'NTheme';

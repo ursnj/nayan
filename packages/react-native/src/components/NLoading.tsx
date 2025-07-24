@@ -3,18 +3,21 @@ import { ActivityIndicator, View } from 'react-native';
 import { cn } from '@/lib/utils';
 import { useNTheme } from '@/hooks/useNTheme';
 
-interface Props {
+export interface NLoadingProps {
   color?: string;
   className?: string;
   size?: number | 'small' | 'large';
 }
 
-export const NLoading = (props: Props) => {
+export const NLoading = React.memo<NLoadingProps>(({ className = '', size = 'large', color }) => {
   const { colors } = useNTheme();
-  const { className = '', size = 'large', color = colors.primary } = props;
+  const loadingColor = color || colors.primary;
+
   return (
     <View className={cn('flex-1 justify-center items-center', className)}>
-      <ActivityIndicator animating={true} size={size as any} color={color} />
+      <ActivityIndicator animating={true} size={size as any} color={loadingColor} />
     </View>
   );
-};
+});
+
+NLoading.displayName = 'NLoading';

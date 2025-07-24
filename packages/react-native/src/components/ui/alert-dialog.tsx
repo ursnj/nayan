@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Platform, StyleSheet, View, type ViewProps } from 'react-native';
 import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
-import { buttonTextVariants, buttonVariants } from './button';
-import { TextClassContext } from './text';
+import { buttonTextVariants, buttonVariants } from '@/components/ui/button';
+import { TextClassContext } from '@/components/ui/text';
 import { cn } from '@/lib/utils';
 import * as AlertDialogPrimitive from '@rn-primitives/alert-dialog';
 
@@ -96,18 +96,20 @@ const AlertDialogDescription = React.forwardRef<AlertDialogPrimitive.Description
 );
 AlertDialogDescription.displayName = AlertDialogPrimitive.Description.displayName;
 
-const AlertDialogAction = React.forwardRef<AlertDialogPrimitive.ActionRef, AlertDialogPrimitive.ActionProps>(({ className, ...props }, ref) => (
-  <TextClassContext.Provider value={buttonTextVariants({ className })}>
-    <AlertDialogPrimitive.Action ref={ref} className={cn(buttonVariants(), className)} {...props} />
-  </TextClassContext.Provider>
-));
+const AlertDialogAction: React.ForwardRefExoticComponent<AlertDialogPrimitive.ActionProps & React.RefAttributes<AlertDialogPrimitive.ActionRef>> =
+  React.forwardRef<AlertDialogPrimitive.ActionRef, AlertDialogPrimitive.ActionProps>(({ className, ...props }, ref) => (
+    <TextClassContext.Provider value={buttonTextVariants({ className })}>
+      <AlertDialogPrimitive.Action ref={ref} className={cn(buttonVariants(), className)} {...props} />
+    </TextClassContext.Provider>
+  ));
 AlertDialogAction.displayName = AlertDialogPrimitive.Action.displayName;
 
-const AlertDialogCancel = React.forwardRef<AlertDialogPrimitive.CancelRef, AlertDialogPrimitive.CancelProps>(({ className, ...props }, ref) => (
-  <TextClassContext.Provider value={buttonTextVariants({ className, variant: 'outline' })}>
-    <AlertDialogPrimitive.Cancel ref={ref} className={cn(buttonVariants({ variant: 'outline', className }))} {...props} />
-  </TextClassContext.Provider>
-));
+const AlertDialogCancel: React.ForwardRefExoticComponent<AlertDialogPrimitive.CancelProps & React.RefAttributes<AlertDialogPrimitive.CancelRef>> =
+  React.forwardRef<AlertDialogPrimitive.CancelRef, AlertDialogPrimitive.CancelProps>(({ className, ...props }, ref) => (
+    <TextClassContext.Provider value={buttonTextVariants({ className, variant: 'outline' })}>
+      <AlertDialogPrimitive.Cancel ref={ref} className={cn(buttonVariants({ variant: 'outline', className }))} {...props} />
+    </TextClassContext.Provider>
+  ));
 AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
 
 export {

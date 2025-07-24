@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Pressable } from 'react-native';
 import { cva, type VariantProps } from 'class-variance-authority';
-import { TextClassContext } from './text';
+import { TextClassContext } from '@/components/ui/text';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
@@ -55,9 +55,17 @@ const buttonTextVariants = cva('web:whitespace-nowrap text-sm native:text-base f
 
 type ButtonProps = React.ComponentPropsWithoutRef<typeof Pressable> & VariantProps<typeof buttonVariants>;
 
-const Button = React.forwardRef<React.ElementRef<typeof Pressable>, ButtonProps>(({ className, variant, size, ...props }, ref) => {
+const Button: React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<React.ElementRef<typeof Pressable>>> = React.forwardRef<
+  React.ElementRef<typeof Pressable>,
+  ButtonProps
+>(({ className, variant, size, ...props }, ref) => {
   return (
-    <TextClassContext.Provider value={buttonTextVariants({ variant, size, className: 'web:pointer-events-none' })}>
+    <TextClassContext.Provider
+      value={buttonTextVariants({
+        variant,
+        size,
+        className: 'web:pointer-events-none'
+      })}>
       <Pressable
         className={cn(props.disabled && 'opacity-50 web:pointer-events-none', buttonVariants({ variant, size, className }))}
         ref={ref}

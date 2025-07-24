@@ -1,10 +1,10 @@
 import React from 'react';
-import { TextInput, type TextInputProps, View } from 'react-native';
+import { type TextInputProps, View } from 'react-native';
 import { Textarea } from '@/components/ui/textarea';
 import { NText } from '@/components/NText';
 import { cn } from '@/lib/utils';
 
-interface Props extends TextInputProps {
+export interface NTextareaProps extends TextInputProps {
   value: string;
   label?: string;
   placeholder?: string;
@@ -15,32 +15,24 @@ interface Props extends TextInputProps {
   onChangeText: (text: string) => void;
 }
 
-export const NTextarea = (props: Props) => {
-  const {
-    value,
-    label = '',
-    placeholder = '',
-    className = '',
-    labelClassName = '',
-    inputClassName = '',
-    onChangeText,
-    disabled = false,
-    ...remaining
-  } = props;
+export const NTextarea = React.memo<NTextareaProps>(
+  ({ value, label = '', placeholder = '', className = '', labelClassName = '', inputClassName = '', onChangeText, disabled = false, ...props }) => {
+    return (
+      <View className={cn('flex-1 mb-3', className)}>
+        {label && <NText className={cn('mb-1', labelClassName)}>{label}</NText>}
+        <Textarea
+          value={value}
+          editable={!disabled}
+          placeholder={placeholder}
+          onChangeText={onChangeText}
+          placeholderClassName="text-muted"
+          textAlignVertical="top"
+          className={cn('text-text text-base border border-border bg-card', inputClassName)}
+          {...props}
+        />
+      </View>
+    );
+  }
+);
 
-  return (
-    <View className={cn('flex-1 mb-3', className)}>
-      {label && <NText className={cn('mb-1', labelClassName)}>{label}</NText>}
-      <Textarea
-        value={value}
-        editable={!disabled}
-        placeholder={placeholder}
-        onChangeText={onChangeText}
-        placeholderClassName="text-muted"
-        textAlignVertical="top"
-        className={cn('text-text text-base border border-border bg-card', inputClassName)}
-        {...remaining}
-      />
-    </View>
-  );
-};
+NTextarea.displayName = 'NTextarea';

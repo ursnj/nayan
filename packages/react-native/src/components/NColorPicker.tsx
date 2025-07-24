@@ -5,42 +5,47 @@ import { NPopover } from '@/components/NPopover';
 import { NText } from '@/components/NText';
 import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NColorPickerProps {
   value: string;
   label?: string;
   disabled?: boolean;
   onChange: (value: string) => void;
+  className?: string;
+  labelClassName?: string;
+  triggerClassName?: string;
 }
 
-export const NColorPicker = (props: Props) => {
-  const { label = '', value = '#ffffff', disabled = false, onChange } = props;
+export const NColorPicker = React.memo<NColorPickerProps>(
+  ({ label = '', value = '#ffffff', disabled = false, onChange, className, labelClassName, triggerClassName }) => {
+    return (
+      <View className={cn('w-full flex-row justify-between items-center mb-3', className)}>
+        {label && <NText className={cn('mb-1 text-lg', labelClassName)}>{label}</NText>}
+        <NPopover
+          trigger={
+            <Pressable
+              className={cn('w-7 h-7 rounded border border-border', disabled && 'opacity-70', triggerClassName)}
+              style={{ backgroundColor: value }}
+              disabled={disabled}
+            />
+          }>
+          <View className="w-full">
+            <ColorPicker
+              color={value}
+              swatchesLast={false}
+              onColorChangeComplete={onChange}
+              thumbSize={30}
+              sliderSize={20}
+              gapSize={10}
+              noSnap={true}
+              row={false}
+              swatches={true}
+              useNativeDriver={true}
+            />
+          </View>
+        </NPopover>
+      </View>
+    );
+  }
+);
 
-  return (
-    <View className="w-full flex flex-row justify-between items-center mb-3">
-      {label && <NText className="mb-1 text-lg">{label}</NText>}
-      <NPopover
-        trigger={
-          <Pressable
-            className={cn('w-7 h-7 rounded border border-border', disabled && 'opacity-70')}
-            style={{ backgroundColor: value }}
-            disabled={disabled}
-          />
-        }>
-        <View className="w-full">
-          <ColorPicker
-            color={value}
-            swatchesLast={false}
-            onColorChangeComplete={onChange}
-            thumbSize={30}
-            sliderSize={20}
-            gapSize={10}
-            noSnap={true}
-            row={false}
-            swatches={true}
-            useNativeDriver={true}
-          />
-        </View>
-      </NPopover>
-    </View>
-  );
-};
+NColorPicker.displayName = 'NColorPicker';

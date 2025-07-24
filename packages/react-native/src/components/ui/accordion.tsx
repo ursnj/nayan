@@ -11,7 +11,7 @@ import Animated, {
   useDerivedValue,
   withTiming
 } from 'react-native-reanimated';
-import { TextClassContext } from './text';
+import { TextClassContext } from '@/components/ui/text';
 import { ChevronDown } from '@/lib/icons/ChevronDown';
 import { cn } from '@/lib/utils';
 import * as AccordionPrimitive from '@rn-primitives/accordion';
@@ -39,8 +39,8 @@ AccordionItem.displayName = AccordionPrimitive.Item.displayName;
 
 const Trigger = Platform.OS === 'web' ? View : Pressable;
 
-const AccordionTrigger = React.forwardRef<AccordionPrimitive.TriggerRef, AccordionPrimitive.TriggerProps>(
-  ({ className, children, ...props }, ref) => {
+const AccordionTrigger: React.ForwardRefExoticComponent<AccordionPrimitive.TriggerProps & React.RefAttributes<AccordionPrimitive.TriggerRef>> =
+  React.forwardRef<AccordionPrimitive.TriggerRef, AccordionPrimitive.TriggerProps>(({ className, children, ...props }, ref) => {
     const { isExpanded } = AccordionPrimitive.useItemContext();
 
     const progress = useDerivedValue(() => (isExpanded ? withTiming(1, { duration: 250 }) : withTiming(0, { duration: 200 })));
@@ -67,8 +67,7 @@ const AccordionTrigger = React.forwardRef<AccordionPrimitive.TriggerRef, Accordi
         </AccordionPrimitive.Header>
       </TextClassContext.Provider>
     );
-  }
-);
+  });
 AccordionTrigger.displayName = AccordionPrimitive.Trigger.displayName;
 
 const AccordionContent = React.forwardRef<AccordionPrimitive.ContentRef, AccordionPrimitive.ContentProps>(

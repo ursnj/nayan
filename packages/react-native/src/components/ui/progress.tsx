@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Platform, View } from 'react-native';
-import Animated, { Extrapolation, interpolate, useAnimatedStyle, useDerivedValue, useSharedValue, withSpring } from 'react-native-reanimated';
+import Animated, { Extrapolation, interpolate, useAnimatedStyle, useDerivedValue, withSpring } from 'react-native-reanimated';
 import { cn } from '@/lib/utils';
 import * as ProgressPrimitive from '@rn-primitives/progress';
 

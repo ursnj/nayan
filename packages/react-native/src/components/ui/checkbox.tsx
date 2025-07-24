@@ -4,7 +4,10 @@ import { Check } from '@/lib/icons/Check';
 import { cn } from '@/lib/utils';
 import * as CheckboxPrimitive from '@rn-primitives/checkbox';
 
-const Checkbox = React.forwardRef<CheckboxPrimitive.RootRef, CheckboxPrimitive.RootProps>(({ className, ...props }, ref) => {
+const Checkbox: React.ForwardRefExoticComponent<CheckboxPrimitive.RootProps & React.RefAttributes<CheckboxPrimitive.RootRef>> = React.forwardRef<
+  CheckboxPrimitive.RootRef,
+  CheckboxPrimitive.RootProps
+>(({ className, ...props }, ref) => {
   return (
     <CheckboxPrimitive.Root
       ref={ref}

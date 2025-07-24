@@ -1,31 +1,39 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Popover, PopoverContent, PopoverTrigger } from './ui/popover';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NPopoverProps {
   trigger?: React.ReactNode;
   children: React.ReactNode;
   className?: string;
+  side?: 'top' | 'bottom';
 }
 
-export const NPopover = (props: Props) => {
-  const { trigger, children, className = '' } = props;
+export const NPopover = React.memo<NPopoverProps>(({ trigger, children, className = '', side }) => {
   const insets = useSafeAreaInsets();
-  const contentInsets = {
-    top: insets.top,
-    bottom: insets.bottom,
-    left: 12,
-    right: 12
-  };
+
+  const contentInsets = useMemo(
+    () => ({
+      top: insets.top,
+      bottom: insets.bottom,
+      left: 12,
+      right: 12
+    }),
+    [insets.top, insets.bottom]
+  );
+
+  const popoverSide = side || (Platform.OS === 'web' ? 'bottom' : 'top');
 
   return (
     <Popover>
       <PopoverTrigger asChild>{trigger}</PopoverTrigger>
-      <PopoverContent side={Platform.OS === 'web' ? 'bottom' : 'top'} insets={contentInsets} className={cn('w-80 bg-card p-0 shadow-sm', className)}>
+      <PopoverContent side={popoverSide} insets={contentInsets} className={cn('w-80 bg-card p-0 shadow-sm', className)}>
         {children}
       </PopoverContent>
     </Popover>
   );
-};
+});
+
+NPopover.displayName = 'NPopover';

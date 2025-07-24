@@ -1,12 +1,13 @@
 import React from 'react';
-import { cn } from '@/lib/utils';
 import { NText } from '@/components/NText';
+import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NRequiredProps {
   className?: string;
 }
 
-export const NRequired = (props: Props) => {
-  const { className = '' } = props;
+export const NRequired = React.memo<NRequiredProps>(({ className = '' }) => {
   return <NText className={cn('text-red-500', className)}>*</NText>;
-};
+});
+
+NRequired.displayName = 'NRequired';

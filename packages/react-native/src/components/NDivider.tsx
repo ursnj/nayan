@@ -1,13 +1,14 @@
 import React from 'react';
-import { cn } from '@/lib/utils';
 import { Separator } from '@/components/ui/separator';
+import { cn } from '@/lib/utils';
 
-interface Props {
+export interface NDividerProps {
   className?: string;
   orientation?: 'horizontal' | 'vertical';
 }
 
-export const NDivider = (props: Props) => {
-  const { orientation = 'horizontal', className } = props;
-  return <Separator className={cn(`bg-border`, className)} orientation={orientation as any} />;
-};
+export const NDivider = React.memo<NDividerProps>(({ orientation = 'horizontal', className }) => {
+  return <Separator className={cn('bg-border', className)} orientation={orientation as any} />;
+});
+
+NDivider.displayName = 'NDivider';

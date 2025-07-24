@@ -1,16 +1,15 @@
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 import { BottomSheetBackdrop, type BottomSheetBackdropProps, BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
 import { useNTheme } from '@/hooks/useNTheme';
 
-interface Props {
-  sheetRef: any;
+export interface NSheetProps {
+  sheetRef: React.RefObject<BottomSheetModal>;
   snapPoints?: string[] | number[];
   children: React.ReactNode;
 }
 
-export const NSheet = (props: Props) => {
+export const NSheet = React.memo<NSheetProps>(({ sheetRef, children, snapPoints = null }) => {
   const { colors } = useNTheme();
-  const { sheetRef, children, snapPoints = null } = props;
 
   const renderBackdrop = useCallback(
     (props: BottomSheetBackdropProps) => (
@@ -28,8 +27,14 @@ export const NSheet = (props: Props) => {
       {...(snapPoints && { snapPoints, enableDynamicSizing: false })}
       backgroundStyle={{ backgroundColor: colors.card }}
       handleIndicatorStyle={{ backgroundColor: colors.muted }}
-      handleStyle={{ backgroundColor: colors.card, borderTopLeftRadius: 10, borderTopRightRadius: 10 }}>
+      handleStyle={{
+        backgroundColor: colors.card,
+        borderTopLeftRadius: 10,
+        borderTopRightRadius: 10
+      }}>
       <BottomSheetView className="flex-1">{children}</BottomSheetView>
     </BottomSheetModal>
   );
-};
+});
+
+NSheet.displayName = 'NSheet';

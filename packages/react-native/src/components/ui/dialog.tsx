@@ -46,10 +46,11 @@ const DialogOverlayNative = React.forwardRef<DialogPrimitive.OverlayRef, DialogP
 
 DialogOverlayNative.displayName = 'DialogOverlayNative';
 
-const DialogOverlay = Platform.select({
-  web: DialogOverlayWeb,
-  default: DialogOverlayNative
-});
+const DialogOverlay: React.ForwardRefExoticComponent<DialogPrimitive.OverlayProps & React.RefAttributes<DialogPrimitive.OverlayRef>> =
+  Platform.select({
+    web: DialogOverlayWeb,
+    default: DialogOverlayNative
+  });
 
 const DialogContent = React.forwardRef<DialogPrimitive.ContentRef, DialogPrimitive.ContentProps & { portalHost?: string }>(
   ({ className, children, portalHost, ...props }, ref) => {

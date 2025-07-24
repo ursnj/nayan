@@ -7,7 +7,11 @@ const EVENT_TYPE = {
   willShow: { show: 'keyboardWillShow', hide: 'keyboardWillHide' }
 } as const;
 
-export function useNKeyboard({ eventType = 'didShow' }: { eventType?: keyof typeof EVENT_TYPE } = { eventType: 'didShow' }) {
+export function useNKeyboard(
+  { eventType = 'didShow' }: { eventType?: keyof typeof EVENT_TYPE } = {
+    eventType: 'didShow'
+  }
+) {
   const [isKeyboardVisible, setKeyboardVisible] = React.useState(false);
   const [keyboardHeight, setKeyboardHeight] = React.useState(0);
 
