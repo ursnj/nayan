@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node server",
+    "start": "NODE_ENV=development node server",
     "preview": "NODE_ENV=production node server",
     "debug": "node --inspect-brk server",
     "build": "rimraf dist && tsc && npm run build:client && npm run build:server",
