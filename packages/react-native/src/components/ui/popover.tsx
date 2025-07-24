@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Platform, StyleSheet } from 'react-native';
 import Animated, { FadeIn, FadeOut } from 'react-native-reanimated';
-import { TextClassContext } from './text';
+import { TextClassContext } from '@/components/ui/text';
 import { cn } from '@/lib/utils';
 import * as PopoverPrimitive from '@rn-primitives/popover';
 
@@ -9,11 +9,19 @@ const Popover = PopoverPrimitive.Root;
 
 const PopoverTrigger = PopoverPrimitive.Trigger;
 
-const PopoverContent = React.forwardRef<PopoverPrimitive.ContentRef, PopoverPrimitive.ContentProps & { portalHost?: string }>(
-  ({ className, align = 'center', sideOffset = 4, portalHost, ...props }, ref) => {
+const PopoverContent = React.forwardRef<
+  PopoverPrimitive.ContentRef,
+  PopoverPrimitive.ContentProps & { portalHost?: string }
+>(
+  (
+    { className, align = 'center', sideOffset = 4, portalHost, ...props },
+    ref
+  ) => {
     return (
       <PopoverPrimitive.Portal hostName={portalHost}>
-        <PopoverPrimitive.Overlay style={Platform.OS !== 'web' ? StyleSheet.absoluteFill : undefined}>
+        <PopoverPrimitive.Overlay
+          style={Platform.OS !== 'web' ? StyleSheet.absoluteFill : undefined}
+        >
           <Animated.View entering={FadeIn.duration(200)} exiting={FadeOut}>
             <TextClassContext.Provider value="text-popover-foreground">
               <PopoverPrimitive.Content

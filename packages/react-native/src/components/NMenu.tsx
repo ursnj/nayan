@@ -1,26 +1,29 @@
-import React from 'react';
+import React, { type ReactNode, useMemo } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { cn } from '@/lib/utils';
 
-interface Props {
-  children?: React.ReactNode;
-  trigger: React.ReactNode;
-  icon?: any;
+export interface NMenuProps {
+  children?: ReactNode;
+  trigger: ReactNode;
   title?: string;
   className?: string;
   titleClassName?: string;
 }
 
-export const NMenu = (props: Props) => {
-  const { children, trigger, title = '', className = '', titleClassName = '' } = props;
+export const NMenu = React.memo<NMenuProps>(({ children, trigger, title = '', className = '', titleClassName = '' }) => {
   const insets = useSafeAreaInsets();
-  const contentInsets = {
-    top: insets.top,
-    bottom: insets.bottom,
-    left: 12,
-    right: 12
-  };
+
+  const contentInsets = useMemo(
+    () => ({
+      top: insets.top,
+      bottom: insets.bottom,
+      left: 12,
+      right: 12
+    }),
+    [insets.top, insets.bottom]
+  );
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>{trigger}</DropdownMenuTrigger>
@@ -35,4 +38,6 @@ export const NMenu = (props: Props) => {
       </DropdownMenuContent>
     </DropdownMenu>
   );
-};
+});
+
+NMenu.displayName = 'NMenu';

@@ -1,41 +1,51 @@
-# react-native-nayan
+# Nayan UI for React Native
 
 React Native Component Library for smooth and faster mobile application development.
 
+[![npm version](https://badge.fury.io/js/@nayan-ui%2Freact-native.svg)](https://badge.fury.io/js/@nayan-ui%2Freact-native)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/npm/l/@nayan-ui/react-native.svg)](https://github.com/ursnj/nayan/blob/main/LICENSE)
+
+---
+
 ## ✨ Features
 
-- 🌈 Enterprise-class UI designed for mobile applications.
-- 📦 A set of high-quality React native components out of the box.
-- 🛡 Written in TypeScript with predictable static types.
-- ⚙️ Whole package of design resources and development tools.
-- 🎨 Powerful theme customization based on Tailwind and Nativewind.
+- 🌈 **Enterprise-class UI** designed for mobile applications
+- 📦 **High-quality React Native components** out of the box
+- 🛡 **Written in TypeScript** with predictable static types
+- ⚙️ **Complete package** of design resources and development tools
+- 🎨 **Powerful theme customization** based on Tailwind CSS and NativeWind
+- 🌙 **Built-in dark mode** support with seamless switching
+- 📱 **Cross-platform** compatibility for iOS and Android
 
 ## 🔨 Installation
 
-```sh
-npm install react-native-nayan
+```bash
+npm install @nayan-ui/react-native
 ```
 
-Install peer dependencies
+**Install peer dependencies:**
 
-```shell
+```bash
 npm install @react-native-community/datetimepicker @react-navigation/native expo-navigation-bar react-native-reanimated react-native-gesture-handler react-native-safe-area-context react-native-svg
 ```
 
-This library completely depends on nativewind, Follow Nativewind installation as per the [nativewind](https://www.nativewind.dev/getting-started/installation) documentation.
+**Setup NativeWind:**
 
-## 🕹 Usage
+This library depends on **NativeWind** for styling. Follow the [NativeWind installation guide](https://www.nativewind.dev/getting-started/installation) to set it up in your project.
 
-Change tailwind.config.ts as bellow
+## ⚙️ Configuration
 
-```typescript
+**1. Configure your `tailwind.config.js`:**
+
+```javascript
 const { hairlineWidth } = require('nativewind/theme');
 const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/react-native-nayan/src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/@nayan-ui/react-native/**/*.{js,jsx,ts,tsx}'],
   presets: [require('nativewind/preset')],
   theme: {
     colors: {
@@ -71,7 +81,7 @@ module.exports = {
 };
 ```
 
-Create theme colors constant with your choice of colors
+**2. Create theme colors configuration:**
 
 ```typescript
 import { DarkTheme, DefaultTheme } from '@react-navigation/native';
@@ -104,32 +114,49 @@ export const themeColors = {
 };
 ```
 
-Change your app starting file as bellow
+## 🚀 Usage
+
+**Wrap your app with the NTheme provider:**
 
 ```tsx
 import '../global.css';
 import 'react-native-reanimated';
 import { View } from 'react-native';
-import { NButton, NTheme, useNTheme, THEMES } from 'react-native-nayan';
+import { NButton, NTheme, useNTheme, THEMES } from '@nayan-ui/react-native';
 import { themeColors } from './constants';
 
 export default function App() {
   const { theme, isDarkMode, setTheme } = useNTheme();
 
-  const changeTheme = () => {
+  const toggleTheme = () => {
     setTheme(isDarkMode ? THEMES.light : THEMES.dark);
   };
 
   return (
     <NTheme theme={theme || THEMES.light} themeColors={themeColors}>
       <View className="flex-1 justify-center items-center bg-background">
-        <NButton onPress={changeTheme}>Change Theme</NButton>
+        <NButton onPress={toggleTheme}>{isDarkMode ? 'Switch to Light' : 'Switch to Dark'}</NButton>
       </View>
     </NTheme>
   );
 }
 ```
 
+## 📚 Documentation
+
+For detailed documentation, component APIs, examples, and guides, visit **[www.nayanui.com](https://www.nayanui.com)**
+
 ## 🤝 Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+We welcome contributions! See the [contribution guide](https://www.nayanui.com/contributions) to learn how to contribute to the repository and development workflow.
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by the Niranjan Reddy Devasani</p>
+  <p>
+    <a href="https://github.com/ursnj/nayan">GitHub</a> • 
+    <a href="https://www.nayanui.com">Documentation</a> • 
+    <a href="https://github.com/ursnj/nayan/issues">Issues</a>
+  </p>
+</div>

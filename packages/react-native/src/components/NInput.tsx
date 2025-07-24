@@ -1,22 +1,22 @@
 import React from 'react';
-import { TextInput, type TextInputProps, View } from 'react-native';
-import { Input } from './ui/input';
+import { type TextInputProps, View } from 'react-native';
+import { Input } from '@/components/ui/input';
 import { NText } from '@/components/NText';
 import { cn } from '@/lib/utils';
 
-interface Props extends TextInputProps {
+export interface NInputProps extends TextInputProps {
   value: string;
   label?: string;
   placeholder?: string;
   disabled?: boolean;
+  onChangeText: (text: string) => void;
   className?: string;
   labelClassName?: string;
   inputClassName?: string;
-  onChangeText: (text: string) => void;
 }
 
-export const NInput = (props: Props) => {
-  const {
+export const NInput = React.memo<NInputProps>(
+  ({
     value,
     label = '',
     placeholder = '',
@@ -26,19 +26,21 @@ export const NInput = (props: Props) => {
     onChangeText,
     disabled = false,
     ...remaining
-  } = props;
+  }) => {
+    return (
+      <View className={cn('flex mb-3', className)}>
+        {label && <NText className={cn('mb-1', labelClassName)}>{label}</NText>}
+        <Input
+          value={value}
+          editable={!disabled}
+          placeholder={placeholder}
+          onChangeText={onChangeText}
+          className={cn('text-text text-base border border-border bg-card', inputClassName)}
+          {...remaining}
+        />
+      </View>
+    );
+  }
+);
 
-  return (
-    <View className={cn('flex mb-3', className)}>
-      {label && <NText className={cn('mb-1', labelClassName)}>{label}</NText>}
-      <Input
-        value={value}
-        editable={!disabled}
-        placeholder={placeholder}
-        onChangeText={onChangeText}
-        className={cn('text-text text-base border border-border bg-card', inputClassName)}
-        {...remaining}
-      />
-    </View>
-  );
-};
+NInput.displayName = 'NInput';
