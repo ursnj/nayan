@@ -1,36 +1,40 @@
-import { Pressable } from 'react-native';
+import React, { useCallback, useMemo } from 'react';
+import { Pressable, type PressableProps } from 'react-native';
 import { useNTheme } from '@/hooks/useNTheme';
 import { MoonStar } from '@/lib/icons/MoonStar';
 import { Sun } from '@/lib/icons/Sun';
 import { cn, THEMES } from '@/lib/utils';
 import { setAndroidNavigationBar } from '@/lib/android-navigation-bar';
 
-interface Props {
+export interface NThemeToggleProps extends Omit<PressableProps, 'onPress'> {
   size?: number;
   strokeWidth?: number;
   className?: string;
   onThemeChange: (theme: string) => void;
 }
 
-export const NThemeToggle = (props: Props) => {
-  const { size = 30, strokeWidth = 1.25, className = '' } = props;
+export const NThemeToggle = React.memo<NThemeToggleProps>(({ size = 30, strokeWidth = 1.25, className = '', onThemeChange, ...props }) => {
   const { isDarkMode, setTheme, themeColors } = useNTheme();
-  const Component = isDarkMode ? MoonStar : Sun;
 
-  function toggleTheme() {
+  const currentIcon = useMemo(() => {
+    const IconComponent = isDarkMode ? MoonStar : Sun;
+    return <IconComponent size={size} strokeWidth={strokeWidth} />;
+  }, [isDarkMode, size, strokeWidth]);
+
+  const toggleTheme = useCallback(() => {
     const newTheme = isDarkMode ? THEMES.light : THEMES.dark;
     setTheme(newTheme);
     setAndroidNavigationBar(newTheme, themeColors);
-    props.onThemeChange(newTheme);
-  }
+    onThemeChange(newTheme);
+  }, [isDarkMode, setTheme, themeColors, onThemeChange]);
 
   return (
-    <Pressable onPress={toggleTheme}>
-      <Component
-        className={cn('text-primary', className)}
-        size={size}
-        strokeWidth={strokeWidth}
-      />
+    <Pressable onPress={toggleTheme} {...props}>
+      {React.cloneElement(currentIcon, {
+        className: cn('text-primary', className)
+      })}
     </Pressable>
   );
-};
+});
+
+NThemeToggle.displayName = 'NThemeToggle';
