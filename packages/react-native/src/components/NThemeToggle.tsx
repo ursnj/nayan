@@ -10,7 +10,7 @@ export interface NThemeToggleProps extends Omit<PressableProps, 'onPress'> {
   size?: number;
   strokeWidth?: number;
   className?: string;
-  onThemeChange: (theme: string) => void;
+  onThemeChange?: (theme: string) => void;
 }
 
 export const NThemeToggle = React.memo<NThemeToggleProps>(({ size = 30, strokeWidth = 1.25, className = '', onThemeChange, ...props }) => {
@@ -25,7 +25,7 @@ export const NThemeToggle = React.memo<NThemeToggleProps>(({ size = 30, strokeWi
     const newTheme = isDarkMode ? THEMES.light : THEMES.dark;
     setTheme(newTheme);
     setAndroidNavigationBar(newTheme, themeColors);
-    onThemeChange(newTheme);
+    onThemeChange && onThemeChange(newTheme);
   }, [isDarkMode, setTheme, themeColors, onThemeChange]);
 
   return (
