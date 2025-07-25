@@ -92,7 +92,7 @@ import {
   textareaCode,
   toastCode,
   tooltipCode
-} from '@/services/CodeBlocks';
+} from '@/services/ReactCodeBlocks';
 import {
   accordionTags,
   alertTags,
@@ -133,6 +133,7 @@ export const isWindowDefined = () => {
 export const getMenuItem = (path: string) => {
   return reactSidebarItems.find(item => item.link === path);
 };
+
 export const getMenuItemByTag = (tag: string) => {
   return reactSidebarItems.find((component: any) => component.tags?.find((tg: any) => tg.sku === tag));
 };
