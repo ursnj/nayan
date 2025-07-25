@@ -8,18 +8,16 @@
     "nohoist": []
   },
   "version": "1.0.0",
-  "description": "Reusable UI Component Libraries for React and React Native.",
+  "description": "Reusable Component Libraries for React and React Native.",
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install && yarn build:react && yarn build:react-native",
     "format": "prettier --write .",
-    "start:website": "yarn workspace website start",
-    "build:website": "yarn workspace website build:website",
+    "clean": "rimraf packages/*/node_modules packages/*/dist node_modules",
+    "build:cli": "yarn workspace @nayan-ui/cli build",
     "build:react": "yarn workspace @nayan-ui/react build",
     "build:react-native": "yarn workspace @nayan-ui/react-native build",
-    "example:ios": "yarn workspace @nayan-ui/react-native-example ios",
-    "example:android": "yarn workspace @nayan-ui/react-native-example android",
-    "example:start": "yarn workspace @nayan-ui/react-native-example start",
-    "example:prebuild": "yarn workspace @nayan-ui/react-native-example prebuild"
+    "start:website": "yarn workspace @nayan-ui/website start",
+    "build:website": "yarn workspace @nayan-ui/website build"
   },
   "devDependencies": {
     "husky": "^9.1.7",

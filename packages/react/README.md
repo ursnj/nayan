@@ -1,51 +1,39 @@
-# Nayan UI - Simplest React Component Library and Devtools
+# Nayan UI for React
 
-Nayan UI provides React component library based on Tailwind CSS and Radix UI (Shadcn). This library is a collection of pre-designed and
-pre-built React components that can be used to quickly and easily build beautiful, functional and fully accessible user interfaces for
-your web application.
+React Component Library for smooth and faster web application development.
 
-[![NPM version][npm-image]][npm-url] [![Follow Twitter][twitter-image]][twitter-url] [![Follow LinkedIn][linkedin-image]][linkedin-url]
+[![npm version](https://badge.fury.io/js/@nayan-ui%2Freact.svg)](https://badge.fury.io/js/@nayan-ui%2Freact)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/npm/l/@nayan-ui/react.svg)](https://github.com/ursnj/nayan/blob/main/LICENSE)
 
-[npm-image]: https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white
-[npm-url]: http://npmjs.org/package/nayan
-[twitter-image]: https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
-[twitter-url]: https://twitter.com/ursNjn
-[linkedin-image]: https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
-[linkedin-url]: https://www.linkedin.com/in/ursNj
-
-## 🖥 Demo
-
-Checkout demo for all the components Nayan UI exposing [Checkout](https://www.nayanui.com)
+---
 
 ## ✨ Features
 
-- 🌈 Enterprise-class UI designed for web applications.
-- 📦 A set of high-quality React components out of the box.
-- 🛡 Written in TypeScript with predictable static types.
-- ⚙️ Whole package of design resources and development tools.
-- 🌍 Internationalization support for dozens of languages.
-- 🎨 Powerful theme customization based on Tailwind CSS.
+- 🌈 **Enterprise-class UI** designed for web applications
+- 📦 **High-quality React components** out of the box
+- 🛡 **Written in TypeScript** with predictable static types
+- ⚙️ **Complete package** of design resources and development tools
+- 🎨 **Powerful theme customization** based on Tailwind CSS
+- 🌙 **Built-in dark mode** support with seamless switching
+- 🌍 **Server-side rendering** support
+- 🖥 **Cross-platform** compatibility for modern browsers, Electron, and Tauri
 
-## 🖥 Environment Support
-
-- Modern browsers
-- Server-side Rendering
-- [Electron](https://www.electronjs.org/) and [Tauri](https://tauri.app/)
-
-## 🔨 Install
+## 🔨 Installation
 
 ```bash
-npm install nayan
-yarn add nayan
-bun install nayan
+npm install @nayan-ui/react
 ```
 
-Include module in `tailwind.config.js` to read tailwind classes, this will help in reusing same tailwind classes.
+## ⚙️ Configuration
 
-```js
+**1. Configure your `tailwind.config.js`:**
+
+```javascript
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
-  content: ['./src/**/*.{ts,tsx}', './index.html', './node_modules/nayan/dist/index.es.js'], // Check node_modules path properly
+  content: ['./src/**/*.{ts,tsx}', './index.html', './node_modules/@nayan-ui/react/dist/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -59,6 +47,20 @@ module.exports = {
         card: 'var(--COLOR_CARD)',
         shadow: 'var(--COLOR_SHADOW)',
         overlay: 'var(--COLOR_OVERLAY)'
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' }
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' }
+        }
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out'
       }
     }
   },
@@ -66,10 +68,10 @@ module.exports = {
 };
 ```
 
-Add library styles to `index.css`, and update theme color variables accordingly for both light and dark modes.
+**2. Add library styles to your `index.css`:**
 
 ```css
-@import 'nayan/dist/style.css';
+@import '@nayan-ui/react/dist/styles.css';
 
 @tailwind base;
 @tailwind components;
@@ -83,7 +85,7 @@ Add library styles to `index.css`, and update theme color variables accordingly 
     --COLOR_BACKGROUND: #f0f2f5;
     --COLOR_CARD: #ffffff;
     --COLOR_TEXT: #050505;
-    --COLOR_MUTED: 'gray';
+    --COLOR_MUTED: #808080;
     --COLOR_BORDER: #e0e0e0;
     --COLOR_SHADOW: #d3d3d3;
     --COLOR_OVERLAY: rgba(255, 255, 255, 0.7);
@@ -109,15 +111,15 @@ Add library styles to `index.css`, and update theme color variables accordingly 
 }
 ```
 
-## 🕹 Usage
+## 🚀 Usage
 
-### Theme
+**Wrap your app with the NTheme provider:**
 
-```jsx
+```tsx
 import { useState } from 'react';
-import { NTheme, THEMES, useLocalStorage } from 'nayan';
+import { NTheme, NButton, THEMES, useLocalStorage } from '@nayan-ui/react';
 
-const App = () => {
+export default function App() {
   const [theme, setTheme] = useLocalStorage('THEME', THEMES.LIGHT);
 
   const toggleTheme = () => {
@@ -126,31 +128,18 @@ const App = () => {
 
   return (
     <NTheme theme={theme}>
-      <div className="p-3" onClick={toggleTheme}>
-        TOGGLE THEME
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <NButton onClick={toggleTheme}>{theme === THEMES.DARK ? 'Switch to Light' : 'Switch to Dark'}</NButton>
       </div>
     </NTheme>
   );
-};
-
-export default App;
+}
 ```
 
-For more info checkout example source code from [Github](https://github.com/ursnj/nayan) and run it in local.
+## 📚 Documentation
 
-## ⌨️ Development
+For detailed documentation, component APIs, examples, and guides, visit **[www.nayanui.com](https://www.nayanui.com)**
 
-Nayan project is included with all possible cases with examples, it can be ran locally to test each component.
+## 🤝 Contributing
 
-```bash
-$ git clone git@github.com:ursnj/nayan.git
-$ cd nayan
-$ npm install
-$ npm start
-```
-
-Open your browser and visit http://localhost:7100
-
-## 🤝 Contributing [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-
-We welcome all contributions. You can submit any ideas as [Pull Requests](https://github.com/ursnj/nayan/pulls) or as [GitHub Issues](https://github.com/ursnj/nayan/issues). If you'd like to improve code, check out the Development Instructions and have a good time! :)
+We welcome contributions! See the [contribution guide](https://www.nayanui.com/contributions) to learn how to contribute to the repository and development workflow.

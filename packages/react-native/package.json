@@ -1,6 +1,6 @@
 {
   "name": "@nayan-ui/react-native",
-  "version": "1.0.0-beta.5",
+  "version": "1.0.0-beta.6",
   "description": "React Native Component Library for smooth and faster mobile application development.",
   "source": "./src/index.tsx",
   "main": "./dist/commonjs/index.js",
@@ -44,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/ursnj/nayan/issues"
   },
-  "homepage": "https://github.com/ursnj/nayan/tree/main/packages/react-native#readme",
+  "homepage": "https://www.nayanui.com",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

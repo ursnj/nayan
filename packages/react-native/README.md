@@ -149,14 +149,3 @@ For detailed documentation, component APIs, examples, and guides, visit **[www.n
 ## 🤝 Contributing
 
 We welcome contributions! See the [contribution guide](https://www.nayanui.com/contributions) to learn how to contribute to the repository and development workflow.
-
----
-
-<div align="center">
-  <p>Made with ❤️ by the Niranjan Reddy Devasani</p>
-  <p>
-    <a href="https://github.com/ursnj/nayan">GitHub</a> • 
-    <a href="https://www.nayanui.com">Documentation</a> • 
-    <a href="https://github.com/ursnj/nayan/issues">Issues</a>
-  </p>
-</div>

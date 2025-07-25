@@ -1,27 +1,20 @@
-const { hairlineWidth } = require('nativewind/theme');
-const colors = require('tailwindcss/colors');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
-  content: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './node_modules/react-native-nayan/src/**/*.{js,jsx,ts,tsx}'
-  ],
-  presets: [require('nativewind/preset')],
+  darkMode: ['class'],
+  content: ['./src/**/*.{ts,tsx}', './index.html', '../react/src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    colors: {
-      ...colors,
-      primary: 'var(--color-primary)',
-      card: 'var(--color-card)',
-      text: 'var(--color-text)',
-      muted: 'var(--color-muted)',
-      border: 'var(--color-border)',
-      background: 'var(--color-background)'
-    },
     extend: {
-      borderWidth: {
-        hairline: hairlineWidth()
+      colors: {
+        primary: 'var(--COLOR_PRIMARY)',
+        'primary-light': 'var(--COLOR_PRIMARY_LIGHT)',
+        'primary-dark': 'var(--COLOR_PRIMARY_DARK)',
+        background: 'var(--COLOR_BACKGROUND)',
+        text: 'var(--COLOR_TEXT)',
+        muted: 'var(--COLOR_MUTED)',
+        border: 'var(--COLOR_BORDER)',
+        card: 'var(--COLOR_CARD)',
+        shadow: 'var(--COLOR_SHADOW)',
+        overlay: 'var(--COLOR_OVERLAY)'
       },
       keyframes: {
         'accordion-down': {
@@ -39,5 +32,5 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [require('tailwindcss-animate')]
 };
