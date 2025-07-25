@@ -81,7 +81,7 @@ const App = () => {
       <Wrapper>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/devtools" element={<Cli />} />
+          <Route path="/cli" element={<Cli />} />
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/react">
             <Route path="installation" element={<Installation />} />
