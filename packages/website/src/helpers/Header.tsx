@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AlignJustify, Github, MoonStar, Package, Sun } from 'lucide-react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
-import { sidebarItems } from '../services/Utils';
+import { reactSidebarItems } from '../services/Utils';
 import { NSheet, useLocalStorage, THEMES } from '@nayan-ui/react';
 
 const HeaderMenu = () => {
@@ -41,9 +41,6 @@ const HeaderMenu = () => {
         </li>
       </ul>
       <div className="w-full md:w-auto form-inline md:text-center md:justify-center items-center mt-3 md:mt-0">
-        <Link to="https://www.npmjs.com/package/nayan" target="_blank" className="mr-5 ml-3 md:ml-0" title="Nayan UI NPM" aria-label="Nayan UI NPM">
-          <Package className="w-6 h-6 text-text inline" />
-        </Link>
         <Link to="https://www.github.com/ursnj/nayan" target="_blank" className="mr-5" title="Nayan UI Github" aria-label="Nayan UI Github">
           <Github className="w-6 h-6 text-text inline" />
         </Link>
@@ -54,7 +51,7 @@ const HeaderMenu = () => {
       </div>
 
       <div className="w-full block md:hidden mt-5 mb-5">
-        {sidebarItems.map(item => {
+        {reactSidebarItems.map(item => {
           const Icon = item.icon as any;
           return (
             <div key={item.link}>

@@ -1,5 +1,4 @@
-import React from 'react';
-import { NDivider, NLink } from '@nayan-ui/react';
+import { NDivider } from '@nayan-ui/react';
 
 const Footer = () => {
   return (

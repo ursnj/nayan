@@ -85,39 +85,37 @@ const App = () => {
           <Route path="/contributions" element={<Contributions />} />
           <Route path="/react">
             <Route path="installation" element={<Installation />} />
-            <Route path="components">
-              <Route index element={<Components />} />
-              <Route path="accordion" element={<Accordion />} />
-              <Route path="alert" element={<Alert />} />
-              <Route path="badge" element={<Badge />} />
-              <Route path="button" element={<Button />} />
-              <Route path="button-group" element={<ButtonGroup />} />
-              <Route path="card" element={<Card />} />
-              <Route path="checkbox" element={<Checkbox />} />
-              <Route path="confirm-alert" element={<ConfirmAlert />} />
-              <Route path="dialog" element={<Dialog />} />
-              <Route path="divider" element={<Divider />} />
-              <Route path="infinite-scroll" element={<InfiniteScroll />} />
-              <Route path="input" element={<Input />} />
-              <Route path="input-hook-form" element={<FormInput />} />
-              <Route path="link" element={<Link />} />
-              <Route path="linkify" element={<Linkify />} />
-              <Route path="loading" element={<Loading />} />
-              <Route path="menu" element={<Menu />} />
-              <Route path="popover" element={<Popover />} />
-              <Route path="progress" element={<Progress />} />
-              <Route path="radio-group" element={<RadioGroup />} />
-              <Route path="select" element={<Select />} />
-              <Route path="sheet" element={<Sheet />} />
-              <Route path="skeleton" element={<Skeleton />} />
-              <Route path="slider" element={<Slider />} />
-              <Route path="switch" element={<Switch />} />
-              <Route path="table" element={<Table />} />
-              <Route path="tabs" element={<Tabs />} />
-              <Route path="textarea" element={<Textarea />} />
-              <Route path="toast" element={<Toast />} />
-              <Route path="tooltip" element={<Tooltip />} />
-            </Route>
+            <Route index element={<Components />} />
+            <Route path="accordion" element={<Accordion />} />
+            <Route path="alert" element={<Alert />} />
+            <Route path="badge" element={<Badge />} />
+            <Route path="button" element={<Button />} />
+            <Route path="button-group" element={<ButtonGroup />} />
+            <Route path="card" element={<Card />} />
+            <Route path="checkbox" element={<Checkbox />} />
+            <Route path="confirm-alert" element={<ConfirmAlert />} />
+            <Route path="dialog" element={<Dialog />} />
+            <Route path="divider" element={<Divider />} />
+            <Route path="infinite-scroll" element={<InfiniteScroll />} />
+            <Route path="input" element={<Input />} />
+            <Route path="input-hook-form" element={<FormInput />} />
+            <Route path="link" element={<Link />} />
+            <Route path="linkify" element={<Linkify />} />
+            <Route path="loading" element={<Loading />} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="popover" element={<Popover />} />
+            <Route path="progress" element={<Progress />} />
+            <Route path="radio-group" element={<RadioGroup />} />
+            <Route path="select" element={<Select />} />
+            <Route path="sheet" element={<Sheet />} />
+            <Route path="skeleton" element={<Skeleton />} />
+            <Route path="slider" element={<Slider />} />
+            <Route path="switch" element={<Switch />} />
+            <Route path="table" element={<Table />} />
+            <Route path="tabs" element={<Tabs />} />
+            <Route path="textarea" element={<Textarea />} />
+            <Route path="toast" element={<Toast />} />
+            <Route path="tooltip" element={<Tooltip />} />
 
             <Route path="tags">
               <Route index element={<Tags />} />
@@ -128,39 +126,37 @@ const App = () => {
           <Route path="/react-native">
             <Route path="installation" element={<RNInstallation />} />
             <Route path="contributions" element={<Contributions />} />
-            <Route path="components">
-              <Route index element={<RNComponents />} />
-              <Route path="accordion" element={<RNAccordion />} />
-              <Route path="alert" element={<RNAlert />} />
-              <Route path="badge" element={<RNBadge />} />
-              <Route path="button" element={<RNButton />} />
-              <Route path="button-group" element={<RNButtonGroup />} />
-              <Route path="card" element={<RNCard />} />
-              <Route path="checkbox" element={<RNCheckbox />} />
-              <Route path="confirm-alert" element={<RNConfirmAlert />} />
-              <Route path="dialog" element={<RNDialog />} />
-              <Route path="divider" element={<RNDivider />} />
-              <Route path="infinite-scroll" element={<RNInfiniteScroll />} />
-              <Route path="input" element={<RNInput />} />
-              <Route path="input-hook-form" element={<RNFormInput />} />
-              <Route path="link" element={<RNLink />} />
-              <Route path="linkify" element={<RNLinkify />} />
-              <Route path="loading" element={<RNLoading />} />
-              <Route path="menu" element={<RNMenu />} />
-              <Route path="popover" element={<RNPopover />} />
-              <Route path="progress" element={<RNProgress />} />
-              <Route path="radio-group" element={<RNRadioGroup />} />
-              <Route path="select" element={<RNSelect />} />
-              <Route path="sheet" element={<RNSheet />} />
-              <Route path="skeleton" element={<RNSkeleton />} />
-              <Route path="slider" element={<RNSlider />} />
-              <Route path="switch" element={<RNSwitch />} />
-              <Route path="table" element={<RNTable />} />
-              <Route path="tabs" element={<RNTabs />} />
-              <Route path="textarea" element={<RNTextarea />} />
-              <Route path="toast" element={<RNToast />} />
-              <Route path="tooltip" element={<RNTooltip />} />
-            </Route>
+            <Route index element={<RNComponents />} />
+            <Route path="accordion" element={<RNAccordion />} />
+            <Route path="alert" element={<RNAlert />} />
+            <Route path="badge" element={<RNBadge />} />
+            <Route path="button" element={<RNButton />} />
+            <Route path="button-group" element={<RNButtonGroup />} />
+            <Route path="card" element={<RNCard />} />
+            <Route path="checkbox" element={<RNCheckbox />} />
+            <Route path="confirm-alert" element={<RNConfirmAlert />} />
+            <Route path="dialog" element={<RNDialog />} />
+            <Route path="divider" element={<RNDivider />} />
+            <Route path="infinite-scroll" element={<RNInfiniteScroll />} />
+            <Route path="input" element={<RNInput />} />
+            <Route path="input-hook-form" element={<RNFormInput />} />
+            <Route path="link" element={<RNLink />} />
+            <Route path="linkify" element={<RNLinkify />} />
+            <Route path="loading" element={<RNLoading />} />
+            <Route path="menu" element={<RNMenu />} />
+            <Route path="popover" element={<RNPopover />} />
+            <Route path="progress" element={<RNProgress />} />
+            <Route path="radio-group" element={<RNRadioGroup />} />
+            <Route path="select" element={<RNSelect />} />
+            <Route path="sheet" element={<RNSheet />} />
+            <Route path="skeleton" element={<RNSkeleton />} />
+            <Route path="slider" element={<RNSlider />} />
+            <Route path="switch" element={<RNSwitch />} />
+            <Route path="table" element={<RNTable />} />
+            <Route path="tabs" element={<RNTabs />} />
+            <Route path="textarea" element={<RNTextarea />} />
+            <Route path="toast" element={<RNToast />} />
+            <Route path="tooltip" element={<RNTooltip />} />
 
             <Route path="tags">
               <Route index element={<Tags />} />

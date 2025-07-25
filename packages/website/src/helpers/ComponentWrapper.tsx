@@ -1,4 +1,3 @@
-import React from 'react';
 import Code from './Code';
 import Sidebar from './Sidebar';
 import SubHeader from './SubHeader';
