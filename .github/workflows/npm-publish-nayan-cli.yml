@@ -1,4 +1,4 @@
-name: Publish nayan (react) package to npm
+name: Publish nayan (cli) package to npm
 on: [workflow_dispatch]
 
 jobs:
@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies (workspace root)
         run: yarn install --frozen-lockfile
 
-      - name: Build nayan (react) package
+      - name: Build nayan (cli) package
         run: yarn build
 
       - name: Publish to npm
