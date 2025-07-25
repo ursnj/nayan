@@ -1,4 +1,4 @@
-# NayanUI CLI - Dev Tools needed for Every Website
+# Nayan UI CLI - Tools needed for Every Website
 
 **NayanUI CLI** is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation and seamless integration with major search engines, SEO Master simplifies the process of optimizing your site for search engines. Whether you're monitoring backlinks, improving page speed, or fine-tuning on-page SEO, SEO Master offers everything you need to achieve top search engine performance.
 
@@ -112,13 +112,6 @@ npx @nayan-ui/cli validate robots --input https://www.nayanui.com/robots.txt --i
 | ---------------- | ---------------- | ------------ | --------------------------------------------------------------------------------- |
 | Input Robots.txt | --input / -i     | ./robots.xml | Pass output to let the generator know where to find and validate sitemap.         |
 | Is Remote        | --isremote / -ir | false        | Pass isremote true / false to the tool to know if its a local file or remote URL. |
-
-## 🖥 Future plans
-
-- [x] Create SEO Master CLI tool to generate and validate **sitemaps** efficiently.
-- [x] Create SEO Master CLI tool to generate and validate **robots.txt** efficiently.
-- [ ] Support multiple sitemaps if website is bigger than certain limit.
-- [ ] Create a web application to automatically generate and submit sitemap, robots.txt to search engines on a schedule.
 
 ## 🤝 Contributing
 

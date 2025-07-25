@@ -1,14 +1,14 @@
 {
   "name": "@nayan-ui/cli",
-  "version": "1.4.0-beta.0",
+  "version": "1.0.0-beta.0",
   "private": false,
   "sideEffects": false,
-  "description": "SEO Master is a powerful all-in-one tool developed to boost your website's visibility and rankings. With features like automatic sitemap generation, customizable robots.txt creation, SEO-optimized metadata, Image assets generation and seamless integration with major search engines.",
+  "description": "Command Line Tool for Nayan UI.",
   "type": "module",
   "main": "./dist/index.js",
   "homepage": "https://www.nayanui.com",
   "bin": {
-    "nayan-cli": "./dist/index.js"
+    "@nayan-ui/cli": "./dist/index.js"
   },
   "exports": {
     ".": {
@@ -62,11 +62,6 @@
     "Easy Sitemap Generator",
     "Simple Sitemap Generator",
     "Robots.txt Generator",
-    "Robots.txt Validator",
-    "Meta Tags Generator",
-    "Meta Tags Validator",
-    "Favicon Generator",
-    "Website Assets Generator",
-    "Social Media Metatags"
+    "Robots.txt Validator"
   ]
 }
