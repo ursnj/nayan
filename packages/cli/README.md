@@ -14,10 +14,10 @@ npm install -g @nayan-ui/cli
 
 ```bash
 # Basic usage
-npx @nayan-ui/cli create sitemap -w https://example.com
+npx nayan create sitemap -w https://example.com
 
 # With options
-npx @nayan-ui/cli create sitemap -w https://example.com -d 10 -f daily -o ./sitemap.xml
+npx nayan create sitemap -w https://example.com -d 10 -f daily -o ./sitemap.xml
 ```
 
 #### Parameters
@@ -34,10 +34,10 @@ npx @nayan-ui/cli create sitemap -w https://example.com -d 10 -f daily -o ./site
 
 ```bash
 # Local file
-npx @nayan-ui/cli validate sitemap -i ./sitemap.xml
+npx nayan validate sitemap -i ./sitemap.xml
 
 # Remote URL
-npx @nayan-ui/cli validate sitemap -i https://example.com/sitemap.xml --isremote true
+npx nayan validate sitemap -i https://example.com/sitemap.xml --isremote true
 ```
 
 #### Parameters
@@ -50,7 +50,7 @@ npx @nayan-ui/cli validate sitemap -i https://example.com/sitemap.xml --isremote
 ### Generate Robots.txt
 
 ```bash
-npx @nayan-ui/cli create robots -a /home,/about -d /admin -s https://example.com/sitemap.xml -o ./robots.txt
+npx nayan create robots -a /home,/about -d /admin -s https://example.com/sitemap.xml -o ./robots.txt
 ```
 
 #### Parameters
@@ -65,7 +65,7 @@ npx @nayan-ui/cli create robots -a /home,/about -d /admin -s https://example.com
 ### Validate Robots.txt
 
 ```bash
-npx @nayan-ui/cli validate robots -i ./robots.txt
+npx nayan validate robots -i ./robots.txt
 ```
 
 #### Parameters
