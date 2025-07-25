@@ -61,7 +61,7 @@ import {
   textareaAttributes,
   toastAttributes,
   tooltipAttributes
-} from '@/services/Attributes';
+} from '@/services/ReactAttributes';
 import {
   accordionCode,
   alertCode,
