@@ -7,20 +7,6 @@ export enum Size {
   'LG' = 'LG'
 }
 
-export enum BadgeSize {
-  XS = 'XS',
-  SM = 'SM',
-  MD = 'MD',
-  LG = 'LG'
-}
-
-export enum ButtonSize {
-  XS = 'XS',
-  SM = 'SM',
-  MD = 'MD',
-  LG = 'LG'
-}
-
 export enum DialogSize {
   XS = 'XS',
   SM = 'SM',
@@ -70,11 +56,6 @@ export enum AccordionTypes {
 export interface AccordionListItem {
   title: string;
   message: string;
-}
-
-export interface ComboBoxItem {
-  label: string;
-  value: string;
 }
 
 export interface RadioItem {

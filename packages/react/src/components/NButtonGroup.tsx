@@ -9,8 +9,6 @@ export interface NButtonGroupProps<T = string> extends Omit<React.HTMLAttributes
   selected: T;
   disabled?: boolean;
   onChange: (selected: T) => void;
-  keyExtractor?: (item: T, idx: number) => string | number;
-  renderButton?: (item: T, selected: boolean, idx: number) => React.ReactNode;
   ariaLabel?: string;
 }
 
@@ -21,8 +19,6 @@ function NButtonGroupComponent<T = string>({
   selected,
   disabled = false,
   onChange,
-  keyExtractor,
-  renderButton,
   ariaLabel,
   ...rest
 }: NButtonGroupProps<T>) {
@@ -45,11 +41,9 @@ function NButtonGroupComponent<T = string>({
   return (
     <div className={cn('nyn-button-group rounded', className)} role="group" aria-label={ariaLabel} tabIndex={0} onKeyDown={handleKeyDown} {...rest}>
       {items.map((item, idx) => {
-        const key = keyExtractor ? keyExtractor(item, idx) : typeof item === 'string' ? item : idx;
+        const key = typeof item === 'string' ? item : idx;
         const isSelected = item === selected;
-        return renderButton ? (
-          <React.Fragment key={key}>{renderButton(item, isSelected, idx)}</React.Fragment>
-        ) : (
+        return (
           <Button
             key={key}
             ref={el => (buttonRefs.current[idx] = el)}

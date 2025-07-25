@@ -56,7 +56,7 @@ export const NInput = React.memo(
               {error}
             </div>
           ) : helperText ? (
-            <div id={`${inputId}-helper`} className="mt-1 text-xs text-muted-foreground">
+            <div id={`${inputId}-helper`} className="mt-1 text-xs text-muted">
               {helperText}
             </div>
           ) : null}

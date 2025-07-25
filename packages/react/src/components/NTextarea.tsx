@@ -44,7 +44,7 @@ export const NTextarea = memo(
             {...rest}
           />
           {helperText && (
-            <div id={`${textareaId}-helper`} className="nyn-textarea-helper text-xs text-muted-foreground mt-1">
+            <div id={`${textareaId}-helper`} className="nyn-textarea-helper text-xs text-muted mt-1">
               {helperText}
             </div>
           )}

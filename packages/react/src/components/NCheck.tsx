@@ -11,22 +11,10 @@ export interface NCheckProps {
   checked: boolean;
   onChange: (checked: boolean) => void;
   children: ReactNode;
-  renderLabel?: (children: ReactNode) => React.ReactNode;
 }
 
 const NCheckComponent: React.FC<NCheckProps> = memo(
-  ({
-    id = 'check',
-    className = '',
-    checkClassName = '',
-    labelClassName = '',
-    checked,
-    disabled = false,
-    onChange,
-    children,
-    renderLabel,
-    ...rest
-  }) => {
+  ({ id = 'check', className = '', checkClassName = '', labelClassName = '', checked, disabled = false, onChange, children, ...rest }) => {
     return (
       <div className={cn('flex space-x-2 mb-3', className)}>
         <Checkbox
@@ -43,7 +31,7 @@ const NCheckComponent: React.FC<NCheckProps> = memo(
           {...rest}
         />
         <label htmlFor={id} className={cn('-mt-1 peer-disabled:cursor-not-allowed peer-disabled:opacity-70', labelClassName)}>
-          {renderLabel ? renderLabel(children) : children}
+          {children}
         </label>
       </div>
     );

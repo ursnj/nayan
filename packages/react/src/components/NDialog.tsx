@@ -20,8 +20,6 @@ export interface NDialogProps extends Omit<React.ComponentProps<typeof Dialog>, 
   contentClassName?: string;
   children: ReactNode;
   onClose: () => void;
-  renderHeader?: (title: string) => ReactNode;
-  renderFooter?: () => ReactNode;
 }
 
 const NDialogComponent: React.FC<NDialogProps> = memo(
@@ -35,21 +33,15 @@ const NDialogComponent: React.FC<NDialogProps> = memo(
     titleClassName = '',
     contentClassName = '',
     onClose,
-    renderHeader,
-    renderFooter,
     ...rest
   }) => {
     return (
       <Dialog open={isOpen} onOpenChange={onClose} {...rest}>
         <DialogContent
           className={cn('nyn-dialog p-0 gap-0 border border-border bg-card text-white rounded overflow-hidden', sizeMapping[size], className)}>
-          {renderHeader ? (
-            renderHeader(title)
-          ) : (
-            <DialogHeader className={cn('nyn-dialog-header px-3 py-2.5 bg-primary text-white', headerClassName)}>
-              <DialogTitle className={cn('nyn-dialog-title text-base font-normal', titleClassName)}>{title}</DialogTitle>
-            </DialogHeader>
-          )}
+          <DialogHeader className={cn('nyn-dialog-header px-3 py-2.5 bg-primary text-white', headerClassName)}>
+            <DialogTitle className={cn('nyn-dialog-title text-base font-normal', titleClassName)}>{title}</DialogTitle>
+          </DialogHeader>
           <div
             className={cn(
               'nyn-dialog-content text-text h-[calc(100vh_-_140px)] sm:h-auto sm:min-h-[350px] sm:max-h-[calc(100vh_-_75px)] overflow-y-auto',
@@ -57,7 +49,6 @@ const NDialogComponent: React.FC<NDialogProps> = memo(
             )}>
             {children}
           </div>
-          {renderFooter && <div className="nyn-dialog-footer">{renderFooter()}</div>}
         </DialogContent>
       </Dialog>
     );
