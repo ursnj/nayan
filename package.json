@@ -10,7 +10,7 @@
   "version": "1.0.0",
   "description": "Reusable Component Libraries for React and React Native.",
   "scripts": {
-    "prepare": "husky install && yarn build:react && yarn build:react-native",
+    "prepare": "husky install && yarn build:cli && yarn build:react && yarn build:react-native",
     "format": "prettier --write .",
     "clean": "rimraf packages/*/node_modules packages/*/dist node_modules",
     "build:cli": "yarn workspace @nayan-ui/cli build",

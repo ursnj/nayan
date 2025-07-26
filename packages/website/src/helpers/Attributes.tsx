@@ -8,7 +8,8 @@ interface Props {
 
 const Attributes = (props: Props) => {
   const { data, title = 'Attributes' } = props;
-  const columnDef = [
+
+  const columns = [
     { name: 'name', title: 'Name', className: 'min-w-[100px] max-w-[200px]' },
     { name: 'type', title: 'Type', className: 'min-w-[100px] max-w-[200px]' },
     { name: 'default', title: 'Default', className: 'min-w-[100px] w-[200px]' },
@@ -17,7 +18,7 @@ const Attributes = (props: Props) => {
 
   return (
     <SubHeader title={title}>
-      <NTable columns={columnDef} data={data} />
+      <NTable columns={columns} data={data} />
     </SubHeader>
   );
 };

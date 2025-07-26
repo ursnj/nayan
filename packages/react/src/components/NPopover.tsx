@@ -20,8 +20,6 @@ export interface NPopoverProps {
   align?: 'start' | 'end' | 'center';
   popoverId?: string;
   popoverLabel?: string;
-  triggerProps?: React.HTMLAttributes<HTMLElement>;
-  contentProps?: React.HTMLAttributes<HTMLDivElement>;
 }
 
 export const NPopover = memo(
@@ -35,9 +33,7 @@ export const NPopover = memo(
       side = 'bottom',
       align = 'end',
       popoverId,
-      popoverLabel,
-      triggerProps = {},
-      contentProps = {}
+      popoverLabel
     } = props;
     const id = popoverId || useId();
     // Accessibility: aria-controls, aria-haspopup, aria-label
@@ -45,8 +41,7 @@ export const NPopover = memo(
       id,
       'aria-controls': id,
       'aria-haspopup': 'dialog',
-      ...triggerProps,
-      className: cn('nyn-popover', triggerClassName, triggerProps.className, trigger.props.className)
+      className: cn('nyn-popover', triggerClassName, trigger.props.className)
     });
     return (
       <Popover>
@@ -59,13 +54,7 @@ export const NPopover = memo(
           aria-label={popoverLabel}
           side={side}
           align={align}
-          className={cn(
-            'nyn-popover-content rounded bg-card border border-border shadow-lg p-0',
-            sizeMapping[size],
-            className,
-            contentProps.className
-          )}
-          {...contentProps}>
+          className={cn('nyn-popover-content rounded bg-card border border-border shadow-lg p-0', sizeMapping[size], className)}>
           {children}
         </PopoverContent>
       </Popover>

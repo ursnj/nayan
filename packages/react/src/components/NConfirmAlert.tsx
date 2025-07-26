@@ -25,8 +25,6 @@ export interface NConfirmAlertProps extends Omit<React.ComponentProps<typeof Ale
   onResult: (result: boolean) => void;
   onClose: () => void;
   children?: ReactNode;
-  renderActions?: (onResult: (result: boolean) => void) => ReactNode;
-  renderHeader?: (title: string, message: string) => ReactNode;
 }
 
 const NConfirmAlertComponent: React.FC<NConfirmAlertProps> = memo(
@@ -44,35 +42,23 @@ const NConfirmAlertComponent: React.FC<NConfirmAlertProps> = memo(
     onResult,
     onClose,
     children,
-    renderActions,
-    renderHeader,
     ...rest
   }) => {
     return (
       <AlertDialog open={isOpen} onOpenChange={onClose} {...rest}>
         <AlertDialogContent className={cn('nyn-confirm-alert border border-border bg-card p-3', className)}>
-          {renderHeader ? (
-            renderHeader(title, message)
-          ) : (
-            <AlertDialogHeader>
-              <AlertDialogTitle className={cn('nyn-confirm-alert-title text-text', titleClassName)}>{title}</AlertDialogTitle>
-              <AlertDialogDescription className={cn('nyn-confirm-alert-message text-text', messageClassName)}>{message}</AlertDialogDescription>
-            </AlertDialogHeader>
-          )}
+          <AlertDialogHeader>
+            <AlertDialogTitle className={cn('nyn-confirm-alert-title text-text', titleClassName)}>{title}</AlertDialogTitle>
+            <AlertDialogDescription className={cn('nyn-confirm-alert-message text-text', messageClassName)}>{message}</AlertDialogDescription>
+          </AlertDialogHeader>
           {children}
           <AlertDialogFooter>
-            {renderActions ? (
-              renderActions(onResult)
-            ) : (
-              <>
-                <AlertDialogCancel className={cn('text-text bg-border border border-border', cancelClassName)} onClick={() => onResult(false)}>
-                  {cancelText}
-                </AlertDialogCancel>
-                <AlertDialogAction className={cn('text-white bg-primary border border-primary', confirmClassName)} onClick={() => onResult(true)}>
-                  {confirmText}
-                </AlertDialogAction>
-              </>
-            )}
+            <AlertDialogCancel className={cn('text-text bg-border border border-border', cancelClassName)} onClick={() => onResult(false)}>
+              {cancelText}
+            </AlertDialogCancel>
+            <AlertDialogAction className={cn('text-white bg-primary border border-primary', confirmClassName)} onClick={() => onResult(true)}>
+              {confirmText}
+            </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>

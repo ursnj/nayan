@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { getMenuItem, sidebarItems } from '../../services/Utils';
+import { getMenuItem, reactSidebarItems } from '../../services/Utils';
 import Sidebar from '../../helpers/Sidebar';
 import Meta from '../../helpers/Meta';
 import { NCard } from '@nayan-ui/react';
@@ -14,7 +14,7 @@ const Components = () => {
       <Meta title={component.title} description={component.description} />
       <div className="mb-5 leading-relaxed">{component.description}</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2.5">
-        {sidebarItems
+        {reactSidebarItems
           .filter(item => item.isComponent)
           .map(item => {
             const Icon = item.icon as any;

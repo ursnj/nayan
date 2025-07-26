@@ -1,7 +1,6 @@
 import Code from '../helpers/Code';
 import Attributes from './Attributes';
-import { sitemapsCreateAttributes, sitemapsValidationAttributes } from '../services/Attributes';
-import React from 'react';
+import { sitemapsCreateAttributes, sitemapsValidationAttributes } from '../services/CliAttributes';
 
 const SEOSitemaps = () => {
   return (

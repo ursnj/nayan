@@ -1,7 +1,7 @@
 import React from 'react';
 import { User } from 'lucide-react';
 import ComponentWrapper from '../../helpers/ComponentWrapper';
-import { menuItemAttributes, menuNestedAttributes } from '../../services/Attributes';
+import { menuItemAttributes, menuNestedAttributes } from '../../services/ReactAttributes';
 import Attributes from '../../helpers/Attributes';
 import { MenuSize, NButton, NMenu, NMenuItem, NMenuNested } from '@nayan-ui/react';
 

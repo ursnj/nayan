@@ -1,6 +1,4 @@
-export const installCode = `npm install @nayan-ui/react
-yarn add @nayan-ui/react
-bun install @nayan-ui/react`;
+export const installCode = `npm install @nayan-ui/react`;
 
 export const tailwindCode = `module.exports = {
   darkMode: ['class'],

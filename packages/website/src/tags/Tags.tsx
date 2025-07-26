@@ -1,7 +1,7 @@
 import Meta from '../helpers/Meta';
 import Sidebar from '../helpers/Sidebar';
 import React from 'react';
-import { sidebarItems } from '../services/Utils';
+import { reactSidebarItems } from '../services/Utils';
 import TagsList from './TagsList';
 
 const Tags = () => {
@@ -13,7 +13,7 @@ const Tags = () => {
         buttons, forms, modals, accordions, and more, designed for seamless integration into your React applications. Each element is built with
         flexibility and performance in mind, enabling you to enhance user experience efficiently.
       </div>
-      {sidebarItems
+      {reactSidebarItems
         .filter(item => item.isComponent)
         .map((component: any) => {
           return (
